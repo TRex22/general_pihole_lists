@@ -1,0 +1,86 @@
+# Apple Allowlist for Pi-hole - Functionality Only
+# These domains are required for core Apple services, NOT tracking/ads
+# Excludes: metrics, analytics, telemetry, and ad-related domains
+
+# Apple ID and Authentication
+appleid.apple.com
+idmsa.apple.com
+iforgot.apple.com
+gsa.apple.com
+
+# App Store and iTunes
+itunes.apple.com
+apps.apple.com
+s.mzstatic.com
+is1-ssl.mzstatic.com
+is2-ssl.mzstatic.com
+is3-ssl.mzstatic.com
+is4-ssl.mzstatic.com
+is5-ssl.mzstatic.com
+
+# Software Updates
+swscan.apple.com
+swcdn.apple.com
+swdist.apple.com
+swdownload.apple.com
+updates.cdn-apple.com
+updates-http.cdn-apple.com
+osrecovery.apple.com
+oscdn.apple.com
+configuration.apple.com
+mesu.apple.com
+gdmf.apple.com
+
+# iCloud Core Services
+www.icloud.com
+icloud.com
+setup.icloud.com
+p01-contacts.icloud.com
+p01-caldav.icloud.com
+p01-calendar.icloud.com
+
+# Device Activation and Setup
+albert.apple.com
+static.ips.apple.com
+captive.apple.com
+gsp-ssl.ls.apple.com
+gsp1.apple.com
+
+# Push Notifications (essential for all notifications)
+push.apple.com
+gateway.push.apple.com
+feedback.push.apple.com
+
+# Time Services
+time.apple.com
+time-ios.apple.com
+time-macos.apple.com
+
+# Maps (basic functionality)
+gspe1-ssl.ls.apple.com
+
+# Find My (device location)
+fmipmobile.icloud.com
+
+# Siri (if using)
+guzzoni.apple.com
+
+# FaceTime and iMessage
+init.ess.apple.com
+identity.ess.apple.com
+
+# Certificate validation
+ocsp.apple.com
+ocsp2.apple.com
+crl.apple.com
+valid.apple.com
+
+# Apple Pay
+smp-device-content.apple.com
+
+# Developer tools (if needed)
+developer.apple.com
+
+# Main website
+www.apple.com
+www.appleiphonecell.com

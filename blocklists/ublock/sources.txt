@@ -1,0 +1,9 @@
+# Filter List Sources
+# These URLs can be added directly to Pi-hole if they support the format
+
+# peter-lowe
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
+
+# ublock-badware
+https://ublockorigin.github.io/uAssets/filters/badware.txt
+

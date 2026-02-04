@@ -19,3 +19,23 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+IMPORTANT NOTICE REGARDING GENERATED CONTENT
+
+This MIT license applies to:
+- All Ruby scripts in the `scripts/` directory
+- Manually-curated allowlists in the `allowlists/` directory
+- Documentation and configuration files
+
+This MIT license does NOT apply to:
+- Generated blocklists in the `blocklists/ublock/` directory
+
+Generated blocklists are derived from third-party filter lists and are subject
+to their respective source licenses (primarily GPLv3 and CC-BY-SA 3.0). See
+LICENSES.md for full attribution and license details for each source.
+
+If you redistribute the generated blocklists, you must comply with the original
+source licenses, which may require you to use GPLv3 or provide appropriate
+Creative Commons attribution.

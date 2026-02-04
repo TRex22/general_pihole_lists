@@ -1,0 +1,6 @@
+# WhatsApp Tracking/Telemetry Blocklist for Pi-hole
+# Source: https://www.reddit.com/r/pihole/comments/y1cmdf/what_domains_i_need_to_whitelist_for_whatsapp/
+# These domains are used for tracking/telemetry - blocking may not affect core functionality
+
+dit.whatsapp.net
+e6.whatsapp.net
