@@ -1,0 +1,78 @@
+# AWS (Amazon Web Services) Allowlist for Pi-hole
+# Required domains for AWS services functionality
+
+# AWS Console and Authentication
+console.aws.amazon.com
+signin.aws.amazon.com
+us-east-1.signin.aws.amazon.com
+sts.amazonaws.com
+iam.amazonaws.com
+
+# S3 Storage
+s3.amazonaws.com
+s3-us-west-2.amazonaws.com
+s3-us-east-1.amazonaws.com
+s3-eu-west-1.amazonaws.com
+s3.us-east-1.amazonaws.com
+s3.us-west-2.amazonaws.com
+s3.eu-west-1.amazonaws.com
+s3.ap-southeast-1.amazonaws.com
+s3.ap-northeast-1.amazonaws.com
+cloudsync-prod.s3.amazonaws.com
+reddit-uploaded-media.s3-accelerate.amazonaws.com
+
+# EC2 and Compute
+ec2.amazonaws.com
+ec2.us-east-1.amazonaws.com
+ec2.us-west-2.amazonaws.com
+ec2.eu-west-1.amazonaws.com
+
+# CloudFront CDN
+cloudfront.net
+d1.awsstatic.com
+d2.awsstatic.com
+
+# Lambda
+lambda.us-east-1.amazonaws.com
+lambda.us-west-2.amazonaws.com
+
+# DynamoDB
+dynamodb.us-east-1.amazonaws.com
+dynamodb.us-west-2.amazonaws.com
+
+# SQS
+sqs.us-east-1.amazonaws.com
+sqs.us-west-2.amazonaws.com
+
+# SNS
+sns.us-east-1.amazonaws.com
+sns.us-west-2.amazonaws.com
+
+# Route 53
+route53.amazonaws.com
+
+# CloudWatch
+monitoring.us-east-1.amazonaws.com
+logs.us-east-1.amazonaws.com
+
+# API Gateway
+execute-api.us-east-1.amazonaws.com
+execute-api.us-west-2.amazonaws.com
+
+# Cognito
+cognito-idp.us-east-1.amazonaws.com
+cognito-identity.us-east-1.amazonaws.com
+
+# Secrets Manager
+secretsmanager.us-east-1.amazonaws.com
+
+# Systems Manager
+ssm.us-east-1.amazonaws.com
+
+# EKS/ECS
+eks.us-east-1.amazonaws.com
+ecs.us-east-1.amazonaws.com
+
+# Documentation and Support
+docs.aws.amazon.com
+aws.amazon.com

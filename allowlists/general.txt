@@ -1,0 +1,88 @@
+# General Allowlist for Pi-hole
+# Source: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
+# Common domains that may need whitelisting for functionality
+
+# Captive Portal Detection (required for WiFi login pages)
+connectivitycheck.android.com
+connectivitycheck.gstatic.com
+clients3.google.com
+www.msftncsi.com
+www.msftconnecttest.com
+msftncsi.com
+ipv6.msftncsi.com
+captive.apple.com
+
+# Google Services (core functionality)
+clients2.google.com
+clients4.google.com
+www.googleapis.com
+dl.google.com
+redirector.gvt1.com
+mtalk.google.com
+
+# YouTube (if using)
+s.youtube.com
+video-stats.l.google.com
+youtubei.googleapis.com
+
+# Spotify
+spclient.wg.spotify.com
+apresolve.spotify.com
+api-tv.spotify.com
+
+# Plex
+plex.tv
+tvdb2.plex.tv
+pubsub.plex.bz
+proxy.plex.bz
+meta.plex.bz
+meta.plex.tv
+proxy.plex.tv
+app.plex.tv
+www.plex.tv
+node.plexapp.com
+tvthemes.plexapp.com
+
+# Dropbox
+dl.dropboxusercontent.com
+ns1.dropbox.com
+ns2.dropbox.com
+
+# Reddit
+styles.redditmedia.com
+www.redditstatic.com
+reddit.map.fastly.net
+www.redditmedia.com
+
+# Twitter/X
+twitter.com
+upload.twitter.com
+api.twitter.com
+mobile.twitter.com
+
+# Signal
+ud-chat.signal.org
+chat.signal.org
+storage.signal.org
+signal.org
+www.signal.org
+updates2.signal.org
+cdn.signal.org
+api.directory.signal.org
+contentproxy.signal.org
+
+# Sonarr/Radarr
+services.sonarr.tv
+skyhook.sonarr.tv
+download.sonarr.tv
+
+# Gravatar (profile images)
+gravatar.com
+
+# Media databases
+thetvdb.com
+themoviedb.com
+
+# Adobe (for updates/activation)
+fpdownload.adobe.com
+entitlement.auth.adobe.com

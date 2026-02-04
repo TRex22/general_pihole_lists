@@ -1,0 +1,189 @@
+# Microsoft, Outlook, Slack, Zoom, ZScaler Allowlist for Pi-hole
+# Required domains for productivity tools functionality
+
+# ============================================
+# MICROSOFT CORE
+# ============================================
+
+# Connectivity and network tests
+www.msftncsi.com
+www.msftconnecttest.com
+msftncsi.com
+ipv6.msftncsi.com
+
+# Authentication
+login.live.com
+login.microsoftonline.com
+login.microsoft.com
+account.live.com
+clientconfig.passport.net
+
+# Office 365
+outlook.office365.com
+outlook.office.com
+products.office.com
+officeclient.microsoft.com
+office.com
+www.office.com
+
+# Microsoft 365 / OneDrive
+onedrive.live.com
+onedrive.com
+skyapi.onedrive.live.com
+storage.live.com
+
+# Windows Updates and Delivery
+dl.delivery.mp.microsoft.com
+geo-prod.do.dsp.mp.microsoft.com
+displaycatalog.mp.microsoft.com
+sls.update.microsoft.com.akadns.net
+fe3.delivery.dsp.mp.microsoft.com.nsatc.net
+tlu.dl.delivery.mp.microsoft.com
+ctldl.windowsupdate.com
+
+# Microsoft Edge
+msedge.api.cdp.microsoft.com
+
+# Bing (search functionality)
+www.bing.com
+bing.com
+
+# Azure
+portal.azure.com
+management.azure.com
+login.windows.net
+graph.microsoft.com
+
+# Microsoft CDN
+c.s-microsoft.com
+i.s-microsoft.com
+
+# Windows Activity
+activity.windows.com
+settings-win.data.microsoft.com
+
+# Certificate validation
+wdcp.microsoft.com
+wdcpalt.microsoft.com
+
+# Teams
+teams.microsoft.com
+teams.live.com
+
+# ============================================
+# OUTLOOK / HOTMAIL
+# ============================================
+
+outlook.live.com
+outlook.com
+m.hotmail.com
+attachments.office.net
+*.outlook.com
+*.hotmail.com
+smtp-mail.outlook.com
+imap-mail.outlook.com
+pop-mail.outlook.com
+
+# ============================================
+# SKYPE
+# ============================================
+
+ui.skype.com
+pricelist.skype.com
+apps.skype.com
+s.gateway.messenger.live.com
+client-s.gateway.messenger.live.com
+
+# ============================================
+# SLACK
+# ============================================
+
+slack.com
+www.slack.com
+api.slack.com
+app.slack.com
+edgeapi.slack.com
+wss-primary.slack.com
+wss-backup.slack.com
+wss-mobile.slack.com
+files.slack.com
+a.]slack-edge.com
+b.slack-edge.com
+slack-imgs.com
+slack-files.com
+slack-redir.net
+slackb.com
+
+# Slack CDN
+d3uxpx5dv1nwmw.cloudfront.net
+
+# ============================================
+# ZOOM
+# ============================================
+
+zoom.us
+www.zoom.us
+zoom.com
+www.zoom.com
+us02web.zoom.us
+us04web.zoom.us
+us05web.zoom.us
+us06web.zoom.us
+
+# Zoom connectivity
+*.zoom.us
+*.zoomgov.com
+
+# Zoom CDN
+cdn.zoom.us
+log.zoom.us
+
+# Zoom WebSocket
+ws.zoom.us
+rwc.zoom.us
+zoomtw.zoom.us
+zoomus.zoom.us
+
+# ============================================
+# ZSCALER
+# ============================================
+
+# Zscaler Cloud
+zscaler.com
+www.zscaler.com
+admin.zscaler.net
+login.zscaler.net
+mobile.zscaler.net
+pac.zscaler.net
+gateway.zscaler.net
+zscalertwo.net
+zscalerthree.net
+zscloud.net
+
+# Zscaler authentication
+login.zscloud.net
+safechannel.zscaler.net
+
+# Zscaler client connector
+mobile.zscloud.net
+
+# Regional Zscaler (add your specific region)
+# Example: zscaler.de, zscaler.fr, etc.
+
+# ============================================
+# COMMON DEPENDENCIES
+# ============================================
+
+# Certificate authorities
+sa.symcb.com
+s1.symcb.com
+s2.symcb.com
+s3.symcb.com
+s4.symcb.com
+s5.symcb.com
+
+# Virtual Earth (Maps in Microsoft products)
+dev.virtualearth.net
+ecn.dev.virtualearth.net
+t0.ssl.ak.dynamic.tiles.virtualearth.net
+t0.ssl.ak.tiles.virtualearth.net

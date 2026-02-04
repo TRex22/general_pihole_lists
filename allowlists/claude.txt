@@ -1,0 +1,37 @@
+# Claude (Anthropic) Allowlist for Pi-hole
+# Required domains for Claude AI services
+
+# Main Anthropic domains
+anthropic.com
+www.anthropic.com
+api.anthropic.com
+console.anthropic.com
+
+# Claude applications
+claude.ai
+www.claude.ai
+api.claude.ai
+
+# Authentication and sessions
+auth.anthropic.com
+auth.claude.ai
+
+# CDN and static assets (Cloudflare)
+cdnjs.cloudflare.com
+challenges.cloudflare.com
+
+# Stripe (for billing/subscriptions)
+stripe.com
+api.stripe.com
+js.stripe.com
+m.stripe.com
+
+# Intercom (for support)
+widget.intercom.io
+api-iam.intercom.io
+
+# Analytics (minimal - may choose to block)
+# www.google-analytics.com
+
+# WebSocket connections for real-time chat
+wss.claude.ai
