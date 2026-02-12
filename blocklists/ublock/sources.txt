@@ -1,9 +1,39 @@
 # Filter List Sources
 # These URLs can be added directly to Pi-hole if they support the format
 
-# peter-lowe
-https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
+# ublock-filters
+https://ublockorigin.github.io/uAssets/filters/filters.txt
 
 # ublock-badware
 https://ublockorigin.github.io/uAssets/filters/badware.txt
+
+# ublock-privacy
+https://ublockorigin.github.io/uAssets/filters/privacy.txt
+
+# ublock-unbreak
+https://ublockorigin.github.io/uAssets/filters/unbreak.txt
+
+# easylist
+https://ublockorigin.github.io/uAssets/thirdparties/easylist.txt
+
+# easyprivacy
+https://ublockorigin.github.io/uAssets/thirdparties/easyprivacy.txt
+
+# peter-lowe
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
+
+# urlhaus-malware
+https://malware-filter.gitlab.io/urlhaus-filter/urlhaus-filter-hosts.txt
+
+# adguard-dns
+https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+
+# steven-black-hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+
+# energized-basic
+https://block.energized.pro/basic/formats/hosts.txt
+
+# oisd-basic
+https://abp.oisd.nl/basic/
 
