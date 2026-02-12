@@ -1,60 +1,42 @@
 # Apple Allowlist for Pi-hole - Functionality Only
 # These domains are required for core Apple services, NOT tracking/ads
 # Excludes: metrics, analytics, telemetry, and ad-related domains
+# Sources:
+#   - Pi-hole Commonly Whitelisted Domains: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
+#   - Apple Enterprise Network Requirements: https://support.apple.com/en-us/101555
 
-# Apple ID and Authentication
+# Apple Account and Authentication
+account.apple.com
 appleid.apple.com
+appleid.cdn-apple.com
 idmsa.apple.com
 iforgot.apple.com
 gsa.apple.com
 
-# App Store and iTunes
-itunes.apple.com
-apps.apple.com
-s.mzstatic.com
-is1-ssl.mzstatic.com
-is2-ssl.mzstatic.com
-is3-ssl.mzstatic.com
-is4-ssl.mzstatic.com
-is5-ssl.mzstatic.com
-search.itunes.apple.com
-ocsp2.g.aaplimg.com
-init.gc.apple.com
-pd.itunes.apple.com
-amp-api.apps.apple.com
-
-# Software Updates
-swscan.apple.com
-swcdn.apple.com
-swdist.apple.com
-swdownload.apple.com
-updates.cdn-apple.com
-updates-http.cdn-apple.com
-osrecovery.apple.com
-oscdn.apple.com
-configuration.apple.com
-mesu.apple.com
-gdmf.apple.com
-swscan-cdn.apple.com.akadns.net
-xp.v.aaplimg.com
-xp-cdn-lb.itunes-apple.com.akadns.net
-
-# iCloud Core Services
-www.icloud.com
-icloud.com
-setup.icloud.com
-p01-contacts.icloud.com
-p01-caldav.icloud.com
-p01-calendar.icloud.com
-
-# Device Activation and Setup
+# Device Setup
 albert.apple.com
-static.ips.apple.com
 captive.apple.com
+gs.apple.com
+humb.apple.com
+static.ips.apple.com
+sq-device.apple.com
+tbsc.apple.com
 gsp-ssl.ls.apple.com
+gsp-ssl.ls-apple.com.akadns.net
 gsp1.apple.com
 
-# Push Notifications (essential for all notifications)
+# Device Management
+deviceenrollment.apple.com
+deviceservices-external.apple.com
+gdmf.apple.com
+identity.apple.com
+iprofiles.apple.com
+mdmenrollment.apple.com
+setup.icloud.com
+vpp.itunes.apple.com
+axm-servicediscovery.apple.com
+
+# Apple Push Notifications (essential for all notifications)
 push.apple.com
 gateway.push.apple.com
 feedback.push.apple.com
@@ -64,31 +46,161 @@ time.apple.com
 time-ios.apple.com
 time-macos.apple.com
 
+# Software Updates
+appldnld.apple.com
+configuration.apple.com
+gdmf-ados.apple.com
+gg.apple.com
+gsra.apple.com
+ig.apple.com
+mesu.apple.com
+oscdn.apple.com
+osrecovery.apple.com
+skl.apple.com
+swcdn.apple.com
+swdist.apple.com
+swdownload.apple.com
+swscan.apple.com
+updates.cdn-apple.com
+updates-http.cdn-apple.com
+xp.apple.com
+wkms-public.apple.com
+fcs-keys-pub-prod.cdn-apple.com
+swscan-cdn.apple.com.akadns.net
+xp.v.aaplimg.com
+xp-cdn-lb.itunes-apple.com.akadns.net
+
+# App Store, iTunes and Content
+itunes.apple.com
+itunes.com
+apps.apple.com
+amp-api.apps.apple.com
+s.mzstatic.com
+is1-ssl.mzstatic.com
+is2-ssl.mzstatic.com
+is3-ssl.mzstatic.com
+is4-ssl.mzstatic.com
+is5-ssl.mzstatic.com
+search.itunes.apple.com
+pd.itunes.apple.com
+ppq.apple.com
+api.apple-cloudkit.com
+token.safebrowsing.apple
+audiocontentdownload.apple.com
+devimages-cdn.apple.com
+download.developer.apple.com
+playgrounds-assets-cdn.apple.com
+playgrounds-cdn.apple.com
+sylvan.apple.com
+gateway.icloud.com
+init.gc.apple.com
+ocsp2.g.aaplimg.com
+
+# Carrier Updates
+appldnld.apple.com.edgesuite.net
+
+# iCloud Core Services
+www.icloud.com
+icloud.com
+p01-contacts.icloud.com
+p01-caldav.icloud.com
+p01-calendar.icloud.com
+statici.icloud.com
+ws-ee-maidsvc.icloud.com
+
+# iCloud Private Relay
+mask.icloud.com
+mask-h2.icloud.com
+mask-api.icloud.com
+
+# iCloud Network
+probe.icloud.com
+pong.icloud.com
+
+# Content Caching
+lcdn-registration.apple.com
+lcdn-locator.apple.com
+suconfig.apple.com
+xp-cdn.apple.com
+serverstatus.apple.com
+
+# Beta Updates
+bpapi.apple.com
+cssubmissions.apple.com
+fba.apple.com
+
+# Apple Diagnostics
+diagassets.apple.com
+
+# DNS Resolution
+doh.dns.apple.com
+
+# Certificate Validation
+certs.apple.com
+crl.apple.com
+crl3.digicert.com
+crl4.digicert.com
+ocsp.apple.com
+ocsp.digicert.cn
+ocsp.digicert.com
+ocsp2.apple.com
+valid.apple.com
+
+# Siri, Apple Intelligence and Search
+guzzoni.apple.com
+apple-relay.apple.com
+apple-relay.cloudflare.com
+apple-relay.fastly-edge.com
+apple-native-relay.apple.com
+cp4.cloudflare.com
+
+# Associated Domains
+app-site-association.cdn-apple.com
+app-site-association.networking.apple
+
 # Maps (basic functionality)
 gspe1-ssl.ls.apple.com
 
 # Find My (device location)
 fmipmobile.icloud.com
 
-# Siri (if using)
-guzzoni.apple.com
-
 # FaceTime and iMessage
 init.ess.apple.com
 identity.ess.apple.com
 
-# Certificate validation
-ocsp.apple.com
-ocsp2.apple.com
-crl.apple.com
-valid.apple.com
-
-# Apple Pay
+# Apple Pay and Tap to Pay
 smp-device-content.apple.com
+pos-device.apple.com
+iphonesubmissions.apple.com
 
-# Developer tools (if needed)
+# ID Verifier
+idv.cdn-apple.com
+idv-prod1.apple.com
+
+# Classroom and Schoolwork
+ws.school.apple.com
+play.itunes.apple.com
+pg-bootstrap.itunes.apple.com
+cls-iosclient.itunes.apple.com
+cls-ingest.itunes.apple.com
+
+# Apple Business Manager and School Manager
+api.ent.apple.com
+api.edu.apple.com
+upload.appleschoolcontent.com
+api-business.apple.com
+api-school.apple.com
+
+# Apple Business Essentials
+axm-adm-enroll.apple.com
+axm-adm-mdm.apple.com
+axm-adm-scep.apple.com
+axm-app.apple.com
+icons.axm-usercontent-apple.com
+
+# Developer Tools
 developer.apple.com
 
-# Main website
+# Main Website
 www.apple.com
 www.appleiphonecell.com
