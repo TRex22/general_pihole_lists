@@ -8,7 +8,7 @@ The following components are original work by Jason Chalom and licensed under th
 
 - **Scripts**: All files in `scripts/` directory
 - **Manually-curated allowlists**: All files in `allowlists/` directory
-  - `allowlists/apple.txt`
+  - `allowlists/apple.txt` (domains sourced from [Pi-hole Commonly Whitelisted Domains](https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212) and [Apple Enterprise Network Requirements](https://support.apple.com/en-us/101555))
   - `allowlists/aws.txt`
   - `allowlists/claude.txt`
   - `allowlists/general.txt`
