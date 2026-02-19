@@ -21,6 +21,13 @@ redirector.gvt1.com
 mtalk.google.com
 contacts.google.com
 photos.googleapis.com
+android.clients.google.com
+googleapis.l.google.com
+oauthaccountmanager.googleapis.com
+
+# Google Keep / Firebase
+reminders-pa.googleapis.com
+firestore.googleapis.com
 
 # YouTube (if using)
 s.youtube.com
@@ -36,12 +43,14 @@ api-tv.spotify.com
 plex.tv
 tvdb2.plex.tv
 pubsub.plex.bz
+pubsub.plex.tv
 proxy.plex.bz
 meta.plex.bz
 meta.plex.tv
 proxy.plex.tv
 app.plex.tv
 www.plex.tv
+status.plex.tv
 node.plexapp.com
 tvthemes.plexapp.com
 
@@ -74,11 +83,14 @@ updates2.signal.org
 cdn.signal.org
 api.directory.signal.org
 contentproxy.signal.org
+textsecure-service-whispersystems.org
+turn1.whispersystems.org
 
 # Sonarr/Radarr
 services.sonarr.tv
 skyhook.sonarr.tv
 download.sonarr.tv
+apt.sonarr.tv
 
 # Gravatar (profile images)
 gravatar.com
