@@ -1,7 +1,10 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-02-12T17:47:12Z
+# Generated: 2026-02-19T14:56:32Z
 # Total domains: 1198
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
 
+api.takealot.com
+cdn.takealot.com
+images.takealot.com
