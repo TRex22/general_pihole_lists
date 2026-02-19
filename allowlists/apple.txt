@@ -147,6 +147,15 @@ ocsp.digicert.com
 ocsp2.apple.com
 valid.apple.com
 
+# Apple Music
+play.music.apple.com
+js-cdn.music.apple.com
+aod.itunes.apple.com
+
+# Game Center
+service.gc.apple.com
+static.gc.apple.com
+
 # Siri, Apple Intelligence and Search
 guzzoni.apple.com
 apple-relay.apple.com
@@ -154,6 +163,9 @@ apple-relay.cloudflare.com
 apple-relay.fastly-edge.com
 apple-native-relay.apple.com
 cp4.cloudflare.com
+api.smoot.apple.com
+api2.smoot.apple.com
+cdn.smoot.apple.com
 
 # Associated Domains
 app-site-association.cdn-apple.com
