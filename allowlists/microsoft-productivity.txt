@@ -18,18 +18,24 @@ login.microsoft.com
 account.live.com
 clientconfig.passport.net
 
-# Office 365
+# Office 365 / Exchange Online
 outlook.office365.com
 outlook.office.com
+outlook.cloud.microsoft
+smtp.office365.com
 products.office.com
 officeclient.microsoft.com
 office.com
 www.office.com
+office.live.com
 ooc-g2.tm-4.office.com
 
 # Microsoft 365 / OneDrive
 onedrive.live.com
 onedrive.com
+www.onedrive.com
+admin.onedrive.com
+oneclient.sfx.ms
 skyapi.onedrive.live.com
 storage.live.com
 
@@ -54,10 +60,32 @@ portal.azure.com
 management.azure.com
 login.windows.net
 graph.microsoft.com
+graph.windows.net
+enterpriseregistration.windows.net
 
 # Microsoft CDN
 c.s-microsoft.com
 i.s-microsoft.com
+officecdn.microsoft.com
+officecdn.microsoft.com.edgesuite.net
+otelrules.azureedge.net
+
+# Microsoft 365 Unified Domains (Source: https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges)
+cloud.microsoft
+static.microsoft
+usercontent.microsoft
+www.microsoft365.com
+admin.microsoft.com
+
+# Microsoft redirects and utilities
+aka.ms
+go.microsoft.com
+
+# Certificate revocation
+crl.microsoft.com
+
+# Office activation
+activation.sls.microsoft.com
 
 # Windows Activity
 activity.windows.com
@@ -70,6 +98,9 @@ wdcpalt.microsoft.com
 # Teams
 teams.microsoft.com
 teams.live.com
+teams.cloud.microsoft
+join.secure.skypeassets.com
+mlccdnprod.azureedge.net
 
 # ============================================
 # OUTLOOK / HOTMAIL
@@ -108,7 +139,7 @@ wss-primary.slack.com
 wss-backup.slack.com
 wss-mobile.slack.com
 files.slack.com
-a.]slack-edge.com
+a.slack-edge.com
 b.slack-edge.com
 slack-imgs.com
 slack-files.com
