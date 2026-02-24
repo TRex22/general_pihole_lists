@@ -35,6 +35,7 @@ mdmenrollment.apple.com
 setup.icloud.com
 vpp.itunes.apple.com
 axm-servicediscovery.apple.com
+appattest.apple.com
 
 # Apple Push Notifications (essential for all notifications)
 push.apple.com
@@ -71,6 +72,9 @@ swscan-cdn.apple.com.akadns.net
 xp.v.aaplimg.com
 xp-cdn-lb.itunes-apple.com.akadns.net
 
+# EU App Marketplace
+apps-marketplace.apple.com
+
 # App Store, iTunes and Content
 itunes.apple.com
 itunes.com
@@ -103,6 +107,8 @@ appldnld.apple.com.edgesuite.net
 # iCloud Core Services
 www.icloud.com
 icloud.com
+icloud.apple.com
+icloud-content.com
 p01-contacts.icloud.com
 p01-caldav.icloud.com
 p01-calendar.icloud.com
@@ -117,6 +123,12 @@ mask-api.icloud.com
 # iCloud Network
 probe.icloud.com
 pong.icloud.com
+
+# iCloud Live Photos
+apple-livephotoskit.com
+
+# iCloud availability zones
+apzones.com
 
 # Content Caching
 lcdn-registration.apple.com
@@ -173,6 +185,7 @@ app-site-association.networking.apple
 
 # Maps (basic functionality)
 gspe1-ssl.ls.apple.com
+apple-mapkit.com
 
 # Find My (device location)
 fmipmobile.icloud.com
@@ -203,6 +216,7 @@ api.edu.apple.com
 upload.appleschoolcontent.com
 api-business.apple.com
 api-school.apple.com
+vertexsmb.com
 
 # Apple Business Essentials
 axm-adm-enroll.apple.com
@@ -210,6 +224,9 @@ axm-adm-mdm.apple.com
 axm-adm-scep.apple.com
 axm-app.apple.com
 icons.axm-usercontent-apple.com
+
+# iWork Apps
+iwork.apple.com
 
 # Developer Tools
 developer.apple.com
