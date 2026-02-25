@@ -40,6 +40,7 @@ appattest.apple.com
 # Apple Push Notifications (essential for all notifications)
 push.apple.com
 gateway.push.apple.com
+gateway.sandbox.push.apple.com
 feedback.push.apple.com
 
 # Time Services
@@ -53,8 +54,11 @@ appldnld.apple.com
 configuration.apple.com
 gdmf-ados.apple.com
 gg.apple.com
+gnf-mdn.apple.com
+gnf-mr.apple.com
 gsra.apple.com
 ig.apple.com
+ns.itunes.apple.com
 mesu.apple.com
 oscdn.apple.com
 osrecovery.apple.com
@@ -80,6 +84,7 @@ itunes.apple.com
 itunes.com
 apps.apple.com
 amp-api.apps.apple.com
+mzstatic.com
 s.mzstatic.com
 is1-ssl.mzstatic.com
 is2-ssl.mzstatic.com
@@ -107,8 +112,10 @@ appldnld.apple.com.edgesuite.net
 # iCloud Core Services
 www.icloud.com
 icloud.com
+icloud.com.cn
 icloud.apple.com
 icloud-content.com
+apple-cloudkit.com
 p01-contacts.icloud.com
 p01-caldav.icloud.com
 p01-calendar.icloud.com
@@ -151,11 +158,14 @@ doh.dns.apple.com
 # Certificate Validation
 certs.apple.com
 crl.apple.com
+crl.entrust.net
 crl3.digicert.com
 crl4.digicert.com
 ocsp.apple.com
 ocsp.digicert.cn
 ocsp.digicert.com
+ocsp.entrust.net
+ocsp.verisign.net
 ocsp2.apple.com
 valid.apple.com
 
@@ -165,6 +175,7 @@ js-cdn.music.apple.com
 aod.itunes.apple.com
 
 # Game Center
+gc.apple.com
 service.gc.apple.com
 static.gc.apple.com
 
@@ -211,6 +222,8 @@ cls-iosclient.itunes.apple.com
 cls-ingest.itunes.apple.com
 
 # Apple Business Manager and School Manager
+school.apple.com
+business.apple.com
 api.ent.apple.com
 api.edu.apple.com
 upload.appleschoolcontent.com
