@@ -1,5 +1,8 @@
 # Claude (Anthropic) Allowlist for Pi-hole
 # Required domains for Claude AI services
+# Sources:
+#   - Anthropic documentation: https://docs.anthropic.com/
+#   - Claude network requirements: https://support.anthropic.com/
 
 # Main Anthropic domains
 anthropic.com

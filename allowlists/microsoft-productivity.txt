@@ -1,5 +1,10 @@
 # Microsoft, Outlook, Slack, Zoom, ZScaler Allowlist for Pi-hole
 # Required domains for productivity tools functionality
+# Sources:
+#   - Microsoft 365 URLs and IP ranges: https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges
+#   - Zoom network firewall requirements: https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0010740
+#   - Slack network requirements: https://slack.com/help/articles/360001603387
+#   - Zscaler network requirements: https://help.zscaler.com/zia/about-pac-files
 
 # ============================================
 # MICROSOFT CORE
@@ -87,9 +92,9 @@ crl.microsoft.com
 # Office activation
 activation.sls.microsoft.com
 
-# Windows Activity
-activity.windows.com
-settings-win.data.microsoft.com
+# Windows Activity (telemetry - commented out)
+# activity.windows.com
+# settings-win.data.microsoft.com
 
 # Certificate validation
 wdcp.microsoft.com
@@ -110,8 +115,16 @@ outlook.live.com
 outlook.com
 m.hotmail.com
 attachments.office.net
-*.outlook.com
-*.hotmail.com
+autodiscover.outlook.com
+mail.outlook.com
+calendar.outlook.com
+account.outlook.com
+protection.outlook.com
+www.outlook.com
+hotmail.com
+www.hotmail.com
+mail.hotmail.com
+account.hotmail.com
 smtp-mail.outlook.com
 imap-mail.outlook.com
 pop-mail.outlook.com
@@ -163,12 +176,15 @@ us05web.zoom.us
 us06web.zoom.us
 
 # Zoom connectivity
-*.zoom.us
-*.zoomgov.com
+api.zoom.us
+support.zoom.us
+marketplace.zoom.us
+zoomgov.com
+www.zoomgov.com
 
 # Zoom CDN
 cdn.zoom.us
-log.zoom.us
+# log.zoom.us  # Zoom telemetry logging
 
 # Zoom WebSocket
 ws.zoom.us
