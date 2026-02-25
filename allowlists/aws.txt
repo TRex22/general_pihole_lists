@@ -1,5 +1,8 @@
 # AWS (Amazon Web Services) Allowlist for Pi-hole
 # Required domains for AWS services functionality
+# Sources:
+#   - AWS service endpoints: https://docs.aws.amazon.com/general/latest/gr/rande.html
+#   - AWS IP address ranges: https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
 
 # AWS Console and Authentication
 console.aws.amazon.com

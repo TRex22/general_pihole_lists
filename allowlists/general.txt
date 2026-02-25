@@ -33,7 +33,7 @@ firestore.googleapis.com
 
 # YouTube (if using)
 s.youtube.com
-video-stats.l.google.com
+video-stats.l.google.com  # YouTube/Google video analytics tracking
 youtubei.googleapis.com
 
 # Spotify
@@ -66,8 +66,10 @@ styles.redditmedia.com
 www.redditstatic.com
 reddit.map.fastly.net
 www.redditmedia.com
-click.redditmail.com
-api2.branch.io
+
+## Needed for Reddit emails to work
+click.redditmail.com  # Reddit click tracking
+api2.branch.io  # Branch.io attribution/tracking
 
 # Twitter/X
 twitter.com
