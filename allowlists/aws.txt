@@ -3,6 +3,7 @@
 # Sources:
 #   - AWS service endpoints: https://docs.aws.amazon.com/general/latest/gr/rande.html
 #   - AWS IP address ranges: https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
+#   - AWS Sign-In allowlist domains: https://docs.aws.amazon.com/signin/latest/userguide/allowlist-domains.html
 
 # AWS Console and Authentication
 console.aws.amazon.com
@@ -32,6 +33,7 @@ ec2.eu-west-1.amazonaws.com
 
 # CloudFront CDN
 cloudfront.net
+awsstatic.com
 d1.awsstatic.com
 d2.awsstatic.com
 
@@ -75,6 +77,21 @@ ssm.us-east-1.amazonaws.com
 # EKS/ECS
 eks.us-east-1.amazonaws.com
 ecs.us-east-1.amazonaws.com
+
+# SSO and Identity (AWS IAM Identity Center)
+us-east-1.sso.amazonaws.com
+us-east-1.sso-portal.amazonaws.com
+oidc.us-east-1.amazonaws.com
+awsapps.com
+
+# AWS Builder ID / Profile
+profile.aws.amazon.com
+
+# AWS Developer tools and CDN
+aws.dev
+
+# Sign-In CAPTCHA
+opfcaptcha-prod.s3.amazonaws.com
 
 # Documentation and Support
 docs.aws.amazon.com

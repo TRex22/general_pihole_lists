@@ -23,6 +23,7 @@ contacts.google.com
 photos.googleapis.com
 android.clients.google.com
 googleapis.l.google.com
+gstaticadssl.l.google.com
 oauthaccountmanager.googleapis.com
 apis.google.com
 photosdata-pa.googleapis.com
@@ -40,6 +41,8 @@ video-stats.l.google.com  # YouTube/Google video analytics tracking
 youtubei.googleapis.com
 
 # Spotify
+spotify.com
+open.spotify.com
 spclient.wg.spotify.com
 apresolve.spotify.com
 api-tv.spotify.com
@@ -76,9 +79,13 @@ api2.branch.io  # Branch.io attribution/tracking
 
 # Twitter/X
 twitter.com
+x.com
 upload.twitter.com
 api.twitter.com
 mobile.twitter.com
+twimg.com
+pbs.twimg.com
+abs.twimg.com
 
 # Signal
 ud-chat.signal.org
@@ -104,7 +111,9 @@ gravatar.com
 
 # Media databases
 thetvdb.com
-themoviedb.com
+themoviedb.org
+api.themoviedb.org
+image.tmdb.org
 
 # Adobe (for updates/activation)
 fpdownload.adobe.com
@@ -118,3 +127,8 @@ cdn.shopify.com
 
 # Xbox Live
 xsts.auth.xboxlive.com
+
+# Facebook / Meta (required by some apps including WhatsApp Web)
+graph.facebook.com
+upload.facebook.com
+b-graph.facebook.com

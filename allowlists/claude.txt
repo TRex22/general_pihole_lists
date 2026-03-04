@@ -2,7 +2,8 @@
 # Required domains for Claude AI services
 # Sources:
 #   - Anthropic documentation: https://docs.anthropic.com/
-#   - Claude network requirements: https://support.anthropic.com/
+#   - Claude Code network requirements: https://code.claude.com/docs/en/network-config
+#   - Claude API IP addresses: https://platform.claude.com/docs/en/api/ip-addresses
 
 # Main Anthropic domains
 anthropic.com
@@ -10,15 +11,23 @@ www.anthropic.com
 api.anthropic.com
 a-api.anthropic.com
 console.anthropic.com
+cdn.anthropic.com
+static.anthropic.com
+files.anthropic.com
+statsig.anthropic.com
 
 # Claude applications
 claude.ai
 www.claude.ai
 api.claude.ai
+platform.claude.com
 
 # Authentication and sessions
 auth.anthropic.com
 auth.claude.ai
+
+# WebSocket connections for real-time chat
+wss.claude.ai
 
 # CDN and static assets (Cloudflare)
 cdnjs.cloudflare.com
@@ -34,8 +43,8 @@ m.stripe.com
 widget.intercom.io
 api-iam.intercom.io
 
-# Analytics (minimal - may choose to block)
-# www.google-analytics.com
+# Sentry (error reporting - may choose to block)
+# sentry.io
 
-# WebSocket connections for real-time chat
-wss.claude.ai
+# Analytics (may choose to block)
+# www.google-analytics.com

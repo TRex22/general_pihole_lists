@@ -1,6 +1,7 @@
 # WhatsApp Allowlist for Pi-hole
 # Source: https://www.reddit.com/r/pihole/comments/y1cmdf/what_domains_i_need_to_whitelist_for_whatsapp/
 # Source: https://discourse.pi-hole.net/t/blacklist-whatsapp/35212
+# Source: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
 # These domains are required for WhatsApp functionality and notifications
 
 # Core WhatsApp domains
@@ -14,12 +15,20 @@ whatsapp.com
 media-mxp1-1.cdn.whatsapp.net
 mmx-ds.cdn.whatsapp.net
 mmg-fna.whatsapp.net
+mmg.whatsapp.net
+media.whatsapp.net
 scontent.whatsapp.net
 static.whatsapp.net
+v.whatsapp.net
+fna.whatsapp.net
 
 # WhatsApp messaging servers
 c.whatsapp.net
 e.whatsapp.net
+
+# WhatsApp Business
+business.whatsapp.com
+api.whatsapp.com
 
 # Additional CDN patterns (wildcard - use regex in Pi-hole if needed)
 # *.cdn.whatsapp.net
