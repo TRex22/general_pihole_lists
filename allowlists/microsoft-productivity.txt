@@ -5,6 +5,7 @@
 #   - Zoom network firewall requirements: https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0010740
 #   - Slack network requirements: https://slack.com/help/articles/360001603387
 #   - Zscaler network requirements: https://help.zscaler.com/zia/about-pac-files
+#   - TheSmashy O365 Whitelist: https://github.com/TheSmashy/O365Whitlist
 
 # ============================================
 # MICROSOFT CORE
@@ -19,9 +20,30 @@ ipv6.msftncsi.com
 # Authentication
 login.live.com
 login.microsoftonline.com
+login.microsoftonline-p.com
 login.microsoft.com
+login.windows.net
+login-us.microsoftonline.com
 account.live.com
 clientconfig.passport.net
+clientconfig.microsoftonline-p.net
+msftidentity.com
+msidentity.com
+account.activedirectory.windowsazure.com
+accounts.accesscontrol.windows.net
+adminwebservice.microsoftonline.com
+api.passwordreset.microsoftonline.com
+autologon.microsoftazuread-sso.com
+becws.microsoftonline.com
+companymanager.microsoftonline.com
+device.login.microsoftonline.com
+logincert.microsoftonline.com
+loginex.microsoftonline.com
+logincdn.msauth.net
+nexus.microsoftonline-p.com
+passwordreset.microsoftonline.com
+provisioningapi.microsoftonline.com
+main.iam.ad.ext.azure.com
 
 # Office 365 / Exchange Online
 outlook.office365.com
@@ -35,21 +57,30 @@ www.office.com
 office.live.com
 ooc-g2.tm-4.office.com
 
-# res.public.onecdn.static.microsoft
-# common.online.office.com
-# powerpointonline.nel.measure.office.net
-# amcdn.msftauth.net
-# uci.cdn.office.net
-# collabrtc.officeapps.live.com
-# wise.public.cdn.office.com
-# webshell.suite.office.com
-# augloop.office.com
-# in.appcenter.ms
-# pus6-collabhubrtc.officeapps.live.com
-# fs.microsoft.com
-# js.monitor.azure.com
-# browser.events.data.microsoft.com
-# powerpoint-telemetry.officeapps.live.com
+res.public.onecdn.static.microsoft
+common.online.office.com
+amcdn.msftauth.net
+uci.cdn.office.net
+collabrtc.officeapps.live.com
+wise.public.cdn.office.com
+webshell.suite.office.com
+augloop.office.com # AI
+pus6-collabhubrtc.officeapps.live.com
+fs.microsoft.com
+r1.res.office365.com
+r3.res.office365.com
+r4.res.office365.com
+r3.res.outlook.com
+manage.office.com
+home.office.com
+portal.office.com
+protection.office.com
+account.office.net
+# in.appcenter.ms  # App Center analytics/crash reporting
+# powerpointonline.nel.measure.office.net  # Network telemetry measurement
+# js.monitor.azure.com  # Azure JS monitoring (telemetry)
+# browser.events.data.microsoft.com  # Browser telemetry
+# powerpoint-telemetry.officeapps.live.com  # PowerPoint telemetry
 
 # Microsoft 365 / OneDrive
 onedrive.live.com
@@ -60,7 +91,45 @@ oneclient.sfx.ms
 skyapi.onedrive.live.com
 storage.live.com
 
-# Windows Updates and Delivery
+# ============================================
+# SHAREPOINT ONLINE
+# ============================================
+# Required: ID 31 (OptimizeRequired), ID 37 (DefaultRequired)
+
+sharepointonline.com
+cdn.sharepointonline.com
+privatecdn.sharepointonline.com
+publiccdn.sharepointonline.com
+static.sharepointonline.com
+spoprod-a.akamaihd.net
+
+# ============================================
+# OFFICE ONLINE (PowerPoint, Word, Excel Online)
+# ============================================
+# Required: ID 46 (AllowRequired), ID 47, ID 160
+
+officeapps.live.com
+online.office.com
+office.net
+suite.office.net
+cdn.odc.officeapps.live.com
+cdn.uci.officeapps.live.com
+ajax.aspnetcdn.com
+
+# OneNote
+onenote.com
+cdn.onenote.net
+
+# Microsoft Stream
+api.microsoftstream.com
+notification.api.microsoftstream.com
+web.microsoftstream.com
+media.azure.net
+
+# ============================================
+# WINDOWS UPDATES AND DELIVERY
+# ============================================
+
 dl.delivery.mp.microsoft.com
 geo-prod.do.dsp.mp.microsoft.com
 displaycatalog.mp.microsoft.com
@@ -79,7 +148,6 @@ bing.com
 # Azure
 portal.azure.com
 management.azure.com
-login.windows.net
 graph.microsoft.com
 graph.windows.net
 enterpriseregistration.windows.net
@@ -90,6 +158,9 @@ i.s-microsoft.com
 officecdn.microsoft.com
 officecdn.microsoft.com.edgesuite.net
 otelrules.azureedge.net
+azureedge.net
+msedge.net
+compass-ssl.microsoft.com
 
 # Microsoft 365 Unified Domains (Source: https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges)
 cloud.microsoft
@@ -122,6 +193,15 @@ teams.live.com
 teams.cloud.microsoft
 join.secure.skypeassets.com
 mlccdnprod.azureedge.net
+mlccdn.blob.core.windows.net
+lync.com
+skypeforbusiness.com
+broadcast.skype.com
+sfbassets.com
+urlp.sfbassets.com
+keydelivery.mediaservices.windows.net
+streaming.mediaservices.windows.net
+tenor.com
 
 # ============================================
 # OUTLOOK / HOTMAIL
