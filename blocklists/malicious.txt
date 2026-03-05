@@ -1,3 +1,10 @@
 # Domains to block that are malicious and no-one is tracking
 
+# From Wikimedia "hack"
 basemetrika.ru
+
+# Mac Compromise Indicators
+specialattributes.s3.amazonaws.com
+api.mobiletraits.com
+api.specialattributes.com
+mobiletraits.s3.amazonaws.com
