@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "folder_exclude_patterns": [
+        "node_modules", ".git", "tmp", "log",
+        "vendor/bundle", "coverage", ".bundle"
+      ],
+      "file_exclude_patterns": [
+        ".log", ".min.js", "*.min.css"
+      ]
+    }
+  ]
+}

@@ -5,7 +5,16 @@
 #
 # Usage: Add these domains to Pi-hole's whitelist
 
+mail.google.com
+
+# Takealot
 api.takealot.com
 cdn.takealot.com
 images.takealot.com
-mail.google.com
+
+frog.wix.com
+bundler-velo.parastorage.com
+omghitched.com
+email.thefieldberryfarm.com
+
+# Disabled the rest as there is a lot of random stuff there
