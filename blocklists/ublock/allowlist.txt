@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-02-19T14:56:32Z
-# Total domains: 1198
+# Generated: 2026-03-23T08:32:13Z
+# Total domains: 9
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -15,5 +15,8 @@ images.takealot.com
 frog.wix.com
 bundler-velo.parastorage.com
 omghitched.com
+email.thefieldberryfarm.com
+
+simonwillison.net
 
 # Disabled the rest as there is a lot of random stuff there
