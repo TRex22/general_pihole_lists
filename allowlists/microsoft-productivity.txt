@@ -1,11 +1,15 @@
-# Microsoft, Outlook, Slack, Zoom, ZScaler Allowlist for Pi-hole
+# Microsoft, Outlook, Slack, Zoom, ZScaler, LinkedIn Allowlist for Pi-hole
 # Required domains for productivity tools functionality
 # Sources:
 #   - Microsoft 365 URLs and IP ranges: https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges
+#   - Azure portal safelist URLs: https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-safelist-urls
 #   - Zoom network firewall requirements: https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0010740
 #   - Slack network requirements: https://slack.com/help/articles/360001603387
 #   - Zscaler network requirements: https://help.zscaler.com/zia/about-pac-files
 #   - TheSmashy O365 Whitelist: https://github.com/TheSmashy/O365Whitlist
+#   - LinkedIn Learning blocking policy: https://learn.microsoft.com/en-us/linkedin/learning/overview/overview-blocking-policy
+#   - LinkedIn Insight Tag domains: https://www.linkedin.com/help/lms/answer/a425696
+#   - LinkedIn media/CDN domains: https://learn.microsoft.com/en-us/linkedin/shared/references/migrations/media-migration
 
 # ============================================
 # MICROSOFT CORE
@@ -56,6 +60,12 @@ office.com
 www.office.com
 office.live.com
 ooc-g2.tm-4.office.com
+office365.com
+
+# Exchange Online mail flow and protection
+# *.protection.outlook.com - requires regex wildcard in Pi-hole
+# *.mail.protection.outlook.com - requires regex wildcard in Pi-hole
+# *.mx.microsoft - requires regex wildcard in Pi-hole
 
 res.public.onecdn.static.microsoft
 common.online.office.com
@@ -152,6 +162,45 @@ management.azure.com
 graph.microsoft.com
 graph.windows.net
 enterpriseregistration.windows.net
+ad.azure.com
+elm.iga.azure.com
+identitygovernance.azure.com
+iga.azure.com
+mspim.azure.com
+api.azrbac.mspim.azure.com
+appmanagement.activedirectory.microsoft.com
+
+# ============================================
+# SECURITY AND COMPLIANCE
+# ============================================
+
+security.microsoft.com
+defender.microsoft.com
+purview.microsoft.com
+compliance.microsoft.com
+protection.office.com
+
+# ============================================
+# INFORMATION PROTECTION / RIGHTS MANAGEMENT
+# ============================================
+
+informationprotection.hosting.portal.azure.net
+# *.aadrm.com - requires regex wildcard in Pi-hole
+# *.azurerms.com - requires regex wildcard in Pi-hole
+# *.informationprotection.azure.com - requires regex wildcard in Pi-hole
+
+# ============================================
+# POWER PLATFORM
+# ============================================
+
+flow.microsoft.com
+make.powerautomate.com
+powerapps.com
+make.powerapps.com
+# *.azure-apim.net - requires regex wildcard in Pi-hole
+# *.flow.microsoft.com - requires regex wildcard in Pi-hole
+# *.powerapps.com - requires regex wildcard in Pi-hole
+# *.powerautomate.com - requires regex wildcard in Pi-hole
 
 # Microsoft CDN
 c.s-microsoft.com
@@ -316,9 +365,56 @@ mobile.zscloud.net
 # Example: zscaler.de, zscaler.fr, etc.
 
 # ============================================
-# linkedin
+# LINKEDIN
 # ============================================
+# Sources:
+#   - https://learn.microsoft.com/en-us/linkedin/learning/overview/overview-blocking-policy
+#   - https://learn.microsoft.com/en-us/linkedin/shared/references/migrations/media-migration
+#   - https://www.linkedin.com/help/lms/answer/a425696
+
+# Core site
+linkedin.com
+www.linkedin.com
+m.linkedin.com
+mobile.linkedin.com
+business.linkedin.com
+talent.linkedin.com
+platform.linkedin.com
+
+# API
+api.linkedin.com
+
+# CDN / media (licdn.com is LinkedIn's CDN, owned by Microsoft)
+licdn.com
+media.licdn.com
+static.licdn.com
+dlc1-s.licdn.com
+dlc2-s.licdn.com
+snap.licdn.com
+
+# Link shorteners / redirects
+lnkd.in
+linked.in
+
+# Email sending
 t1.em.linkedin.com
+em.linkedin.com
+e.linkedin.com
+emails.linkedin.com
+bounce.linkedin.com
+news.linkedin.com
+linkedinmail.com
+
+# Advertising / Insight Tag
+px.ads.linkedin.com
+dc.ads.linkedin.com
+bizographics.com
+sjs.bizographics.com
+
+# LinkedIn Learning / Lynda
+lynda.com
+www.lynda.com
+cdn.lynda.com
 
 # ============================================
 # COMMON DEPENDENCIES
@@ -331,6 +427,25 @@ s2.symcb.com
 s3.symcb.com
 s4.symcb.com
 s5.symcb.com
+
+# OCSP / CRL endpoints (ID 125 - DefaultRequired)
+# Required for certificate validation across all Microsoft 365 services
+cacerts.digicert.com
+crl3.digicert.com
+crl4.digicert.com
+ocsp.digicert.com
+ocspx.digicert.com
+www.digicert.com
+crl.globalsign.com
+crl.globalsign.net
+ocsp.globalsign.com
+ocsp2.globalsign.com
+secure.globalsign.com
+crl.identrust.com
+isrg.trustid.ocsp.identrust.com
+mscrl.microsoft.com
+ocsp.msocsp.com
+oneocsp.microsoft.com
 
 # Virtual Earth (Maps in Microsoft products)
 dev.virtualearth.net
