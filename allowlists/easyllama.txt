@@ -1,0 +1,160 @@
+# EasyLlama Allowlist for Pi-hole
+# Required domains for EasyLlama workplace compliance training platform
+# Sources:
+#   - EasyLlama Help Center: https://help.easyllama.com/
+#   - EasyLlama Technical Issues: https://help.easyllama.com/izczjo8sks-overview-technical-issues
+#   - EasyLlama Phishing Simulator Emails: https://help.easyllama.com/allow-easyllama-emails-dmi-google-mail
+#   - EasyLlama Integrations: https://apitracker.io/a/easyllama/integrations
+#   - Intercom CSP/Firewall: https://www.intercom.com/help/en/articles/3894-using-intercom-with-content-security-policy
+#   - Wistia Firewall Allowlist: https://support.wistia.com/en/articles/8233530-firewall-and-network-allowlist-settings
+#   - Stripe Domains: https://docs.stripe.com/ips
+
+# Core EasyLlama domains
+easyllama.com
+www.easyllama.com
+app.easyllama.com
+l.easyllama.com
+dashboard.easyllama.com
+api.easyllama.com
+help.easyllama.com
+static.easyllama.com
+
+# Email delivery (SendGrid)
+# sendgrid.net
+# api.sendgrid.com
+# smtp.sendgrid.net
+# email.easyllama.com
+
+# Phishing simulator sender domains
+# Only required if using EasyLlama's phishing simulation feature
+# psm.easyllama.com
+# account-checker.com
+# accountreset.cloud
+# auth-identity.co
+# auth-notify.tech
+# login-alerts.co
+# reset-account.co
+# secure-loginhub.com
+# secureauthaccess.com
+# verify-account.co
+
+# Authentication and SSO
+# EasyLlama supports Google, Microsoft, ADP, and Okta SAML 2.0
+accounts.google.com
+oauth2.googleapis.com
+apis.google.com
+www.googleapis.com
+login.microsoftonline.com
+login.microsoft.com
+login.live.com
+# Okta (SAML 2.0 - requires regex wildcard entries in Pi-hole)
+# *.okta.com
+# *.oktapreview.com
+
+# Help center and CRM (HubSpot)
+# app.hubspot.com
+# cp.hubspot.com
+# cdn2.hubspot.net
+# cdn.hubspot.net
+# forms.hubspot.com
+# js.hubspot.com
+# js.hs-scripts.com
+# js.hs-analytics.net
+# js.hsforms.net
+# js.hscta.net
+# js.hs-banner.com
+# hs-banner.com
+# track.hubspot.com
+# api.hubapi.com
+# forms.hsforms.com
+# cta-service-cms2.hubspot.com
+# no-cache.hubspot.com
+# static.hsappstatic.net
+# sidekick.hubspot.com
+
+# Support chat widget (Intercom)
+# app.intercom.io
+# widget.intercom.io
+# js.intercomcdn.com
+# via.intercom.io
+# api.intercom.io
+# api-iam.intercom.io
+# api-ping.intercom.io
+# nexus-websocket-a.intercom.io
+# nexus-websocket-b.intercom.io
+# nexus-europe-websocket.intercom.io
+# nexus-australia-websocket.intercom.io
+# uploads.intercomcdn.com
+# fonts.intercomcdn.com
+# downloads.intercomcdn.com
+# static.intercomassets.com
+# gifs.intercomcdn.com
+# video-messages.intercomcdn.com
+# intercom-sheets.com
+# www.intercom-reporting.com
+# Intercom messenger/attachments (requires regex wildcard entries in Pi-hole)
+# *.intercom-messenger.com
+# *.intercom-attachments-1.com
+
+# Video streaming (Wistia)
+# EasyLlama uses Wistia for training video hosting
+wistia.com
+# *.wistia.com (requires regex wildcard entry in Pi-hole)
+fast.wistia.net
+embed-fastly.wistia.com
+embed-cloudfront.wistia.com
+embedwistia-a.akamaihd.net
+
+# Video streaming (YouTube)
+www.youtube.com
+youtube.com
+youtu.be
+ytimg.com
+i.ytimg.com
+s.ytimg.com
+# *.youtube.com, *.googlevideo.com (requires regex wildcard entries in Pi-hole)
+
+# Video streaming (Vimeo)
+vimeo.com
+player.vimeo.com
+vimeocdn.com
+fresnel.vimeo.com
+i.vimeocdn.com
+f.vimeocdn.com
+# *.vimeo.com, *.vimeocdn.com (requires regex wildcard entries in Pi-hole)
+
+# Analytics and session recording (may choose to block)
+# www.google-analytics.com
+# analytics.google.com
+# www.googletagmanager.com
+# ssl.google-analytics.com
+# stats.g.doubleclick.net
+# edge.fullstory.com
+# rs.fullstory.com
+
+# Payment processing (Stripe)
+# stripe.com
+# api.stripe.com
+# js.stripe.com
+# checkout.stripe.com
+# m.stripe.com
+# m.stripe.network
+# q.stripe.com
+# r.stripe.com
+# hooks.stripe.com
+# a.stripecdn.com
+# b.stripecdn.com
+# c.stripecdn.com
+# f.stripecdn.com
+# connect.stripe.com
+# files.stripe.com
+# billing.stripe.com
+# invoice.stripe.com
+# pay.stripe.com
+
+# CDN and static assets
+fonts.googleapis.com
+fonts.gstatic.com
+www.gstatic.com
+cdn.jsdelivr.net
+# *.cloudfront.net, *.fastly.net (requires regex wildcard entries in Pi-hole)
