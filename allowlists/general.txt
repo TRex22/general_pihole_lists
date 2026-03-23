@@ -135,14 +135,65 @@ upload.facebook.com
 b-graph.facebook.com
 
 # Lucid Charts
+# Source: https://lucid.app/network-requirements
+lucid.app
+lucidchart.com
+lucidspark.com
+lucidscale.com
+app.lucid.app
+app.lucidchart.com
+api.lucid.app
+auth.lucid.app
+accounts.lucid.app
+cdn.lucid.app
+static.lucid.app
+realtime.lucid.app
+docs.lucid.app
+export.lucid.app
+support.lucid.app
+help.lucid.app
 event.lucid.app
 event.us.lucid.app
 iceberg.lucid.app
+d2slcw3kip6qmk.cloudfront.net
 
-# Atlassian
+# Atlassian (Jira, Confluence, Bitbucket, Trello)
+# Source: https://support.atlassian.com/organization-administration/docs/ip-addresses-and-domains-for-atlassian-cloud-products/
+atlassian.com
+atlassian.net
+id.atlassian.com
+auth.atlassian.com
+login.atlassian.com
+account.atlassian.com
+sso.atlassian.com
+idp.atlassian.com
+api.atlassian.com
+pass.atlassian.com
+atlassian-account.com
 as.atlassian.com
 xp.atlassian.com
 web-security-reports.services.atlassian.com
+atl-paas.net
+aui-cdn.atlassian.com
+pf-cdn.atlassian.com
+api.media.atlassian.com
+media.atlassian.com
+atlassian-media.com
+jira.com
+confluence.com
+bitbucket.org
+bitbucket.io
+pipelines.atlassian.io
+trello.com
+api.trello.com
+d2k1ftgv7pobq7.cloudfront.net
+marketplace.atlassian.com
+status.atlassian.com
+forge.atlassian.com
+connect.atlassian.com
+support.atlassian.com
+community.atlassian.com
+developer.atlassian.com
 
 # Development Tooling
 rvm.io
@@ -156,16 +207,60 @@ auth.workos.com
 weather1.nothingtech.link
 
 # Pushbullet
+# Source: https://docs.pushbullet.com/
 pushbullet.com
+www.pushbullet.com
+api.pushbullet.com
+api2.pushbullet.com
+stream.pushbullet.com
+stream-android.pushbullet.com
+static.pushbullet.com
+pushbullet.imgix.net
+update.pushbullet.com
+# zebra.pushbullet.com  # telemetry, but blocks desktop app startup if blocked
 
 # Takealot
+takealot.com
+www.takealot.com
+m.takealot.com
 api.takealot.com
 cdn.takealot.com
 images.takealot.com
+static.takealot.com
+accounts.takealot.com
+seller.takealot.com
+
+# Takealot payment processing (Peach Payments)
+peachpayments.com
+secure.peachpayments.com
+checkout.peachpayments.com
 
 # Malwarebytes
+# Sources:
+#   - https://app-support.malwarebytes.com/docs/DOC-1652
+#   - https://support.threatdown.com/hc/en-us/articles/4413798711699
+malwarebytes.com
+www.malwarebytes.com
+malwarebytes.org
+cloud.malwarebytes.com
+socket.cloud.malwarebytes.com
+detect-remediate.cloud.malwarebytes.com
 sso.malwarebytes.com
+my-sso.malwarebytes.com
 cloud-keycloak.mwbsys-prod.com
+hubble.mb-cosmos.com
+blitz.mb-cosmos.com
+data-cdn-static.mbamupdates.com
+data-cdn.mbamupdates.com
+cdn.mwbsys.com
+sirius.mwbsys.com
+lic-iris-content-prod.mwbsys.com
+keystone.mwbsys.com
+keystone-akamai.mwbsys.com
+ark.mwbsys.com
+threatdown.com
+console.threatdown.com
+# telemetry.malwarebytes.com  # product telemetry - optional
 
 # Rapid7
 cdn.us.exposure-analytics.insight.rapid7.com
