@@ -99,6 +99,10 @@ SKIP_DOMAINS = Set.new(%w[
   caixa.gov.br terra.com.br
   btgpactual.com itau.com.br safra.com.br santandernet.com.br
   bancooriginal.com.br bitcointrade.com.br foxbit.com.br
+  bilibili.com 126.com 163.com
+  dnspod.cn dnspod.com
+  facebook.net facebookmail.com
+  doubleclick.net sohu.com sohu.com.cn
 ]).freeze
 
 # Root-level cloud/CDN platform domains that are too broad to block wholesale —
