@@ -55,12 +55,12 @@ SKIP_DOMAINS = Set.new(%w[
   facebook.com instagram.com linkedin.com
   reddit.com telegram.org t.me
   discord.com discord.gg
-  google.com gmail.com googleapis.com gstatic.com googletagmanager.com
-  microsoft.com outlook.com office.com office365.com
+  google.com gmail.com googleapis.com gstatic.com googletagmanager.com appsheet.com
+  microsoft.com outlook.com office.com office365.com visualstudio.com
   windows.com live.com hotmail.com bing.com microsoftonline.com azure.com
   apple.com icloud.com
   amazon.com
-  cloudflare.com
+  cloudflare.com bootcdn.net bootcss.com
   github.com githubusercontent.com
   gitlab.com bitbucket.org
   wikipedia.org wikimedia.org
@@ -82,6 +82,15 @@ SKIP_DOMAINS = Set.new(%w[
   stackoverflow.com stackexchange.com
   docker.com kubernetes.io
   debian.org ubuntu.com redhat.com
+  protonmail.com proton.me
+  chatgpt.com claude.ai deepseek.com huggingface.co
+  blogspot.com archive.org
+  7-zip.org brew.sh example.com
+  etherscan.io binance.com metamask.io
+  ip-api.com ipapi.co ipinfo.io ipgeolocation.io
+  matrix.org meta.com msn.com vk.com trello.com
+  notepad-plus-plus.org open-vsx.org pkg.go.dev unpkg.com vscode.dev
+  dictionary.com indeed.com zohomail.com
 ]).freeze
 
 class THNScraper
