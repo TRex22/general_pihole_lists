@@ -19,11 +19,11 @@
 
 require 'httparty'
 require 'nokogiri'
+require 'tqdm'
 require 'json'
 require 'uri'
 require 'optparse'
 require 'fileutils'
-require 'thread'
 require 'set'
 require 'time'
 require 'date'
@@ -118,10 +118,14 @@ class THNScraper
       new_count   = 0
       hit_cutoff  = false
 
-      entries.each do |entry|
+      entries.tqdm(desc: "Page #{page}", unit: 'entry', leave: false).each do |entry|
         href = alternate_link(entry)
-        next if href.nil? || seen.include?(href)
+
+        # Skip nil, within-session duplicates, and articles fully processed in a prior run
+        next if href.nil?
+        next if seen.include?(href)
         seen.add(href)
+        next if @cache['articles'].dig(href, 'written_to_blocklist')
 
         published = parse_time(entry.dig('published', '$t'))
         next unless published
@@ -169,27 +173,11 @@ class THNScraper
   # ──────────────────────────────────────────────────────────────────────────
 
   def scrape_articles_parallel(articles)
-    puts "Scraping articles with #{@parallel} parallel workers...\n"
-
-    queue = Queue.new
-    articles.each { |a| queue << a }
-
-    workers = @parallel.times.map do
-      Thread.new do
-        loop do
-          article = begin
-            queue.pop(true)
-          rescue ThreadError
-            nil
-          end
-          break unless article
-
-          scrape_article(article)
-        end
-      end
+    batches = articles.each_slice(@parallel).to_a
+    batches.tqdm(desc: 'Scraping articles', total: batches.size, unit: 'batch').each do |batch|
+      threads = batch.map { |article| Thread.new { scrape_article(article) } }
+      threads.each(&:join)
     end
-
-    workers.each(&:join)
   end
 
   def scrape_article(article)
@@ -240,8 +228,6 @@ class THNScraper
         puts "  [NO DOMAINS ] #{url}"
       end
     end
-
-    sleep 0.3
   end
 
   # ──────────────────────────────────────────────────────────────────────────
@@ -256,12 +242,6 @@ class THNScraper
     return [] unless content
 
     scan_text_for_domains(content.text, domains)
-
-    # Also scan code/pre blocks which often contain IOCs
-    doc.css('code, pre, tt, kbd, blockquote').each do |node|
-      scan_text_for_domains(node.text, domains)
-    end
-
     domains.to_a.sort
   end
 
@@ -307,7 +287,7 @@ class THNScraper
 
     entries_to_write = {}
     @pending.each do |url, data|
-      new_domains = data[:domains].reject { |d| existing.include?(d.downcase) }
+      new_domains = data[:domains].reject { |d| existing.include?(d) }
       entries_to_write[url] = data.merge(domains: new_domains) if new_domains.any?
     end
 
@@ -374,6 +354,16 @@ class THNScraper
   # ──────────────────────────────────────────────────────────────────────────
 
   def fetch_with_retry(url, retries: 3)
+    # Reserve a slot in the global request timeline before making the call.
+    # Sleep is done outside the mutex so other threads aren't blocked while waiting.
+    delay = @request_mutex.synchronize do
+      elapsed = Time.now - @last_request_at
+      wait = [MIN_REQUEST_INTERVAL - elapsed, 0].max
+      @last_request_at = Time.now + wait
+      wait
+    end
+    sleep(delay) if delay > 0
+
     retries.times do |attempt|
       begin
         response = HTTParty.get(
@@ -406,8 +396,8 @@ class THNScraper
   def print_summary
     articles = @cache['articles']
     total              = articles.size
-    with_domains       = articles.count { |_, v| v['domains_found'].to_i > 0 }
-    total_domains      = articles.sum { |_, v| v['domains_found'].to_i }
+    with_domains       = articles.count { |_, v| v['domains']&.any? }
+    total_domains      = articles.sum { |_, v| v['domains']&.size.to_i }
     written_articles   = articles.count { |_, v| v['written_to_blocklist'] }
 
     puts
