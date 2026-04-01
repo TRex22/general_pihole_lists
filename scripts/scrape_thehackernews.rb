@@ -45,25 +45,27 @@ VALID_DOMAIN_RE = /\A(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-
 # Caps effective request rate at ~5 req/s regardless of parallelism.
 MIN_REQUEST_INTERVAL = 0.2
 
-# Domains that commonly appear in security articles as context (platforms, tools, news sites)
-# but are never themselves malicious. Also applied to parent-domain matching:
-# e.g. "api.youtube.com" is skipped because "youtube.com" is in this list.
-# Extend this list freely — the cleaner also retroactively removes them from malicious.txt.
+# Domains (and their subdomains) that are never themselves malicious — they appear in
+# security articles as attack targets, platforms, or reference links.
+# Subdomain cascade: "api.youtube.com" matches "youtube.com" in this list.
 SKIP_DOMAINS = Set.new(%w[
   youtube.com youtu.be
-  twitter.com x.com
+  twitter.com x.com t.co
   facebook.com instagram.com linkedin.com
   reddit.com telegram.org t.me
   discord.com discord.gg
-  google.com gmail.com googleapis.com gstatic.com googletagmanager.com appsheet.com
+  google.com gmail.com googleapis.com gstatic.com googletagmanager.com
+  googleusercontent.com app.google
+  appsheet.com
   microsoft.com outlook.com office.com office365.com visualstudio.com
   windows.com live.com hotmail.com bing.com microsoftonline.com azure.com
   apple.com icloud.com
-  amazon.com
+  amazon.com amazon.pl
   cloudflare.com bootcdn.net bootcss.com
-  github.com githubusercontent.com
+  github.com githubusercontent.com github.dev
   gitlab.com bitbucket.org
   wikipedia.org wikimedia.org
+  apache.org
   thehackernews.com
   virustotal.com shodan.io censys.io urlscan.io
   hybrid-analysis.com any.run
@@ -86,11 +88,28 @@ SKIP_DOMAINS = Set.new(%w[
   chatgpt.com claude.ai deepseek.com huggingface.co
   blogspot.com archive.org
   7-zip.org brew.sh example.com
-  etherscan.io binance.com metamask.io
+  etherscan.io binance.com metamask.io coinbasepro.com localbitcoins.com
   ip-api.com ipapi.co ipinfo.io ipgeolocation.io
   matrix.org meta.com msn.com vk.com trello.com
+  mail.ru rambler.ru ukr.net
   notepad-plus-plus.org open-vsx.org pkg.go.dev unpkg.com vscode.dev
   dictionary.com indeed.com zohomail.com
+  tinyurl.com tiny.cc qrco.de
+  gainsightcloud.com ustream.tv langchain.com aha.io petapixel.com
+  caixa.gov.br terra.com.br
+  btgpactual.com itau.com.br safra.com.br santandernet.com.br
+  bancooriginal.com.br bitcointrade.com.br foxbit.com.br
+]).freeze
+
+# Root-level cloud/CDN platform domains that are too broad to block wholesale —
+# adding them here removes only the bare root entry from malicious.txt without
+# cascading to subdomains (e.g. a specific malicious workers.dev subdomain stays blockable).
+EXACT_SKIP_DOMAINS = Set.new(%w[
+  azureedge.net
+  azurefd.net
+  windows.net
+  workers.dev
+  cloudfunctions.net
 ]).freeze
 
 class THNScraper
@@ -365,7 +384,9 @@ class THNScraper
 
   def skip_domain?(domain)
     return false if domain.nil? || domain.empty?
-    # Match exact entries and all subdomains (e.g. "api.youtube.com" matches "youtube.com")
+    # Exact-only match: root CDN/cloud domains too broad to cascade to subdomains
+    return true if EXACT_SKIP_DOMAINS.include?(domain)
+    # Subdomain cascade: "api.youtube.com" matches "youtube.com"
     SKIP_DOMAINS.any? { |s| domain == s || domain.end_with?(".#{s}") }
   end
 
