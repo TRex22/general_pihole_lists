@@ -30,8 +30,9 @@ require 'date'
 
 FEED_BASE_URL   = 'https://thehackernews.com/feeds/posts/default'
 MAX_RESULTS     = 25  # Blogger API; website shows ~24-25 per page
-DEFAULT_YEARS   = 2
-DEFAULT_PARALLEL = 5
+DEFAULT_YEARS      = 2
+DEFAULT_PARALLEL   = 5
+DEFAULT_PAGES_BACK = 2
 
 # Cache file lives next to this script; added to .gitignore
 CACHE_FILE_DEFAULT  = File.join(__dir__, 'thn_scrape_cache.json')
@@ -44,9 +45,49 @@ VALID_DOMAIN_RE = /\A(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-
 # Caps effective request rate at ~5 req/s regardless of parallelism.
 MIN_REQUEST_INTERVAL = 0.2
 
+# Domains that commonly appear in security articles as context (platforms, tools, news sites)
+# but are never themselves malicious. Also applied to parent-domain matching:
+# e.g. "api.youtube.com" is skipped because "youtube.com" is in this list.
+# Extend this list freely — the cleaner also retroactively removes them from malicious.txt.
+SKIP_DOMAINS = Set.new(%w[
+  youtube.com youtu.be
+  twitter.com x.com
+  facebook.com instagram.com linkedin.com
+  reddit.com telegram.org t.me
+  discord.com discord.gg
+  google.com gmail.com googleapis.com gstatic.com googletagmanager.com
+  microsoft.com outlook.com office.com office365.com
+  windows.com live.com hotmail.com bing.com microsoftonline.com azure.com
+  apple.com icloud.com
+  amazon.com
+  cloudflare.com
+  github.com githubusercontent.com
+  gitlab.com bitbucket.org
+  wikipedia.org wikimedia.org
+  thehackernews.com
+  virustotal.com shodan.io censys.io urlscan.io
+  hybrid-analysis.com any.run
+  abuse.ch threatfox.abuse.ch urlhaus.abuse.ch bazaar.abuse.ch
+  talosintelligence.com mitre.org cve.mitre.org
+  nvd.nist.gov nist.gov cisa.gov
+  bleepingcomputer.com krebsonsecurity.com
+  darkreading.com securityweek.com threatpost.com
+  techcrunch.com wired.com arstechnica.com zdnet.com
+  reuters.com bbc.com bbc.co.uk cnn.com
+  oracle.com salesforce.com adobe.com
+  paypal.com stripe.com
+  wordpress.com wordpress.org
+  php.net python.org ruby-lang.org nodejs.org
+  npmjs.com pypi.org rubygems.org
+  stackoverflow.com stackexchange.com
+  docker.com kubernetes.io
+  debian.org ubuntu.com redhat.com
+]).freeze
+
 class THNScraper
-  def initialize(years:, parallel:, output_file:, cache_file:, dry_run:)
-    @years           = years
+  def initialize(years:, pages_back:, parallel:, output_file:, cache_file:, dry_run:)
+    @years           = years       # nil → incremental mode; Integer → full mode
+    @pages_back      = pages_back
     @parallel        = parallel
     @output_file     = File.expand_path(output_file)
     @cache_file      = File.expand_path(cache_file)
@@ -59,9 +100,18 @@ class THNScraper
   end
 
   def run
+    last_scraped = most_recent_cached_date
+    incremental  = @years.nil? && !last_scraped.nil?
+
     puts 'The Hacker News Malicious Domain Scraper'
     puts '=' * 50
-    puts "Scraping articles from the last #{@years} year(s)"
+    if incremental
+      puts "Mode             : incremental (#{@pages_back} pages back from #{last_scraped})"
+    elsif @years
+      puts "Mode             : full scan (#{@years} year(s))"
+    else
+      puts "Mode             : first run — full scan (#{DEFAULT_YEARS} year(s))"
+    end
     puts "Parallel workers : #{@parallel}"
     puts "Output file      : #{@output_file}"
     puts "Cache file       : #{@cache_file}"
@@ -73,7 +123,10 @@ class THNScraper
 
     scrape_articles_parallel(articles)
 
-    write_to_blocklist unless @dry_run
+    unless @dry_run
+      clean_blocklist
+      write_to_blocklist
+    end
 
     save_cache
     print_summary
@@ -86,17 +139,21 @@ class THNScraper
   # ──────────────────────────────────────────────────────────────────────────
 
   def collect_article_urls
+    last_scraped     = most_recent_cached_date
+    incremental      = @years.nil? && !last_scraped.nil?
+    cutoff           = incremental ? Date.today << (DEFAULT_YEARS * 12) : Date.today << ((@years || DEFAULT_YEARS) * 12)
+    pages_beyond_last = 0
+
     puts 'Collecting article URLs from Blogger feed...'
 
-    cutoff = Date.today << (@years * 12)
     current_max = Time.now.utc
-    articles = []
-    seen = Set.new
-    page = 1
+    articles    = []
+    seen        = Set.new
+    page        = 1
 
     loop do
       encoded = URI.encode_www_form_component(current_max.strftime('%Y-%m-%dT%H:%M:%S+00:00'))
-      url = "#{FEED_BASE_URL}?updated-max=#{encoded}&max-results=#{MAX_RESULTS}&alt=json"
+      url     = "#{FEED_BASE_URL}?updated-max=#{encoded}&max-results=#{MAX_RESULTS}&alt=json"
 
       puts "  Page #{page}: before #{current_max.strftime('%Y-%m-%d %H:%M UTC')}"
 
@@ -106,7 +163,7 @@ class THNScraper
         break
       end
 
-      data = JSON.parse(response.body)
+      data    = JSON.parse(response.body)
       entries = data.dig('feed', 'entry') || []
 
       if entries.empty?
@@ -120,12 +177,8 @@ class THNScraper
 
       entries.tqdm(desc: "Page #{page}", unit: 'entry', leave: false).each do |entry|
         href = alternate_link(entry)
-
-        # Skip nil, within-session duplicates, and articles fully processed in a prior run
-        next if href.nil?
-        next if seen.include?(href)
+        next if href.nil? || seen.include?(href)
         seen.add(href)
-        next if @cache['articles'].dig(href, 'written_to_blocklist')
 
         published = parse_time(entry.dig('published', '$t'))
         next unless published
@@ -137,19 +190,44 @@ class THNScraper
 
         oldest_time = published if oldest_time.nil? || published < oldest_time
 
+        # Skip re-scraping if the article is in cache and hasn't been updated since.
+        # The Blogger feed's "updated" timestamp changes when the post content changes.
+        feed_updated_at = entry.dig('updated', '$t')
+        cached_entry    = @cache['articles'][href]
+        force_rescrape  = cached_entry && cached_entry['feed_updated_at'] != feed_updated_at
+
+        next if cached_entry && !force_rescrape
+
         articles << {
-          url:      href,
-          date_str: published.to_date.to_s,
-          title:    entry.dig('title', '$t')&.strip
+          url:             href,
+          date_str:        published.to_date.to_s,
+          title:           entry.dig('title', '$t')&.strip,
+          feed_updated_at: feed_updated_at,
+          force_rescrape:  force_rescrape
         }
         new_count += 1
       end
 
-      puts "  -> #{new_count} articles added (total #{articles.size})"
+      puts "  -> #{new_count} new article(s) queued (total #{articles.size})"
 
-      break if hit_cutoff || new_count == 0
+      break if hit_cutoff
 
-      # Step back just before the oldest entry on this page for next request
+      # Guard against a stuck cursor (all entries on this page were already seen/skipped)
+      if oldest_time.nil?
+        puts '  -> No advanceable entries on page, stopping.'
+        break
+      end
+
+      # Incremental mode: stop after @pages_back pages whose oldest article
+      # predates the most recently cached article — this is the overlap window.
+      if incremental && oldest_time.to_date < last_scraped
+        pages_beyond_last += 1
+        if pages_beyond_last >= @pages_back
+          puts "  -> #{@pages_back} overlap page(s) fetched past #{last_scraped}, stopping."
+          break
+        end
+      end
+
       current_max = oldest_time - 1
       page += 1
       sleep 0.5
@@ -168,6 +246,14 @@ class THNScraper
     nil
   end
 
+  def most_recent_cached_date
+    return nil if @cache['articles'].empty?
+
+    @cache['articles'].values
+      .filter_map { |a| Date.parse(a['date']) rescue nil }
+      .max
+  end
+
   # ──────────────────────────────────────────────────────────────────────────
   # Parallel article scraping
   # ──────────────────────────────────────────────────────────────────────────
@@ -183,19 +269,10 @@ class THNScraper
   def scrape_article(article)
     url = article[:url]
 
-    @mutex.synchronize do
-      cached = @cache['articles'][url]
-      if cached
-        puts "  [CACHED] #{url} (#{cached['domains']&.size || 0} domains)"
-        if cached['domains']&.any? && !cached['written_to_blocklist']
-          @pending[url] = {
-            domains: cached['domains'],
-            title:   cached['title'],
-            date:    cached['date']
-          }
-        end
-        return
-      end
+    # collect_article_urls only enqueues articles that are new or force_rescrape,
+    # so a cached entry here means it was updated since last scrape.
+    if article[:force_rescrape]
+      @mutex.synchronize { puts "  [UPDATED ] #{url} — re-scraping" }
     end
 
     response = fetch_with_retry(url)
@@ -212,6 +289,7 @@ class THNScraper
       'url'                  => url,
       'title'                => title,
       'date'                 => article[:date_str],
+      'feed_updated_at'      => article[:feed_updated_at],
       'scraped_at'           => Time.now.utc.iso8601,
       'domains'              => domains,
       'written_to_blocklist' => false
@@ -249,7 +327,7 @@ class THNScraper
     # Find any sequence containing [.] and extract valid domain candidates
     text.scan(/[a-zA-Z0-9][a-zA-Z0-9.\-]*\[\.\][a-zA-Z0-9.\-]*[a-zA-Z0-9]/) do |match|
       candidate = normalize_domain(match)
-      domains << candidate if valid_domain?(candidate)
+      domains << candidate if valid_domain?(candidate) && !skip_domain?(candidate)
     end
   end
 
@@ -276,9 +354,80 @@ class THNScraper
     VALID_DOMAIN_RE.match?(domain)
   end
 
+  def skip_domain?(domain)
+    return false if domain.nil? || domain.empty?
+    # Match exact entries and all subdomains (e.g. "api.youtube.com" matches "youtube.com")
+    SKIP_DOMAINS.any? { |s| domain == s || domain.end_with?(".#{s}") }
+  end
+
   # ──────────────────────────────────────────────────────────────────────────
   # Output
   # ──────────────────────────────────────────────────────────────────────────
+
+  def clean_blocklist
+    return unless File.exist?(@output_file)
+
+    lines = File.readlines(@output_file, chomp: true)
+    removed = []
+
+    # Split into sections on blank lines so we can drop orphaned source blocks
+    sections = []
+    current  = []
+    lines.each do |line|
+      if line.strip.empty?
+        sections << current unless current.empty?
+        sections << :blank
+        current = []
+      else
+        current << line
+      end
+    end
+    sections << current unless current.empty?
+
+    clean_sections = sections.map do |section|
+      next :blank if section == :blank
+
+      has_domains = section.any? { |l| !l.strip.start_with?('#') }
+
+      filtered = section.reject do |l|
+        stripped = l.strip
+        next false if stripped.start_with?('#')
+        domain = stripped.split('#').first.strip.downcase
+        if skip_domain?(domain)
+          removed << domain
+          true
+        else
+          false
+        end
+      end
+
+      still_has_domains = filtered.any? { |l| !l.strip.start_with?('#') }
+
+      # Drop entire section if it had domains but all were removed
+      has_domains && !still_has_domains ? nil : filtered
+    end
+
+    if removed.empty?
+      puts 'No skip-listed domains found in blocklist — nothing to clean.'
+      return
+    end
+
+    puts "Removed #{removed.size} skip-listed domain(s) from #{@output_file}:"
+    removed.each { |d| puts "  - #{d}" }
+
+    # Reconstruct, collapsing consecutive blanks into one
+    output_lines = []
+    clean_sections.each do |section|
+      next if section.nil?
+      if section == :blank
+        output_lines << '' unless output_lines.last == ''
+      else
+        output_lines.concat(section)
+      end
+    end
+
+    File.write(@output_file, output_lines.join("\n").strip + "\n")
+  end
 
   def write_to_blocklist
     return if @pending.empty?
@@ -418,7 +567,8 @@ end
 # ────────────────────────────────────────────────────────────────────────────
 
 options = {
-  years:       DEFAULT_YEARS,
+  years:       nil,                 # nil = incremental if cache exists, else DEFAULT_YEARS full scan
+  pages_back:  DEFAULT_PAGES_BACK,
   parallel:    DEFAULT_PARALLEL,
   output_file: OUTPUT_FILE_DEFAULT,
   cache_file:  CACHE_FILE_DEFAULT,
@@ -431,8 +581,13 @@ OptionParser.new do |opts|
   opts.separator 'Options:'
 
   opts.on('-y', '--years N', Integer,
-          "Years of history to scrape (default: #{DEFAULT_YEARS})") do |n|
+          "Full scan: go back N years (overrides incremental mode)") do |n|
     options[:years] = n
+  end
+
+  opts.on('-b', '--pages-back N', Integer,
+          "Incremental mode: overlap pages before last cached date (default: #{DEFAULT_PAGES_BACK})") do |n|
+    options[:pages_back] = n
   end
 
   opts.on('-p', '--parallel N', Integer,
@@ -463,6 +618,7 @@ end.parse!
 
 THNScraper.new(
   years:       options[:years],
+  pages_back:  options[:pages_back],
   parallel:    options[:parallel],
   output_file: options[:output_file],
   cache_file:  options[:cache_file],
