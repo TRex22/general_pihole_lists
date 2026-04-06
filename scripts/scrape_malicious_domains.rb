@@ -210,12 +210,9 @@ class BaseScraper
 
   # ── Blocklist ───────────────────────────────────────────────────────────────
 
-  def clean_blocklist
-    return unless File.exist?(@output_file)
-
-    lines = File.readlines(@output_file, chomp: true)
-    removed = []
-
+  # Parse an array of lines into sections separated by blank lines.
+  # Returns an array where each element is either :blank or an Array of lines.
+  def parse_sections(lines)
     sections = []
     current  = []
     lines.each do |line|
@@ -228,6 +225,15 @@ class BaseScraper
       end
     end
     sections << current unless current.empty?
+    sections
+  end
+
+  def clean_blocklist
+    return unless File.exist?(@output_file)
+
+    lines    = File.readlines(@output_file, chomp: true)
+    removed  = []
+    sections = parse_sections(lines)
 
     clean_sections = sections.map do |section|
       next :blank if section == :blank
@@ -278,30 +284,107 @@ class BaseScraper
 
     existing = read_existing_blocklist_domains
 
-    entries_to_write = {}
+    # Build domain → [source_urls] across all pending articles, deduped globally
+    domain_sources = {}
     @pending.each do |url, data|
-      new_domains = data[:domains].reject { |d| existing.include?(d) }
-      entries_to_write[url] = data.merge(domains: new_domains) if new_domains.any?
+      data[:domains].each do |d|
+        domain_sources[d] ||= []
+        domain_sources[d] << url unless domain_sources[d].include?(url)
+      end
     end
 
-    if entries_to_write.empty?
-      puts "\nAll found domains already present in blocklist — nothing to append."
+    new_domain_sources = domain_sources.reject { |d, _| existing.include?(d) }
+    dup_domain_sources = domain_sources.select { |d, _| existing.include?(d) }
+
+    # For domains already in the blocklist, insert source attribution comments
+    add_source_comments_for_duplicates(dup_domain_sources) if dup_domain_sources.any?
+
+    if new_domain_sources.empty?
+      puts "\nAll found domains already present in blocklist — nothing new to append." if dup_domain_sources.empty?
+      mark_pending_written
       return
     end
 
-    total = entries_to_write.values.sum { |d| d[:domains].size }
-    puts "\nAppending #{total} new domain(s) across #{entries_to_write.size} source(s) to #{@output_file}"
+    # Group new domains by their exact set of source URLs so domains shared by
+    # multiple articles get a single block with multiple # Source: lines.
+    source_set_groups = {}
+    new_domain_sources.each do |domain, urls|
+      source_set_groups[urls] ||= []
+      source_set_groups[urls] << domain
+    end
+
+    total = new_domain_sources.size
+    puts "\nAppending #{total} new domain(s) to #{@output_file}"
 
     File.open(@output_file, 'a') do |f|
       f.puts  # blank line separator before new block
-      entries_to_write.each do |url, data|
-        f.puts "# Source: #{url}"
-        data[:domains].each { |d| f.puts d }
+      source_set_groups.each do |urls, domains|
+        urls.each { |url| f.puts "# Source: #{url}" }
+        domains.sort.each { |d| f.puts d }
         f.puts
-
-        @cache['articles'][url]['written_to_blocklist'] = true if @cache['articles'][url]
       end
     end
+
+    mark_pending_written
+  end
+
+  # Insert new # Source: comments into existing sections for domains that are
+  # already in the blocklist, so every source that found the domain is credited.
+  def add_source_comments_for_duplicates(dup_domain_sources)
+    return unless File.exist?(@output_file)
+
+    sections = parse_sections(File.readlines(@output_file, chomp: true))
+    added_count = 0
+
+    sections.each do |section|
+      next if section == :blank
+
+      # Domains present in this section
+      section_domains = section
+        .reject { |l| l.strip.start_with?('#') }
+        .map    { |l| l.split('#').first.strip.downcase }
+        .to_set
+
+      # Collect new source URLs for any domain in this section
+      urls_to_add = []
+      dup_domain_sources.each do |domain, urls|
+        next unless section_domains.include?(domain)
+        urls.each { |u| urls_to_add << u unless urls_to_add.include?(u) }
+      end
+      next if urls_to_add.empty?
+
+      # Skip sources already commented in this section
+      existing_sources = section
+        .select { |l| l.strip.start_with?('# Source:') }
+        .map(&:strip)
+        .to_set
+
+      new_sources = urls_to_add.reject { |u| existing_sources.include?("# Source: #{u}") }
+      next if new_sources.empty?
+
+      # Insert after the last existing # Source: line, or at the top of the section
+      last_source_idx = section.rindex { |l| l.strip.start_with?('# Source:') }
+      insert_at = last_source_idx ? last_source_idx + 1 : 0
+
+      new_sources.each_with_index do |url, i|
+        section.insert(insert_at + i, "# Source: #{url}")
+        added_count += 1
+      end
+    end
+
+    return if added_count.zero?
+
+    output_lines = []
+    sections.each do |section|
+      if section == :blank
+        output_lines << '' unless output_lines.last == ''
+      else
+        output_lines.concat(section)
+      end
+    end
+    File.write(@output_file, output_lines.join("\n").strip + "\n")
+
+    puts "\nAdded source attribution for #{dup_domain_sources.size} duplicate domain(s) already in blocklist."
   end
 
   def read_existing_blocklist_domains
@@ -313,6 +396,12 @@ class BaseScraper
         next if line.empty? || line.start_with?('#')
         set << line.split('#').first.strip.downcase
       end
+    end
+  end
+
+  def mark_pending_written
+    @pending.each_key do |url|
+      @cache['articles'][url]['written_to_blocklist'] = true if @cache['articles'][url]
     end
   end
 
