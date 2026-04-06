@@ -118,6 +118,7 @@ SKIP_DOMAINS = Set.new(%w[
   docker.com kubernetes.io
   debian.org ubuntu.com redhat.com
   protonmail.com proton.me proofpoint.com
+  icann.org okta.com okta.net oktacdn.com twilio.com docusign.com docusign.net
   chatgpt.com claude.ai deepseek.com huggingface.co
   semgrep.dev cursor.com cursor.sh cursor.so
   blogspot.com archive.org
