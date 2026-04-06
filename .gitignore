@@ -1,2 +1,4 @@
-# THN scraper cache - contains scraped article metadata, not committed
+# Malicious domain scraper cache - contains scraped article metadata, not committed
+.DS_Store
+scripts/malicious_domains_cache.json
 scripts/thn_scrape_cache.json
