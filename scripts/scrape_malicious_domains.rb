@@ -21,6 +21,7 @@ require 'json'
 require 'uri'
 require 'optparse'
 require 'fileutils'
+require 'tempfile'
 require 'set'
 require 'time'
 require 'date'
@@ -31,6 +32,11 @@ DEFAULT_PAGES_BACK = 2
 
 CACHE_FILE_DEFAULT  = File.join(__dir__, 'malicious_domains_cache.json')
 OUTPUT_FILE_DEFAULT = File.join(__dir__, '..', 'blocklists', 'malicious.txt')
+
+# macOS Vision OCR helper — compiled on first use, reused thereafter.
+OCR_MACOS_SCRIPT  = File.join(__dir__, 'ocr_macos.swift')
+OCR_MACOS_BINARY  = File.join(__dir__, 'ocr_macos')
+OCR_COMPILE_MUTEX = Mutex.new
 
 # RFC-compliant domain label structure. No network access — purely structural.
 VALID_DOMAIN_RE = /\A(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,63}\z/
@@ -206,6 +212,125 @@ class BaseScraper
     end
 
     nil
+  end
+
+  # ── OCR ─────────────────────────────────────────────────────────────────────
+
+  # Returns :macos, :tesseract, or nil. Memoised per instance.
+  def ocr_backend
+    @ocr_backend ||= detect_ocr_backend
+  end
+
+  def detect_ocr_backend
+    # macOS: prefer Vision framework via compiled Swift helper.
+    if RUBY_PLATFORM.include?('darwin')
+      if File.exist?(OCR_MACOS_SCRIPT) &&
+         (system('which swiftc > /dev/null 2>&1') || system('which swift > /dev/null 2>&1'))
+        return :macos
+      end
+    end
+
+    # Any platform: fall back to tesseract if it's in PATH.
+    return :tesseract if system('which tesseract > /dev/null 2>&1')
+
+    nil
+  end
+
+  # Print an orange/amber warning to stderr (colour only when stderr is a TTY).
+  def warn_orange(msg)
+    if $stderr.isatty
+      warn "\e[33m#{msg}\e[0m"
+    else
+      warn msg
+    end
+  end
+
+  # Call once at scraper startup to surface a clear warning when OCR is absent.
+  def warn_if_no_ocr_backend
+    return if ocr_backend
+
+    warn_orange('Warning: no OCR backend found — images will be cached but not scanned for domains.')
+    if RUBY_PLATFORM.include?('darwin')
+      warn_orange('  macOS: install Xcode Command Line Tools  →  xcode-select --install')
+    end
+    warn_orange('  Linux/Windows: install Tesseract  →  https://github.com/tesseract-ocr/tesseract')
+  end
+
+  # Compile the Swift OCR helper once; thread-safe via OCR_COMPILE_MUTEX.
+  # Falls back to :tesseract (or nil) if compilation fails.
+  def ensure_macos_ocr_compiled
+    OCR_COMPILE_MUTEX.synchronize do
+      return if File.exist?(OCR_MACOS_BINARY)
+      puts '  Compiling macOS OCR helper (one-time)...'
+      success = system('swiftc', OCR_MACOS_SCRIPT, '-o', OCR_MACOS_BINARY)
+      unless success && File.exist?(OCR_MACOS_BINARY)
+        warn_orange('  Warning: could not compile macOS OCR helper — falling back to tesseract')
+        @ocr_backend = system('which tesseract > /dev/null 2>&1') ? :tesseract : nil
+      end
+    end
+  end
+
+  # Download an image URL to a temp file, run OCR, return the recognised text.
+  # Returns nil on any error so callers can simply skip.
+  def ocr_image_url(image_url)
+    return nil unless ocr_backend
+
+    ensure_macos_ocr_compiled if ocr_backend == :macos
+
+    response = HTTParty.get(
+      image_url,
+      headers: { 'User-Agent' => 'Mozilla/5.0 (compatible; pihole-list-builder/1.0; domain scraper)' },
+      timeout: 30,
+      follow_redirects: true
+    )
+    return nil unless response.success?
+
+    ext = image_extension_from(image_url, response.headers['content-type'])
+
+    Tempfile.create(['ocr_img', ext]) do |tmp|
+      tmp.binmode
+      tmp.write(response.body)
+      tmp.flush
+
+      case ocr_backend
+      when :macos
+        text = IO.popen([OCR_MACOS_BINARY, tmp.path], err: File::NULL, &:read)
+        $?.success? ? text : nil
+      when :tesseract
+        # --psm 11: sparse text — finds as much text as possible (best for screenshots)
+        text = IO.popen(['tesseract', tmp.path, 'stdout', '--psm', '11'], err: File::NULL, &:read)
+        $?.success? ? text : nil
+      end
+    end
+  rescue StandardError => e
+    warn "  OCR error for #{image_url}: #{e.message}"
+    nil
+  end
+
+  def image_extension_from(url, content_type)
+    case content_type&.split(';')&.first&.strip
+    when 'image/png'  then '.png'
+    when 'image/jpeg' then '.jpg'
+    when 'image/gif'  then '.gif'
+    when 'image/webp' then '.webp'
+    when 'image/bmp'  then '.bmp'
+    else
+      url.match(/\.(png|jpe?g|gif|webp|bmp|tiff?)/i)&.[](0) || '.jpg'
+    end
+  end
+
+  # Run OCR on a list of image URLs and return any domains found.
+  def extract_domains_from_images(image_urls)
+    domains = Set.new
+    return domains if image_urls.empty? || ocr_backend.nil?
+
+    image_urls.each do |url|
+      text = ocr_image_url(url)
+      next if text.nil? || text.empty?
+      scan_text_for_domains(text, domains)
+    end
+
+    domains
   end
 
   # ── Blocklist ───────────────────────────────────────────────────────────────
@@ -423,6 +548,9 @@ class BaseScraper
     with_domains     = articles.count { |_, v| v['domains']&.any? }
     total_domains    = articles.sum   { |_, v| v['domains']&.size.to_i }
     written_articles = articles.count { |_, v| v['written_to_blocklist'] }
+    with_images      = articles.count { |_, v| v['images']&.any? }
+    total_images     = articles.sum   { |_, v| v['images']&.size.to_i }
+    ocr_domain_count = articles.sum   { |_, v| v['image_ocr_domains']&.size.to_i }
 
     puts
     puts '=' * 50
@@ -432,6 +560,10 @@ class BaseScraper
     puts "Articles with domains      : #{with_domains}"
     puts "Total domains found (all)  : #{total_domains}"
     puts "Articles written to output : #{written_articles}"
+    puts "Articles with images       : #{with_images}"
+    puts "Total images cached        : #{total_images}"
+    puts "Domains found via OCR      : #{ocr_domain_count}"
+    puts "OCR backend                : #{ocr_backend || 'none (install tesseract or run on macOS)'}"
     puts "Output                     : #{@output_file}"
     puts "Cache                      : #{@cache_file}"
   end
@@ -484,12 +616,14 @@ end
 # ────────────────────────────────────────────────────────────────────────────
 
 options = {
-  years:       nil,                 # nil = incremental if cache exists, else DEFAULT_YEARS full scan
-  pages_back:  DEFAULT_PAGES_BACK,
-  parallel:    DEFAULT_PARALLEL,
-  output_file: OUTPUT_FILE_DEFAULT,
-  cache_file:  CACHE_FILE_DEFAULT,
-  dry_run:     false
+  years:          nil,              # nil = incremental if cache exists, else DEFAULT_YEARS full scan
+  pages_back:     DEFAULT_PAGES_BACK,
+  lookback_days:  nil,              # incremental mode: also scan N days before last cached date
+  parallel:       DEFAULT_PARALLEL,
+  output_file:    OUTPUT_FILE_DEFAULT,
+  cache_file:     CACHE_FILE_DEFAULT,
+  dry_run:        false,
+  rescan_images:  false             # re-OCR cached articles that have images not yet processed
 }
 
 OptionParser.new do |opts|
@@ -505,6 +639,11 @@ OptionParser.new do |opts|
   opts.on('-b', '--pages-back N', Integer,
           "Incremental mode: overlap pages before last cached date (default: #{DEFAULT_PAGES_BACK})") do |n|
     options[:pages_back] = n
+  end
+
+  opts.on('-d', '--lookback-days N', Integer,
+          'Incremental mode: also scan N days before the last cached article (overrides --pages-back overlap)') do |n|
+    options[:lookback_days] = n
   end
 
   opts.on('-p', '--parallel N', Integer,
@@ -525,6 +664,11 @@ OptionParser.new do |opts|
   opts.on('--dry-run',
           'Scrape and cache but do not write to blocklist') do
     options[:dry_run] = true
+  end
+
+  opts.on('--rescan-images',
+          'Re-OCR images in cached articles not yet processed (runs after normal scrape)') do
+    options[:rescan_images] = true
   end
 
   opts.on('-h', '--help', 'Show this help') do
@@ -553,14 +697,16 @@ SCRAPERS.each do |klass|
 
   begin
     klass.new(
-      years:       options[:years],
-      pages_back:  options[:pages_back],
-      parallel:    options[:parallel],
-      output_file: options[:output_file],
-      cache:       source_cache,
-      full_cache:  full_cache,
-      cache_file:  options[:cache_file],
-      dry_run:     options[:dry_run]
+      years:         options[:years],
+      pages_back:    options[:pages_back],
+      lookback_days: options[:lookback_days],
+      parallel:      options[:parallel],
+      output_file:   options[:output_file],
+      cache:         source_cache,
+      full_cache:    full_cache,
+      cache_file:    options[:cache_file],
+      dry_run:       options[:dry_run],
+      rescan_images: options[:rescan_images]
     ).run
   rescue StandardError => e
     warn "Error scraping #{source_name}: #{e.message}"
