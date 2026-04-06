@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
 # Generated: 2026-04-06T11:01:04Z
-# Total domains: 13
+# Total domains: 14
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -25,5 +25,7 @@ prod.lunostatic.com
 
 docs.paperclip.ing
 skillsmp.com
+
+proofpoint.com
 
 # Disabled the rest as there is a lot of random stuff there

@@ -104,15 +104,18 @@ def extract_images(doc, base_url)
   images = []
 
   content.css('img').each do |img|
-    src = img['src']           ||
-          img['data-src']      ||
-          img['data-lazy-src'] ||
-          img['data-original'] ||
-          img['data-lazy']     ||
-          img['srcset']&.split(/[\s,]+/)&.first
+    src = nil
+    %w[src data-src data-lazy-src data-original data-lazy].each do |attr|
+      val = img[attr]&.strip
+      next if val.nil? || val.empty? || val.start_with?('data:')
+      src = val
+      break
+    end
+    if src.nil?
+      src = img['srcset']&.split(/[\s,]+/)&.find { |s| !s.start_with?('data:') && s.include?('.') }
+    end
 
     next if src.nil? || src.strip.empty?
-    next if src.start_with?('data:')
 
     url = begin
       URI.join(base_uri, src).to_s
@@ -245,7 +248,7 @@ rescue StandardError => e
   nil
 end
 
-# ── 1. Fetch article HTML via Blogger JSON feed ──────────────────────────────
+# ── 1. Fetch article HTML (direct HTTP first) ────────────────────────────────
 
 puts
 hr('═')
@@ -255,59 +258,91 @@ puts "Browser fetch: #{BROWSER_FETCH ? 'enabled' : 'disabled (pass --browser-fet
 hr('═')
 puts "\nOCR backend: #{ocr_backend || 'NONE — install tesseract or run on macOS with swiftc'}"
 
-hr
-puts "Fetching article via Blogger JSON feed..."
-puts "(THN article pages are Cloudflare-protected; feed provides a truncated summary only.)"
-
-target_variants = [TARGET_URL, TARGET_URL.sub(/^https?/, 'http'), TARGET_URL.sub(/^https?/, 'https')]
-
-content_html  = nil
-article_title = nil
-feed_url      = "#{FEED_BASE_URL}?max-results=25&alt=json"
-page          = 1
-
-loop do
-  puts "  Fetching feed page #{page}: #{feed_url}"
-  resp = fetch_json(feed_url)
-  unless resp.success?
-    puts "  Feed fetch failed: HTTP #{resp.code}"
-    break
-  end
-
-  data    = JSON.parse(resp.body)
-  entries = data.dig('feed', 'entry') || []
-  break if entries.empty?
-
-  found = entries.find do |e|
-    links = e['link'] || []
-    href  = links.find { |l| l['rel'] == 'alternate' }&.dig('href')
-    target_variants.include?(href)
-  end
-
-  if found
-    content_html  = found.dig('content', '$t') || found.dig('summary', '$t')
-    article_title = found.dig('title', '$t')&.strip
-    puts "  Found article: \"#{article_title}\""
-    puts "  Feed content length: #{content_html&.bytesize || 0} bytes (summary only — no inline images)"
-    break
-  end
-
-  next_link = data.dig('feed', 'link')&.find { |l| l['rel'] == 'next' }&.dig('href')
-  break unless next_link
-
-  feed_url = next_link
-  page += 1
-  sleep 0.5
+def fetch_direct(url)
+  HTTParty.get(
+    url,
+    headers: {
+      'User-Agent' => 'Mozilla/5.0 (compatible; pihole-list-builder/1.0)',
+      'Accept'     => 'text/html,application/xhtml+xml,*/*;q=0.8'
+    },
+    timeout: 30,
+    follow_redirects: true
+  )
+rescue StandardError => e
+  puts "  Direct fetch error: #{e.message}"
+  nil
 end
 
-# ── 2. Parse feed summary and extract images ─────────────────────────────────
+hr
+puts "Step 1: direct HTTP fetch of article..."
+direct_resp = fetch_direct(TARGET_URL)
+article_html = nil
+if direct_resp&.success? && !cloudflare_challenge?(direct_resp.body)
+  article_html = direct_resp.body
+  puts "  Success: #{article_html.bytesize} bytes"
+elsif direct_resp
+  puts "  Cloudflare challenge or HTTP #{direct_resp.code} — will try feed + browser fallback"
+else
+  puts "  Request failed"
+end
+
+# ── 2. Feed summary as fallback for text domain extraction ───────────────────
+
+feed_summary  = nil
+article_title = nil
+
+if article_html.nil? || article_html.strip.empty?
+  hr
+  puts "Step 2: fetching feed summary (text domains only)..."
+
+  target_variants = [TARGET_URL, TARGET_URL.sub(/^https?/, 'http'), TARGET_URL.sub(/^https?/, 'https')]
+  feed_url = "#{FEED_BASE_URL}?max-results=25&alt=json"
+  page     = 1
+
+  loop do
+    puts "  Feed page #{page}: #{feed_url}"
+    resp = fetch_json(feed_url)
+    unless resp.success?
+      puts "  Feed fetch failed: HTTP #{resp.code}"
+      break
+    end
+
+    data    = JSON.parse(resp.body)
+    entries = data.dig('feed', 'entry') || []
+    break if entries.empty?
+
+    found = entries.find do |e|
+      href = e['link']&.find { |l| l['rel'] == 'alternate' }&.dig('href')
+      target_variants.include?(href)
+    end
+
+    if found
+      feed_summary  = found.dig('content', '$t') || found.dig('summary', '$t')
+      article_title = found.dig('title', '$t')&.strip
+      puts "  Found: \"#{article_title}\" (#{feed_summary&.bytesize || 0} bytes — summary only)"
+      break
+    end
+
+    next_link = data.dig('feed', 'link')&.find { |l| l['rel'] == 'next' }&.dig('href')
+    break unless next_link
+
+    feed_url = next_link
+    page += 1
+    sleep 0.5
+  end
+end
+
+# ── 3. Parse for text domains and images ─────────────────────────────────────
 
 hr
-puts "Parsing feed content (summary):"
-doc     = Nokogiri::HTML(content_html.to_s)
-content = article_content(doc)
-puts "  Content node: <#{content&.name}#{" class=#{content['class'].inspect}" if content&.[]('class')}>"
-puts "  Text length : #{content&.text&.length || 0} chars"
+puts "Step 3: parsing HTML for text domains and images..."
+
+parse_html = article_html || feed_summary.to_s
+doc        = Nokogiri::HTML(parse_html)
+content    = article_content(doc)
+puts "  Source       : #{article_html ? 'direct HTTP fetch' : 'feed summary'}"
+puts "  Content node : <#{content&.name}#{" class=#{content['class'].inspect}" if content&.[]('class')}>"
+puts "  Text length  : #{content&.text&.length || 0} chars"
 
 text_domains = Set.new
 scan_text_for_domains(content&.text.to_s, text_domains)
@@ -317,40 +352,37 @@ else
   puts "  Text domains: (none found)"
 end
 
-images = extract_images(doc, TARGET_URL)
-puts "  Images from feed content: #{images.size}"
+images = article_html ? extract_images(doc, TARGET_URL) : []
+puts "  Images found : #{images.size}"
 
-# ── 3. Browser fetch for full article images (optional) ──────────────────────
+# ── 4. Browser fetch fallback for images (if direct fetch was blocked) ───────
 
 if images.empty? && BROWSER_FETCH
   hr
-  puts "Browser fetch (Safari — bypasses Cloudflare):"
+  puts "Step 4: Safari browser fetch (Cloudflare bypass)..."
   browser_html = fetch_via_browser(TARGET_URL)
   if browser_html && !cloudflare_challenge?(browser_html)
     browser_doc = Nokogiri::HTML(browser_html)
-    images = extract_images(browser_doc, TARGET_URL)
+    images      = extract_images(browser_doc, TARGET_URL)
     puts "  Images from browser fetch: #{images.size}"
-    # Also scan full article text for domains
     browser_content = article_content(browser_doc)
     scan_text_for_domains(browser_content&.text.to_s, text_domains)
   elsif browser_html
-    puts "  Browser fetch returned a Cloudflare challenge — cannot extract images"
+    puts "  Browser fetch returned a Cloudflare challenge"
   end
-elsif images.empty?
-  hr
-  puts "No images in feed summary."
-  puts "Run with --browser-fetch to open the article in Safari for full image extraction."
+elsif images.empty? && article_html.nil?
+  puts "  No images (direct fetch was blocked; run with --browser-fetch to try Safari)"
 end
 
 hr
-puts "Images to OCR (#{images.size} total):"
+puts "Step 5: OCR images (#{images.size} total):"
 images.each { |img| puts "    #{img}" }
 puts "  (none)" if images.empty?
 
 # ── 4. OCR each image ───────────────────────────────────────────────────────
 
 hr
-puts "OCR pass:"
+puts "OCR:"
 all_ocr_domains = Set.new
 
 if ocr_backend.nil?

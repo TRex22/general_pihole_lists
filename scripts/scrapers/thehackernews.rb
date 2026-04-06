@@ -248,44 +248,46 @@ class THNScraper < BaseScraper
       @mutex.synchronize { puts "  [UPDATED ] #{url} — re-scraping" }
     end
 
-    # THN's article URLs sit behind a Cloudflare JS challenge so direct HTTP
-    # returns a challenge page. The Blogger JSON feed provides only a truncated
-    # summary (~400 bytes) — enough for text domain extraction but no images.
-    html = article[:content_html]
-
-    if html.nil? || html.strip.empty?
-      response = fetch_with_retry(url)
-      unless response
-        @mutex.synchronize { puts "  [FAILED] #{url}" }
-        return
+    # Always fetch the article URL directly — direct HTTP GET works for THN
+    # (Cloudflare challenges are not always present). The Blogger JSON feed
+    # only provides a truncated ~400-byte summary with no inline images, so
+    # we cannot rely on content_html for image extraction.
+    article_html = nil
+    response     = fetch_with_retry(url)
+    if response
+      if cloudflare_challenge?(response.body)
+        @mutex.synchronize { puts "  [CF-BLOCK] #{url} — Cloudflare challenge on direct fetch" }
+      else
+        article_html = response.body
       end
-      html = response.body
+    else
+      @mutex.synchronize { puts "  [FAILED  ] #{url} — HTTP fetch failed" }
     end
 
-    if cloudflare_challenge?(html)
-      @mutex.synchronize { puts "  [CF-BLOCK] #{url} — Cloudflare challenge, skipping" }
+    # For text domains: prefer full article HTML, fall back to feed summary.
+    text_html = article_html || article[:content_html].to_s
+    if text_html.strip.empty?
+      @mutex.synchronize { puts "  [SKIPPED ] #{url} — no content available" }
       return
     end
 
-    doc    = Nokogiri::HTML(html)
-    title  = article[:title] || doc.at_css('h1.post-title, h1')&.text&.strip
+    doc   = Nokogiri::HTML(text_html)
+    title = article[:title] || doc.at_css('h1.post-title, h1')&.text&.strip
 
     # ── Text-based domain extraction ────────────────────────────────────────
     text_domains = extract_text_domains(doc)
 
     # ── Image extraction ────────────────────────────────────────────────────
-    images = extract_images(doc, url)
+    # Extract from the full article HTML; feed summary has no inline images.
+    images = article_html ? extract_images(doc, url) : []
 
-    # Feed summary rarely contains inline article images. When browser fetch is
-    # enabled, open the URL in Safari (which handles the Cloudflare JS challenge)
-    # to get the fully-rendered article HTML and extract images from it.
+    # Optional browser fetch if direct HTTP was Cloudflare-blocked.
     if images.empty? && @browser_fetch && browser_fetch_available?
       @mutex.synchronize { puts "  [BROWSER ] #{url} — opening in Safari for image extraction" }
       browser_html = fetch_via_browser(url)
       if browser_html && !cloudflare_challenge?(browser_html)
         browser_doc  = Nokogiri::HTML(browser_html)
         images       = extract_images(browser_doc, url)
-        # Merge any additional text domains from the full article body
         browser_text = extract_text_domains(browser_doc)
         text_domains = (Set.new(text_domains) | browser_text).to_a.sort
       end
@@ -461,17 +463,21 @@ class THNScraper < BaseScraper
     images   = []
 
     content.css('img').each do |img|
-      # Try every common src attribute, including lazy-load variants and srcset.
-      # srcset may contain multiple space/comma-separated entries; take the first URL.
-      src = img['src']           ||
-            img['data-src']      ||
-            img['data-lazy-src'] ||
-            img['data-original'] ||
-            img['data-lazy']     ||
-            img['srcset']&.split(/[\s,]+/)&.first
+      # Walk candidate attributes in priority order, skipping data: URIs.
+      # Using || would short-circuit on a data: src and never try data-src.
+      src = nil
+      %w[src data-src data-lazy-src data-original data-lazy].each do |attr|
+        val = img[attr]&.strip
+        next if val.nil? || val.empty? || val.start_with?('data:')
+        src = val
+        break
+      end
+      # srcset: take the first non-data: URL entry
+      if src.nil?
+        src = img['srcset']&.split(/[\s,]+/)&.find { |s| !s.start_with?('data:') && s.include?('.') }
+      end
 
       next if src.nil? || src.strip.empty?
-      next if src.start_with?('data:')   # inline data URIs
 
       url = resolve_url(src, base_uri)
       next unless url&.start_with?('http')   # must be an absolute HTTP(S) URL
