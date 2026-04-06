@@ -1022,12 +1022,14 @@ class StandardPaginatedScraper < BaseScraper
 
         date = entry[:date]
 
+        # Track oldest date seen on this page *before* the cutoff check so
+        # we can stop the page loop even if the per-entry break fires early.
+        oldest_date = date if date && (oldest_date.nil? || date < oldest_date)
+
         if date && date < cutoff
           hit_cutoff = true
           break
         end
-
-        oldest_date = date if date && (oldest_date.nil? || date < oldest_date)
 
         next if @cache['articles'][entry[:url]]
 
@@ -1036,7 +1038,10 @@ class StandardPaginatedScraper < BaseScraper
       end
 
       puts "  -> #{new_count} new (total #{articles.size})"
-      break if hit_cutoff
+      # Stop if a cutoff was hit mid-loop OR the oldest date on the page
+      # is already beyond the cutoff (catches nil-date scrapers once a
+      # dated entry finally appears past the boundary).
+      break if hit_cutoff || (oldest_date && oldest_date < cutoff)
 
       if incremental && oldest_date
         if @lookback_days&.positive?
