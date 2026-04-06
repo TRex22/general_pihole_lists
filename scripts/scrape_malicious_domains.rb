@@ -83,6 +83,7 @@ SKIP_DOMAINS = Set.new(%w[
   youtube.com youtu.be
   twitter.com x.com t.co
   facebook.com instagram.com linkedin.com
+  whatsapp.com whatsapp.net wa.me
   reddit.com
   telegram.org t.me api.telegram.org
   discord.com discord.gg discordapp.com discordapp.net
@@ -91,8 +92,11 @@ SKIP_DOMAINS = Set.new(%w[
   googleusercontent.com app.google drive.google.com
   appsheet.com
   microsoft.com outlook.com office.com office365.com visualstudio.com
-  windows.com live.com hotmail.com bing.com microsoftonline.com azure.com
-  login.microsoftonline.com
+  windows.com windowsupdate.com windowsazure.com
+  live.com hotmail.com bing.com
+  microsoftonline.com login.microsoftonline.com
+  azure.com azuredatabricks.net azurehdinsight.net
+  msidentity.com microsoftidentity.com
   apple.com icloud.com
   amazon.com amazon.pl amazonaws.com
   cloudflare.com bootcdn.net bootcss.com
@@ -166,8 +170,25 @@ EXACT_SKIP_DOMAINS = Set.new(%w[
   azureedge.net
   azurefd.net
   windows.net
+  azurewebsites.net
+  cloudapp.net
+  cloudapp.azure.com
+  trafficmanager.net
+  servicebus.windows.net
+  database.windows.net
+  blob.core.windows.net
+  table.core.windows.net
+  queue.core.windows.net
+  file.core.windows.net
+  vault.azure.net
+  search.windows.net
   workers.dev
   cloudfunctions.net
+  netlify.app
+  netlify.com
+  vercel.app
+  pages.dev
+  github.io
 ]).freeze
 
 # Known-safe IP addresses that appear legitimately in security articles

@@ -14,3 +14,17 @@ My own pihole lists
 # Full scan for 3 years + rescan all cached images for OCR
   ruby scripts/scrape_malicious_domains.rb --years 3 --rescan-images
 ```
+
+
+## Reset cache for a given key
+```sh
+ruby -e '
+  ruby -e '
+  require "json"
+  f = "scripts/malicious_domains_cache.json"
+  cache = JSON.parse(File.read(f))
+  cache.delete("unit42")
+  File.write(f, JSON.pretty_generate(cache))
+  puts "unit42 removed from cache"
+  '
+```
