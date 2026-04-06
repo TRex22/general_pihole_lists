@@ -116,6 +116,7 @@ SKIP_DOMAINS = Set.new(%w[
   debian.org ubuntu.com redhat.com
   protonmail.com proton.me
   chatgpt.com claude.ai deepseek.com huggingface.co
+  semgrep.dev cursor.com cursor.sh cursor.so
   blogspot.com archive.org
   7-zip.org brew.sh example.com
   etherscan.io binance.com metamask.io coinbasepro.com localbitcoins.com
