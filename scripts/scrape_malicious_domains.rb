@@ -124,7 +124,6 @@ SKIP_DOMAINS = Set.new(%w[
   dropbox.com dropboxstatic.com
   isc.sans.edu sans.org sans.edu
   polyfill.io polyfill.com
-  temp.sh
   letsencrypt.org digicert.com sectigo.com comodo.com ssl.com usertrust.com
   etherscan.io binance.com metamask.io coinbasepro.com localbitcoins.com
   ip-api.com ipapi.co ipinfo.io ipgeolocation.io
