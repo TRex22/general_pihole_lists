@@ -32,6 +32,7 @@ require 'tempfile'
 require 'set'
 require 'time'
 require 'date'
+require 'public_suffix'
 
 DEFAULT_YEARS      = 2
 DEFAULT_PARALLEL   = 20 # 5
@@ -151,6 +152,7 @@ SKIP_DOMAINS = Set.new(%w[
   shodan.io
   msftconnecttest.com www.msftconnecttest.com
   yahoo.com yahoo.co.uk
+  herokuapp.com
 ]).freeze
 
 # Root-level cloud/CDN platform domains that are too broad to block wholesale —
@@ -226,6 +228,24 @@ class BaseScraper
     strip_ioc_noise(refang(raw))
   end
 
+  # File extensions that are never valid TLDs and should be rejected outright.
+  # Belt-and-suspenders: PublicSuffix will also reject most of these, but an
+  # explicit list catches them without a lookup and documents the intent.
+  # File extensions that are NOT valid IANA TLDs — safe to reject outright.
+  # Deliberately excludes .sh (Saint Helena), .py (Paraguay), .rs (Serbia),
+  # .pl (Poland), .zip (Google gTLD) etc. which are real TLDs; those ambiguous
+  # cases are left to PublicSuffix for validation.
+  FILE_EXTENSION_TLDS = Set.new(%w[
+    exe dll sys drv bat cmd ps1 vbs scr pif lnk
+    rar gz tar 7z bz2 xz cab iso img dmg pkg deb rpm apk ipa
+    txt log ini cfg dat
+    doc docx xls xlsx ppt pptx pdf
+    mp3 mp4 avi mkv flv wav
+    php asp aspx jsp
+    png jpg jpeg gif bmp webp ico tiff
+    rb go cpp java class jar
+  ]).freeze
+
   def valid_domain?(domain)
     return false if domain.nil? || domain.empty?
     return false if domain.length > 253
@@ -236,7 +256,15 @@ class BaseScraper
     return false if /\A\d+\.\d+\.\d+\.\d+\z/.match?(domain)  # pure IPv4
     return false unless domain.include?('.')
 
-    VALID_DOMAIN_RE.match?(domain)
+    # Reject anything whose TLD is a known file extension
+    tld = domain.split('.').last.downcase
+    return false if FILE_EXTENSION_TLDS.include?(tld)
+
+    # Validate the TLD against the Mozilla Public Suffix List.
+    # default_rule: nil means reject domains whose TLD is not in the PSL.
+    PublicSuffix.valid?(domain, default_rule: nil)
+  rescue StandardError
+    false
   end
 
   def skip_domain?(domain)
@@ -728,9 +756,14 @@ class BaseScraper
       filtered = section.reject do |l|
         stripped = l.strip
         next false if stripped.start_with?('#')
-        domain = stripped.split('#').first.strip.downcase
-        if skip_domain?(domain)
-          removed << domain
+        entry = stripped.split('#').first.strip.downcase
+        if skip_domain?(entry)
+          removed << entry
+          true
+        elsif !valid_ipv4?(entry) && !valid_domain?(entry)
+          # Remove entries that are not valid IPs and not valid domains
+          # (catches filenames like malware.exe, invalid TLDs, etc.)
+          removed << entry
           true
         else
           false
