@@ -2,3 +2,6 @@
 .DS_Store
 scripts/malicious_domains_cache.json
 scripts/thn_scrape_cache.json
+
+# Compiled macOS OCR helper binary (built from ocr_macos.swift on first run)
+scripts/ocr_macos

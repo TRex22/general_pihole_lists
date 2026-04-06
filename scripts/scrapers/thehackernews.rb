@@ -2,23 +2,41 @@
 
 # The Hacker News scraper
 #
-# Uses Blogger's JSON feed API for article listing (reliable, structured).
-# Scrapes individual article HTML pages for domain extraction.
+# Uses Blogger's JSON feed API for article listing, scrapes HTML for:
+#   - Obfuscated domains (text, e.g. evil[.]com)
+#   - Article screenshots/images → OCR → additional domains
 #
 # Loaded by scrape_malicious_domains.rb via require_relative.
 
 THN_FEED_BASE_URL = 'https://thehackernews.com/feeds/posts/default'
 THN_MAX_RESULTS   = 25  # Blogger API max per page
 
+# Image URL must match one of these extensions (query strings allowed after).
+THN_IMAGE_EXTENSIONS_RE = /\.(png|jpe?g|gif|webp|bmp|tiff?)(\?[^"'\s]*)?$/i
+
+# URL substrings that indicate non-article images (ads, icons, tracking, social).
+THN_IMAGE_SKIP_FRAGMENTS = %w[
+  doubleclick googlesyndication adserv advert
+  /pixel. /1x1. /tracking /beacon /analytics /stat.
+  /social/ /share-button /twitter-bird /fb-button /whatsapp
+  /favicon /apple-touch-icon /touch-icon
+  gravatar.com /avatar/ /author- /author_
+  /logo. /badge. /icon-
+].freeze
+
 class THNScraper < BaseScraper
   SOURCE_NAME = 'The Hacker News'
   SOURCE_KEY  = 'thehackernews'
 
-  def initialize(years:, pages_back:, parallel:, output_file:, cache:, full_cache:, cache_file:, dry_run:)
-    super(output_file: output_file, cache: cache, full_cache: full_cache, cache_file: cache_file, dry_run: dry_run)
-    @years      = years
-    @pages_back = pages_back
-    @parallel   = parallel
+  def initialize(years:, pages_back:, parallel:, output_file:, cache:, full_cache:,
+                 cache_file:, dry_run:, rescan_images: false, lookback_days: nil)
+    super(output_file: output_file, cache: cache, full_cache: full_cache,
+          cache_file: cache_file, dry_run: dry_run)
+    @years         = years
+    @pages_back    = pages_back
+    @lookback_days = lookback_days
+    @parallel      = parallel
+    @rescan_images = rescan_images
   end
 
   def run
@@ -26,7 +44,8 @@ class THNScraper < BaseScraper
     incremental  = @years.nil? && !last_scraped.nil?
 
     if incremental
-      puts "Mode             : incremental (#{@pages_back} pages back from #{last_scraped})"
+      overlap_label = @lookback_days&.positive? ? "#{@lookback_days}-day lookback" : "#{@pages_back} pages back"
+      puts "Mode             : incremental (#{overlap_label} from #{last_scraped})"
     elsif @years
       puts "Mode             : full scan (#{@years} year(s))"
     else
@@ -36,12 +55,23 @@ class THNScraper < BaseScraper
     puts "Output file      : #{@output_file}"
     puts "Cache file       : #{@cache_file}"
     puts "Dry run          : #{@dry_run}"
+    overlap_desc = @lookback_days&.positive? ? "#{@lookback_days} day(s) lookback" : "#{@pages_back} pages back"
+    puts "Overlap window   : #{overlap_desc}"
+    puts "OCR backend      : #{ocr_backend || 'none'}"
+    puts "Rescan images    : #{@rescan_images}"
     puts
+
+    warn_if_no_ocr_backend
+
+    # Compile the macOS OCR helper once up front, before threads start.
+    ensure_macos_ocr_compiled if ocr_backend == :macos
 
     articles = collect_article_urls
     puts "\nTotal articles to process: #{articles.size}\n\n"
+    scrape_articles_parallel(articles) if articles.any?
 
-    scrape_articles_parallel(articles)
+    # Optional pass: OCR images in cached articles not yet processed.
+    rescan_images_in_cache if @rescan_images
 
     unless @dry_run
       clean_blocklist
@@ -136,13 +166,24 @@ class THNScraper < BaseScraper
         break
       end
 
-      # Incremental mode: stop after @pages_back pages whose oldest article
-      # predates the most recently cached article — this is the overlap window.
-      if incremental && oldest_time.to_date < last_scraped
-        pages_beyond_last += 1
-        if pages_beyond_last >= @pages_back
-          puts "  -> #{@pages_back} overlap page(s) fetched past #{last_scraped}, stopping."
-          break
+      # Incremental overlap window — two modes:
+      #   lookback_days: stop once oldest article on the page is more than N days
+      #                  before the last cached date (day-granularity, predictable).
+      #   pages_back:    stop after N pages whose oldest article predates the last
+      #                  cached date (default, page-granularity).
+      if incremental
+        if @lookback_days&.positive?
+          day_floor = last_scraped - @lookback_days
+          if oldest_time.to_date < day_floor
+            puts "  -> Reached #{@lookback_days}-day lookback before #{last_scraped} (floor: #{day_floor}), stopping."
+            break
+          end
+        elsif oldest_time.to_date < last_scraped
+          pages_beyond_last += 1
+          if pages_beyond_last >= @pages_back
+            puts "  -> #{@pages_back} overlap page(s) fetched past #{last_scraped}, stopping."
+            break
+          end
         end
       end
 
@@ -197,9 +238,16 @@ class THNScraper < BaseScraper
       return
     end
 
-    doc     = Nokogiri::HTML(response.body)
-    domains = extract_domains(doc)
-    title   = article[:title] || doc.at_css('h1.post-title, h1')&.text&.strip
+    doc    = Nokogiri::HTML(response.body)
+    title  = article[:title] || doc.at_css('h1.post-title, h1')&.text&.strip
+
+    # ── Text-based domain extraction ────────────────────────────────────────
+    text_domains = extract_text_domains(doc)
+
+    # ── Image extraction + OCR ──────────────────────────────────────────────
+    images     = extract_images(doc, url)
+    ocr_doms   = extract_domains_from_images(images)
+    all_domains = (Set.new(text_domains) | ocr_doms).to_a.sort
 
     entry = {
       'url'                  => url,
@@ -207,33 +255,147 @@ class THNScraper < BaseScraper
       'date'                 => article[:date_str],
       'feed_updated_at'      => article[:feed_updated_at],
       'scraped_at'           => Time.now.utc.iso8601,
-      'domains'              => domains,
+      'domains'              => all_domains,
+      'images'               => images,
+      'image_ocr_domains'    => ocr_doms.to_a.sort,
+      'images_ocr_at'        => (images.any? && ocr_backend ? Time.now.utc.iso8601 : nil),
       'written_to_blocklist' => false
     }
 
     @mutex.synchronize do
       @cache['articles'][url] = entry
 
-      if domains.any?
-        @pending[url] = { domains: domains, title: title, date: article[:date_str] }
-        puts "  [FOUND #{domains.size.to_s.rjust(3)}] #{url}"
-        domains.each { |d| puts "               #{d}" }
-      else
-        puts "  [NO DOMAINS ] #{url}"
+      label = all_domains.any? ? "[FOUND #{all_domains.size.to_s.rjust(3)}]" : '[NO DOMAINS ]'
+      puts "  #{label} #{url}"
+      all_domains.each { |d| puts "               #{d}" }
+      puts "               (#{images.size} image(s) found, #{ocr_doms.size} via OCR)" if images.any?
+
+      @pending[url] = { domains: all_domains, title: title, date: article[:date_str] } if all_domains.any?
+    end
+  end
+
+  # ── Image rescan pass ───────────────────────────────────────────────────────
+
+  # Re-processes cached articles that have images not yet OCR'd, or articles
+  # where images haven't been extracted at all. Adds any newly-found domains
+  # to @pending so they are written to the blocklist.
+  def rescan_images_in_cache
+    puts "\nImage rescan: checking cached articles for unprocessed screenshots..."
+
+    to_scan = @cache['articles'].select do |_, entry|
+      # Articles with no image field → need HTML re-fetch + OCR
+      # Articles with images but no OCR timestamp → need OCR
+      entry['images'].nil? ||
+        (entry['images'].is_a?(Array) && entry['images'].any? && entry['images_ocr_at'].nil?)
+    end
+
+    if to_scan.empty?
+      puts '  All cached articles already have image data — nothing to rescan.'
+      return
+    end
+
+    puts "  Articles to rescan: #{to_scan.size}"
+
+    to_scan.each do |url, entry|
+      puts "  [RESCAN] #{url}"
+
+      # Fetch HTML if we don't have image URLs yet
+      if entry['images'].nil?
+        response = fetch_with_retry(url)
+        unless response
+          warn "  [FAILED] #{url}"
+          next
+        end
+        doc = Nokogiri::HTML(response.body)
+        entry['images'] = extract_images(doc, url)
+        puts "    Found #{entry['images'].size} image(s)"
       end
+
+      images = entry['images']
+      if images.empty?
+        entry['images_ocr_at'] = Time.now.utc.iso8601
+        next
+      end
+
+      # Run OCR
+      ocr_domains = extract_domains_from_images(images)
+      entry['images_ocr_at']     = Time.now.utc.iso8601
+      entry['image_ocr_domains'] = ocr_domains.to_a.sort
+
+      next if ocr_domains.empty?
+
+      # Merge newly-found OCR domains into the article's domains
+      existing_domains = Set.new(entry['domains'] || [])
+      new_domains      = ocr_domains - existing_domains
+      next if new_domains.empty?
+
+      entry['domains']              = (existing_domains | ocr_domains).to_a.sort
+      entry['written_to_blocklist'] = false
+
+      @pending[url] = {
+        domains: new_domains.to_a.sort,
+        title:   entry['title'],
+        date:    entry['date']
+      }
+
+      puts "    [OCR +#{new_domains.size}] #{url}"
+      new_domains.each { |d| puts "               #{d}" }
     end
   end
 
   # ── Domain extraction ───────────────────────────────────────────────────────
 
-  def extract_domains(doc)
+  def extract_text_domains(doc)
     domains = Set.new
-
-    content = doc.at_css('.articlebody, .article-body, .post-body, #articlebody, article .entry-content, main') ||
-              doc.at_css('body')
+    content = article_content(doc)
     return [] unless content
-
     scan_text_for_domains(content.text, domains)
     domains.to_a.sort
+  end
+
+  def article_content(doc)
+    doc.at_css('.articlebody, .article-body, .post-body, #articlebody, article .entry-content, main') ||
+      doc.at_css('body')
+  end
+
+  # ── Image extraction ────────────────────────────────────────────────────────
+
+  # Returns an array of absolute image URLs found within the article content
+  # area, filtered to remove ads, tracking pixels, icons, and social buttons.
+  def extract_images(doc, base_url)
+    content = article_content(doc)
+    return [] unless content
+
+    base_uri = URI.parse(base_url)
+    seen     = Set.new
+    images   = []
+
+    content.css('img').each do |img|
+      src = img['src'] || img['data-src'] || img['data-lazy-src'] ||
+            img['data-original'] || img['data-lazy']
+      next if src.nil? || src.strip.empty?
+      next if src.start_with?('data:')   # inline data URIs carry no useful domain text
+
+      url = resolve_url(src, base_uri)
+      next unless url
+      next unless THN_IMAGE_EXTENSIONS_RE.match?(url)
+      next if THN_IMAGE_SKIP_FRAGMENTS.any? { |f| url.downcase.include?(f) }
+
+      # Skip images explicitly declared as tiny — likely icons or tracking pixels.
+      w = img['width']&.to_i
+      h = img['height']&.to_i
+      next if (w && w.positive? && w < 50) || (h && h.positive? && h < 50)
+
+      next unless seen.add?(url)
+      images << url
+    end
+
+    images
+  end
+
+  def resolve_url(src, base_uri)
+    URI.join(base_uri, src).to_s
+  rescue URI::Error
+    src.start_with?('http') ? src : nil
   end
 end
