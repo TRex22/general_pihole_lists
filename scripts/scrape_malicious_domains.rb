@@ -540,6 +540,10 @@ class BaseScraper
   def parallel_workers = @parallel
   def batch_delay      = 0
 
+  # Override to probe a page's oldest article date when listing pages carry no dates.
+  # Return a Date or nil. Called with the entries array from parse_listing.
+  def probe_page_boundary_date(_entries) = nil
+
   # Default no-op for scrapers without Cloudflare protection
   def cloudflare_challenge?(_html) = false
 
@@ -1094,6 +1098,10 @@ class StandardPaginatedScraper < BaseScraper
         articles << entry
         new_count += 1
       end
+
+      # For date-less listing pages, probe the last article on the page
+      # to get a boundary date so we know when to stop paginating.
+      oldest_date ||= probe_page_boundary_date(entries)
 
       puts "  -> #{new_count} new (total #{articles.size})"
       # Stop if a cutoff was hit mid-loop OR the oldest date on the page
