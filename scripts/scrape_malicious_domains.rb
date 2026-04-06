@@ -473,13 +473,19 @@ class BaseScraper
   end
 
   def scrape_articles_parallel(articles)
-    batches = articles.each_slice(@parallel).to_a
+    workers = [parallel_workers, articles.size].min
+    batches = articles.each_slice(workers).to_a
     batches.tqdm(desc: 'Scraping articles', total: batches.size, unit: 'batch').each do |batch|
       threads = batch.map { |a| Thread.new { scrape_article(a) } }
       threads.each(&:join)
+      sleep batch_delay if batch_delay.positive?
       save_cache(quiet: true)
     end
   end
+
+  # Override in subclasses to limit concurrency or add inter-batch delays.
+  def parallel_workers = @parallel
+  def batch_delay      = 0
 
   # Default no-op for scrapers without Cloudflare protection
   def cloudflare_challenge?(_html) = false
@@ -515,6 +521,16 @@ class BaseScraper
                                system('which osascript > /dev/null 2>&1')
   end
 
+  # Default request headers — subclasses may override for site-specific needs.
+  # Using a realistic browser UA prevents many bot-detection 403s.
+  def request_headers
+    {
+      'User-Agent'      => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+      'Accept'          => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'Accept-Language' => 'en-US,en;q=0.9'
+    }
+  end
+
   def fetch_with_retry(url, retries: 3)
     delay = @request_mutex.synchronize do
       elapsed = Time.now - @last_request_at
@@ -528,10 +544,7 @@ class BaseScraper
       begin
         response = HTTParty.get(
           url,
-          headers: {
-            'User-Agent' => 'Mozilla/5.0 (compatible; pihole-list-builder/1.0; domain scraper)',
-            'Accept'     => 'text/html,application/xhtml+xml,application/xml,application/json;q=0.9,*/*;q=0.8'
-          },
+          headers: request_headers,
           timeout:          30,
           follow_redirects: true
         )
@@ -605,7 +618,7 @@ class BaseScraper
 
     response = HTTParty.get(
       image_url,
-      headers: { 'User-Agent' => 'Mozilla/5.0 (compatible; pihole-list-builder/1.0; domain scraper)' },
+      headers: request_headers,
       timeout: 30,
       follow_redirects: true
     )
