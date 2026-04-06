@@ -87,11 +87,14 @@ class ISCSansScraper < BaseScraper
       end
 
       doc = Nokogiri::HTML(resp.body)
-      doc.css('a[href*="/diary/"]').each do |link|
-        href = link['href']
-        href = href.start_with?('http') ? href : "#{BASE_URL}#{href}"
+      doc.css('a[href*="diary"]').each do |link|
+        href = begin
+          URI.join(url, link['href']).to_s
+        rescue URI::Error
+          next
+        end
+        next unless href.start_with?('http') && href.match?(/\/diary\//)
         next if seen.include?(href)
-        next unless href.match?(/\/diary\//)
         seen.add(href)
         next if @cache['articles'][href]
         title = link.text.strip
