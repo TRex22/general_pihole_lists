@@ -34,7 +34,7 @@ class THNScraper < BaseScraper
 
   def initialize(years:, pages_back:, parallel:, output_file:, cache:, full_cache:,
                  cache_file:, dry_run:, rescan_images: false, lookback_days: nil,
-                 browser_fetch: false, skip_ocr: false)
+                 browser_fetch: false, skip_ocr: false, ocr_only: false)
     super(output_file: output_file, cache: cache, full_cache: full_cache,
           cache_file: cache_file, dry_run: dry_run, browser_fetch: browser_fetch,
           skip_ocr: skip_ocr)
@@ -43,42 +43,32 @@ class THNScraper < BaseScraper
     @lookback_days = lookback_days
     @parallel      = parallel
     @rescan_images = rescan_images
+    @ocr_only      = ocr_only
   end
 
   def run
-    last_scraped = most_recent_cached_date
-    incremental  = @years.nil? && !last_scraped.nil?
-
-    if incremental
-      overlap_label = @lookback_days&.positive? ? "#{@lookback_days}-day lookback" : "#{@pages_back} pages back"
-      puts "Mode             : incremental (#{overlap_label} from #{last_scraped})"
-    elsif @years
-      puts "Mode             : full scan (#{@years} year(s))"
-    else
-      puts "Mode             : first run — full scan (#{DEFAULT_YEARS} year(s))"
-    end
-    puts "Parallel workers : #{@parallel}"
+    puts "Mode             : #{@ocr_only ? 'OCR-only (cached articles, no scraping)' : mode_label}"
+    puts "Parallel workers : #{@parallel}" unless @ocr_only
     puts "Output file      : #{@output_file}"
     puts "Cache file       : #{@cache_file}"
     puts "Dry run          : #{@dry_run}"
-    overlap_desc = @lookback_days&.positive? ? "#{@lookback_days} day(s) lookback" : "#{@pages_back} pages back"
-    puts "Overlap window   : #{overlap_desc}"
+    puts "Overlap window   : #{overlap_label}" unless @ocr_only
     puts "OCR backend      : #{@skip_ocr ? 'skipped (--skip-ocr)' : (ocr_backend || 'none')}"
-    puts "Rescan images    : #{@rescan_images}"
+    puts "Rescan images    : #{@rescan_images}" unless @ocr_only
     puts "Browser fetch    : #{@browser_fetch ? "enabled (Safari/osascript, macOS only)" : 'disabled (use --browser-fetch to enable)'}"
     puts
 
     warn_if_no_ocr_backend
-
-    # Compile the macOS OCR helper once up front, before threads start.
     ensure_macos_ocr_compiled if ocr_backend == :macos
 
-    articles = collect_article_urls
-    puts "\nTotal articles to process: #{articles.size}\n\n"
-    scrape_articles_parallel(articles) if articles.any?
-
-    # Optional pass: OCR images in cached articles not yet processed.
-    rescan_images_in_cache if @rescan_images
+    if @ocr_only
+      rescan_images_in_cache
+    else
+      articles = collect_article_urls
+      puts "\nTotal articles to process: #{articles.size}\n\n"
+      scrape_articles_parallel(articles) if articles.any?
+      rescan_images_in_cache if @rescan_images
+    end
 
     unless @dry_run
       clean_blocklist
@@ -90,6 +80,21 @@ class THNScraper < BaseScraper
   end
 
   private
+
+  def mode_label
+    last_scraped = most_recent_cached_date
+    if @years.nil? && !last_scraped.nil?
+      "incremental (#{overlap_label} from #{last_scraped})"
+    elsif @years
+      "full scan (#{@years} year(s))"
+    else
+      "first run — full scan (#{DEFAULT_YEARS} year(s))"
+    end
+  end
+
+  def overlap_label
+    @lookback_days&.positive? ? "#{@lookback_days} day(s) lookback" : "#{@pages_back} pages back"
+  end
 
   # ── Article collection via Blogger JSON feed API ────────────────────────────
 
@@ -329,17 +334,25 @@ class THNScraper < BaseScraper
   # where images haven't been extracted at all. Adds any newly-found domains
   # to @pending so they are written to the blocklist.
   def rescan_images_in_cache
-    puts "\nImage rescan: checking cached articles for unprocessed screenshots..."
+    if @ocr_only
+      puts "\nOCR-only mode: re-fetching images and re-running OCR on all cached articles..."
+    else
+      puts "\nImage rescan: checking cached articles for unprocessed screenshots..."
+    end
 
     to_scan = @cache['articles'].select do |_, entry|
-      # Articles with no image field → need HTML re-fetch + OCR
-      # Articles with images but no OCR timestamp → need OCR
-      entry['images'].nil? ||
-        (entry['images'].is_a?(Array) && entry['images'].any? && entry['images_ocr_at'].nil?)
+      if @ocr_only
+        # Re-process every article that has (or might have) images
+        entry['images'].nil? || entry['images'].is_a?(Array)
+      else
+        # Only articles with no image field, or images not yet OCR'd
+        entry['images'].nil? ||
+          (entry['images'].is_a?(Array) && entry['images'].any? && entry['images_ocr_at'].nil?)
+      end
     end
 
     if to_scan.empty?
-      puts '  All cached articles already have image data — nothing to rescan.'
+      puts '  No cached articles to process.'
       return
     end
 
