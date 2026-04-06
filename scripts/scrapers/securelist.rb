@@ -129,13 +129,21 @@ class SecurelistScraper < StandardPaginatedScraper
 
   def parse_listing(doc)
     articles = []
-    doc.css('article').each do |art|
-      # Use the title link (c-card__link) which points to the article, not to
-      # author/category/tag pages that also appear inside the card.
+
+    # The page contains a main listing section AND a "related articles" section
+    # (class includes "spacing-t-small") that always shows recently-published
+    # articles regardless of which page is being viewed.  Exclude it so that
+    # entries.last is truly the oldest article on the current page.
+    main_sections = doc.css('section').reject do |s|
+      s['class']&.include?('spacing-t-small')
+    end
+
+    nodes = main_sections.flat_map { |s| s.css('article').to_a }
+    nodes.each do |art|
       link = art.at_css('a.c-card__link') || art.at_css('h2 a, h3 a')
       next unless link
       href = link['href']
-      next unless href&.match?(%r{securelist\.com/[^/]+/\d+/})  # must look like an article URL
+      next unless href&.match?(%r{securelist\.com/[^/]+/\d+/})
       href  = href.start_with?('http') ? href : "#{BASE_URL}#{href}"
       title = link.text.strip
       # Listing pages carry no article dates — date is probed separately.
