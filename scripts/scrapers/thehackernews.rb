@@ -34,9 +34,10 @@ class THNScraper < BaseScraper
 
   def initialize(years:, pages_back:, parallel:, output_file:, cache:, full_cache:,
                  cache_file:, dry_run:, rescan_images: false, lookback_days: nil,
-                 browser_fetch: false)
+                 browser_fetch: false, skip_ocr: false)
     super(output_file: output_file, cache: cache, full_cache: full_cache,
-          cache_file: cache_file, dry_run: dry_run, browser_fetch: browser_fetch)
+          cache_file: cache_file, dry_run: dry_run, browser_fetch: browser_fetch,
+          skip_ocr: skip_ocr)
     @years         = years
     @pages_back    = pages_back
     @lookback_days = lookback_days
@@ -62,7 +63,7 @@ class THNScraper < BaseScraper
     puts "Dry run          : #{@dry_run}"
     overlap_desc = @lookback_days&.positive? ? "#{@lookback_days} day(s) lookback" : "#{@pages_back} pages back"
     puts "Overlap window   : #{overlap_desc}"
-    puts "OCR backend      : #{ocr_backend || 'none'}"
+    puts "OCR backend      : #{@skip_ocr ? 'skipped (--skip-ocr)' : (ocr_backend || 'none')}"
     puts "Rescan images    : #{@rescan_images}"
     puts "Browser fetch    : #{@browser_fetch ? "enabled (Safari/osascript, macOS only)" : 'disabled (use --browser-fetch to enable)'}"
     puts
