@@ -1,89 +1,107 @@
 # frozen_string_literal: true
-# any.run public submissions scraper
-# Fetches public sandbox submission reports, filtering to suspicious/malicious only.
-# Extracts domains contacted during dynamic analysis (not from screenshots).
-# Pagination: https://app.any.run/submissions?page=N
+# any.run Cybersecurity Blog scraper
+# Uses WordPress REST API — no JS rendering needed.
+# Blog: https://any.run/cybersecurity-blog/
+# API:  https://any.run/cybersecurity-blog/wp-json/wp/v2/posts
+# Extracts IOC domains/IPs from blog post content.
 
-ANYRUN_BASE        = 'https://app.any.run'
-ANYRUN_SUBMISSIONS = "#{ANYRUN_BASE}/submissions"
-# any.run also has a public API for report details
-ANYRUN_API_BASE    = "#{ANYRUN_BASE}/api/v1"
+require 'json'
+
+ANYRUN_BLOG_BASE = 'https://any.run'
+ANYRUN_BLOG_PATH = '/cybersecurity-blog'
+ANYRUN_REST_URL  = "#{ANYRUN_BLOG_BASE}#{ANYRUN_BLOG_PATH}/wp-json/wp/v2/posts"
+ANYRUN_PER_PAGE  = 12
 
 class AnyRunScraper < StandardPaginatedScraper
-  SOURCE_NAME = 'any.run Submissions'
+  SOURCE_NAME = 'any.run Blog'
   SOURCE_KEY  = 'anyrun'
-  BASE_URL    = ANYRUN_BASE
-
-  # No images to OCR for any.run — domains come from network analysis data
-  def extract_images(_doc, _url) = []
+  BASE_URL    = ANYRUN_BLOG_BASE
 
   private
 
+  def collect_article_urls
+    cutoff       = Date.today << ((@years || DEFAULT_YEARS) * 12)
+    last_date    = most_recent_cached_date
+    incremental  = @years.nil? && !last_date.nil?
+    articles     = []
+    seen         = Set.new
+    pages_beyond = 0
+    page         = 1
+
+    loop do
+      url  = "#{ANYRUN_REST_URL}?per_page=#{ANYRUN_PER_PAGE}&page=#{page}&_fields=link,title,date&orderby=date&order=desc"
+      resp = fetch_with_retry(url)
+      break unless resp&.code == 200
+
+      begin
+        posts = JSON.parse(resp.body)
+      rescue JSON::ParserError
+        break
+      end
+      break unless posts.is_a?(Array) && !posts.empty?
+
+      puts "  Page #{page}: #{posts.size} posts"
+
+      oldest_date = nil
+      hit_cutoff  = false
+
+      posts.each do |post|
+        raw_link = post['link'].to_s.gsub('\\/', '/')
+        url_str  = raw_link.start_with?('http') ? raw_link : "#{ANYRUN_BLOG_BASE}#{raw_link}"
+        next if url_str.empty? || seen.include?(url_str)
+        seen.add(url_str)
+
+        date = (Date.parse(post['date'].to_s) rescue nil)
+        oldest_date = date if date && (oldest_date.nil? || date < oldest_date)
+
+        if date && date < cutoff
+          hit_cutoff = true
+          break
+        end
+
+        next if @cache['articles'][url_str]
+
+        raw_title = post.dig('title', 'rendered') || post['title'].to_s
+        title     = Nokogiri::HTML(raw_title).text.strip
+        articles << { url: url_str, title: title, date: date, date_str: date&.to_s }
+      end
+
+      puts "  -> #{articles.size} total queued"
+      break if hit_cutoff || (oldest_date && oldest_date < cutoff)
+
+      if incremental && oldest_date && last_date
+        if oldest_date < last_date
+          pages_beyond += 1
+          break if pages_beyond >= @pages_back
+        end
+      end
+
+      page += 1
+      sleep 0.3
+    end
+
+    articles
+  end
+
   def listing_url(page)
-    page == 1 ? ANYRUN_SUBMISSIONS : "#{ANYRUN_SUBMISSIONS}?page=#{page}"
+    page == 1 ? "#{ANYRUN_BLOG_BASE}#{ANYRUN_BLOG_PATH}/" : "#{ANYRUN_BLOG_BASE}#{ANYRUN_BLOG_PATH}/page/#{page}/"
   end
 
   def parse_listing(doc)
-    entries = []
-    # Look for submission links / task IDs
-    doc.css('a[href*="/tasks/"], a[href*="/submissions/"]').each do |link|
-      href = link['href']
-      href = href.start_with?('http') ? href : "#{ANYRUN_BASE}#{href}"
-      next if entries.any? { |e| e[:url] == href }
-
-      # Check verdict labels on surrounding element
-      parent_text = (link.parent&.text || '').downcase
-      verdict     = link.ancestors.take(5).map(&:text).join(' ').downcase
-      # Only include suspicious or malicious
-      next unless verdict.include?('malicious') || verdict.include?('suspicious') ||
-                  parent_text.include?('malicious') || parent_text.include?('suspicious')
-
-      title = link.text.strip
-      entries << { url: href, title: title, date_str: nil, date: nil }
+    articles = []
+    seen = Set.new
+    doc.css('h2 a, h3 a, .entry-title a, .post-title a').each do |link|
+      href = link['href'].to_s
+      next unless href.include?(ANYRUN_BLOG_PATH)
+      next if seen.include?(href)
+      seen.add(href)
+      articles << { url: href, title: link.text.strip, date_str: nil, date: nil }
     end
-    entries
+    articles
   end
 
-  def scrape_article(article)
-    url  = article[:url]
-    resp = fetch_with_retry(url)
-    unless resp
-      @mutex.synchronize { puts "  [FAILED  ] #{url}" }
-      return
-    end
-
-    doc     = Nokogiri::HTML(resp.body)
-    domains = Set.new
-    ips     = Set.new
-
-    # any.run shows network connections in specific sections
-    content = doc.at_css('.network-section, .dns-requests, .connections, [class*="network"]') ||
-              doc.at_css('body')
-    scan_for_iocs(content&.text.to_s, domains, ips, plain_text: true)
-
-    # Also scan the full page text
-    scan_for_iocs(doc.text, domains, ips)
-
-    all_found = (domains.to_a + ips.to_a).sort.uniq
-
-    entry = {
-      'url'                  => url,
-      'title'                => article[:title] || doc.at_css('h1')&.text&.strip,
-      'date'                 => article[:date_str],
-      'scraped_at'           => Time.now.utc.iso8601,
-      'domains'              => all_found,
-      'images'               => [],
-      'image_ocr_domains'    => [],
-      'images_ocr_at'        => nil,
-      'written_to_blocklist' => false
-    }
-
-    @mutex.synchronize do
-      @cache['articles'][url] = entry
-      label = all_found.any? ? "[FOUND #{all_found.size.to_s.rjust(3)}]" : '[NO DOMAINS ]'
-      puts "  #{label} #{url}"
-      all_found.each { |d| puts "               #{d}" }
-      @pending[url] = { domains: all_found, title: entry['title'], date: article[:date_str] } if all_found.any?
-    end
+  def ioc_headings
+    IOC_HEADINGS + ['ioc', 'iocs', 'indicators', 'network indicators', 'malware analysis',
+                    'c2', 'command and control', 'domains', 'urls observed']
   end
 end
