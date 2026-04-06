@@ -22,8 +22,8 @@ ruby -e '
   require "json"
   f = "scripts/malicious_domains_cache.json"
   cache = JSON.parse(File.read(f))
-  cache.delete("google_threat_intel")
+  cache.delete("welivesecurity")
   File.write(f, JSON.pretty_generate(cache))
-  puts "google_threat_intel removed from cache"
+  puts "welivesecurity removed from cache"
   '
 ```
