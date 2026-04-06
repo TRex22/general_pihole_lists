@@ -15,6 +15,7 @@
 #   ruby scripts/scrape_malicious_domains.rb --years 3 --rescan-images
 #   ruby scripts/scrape_malicious_domains.rb --browser-fetch --rescan-images
 #   ruby scripts/scrape_malicious_domains.rb --skip-ocr
+#   ruby scripts/scrape_malicious_domains.rb --ocr-only
 #
 # WARNING: Extracted domains are NEVER accessed/resolved. Validation is regex-only.
 
@@ -669,7 +670,8 @@ options = {
   dry_run:        false,
   rescan_images:  false,            # re-OCR cached articles that have images not yet processed
   browser_fetch:  false,            # use Safari via osascript to fetch Cloudflare-protected pages
-  skip_ocr:       false             # cache images but do not run OCR
+  skip_ocr:       false,            # cache images but do not run OCR
+  ocr_only:       false             # skip article scraping; only re-OCR cached images
 }
 
 OptionParser.new do |opts|
@@ -727,6 +729,11 @@ OptionParser.new do |opts|
     options[:skip_ocr] = true
   end
 
+  opts.on('--ocr-only',
+          'Skip article scraping; re-fetch images and re-run OCR on all cached articles') do
+    options[:ocr_only] = true
+  end
+
   opts.on('-h', '--help', 'Show this help') do
     puts opts
     exit
@@ -764,7 +771,8 @@ SCRAPERS.each do |klass|
       dry_run:       options[:dry_run],
       rescan_images: options[:rescan_images],
       browser_fetch: options[:browser_fetch],
-      skip_ocr:      options[:skip_ocr]
+      skip_ocr:      options[:skip_ocr],
+      ocr_only:      options[:ocr_only]
     ).run
   rescue StandardError => e
     warn "Error scraping #{source_name}: #{e.message}"
