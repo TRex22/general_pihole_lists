@@ -144,6 +144,7 @@ SKIP_DOMAINS = Set.new(%w[
   jsdelivr.net cdnjs.cloudflare.com
   pastebin.com paste.ee
   shodan.io
+  msftconnecttest.com www.msftconnecttest.com
 ]).freeze
 
 # Root-level cloud/CDN platform domains that are too broad to block wholesale —
@@ -164,7 +165,7 @@ SKIP_IPS = Set.new(%w[
   1.1.1.1 1.0.0.1
   9.9.9.9 149.112.112.112
   208.67.222.222 208.67.220.220
-  0.0.0.0
+  0.0.0.0 127.0.0.1
 ]).freeze
 
 # ────────────────────────────────────────────────────────────────────────────
