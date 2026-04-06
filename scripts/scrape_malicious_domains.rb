@@ -16,6 +16,8 @@
 #   ruby scripts/scrape_malicious_domains.rb --browser-fetch --rescan-images
 #   ruby scripts/scrape_malicious_domains.rb --skip-ocr
 #   ruby scripts/scrape_malicious_domains.rb --ocr-only
+#   ruby scripts/scrape_malicious_domains.rb --sources bleepingcomputer,talos
+#   ruby scripts/scrape_malicious_domains.rb --sources thehackernews
 #
 # WARNING: Extracted domains are NEVER accessed/resolved. Validation is regex-only.
 
@@ -50,6 +52,28 @@ VALID_DOMAIN_RE = /\A(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-
 # Minimum seconds between any two outbound HTTP requests (all threads share this).
 # Caps effective request rate at ~5 req/s regardless of parallelism.
 MIN_REQUEST_INTERVAL = 0.2
+
+# All defanged-dot separator variants used in the security community
+DEFANGED_SEP_PAT = '\[\.' \
+                   '\]|\(' \
+                   '\.\)|' \
+                   '\[DOT\]|\[dot\]|\(DOT\)|\(dot\)'
+
+# A token containing at least one defanged separator (domain or IP candidate)
+DEFANGED_TOKEN_RE = /[a-zA-Z0-9][a-zA-Z0-9.\-]*(?:\[\.\]|\(\.\)|\[DOT\]|\[dot\]|\(DOT\)|\(dot\))[a-zA-Z0-9.\-]*[a-zA-Z0-9]/
+
+# Plain IPv4 (used in IoC sections where plain text is expected)
+PLAIN_IPV4_RE = /\b(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\b/
+
+# IoC section heading strings (downcased, matched with include?)
+IOC_HEADINGS = %w[
+  indicators\ of\ compromise
+  indicators\ of\ compromise\ (iocs)
+  indicators\ of\ compromise\ (ioc)
+  ioc\ list
+  network\ indicators
+  ip\ addresses\ and\ domains
+].freeze
 
 # Domains (and their subdomains) that are never themselves malicious — they appear in
 # security articles as attack targets, platforms, or reference links.
@@ -86,7 +110,7 @@ SKIP_DOMAINS = Set.new(%w[
   paypal.com stripe.com
   wordpress.com wordpress.org
   php.net python.org ruby-lang.org nodejs.org
-  npmjs.com pypi.org rubygems.org
+  npmjs.com registry.npmjs.org pypi.org rubygems.org
   stackoverflow.com stackexchange.com
   docker.com kubernetes.io
   debian.org ubuntu.com redhat.com
@@ -109,6 +133,10 @@ SKIP_DOMAINS = Set.new(%w[
   dnspod.cn dnspod.com
   facebook.net facebookmail.com
   doubleclick.net sohu.com sohu.com.cn
+  golang.org pkg.go.dev
+  jsdelivr.net cdnjs.cloudflare.com
+  pastebin.com paste.ee
+  shodan.io
 ]).freeze
 
 # Root-level cloud/CDN platform domains that are too broad to block wholesale —
@@ -145,14 +173,33 @@ class BaseScraper
 
   # ── Domain helpers ──────────────────────────────────────────────────────────
 
-  def normalize_domain(raw)
+  def refang(text)
+    text
+      .gsub('[.]', '.')
+      .gsub('(.)', '.')
+      .gsub(/\[DOT\]/i, '.')
+      .gsub(/\(DOT\)/i, '.')
+      .gsub(/hxxps?:\/\//i, 'https://')
+      .gsub(/h\*\*ps?:\/\//i, 'https://')
+  end
+
+  def valid_ipv4?(str)
+    return false unless str =~ /\A\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\z/
+    str.split('.').all? { |o| (0..255).cover?(o.to_i) }
+  end
+
+  def strip_ioc_noise(raw)
     raw
-      .gsub('[.]', '.')   # de-obfuscate
-      .gsub(/\/.*\z/, '') # strip path
-      .gsub(/#.*\z/, '')  # strip fragment
+      .gsub(/[\/\?#].*\z/, '')   # strip path/query/fragment
+      .gsub(/:.*\z/, '')          # strip port
+      .gsub(/[.,;:!?)]+\z/, '')   # strip trailing punctuation
       .chomp('.')
       .downcase
       .strip
+  end
+
+  def normalize_domain(raw)
+    strip_ioc_noise(refang(raw))
   end
 
   def valid_domain?(domain)
@@ -176,24 +223,269 @@ class BaseScraper
     SKIP_DOMAINS.any? { |s| domain == s || domain.end_with?(".#{s}") }
   end
 
-  def scan_text_for_domains(text, domains)
-    # Find any sequence containing [.] and extract valid domain candidates
-    text.scan(/[a-zA-Z0-9][a-zA-Z0-9.\-]*\[\.\][a-zA-Z0-9.\-]*[a-zA-Z0-9]/) do |match|
-      candidate = normalize_domain(match)
-      domains << candidate if valid_domain?(candidate) && !skip_domain?(candidate)
+  def scan_for_iocs(text, domains, ips, plain_text: false)
+    return if text.nil? || text.empty?
+
+    # --- Defanged tokens (any context) ---
+    text.scan(DEFANGED_TOKEN_RE) do |m|
+      candidate = normalize_domain(m)
+      if valid_ipv4?(candidate)
+        ips << candidate
+      elsif valid_domain?(candidate) && !skip_domain?(candidate)
+        domains << candidate
+      end
+    end
+
+    # hxxp:// / hxxps:// URLs
+    text.scan(/hxxps?:\/\/([^\s\[\]()\"'<>\x00-\x1f]+)/i) do |m|
+      host = strip_ioc_noise(m[0])
+      if valid_ipv4?(host)
+        ips << host
+      elsif valid_domain?(host) && !skip_domain?(host)
+        domains << host
+      end
+    end
+
+    # h**p:// / h**ps:// URLs
+    text.scan(/h\*\*ps?:\/\/([^\s\[\]()\"'<>\x00-\x1f]+)/i) do |m|
+      host = strip_ioc_noise(m[0])
+      if valid_ipv4?(host)
+        ips << host
+      elsif valid_domain?(host) && !skip_domain?(host)
+        domains << host
+      end
+    end
+
+    return unless plain_text
+
+    # --- Plain text (only in IoC sections) ---
+    text.scan(PLAIN_IPV4_RE) do |m|
+      ip = strip_ioc_noise(m)
+      ips << ip if valid_ipv4?(ip)
+    end
+
+    # Plain domains — conservative (validated by valid_domain?)
+    text.scan(/\b([a-zA-Z0-9][a-zA-Z0-9\-]{0,62}(?:\.[a-zA-Z0-9][a-zA-Z0-9\-]{0,62})+)\b/) do |m|
+      candidate = strip_ioc_noise(m[0])
+      next if candidate.match?(/\A[\d.]+\z/)  # skip pure numeric (already caught as IP)
+      next if candidate.match?(/\A\d+\.\d+[\.\d]*\z/)  # version strings
+      if valid_domain?(candidate) && !skip_domain?(candidate)
+        domains << candidate
+      end
     end
   end
 
+  # Backward-compatible wrapper
+  def scan_text_for_domains(text, domains)
+    ips = Set.new
+    scan_for_iocs(text, domains, ips)
+  end
+
+  def extract_ioc_section(doc, headings: IOC_HEADINGS)
+    doc.css('h1,h2,h3,h4,h5,h6,strong,b,th,td').each do |node|
+      text = node.text.strip.downcase
+      next unless headings.any? { |h| text.include?(h) }
+
+      # Walk forward siblings collecting text until the next heading
+      ioc_parts = []
+      sib = node.next_sibling
+      while sib
+        break if sib.element? && sib.name.match?(/\Ah[1-6]\z/i)
+        ioc_parts << sib.text
+        sib = sib.next_sibling
+      end
+
+      # Also grab the parent's following siblings if that yielded nothing
+      if ioc_parts.join.strip.empty?
+        parent = node.parent
+        sib = parent&.next_sibling
+        while sib
+          break if sib.element? && sib.name.match?(/\Ah[1-6]\z/i)
+          ioc_parts << sib.text
+          sib = sib.next_sibling
+        end
+      end
+
+      result = ioc_parts.join("\n").strip
+      return result unless result.empty?
+    end
+    nil
+  end
+
+  def article_content(doc)
+    doc.at_css('article, .article-body, .post-body, .entry-content, .articlebody, #articlebody, main, .content') ||
+      doc.at_css('body')
+  end
+
+  def image_skip_fragments
+    %w[
+      doubleclick.net googlesyndication.com adserv advert
+      /pixel. /1x1. /tracking /beacon /analytics /stat.
+      /social/ /share-button /twitter-bird /fb-button /whatsapp
+      /favicon /apple-touch-icon /touch-icon
+      gravatar.com /avatar/ /author- /author_
+      /logo. /badge. /icon-
+      feeds.feedburner.com
+    ]
+  end
+
+  def extract_images(doc, base_url)
+    content = article_content(doc)
+    return [] unless content
+
+    base_uri = URI.parse(base_url)
+    seen     = Set.new
+    images   = []
+
+    content.css('img').each do |img|
+      src = nil
+      %w[src data-src data-lazy-src data-original data-lazy].each do |attr|
+        val = img[attr]&.strip
+        next if val.nil? || val.empty? || val.start_with?('data:')
+        src = val
+        break
+      end
+      src ||= img['srcset']&.split(/[\s,]+/)&.find { |s| !s.start_with?('data:') && s.include?('.') }
+
+      next if src.nil? || src.strip.empty?
+
+      url = resolve_url(src, base_uri)
+      next unless url&.start_with?('http')
+      next if image_skip_fragments.any? { |f| url.downcase.include?(f) }
+
+      w = img['width']&.to_i
+      h = img['height']&.to_i
+      next if (w && w.positive? && w < 50) || (h && h.positive? && h < 50)
+
+      next unless seen.add?(url)
+      images << url
+    end
+
+    images
+  end
+
+  def resolve_url(src, base_uri)
+    URI.join(base_uri, src).to_s
+  rescue URI::Error
+    src.start_with?('http') ? src : nil
+  end
+
+  def most_recent_cached_date
+    return nil if @cache['articles'].empty?
+    @cache['articles'].values
+      .filter_map { |a| Date.parse(a['date']) rescue nil }
+      .max
+  end
+
+  def rescan_images_in_cache
+    if @ocr_only
+      puts "\nOCR-only mode: re-fetching images and re-running OCR on all cached articles..."
+    else
+      puts "\nImage rescan: checking cached articles for unprocessed screenshots..."
+    end
+
+    to_scan = @cache['articles'].select do |_, entry|
+      if @ocr_only
+        entry['images'].nil? || entry['images'].is_a?(Array)
+      else
+        entry['images'].nil? ||
+          (entry['images'].is_a?(Array) && entry['images'].any? && entry['images_ocr_at'].nil?)
+      end
+    end
+
+    if to_scan.empty?
+      puts '  No cached articles to process.'
+      return
+    end
+
+    puts "  Articles to rescan: #{to_scan.size}"
+
+    to_scan.each do |url, entry|
+      puts "  [RESCAN] #{url}"
+
+      if entry['images'].nil?
+        html = nil
+
+        if @browser_fetch && browser_fetch_available?
+          puts "    Trying Safari browser fetch..."
+          html = fetch_via_browser(url)
+          html = nil if html && cloudflare_challenge?(html)
+        end
+
+        if html.nil?
+          response = fetch_with_retry(url)
+          unless response
+            warn "  [FAILED] #{url}"
+            next
+          end
+          if cloudflare_challenge?(response.body)
+            if @browser_fetch
+              warn "  [CF-BLOCK] #{url} — Cloudflare challenge; browser fetch also failed"
+            else
+              warn "  [CF-BLOCK] #{url} — Cloudflare challenge; try --browser-fetch"
+            end
+            next
+          end
+          html = response.body
+        end
+
+        doc = Nokogiri::HTML(html)
+        entry['images'] = extract_images(doc, url)
+        puts "    Found #{entry['images'].size} image(s)"
+      end
+
+      images = entry['images']
+      if images.empty?
+        entry['images_ocr_at'] = Time.now.utc.iso8601
+        save_cache(quiet: true)
+        next
+      end
+
+      ocr_domains = extract_domains_from_images(images)
+      entry['images_ocr_at']     = Time.now.utc.iso8601
+      entry['image_ocr_domains'] = ocr_domains.to_a.sort
+
+      if ocr_domains.empty?
+        save_cache(quiet: true)
+        next
+      end
+
+      existing_domains = Set.new(entry['domains'] || [])
+      new_domains      = ocr_domains - existing_domains
+
+      unless new_domains.empty?
+        entry['domains']              = (existing_domains | ocr_domains).to_a.sort
+        entry['written_to_blocklist'] = false
+
+        @pending[url] = {
+          domains: new_domains.to_a.sort,
+          title:   entry['title'],
+          date:    entry['date']
+        }
+
+        puts "    [OCR +#{new_domains.size}] #{url}"
+        new_domains.each { |d| puts "               #{d}" }
+      end
+
+      save_cache(quiet: true)
+    end
+  end
+
+  def scrape_articles_parallel(articles)
+    batches = articles.each_slice(@parallel).to_a
+    batches.tqdm(desc: 'Scraping articles', total: batches.size, unit: 'batch').each do |batch|
+      threads = batch.map { |a| Thread.new { scrape_article(a) } }
+      threads.each(&:join)
+      save_cache(quiet: true)
+    end
+  end
+
+  # Default no-op for scrapers without Cloudflare protection
+  def cloudflare_challenge?(_html) = false
+
   # ── HTTP ────────────────────────────────────────────────────────────────────
 
-  # Open a URL in Safari via AppleScript, wait for it to render (Cloudflare
-  # JS challenges complete), then return the rendered page source as a string.
-  # Returns nil on any error. Serialized via BROWSER_FETCH_MUTEX so multiple
-  # threads don't open overlapping tabs.
-  #
-  # Requires macOS + Safari + osascript. Only called when @browser_fetch is true.
   def fetch_via_browser(url, wait_seconds: 5)
-    # Escape double-quotes in URL for AppleScript string embedding
     escaped = url.gsub('\\', '\\\\').gsub('"', '\\"')
 
     script = <<~APPLESCRIPT
@@ -223,8 +515,6 @@ class BaseScraper
   end
 
   def fetch_with_retry(url, retries: 3)
-    # Reserve a slot in the global request timeline before making the call.
-    # Sleep is done outside the mutex so other threads aren't blocked while waiting.
     delay = @request_mutex.synchronize do
       elapsed = Time.now - @last_request_at
       wait = [MIN_REQUEST_INTERVAL - elapsed, 0].max
@@ -260,13 +550,11 @@ class BaseScraper
 
   # ── OCR ─────────────────────────────────────────────────────────────────────
 
-  # Returns :macos, :tesseract, or nil. Memoised per instance.
   def ocr_backend
     @ocr_backend ||= detect_ocr_backend
   end
 
   def detect_ocr_backend
-    # macOS: prefer Vision framework via compiled Swift helper.
     if RUBY_PLATFORM.include?('darwin')
       if File.exist?(OCR_MACOS_SCRIPT) &&
          (system('which swiftc > /dev/null 2>&1') || system('which swift > /dev/null 2>&1'))
@@ -274,13 +562,11 @@ class BaseScraper
       end
     end
 
-    # Any platform: fall back to tesseract if it's in PATH.
     return :tesseract if system('which tesseract > /dev/null 2>&1')
 
     nil
   end
 
-  # Print an orange/amber warning to stderr (colour only when stderr is a TTY).
   def warn_orange(msg)
     if $stderr.isatty
       warn "\e[33m#{msg}\e[0m"
@@ -289,7 +575,6 @@ class BaseScraper
     end
   end
 
-  # Call once at scraper startup to surface a clear warning when OCR is absent.
   def warn_if_no_ocr_backend
     return if ocr_backend
 
@@ -300,8 +585,6 @@ class BaseScraper
     warn_orange('  Linux/Windows: install Tesseract  →  https://github.com/tesseract-ocr/tesseract')
   end
 
-  # Compile the Swift OCR helper once; thread-safe via OCR_COMPILE_MUTEX.
-  # Falls back to :tesseract (or nil) if compilation fails.
   def ensure_macos_ocr_compiled
     OCR_COMPILE_MUTEX.synchronize do
       return if File.exist?(OCR_MACOS_BINARY)
@@ -314,8 +597,6 @@ class BaseScraper
     end
   end
 
-  # Download an image URL to a temp file, run OCR, return the recognised text.
-  # Returns nil on any error so callers can simply skip.
   def ocr_image_url(image_url)
     return nil unless ocr_backend
 
@@ -341,7 +622,6 @@ class BaseScraper
         text = IO.popen([OCR_MACOS_BINARY, tmp.path], err: File::NULL, &:read)
         $?.success? ? text : nil
       when :tesseract
-        # --psm 11: sparse text — finds as much text as possible (best for screenshots)
         text = IO.popen(['tesseract', tmp.path, 'stdout', '--psm', '11'], err: File::NULL, &:read)
         $?.success? ? text : nil
       end
@@ -363,7 +643,6 @@ class BaseScraper
     end
   end
 
-  # Run OCR on a list of image URLs and return any domains found.
   def extract_domains_from_images(image_urls)
     domains = Set.new
     return domains if image_urls.empty? || ocr_backend.nil? || @skip_ocr
@@ -379,8 +658,6 @@ class BaseScraper
 
   # ── Blocklist ───────────────────────────────────────────────────────────────
 
-  # Parse an array of lines into sections separated by blank lines.
-  # Returns an array where each element is either :blank or an Array of lines.
   def parse_sections(lines)
     sections = []
     current  = []
@@ -423,7 +700,6 @@ class BaseScraper
 
       still_has_domains = filtered.any? { |l| !l.strip.start_with?('#') }
 
-      # Drop entire section if it had domains but all were removed
       has_domains && !still_has_domains ? nil : filtered
     end
 
@@ -453,7 +729,6 @@ class BaseScraper
 
     existing = read_existing_blocklist_domains
 
-    # Build domain → [source_urls] across all pending articles, deduped globally
     domain_sources = {}
     @pending.each do |url, data|
       data[:domains].each do |d|
@@ -465,7 +740,6 @@ class BaseScraper
     new_domain_sources = domain_sources.reject { |d, _| existing.include?(d) }
     dup_domain_sources = domain_sources.select { |d, _| existing.include?(d) }
 
-    # For domains already in the blocklist, insert source attribution comments
     add_source_comments_for_duplicates(dup_domain_sources) if dup_domain_sources.any?
 
     if new_domain_sources.empty?
@@ -474,8 +748,6 @@ class BaseScraper
       return
     end
 
-    # Group new domains by their exact set of source URLs so domains shared by
-    # multiple articles get a single block with multiple # Source: lines.
     source_set_groups = {}
     new_domain_sources.each do |domain, urls|
       source_set_groups[urls] ||= []
@@ -486,7 +758,7 @@ class BaseScraper
     puts "\nAppending #{total} new domain(s) to #{@output_file}"
 
     File.open(@output_file, 'a') do |f|
-      f.puts  # blank line separator before new block
+      f.puts
       source_set_groups.each do |urls, domains|
         urls.each { |url| f.puts "# Source: #{url}" }
         domains.sort.each { |d| f.puts d }
@@ -497,8 +769,6 @@ class BaseScraper
     mark_pending_written
   end
 
-  # Insert new # Source: comments into existing sections for domains that are
-  # already in the blocklist, so every source that found the domain is credited.
   def add_source_comments_for_duplicates(dup_domain_sources)
     return unless File.exist?(@output_file)
 
@@ -508,13 +778,11 @@ class BaseScraper
     sections.each do |section|
       next if section == :blank
 
-      # Domains present in this section
       section_domains = section
         .reject { |l| l.strip.start_with?('#') }
         .map    { |l| l.split('#').first.strip.downcase }
         .to_set
 
-      # Collect new source URLs for any domain in this section
       urls_to_add = []
       dup_domain_sources.each do |domain, urls|
         next unless section_domains.include?(domain)
@@ -522,7 +790,6 @@ class BaseScraper
       end
       next if urls_to_add.empty?
 
-      # Skip sources already commented in this section
       existing_sources = section
         .select { |l| l.strip.start_with?('# Source:') }
         .map(&:strip)
@@ -531,7 +798,6 @@ class BaseScraper
       new_sources = urls_to_add.reject { |u| existing_sources.include?("# Source: #{u}") }
       next if new_sources.empty?
 
-      # Insert after the last existing # Source: line, or at the top of the section
       last_source_idx = section.rindex { |l| l.strip.start_with?('# Source:') }
       insert_at = last_source_idx ? last_source_idx + 1 : 0
 
@@ -576,7 +842,6 @@ class BaseScraper
 
   # ── Cache ───────────────────────────────────────────────────────────────────
 
-  # quiet: true suppresses the confirmation line (used for mid-run checkpoints).
   def save_cache(quiet: false)
     @cache['last_updated']      = Time.now.utc.iso8601
     @full_cache['last_updated'] = Time.now.utc.iso8601
@@ -615,12 +880,246 @@ class BaseScraper
 end
 
 # ────────────────────────────────────────────────────────────────────────────
+# StandardPaginatedScraper — base for all URL-paginated scrapers
+# ────────────────────────────────────────────────────────────────────────────
+
+class StandardPaginatedScraper < BaseScraper
+  # Subclasses MUST define:
+  #   SOURCE_NAME = '...'
+  #   SOURCE_KEY  = '...'
+  #   BASE_URL    = 'https://...'
+  #
+  # Subclasses MUST implement:
+  #   listing_url(page)      → String
+  #   parse_listing(doc)     → [{url:, title:, date_str:, date: Date|nil}]
+  #
+  # Subclasses MAY override:
+  #   ioc_headings           → [String]  (downcased, matched with include?)
+  #   skip_article?(url)     → bool
+  #   max_pages              → Integer (hard cap, default 500)
+  #   article_content(doc)   → Nokogiri node (from BaseScraper default)
+  #   image_skip_fragments   → [String]  (from BaseScraper default)
+
+  def initialize(years:, pages_back:, parallel:, output_file:, cache:, full_cache:,
+                 cache_file:, dry_run:, browser_fetch: false, skip_ocr: false,
+                 ocr_only: false, lookback_days: nil, **_opts)
+    super(output_file: output_file, cache: cache, full_cache: full_cache,
+          cache_file: cache_file, dry_run: dry_run, browser_fetch: browser_fetch,
+          skip_ocr: skip_ocr)
+    @years         = years
+    @pages_back    = pages_back
+    @lookback_days = lookback_days
+    @parallel      = parallel
+    @ocr_only      = ocr_only
+  end
+
+  def run
+    puts "Mode             : #{@ocr_only ? 'OCR-only (no scraping)' : mode_label}"
+    puts "Parallel workers : #{@parallel}" unless @ocr_only
+    puts "Output file      : #{@output_file}"
+    puts "Cache file       : #{@cache_file}"
+    puts "Dry run          : #{@dry_run}"
+    puts "OCR backend      : #{@skip_ocr ? 'skipped (--skip-ocr)' : (ocr_backend || 'none')}"
+    puts "Browser fetch    : #{@browser_fetch}"
+    puts
+
+    warn_if_no_ocr_backend
+    ensure_macos_ocr_compiled if ocr_backend == :macos
+
+    if @ocr_only
+      rescan_images_in_cache
+    else
+      articles = collect_article_urls
+      puts "\nTotal articles to process: #{articles.size}\n\n"
+      scrape_articles_parallel(articles) if articles.any?
+    end
+
+    unless @dry_run
+      clean_blocklist
+      write_to_blocklist
+    end
+
+    save_cache
+    print_summary
+  end
+
+  private
+
+  def ioc_headings
+    IOC_HEADINGS
+  end
+
+  def skip_article?(_url)
+    false
+  end
+
+  def max_pages
+    500
+  end
+
+  def mode_label
+    last = most_recent_cached_date
+    if @years
+      "full scan (#{@years} year(s))"
+    elsif last
+      overlap = @lookback_days&.positive? ? "#{@lookback_days}-day lookback" : "#{@pages_back} pages back"
+      "incremental (#{overlap} from #{last})"
+    else
+      "first run — full scan (#{DEFAULT_YEARS} year(s))"
+    end
+  end
+
+  def collect_article_urls
+    articles    = []
+    seen        = Set.new
+    cutoff      = Date.today << ((@years || DEFAULT_YEARS) * 12)
+    last_date   = most_recent_cached_date
+    incremental = @years.nil? && !last_date.nil?
+    pages_beyond = 0
+
+    puts "Collecting article URLs..."
+
+    (1..max_pages).each do |page|
+      url  = listing_url(page)
+      puts "  Page #{page}: #{url}"
+
+      resp = fetch_with_retry(url)
+      unless resp
+        puts "  -> Failed, stopping."
+        break
+      end
+
+      doc     = Nokogiri::HTML(resp.body)
+      entries = parse_listing(doc)
+
+      if entries.empty?
+        puts "  -> No entries, done."
+        break
+      end
+
+      oldest_date = nil
+      new_count   = 0
+      hit_cutoff  = false
+
+      entries.each do |entry|
+        next if seen.include?(entry[:url])
+        seen.add(entry[:url])
+        next if skip_article?(entry[:url])
+
+        date = entry[:date]
+
+        if date && date < cutoff
+          hit_cutoff = true
+          break
+        end
+
+        oldest_date = date if date && (oldest_date.nil? || date < oldest_date)
+
+        next if @cache['articles'][entry[:url]]
+
+        articles << entry
+        new_count += 1
+      end
+
+      puts "  -> #{new_count} new (total #{articles.size})"
+      break if hit_cutoff
+
+      if incremental && oldest_date
+        if @lookback_days&.positive?
+          break if oldest_date < (last_date - @lookback_days)
+        elsif oldest_date < last_date
+          pages_beyond += 1
+          break if pages_beyond >= @pages_back
+        end
+      end
+
+      sleep 0.5
+    end
+
+    articles
+  end
+
+  def scrape_article(article)
+    url  = article[:url]
+    resp = fetch_with_retry(url)
+    unless resp
+      @mutex.synchronize { puts "  [FAILED  ] #{url}" }
+      return
+    end
+
+    doc   = Nokogiri::HTML(resp.body)
+    title = article[:title] || doc.at_css('h1')&.text&.strip
+
+    domains  = Set.new
+    ips      = Set.new
+    content  = article_content(doc)
+    scan_for_iocs(content&.text.to_s, domains, ips)
+
+    ioc_text = extract_ioc_section(doc, headings: ioc_headings)
+    scan_for_iocs(ioc_text.to_s, domains, ips, plain_text: true)
+
+    images   = extract_images(doc, url)
+    ocr_doms = extract_domains_from_images(images)
+    domains.merge(ocr_doms)
+
+    all_found = (domains.to_a + ips.to_a).sort.uniq
+
+    entry = {
+      'url'                  => url,
+      'title'                => title,
+      'date'                 => article[:date_str],
+      'scraped_at'           => Time.now.utc.iso8601,
+      'domains'              => all_found,
+      'images'               => images,
+      'image_ocr_domains'    => ocr_doms.to_a.sort,
+      'images_ocr_at'        => (images.any? && ocr_backend && !@skip_ocr ? Time.now.utc.iso8601 : nil),
+      'written_to_blocklist' => false
+    }
+
+    @mutex.synchronize do
+      @cache['articles'][url] = entry
+      label = all_found.any? ? "[FOUND #{all_found.size.to_s.rjust(3)}]" : '[NO DOMAINS ]'
+      puts "  #{label} #{url}"
+      all_found.each { |d| puts "               #{d}" }
+      puts "               (#{images.size} image(s), #{ocr_doms.size} via OCR)" if images.any?
+      @pending[url] = { domains: all_found, title: title, date: article[:date_str] } if all_found.any?
+    end
+  end
+end
+
+# ────────────────────────────────────────────────────────────────────────────
 # Load scrapers
 # ────────────────────────────────────────────────────────────────────────────
 
 require_relative 'scrapers/thehackernews'
+require_relative 'scrapers/bleepingcomputer'
+require_relative 'scrapers/krebsonsecurity'
+require_relative 'scrapers/isc_sans'
+require_relative 'scrapers/talos'
+require_relative 'scrapers/unit42'
+require_relative 'scrapers/securelist'
+require_relative 'scrapers/malwarebytes'
+require_relative 'scrapers/welivesecurity'
+require_relative 'scrapers/proofpoint'
+require_relative 'scrapers/microsoft_security'
+require_relative 'scrapers/google_threat_intel'
+require_relative 'scrapers/anyrun'
 
-SCRAPERS = [THNScraper].freeze
+ALL_SCRAPERS = {
+  'thehackernews'       => THNScraper,
+  'bleepingcomputer'    => BleepingComputerScraper,
+  'krebsonsecurity'     => KrebsScraper,
+  'isc_sans'            => ISCSansScraper,
+  'talos'               => TalosScraper,
+  'unit42'              => Unit42Scraper,
+  'securelist'          => SecurelistScraper,
+  'malwarebytes'        => MalwarebyteScraper,
+  'welivesecurity'      => WeLiveSecurityScraper,
+  'proofpoint'          => ProofpointScraper,
+  'microsoft_security'  => MicrosoftSecurityScraper,
+  'google_threat_intel' => GoogleThreatIntelScraper,
+  'anyrun'              => AnyRunScraper,
+}.freeze
 
 # ────────────────────────────────────────────────────────────────────────────
 # Cache file helpers
@@ -671,7 +1170,8 @@ options = {
   rescan_images:  false,            # re-OCR cached articles that have images not yet processed
   browser_fetch:  false,            # use Safari via osascript to fetch Cloudflare-protected pages
   skip_ocr:       false,            # cache images but do not run OCR
-  ocr_only:       false             # skip article scraping; only re-OCR cached images
+  ocr_only:       false,            # skip article scraping; only re-OCR cached images
+  sources:        nil,              # nil = all; comma-separated SOURCE_KEYs to restrict
 }
 
 OptionParser.new do |opts|
@@ -734,6 +1234,11 @@ OptionParser.new do |opts|
     options[:ocr_only] = true
   end
 
+  opts.on('--sources KEYS',
+          'Comma-separated source keys to scrape (default: all). E.g.: thehackernews,bleepingcomputer') do |v|
+    options[:sources] = v.split(',').map(&:strip).map(&:downcase)
+  end
+
   opts.on('-h', '--help', 'Show this help') do
     puts opts
     exit
@@ -745,13 +1250,24 @@ puts '=' * 60
 puts "Output file : #{File.expand_path(options[:output_file])}"
 puts "Cache file  : #{File.expand_path(options[:cache_file])}"
 puts "Dry run     : #{options[:dry_run]}"
+puts "Sources     : #{options[:sources] ? options[:sources].join(', ') : 'all (#{ALL_SCRAPERS.keys.join(', ')})'}"
 
 full_cache = load_full_cache(options[:cache_file])
 
-SCRAPERS.each do |klass|
-  source_name = klass::SOURCE_NAME
-  source_key  = klass::SOURCE_KEY
+scrapers_to_run = if options[:sources]
+  ALL_SCRAPERS.select { |k, _| options[:sources].include?(k) }
+else
+  ALL_SCRAPERS
+end
 
+if scrapers_to_run.empty?
+  warn "No matching scrapers for: #{options[:sources].join(', ')}"
+  warn "Available: #{ALL_SCRAPERS.keys.join(', ')}"
+  exit 1
+end
+
+scrapers_to_run.each do |source_key, klass|
+  source_name = klass::SOURCE_NAME
   puts
   puts "=== Scraping: #{source_name} ==="
   puts
@@ -776,6 +1292,6 @@ SCRAPERS.each do |klass|
     ).run
   rescue StandardError => e
     warn "Error scraping #{source_name}: #{e.message}"
-    warn e.backtrace.first(3).join("\n") if e.backtrace
+    warn e.backtrace.first(5).join("\n") if e.backtrace
   end
 end

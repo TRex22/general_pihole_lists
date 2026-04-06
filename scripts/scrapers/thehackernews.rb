@@ -34,7 +34,7 @@ class THNScraper < BaseScraper
 
   def initialize(years:, pages_back:, parallel:, output_file:, cache:, full_cache:,
                  cache_file:, dry_run:, rescan_images: false, lookback_days: nil,
-                 browser_fetch: false, skip_ocr: false, ocr_only: false)
+                 browser_fetch: false, skip_ocr: false, ocr_only: false, **_opts)
     super(output_file: output_file, cache: cache, full_cache: full_cache,
           cache_file: cache_file, dry_run: dry_run, browser_fetch: browser_fetch,
           skip_ocr: skip_ocr)
@@ -77,6 +77,10 @@ class THNScraper < BaseScraper
 
     save_cache
     print_summary
+  end
+
+  def image_skip_fragments
+    THN_IMAGE_SKIP_FRAGMENTS
   end
 
   private
@@ -150,18 +154,12 @@ class THNScraper < BaseScraper
 
         oldest_time = published if oldest_time.nil? || published < oldest_time
 
-        # Skip re-scraping if the article is in cache and hasn't been updated since.
-        # The Blogger feed's "updated" timestamp changes when the post content changes.
         feed_updated_at = entry.dig('updated', '$t')
         cached_entry    = @cache['articles'][href]
         force_rescrape  = cached_entry && cached_entry['feed_updated_at'] != feed_updated_at
 
         next if cached_entry && !force_rescrape
 
-        # Capture the feed entry's HTML fragment. Note: the Blogger JSON feed
-        # only returns a truncated summary (~400 bytes), not the full article.
-        # THN's direct article URLs are Cloudflare-protected, so we rely on
-        # --browser-fetch (Safari/osascript) to get inline article images.
         content_html = entry.dig('content', '$t') || entry.dig('summary', '$t')
 
         articles << {
@@ -179,17 +177,11 @@ class THNScraper < BaseScraper
 
       break if hit_cutoff
 
-      # Guard against a stuck cursor (all entries on this page were already seen/skipped)
       if oldest_time.nil?
         puts '  -> No advanceable entries on page, stopping.'
         break
       end
 
-      # Incremental overlap window — two modes:
-      #   lookback_days: stop once oldest article on the page is more than N days
-      #                  before the last cached date (day-granularity, predictable).
-      #   pages_back:    stop after N pages whose oldest article predates the last
-      #                  cached date (default, page-granularity).
       if incremental
         if @lookback_days&.positive?
           day_floor = last_scraped - @lookback_days
@@ -224,40 +216,15 @@ class THNScraper < BaseScraper
     nil
   end
 
-  def most_recent_cached_date
-    return nil if @cache['articles'].empty?
-
-    @cache['articles'].values
-      .filter_map { |a| Date.parse(a['date']) rescue nil }
-      .max
-  end
-
-  # ── Parallel article scraping ───────────────────────────────────────────────
-
-  def scrape_articles_parallel(articles)
-    batches = articles.each_slice(@parallel).to_a
-    batches.tqdm(desc: 'Scraping articles', total: batches.size, unit: 'batch').each do |batch|
-      threads = batch.map { |article| Thread.new { scrape_article(article) } }
-      threads.each(&:join)
-      # Checkpoint: persist cache after every batch so a crash loses at most
-      # one batch of work rather than the entire run.
-      save_cache(quiet: true)
-    end
-  end
+  # ── Article scraping ────────────────────────────────────────────────────────
 
   def scrape_article(article)
     url = article[:url]
 
-    # collect_article_urls only enqueues articles that are new or force_rescrape,
-    # so a cached entry here means it was updated since last scrape.
     if article[:force_rescrape]
       @mutex.synchronize { puts "  [UPDATED ] #{url} — re-scraping" }
     end
 
-    # Always fetch the article URL directly — direct HTTP GET works for THN
-    # (Cloudflare challenges are not always present). The Blogger JSON feed
-    # only provides a truncated ~400-byte summary with no inline images, so
-    # we cannot rely on content_html for image extraction.
     article_html = nil
     response     = fetch_with_retry(url)
     if response
@@ -270,7 +237,6 @@ class THNScraper < BaseScraper
       @mutex.synchronize { puts "  [FAILED  ] #{url} — HTTP fetch failed" }
     end
 
-    # For text domains: prefer full article HTML, fall back to feed summary.
     text_html = article_html || article[:content_html].to_s
     if text_html.strip.empty?
       @mutex.synchronize { puts "  [SKIPPED ] #{url} — no content available" }
@@ -280,28 +246,37 @@ class THNScraper < BaseScraper
     doc   = Nokogiri::HTML(text_html)
     title = article[:title] || doc.at_css('h1.post-title, h1')&.text&.strip
 
-    # ── Text-based domain extraction ────────────────────────────────────────
-    text_domains = extract_text_domains(doc)
+    # ── Text-based domain extraction (now using scan_for_iocs) ──────────────
+    domains = Set.new
+    ips     = Set.new
+    content = article_content(doc)
+    scan_for_iocs(content&.text.to_s, domains, ips)
+
+    # Also scan IoC section
+    ioc_text = extract_ioc_section(doc)
+    scan_for_iocs(ioc_text.to_s, domains, ips, plain_text: true)
 
     # ── Image extraction ────────────────────────────────────────────────────
-    # Extract from the full article HTML; feed summary has no inline images.
     images = article_html ? extract_images(doc, url) : []
 
-    # Optional browser fetch if direct HTTP was Cloudflare-blocked.
     if images.empty? && @browser_fetch && browser_fetch_available?
       @mutex.synchronize { puts "  [BROWSER ] #{url} — opening in Safari for image extraction" }
       browser_html = fetch_via_browser(url)
       if browser_html && !cloudflare_challenge?(browser_html)
         browser_doc  = Nokogiri::HTML(browser_html)
         images       = extract_images(browser_doc, url)
-        browser_text = extract_text_domains(browser_doc)
-        text_domains = (Set.new(text_domains) | browser_text).to_a.sort
+        browser_doms = Set.new
+        browser_ips  = Set.new
+        scan_for_iocs(article_content(browser_doc)&.text.to_s, browser_doms, browser_ips)
+        domains.merge(browser_doms)
+        ips.merge(browser_ips)
       end
     end
 
     # ── OCR ─────────────────────────────────────────────────────────────────
     ocr_doms    = extract_domains_from_images(images)
-    all_domains = (Set.new(text_domains) | ocr_doms).to_a.sort
+    domains.merge(ocr_doms)
+    all_domains = (domains.to_a + ips.to_a).sort.uniq
 
     entry = {
       'url'                  => url,
@@ -328,113 +303,7 @@ class THNScraper < BaseScraper
     end
   end
 
-  # ── Image rescan pass ───────────────────────────────────────────────────────
-
-  # Re-processes cached articles that have images not yet OCR'd, or articles
-  # where images haven't been extracted at all. Adds any newly-found domains
-  # to @pending so they are written to the blocklist.
-  def rescan_images_in_cache
-    if @ocr_only
-      puts "\nOCR-only mode: re-fetching images and re-running OCR on all cached articles..."
-    else
-      puts "\nImage rescan: checking cached articles for unprocessed screenshots..."
-    end
-
-    to_scan = @cache['articles'].select do |_, entry|
-      if @ocr_only
-        # Re-process every article that has (or might have) images
-        entry['images'].nil? || entry['images'].is_a?(Array)
-      else
-        # Only articles with no image field, or images not yet OCR'd
-        entry['images'].nil? ||
-          (entry['images'].is_a?(Array) && entry['images'].any? && entry['images_ocr_at'].nil?)
-      end
-    end
-
-    if to_scan.empty?
-      puts '  No cached articles to process.'
-      return
-    end
-
-    puts "  Articles to rescan: #{to_scan.size}"
-
-    to_scan.each do |url, entry|
-      puts "  [RESCAN] #{url}"
-
-      # Fetch HTML if we don't have image URLs yet.
-      # Direct URLs are Cloudflare-protected; use browser fetch if enabled.
-      if entry['images'].nil?
-        html = nil
-
-        if @browser_fetch && browser_fetch_available?
-          puts "    Trying Safari browser fetch..."
-          html = fetch_via_browser(url)
-          html = nil if html && cloudflare_challenge?(html)
-        end
-
-        if html.nil?
-          response = fetch_with_retry(url)
-          unless response
-            warn "  [FAILED] #{url}"
-            next
-          end
-          if cloudflare_challenge?(response.body)
-            if @browser_fetch
-              warn "  [CF-BLOCK] #{url} — Cloudflare challenge; browser fetch also failed"
-            else
-              warn "  [CF-BLOCK] #{url} — Cloudflare challenge; try --browser-fetch"
-            end
-            next
-          end
-          html = response.body
-        end
-
-        doc = Nokogiri::HTML(html)
-        entry['images'] = extract_images(doc, url)
-        puts "    Found #{entry['images'].size} image(s)"
-      end
-
-      images = entry['images']
-      if images.empty?
-        entry['images_ocr_at'] = Time.now.utc.iso8601
-        save_cache(quiet: true)
-        next
-      end
-
-      # Run OCR
-      ocr_domains = extract_domains_from_images(images)
-      entry['images_ocr_at']     = Time.now.utc.iso8601
-      entry['image_ocr_domains'] = ocr_domains.to_a.sort
-
-      if ocr_domains.empty?
-        save_cache(quiet: true)
-        next
-      end
-
-      # Merge newly-found OCR domains into the article's domains
-      existing_domains = Set.new(entry['domains'] || [])
-      new_domains      = ocr_domains - existing_domains
-
-      unless new_domains.empty?
-        entry['domains']              = (existing_domains | ocr_domains).to_a.sort
-        entry['written_to_blocklist'] = false
-
-        @pending[url] = {
-          domains: new_domains.to_a.sort,
-          title:   entry['title'],
-          date:    entry['date']
-        }
-
-        puts "    [OCR +#{new_domains.size}] #{url}"
-        new_domains.each { |d| puts "               #{d}" }
-      end
-
-      # Checkpoint after each article regardless of whether new domains were found.
-      save_cache(quiet: true)
-    end
-  end
-
-  # ── Domain extraction ───────────────────────────────────────────────────────
+  # ── Domain extraction (backward-compat wrapper) ─────────────────────────────
 
   def extract_text_domains(doc)
     domains = Set.new
@@ -452,66 +321,7 @@ class THNScraper < BaseScraper
   end
 
   def article_content(doc)
-    # Try article-specific selectors first (full-page scrape).
-    # When parsing Blogger feed content (an HTML fragment), none of these will
-    # match and we fall back to <body>, which Nokogiri wraps the fragment in —
-    # so it correctly contains exactly the article content and nothing else.
     doc.at_css('.articlebody, .article-body, .post-body, #articlebody, article .entry-content, main') ||
       doc.at_css('body')
-  end
-
-  # ── Image extraction ────────────────────────────────────────────────────────
-
-  # Returns an array of absolute image URLs found within the article content
-  # area, filtered to remove ads, tracking pixels, icons, and social buttons.
-  #
-  # No file-extension check: Blogger CDN URLs (blogger.googleusercontent.com/img/...)
-  # have no extension. We rely on the content-area CSS scope and skip-fragment
-  # list instead.
-  def extract_images(doc, base_url)
-    content = article_content(doc)
-    return [] unless content
-
-    base_uri = URI.parse(base_url)
-    seen     = Set.new
-    images   = []
-
-    content.css('img').each do |img|
-      # Walk candidate attributes in priority order, skipping data: URIs.
-      # Using || would short-circuit on a data: src and never try data-src.
-      src = nil
-      %w[src data-src data-lazy-src data-original data-lazy].each do |attr|
-        val = img[attr]&.strip
-        next if val.nil? || val.empty? || val.start_with?('data:')
-        src = val
-        break
-      end
-      # srcset: take the first non-data: URL entry
-      if src.nil?
-        src = img['srcset']&.split(/[\s,]+/)&.find { |s| !s.start_with?('data:') && s.include?('.') }
-      end
-
-      next if src.nil? || src.strip.empty?
-
-      url = resolve_url(src, base_uri)
-      next unless url&.start_with?('http')   # must be an absolute HTTP(S) URL
-      next if THN_IMAGE_SKIP_FRAGMENTS.any? { |f| url.downcase.include?(f) }
-
-      # Skip images explicitly declared as tiny — likely icons or tracking pixels.
-      w = img['width']&.to_i
-      h = img['height']&.to_i
-      next if (w && w.positive? && w < 50) || (h && h.positive? && h < 50)
-
-      next unless seen.add?(url)
-      images << url
-    end
-
-    images
-  end
-
-  def resolve_url(src, base_uri)
-    URI.join(base_uri, src).to_s
-  rescue URI::Error
-    src.start_with?('http') ? src : nil
   end
 end
