@@ -33,9 +33,10 @@ class THNScraper < BaseScraper
   SOURCE_KEY  = 'thehackernews'
 
   def initialize(years:, pages_back:, parallel:, output_file:, cache:, full_cache:,
-                 cache_file:, dry_run:, rescan_images: false, lookback_days: nil)
+                 cache_file:, dry_run:, rescan_images: false, lookback_days: nil,
+                 browser_fetch: false)
     super(output_file: output_file, cache: cache, full_cache: full_cache,
-          cache_file: cache_file, dry_run: dry_run)
+          cache_file: cache_file, dry_run: dry_run, browser_fetch: browser_fetch)
     @years         = years
     @pages_back    = pages_back
     @lookback_days = lookback_days
@@ -63,6 +64,7 @@ class THNScraper < BaseScraper
     puts "Overlap window   : #{overlap_desc}"
     puts "OCR backend      : #{ocr_backend || 'none'}"
     puts "Rescan images    : #{@rescan_images}"
+    puts "Browser fetch    : #{@browser_fetch ? "enabled (Safari/osascript, macOS only)" : 'disabled (use --browser-fetch to enable)'}"
     puts
 
     warn_if_no_ocr_backend
@@ -150,12 +152,19 @@ class THNScraper < BaseScraper
 
         next if cached_entry && !force_rescrape
 
+        # Capture the feed entry's HTML fragment. Note: the Blogger JSON feed
+        # only returns a truncated summary (~400 bytes), not the full article.
+        # THN's direct article URLs are Cloudflare-protected, so we rely on
+        # --browser-fetch (Safari/osascript) to get inline article images.
+        content_html = entry.dig('content', '$t') || entry.dig('summary', '$t')
+
         articles << {
           url:             href,
           date_str:        published.to_date.to_s,
           title:           entry.dig('title', '$t')&.strip,
           feed_updated_at: feed_updated_at,
-          force_rescrape:  force_rescrape
+          force_rescrape:  force_rescrape,
+          content_html:    content_html
         }
         new_count += 1
       end
@@ -239,21 +248,51 @@ class THNScraper < BaseScraper
       @mutex.synchronize { puts "  [UPDATED ] #{url} — re-scraping" }
     end
 
-    response = fetch_with_retry(url)
-    unless response
-      @mutex.synchronize { puts "  [FAILED] #{url}" }
+    # THN's article URLs sit behind a Cloudflare JS challenge so direct HTTP
+    # returns a challenge page. The Blogger JSON feed provides only a truncated
+    # summary (~400 bytes) — enough for text domain extraction but no images.
+    html = article[:content_html]
+
+    if html.nil? || html.strip.empty?
+      response = fetch_with_retry(url)
+      unless response
+        @mutex.synchronize { puts "  [FAILED] #{url}" }
+        return
+      end
+      html = response.body
+    end
+
+    if cloudflare_challenge?(html)
+      @mutex.synchronize { puts "  [CF-BLOCK] #{url} — Cloudflare challenge, skipping" }
       return
     end
 
-    doc    = Nokogiri::HTML(response.body)
+    doc    = Nokogiri::HTML(html)
     title  = article[:title] || doc.at_css('h1.post-title, h1')&.text&.strip
 
     # ── Text-based domain extraction ────────────────────────────────────────
     text_domains = extract_text_domains(doc)
 
-    # ── Image extraction + OCR ──────────────────────────────────────────────
-    images     = extract_images(doc, url)
-    ocr_doms   = extract_domains_from_images(images)
+    # ── Image extraction ────────────────────────────────────────────────────
+    images = extract_images(doc, url)
+
+    # Feed summary rarely contains inline article images. When browser fetch is
+    # enabled, open the URL in Safari (which handles the Cloudflare JS challenge)
+    # to get the fully-rendered article HTML and extract images from it.
+    if images.empty? && @browser_fetch && browser_fetch_available?
+      @mutex.synchronize { puts "  [BROWSER ] #{url} — opening in Safari for image extraction" }
+      browser_html = fetch_via_browser(url)
+      if browser_html && !cloudflare_challenge?(browser_html)
+        browser_doc  = Nokogiri::HTML(browser_html)
+        images       = extract_images(browser_doc, url)
+        # Merge any additional text domains from the full article body
+        browser_text = extract_text_domains(browser_doc)
+        text_domains = (Set.new(text_domains) | browser_text).to_a.sort
+      end
+    end
+
+    # ── OCR ─────────────────────────────────────────────────────────────────
+    ocr_doms    = extract_domains_from_images(images)
     all_domains = (Set.new(text_domains) | ocr_doms).to_a.sort
 
     entry = {
@@ -306,14 +345,35 @@ class THNScraper < BaseScraper
     to_scan.each do |url, entry|
       puts "  [RESCAN] #{url}"
 
-      # Fetch HTML if we don't have image URLs yet
+      # Fetch HTML if we don't have image URLs yet.
+      # Direct URLs are Cloudflare-protected; use browser fetch if enabled.
       if entry['images'].nil?
-        response = fetch_with_retry(url)
-        unless response
-          warn "  [FAILED] #{url}"
-          next
+        html = nil
+
+        if @browser_fetch && browser_fetch_available?
+          puts "    Trying Safari browser fetch..."
+          html = fetch_via_browser(url)
+          html = nil if html && cloudflare_challenge?(html)
         end
-        doc = Nokogiri::HTML(response.body)
+
+        if html.nil?
+          response = fetch_with_retry(url)
+          unless response
+            warn "  [FAILED] #{url}"
+            next
+          end
+          if cloudflare_challenge?(response.body)
+            if @browser_fetch
+              warn "  [CF-BLOCK] #{url} — Cloudflare challenge; browser fetch also failed"
+            else
+              warn "  [CF-BLOCK] #{url} — Cloudflare challenge; try --browser-fetch"
+            end
+            next
+          end
+          html = response.body
+        end
+
+        doc = Nokogiri::HTML(html)
         entry['images'] = extract_images(doc, url)
         puts "    Found #{entry['images'].size} image(s)"
       end
@@ -368,7 +428,18 @@ class THNScraper < BaseScraper
     domains.to_a.sort
   end
 
+  # Detects a Cloudflare managed-challenge page returned instead of article HTML.
+  def cloudflare_challenge?(html)
+    html.include?('Enable JavaScript and cookies to continue') ||
+      html.include?('_cf_chl_opt') ||
+      html.include?('cf-browser-verification')
+  end
+
   def article_content(doc)
+    # Try article-specific selectors first (full-page scrape).
+    # When parsing Blogger feed content (an HTML fragment), none of these will
+    # match and we fall back to <body>, which Nokogiri wraps the fragment in —
+    # so it correctly contains exactly the article content and nothing else.
     doc.at_css('.articlebody, .article-body, .post-body, #articlebody, article .entry-content, main') ||
       doc.at_css('body')
   end

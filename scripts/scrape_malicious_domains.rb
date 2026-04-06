@@ -13,6 +13,7 @@
 #   ruby scripts/scrape_malicious_domains.rb --dry-run
 #   ruby scripts/scrape_malicious_domains.rb --lookback-days 14
 #   ruby scripts/scrape_malicious_domains.rb --years 3 --rescan-images
+#   ruby scripts/scrape_malicious_domains.rb --browser-fetch --rescan-images
 #
 # WARNING: Extracted domains are NEVER accessed/resolved. Validation is regex-only.
 
@@ -29,7 +30,7 @@ require 'time'
 require 'date'
 
 DEFAULT_YEARS      = 2
-DEFAULT_PARALLEL   = 10 # 5
+DEFAULT_PARALLEL   = 20 # 5
 DEFAULT_PAGES_BACK = 2
 
 CACHE_FILE_DEFAULT  = File.join(__dir__, 'malicious_domains_cache.json')
@@ -38,7 +39,8 @@ OUTPUT_FILE_DEFAULT = File.join(__dir__, '..', 'blocklists', 'malicious.txt')
 # macOS Vision OCR helper — compiled on first use, reused thereafter.
 OCR_MACOS_SCRIPT  = File.join(__dir__, 'ocr_macos.swift')
 OCR_MACOS_BINARY  = File.join(__dir__, 'ocr_macos')
-OCR_COMPILE_MUTEX = Mutex.new
+OCR_COMPILE_MUTEX    = Mutex.new
+BROWSER_FETCH_MUTEX  = Mutex.new  # Serialize Safari/browser fetches (one tab at a time)
 
 # RFC-compliant domain label structure. No network access — purely structural.
 VALID_DOMAIN_RE = /\A(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,63}\z/
@@ -123,12 +125,13 @@ EXACT_SKIP_DOMAINS = Set.new(%w[
 # ────────────────────────────────────────────────────────────────────────────
 
 class BaseScraper
-  def initialize(output_file:, cache:, full_cache:, cache_file:, dry_run:)
+  def initialize(output_file:, cache:, full_cache:, cache_file:, dry_run:, browser_fetch: false)
     @output_file     = File.expand_path(output_file)
     @cache           = cache        # this source's slice: { 'articles' => {}, 'last_updated' => nil }
     @full_cache      = full_cache   # entire cache hash (written to disk)
     @cache_file      = File.expand_path(cache_file)
     @dry_run         = dry_run
+    @browser_fetch   = browser_fetch
     @pending         = {}
     @mutex           = Mutex.new
     @request_mutex   = Mutex.new
@@ -179,6 +182,42 @@ class BaseScraper
   end
 
   # ── HTTP ────────────────────────────────────────────────────────────────────
+
+  # Open a URL in Safari via AppleScript, wait for it to render (Cloudflare
+  # JS challenges complete), then return the rendered page source as a string.
+  # Returns nil on any error. Serialized via BROWSER_FETCH_MUTEX so multiple
+  # threads don't open overlapping tabs.
+  #
+  # Requires macOS + Safari + osascript. Only called when @browser_fetch is true.
+  def fetch_via_browser(url, wait_seconds: 5)
+    # Escape double-quotes in URL for AppleScript string embedding
+    escaped = url.gsub('\\', '\\\\').gsub('"', '\\"')
+
+    script = <<~APPLESCRIPT
+      tell application "Safari"
+        activate
+        make new document with properties {URL:"#{escaped}"}
+        delay #{wait_seconds}
+        set pageSource to source of document 1
+        close document 1
+        return pageSource
+      end tell
+    APPLESCRIPT
+
+    BROWSER_FETCH_MUTEX.synchronize do
+      result = IO.popen(['osascript', '-e', script], err: File::NULL, &:read)
+      $?.success? && !result.strip.empty? ? result : nil
+    end
+  rescue StandardError => e
+    warn "  Browser fetch error for #{url}: #{e.message}"
+    nil
+  end
+
+  def browser_fetch_available?
+    return @browser_fetch_available if defined?(@browser_fetch_available)
+    @browser_fetch_available = RUBY_PLATFORM.include?('darwin') &&
+                               system('which osascript > /dev/null 2>&1')
+  end
 
   def fetch_with_retry(url, retries: 3)
     # Reserve a slot in the global request timeline before making the call.
@@ -626,7 +665,8 @@ options = {
   output_file:    OUTPUT_FILE_DEFAULT,
   cache_file:     CACHE_FILE_DEFAULT,
   dry_run:        false,
-  rescan_images:  false             # re-OCR cached articles that have images not yet processed
+  rescan_images:  false,            # re-OCR cached articles that have images not yet processed
+  browser_fetch:  false             # use Safari via osascript to fetch Cloudflare-protected pages
 }
 
 OptionParser.new do |opts|
@@ -674,6 +714,11 @@ OptionParser.new do |opts|
     options[:rescan_images] = true
   end
 
+  opts.on('--browser-fetch',
+          'Use Safari (macOS only) to fetch Cloudflare-protected article pages for image extraction') do
+    options[:browser_fetch] = true
+  end
+
   opts.on('-h', '--help', 'Show this help') do
     puts opts
     exit
@@ -709,7 +754,8 @@ SCRAPERS.each do |klass|
       full_cache:    full_cache,
       cache_file:    options[:cache_file],
       dry_run:       options[:dry_run],
-      rescan_images: options[:rescan_images]
+      rescan_images: options[:rescan_images],
+      browser_fetch: options[:browser_fetch]
     ).run
   rescue StandardError => e
     warn "Error scraping #{source_name}: #{e.message}"
