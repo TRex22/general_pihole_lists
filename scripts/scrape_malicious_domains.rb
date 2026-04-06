@@ -666,7 +666,8 @@ options = {
   cache_file:     CACHE_FILE_DEFAULT,
   dry_run:        false,
   rescan_images:  false,            # re-OCR cached articles that have images not yet processed
-  browser_fetch:  false             # use Safari via osascript to fetch Cloudflare-protected pages
+  browser_fetch:  false,            # use Safari via osascript to fetch Cloudflare-protected pages
+  skip_ocr:       false             # cache images but do not run OCR
 }
 
 OptionParser.new do |opts|
