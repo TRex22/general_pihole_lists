@@ -11,17 +11,21 @@
 THN_FEED_BASE_URL = 'https://thehackernews.com/feeds/posts/default'
 THN_MAX_RESULTS   = 25  # Blogger API max per page
 
-# Image URL must match one of these extensions (query strings allowed after).
-THN_IMAGE_EXTENSIONS_RE = /\.(png|jpe?g|gif|webp|bmp|tiff?)(\?[^"'\s]*)?$/i
+# Note: THN article images are hosted on blogger.googleusercontent.com/img/...
+# and similar Blogger CDN URLs that carry NO file extension, so extension-based
+# filtering is deliberately avoided. We rely on the article-content-area CSS
+# selector and the skip-fragment list to exclude non-article images instead.
 
 # URL substrings that indicate non-article images (ads, icons, tracking, social).
+# Checked case-insensitively against the full resolved URL.
 THN_IMAGE_SKIP_FRAGMENTS = %w[
-  doubleclick googlesyndication adserv advert
+  doubleclick.net googlesyndication.com adserv advert
   /pixel. /1x1. /tracking /beacon /analytics /stat.
   /social/ /share-button /twitter-bird /fb-button /whatsapp
   /favicon /apple-touch-icon /touch-icon
   gravatar.com /avatar/ /author- /author_
   /logo. /badge. /icon-
+  feeds.feedburner.com
 ].freeze
 
 class THNScraper < BaseScraper
@@ -373,6 +377,10 @@ class THNScraper < BaseScraper
 
   # Returns an array of absolute image URLs found within the article content
   # area, filtered to remove ads, tracking pixels, icons, and social buttons.
+  #
+  # No file-extension check: Blogger CDN URLs (blogger.googleusercontent.com/img/...)
+  # have no extension. We rely on the content-area CSS scope and skip-fragment
+  # list instead.
   def extract_images(doc, base_url)
     content = article_content(doc)
     return [] unless content
@@ -382,14 +390,20 @@ class THNScraper < BaseScraper
     images   = []
 
     content.css('img').each do |img|
-      src = img['src'] || img['data-src'] || img['data-lazy-src'] ||
-            img['data-original'] || img['data-lazy']
+      # Try every common src attribute, including lazy-load variants and srcset.
+      # srcset may contain multiple space/comma-separated entries; take the first URL.
+      src = img['src']           ||
+            img['data-src']      ||
+            img['data-lazy-src'] ||
+            img['data-original'] ||
+            img['data-lazy']     ||
+            img['srcset']&.split(/[\s,]+/)&.first
+
       next if src.nil? || src.strip.empty?
-      next if src.start_with?('data:')   # inline data URIs carry no useful domain text
+      next if src.start_with?('data:')   # inline data URIs
 
       url = resolve_url(src, base_uri)
-      next unless url
-      next unless THN_IMAGE_EXTENSIONS_RE.match?(url)
+      next unless url&.start_with?('http')   # must be an absolute HTTP(S) URL
       next if THN_IMAGE_SKIP_FRAGMENTS.any? { |f| url.downcase.include?(f) }
 
       # Skip images explicitly declared as tiny — likely icons or tracking pixels.

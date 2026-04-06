@@ -11,6 +11,8 @@
 #   ruby scripts/scrape_malicious_domains.rb --years 3
 #   ruby scripts/scrape_malicious_domains.rb --parallel 10
 #   ruby scripts/scrape_malicious_domains.rb --dry-run
+#   ruby scripts/scrape_malicious_domains.rb --lookback-days 14
+#   ruby scripts/scrape_malicious_domains.rb --years 3 --rescan-images
 #
 # WARNING: Extracted domains are NEVER accessed/resolved. Validation is regex-only.
 
@@ -27,7 +29,7 @@ require 'time'
 require 'date'
 
 DEFAULT_YEARS      = 2
-DEFAULT_PARALLEL   = 5
+DEFAULT_PARALLEL   = 10 # 5
 DEFAULT_PAGES_BACK = 2
 
 CACHE_FILE_DEFAULT  = File.join(__dir__, 'malicious_domains_cache.json')
