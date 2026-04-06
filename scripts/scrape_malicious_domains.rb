@@ -14,6 +14,7 @@
 #   ruby scripts/scrape_malicious_domains.rb --lookback-days 14
 #   ruby scripts/scrape_malicious_domains.rb --years 3 --rescan-images
 #   ruby scripts/scrape_malicious_domains.rb --browser-fetch --rescan-images
+#   ruby scripts/scrape_malicious_domains.rb --skip-ocr
 #
 # WARNING: Extracted domains are NEVER accessed/resolved. Validation is regex-only.
 
@@ -125,13 +126,14 @@ EXACT_SKIP_DOMAINS = Set.new(%w[
 # ────────────────────────────────────────────────────────────────────────────
 
 class BaseScraper
-  def initialize(output_file:, cache:, full_cache:, cache_file:, dry_run:, browser_fetch: false)
+  def initialize(output_file:, cache:, full_cache:, cache_file:, dry_run:, browser_fetch: false, skip_ocr: false)
     @output_file     = File.expand_path(output_file)
     @cache           = cache        # this source's slice: { 'articles' => {}, 'last_updated' => nil }
     @full_cache      = full_cache   # entire cache hash (written to disk)
     @cache_file      = File.expand_path(cache_file)
     @dry_run         = dry_run
     @browser_fetch   = browser_fetch
+    @skip_ocr        = skip_ocr
     @pending         = {}
     @mutex           = Mutex.new
     @request_mutex   = Mutex.new
@@ -363,7 +365,7 @@ class BaseScraper
   # Run OCR on a list of image URLs and return any domains found.
   def extract_domains_from_images(image_urls)
     domains = Set.new
-    return domains if image_urls.empty? || ocr_backend.nil?
+    return domains if image_urls.empty? || ocr_backend.nil? || @skip_ocr
 
     image_urls.each do |url|
       text = ocr_image_url(url)
@@ -720,6 +722,11 @@ OptionParser.new do |opts|
     options[:browser_fetch] = true
   end
 
+  opts.on('--skip-ocr',
+          'Cache image URLs but skip OCR (useful for fast runs or when OCR is slow)') do
+    options[:skip_ocr] = true
+  end
+
   opts.on('-h', '--help', 'Show this help') do
     puts opts
     exit
@@ -756,7 +763,8 @@ SCRAPERS.each do |klass|
       cache_file:    options[:cache_file],
       dry_run:       options[:dry_run],
       rescan_images: options[:rescan_images],
-      browser_fetch: options[:browser_fetch]
+      browser_fetch: options[:browser_fetch],
+      skip_ocr:      options[:skip_ocr]
     ).run
   rescue StandardError => e
     warn "Error scraping #{source_name}: #{e.message}"
