@@ -51,10 +51,16 @@ class BleepingComputerScraper < StandardPaginatedScraper
   end
 
   def parse_article_date(node)
-    # Look in the parent container for a time element
+    # BleepingComputer uses <li class="bc_news_date">April 06, 2026</li>
+    # inside the same .bc_latest_news_text div as the h4.
     container = node.parent
-    time_el   = container&.at_css('time[datetime]')
+    date_li   = container&.at_css('li.bc_news_date')
+    return Date.parse(date_li.text.strip) if date_li
+
+    # Fallback: look for a time[datetime] element
+    time_el = container&.at_css('time[datetime]')
     return Date.parse(time_el['datetime']) if time_el
+
     nil
   rescue ArgumentError, TypeError
     nil
