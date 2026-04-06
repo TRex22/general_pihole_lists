@@ -220,6 +220,9 @@ class THNScraper < BaseScraper
     batches.tqdm(desc: 'Scraping articles', total: batches.size, unit: 'batch').each do |batch|
       threads = batch.map { |article| Thread.new { scrape_article(article) } }
       threads.each(&:join)
+      # Checkpoint: persist cache after every batch so a crash loses at most
+      # one batch of work rather than the entire run.
+      save_cache(quiet: true)
     end
   end
 
@@ -314,6 +317,7 @@ class THNScraper < BaseScraper
       images = entry['images']
       if images.empty?
         entry['images_ocr_at'] = Time.now.utc.iso8601
+        save_cache(quiet: true)
         next
       end
 
@@ -322,24 +326,31 @@ class THNScraper < BaseScraper
       entry['images_ocr_at']     = Time.now.utc.iso8601
       entry['image_ocr_domains'] = ocr_domains.to_a.sort
 
-      next if ocr_domains.empty?
+      if ocr_domains.empty?
+        save_cache(quiet: true)
+        next
+      end
 
       # Merge newly-found OCR domains into the article's domains
       existing_domains = Set.new(entry['domains'] || [])
       new_domains      = ocr_domains - existing_domains
-      next if new_domains.empty?
 
-      entry['domains']              = (existing_domains | ocr_domains).to_a.sort
-      entry['written_to_blocklist'] = false
+      unless new_domains.empty?
+        entry['domains']              = (existing_domains | ocr_domains).to_a.sort
+        entry['written_to_blocklist'] = false
 
-      @pending[url] = {
-        domains: new_domains.to_a.sort,
-        title:   entry['title'],
-        date:    entry['date']
-      }
+        @pending[url] = {
+          domains: new_domains.to_a.sort,
+          title:   entry['title'],
+          date:    entry['date']
+        }
 
-      puts "    [OCR +#{new_domains.size}] #{url}"
-      new_domains.each { |d| puts "               #{d}" }
+        puts "    [OCR +#{new_domains.size}] #{url}"
+        new_domains.each { |d| puts "               #{d}" }
+      end
+
+      # Checkpoint after each article regardless of whether new domains were found.
+      save_cache(quiet: true)
     end
   end
 
