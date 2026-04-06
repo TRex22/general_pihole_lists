@@ -63,7 +63,7 @@ DEFANGED_SEP_PAT = '\[\.' \
 DEFANGED_TOKEN_RE = /[a-zA-Z0-9][a-zA-Z0-9.\-]*(?:\[\.\]|\(\.\)|\[DOT\]|\[dot\]|\(DOT\)|\(dot\))[a-zA-Z0-9.\-]*[a-zA-Z0-9]/
 
 # Plain IPv4 (used in IoC sections where plain text is expected)
-PLAIN_IPV4_RE = /\b(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\b/
+PLAIN_IPV4_RE = /\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b/
 
 # IoC section heading strings (downcased, matched with include?)
 IOC_HEADINGS = %w[
@@ -1250,7 +1250,8 @@ puts '=' * 60
 puts "Output file : #{File.expand_path(options[:output_file])}"
 puts "Cache file  : #{File.expand_path(options[:cache_file])}"
 puts "Dry run     : #{options[:dry_run]}"
-puts "Sources     : #{options[:sources] ? options[:sources].join(', ') : 'all (#{ALL_SCRAPERS.keys.join(', ')})'}"
+all_sources_label = "all (#{ALL_SCRAPERS.keys.join(', ')})"
+puts "Sources     : #{options[:sources] ? options[:sources].join(', ') : all_sources_label}"
 
 full_cache = load_full_cache(options[:cache_file])
 
