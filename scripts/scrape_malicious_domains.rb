@@ -91,6 +91,7 @@ SKIP_DOMAINS = Set.new(%w[
   appsheet.com
   microsoft.com outlook.com office.com office365.com visualstudio.com
   windows.com live.com hotmail.com bing.com microsoftonline.com azure.com
+  login.microsoftonline.com
   apple.com icloud.com
   amazon.com amazon.pl amazonaws.com
   cloudflare.com bootcdn.net bootcss.com
@@ -145,6 +146,7 @@ SKIP_DOMAINS = Set.new(%w[
   pastebin.com paste.ee
   shodan.io
   msftconnecttest.com www.msftconnecttest.com
+  yahoo.com yahoo.co.uk
 ]).freeze
 
 # Root-level cloud/CDN platform domains that are too broad to block wholesale —
