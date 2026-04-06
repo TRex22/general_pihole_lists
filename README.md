@@ -19,12 +19,11 @@ My own pihole lists
 ## Reset cache for a given key
 ```sh
 ruby -e '
-  ruby -e '
   require "json"
   f = "scripts/malicious_domains_cache.json"
   cache = JSON.parse(File.read(f))
-  cache.delete("unit42")
+  cache.delete("welivesecurity")
   File.write(f, JSON.pretty_generate(cache))
-  puts "unit42 removed from cache"
+  puts "welivesecurity removed from cache"
   '
 ```
