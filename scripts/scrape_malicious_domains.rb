@@ -562,8 +562,9 @@ class BaseScraper
   end
 
   # Override in subclasses to limit concurrency or add inter-batch delays.
-  def parallel_workers = @parallel
-  def batch_delay      = 0
+  def parallel_workers  = @parallel
+  def batch_delay       = 0
+  def listing_page_delay = 0.5
 
   # Override to probe a page's oldest article date when listing pages carry no dates.
   # Return a Date or nil. Called with the entries array from parse_listing.
@@ -1143,7 +1144,7 @@ class StandardPaginatedScraper < BaseScraper
         end
       end
 
-      sleep 0.5
+      sleep listing_page_delay
     end
 
     articles
