@@ -5,10 +5,8 @@ basemetrika.ru
 
 # Mac Compromise Indicators
 # Source: https://redcanary.com/blog/threat-intelligence/clipping-silver-sparrows-wings/
-specialattributes.s3.amazonaws.com
 api.mobiletraits.com
 api.specialattributes.com
-mobiletraits.s3.amazonaws.com
 
 # Source: https://www.proofpoint.com/us/blog/threat-insight/update-fake-updates-two-new-actors-and-new-mac-malware
 # Source: https://cybersecuritynews.com/hackers-inject-frigidstealer-malware-on-your-macos-via-fake-browser-updates/
@@ -119,7 +117,6 @@ welcome.careersworkflow.com
 # Source: http://thehackernews.com/2026/03/threatsday-bulletin-pqc-push-ai-vuln.html
 # Source: http://thehackernews.com/2024/11/thn-recap-top-cybersecurity-threats.html
 # Source: http://thehackernews.com/2024/07/polyfillio-attack-impacts-over-380000.html
-polyfill.io
 shieldguards.net
 
 # Source: http://thehackernews.com/2026/03/leakbase-admin-arrested-in-russia-over.html
@@ -332,11 +329,6 @@ rnastercard.de
 rnicrosoft.com
 rnitsubishielectric.com
 
-# Source: http://thehackernews.com/2026/01/new-osiris-ransomware-emerges-as-new.html
-# Source: https://isc.sans.edu/diary/Online+Services+Again+Abused+to+Exfiltrate+Data/31862
-# Source: https://isc.sans.edu/diary/Online+Services+Again+Abused+to+Exfiltrate+Data/31862/
-temp.sh
-
 # Source: http://thehackernews.com/2026/01/five-malicious-chrome-extensions.html
 api.databycloud.com
 api.software-access.com
@@ -477,7 +469,6 @@ download.videotalks.xyz
 tetrismic.vercel.app
 
 # Source: http://thehackernews.com/2025/11/legacy-python-bootstrap-scripts-create.html
-fsevents-binaries.s3-us-west-2.amazonaws.com
 python-distribute.org
 
 # Source: http://thehackernews.com/2025/11/threatsday-bulletin-ai-malware-voice.html
@@ -740,7 +731,6 @@ www.msftconnecttest.com
 # Source: http://thehackernews.com/2025/07/experts-detect-multi-layer-redirect.html
 url.emailprotection
 urldefense.proofpoint
-urldefense.proofpoint.com
 
 # Source: http://thehackernews.com/2025/07/pypi-warns-of-ongoing-phishing-campaign.html
 # Source: http://thehackernews.com/2025/07/malware-injected-into-6-npm-packages.html
@@ -1214,7 +1204,6 @@ dstat.cc
 # Source: http://thehackernews.com/2024/07/polyfillio-attack-impacts-over-380000.html
 acb.bet
 funnull.io
-polyfill.io
 
 # Source: http://thehackernews.com/2024/11/inside-irans-cyber-playbook-ai-fake.html
 alqassam.ps
@@ -1395,11 +1384,7 @@ acrobat-inst.com
 # Source: http://thehackernews.com/2024/07/polyfillio-attack-impacts-over-380000.html
 # Source: http://thehackernews.com/2026/03/threatsday-bulletin-pqc-push-ai-vuln.html
 # Source: http://thehackernews.com/2024/11/thn-recap-top-cybersecurity-threats.html
-cdn.polyfill.com
-cdn.polyfill.io
 newcrbpc.com
-polyfill.com
-polyfill.io
 polyfill.site
 polyfillcache.com
 staticfile.net
@@ -1576,9 +1561,6 @@ social-eng.ru
 # Source: http://thehackernews.com/2024/04/hackers-exploit-fortinet-flaw-deploy.html
 ursketz.com
 
-# Source: http://thehackernews.com/2024/04/hackers-deploy-python-backdoor-in-palo.html
-nhdata.s3-us-west-2.amazonaws.com
-
 # Source: http://thehackernews.com/2024/04/iranian-muddywater-hackers-adopt-new-c2.html
 kinneretacil.egnyte.com
 
@@ -1667,7 +1649,6 @@ uniworldrivercruises-co.uk
 convertedfilenew.txt
 hotelseneca.ro
 ia600603.us
-isc.sans.edu
 
 # Source: https://isc.sans.edu/diary/Passive+analysis+of+a+phishing+attachment/29798
 ppscinsurance.co
@@ -1682,9 +1663,6 @@ decideosity.ykdyrkye.cn
 impactish.rexqm.cn
 ncqjw.cn
 obpwnrl.cn
-
-# Source: https://isc.sans.edu/diary/Fake+Incident+Report+Used+in+Phishing+Campaign/32722/
-amazonaws.com
 
 # Source: https://isc.sans.edu/diary/Broken+Phishing+URLs/32686/
 couraol-02717.netlify
@@ -1947,10 +1925,6 @@ firebasestorage.googleapis
 shoterqana.com
 villageskaier.com
 www.ssl
-www.ssl.com
-
-# Source: https://isc.sans.edu/diary/Simulating+Traffic+With+Scapy/31216/
-8.8.8.8
 
 # Source: https://isc.sans.edu/diary/Mapping+Threats+with+DNSTwist+and+the+Internet+Storm+Center+Guest+Diary/31188/
 microdlcom.info
@@ -1976,4 +1950,3 @@ yaritsavodka.com
 
 # Source: https://isc.sans.edu/diary/Redline+Dropped+Through+MSIX+Package/30404
 browse-plus.com
-

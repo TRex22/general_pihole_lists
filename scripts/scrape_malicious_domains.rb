@@ -82,15 +82,17 @@ SKIP_DOMAINS = Set.new(%w[
   youtube.com youtu.be
   twitter.com x.com t.co
   facebook.com instagram.com linkedin.com
-  reddit.com telegram.org t.me
-  discord.com discord.gg
+  reddit.com
+  telegram.org t.me api.telegram.org
+  discord.com discord.gg discordapp.com discordapp.net
+  tiktok.com tiktokv.com tiktokcdn.com tiktokcdn-us.com musical.ly snssdk.com bytedance.com
   google.com gmail.com googleapis.com gstatic.com googletagmanager.com
-  googleusercontent.com app.google
+  googleusercontent.com app.google drive.google.com
   appsheet.com
   microsoft.com outlook.com office.com office365.com visualstudio.com
   windows.com live.com hotmail.com bing.com microsoftonline.com azure.com
   apple.com icloud.com
-  amazon.com amazon.pl
+  amazon.com amazon.pl amazonaws.com
   cloudflare.com bootcdn.net bootcss.com
   github.com githubusercontent.com github.dev
   gitlab.com bitbucket.org
@@ -114,11 +116,16 @@ SKIP_DOMAINS = Set.new(%w[
   stackoverflow.com stackexchange.com
   docker.com kubernetes.io
   debian.org ubuntu.com redhat.com
-  protonmail.com proton.me
+  protonmail.com proton.me proofpoint.com
   chatgpt.com claude.ai deepseek.com huggingface.co
   semgrep.dev cursor.com cursor.sh cursor.so
   blogspot.com archive.org
   7-zip.org brew.sh example.com
+  dropbox.com dropboxstatic.com
+  isc.sans.edu sans.org sans.edu
+  polyfill.io polyfill.com
+  temp.sh
+  letsencrypt.org digicert.com sectigo.com comodo.com ssl.com usertrust.com
   etherscan.io binance.com metamask.io coinbasepro.com localbitcoins.com
   ip-api.com ipapi.co ipinfo.io ipgeolocation.io
   matrix.org meta.com msn.com vk.com trello.com
@@ -149,6 +156,15 @@ EXACT_SKIP_DOMAINS = Set.new(%w[
   windows.net
   workers.dev
   cloudfunctions.net
+]).freeze
+
+# Known-safe IP addresses that appear legitimately in security articles
+# (public DNS resolvers, CDN anycast addresses, etc.) — never block these.
+SKIP_IPS = Set.new(%w[
+  8.8.8.8 8.8.4.4
+  1.1.1.1 1.0.0.1
+  9.9.9.9 149.112.112.112
+  208.67.222.222 208.67.220.220
 ]).freeze
 
 # ────────────────────────────────────────────────────────────────────────────
@@ -218,6 +234,8 @@ class BaseScraper
 
   def skip_domain?(domain)
     return false if domain.nil? || domain.empty?
+    # Safe IP addresses (DNS resolvers, anycast, etc.)
+    return true if SKIP_IPS.include?(domain)
     # Exact-only match: root CDN/cloud domains too broad to cascade to subdomains
     return true if EXACT_SKIP_DOMAINS.include?(domain)
     # Subdomain cascade: "api.youtube.com" matches "youtube.com"
@@ -231,7 +249,7 @@ class BaseScraper
     text.scan(DEFANGED_TOKEN_RE) do |m|
       candidate = normalize_domain(m)
       if valid_ipv4?(candidate)
-        ips << candidate
+        ips << candidate unless SKIP_IPS.include?(candidate)
       elsif valid_domain?(candidate) && !skip_domain?(candidate)
         domains << candidate
       end
@@ -241,7 +259,7 @@ class BaseScraper
     text.scan(/hxxps?:\/\/([^\s\[\]()\"'<>\x00-\x1f]+)/i) do |m|
       host = strip_ioc_noise(m[0])
       if valid_ipv4?(host)
-        ips << host
+        ips << host unless SKIP_IPS.include?(host)
       elsif valid_domain?(host) && !skip_domain?(host)
         domains << host
       end
@@ -251,7 +269,7 @@ class BaseScraper
     text.scan(/h\*\*ps?:\/\/([^\s\[\]()\"'<>\x00-\x1f]+)/i) do |m|
       host = strip_ioc_noise(m[0])
       if valid_ipv4?(host)
-        ips << host
+        ips << host unless SKIP_IPS.include?(host)
       elsif valid_domain?(host) && !skip_domain?(host)
         domains << host
       end
@@ -262,7 +280,7 @@ class BaseScraper
     # --- Plain text (only in IoC sections) ---
     text.scan(PLAIN_IPV4_RE) do |m|
       ip = strip_ioc_noise(m)
-      ips << ip if valid_ipv4?(ip)
+      ips << ip if valid_ipv4?(ip) && !SKIP_IPS.include?(ip)
     end
 
     # Plain domains — conservative (validated by valid_domain?)
@@ -718,11 +736,11 @@ class BaseScraper
     end
 
     if removed.empty?
-      puts 'No skip-listed domains found in blocklist — nothing to clean.'
+      puts 'No skip-listed entries found in blocklist — nothing to clean.'
       return
     end
 
-    puts "Removed #{removed.size} skip-listed domain(s) from #{@output_file}:"
+    puts "Removed #{removed.size} skip-listed entr#{removed.size == 1 ? 'y' : 'ies'} from #{@output_file}:"
     removed.each { |d| puts "  - #{d}" }
 
     output_lines = []
