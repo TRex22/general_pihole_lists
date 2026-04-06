@@ -104,12 +104,16 @@ SKIP_DOMAINS = Set.new(%w[
   virustotal.com shodan.io censys.io urlscan.io
   hybrid-analysis.com any.run
   abuse.ch threatfox.abuse.ch urlhaus.abuse.ch bazaar.abuse.ch
-  talosintelligence.com mitre.org cve.mitre.org
+  talosintelligence.com snort.org
+  cisco.com
+  mitre.org cve.mitre.org
   nvd.nist.gov nist.gov cisa.gov
   bleepingcomputer.com krebsonsecurity.com
   darkreading.com securityweek.com threatpost.com
   techcrunch.com wired.com arstechnica.com zdnet.com
   reuters.com bbc.com bbc.co.uk cnn.com
+  americanexpress.com
+  baidu.com baidu.cn
   oracle.com salesforce.com adobe.com
   paypal.com stripe.com
   wordpress.com wordpress.org
