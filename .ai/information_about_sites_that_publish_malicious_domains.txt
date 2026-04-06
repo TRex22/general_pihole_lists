@@ -1,0 +1,60 @@
+Great set of results. Here's a comprehensive breakdown of sources that regularly publish malicious domains and IOCs, along with how each one formats/defangs them:
+
+Defanging Conventions (what you'll encounter)
+Before the sources — the community uses several styles to "defang" domains so they aren't accidentally clickable:
+FormatExampleNotes[.] bracketsevil[.]comMost common, near-standardhxxp://hxxp://evil[.]comFor full URLs(.) parensevil(.)comLess common variant[DOT]evil[DOT]comOlder style, some blogs still use ith**p://h**p://evil.comUncommon, hard to parse programmaticallySpacesevil .comRare, usually just in plain-text emailsScreenshot only—No parseable text at all — manual extraction needed
+The emerging IETF standard for defanging is: replace http/https with hxxp/hxxps, replace every . with [.], and replace @ with [@]. IETF Not everyone follows this yet though.
+
+Security News Blogs (narrative articles with embedded IOCs)
+Hacker News (what you already use)
+theHackernews.com — domains mostly in plain text inline, sometimes [.] defanged in article body.
+Krebs on Security (what you're evaluating)
+krebsonsecurity.com — Brian Krebs often bolds domains inline or lists them plaintext. Not always defanged. Some phishing domains are in screenshots.
+SANS Internet Storm Center (ISC)
+isc.sans.edu — Daily "Handler Diaries." Domains typically written as evil[.]com with [.] notation. Very consistent defanging. Good source — analysts manually embed IOCs into every diary entry.
+Cisco Talos Blog
+blog.talosintelligence.com — Publishes weekly roundups of the most prevalent threats, including key behavioral characteristics and indicators of compromise. Cisco Blogs Domains are typically [.] defanged. Talos also maintains a GitHub repo (Cisco-Talos/IOCs) where they upload IOC files linked from blog posts, intended for direct blocklist use. GitHub
+Palo Alto Unit 42
+unit42.paloaltonetworks.com — In-depth campaign reports. Very consistently uses [.] defanging throughout. IOCs are usually listed in a dedicated section at the end of articles. Some reports also include screenshots of infrastructure.
+Kaspersky Securelist
+securelist.com — Long-form APT and malware reports. Uses [.] notation, sometimes includes full IOC appendices at the bottom. More enterprise/APT-focused.
+Malwarebytes Labs
+malwarebytes.com/blog — Consumer-focused. Domains defanged with [.], sometimes listed in a table at the end. Good coverage of phishing and malvertising campaigns.
+BleepingComputer
+bleepingcomputer.com — Very prolific. Domains usually written plaintext (not always defanged) inline, since it's more of a news outlet. Good for ransomware C2 domains and phishing campaigns.
+ESET WeLiveSecurity
+welivesecurity.com — Consistent [.] defanging. Often includes appendices with full IOC lists. Good APT coverage.
+Proofpoint Threat Research
+proofpoint.com/us/blog/threat-insight — Email-threat focused (phishing, BEC). Domains use [.], full IOC tables at the end of posts. Very good for malicious sending domains.
+Microsoft Security Blog
+microsoft.com/en-us/security/blog — Uses [.] defanging. Publishes detailed nation-state campaign reports with domain lists. Sometimes GitHub-linked IOC files.
+Mandiant / Google Threat Intelligence
+cloud.google.com/blog/topics/threat-intelligence — Deep APT reports. [.] defanging. Often pairs with GitHub-released IOC files.
+
+Dedicated IOC Feed Platforms (more automated/structured)
+These are less "blog articles" and more structured feeds — great for programmatic ingestion:
+abuse.ch / ThreatFox — threatfox.abuse.ch — Community-submitted IOCs including domains, IPs, and URLs. Downloadable CSV/JSON. Domains listed plaintext (no defanging needed since they're in structured data fields).
+abuse.ch / URLhaus — urlhaus.abuse.ch — Collects, tracks, and shares malware distribution URLs to help network administrators protect their networks. Threat-intel Direct download feeds available.
+AlienVault OTX (now LevelBlue OTX) — otx.alienvault.com — Community-led network connecting analysts with IOC data available in CSV, OpenIOC, and STIX formats. Wiz Browse "pulses" by threat actor or campaign.
+OpenPhish — openphish.com — Phishing URL feed. Plaintext domain/URL lists.
+PhishTank — phishtank.org — Community-verified phishing domains. CSV download available.
+
+Screenshot-Heavy Sources (manual extraction only)
+Some sources publish domains only in screenshots — you'd need to manually transcribe or use OCR:
+
+Twitter/X security researchers (e.g. @threatintel, @malwrhunterteam) — frequently post screenshots of malware panels or C2 configs
+Any.run sandbox reports — domain IOCs shown in visual network graphs
+VirusTotal — related domains shown in graph views
+
+
+Practical tip for your scraping workflow
+Since you're already parsing THN, here's the defanging hierarchy to handle programmatically when you scrape other sources:
+pythonimport re
+
+def refang(domain):
+    domain = domain.replace('[.]', '.')
+    domain = domain.replace('(.)','.')
+    domain = domain.replace('[DOT]', '.').replace('[dot]', '.')
+    domain = re.sub(r'\s+', '', domain)  # strip spaces
+    return domain
+The SANS ISC and Cisco Talos blogs are probably your highest-value additions alongside THN — they're consistent, high-volume, and reliably defang with [.]. Unit 42 is excellent for more detailed campaign reports with larger IOC appendices.
