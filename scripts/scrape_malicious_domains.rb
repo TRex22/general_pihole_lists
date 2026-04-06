@@ -532,12 +532,13 @@ class BaseScraper
 
   # ── Cache ───────────────────────────────────────────────────────────────────
 
-  def save_cache
+  # quiet: true suppresses the confirmation line (used for mid-run checkpoints).
+  def save_cache(quiet: false)
     @cache['last_updated']      = Time.now.utc.iso8601
     @full_cache['last_updated'] = Time.now.utc.iso8601
     FileUtils.mkdir_p(File.dirname(@cache_file))
     File.write(@cache_file, JSON.pretty_generate(@full_cache))
-    puts "Cache saved: #{@cache_file}"
+    puts "Cache saved: #{@cache_file}" unless quiet
   end
 
   # ── Summary ─────────────────────────────────────────────────────────────────
