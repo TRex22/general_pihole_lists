@@ -83,6 +83,13 @@ class THNScraper < BaseScraper
     THN_IMAGE_SKIP_FRAGMENTS
   end
 
+  # THN uses Cloudflare JA3/TLS fingerprinting that blocks Chrome-branded UAs
+  # when the TLS fingerprint doesn't match a real browser. Using HTTParty's
+  # default (no custom User-Agent) bypasses this check.
+  def request_headers
+    {}
+  end
+
   private
 
   def mode_label

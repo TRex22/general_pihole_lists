@@ -92,6 +92,7 @@ SKIP_DOMAINS = Set.new(%w[
   googleusercontent.com app.google drive.google.com
   appsheet.com
   microsoft.com outlook.com office.com office365.com visualstudio.com
+  login.windows.net office.net
   windows.com windowsupdate.com windowsazure.com
   live.com hotmail.com bing.com
   microsoftonline.com login.microsoftonline.com
@@ -608,7 +609,7 @@ class BaseScraper
   # Using a realistic browser UA prevents many bot-detection 403s.
   def request_headers
     {
-      'User-Agent'      => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+      'User-Agent'      => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36',
       'Accept'          => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
       'Accept-Language' => 'en-US,en;q=0.9'
     }
@@ -945,6 +946,7 @@ class BaseScraper
   # ── Cache ───────────────────────────────────────────────────────────────────
 
   def save_cache(quiet: false)
+    return if @dry_run
     @cache['last_updated']      = Time.now.utc.iso8601
     @full_cache['last_updated'] = Time.now.utc.iso8601
     FileUtils.mkdir_p(File.dirname(@cache_file))
