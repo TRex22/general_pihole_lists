@@ -22,6 +22,7 @@ require 'json'
 require 'set'
 require 'optparse'
 require 'dspy'
+require 'tqdm'
 
 # ── ANSI colour helpers ──────────────────────────────────────────────────────────
 module Color
@@ -155,13 +156,29 @@ end
 
 class BlocklistDomainReview < DSPy::Signature
   description <<~DESC
-    You are a DNS security expert reviewing domains from a Pi-hole blocklist.
-    Your task: identify which domains are legitimate, mainstream services that should NOT be blocked.
-    Allow a domain only if it clearly belongs to a well-known, reputable, widely-used service —
-    such as major social media, cloud providers, developer tools, CDNs, news outlets, or major brands.
-    Do NOT allow domains that are primarily used for advertising, tracking, malware, phishing,
-    or are obscure/unknown. When in doubt, leave it blocked.
-    Return only domain names that were in the input list.
+    You are a strict DNS security analyst reviewing domains from a Pi-hole blocklist.
+    Your ONLY job is to identify domains that are unambiguously safe and should NOT be blocked.
+
+    ## ALLOW a domain ONLY if ALL of the following are true:
+    1. It belongs to a well-known, reputable service (major cloud provider, CDN, developer tool, OS vendor, etc.)
+    2. It uses the EXACT canonical TLD for that service (e.g. google.com, not google.pw or google.xyz)
+    3. The domain name is spelled correctly with no character substitutions (no 0→o, 1→l, rn→m, etc.)
+    4. It is not a subdomain of a suspicious or unknown registrar
+
+    ## BLOCK (do not allow) if ANY of the following are true:
+    - The domain uses an unusual or cheap TLD: .pw, .tk, .ml, .ga, .cf, .gq, .xyz, .top, .club, .icu, .buzz, .click, .loan, .win, .bid, .review, .vip, .work, .online (unless the legitimate service is definitively known to use it)
+    - The domain visually resembles a brand but is slightly different: googie, g00gle, micosoft, arnazon, paypa1, etc.
+    - The domain contains a brand name combined with extra words: google-security.com, amazon-support.net, apple-id-verify.com
+    - The domain uses hyphens to sandwich a brand: secure-google-login.com
+    - You are uncertain whether this is the real service's domain
+
+    ## STRICT RULES:
+    - A domain pretending to be a legitimate brand is MORE dangerous than an unknown domain — reject it
+    - "Looks like Google" is NOT sufficient — it must BE Google's actual domain
+    - When in doubt, do NOT allow it. False negatives (over-blocking) are far safer than false positives
+    - Return ONLY domain names from the input list, one per line, no explanation
+
+    Input domains:
   DESC
 
   input do
@@ -204,13 +221,20 @@ end
 blocklist_reviewer = DSPy::Predict.new(BlocklistDomainReview)
 allowlist_auditor  = DSPy::Predict.new(AllowlistDomainAudit)
 
+IPV4_RE = /\A(\d{1,3}\.){3}\d{1,3}\z/
+IPV6_RE = /\A[0-9a-fA-F:]+\z/
+
+def ip_address?(str)
+  IPV4_RE.match?(str) || (str.include?(':') && IPV6_RE.match?(str))
+end
+
 def parse_domain_response(str)
   str.to_s
      .split(/[\n,]+/)
      .map(&:strip)
      .reject(&:empty?)
      .map { |d| d.downcase.gsub(/\A[*.\s]+|[.\s]+\z/, '') }
-     .reject { |d| d.include?(' ') || !d.include?('.') }
+     .reject { |d| d.include?(' ') || !d.include?('.') || ip_address?(d) }
 end
 
 VALIDATION_ERROR_PATTERNS = [
@@ -291,8 +315,12 @@ blocklist_files.each do |bfile|
     end
   end
 
-  # ── AI review — only domains not already known-safe ───────────────────────
-  reviewable = domains.reject { |d| in_skip_domains?(d, skip_domains, exact_skip_domains) || existing_allowlist_domains.include?(d) }
+  # ── AI review — only domains not already known-safe, and not IPs ─────────
+  reviewable = domains.reject do |d|
+    ip_address?(d) ||
+      in_skip_domains?(d, skip_domains, exact_skip_domains) ||
+      existing_allowlist_domains.include?(d)
+  end
 
   if reviewable.empty?
     puts "  All domains covered by SKIP_DOMAINS / existing allowlists — no AI review needed."
@@ -300,20 +328,13 @@ blocklist_files.each do |bfile|
     next
   end
 
-  total_batches = (reviewable.size.to_f / options[:batch_size]).ceil
-  puts "  AI reviewing #{reviewable.size} domains (#{total_batches} batch(es))..."
-
-  reviewable.each_slice(options[:batch_size]).with_index(1) do |batch, i|
-    print "    Batch #{i}/#{total_batches}... "
-    $stdout.flush
+  batches = reviewable.each_slice(options[:batch_size]).to_a
+  puts "  AI reviewing #{reviewable.size} domains..."
+  batches.tqdm(desc: "  #{File.basename(bfile)}", unit: 'batch', leave: true).each do |batch|
     allowed = ai_review_blocklist_batch(blocklist_reviewer, batch, rel)
-    if allowed.any?
-      allowed.each { |d| all_domains_to_allow.add(d) }
-      puts Color.green("#{allowed.size} flagged for allowlist")
-      allowed.each { |d| puts Color.green("      + #{d}") }
-    else
-      puts "none flagged"
-    end
+    next unless allowed.any?
+    allowed.each { |d| all_domains_to_allow.add(d) }
+    allowed.each { |d| puts Color.green("  + #{d}") }
   end
   puts ""
 end
@@ -327,23 +348,16 @@ suspicious_by_file = Hash.new { |h, k| h[k] = [] }
 allowlist_files.each do |afile|
   next if afile == OUTPUT_ALLOWLIST
   rel     = afile.sub("#{REPO_ROOT}/", '')
-  domains = load_list_domains(afile).to_a.sort
+  domains = load_list_domains(afile).to_a.sort.reject { |d| ip_address?(d) }
   next if domains.empty?
 
-  total_batches = (domains.size.to_f / options[:batch_size]).ceil
-  puts "#{Color.cyan(rel)} (#{domains.size} domains — #{total_batches} batch(es))"
-
-  domains.each_slice(options[:batch_size]).with_index(1) do |batch, i|
-    print "    Batch #{i}/#{total_batches}... "
-    $stdout.flush
+  batches = domains.each_slice(options[:batch_size]).to_a
+  puts "#{Color.cyan(rel)} (#{domains.size} domains)"
+  batches.tqdm(desc: "  #{File.basename(afile)}", unit: 'batch', leave: true).each do |batch|
     suspicious = ai_audit_allowlist_batch(allowlist_auditor, batch, rel)
-    if suspicious.any?
-      suspicious_by_file[rel].concat(suspicious)
-      puts Color.red("#{suspicious.size} suspicious!")
-      suspicious.each { |d| puts Color.red("      ! #{d}") }
-    else
-      puts "all OK"
-    end
+    next unless suspicious.any?
+    suspicious_by_file[rel].concat(suspicious)
+    suspicious.each { |d| puts Color.red("  ! #{d}") }
   end
   puts ""
 end

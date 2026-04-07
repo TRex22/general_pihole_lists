@@ -156,12 +156,30 @@ SKIP_DOMAINS = Set.new(%w[
   facebook.net facebookmail.com
   doubleclick.net sohu.com sohu.com.cn
   golang.org pkg.go.dev
-  jsdelivr.net cdnjs.cloudflare.com
+  jsdelivr.net cdnjs.cloudflare.com cdnjs.com
   pastebin.com paste.ee
   shodan.io
   msftconnecttest.com www.msftconnecttest.com
   yahoo.com yahoo.co.uk
   herokuapp.com
+  nslookup.io
+  ngrok.com
+  booking.com
+  jquery.com
+  crates.io
+  crazygames.com
+  domain.com
+  eset.com eset.sk eset.eu
+  ford.com fordvehicles.com lincolnvehicles.com
+  freshdesk.com freshworks.com freshservice.com freshchat.com freshcaller.com
+  githubassets.com
+  who.is whois.com domaintools.com iana.org
+  mailchimp.com list-manage.com
+  postmarkapp.com mtasv.net
+  mailjet.com
+  medium.com
+  zimbra.com zextras.com synacor.com
+  akamai.com fastly.com keycdn.com cloudinary.com
 ]).freeze
 
 # Root-level cloud/CDN platform domains that are too broad to block wholesale —
@@ -190,6 +208,19 @@ EXACT_SKIP_DOMAINS = Set.new(%w[
   vercel.app
   pages.dev
   github.io
+  ngrok.io
+  tcp.ngrok.io
+  ngrok-free.app
+  ngrok.app
+  fastly.net
+  akamaihd.net
+  akamaized.net
+  cloudfront.net
+  cdn77.com
+  stackpath.com
+  stackpathcdn.com
+  bunnycdn.com
+  b-cdn.net
 ]).freeze
 
 # Known-safe IP addresses that appear legitimately in security articles
