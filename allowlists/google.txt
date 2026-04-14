@@ -28,8 +28,14 @@ googleapis.l.google.com
 gstaticadssl.l.google.com
 
 # Authentication and account management
+accounts.google.com
 oauthaccountmanager.googleapis.com
 clientservices.googleapis.com
+
+# Static assets (fonts, icons, profile pictures)
+www.gstatic.com
+fonts.gstatic.com
+lh3.googleusercontent.com
 
 # Safe Browsing (security feature — keeps phishing/malware warnings working)
 safebrowsing.googleapis.com
@@ -49,9 +55,20 @@ photosdata-pa.googleapis.com
 
 # Android push messaging (required for notifications on Android devices)
 mtalk.google.com
+mtalk4.google.com
+alt1-mtalk.google.com
+alt2-mtalk.google.com
+alt3-mtalk.google.com
+alt4-mtalk.google.com
+alt5-mtalk.google.com
+alt6-mtalk.google.com
+alt7-mtalk.google.com
+alt8-mtalk.google.com
 android.clients.google.com
+android.apis.google.com
 clients2.google.com
 clients4.google.com
+clients6.google.com
 
 # ============================================
 # DEVICE FEATURES
@@ -63,12 +80,39 @@ nearbysharing-pa.googleapis.com
 # Phone / device verification
 phonedeviceverification-pa.googleapis.com
 
+# Device provisioning (Android setup)
+device-provisioning.googleapis.com
+
 # ============================================
 # GOOGLE KEEP / FIREBASE
 # ============================================
 
 reminders-pa.googleapis.com
 firestore.googleapis.com
+
+# ============================================
+# GOOGLE MEET
+# ============================================
+
+meet.google.com
+stream.meet.google.com
+hangouts.googleapis.com
+meetings.googleapis.com
+
+# ============================================
+# GOOGLE DOCS / DRIVE
+# ============================================
+
+docs.google.com
+
+# ============================================
+# FIREBASE CLOUD MESSAGING (FCM)
+# ============================================
+# Required for push notifications on Android
+
+fcm.googleapis.com
+iid.googleapis.com
+firebaseinstallations.googleapis.com
 
 # ============================================
 # YOUTUBE
