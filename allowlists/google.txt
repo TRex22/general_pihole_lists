@@ -1,0 +1,80 @@
+# Google Allowlist for Pi-hole - Functionality Only
+# Required domains for Google services functionality
+# Excludes: ads, tracking, analytics, and location-reporting domains
+# Sources:
+#   - Google Workspace network endpoints: https://support.google.com/a/answer/1279090
+#   - Android connectivity check: https://support.google.com/android/answer/9654714
+#   - Chrome Safe Browsing: https://support.google.com/chrome/a/answer/6334504
+#   - Firebase Cloud Messaging: https://firebase.google.com/docs/cloud-messaging/concept-options
+#   - YouTube required domains: https://support.google.com/youtube/answer/10046411
+#   - Pi-hole commonly whitelisted: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
+
+# ============================================
+# CAPTIVE PORTAL DETECTION
+# ============================================
+# Required for Android/Chrome to detect WiFi login pages
+
+connectivitycheck.android.com
+connectivitycheck.gstatic.com
+clients3.google.com
+
+# ============================================
+# CORE GOOGLE SERVICES
+# ============================================
+
+apis.google.com
+www.googleapis.com
+googleapis.l.google.com
+gstaticadssl.l.google.com
+
+# Authentication and account management
+oauthaccountmanager.googleapis.com
+clientservices.googleapis.com
+
+# Safe Browsing (security feature — keeps phishing/malware warnings working)
+safebrowsing.googleapis.com
+
+# Chrome / Android update delivery
+dl.google.com
+redirector.gvt1.com
+
+# ============================================
+# GOOGLE WORKSPACE / GMAIL
+# ============================================
+
+mail.google.com
+contacts.google.com
+photos.googleapis.com
+photosdata-pa.googleapis.com
+
+# Android push messaging (required for notifications on Android devices)
+mtalk.google.com
+android.clients.google.com
+clients2.google.com
+clients4.google.com
+
+# ============================================
+# DEVICE FEATURES
+# ============================================
+
+# Nearby Share
+nearbysharing-pa.googleapis.com
+
+# Phone / device verification
+phonedeviceverification-pa.googleapis.com
+
+# ============================================
+# GOOGLE KEEP / FIREBASE
+# ============================================
+
+reminders-pa.googleapis.com
+firestore.googleapis.com
+
+# ============================================
+# YOUTUBE
+# ============================================
+
+youtube.com
+s.youtube.com
+youtubei.googleapis.com
+video-stats.l.google.com  # YouTube playback stats (functional, not ad tracking)
