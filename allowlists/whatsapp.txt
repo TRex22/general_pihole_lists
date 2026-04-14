@@ -31,6 +31,9 @@ business.whatsapp.com
 api.whatsapp.com
 graph.whatsapp.com
 
+# Facebook CDN used by WhatsApp for GIFs and media stickers
+static.xx.fbcdn.net
+
 # Additional CDN patterns (wildcard - use regex in Pi-hole if needed)
 # *.cdn.whatsapp.net
 # *.whatsapp.net
