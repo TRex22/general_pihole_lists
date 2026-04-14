@@ -146,7 +146,7 @@ SKIP_DOMAINS = Set.new(%w[
   matrix.org meta.com msn.com vk.com trello.com
   mail.ru rambler.ru ukr.net
   notepad-plus-plus.org open-vsx.org pkg.go.dev unpkg.com vscode.dev
-  dictionary.com indeed.com zohomail.com
+  dictionary.com indeed.com zohomail.com zoho.com zendesk.com
   tinyurl.com tiny.cc qrco.de
   gainsightcloud.com ustream.tv langchain.com aha.io petapixel.com
   caixa.gov.br terra.com.br
@@ -336,10 +336,10 @@ class BaseScraper
     return true if EXACT_SKIP_DOMAINS.include?(domain)
     # Subdomain cascade: "api.youtube.com" matches "youtube.com"
     return true if SKIP_DOMAINS.any? { |s| domain == s || domain.end_with?(".#{s}") }
-    # Allowlist: exact match first (O(1)), then walk up parent domains for subdomain cascade
-    return true if ALLOWLIST_DOMAINS.include?(domain)
-    parts = domain.split('.')
-    (1...parts.size).any? { |i| ALLOWLIST_DOMAINS.include?(parts[i..].join('.')) }
+    # Allowlist: exact match only — no subdomain cascade.
+    # Cloud/CDN platforms (windows.net, b-cdn.net, aliyuncs.com, etc.) appear in the
+    # uBlock allowlist, so cascade would silently suppress malicious subdomains.
+    ALLOWLIST_DOMAINS.include?(domain)
   end
 
   def scan_for_iocs(text, domains, ips, plain_text: false)
@@ -1410,7 +1410,6 @@ puts
 REPO_ROOT = File.expand_path('..', __dir__).freeze
 _allowlist_raw = Set.new.tap do |domains|
   paths = Dir.glob(File.join(REPO_ROOT, 'allowlists', '*.txt')) + [
-    File.join(REPO_ROOT, 'blocklists', 'privacy-badger', 'allowlist.txt'),
     File.join(REPO_ROOT, 'blocklists', 'ublock', 'allowlist.txt'),
   ]
   paths.each do |path|
@@ -1423,7 +1422,7 @@ _allowlist_raw = Set.new.tap do |domains|
     end
   end
 end
-puts "Allowlists  : #{_allowlist_raw.size} domains loaded (manual + ublock + privacy-badger)"
+puts "Allowlists  : #{_allowlist_raw.size} domains loaded (manual + ublock)"
 _blp         = load_blocklist_project_domains
 _blp_removed = _allowlist_raw & _blp
 _allowlist_raw.subtract(_blp_removed)

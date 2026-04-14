@@ -57,14 +57,13 @@ class PrivacyBadgerExtractor
     fetch_pbconfig_data
 
     # Strip adult/gambling/fraud/malware/phishing/piracy/scam/drugs/ads domains
-    # from the allowlist sets before publishing
-    blocked_categories = load_blocklist_project_domains
-    removed = Set.new
-    [@dnt_domains, @yellowlist_domains].each do |s|
-      intersection = s & blocked_categories
-      removed.merge(intersection)
-      s.subtract(intersection)
-    end
+    # from the allowlist output only — operate on copies so blocklist building
+    # continues to use the original yellowlist/DNT sets unchanged.
+    blp_blocked = load_blocklist_project_domains
+    @yellowlist_for_allowlist = @yellowlist_domains - blp_blocked
+    @dnt_for_allowlist        = @dnt_domains        - blp_blocked
+    removed = (@yellowlist_domains - @yellowlist_for_allowlist) |
+              (@dnt_domains        - @dnt_for_allowlist)
     if removed.any?
       puts "Blocklist Project filter: removed #{removed.size} domain(s) from allowlist:"
       removed.to_a.sort.each { |d| puts "  - #{d}" }
@@ -172,8 +171,8 @@ class PrivacyBadgerExtractor
 
   def build_final_allowlist
     allowlist = Set.new
-    allowlist.merge(@dnt_domains) if @dnt_allowlist
-    allowlist.merge(@yellowlist_domains)
+    allowlist.merge(@dnt_for_allowlist) if @dnt_allowlist
+    allowlist.merge(@yellowlist_for_allowlist)
     allowlist
   end
 
