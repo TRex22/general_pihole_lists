@@ -30,6 +30,9 @@ oauthaccountmanager.googleapis.com
 apis.google.com
 photosdata-pa.googleapis.com
 mail.google.com
+clientservices.googleapis.com
+nearbysharing-pa.googleapis.com
+phonedeviceverification-pa.googleapis.com
 # ogads-pa.clients6.google.com
 
 # Google Keep / Firebase
@@ -277,9 +280,31 @@ codacontent.io
 prod.lunostatic.com
 codacontent.io
 
+# DNS Resolver Discovery (RFC 9462 - used by browsers for encrypted DNS)
+_dns.resolver.arpa
+
 # Utils
 www.whitescreen.online
 ipinfo.io
+proofpoint.com
+sourceforge.net
+head.protondb.pages.dev
+
+# Personal sites / blogs
+lalitm.com
+ergosphere.blog
+bramcohen.com
+
+# Apps / Services
+concertful.com
+aisle.com
+skillsmp.com
+hgcloud.to
+docs.paperclip.ing
+
+# Newsletters / email delivery
+email.mg-d1.substack.com
+click.fidelityinvestments.com
 
 # Tuya Smart Devices
 m3-eu.lifeaiot.com

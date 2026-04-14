@@ -255,6 +255,21 @@ keydelivery.mediaservices.windows.net
 streaming.mediaservices.windows.net
 tenor.com
 
+# Teams connectivity and routing
+config.teams.microsoft.com
+go.trouter.teams.microsoft.com
+us-prod.asyncgw.teams.microsoft.com
+tr.teams.microsoft.com
+api.flightproxy.teams.microsoft.com
+
+# Skype / Teams config
+config.edge.skype.com
+
+# Microsoft Whiteboard
+whiteboard.office.com
+whiteboard.cloud.microsoft
+whiteboard.microsoft.com
+
 # ============================================
 # OUTLOOK / HOTMAIL
 # ============================================

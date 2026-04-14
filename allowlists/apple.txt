@@ -156,8 +156,10 @@ diagassets.apple.com
 # DNS Resolution
 doh.dns.apple.com
 
-# Certificate Validation
+# Certificate Validation and CDN
 certs.apple.com
+cl2.apple.com
+pancake.apple.com
 crl.apple.com
 crl.entrust.net
 crl3.digicert.com
@@ -174,6 +176,7 @@ valid.apple.com
 play.music.apple.com
 js-cdn.music.apple.com
 aod.itunes.apple.com
+musicstatus.itunes.apple.com
 
 # Game Center
 gc.apple.com
@@ -185,6 +188,7 @@ guzzoni.apple.com
 apple-relay.apple.com
 apple-relay.cloudflare.com
 apple-relay.fastly-edge.com
+ohttp-relay1.fastly-edge.com
 apple-native-relay.apple.com
 cp4.cloudflare.com
 api.smoot.apple.com
