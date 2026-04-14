@@ -4,46 +4,12 @@
 # Common domains that may need whitelisting for functionality
 
 # Captive Portal Detection (required for WiFi login pages)
-connectivitycheck.android.com
-connectivitycheck.gstatic.com
-clients3.google.com
+# Google captive portal domains are in google.txt
 www.msftncsi.com
 www.msftconnecttest.com
 msftncsi.com
 ipv6.msftncsi.com
 captive.apple.com
-
-# Google Services (core functionality)
-safebrowsing.googleapis.com
-clients2.google.com
-clients4.google.com
-www.googleapis.com
-dl.google.com
-redirector.gvt1.com
-mtalk.google.com
-contacts.google.com
-photos.googleapis.com
-android.clients.google.com
-googleapis.l.google.com
-gstaticadssl.l.google.com
-oauthaccountmanager.googleapis.com
-apis.google.com
-photosdata-pa.googleapis.com
-mail.google.com
-clientservices.googleapis.com
-nearbysharing-pa.googleapis.com
-phonedeviceverification-pa.googleapis.com
-# ogads-pa.clients6.google.com
-
-# Google Keep / Firebase
-reminders-pa.googleapis.com
-firestore.googleapis.com
-
-# YouTube (if using)
-youtube.com
-s.youtube.com
-video-stats.l.google.com  # YouTube/Google video analytics tracking
-youtubei.googleapis.com
 
 # Spotify
 spotify.com
