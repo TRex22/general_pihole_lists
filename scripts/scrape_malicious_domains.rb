@@ -320,7 +320,6 @@ class BaseScraper
     # Reject anything whose TLD is a known file extension or adult content TLD
     tld = domain.split('.').last.downcase
     return false if FILE_EXTENSION_TLDS.include?(tld)
-    return false if ADULT_TLDS.include?(tld)
 
     # Validate the TLD against the Mozilla Public Suffix List.
     # default_rule: nil means reject domains whose TLD is not in the PSL.
