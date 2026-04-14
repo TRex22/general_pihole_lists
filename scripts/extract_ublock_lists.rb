@@ -17,6 +17,7 @@ require 'uri'
 require 'optparse'
 require 'fileutils'
 require 'set'
+require_relative 'blocklist_project_filter'
 
 # Default filter list sources
 FILTER_LISTS = {
@@ -73,6 +74,12 @@ class UBlockExtractor
 
     # Remove any domains that are in both lists (allowlist takes precedence)
     @blocklist_domains -= @allowlist_domains
+
+    # Strip adult/gambling/fraud/malware/phishing/piracy/scam/drugs/ads domains
+    # from the allowlist before publishing
+    puts
+    filter_allowlist_with_blocklist_project!(@allowlist_domains)
+    puts
 
     write_output_files
     print_summary
@@ -141,6 +148,7 @@ class UBlockExtractor
     return false if domain == 'localhost'
     return false if domain =~ /^\d+\.\d+\.\d+\.\d+$/  # Skip IPs
     return false if domain.length > 253  # DNS limit
+    return false if ADULT_TLDS.include?(domain.split('.').last.downcase)
 
     # Basic domain validation
     domain =~ /^[a-zA-Z0-9][a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}$/
