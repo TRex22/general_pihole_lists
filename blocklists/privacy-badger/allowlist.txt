@@ -1,12 +1,11 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-04-14T10:11:45Z
+# Generated: 2026-04-14T11:05:54Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 1063
+# Total domains: 988
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
 25livepub.collegenet.com
-a.klaviyo.com
 acast.com
 access.usbank.com
 accounts.google.com
@@ -18,7 +17,6 @@ addon.lidl.de
 adyen.com
 affirm.com
 afterpay.com
-ahcdn.com
 airtable.com
 airtrfx.com
 ajax.googleapis.com
@@ -33,7 +31,6 @@ alipayobjects.com
 aliyuncs.com
 amazon.com
 amazonaws.com
-amazoncustomerservice.d2.sc.omtrdc.net
 americanexpress.com
 ampproject.net
 amuniversal.com
@@ -47,14 +44,12 @@ api-cloud.eventim.com
 api-maps.yandex.ru
 api-v2.soundcloud.com
 api.appcues.com
-api.attentivemobile.com
 api.axept.io
 api.bilibili.com
 api.braintreegateway.com
 api.bsky.app
 api.cognitive.microsoft.com
 api.crobox.com
-api.cxense.com
 api.decagon.ai
 api.docodoco.jp
 api.dropbox.com
@@ -67,7 +62,6 @@ api.framer.com
 api.hsforms.com
 api.hubspot.com
 api.idalgo.idalgo-hosting.com
-api.ipify.org
 api.irp2.ovp.kaltura.com
 api.line.me
 api.map.baidu.com
@@ -78,7 +72,6 @@ api.mercadopago.com
 api.moonpay.com
 api.pinterest.com
 api.prefixbox.com
-api.queryly.com
 api.razorpay.com
 api.reddit.com
 api.reviews.io
@@ -120,10 +113,8 @@ artwork.captivate.fm
 asapp.com
 aspnetcdn.com
 assets-cdk.com
-assets.adobedtm.com
 assets.bigcartel.com
 assets.braintreegateway.com
-assets.customer.io
 assets.rebelmouse.io
 assets.reviews.io
 assets.scrippsdigital.com
@@ -133,7 +124,6 @@ assets0.simplero.com
 assetsadobe.com
 assignments.google.com
 atlas.microsoft.com
-attservicesinc.tt.omtrdc.net
 aui-cdn.atlassian.com
 auth.adobe.com
 auth.openweb.com
@@ -161,7 +151,6 @@ blockstack.org
 blogger.com
 blogroll.livedoor.net
 bnet.163.com
-boldchat.com
 bolt.com
 booking.com
 books.google.com
@@ -177,10 +166,8 @@ buy.moonpay.com
 buzzfeed.com
 buzzsprout.com
 bytecdntp.com
-byteoversea.com
 c.brid.tv
 c.dun.163.com
-c.riskified.com
 c0.wp.com
 cadmore.media
 calendar.google.com
@@ -198,11 +185,9 @@ cardinalcommerce.com
 cardyb.bsky.app
 cart-imgs.fc2.com
 catalog-service.adobe.io
-cbsi.com
 cc-embed.adobe.com
 cc.cnetcontent.com
 cdn-client.medium.com
-cdn-eu.dynamicyield.com
 cdn-icons-png.flaticon.com
 cdn-images-1.medium.com
 cdn-prod-ccv.adobe.com
@@ -217,12 +202,10 @@ cdn.bsky.app
 cdn.cnetcontent.com
 cdn.cohesionapps.com
 cdn.cookie-script.com
-cdn.cxense.com
 cdn.datatables.net
 cdn.deviceinf.com
 cdn.discordapp.com
 cdn.dopc.cz
-cdn.dynamicyield.com
 cdn.embed.ly
 cdn.embedly.com
 cdn.flowplayer.com
@@ -235,7 +218,6 @@ cdn.livechat-files.com
 cdn.maptiler.com
 cdn.myopenpass.com
 cdn.ngenix.net
-cdn.optimizely.com
 cdn.plaid.com
 cdn.prefixbox.com
 cdn.privacy-mgmt.com
@@ -247,7 +229,6 @@ cdn.seondf.com
 cdn.smooch.io
 cdn.sophi.io
 cdn.split.io
-cdn.tagcommander.com
 cdn.technolutions.net
 cdn.tickaroo.com
 cdn.transcend.io
@@ -309,7 +290,6 @@ commercecloud.salesforce.com
 config.smooch.io
 connect.breadpayments.com
 consent.api.osano.com
-consent.cookiebot.com
 consent.google.com
 consentcdn.cookiebot.com
 consentframework.com
@@ -319,7 +299,6 @@ content.usbank.com
 contentstack.com
 cookie-cdn.cookiepro.com
 cookieblock.trackersimulate.org
-cookielaw.org
 copilot.microsoft.com
 cover.imglib.info
 cse.google.com
@@ -332,7 +311,6 @@ daioncdn.net
 danid.dk
 dapi.kakao.com
 datastudio.google.com
-daumcdn.net
 ddragon.leagueoflegends.com
 dealer.com
 dealerinspire.com
@@ -382,7 +360,6 @@ elfsightcdn.com
 embed.avplayer.com
 embed.crowdriff.com
 embed.reddit.com
-entitlements.jwplayer.com
 episerver.net
 epoq.de
 essearchapi-na.hawksearch.com
@@ -392,17 +369,12 @@ eurolandir.com
 eventbrite.com
 events.split.io
 eventsub.wss.twitch.tv
-evergage.com
 everyaction.com
 ex.co
 expedia.com
-explicit.bing.net
 express.adobe.com
-extole.io
-fast.appcues.com
 fastly.net
 fbcdn.net
-feedburner.google.com
 feedproxy.google.com
 feeds.soundcloud.com
 filepicker.io
@@ -431,12 +403,10 @@ forms.yandex.ru
 formstack.com
 frankerfacez.com
 freshchat.com
-fundingchoicesmessages.google.com
 fundraiseup.com
 fups.com
 fusiontables.google.com
 futurecdn.net
-fwmrm.net
 gcaptcha.eo.gtimg.com
 gcaptcha.eo.qcloud.com
 geetest.com
@@ -462,7 +432,6 @@ global.ketchcdn.com
 glyph.medium.com
 godaddy.com
 googleapis.com
-googletagmanager.com
 googleusercontent.com
 googlevideo.com
 gql.twitch.tv
@@ -475,7 +444,6 @@ gstatic.com
 guildwars2.com
 h-microsoft.online-metrix.net
 h-walmart.online-metrix.net
-hbx.media.net
 hcaptcha.com
 hdr.sundaysky.com
 herokuapp.com
@@ -495,7 +463,6 @@ i0.wp.com
 i1.wp.com
 i2.wp.com
 i3.wp.com
-iadvize.com
 iapi.campus.qq.com
 icons8.com
 id.twitch.tv
@@ -509,21 +476,17 @@ images-ext-2.discordapp.net
 images.pexels.com
 images.powerreviews.com
 images.sundaysky.com
-imagesrv.adition.com
 imbox.io
 img-fotki.yandex.ru
 img.purch.com
-img.riskified.com
 img.strpst.com
 imgix.net
 imgsa.baidu.com
 imgsrc.baidu.com
-imgssl.constantcontact.com
 imgur.com
 indeed.com
 inq.com
 inscloudgate.net
-inside-graph.com
 instructure.com
 integration.prefixbox.com
 intensedebate.com
@@ -566,8 +529,6 @@ lh4.googleusercontent.com
 lib.getshogun.com
 libraries.unbxdapi.com
 libsyn.com
-licensing.bitmovin.com
-lightboxcdn.com
 line-apps.com
 list-manage.com
 live.primis.tech
@@ -581,7 +542,6 @@ livestream.com
 lloydsbankinggroup.com
 logic.azure.com
 lookerstudio.google.com
-lpsnmedia.net
 ls.fn.sportradar.com
 lusearchapi-na.hawksearch.com
 m.stripe.network
@@ -604,15 +564,11 @@ maps.google.com
 maps.yandex.net
 mapsengine.google.com
 mapserver.mapy.cz
-marketingautomation.services
-marketo.com
-marsflag.com
 matterport.com
 mdstrm.com
 medallia.com
 media.beehiiv.com
 media.discordapp.net
-media.richrelevance.com
 media.tenor.com
 mediaspace.kaltura.com
 mediawiki.org
@@ -632,7 +588,6 @@ mncdn.com
 mod.bsky.app
 mozu.com
 mp.lura.live
-mpsnare.iesnare.com
 msecnd.net
 msn.com
 mt0.google.com
@@ -711,7 +666,6 @@ paypalobjects.com
 pdp.gokwik.co
 pendo.io
 photo.store.qq.com
-piano.io
 pic.rmb.bdstatic.com
 picasaweb.google.com
 pico.tools
@@ -724,7 +678,6 @@ platform.cloud.coveo.com
 platform.liquidus.net
 platformhipaa.cloud.coveo.com
 play-eu1.hubspotvideo.com
-play.aniview.com
 play.hubspotvideo.com
 play.sundaysky.com
 player.avplayer.com
@@ -765,10 +718,7 @@ rackcdn.com
 radikal.ru
 radiofrance.fr
 razorpay.com
-rcom-eu.dynamicyield.com
-rcom.dynamicyield.com
 recaptcha.net
-recs.richrelevance.com
 recurly.com
 redcdn.pl
 redefine.pl
@@ -777,7 +727,6 @@ res.wx.qq.com
 resize.blogsys.jp
 rest.growinginteractive.com
 rewardstyle.com
-rfksrv.com
 robot-vr-public.cdn.bcebos.com
 runkit.com
 s-static.ak.facebook.com
@@ -787,15 +736,11 @@ s2.wp.com
 s3.amazonaws.com
 s3.yandex.net
 sagepay.com
-sajari.com
 salesforceliveagent.com
 salsalabs.org
 sapi.map.baidu.com
 sbnation.com
-scdn.cxense.com
 scene7.com
-schibsted.com
-schibsted.io
 schibsted.no
 schibsted.tech
 scholar.google.com
@@ -803,10 +748,7 @@ scoreboard.itfmp.sportradar.com
 scribblelive.com
 scribd.com
 script.google.com
-script.ioam.de
 sdk.mercadopago.com
-sdk.privacy-center.org
-sdk.split.io
 seamlessaccess.org
 search-eu.cloud.coveo.com
 search.cloud.coveo.com
@@ -825,7 +767,6 @@ servicepipe.ru
 services.brid.tv
 serviceschipotlecom.trafficmanager.net
 share.hsforms.com
-shield.sitelock.com
 shop-pro.jp
 shopify.com
 shopifycdn.com
@@ -844,7 +785,6 @@ smartcaptcha.cloud.yandex.ru
 smartcaptcha.yandexcloud.net
 smartlock.google.com
 smugmug.com
-snapengage.com
 snipcart.com
 socket.decagon.ai
 solve-api.forethought.ai
@@ -861,9 +801,6 @@ squarespace.com
 squareup.com
 src.litix.io
 ssl-images-amazon.com
-ssl.kaptcha.com
-st-eu.dynamicyield.com
-st.dynamicyield.com
 stackoverflow.com
 starling.crowdriff.com
 static-cdn.strpst.com
@@ -871,9 +808,7 @@ static-forms.klaviyo.com
 static.axept.io
 static.beyondmenu.com
 static.cloud.coveo.com
-static.dynamicyield.com
 static.eventim.com
-static.hubspot.com
 static.klaviyo.com
 static.miraheze.org
 static.portal101.cn
@@ -919,8 +854,6 @@ theplatform.com
 thumb.fc2.com
 tiktokcdn.com
 tildacdn.com
-tinypass.com
-tiqcdn.com
 townnews.com
 toyota.com
 tradingview.com
@@ -930,17 +863,14 @@ trends.google.com
 trinitymedia.ai
 troweprice.com.ssl.d2.sc.omtrdc.net
 trumba.com
-trustarc.com
 trustpilot.com
 tts.speech.microsoft.com
 ttvnw.net
 tumblr.com
-turnto.com
 twimg.com
 typeform.com
 typography.com
 ui.powerreviews.com
-ultimedia.com
 unicornmedia.com
 unisphere.syp2.ovp.kaltura.com
 unpkg.com
@@ -949,7 +879,6 @@ upload.kaltura.com
 uplynk.com
 use.typekit.com
 use.typekit.net
-usercentrics.eu
 userservices.vip.symantec.com
 userway.org
 usestoryteller.com
@@ -964,7 +893,6 @@ video.google.com
 video.primis.tech
 videodelivery.net
 videos.strpst.com
-vidible.tv
 vidyard.com
 viewlicense.adobe.io
 vimeo.com
@@ -999,7 +927,6 @@ weixin.qq.com
 widget-sheriff.tradingview-widget.com
 widget.reviews.io
 widget.spreaker.com
-widget.weibo.com
 widgets.guidestar.org
 widgets.wp.com
 wikimedia.org
@@ -1042,7 +969,6 @@ wwwimages.adobe.com
 xhpingcdn.com
 xsdownload.adobe.com
 xsrv.jp
-xvideos.com
 y3.analytics.yahoo.com
 yahoo.net
 yahooapis.com
@@ -1051,7 +977,6 @@ yccdn.cloud.yandex.net
 yelpcdn.com
 yimg.com
 yimg.jp
-yotpo.com
 yottaa.net
 youku.com
 youtube-nocookie.com
