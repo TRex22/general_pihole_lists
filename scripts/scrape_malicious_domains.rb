@@ -33,6 +33,7 @@ require 'set'
 require 'time'
 require 'date'
 require 'public_suffix'
+require_relative 'blocklist_project_filter'
 
 DEFAULT_YEARS      = 2
 DEFAULT_PARALLEL   = 20 # 5
@@ -233,6 +234,9 @@ SKIP_IPS = Set.new(%w[
   0.0.0.0 127.0.0.1
 ]).freeze
 
+# ALLOWLIST_DOMAINS and REPO_ROOT are defined after CLI parsing so that the
+# Blocklist Project filter output appears in order with the other startup prints.
+
 # ────────────────────────────────────────────────────────────────────────────
 # Base scraper — shared HTTP, domain validation, blocklist I/O, cache I/O
 # ────────────────────────────────────────────────────────────────────────────
@@ -313,9 +317,10 @@ class BaseScraper
     return false if /\A\d+\.\d+\.\d+\.\d+\z/.match?(domain)  # pure IPv4
     return false unless domain.include?('.')
 
-    # Reject anything whose TLD is a known file extension
+    # Reject anything whose TLD is a known file extension or adult content TLD
     tld = domain.split('.').last.downcase
     return false if FILE_EXTENSION_TLDS.include?(tld)
+    return false if ADULT_TLDS.include?(tld)
 
     # Validate the TLD against the Mozilla Public Suffix List.
     # default_rule: nil means reject domains whose TLD is not in the PSL.
@@ -331,7 +336,11 @@ class BaseScraper
     # Exact-only match: root CDN/cloud domains too broad to cascade to subdomains
     return true if EXACT_SKIP_DOMAINS.include?(domain)
     # Subdomain cascade: "api.youtube.com" matches "youtube.com"
-    SKIP_DOMAINS.any? { |s| domain == s || domain.end_with?(".#{s}") }
+    return true if SKIP_DOMAINS.any? { |s| domain == s || domain.end_with?(".#{s}") }
+    # Allowlist: exact match first (O(1)), then walk up parent domains for subdomain cascade
+    return true if ALLOWLIST_DOMAINS.include?(domain)
+    parts = domain.split('.')
+    (1...parts.size).any? { |i| ALLOWLIST_DOMAINS.include?(parts[i..].join('.')) }
   end
 
   def scan_for_iocs(text, domains, ips, plain_text: false)
@@ -1396,6 +1405,37 @@ puts "Cache file  : #{File.expand_path(options[:cache_file])}"
 puts "Dry run     : #{options[:dry_run]}"
 all_sources_label = "all (#{ALL_SCRAPERS.keys.join(', ')})"
 puts "Sources     : #{options[:sources] ? options[:sources].join(', ') : all_sources_label}"
+puts
+
+# Load allowlists and apply Blocklist Project category filter
+REPO_ROOT = File.expand_path('..', __dir__).freeze
+_allowlist_raw = Set.new.tap do |domains|
+  paths = Dir.glob(File.join(REPO_ROOT, 'allowlists', '*.txt')) + [
+    File.join(REPO_ROOT, 'blocklists', 'privacy-badger', 'allowlist.txt'),
+    File.join(REPO_ROOT, 'blocklists', 'ublock', 'allowlist.txt'),
+  ]
+  paths.each do |path|
+    next unless File.exist?(path)
+    File.foreach(path) do |line|
+      line = line.strip
+      next if line.empty? || line.start_with?('#')
+      domain = line.split('#').first.strip.downcase
+      domains << domain unless domain.empty?
+    end
+  end
+end
+puts "Allowlists  : #{_allowlist_raw.size} domains loaded (manual + ublock + privacy-badger)"
+_blp         = load_blocklist_project_domains
+_blp_removed = _allowlist_raw & _blp
+_allowlist_raw.subtract(_blp_removed)
+if _blp_removed.any?
+  puts "Blocklist Project filter: removed #{_blp_removed.size} domain(s) from allowlist:"
+  _blp_removed.to_a.sort.each { |d| puts "  - #{d}" }
+else
+  puts "Blocklist Project filter: no domains removed from allowlist"
+end
+ALLOWLIST_DOMAINS = _allowlist_raw.freeze
+puts
 
 full_cache = load_full_cache(options[:cache_file])
 

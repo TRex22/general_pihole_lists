@@ -26,6 +26,7 @@ require 'json'
 require 'optparse'
 require 'fileutils'
 require 'set'
+require_relative 'blocklist_project_filter'
 
 DATA_SOURCES = {
   'seed' => 'https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json',
@@ -54,6 +55,23 @@ class PrivacyBadgerExtractor
 
     fetch_seed_data
     fetch_pbconfig_data
+
+    # Strip adult/gambling/fraud/malware/phishing/piracy/scam/drugs/ads domains
+    # from the allowlist sets before publishing
+    blocked_categories = load_blocklist_project_domains
+    removed = Set.new
+    [@dnt_domains, @yellowlist_domains].each do |s|
+      intersection = s & blocked_categories
+      removed.merge(intersection)
+      s.subtract(intersection)
+    end
+    if removed.any?
+      puts "Blocklist Project filter: removed #{removed.size} domain(s) from allowlist:"
+      removed.to_a.sort.each { |d| puts "  - #{d}" }
+    else
+      puts "Blocklist Project filter: no domains removed from allowlist"
+    end
+    puts
 
     write_output_files
     print_summary
@@ -282,6 +300,7 @@ class PrivacyBadgerExtractor
     return false if domain == 'localhost'
     return false if domain =~ /^\d+\.\d+\.\d+\.\d+$/
     return false if domain.length > 253
+    return false if ADULT_TLDS.include?(domain.split('.').last.downcase)
 
     domain =~ /^[a-zA-Z0-9][a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}$/
   end
