@@ -50,6 +50,7 @@ nexus.microsoftonline-p.com
 passwordreset.microsoftonline.com
 provisioningapi.microsoftonline.com
 main.iam.ad.ext.azure.com
+ccs.login.microsoftonline.com
 
 # Office 365 / Exchange Online
 outlook.office365.com
@@ -103,6 +104,7 @@ admin.onedrive.com
 oneclient.sfx.ms
 skyapi.onedrive.live.com
 storage.live.com
+g.live.com
 
 # ============================================
 # SHAREPOINT ONLINE
@@ -115,6 +117,7 @@ privatecdn.sharepointonline.com
 publiccdn.sharepointonline.com
 static.sharepointonline.com
 spoprod-a.akamaihd.net
+# *.svc.ms - requires regex wildcard in Pi-hole (SharePoint/OneDrive internal APIs)
 
 # ============================================
 # OFFICE ONLINE (PowerPoint, Word, Excel Online)
@@ -157,6 +160,7 @@ msedge.api.cdp.microsoft.com
 # Bing (search functionality)
 www.bing.com
 bing.com
+c.bing.net
 
 # Azure
 portal.azure.com
@@ -230,6 +234,13 @@ crl.microsoft.com
 
 # Office activation
 activation.sls.microsoft.com
+office15client.microsoft.com
+
+# Office redirects
+o15.officeredir.microsoft.com
+officepreviewredir.microsoft.com
+officeredir.microsoft.com
+r.office.microsoft.com
 
 # Windows Activity (telemetry - commented out)
 # activity.windows.com
@@ -475,3 +486,19 @@ t0.ssl.ak.dynamic.tiles.virtualearth.net
 t0.ssl.ak.tiles.virtualearth.net
 
 weather.partners.msn.com
+
+# ============================================
+# SWAY
+# ============================================
+
+sway.com
+www.sway.com
+
+# ============================================
+# WINDOWS NOTIFICATION SERVICE (WNS)
+# ============================================
+# Required for push notifications in Microsoft apps on Windows
+# *.wns.windows.com - requires regex wildcard in Pi-hole
+
+# Windows device updates (required for Teams end-user device updates)
+adl.windows.com

@@ -16,7 +16,7 @@ require 'set'
 require 'time'
 
 BLOCKLIST_PROJECT_CACHE_FILE = File.join(__dir__, 'blocklist_project_cache.json').freeze
-BLOCKLIST_PROJECT_CACHE_TTL_DAYS = 7
+BLOCKLIST_PROJECT_CACHE_TTL_DAYS = 1
 
 ADULT_TLDS = Set.new(%w[xxx adult porn sex]).freeze
 

@@ -98,6 +98,7 @@ meet.google.com
 stream.meet.google.com
 hangouts.googleapis.com
 meetings.googleapis.com
+meetings.clients6.google.com
 
 # ============================================
 # GOOGLE DOCS / DRIVE
@@ -122,3 +123,13 @@ youtube.com
 s.youtube.com
 youtubei.googleapis.com
 video-stats.l.google.com  # YouTube playback stats (functional, not ad tracking)
+
+# ============================================
+# GOOGLE CORE (GENERAL)
+# ============================================
+
+# Required for Google Meet user feedback and event log uploads (workspace docs)
+www.google.com
+play.google.com
+apps.google.com
+feedback.googleusercontent.com
