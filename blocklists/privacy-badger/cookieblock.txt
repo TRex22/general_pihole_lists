@@ -1,7 +1,7 @@
 # Pi-hole Cookieblock List - Domains Privacy Badger allows but strips cookies
-# Generated: 2026-04-16T09:35:07Z
+# Generated: 2026-04-16T09:50:41Z
 # Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
-# Total domains: 832
+# Total domains: 831
 #
 # These domains can load resources but would have cookies stripped by Privacy Badger.
 # Blocking them in Pi-hole is more aggressive than Privacy Badger's default.
@@ -343,7 +343,6 @@ firebaselogging.googleapis.com
 firestore.googleapis.com
 flickr.com
 flixcdn.com
-flo.uri.sh
 fontawesome.com
 fonts-api.wp.com
 fonts.bunny.net

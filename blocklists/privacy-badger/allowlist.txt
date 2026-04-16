@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-04-16T09:35:07Z
+# Generated: 2026-04-16T09:50:41Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 988
+# Total domains: 987
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -384,7 +384,6 @@ flickr.com
 flipcause.com
 flippenterprise.net
 flixcdn.com
-flo.uri.sh
 fontawesome.com
 fonts-api.wp.com
 fonts.bunny.net

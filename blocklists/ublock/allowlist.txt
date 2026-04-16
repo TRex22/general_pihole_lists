@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-04-16T09:35:14Z
-# Total domains: 994
+# Generated: 2026-04-16T09:50:49Z
+# Total domains: 992
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -55,7 +55,6 @@ aeries.net
 aetv.com
 afcs.dellcdn.com
 afi-b.com
-aii.sh
 aixifan.com
 ajax.googleapis.com
 akamaiedge.net
@@ -586,7 +585,6 @@ mixdrop.co
 mobinozer.com
 money.it
 mopo.de
-morphic.sh
 mozu.com
 mps.nbcuni.com
 mpsconline.gov.in
