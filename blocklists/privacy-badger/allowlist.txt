@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-04-16T10:56:51Z
+# Generated: 2026-04-16T11:18:23Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 778
+# Total domains: 776
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -333,7 +333,6 @@ gleam.io
 global-e.com
 global.ketchcdn.com
 godaddy.com
-googlevideo.com
 gql.twitch.tv
 graphql-cdn-slplatform.liquidus.net
 gravatar.com
@@ -774,7 +773,6 @@ yimg.jp
 yottaa.net
 youku.com
 youtube-nocookie.com
-ytimg.com
 zapier.com
 zdassets.com
 zephr.com

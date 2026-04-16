@@ -118,12 +118,50 @@ firebaseinstallations.googleapis.com
 # ============================================
 # YOUTUBE
 # ============================================
+# Sources:
+#   https://support.google.com/youtube/answer/10046411
+#   https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
 
 youtube.com
-s.youtube.com
+www.youtube.com
+m.youtube.com
+youtube-nocookie.com
+www.youtube-nocookie.com
+
+# YouTube API (required for Shorts feed, search, playback control)
 youtubei.googleapis.com
-video-stats.l.google.com  # YouTube playback stats (functional, not ad tracking)
-rr4---sn-woc7kn7y.googlevideo.com
+youtube-ui.l.google.com
+wwide-youtube.l.google.com
+
+# YouTube Shorts: Just Now Notifications + feed
+# jnn-pa is specifically required for the Shorts vertical feed to load
+jnn-pa.googleapis.com
+
+# YouTube playback stats (watch history, resume position)
+s.youtube.com
+video-stats.l.google.com
+
+# YouTube image / thumbnail CDN
+# i.ytimg.com and yt3.ggpht.com are both hit heavily by Shorts thumbnails
+i.ytimg.com
+s.ytimg.com
+yt3.ggpht.com
+yt3.googleusercontent.com
+ytimg.com
+
+# YouTube video delivery
+# Plain root entry — subdomains are covered by (^|\.googlevideo\.com$ in regex_allowlist.txt
+googlevideo.com
+redirector.googlevideo.com
+manifest.googlevideo.com
+
+# Google Video CDN beacons (playback health telemetry, required for adaptive streaming)
+beacons.gvt2.com
+beacons.gcp.gvt2.com
+redirector.gvt1.com
+
+# Specific CDN node previously needed — now covered by regex; kept for reference
+# rr4---sn-woc7kn7y.googlevideo.com
 
 # ============================================
 # GOOGLE CORE (GENERAL)
