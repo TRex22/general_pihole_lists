@@ -93,6 +93,21 @@ def load_blocklist_project_domains
   domains.freeze
 end
 
+# Loads all *.txt files from the repo's allowlists/ directory.
+# Returns a frozen Set of domains that should never appear in a blocklist.
+def load_repo_allowlists(repo_root)
+  domains = Set.new
+  Dir.glob(File.join(repo_root, 'allowlists', '*.txt')).each do |path|
+    File.foreach(path) do |line|
+      line = line.strip
+      next if line.empty? || line.start_with?('#')
+      domain = line.split('#').first.strip.downcase
+      domains << domain unless domain.empty?
+    end
+  end
+  domains.freeze
+end
+
 # Removes Blocklist Project domains from +allowlist_set+ (a Set) in place.
 # Prints each removed domain. Returns the count of removed domains.
 def filter_allowlist_with_blocklist_project!(allowlist_set)
