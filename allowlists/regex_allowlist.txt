@@ -42,3 +42,6 @@
 # Tuya smart home devices use dynamic regional subdomains under lifeaiot.com.
 # The m3-eu.lifeaiot.com entry in general.txt only covers one region.
 (^|\.)lifeaiot\.com$
+
+# ── Google ────────────────────────────────────────────────────────────────────
+(^|\.)googlevideo\.com$
