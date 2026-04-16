@@ -345,3 +345,75 @@ www.medium.com
 miro.medium.com
 cdn-images-1.medium.com
 api.medium.com
+
+# ─────────────────────────────────────────────────────────────────────
+# Domains identified in AI blocklist review (2026-04-16)
+# These are legitimate services incorrectly present in broad blocklists.
+# Domains verified manually before being added here.
+# ─────────────────────────────────────────────────────────────────────
+
+# Financial institutions (incorrectly in Privacy Badger blocklist)
+tripadvisor.com         # Travel reviews
+www.tripadvisor.com
+
+# Media & news
+dw.com                  # Deutsche Welle
+marketwatch.com         # Financial news (WSJ/Murdoch)
+prnewswire.com          # Press release wire
+paramount.com           # Paramount Global
+pagesix.com             # NY Post entertainment
+realestate.com.au       # Australian property listings
+
+# Software / dev tools (incorrectly in Privacy Badger blocklist)
+newrelic.com            # New Relic APM - also in SKIP_DOMAINS for scraper
+datadoghq.com           # Datadog monitoring - also in SKIP_DOMAINS
+sentry.io               # Sentry error monitoring - also in SKIP_DOMAINS
+dynatrace.com           # Dynatrace APM - also in SKIP_DOMAINS
+loggly.com              # Loggly log management - also in SKIP_DOMAINS
+
+# E-commerce / consumer services
+mercadolibre.com        # Latin American e-commerce
+wondershare.com         # Software company
+framer.com              # Web design platform
+wixpress.com            # Wix (frog.wix.com already allowlisted)
+
+# Video / media platforms
+kaltura.com             # Enterprise video platform
+rumble.com              # Video sharing platform
+dailymotion.com         # Video sharing
+
+# Maps / geo
+maptiler.com            # MapTiler map tiles
+
+# Reviews / reference
+quora.com               # Q&A platform
+g2.com                  # Software review site
+g2crowd.com             # G2 (same entity)
+pexels.com              # Stock photography
+
+# Gaming
+riotgames.com           # Riot Games (League of Legends, Valorant)
+
+# Browser
+opera.com               # Opera Software
+
+# Payments / fintech
+moonpay.com             # Crypto on-ramp payment
+razorpay.com            # Indian payment gateway
+
+# Customer support / chat tools
+channel.io              # Channel.io customer support
+
+# CDN / content delivery (legitimate services in Privacy Badger cookieblock/allowlist)
+akamai.net              # Akamai CDN
+arcpublishing.com       # Arc XP publishing platform
+contentstack.com        # Headless CMS
+squarespace.com         # Website builder
+typeform.com            # Forms / surveys
+prismic.io              # Headless CMS
+webflow.com             # Website builder
+giphy.com               # GIF service
+flickr.com              # Photo sharing
+fontawesome.com         # Icon library
+imgix.net               # Image CDN
+imgur.com               # Image hosting
