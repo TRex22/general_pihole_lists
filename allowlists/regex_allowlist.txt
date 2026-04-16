@@ -22,6 +22,14 @@
 # Plain entry `steamserver.net` already in general.txt covers the root itself.
 (^|\.)steamserver\.net$
 
+# ── YouTube / Google Video ─────────────────────────────────────────────────────
+# YouTube Shorts and regular video both stream from dynamically-numbered subdomains:
+#   rr1.googlevideo.com, rr2---sn-4g5lzney.googlevideo.com,
+#   manifest.googlevideo.com, redirector.googlevideo.com, etc.
+# Adding googlevideo.com as a plain domain only allows the exact root.
+# This regex covers ALL subdomains, which is required for playback to work.
+(^|\.)googlevideo\.com$
+
 # ── Malwarebytes / ThreatDown ──────────────────────────────────────────────────
 # Malwarebytes uses a wide range of subdomains under mwbsys.com and mb-cosmos.com
 # for telemetry, keystone licensing, CDN and cloud connectivity.

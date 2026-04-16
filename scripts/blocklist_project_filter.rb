@@ -180,6 +180,10 @@ SKIP_DOMAINS = Set.new(%w[
   kaltura.com
   opera.com
   mercadolibre.com
+  googlevideo.com
+  ytimg.com yt3.ggpht.com
+  beacons.gvt2.com beacons.gcp.gvt2.com
+  jnn-pa.googleapis.com
 ]).freeze
 
 # Root-level cloud/CDN platform domains that are too broad to block wholesale —
