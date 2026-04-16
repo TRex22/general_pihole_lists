@@ -318,7 +318,10 @@ class PrivacyBadgerExtractor
     return false if domain == 'localhost'
     return false if domain =~ /^\d+\.\d+\.\d+\.\d+$/
     return false if domain.length > 253
-    return false if ADULT_TLDS.include?(domain.split('.').last.downcase)
+
+    tld = domain.split('.').last.downcase
+    return false if ADULT_TLDS.include?(tld)
+    return false if FILE_EXTENSION_TLDS.include?(tld)
 
     domain =~ /^[a-zA-Z0-9][a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}$/
   end

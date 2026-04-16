@@ -289,23 +289,7 @@ class BaseScraper
     strip_ioc_noise(refang(raw))
   end
 
-  # File extensions that are never valid TLDs and should be rejected outright.
-  # Belt-and-suspenders: PublicSuffix will also reject most of these, but an
-  # explicit list catches them without a lookup and documents the intent.
-  # File extensions that are NOT valid IANA TLDs — safe to reject outright.
-  # Deliberately excludes .sh (Saint Helena), .py (Paraguay), .rs (Serbia),
-  # .pl (Poland), .zip (Google gTLD) etc. which are real TLDs; those ambiguous
-  # cases are left to PublicSuffix for validation.
-  FILE_EXTENSION_TLDS = Set.new(%w[
-    exe dll sys drv bat cmd ps1 vbs scr pif lnk
-    rar gz tar 7z bz2 xz cab iso img dmg pkg deb rpm apk ipa
-    txt log ini cfg dat
-    doc docx xls xlsx ppt pptx pdf
-    mp3 mp4 avi mkv flv wav
-    php asp aspx jsp
-    png jpg jpeg gif bmp webp ico tiff
-    rb go cpp java class jar
-  ]).freeze
+  # FILE_EXTENSION_TLDS is defined in blocklist_project_filter.rb (shared constant).
 
   def valid_domain?(domain)
     return false if domain.nil? || domain.empty?

@@ -20,6 +20,22 @@ BLOCKLIST_PROJECT_CACHE_TTL_DAYS = 1
 
 ADULT_TLDS = Set.new(%w[xxx adult porn sex]).freeze
 
+# TLDs that are unambiguously file extensions in practice.
+# Includes .py (Paraguay) and .sh (Saint Helena) because virtually every
+# occurrence in filter lists and security articles is a script filename,
+# not a real registered domain. Legitimate domains under these ccTLDs are
+# vanishingly rare and would need explicit allowlist entries anyway.
+FILE_EXTENSION_TLDS = Set.new(%w[
+  exe dll sys drv bat cmd ps1 vbs scr pif lnk
+  rar gz tar 7z bz2 xz cab iso img dmg pkg deb rpm apk ipa
+  txt log ini cfg dat
+  doc docx xls xlsx ppt pptx pdf
+  mp3 mp4 avi mkv flv wav
+  php asp aspx jsp
+  png jpg jpeg gif bmp webp ico tiff
+  rb py sh go cpp java class jar
+]).freeze
+
 # NL (no-list) variants are plain domain lists — simpler to parse than hosts format.
 BLOCKLIST_PROJECT_LISTS = {
   'adult'    => 'https://blocklistproject.github.io/Lists/alt-version/porn-nl.txt',
