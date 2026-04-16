@@ -37,6 +37,8 @@ FILTER_LISTS = {
 }.freeze
 
 class UBlockExtractor
+  REPO_ROOT = File.expand_path('..', __dir__).freeze
+
   def initialize(output_dir:, lists: nil)
     @output_dir = output_dir
     @lists = lists || FILTER_LISTS.keys
@@ -79,6 +81,19 @@ class UBlockExtractor
     # from the allowlist before publishing
     puts
     filter_allowlist_with_blocklist_project!(@allowlist_domains)
+    puts
+
+    # Remove any domains from the blocklist that appear in the repo's manual allowlists
+    # (e.g. medium.com, ocsp.comodoca.com — legitimate domains that filter lists may block)
+    repo_allowlists = load_repo_allowlists(REPO_ROOT)
+    removed = @blocklist_domains & repo_allowlists
+    if removed.any?
+      puts "Repo allowlist filter: removed #{removed.size} domain(s) from blocklist:"
+      removed.to_a.sort.each { |d| puts "  - #{d}" }
+    else
+      puts "Repo allowlist filter: no domains removed from blocklist"
+    end
+    @blocklist_domains -= repo_allowlists
     puts
 
     write_output_files

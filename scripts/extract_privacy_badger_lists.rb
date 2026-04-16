@@ -34,6 +34,8 @@ DATA_SOURCES = {
 }.freeze
 
 class PrivacyBadgerExtractor
+  REPO_ROOT = File.expand_path('..', __dir__).freeze
+
   def initialize(output_dir:, include_cookieblock: false, dnt_allowlist: false)
     @output_dir = output_dir
     @include_cookieblock = include_cookieblock
@@ -44,6 +46,7 @@ class PrivacyBadgerExtractor
     @allowed_domains = Set.new
     @dnt_domains = Set.new
     @yellowlist_domains = Set.new
+    @repo_allowlists = Set.new
   end
 
   def run
@@ -69,6 +72,19 @@ class PrivacyBadgerExtractor
       removed.to_a.sort.each { |d| puts "  - #{d}" }
     else
       puts "Blocklist Project filter: no domains removed from allowlist"
+    end
+    puts
+
+    # Load repo manual allowlists so build_final_blocklist can exclude them
+    # (e.g. medium.com, ocsp.comodoca.com — legitimate domains that Privacy Badger may block)
+    @repo_allowlists = load_repo_allowlists(REPO_ROOT)
+    repo_removed = @blocked_domains & @repo_allowlists
+    repo_removed.merge(@cookieblock_domains & @repo_allowlists)
+    if repo_removed.any?
+      puts "Repo allowlist filter: removed #{repo_removed.size} domain(s) from blocklist:"
+      repo_removed.to_a.sort.each { |d| puts "  - #{d}" }
+    else
+      puts "Repo allowlist filter: no domains removed from blocklist"
     end
     puts
 
@@ -165,6 +181,9 @@ class PrivacyBadgerExtractor
 
     # DNT-compliant domains: optionally move to allowlist
     blocklist -= @dnt_domains if @dnt_allowlist
+
+    # Repo manual allowlists take precedence over any Privacy Badger block rule
+    blocklist -= @repo_allowlists
 
     blocklist
   end
