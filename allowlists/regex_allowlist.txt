@@ -1,0 +1,44 @@
+# Pi-hole Regex Allowlist
+#
+# Format: POSIX ERE, one regex per line.  Pi-hole stores these in the
+# 'domainlist' table (type=2 = regex allow) via:
+#   pihole --white-regex '(^|\.)example\.com$'
+# or by adding this file URL as a Pi-hole v6 allowlist (type=1 adlist).
+#
+# The pattern  (^|\.)domain\.com$  matches:
+#   domain.com          (exact root)
+#   sub.domain.com      (any subdomain)
+#   deep.sub.domain.com (arbitrarily deep)
+#
+# Use this file ONLY for domains where you need wildcard subdomain coverage
+# that cannot be expressed as a finite plain-domain list.
+# All other domains belong in the plain-domain allowlist files.
+#
+# Sources / references documented inline per entry.
+
+# ── Steam ──────────────────────────────────────────────────────────────────────
+# Valve's game-server CDN uses numbered subdomains (cs1–csN.steampipe.steamserver.net etc.)
+# Adding the root covers all current and future subdomains automatically.
+# Plain entry `steamserver.net` already in general.txt covers the root itself.
+(^|\.)steamserver\.net$
+
+# ── Malwarebytes / ThreatDown ──────────────────────────────────────────────────
+# Malwarebytes uses a wide range of subdomains under mwbsys.com and mb-cosmos.com
+# for telemetry, keystone licensing, CDN and cloud connectivity.
+# Sources:
+#   https://app-support.malwarebytes.com/docs/DOC-1652
+#   https://support.threatdown.com/hc/en-us/articles/4413798711699
+(^|\.)mwbsys\.com$
+(^|\.)mb-cosmos\.com$
+(^|\.)mbamupdates\.com$
+
+# ── Atlassian ──────────────────────────────────────────────────────────────────
+# Atlassian uses a large number of subdomains under atl-paas.net for internal
+# services, CI/CD pipelines, and CDN assets.
+# Source: https://support.atlassian.com/organization-administration/docs/ip-addresses-and-domains-for-atlassian-cloud-products/
+(^|\.)atl-paas\.net$
+
+# ── Tuya / Lifeaiot ───────────────────────────────────────────────────────────
+# Tuya smart home devices use dynamic regional subdomains under lifeaiot.com.
+# The m3-eu.lifeaiot.com entry in general.txt only covers one region.
+(^|\.)lifeaiot\.com$

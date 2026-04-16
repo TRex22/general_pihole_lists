@@ -204,36 +204,41 @@ class PrivacyBadgerExtractor
     options_note << "DNT-compliant domains in allowlist" if @dnt_allowlist
     options_note = options_note.empty? ? "default options" : options_note.join(", ")
 
-    # Write blocklist
+    # Write blocklist in ABP format (||domain^)
+    # Pi-hole FTL v5.21+ parses this natively via gravity and matches the domain
+    # AND all its subdomains, giving better coverage than plain domain lists.
     blocklist_path = File.join(@output_dir, 'blocklist.txt')
     File.open(blocklist_path, 'w') do |f|
-      f.puts "# Pi-hole Blocklist - Generated from Privacy Badger seed data"
-      f.puts "# Generated: #{Time.now.utc.iso8601}"
-      f.puts "# Source: #{DATA_SOURCES['seed']}"
-      f.puts "# Options: #{options_note}"
-      f.puts "# Total domains: #{blocklist.size}"
-      f.puts "#"
-      f.puts "# Includes: 'block' action domains (cross-site cookie trackers)"
-      f.puts "# Includes: 'cookieblock' domains" if @include_cookieblock
+      f.puts "! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data"
+      f.puts "! Generated: #{Time.now.utc.iso8601}"
+      f.puts "! Source: #{DATA_SOURCES['seed']}"
+      f.puts "! Options: #{options_note}"
+      f.puts "! Total domains: #{blocklist.size}"
+      f.puts "!"
+      f.puts "! Includes: 'block' action domains (cross-site cookie trackers)"
+      f.puts "! Includes: 'cookieblock' domains" if @include_cookieblock
+      f.puts "! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)"
       f.puts
-      blocklist.to_a.sort.each { |domain| f.puts domain }
+      blocklist.to_a.sort.each { |domain| f.puts "||#{domain}^" }
     end
 
-    # Write cookieblock list separately (always, regardless of --include-cookieblock)
+    # Write cookieblock list in ABP format — same rationale as blocklist
     cookieblock_path = File.join(@output_dir, 'cookieblock.txt')
     File.open(cookieblock_path, 'w') do |f|
-      f.puts "# Pi-hole Cookieblock List - Domains Privacy Badger allows but strips cookies"
-      f.puts "# Generated: #{Time.now.utc.iso8601}"
-      f.puts "# Source: #{DATA_SOURCES['seed']}"
-      f.puts "# Total domains: #{@cookieblock_domains.size}"
-      f.puts "#"
-      f.puts "# These domains can load resources but would have cookies stripped by Privacy Badger."
-      f.puts "# Blocking them in Pi-hole is more aggressive than Privacy Badger's default."
+      f.puts "! Pi-hole Cookieblock List (ABP format) - Domains Privacy Badger allows but strips cookies"
+      f.puts "! Generated: #{Time.now.utc.iso8601}"
+      f.puts "! Source: #{DATA_SOURCES['seed']}"
+      f.puts "! Total domains: #{@cookieblock_domains.size}"
+      f.puts "!"
+      f.puts "! These domains can load resources but would have cookies stripped by Privacy Badger."
+      f.puts "! Blocking them in Pi-hole is more aggressive than Privacy Badger's default."
+      f.puts "! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)"
       f.puts
-      @cookieblock_domains.to_a.sort.each { |domain| f.puts domain }
+      @cookieblock_domains.to_a.sort.each { |domain| f.puts "||#{domain}^" }
     end
 
-    # Write allowlist
+    # Write allowlist as plain domains
+    # Pi-hole allowlists do not support ABP @@|| syntax; plain domains required.
     allowlist_path = File.join(@output_dir, 'allowlist.txt')
     File.open(allowlist_path, 'w') do |f|
       f.puts "# Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains"
@@ -247,7 +252,7 @@ class PrivacyBadgerExtractor
       allowlist.to_a.sort.each { |domain| f.puts domain }
     end
 
-    # Write hosts format
+    # Write hosts format (plain 0.0.0.0 prefix, for direct /etc/hosts use)
     hosts_path = File.join(@output_dir, 'hosts.txt')
     File.open(hosts_path, 'w') do |f|
       f.puts "# Pi-hole Hosts Format Blocklist - Privacy Badger"

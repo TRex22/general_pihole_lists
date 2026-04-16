@@ -176,20 +176,26 @@ class UBlockExtractor
   end
 
   def write_output_files
-    # Write blocklist
+    # Write blocklist in ABP format (||domain^)
+    # Pi-hole FTL v5.21+ parses this natively via gravity and matches the domain
+    # AND all its subdomains, giving better coverage than plain domain lists.
+    # Allowlists remain plain-domain format since Pi-hole does not support @@||domain^
+    # in URL-imported allowlists.
     blocklist_path = File.join(@output_dir, 'blocklist.txt')
     File.open(blocklist_path, 'w') do |f|
-      f.puts "# Pi-hole Blocklist - Generated from uBlock Origin filter lists"
-      f.puts "# Generated: #{Time.now.utc.iso8601}"
-      f.puts "# Total domains: #{@blocklist_domains.size}"
-      f.puts "# Sources: #{@lists.join(', ')}"
-      f.puts "#"
-      f.puts "# Usage: Add this file URL to Pi-hole's adlist or copy domains to custom blocklist"
+      f.puts "! Pi-hole Blocklist (ABP format) - Generated from uBlock Origin filter lists"
+      f.puts "! Generated: #{Time.now.utc.iso8601}"
+      f.puts "! Total domains: #{@blocklist_domains.size}"
+      f.puts "! Sources: #{@lists.join(', ')}"
+      f.puts "!"
+      f.puts "! Usage: Add this file URL to Pi-hole Group Management > Adlists"
+      f.puts "! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)"
       f.puts
-      @blocklist_domains.to_a.sort.each { |domain| f.puts domain }
+      @blocklist_domains.to_a.sort.each { |domain| f.puts "||#{domain}^" }
     end
 
-    # Write allowlist
+    # Write allowlist as plain domains
+    # Pi-hole allowlists do not support ABP @@|| syntax; plain domains required.
     allowlist_path = File.join(@output_dir, 'allowlist.txt')
     File.open(allowlist_path, 'w') do |f|
       f.puts "# Pi-hole Allowlist - Exceptions from uBlock Origin filter lists"
@@ -202,7 +208,7 @@ class UBlockExtractor
       @allowlist_domains.to_a.sort.each { |domain| f.puts domain }
     end
 
-    # Write combined hosts file format (for direct use)
+    # Write combined hosts file format (for direct /etc/hosts use)
     hosts_path = File.join(@output_dir, 'hosts.txt')
     File.open(hosts_path, 'w') do |f|
       f.puts "# Pi-hole Hosts Format Blocklist"

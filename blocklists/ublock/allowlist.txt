@@ -1,13 +1,12 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-04-16T09:50:49Z
-# Total domains: 992
+# Generated: 2026-04-16T10:40:32Z
+# Total domains: 902
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
 
 1000ps.de
 1shortlink.com
-3amid-url.blogspot.com
 3voor12.vpro.nl
 4cdn.org
 65creedmoor.com
@@ -16,7 +15,6 @@ a.sellpoint.net
 aargauerzeitung.ch
 aasarchitecture.com
 ac.ebis.ne.jp
-accounts.google.com
 acorta-enlace.com
 acs-m.daraz.com.bd
 acs-m.daraz.pk
@@ -28,7 +26,6 @@ adblockplus.org
 adcdn.pingan.com
 addicted.es
 admin.dable.io
-ads-api.twitter.com
 ads-static.conde.digital
 ads.atmosphere.copernicus.eu
 ads.doordash.com
@@ -36,15 +33,11 @@ ads.elevateplatform.co.uk
 ads.finance
 ads.kbmax.com
 ads.listonic.com
-ads.microsoft.com
 ads.rogersmedia.com
 ads.spotify.com
 ads.taboola.com
-ads.vk.com
 ads.vk.ru
-ads.x.com
 adserver.va3.megaphone.cloud
-adsmanager.facebook.com
 adsninja.ca
 adv.asahi.com
 adv.gg
@@ -56,7 +49,6 @@ aetv.com
 afcs.dellcdn.com
 afi-b.com
 aixifan.com
-ajax.googleapis.com
 akamaiedge.net
 akc.blueconic.net
 akinator.com.cdn.ezoic.net
@@ -64,9 +56,7 @@ akinator.mobi.cdn.ezoic.net
 alibaba.tanx.com
 aliexpress.com
 allkaicerteam.com
-amazonaws.com
 amc.com
-analytics.itunes.apple.com
 anghami.com
 anime-loads.org
 animeland.us
@@ -89,7 +79,6 @@ apkmirror.com
 app-advertise.zhihuishu.com
 app.clarity.so
 app.link
-apple.com
 apps.derstandard.at
 appvn.com
 arcadepunks.com
@@ -115,13 +104,11 @@ auth2.picpay.com
 autocomplete.clearbit.com
 autotrader.co.uk
 avclub.com
-b-cdn.net
 babygames.com
 bamgrid.com
 bankofamerica.com
 banner.customer.kyruus.com
 batch.id
-bbc.co.uk
 beatricedailysun.com
 belgium.wolterskluwer.com
 benkhouya.com
@@ -130,10 +117,7 @@ berliner-zeitung.de
 berryboot.alexgoldcheidt.com
 bigbrothercanada.ca
 bild.de
-bing.com
-bitbucket.org
 blackcircles.ca
-blogshinobijawi.blogspot.com
 bntech.io
 boardgamesonline.net
 boards.net
@@ -155,17 +139,14 @@ builder-assets.unbounce.com
 builder.io
 buyad.bi-xenon.cn
 bzbasel.ch
-c.office.com
 caf.fr
 calcioefinanza.it
 calciomercato.com
-calendar.google.com
 canoe.com
 canva.com
 capital.fr
 capitolbroadcasting.blueconic.net
 captcha.px-cdn.net
-captcha.su.baidu.com
 caradisiac.com
 carbuzz.com
 cartoonth12.com
@@ -181,21 +162,16 @@ cdn.duurzaam.greenchoice.nl
 cdn.ex.co
 cdn.gotraffic.net
 cdn.intergient.com
-cdn.jsdelivr.net
 cdn.kaizenplatform.net
 cdn.playwire.com
 cdn.questionpro.com
 cdn.rozetka.com.ua
 cdn.smartclip-services.com
-cdnjs.cloudflare.com
 cdpn.io
 ceesty.com
 centro.co.il
 certona.net
-challenges.cloudflare.com
 channel.images.production.web.w4a.tv
-chart-embed.service.newrelic.com
-chatgpt.com
 chd4.com
 che168.com
 chiaseapk.com
@@ -207,7 +183,6 @@ cjisonline.com
 cl.link-ag.net
 classic-retro-games.com
 classliving.lpages.co
-claude.ai
 click.appcast.io
 click.avs.io
 click.cptrack.de
@@ -216,11 +191,7 @@ click.trafficguard.ai
 clickattr.wayup.com
 client.aps.amazon-adsystem.com
 closermag.fr
-cloud.google.com
-cloud.mail.ru
 cloud.notification-naviextras.com
-clouderrorreporting.googleapis.com
-cloudflare.com
 cm-beacon.nakanohito.jp
 cm-widget.nakanohito.jp
 cmp.inmobi.com
@@ -230,10 +201,7 @@ codesandbox.io
 coindice.win
 coinlyhub.com
 config.aps.amazon-adsystem.com
-connect.facebook.net
-console.cloud.google.com
 console.genieesspv.jp
-contacts.google.com
 content.ingbank.pl
 content.viralize.tv
 controlc.com
@@ -258,7 +226,6 @@ cz.mrezadosa.com
 dailythanthi.com
 damnripped.com
 darkw.pl
-data.bilibili.com
 data.digital.costco.ca
 data.digital.costco.com
 data.orders.costco.com
@@ -271,31 +238,25 @@ debridup.com
 deezer.com
 delivery.satr.jp
 delmarlearning.com
-demokrasistyle.blogspot.com
 deploy.mopinion.com
 designoptimal.com
 desirecourse.net
 destinationamerica.com
-developers.google.com
 diariodenavarra.es
 diariosur.es
 diariovasco.com
 dias-uteis.com
 digitale-sammlungen.gwlb.de
-discord.com
 discoveryplus.com
 discretemath.org
 disneyplus.com
 dlh.net
 docer.pl
 doci.pl
-docs.google.com
 dogefaucet.com
 downloader.la
 downsub.com
 dragontea.ink
-drive.google.com
-dropbox.com
 dsag3w1du2cu2.cloudfront.net
 duden.de
 duellinksmeta.com
@@ -338,13 +299,11 @@ ev.tpocdm.com
 events.raceresult.com
 exe.app
 exmarketplace.com
-experienceleague.adobe.com
 express.de
 extremereportbot.com
 ezsoftwarestorage.com
 f-gear.ec-optimizer.com
 f-tra.com
-facebook.com
 faculty.uml.edu
 farmeramania.de
 farsondigitalwatercams.com
@@ -379,7 +338,6 @@ fuseplatform.net
 fusion.ddmcdn.com
 g-status.com
 gagetmatome.com
-game-kentang.blogspot.com
 gameguardian.net
 gamepccrack.com
 games.pch.com
@@ -390,35 +348,26 @@ gatevidyalay.com
 geekdrop.com
 geekzone.co.nz
 gelbeseiten.de
-gemini.google.com
 geo.dailymotion.com
 geo.nbcsports.com
 geoguessr.com
 gestyy.com
-get-click2.blogspot.com
 get-digital-help.com
 get.neofinancial.com
-github.com
-github.io
-gitlab.com
 global.fncstatic.com
 globaldjmix.com
 globaltv.com
 globaltvapp.net
-gmail.com
 go.adjust.com
 go.ezodn.com
 go.scorptec.com.au
 goalad.com
 gocolumbialions.com
-google.com
 goto.target.com
 goto.walmart.com
 grafixfather.com
-graph.facebook.com
 groove.tapfiliate.com
 grp07.ias.rakuten.co.jp
-gstatic.com
 guce.advertising.com
 guiamuriae.com.br
 gulf-up.com
@@ -455,7 +404,6 @@ hwcdn.net
 i8086.de
 ia.hit.interia.pl
 icanhazip.com
-icloud.com
 id.i2i.jp
 ideal.es
 ifc.com
@@ -468,11 +416,9 @@ img.ads.tvb.com
 img.logo.dev
 impotsurlerevenu.org
 indcit.com
-infra-api.newrelic.com
 ing.pl
 inkagames.com
 insideedition.com
-instagram.com
 instapundit.com
 instawp.xyz
 intersport.peerius.com
@@ -484,9 +430,7 @@ javpost.net
 jbzd.com.pl
 jbzdy.com.pl
 jetzt.de
-js.monitor.azure.com
 js.sentry-cdn.com
-jsdelivr.net
 jsfiddle.net
 judicialcaselaw.com
 justlightnovels.com
@@ -516,7 +460,6 @@ lesmoutonsrebelles.com
 lg-firmwares.com
 ligainsider.de
 lightning.bleacherreport.com
-lightning.cnn.com
 line-scdn.net
 link-to.net
 link.meet5.net
@@ -531,7 +474,6 @@ live-media-aka.warnermediacdn.com
 live.primis.tech
 lnk2.cc
 load.sumo.com
-logging.apache.org
 login.ingbank.pl
 login.sendpulse.com
 lokopromo.com
@@ -549,7 +491,6 @@ maalaimalar.com
 mabzicle.com
 magiclen.org
 magyarhang.org
-mail.google.com
 manchestereveningnews.co.uk
 mangalist.org
 maptiles.ping-admin.ru
@@ -567,7 +508,6 @@ media-consumer365.desigual.com
 media-imdb.com
 media.amlg.io
 mediaite.com
-meet.google.com
 megaup.net
 megaxh.com
 memexcomputer.it
@@ -588,19 +528,15 @@ mopo.de
 mozu.com
 mps.nbcuni.com
 mpsconline.gov.in
-mrsbrownsb.blogspot.com
 msmedia.morningstar.com
 mui.com
-music.youtube.com
 my5.tv
-myaccount.google.com
 myaccounts.capitalone.com
 mygoodstream.pw
 mylifetime.com
 mylivesignature.com
 mypearson.com
 myreadingmanga.disqus.com
-myshorturls.blogspot.com
 names.org
 naruto-arena.net
 nascar.com
@@ -626,7 +562,6 @@ notebook-check.com
 notebookcheck-ru.com
 notebookcheck.com
 notebookcheck.net
-notebooklm.google.com
 notice.sp-prod.net
 notion.so
 novelgames.com
@@ -640,11 +575,9 @@ obituaries.therecord.com
 obituaries.thestar.com
 official.paymaya.com
 oisd.nl
-omekon.blogspot.com
 omsc.kpn.com
 onbatch.my.id
 ondemand.sas.com
-onedrive.live.com
 oneline.nextday.media
 onemanhua.com
 onenote.com
@@ -674,7 +607,6 @@ paypal.com.first-party-js.datadome.co
 pch.com
 peacocktv.com
 perfops.net
-photos.google.com
 pinpng.com
 pinterest.com
 piwik.discoursehosting.net
@@ -698,15 +630,12 @@ privacy-mgmt.com
 proboards.com
 prod.impartner.live
 products.wera.de
-programasve.blogspot.com
 programasvirtualespc.net
 promo.gramedia.com
-promo.zendesk.com
 promods.net
 promotique.com.au
 properhacks.weebly.com
 proto2ad.durasite.net
-proton.me
 proxmox.local
 proxy.ads.canalplus-bo.net
 ps.w.org
@@ -724,7 +653,6 @@ qobuz.com
 qualifioapp.com
 radiofrance.targetspot.com
 rakuten.tv
-raw.githubusercontent.com
 rawstory.com
 rd.bizrate.com
 reactandshare.com
@@ -734,7 +662,6 @@ realmadryt.pl
 realmofdarkness.net
 receiveasms.com
 receivetxt.com
-reddit.com
 redefineadpl.hit.gemius.pl
 redir.ownpage.fr
 redir.tradedoubler.com
@@ -750,7 +677,6 @@ remixsearch.co
 res.ads.nicovideo.jp
 riverside.fm
 rizaldi.web.id
-romanialivewebcam.blogspot.com
 roya.tv
 rp-online.de
 rt.rtoaster.jp
@@ -764,7 +690,6 @@ s2.coinmarketcap.com
 saarbruecker-zeitung.de
 sabervivirtv.com
 sadeempc.com
-safelink-jozz.blogspot.com
 savetolink.com
 savings.bizx.info
 sbs.demdex.net
@@ -839,18 +764,13 @@ sunderlandecho.com
 superhumanradio.net
 support-beacon.nakanohito.jp
 support-widget.nakanohito.jp
-support.google.com
 surveymyopinion.researchnow.com
 svc.dynamics.com
 t-online.de
 tagesanzeiger.ch
-taiba-dz.blogspot.com
 taiga.maven.io
 tailscale.com
-target.microsoft.com
 team-rec.jp
-teams.live.com
-teams.microsoft.com
 techdracula.com
 techperiod.com
 telecinco.es
@@ -873,7 +793,6 @@ thuthuatjb.com
 tianyancha.com
 ticketonline.de
 tidal.com
-tiktok.com
 tlaol.com
 tlc.com
 tlh.gedidigital.it
@@ -889,7 +808,6 @@ tsubasa.im
 tubitv.com
 turkdown.com
 turnip.cdn.turner.com
-tv.youtube.com
 tvpc.us
 tvserial.it
 tvtoday.de
@@ -898,13 +816,10 @@ twitch.tv
 typinggames.zone
 ubisoft.com.first-party-js.datadome.co
 ucoz.com
-ui.ads.microsoft.com
 uii.io
 unfriend-app.com
 unlockapk.com
-unpkg.com
 up-load.io
-uragongaming.blogspot.com
 urldefense.com
 userapi.com
 usercdn.com
@@ -940,7 +855,6 @@ wcfcourier.com
 weather.us
 web-assets.tapfiliate.com
 web.basemark.com
-web.telegram.org
 webcdn.stream.ne.jp
 webex.com
 webserver.one
@@ -948,7 +862,6 @@ webshark.pl
 webtvhd.com
 wewon.to
 wf.typesquare.com
-whatsapp.com
 whiskypreisvergleich.de
 whiskyprices.co.uk
 widget.myrentacar.me
@@ -956,7 +869,6 @@ widgets.jobbio.com
 wikibooks.org
 wikidata.org
 wikinews.org
-wikipedia.org
 wikiquote.org
 wikitrik.com
 wikiversity.org
@@ -974,7 +886,6 @@ wupfile.com
 www-league.nhlstatic.com
 www.datadoghq-browser-agent.com
 www.dogpile.com
-www.youtube.com
 wwwimage-tve.cbsstatic.com
 xhaccess.com
 xhamster1.desi
@@ -993,7 +904,6 @@ yellowbridge.com
 yibada.com
 yottaa.net
 yoursavegames.com
-youtube-ui.l.google.com
 zavislak.to
 zerozero.pt
 zohopublic.com
