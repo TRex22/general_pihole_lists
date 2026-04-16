@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     async (2.39.0)
       console (~> 1.29)
@@ -7,7 +8,7 @@ GEM
       metrics (~> 0.12)
       traces (~> 0.18)
     base64 (0.3.0)
-    bigdecimal (4.0.1)
+    bigdecimal (4.1.1)
     concurrent-ruby (1.3.6)
     console (1.34.3)
       fiber-annotation
@@ -23,7 +24,7 @@ GEM
       zeitwerk (~> 2.6)
     dry-logger (1.2.2)
       logger
-    dspy (0.34.4)
+    dspy (1.0.0)
       async (~> 2.29)
       concurrent-ruby (~> 1.3)
       dry-configurable (~> 1.0)
@@ -33,9 +34,9 @@ GEM
       sorbet-runtime (~> 0.5)
       sorbet-schema (~> 0.3)
       sorbet-toon (~> 0.1)
-    dspy-ruby_llm (0.1.0)
-      dspy (>= 0.30)
-      ruby_llm (~> 1.3)
+    dspy-ruby_llm (0.1.1)
+      dspy (>= 0.30.1, < 2.0)
+      ruby_llm (>= 1.14.1, < 2.0)
     dspy-schema (1.0.2)
       sorbet-runtime (>= 0.5.0)
     event_stream_parser (1.0.0)
@@ -58,18 +59,36 @@ GEM
       mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
     io-event (1.15.1)
-    json (2.18.0)
+    json (2.19.3)
     logger (1.7.0)
     marcel (1.1.0)
     metrics (0.15.0)
     mini_mime (1.1.5)
-    multi_xml (0.8.0)
+    multi_xml (0.8.1)
       bigdecimal (>= 3.1, < 5)
     multipart-post (2.4.1)
     net-http (0.9.1)
       uri (>= 0.11.1)
+    nokogiri (1.19.2-aarch64-linux-gnu)
+      racc (~> 1.4)
+    nokogiri (1.19.2-aarch64-linux-musl)
+      racc (~> 1.4)
+    nokogiri (1.19.2-arm-linux-gnu)
+      racc (~> 1.4)
+    nokogiri (1.19.2-arm-linux-musl)
+      racc (~> 1.4)
     nokogiri (1.19.2-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.19.2-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.19.2-x86_64-linux-gnu)
+      racc (~> 1.4)
+    nokogiri (1.19.2-x86_64-linux-musl)
+      racc (~> 1.4)
+    oj (3.16.17)
+      bigdecimal (>= 3.0)
+      ostruct (>= 0.2)
+    ostruct (0.6.3)
     public_suffix (7.0.5)
     racc (1.8.1)
     ruby_llm (1.14.1)
@@ -87,7 +106,7 @@ GEM
       sorbet-runtime (~> 0.5)
     sorbet-result (1.4.0)
       sorbet-runtime (~> 0.5)
-    sorbet-runtime (0.6.13096)
+    sorbet-runtime (0.6.13133)
     sorbet-schema (0.9.3)
       sorbet-result (~> 1.1)
       sorbet-runtime (~> 0.5)
@@ -103,62 +122,79 @@ GEM
     zeitwerk (2.7.5)
 
 PLATFORMS
+  aarch64-linux-gnu
+  aarch64-linux-musl
+  arm-linux-gnu
+  arm-linux-musl
   arm64-darwin
+  x86_64-darwin
+  x86_64-linux-gnu
+  x86_64-linux-musl
 
 DEPENDENCIES
   dspy
   dspy-ruby_llm
   httparty (~> 0.24)
   nokogiri (~> 1.19)
+  oj (~> 3.16)
   public_suffix (~> 7.0)
   tqdm (~> 0.4)
 
 CHECKSUMS
-  async (2.39.0)
-  base64 (0.3.0)
-  bigdecimal (4.0.1)
-  concurrent-ruby (1.3.6)
-  console (1.34.3)
-  csv (3.3.5)
-  dry-configurable (1.3.0)
-  dry-core (1.2.0)
-  dry-logger (1.2.2)
-  dspy (0.34.4)
-  dspy-ruby_llm (0.1.0)
-  dspy-schema (1.0.2)
-  event_stream_parser (1.0.0)
-  faraday (2.14.1)
-  faraday-multipart (1.2.0)
-  faraday-net_http (3.4.2)
-  faraday-retry (2.4.0)
-  fiber-annotation (0.2.0)
-  fiber-local (1.1.0)
-  fiber-storage (1.0.1)
-  httparty (0.24.2)
-  io-event (1.15.1)
-  json (2.18.0)
-  logger (1.7.0)
-  marcel (1.1.0)
-  metrics (0.15.0)
-  mini_mime (1.1.5)
-  multi_xml (0.8.0)
-  multipart-post (2.4.1)
-  net-http (0.9.1)
-  nokogiri (1.19.2-arm64-darwin)
-  public_suffix (7.0.5)
-  racc (1.8.1)
-  ruby_llm (1.14.1)
-  ruby_llm-schema (0.3.0)
-  sorbet-baml (0.5.1)
-  sorbet-result (1.4.0)
-  sorbet-runtime (0.6.13096)
-  sorbet-schema (0.9.3)
-  sorbet-struct-comparable (1.3.0)
-  sorbet-toon (0.1.0)
-  tqdm (0.4.1)
-  traces (0.18.2)
-  uri (1.1.1)
-  zeitwerk (2.7.5)
+  async (2.39.0) sha256=df18730073f2bbb45788077dfa20cb365ecc1b9453969f44de6796b5191a00aa
+  base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
+  bigdecimal (4.1.1) sha256=1c09efab961da45203c8316b0cdaec0ff391dfadb952dd459584b63ebf8054ca
+  concurrent-ruby (1.3.6) sha256=6b56837e1e7e5292f9864f34b69c5a2cbc75c0cf5338f1ce9903d10fa762d5ab
+  console (1.34.3) sha256=869fbd74697efc4c606f102d2812b0b008e4e7fd738a91c591e8577140ec0dcc
+  csv (3.3.5) sha256=6e5134ac3383ef728b7f02725d9872934f523cb40b961479f69cf3afa6c8e73f
+  dry-configurable (1.3.0) sha256=882d862858567fc1210d2549d4c090f34370fc1bb7c5c1933de3fe792e18afa8
+  dry-core (1.2.0) sha256=0cc5a7da88df397f153947eeeae42e876e999c1e30900f3c536fb173854e96a1
+  dry-logger (1.2.2) sha256=eaf91bbc131135b2148d779fb22b8aff4a1b1ad616c721dab6d113beaa5e41c7
+  dspy (1.0.0) sha256=8e85649259397156a28d9fb5dd5350bb878d0ae4ecb544ebf44c73434a24e6a7
+  dspy-ruby_llm (0.1.1) sha256=b94dbac58c56127f22194bc9aa1cb6b652c8616efead8b44bbc6cbd7d61140b9
+  dspy-schema (1.0.2) sha256=d06918855b828c61868435534255468354c13f0eaf56d77b2b2696bd6dab2b0e
+  event_stream_parser (1.0.0) sha256=a2683bab70126286f8184dc88f7968ffc4028f813161fb073ec90d171f7de3c8
+  faraday (2.14.1) sha256=a43cceedc1e39d188f4d2cdd360a8aaa6a11da0c407052e426ba8d3fb42ef61c
+  faraday-multipart (1.2.0) sha256=7d89a949693714176f612323ca13746a2ded204031a6ba528adee788694ef757
+  faraday-net_http (3.4.2) sha256=f147758260d3526939bf57ecf911682f94926a3666502e24c69992765875906c
+  faraday-retry (2.4.0) sha256=7b79c48fb7e56526faf247b12d94a680071ff40c9fda7cf1ec1549439ad11ebe
+  fiber-annotation (0.2.0) sha256=7abfadf1d119f508867d4103bf231c0354d019cc39a5738945dec2edadaf6c03
+  fiber-local (1.1.0) sha256=c885f94f210fb9b05737de65d511136ea602e00c5105953748aa0f8793489f06
+  fiber-storage (1.0.1) sha256=f48e5b6d8b0be96dac486332b55cee82240057065dc761c1ea692b2e719240e1
+  httparty (0.24.2) sha256=8fca6a54aa0c4aa4303a0fd33e5e2156175d6a5334f714263b458abd7fda9c38
+  io-event (1.15.1) sha256=c644cdcf48254015d63f558bf4492f35471f5bb204a42180ea49752be59b30cc
+  json (2.19.3) sha256=289b0bb53052a1fa8c34ab33cc750b659ba14a5c45f3fcf4b18762dc67c78646
+  logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
+  marcel (1.1.0) sha256=fdcfcfa33cc52e93c4308d40e4090a5d4ea279e160a7f6af988260fa970e0bee
+  metrics (0.15.0) sha256=61ded5bac95118e995b1bc9ed4a5f19bc9814928a312a85b200abbdac9039072
+  mini_mime (1.1.5) sha256=8681b7e2e4215f2a159f9400b5816d85e9d8c6c6b491e96a12797e798f8bccef
+  multi_xml (0.8.1) sha256=addba0290bac34e9088bfe73dc4878530297a82a7bbd66cb44dcd0a4b86edf5a
+  multipart-post (2.4.1) sha256=9872d03a8e552020ca096adadbf5e3cb1cd1cdd6acd3c161136b8a5737cdb4a8
+  net-http (0.9.1) sha256=25ba0b67c63e89df626ed8fac771d0ad24ad151a858af2cc8e6a716ca4336996
+  nokogiri (1.19.2-aarch64-linux-gnu) sha256=c34d5c8208025587554608e98fd88ab125b29c80f9352b821964e9a5d5cfbd19
+  nokogiri (1.19.2-aarch64-linux-musl) sha256=7f6b4b0202d507326841a4f790294bf75098aef50c7173443812e3ac5cb06515
+  nokogiri (1.19.2-arm-linux-gnu) sha256=b7fa1139016f3dc850bda1260988f0d749934a939d04ef2da13bec060d7d5081
+  nokogiri (1.19.2-arm-linux-musl) sha256=61114d44f6742ff72194a1b3020967201e2eb982814778d130f6471c11f9828c
+  nokogiri (1.19.2-arm64-darwin) sha256=58d8ea2e31a967b843b70487a44c14c8ba1866daa1b9da9be9dbdf1b43dee205
+  nokogiri (1.19.2-x86_64-darwin) sha256=7d9af11fda72dfaa2961d8c4d5380ca0b51bc389dc5f8d4b859b9644f195e7a4
+  nokogiri (1.19.2-x86_64-linux-gnu) sha256=fa8feca882b73e871a9845f3817a72e9734c8e974bdc4fbad6e4bc6e8076b94f
+  nokogiri (1.19.2-x86_64-linux-musl) sha256=93128448e61a9383a30baef041bf1f5817e22f297a1d400521e90294445069a8
+  oj (3.16.17) sha256=a6688f666143632a1ef11a8d80c8d631b1112733c7da698ffafa4a22a8488244
+  ostruct (0.6.3) sha256=95a2ed4a4bd1d190784e666b47b2d3f078e4a9efda2fccf18f84ddc6538ed912
+  public_suffix (7.0.5) sha256=1a8bb08f1bbea19228d3bed6e5ed908d1cb4f7c2726d18bd9cadf60bc676f623
+  racc (1.8.1) sha256=4a7f6929691dbec8b5209a0b373bc2614882b55fc5d2e447a21aaa691303d62f
+  ruby_llm (1.14.1) sha256=7487d0f0bb9e86836d9233d656e10637370a6b22eb2555343c0a4c179ce7c500
+  ruby_llm-schema (0.3.0) sha256=a591edc5ca1b7f0304f0e2261de61ba4b3bea17be09f5cf7558153adfda3dec6
+  sorbet-baml (0.5.1) sha256=065091d055e28f80efeb0701f78fadb6edc476f3b940b0d0d1ab46fbb451b023
+  sorbet-result (1.4.0) sha256=194eededbcb78cf04ee2db8bd3b19e76f305dc043062ed90c56b4b9eac268ccd
+  sorbet-runtime (0.6.13133) sha256=f910fa20b6cdbe2437e22f897cba6cd89b4bc766dcb1eecc5eefccb2b7fc2c08
+  sorbet-schema (0.9.3) sha256=ef87356e82c9dff6671e11372a0515f736504e81b2d9753e01c3b79d2530a84b
+  sorbet-struct-comparable (1.3.0) sha256=337aff31c4eda80554485f9a30201067bf54fcd76bd992494a0d8c32fb04036b
+  sorbet-toon (0.1.0) sha256=727fe35487932a101b37943f95fe7323a8314df3203b7634a66ae521c64f8e00
+  tqdm (0.4.1) sha256=cad4527eb660489f84e3c838fccbe0d4ab2e91527adf9df9a68b9e839ef58b5b
+  traces (0.18.2) sha256=80f1649cb4daace1d7174b81f3b3b7427af0b93047759ba349960cb8f315e214
+  uri (1.1.1) sha256=379fa58d27ffb1387eaada68c749d1426738bd0f654d812fcc07e7568f5c57c6
+  zeitwerk (2.7.5) sha256=d8da92128c09ea6ec62c949011b00ed4a20242b255293dd66bf41545398f73dd
 
 RUBY VERSION
   ruby 4.0.0
