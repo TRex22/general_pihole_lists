@@ -168,6 +168,9 @@ class UBlockExtractor
     return false if ADULT_TLDS.include?(tld)
     return false if FILE_EXTENSION_TLDS.include?(tld)
 
+    # Skip well-known legitimate domains (shared constants from blocklist_project_filter.rb)
+    return false if skip_domain_static?(domain)
+
     # Basic domain validation
     domain =~ /^[a-zA-Z0-9][a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}$/
   end
