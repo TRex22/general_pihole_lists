@@ -1,0 +1,102 @@
+name: Update Pi-hole Lists
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 23:00 SAST (UTC+2) — SA does not observe DST
+
+  workflow_dispatch:
+    inputs:
+      full_scan:
+        description: 'Full scan — ignore cache and scrape full history (slow)'
+        type: boolean
+        default: false
+      lookback_days:
+        description: 'Incremental lookback window in days (ignored if full_scan is true)'
+        type: number
+        default: 2
+      sources:
+        description: 'Comma-separated sources to scrape, e.g. bleepingcomputer,talos (leave blank for all)'
+        type: string
+        default: ''
+      dry_run:
+        description: 'Dry run — scrape and cache but do not write to blocklist or commit'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write           # needed to push the updated list files back
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '4.0'
+          bundler-cache: false  # we handle gem install explicitly below
+
+      - name: Install RubyGems
+        run: |
+          gem update --system
+          bundle install
+
+      - name: Restore private cache files
+        # Cache is stored on GitHub's infrastructure — never committed, never public.
+        # A cache miss on first run is fine: scripts create the files from scratch.
+        uses: actions/cache@v4
+        with:
+          path: |
+            scripts/malicious_domains_cache.json
+            scripts/blocklist_project_cache.json
+          # Key rotates when any scraper script changes (forces a fresh cache).
+          # restore-keys provides a fallback to the most recent existing cache.
+          key: pihole-scrape-cache-${{ runner.os }}-${{ hashFiles('scripts/**/*.rb') }}
+          restore-keys: |
+            pihole-scrape-cache-${{ runner.os }}-
+
+      - name: Extract uBlock Origin lists
+        run: ruby scripts/extract_ublock_lists.rb
+
+      - name: Extract Privacy Badger lists
+        run: ruby scripts/extract_privacy_badger_lists.rb
+
+      - name: Scrape malicious domains
+        run: |
+          ARGS="--skip-ocr --parallel 5"
+
+          # Full scan vs incremental
+          if [ "${{ inputs.full_scan }}" = "true" ]; then
+            ARGS="$ARGS --years 2"
+          else
+            ARGS="$ARGS --lookback-days ${{ inputs.lookback_days || 2 }}"
+          fi
+
+          # Restrict to specific sources if provided
+          if [ -n "${{ inputs.sources }}" ]; then
+            ARGS="$ARGS --sources ${{ inputs.sources }}"
+          fi
+
+          # Dry run flag
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+
+          echo "Running: ruby scripts/scrape_malicious_domains.rb $ARGS"
+          ruby scripts/scrape_malicious_domains.rb $ARGS
+
+      - name: Commit and push updated lists
+        # Skip commit entirely on a dry run
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          # Exit cleanly if there are no changes — avoids noise commits
+          git diff --staged --quiet && echo "No list changes today, nothing to commit." && exit 0
+          git commit -m "chore: automated list update $(date -u '+%Y-%m-%d')"
+          git push
