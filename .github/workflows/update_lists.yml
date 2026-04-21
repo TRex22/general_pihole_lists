@@ -14,6 +14,10 @@ on:
         description: 'Incremental lookback window in days (ignored if full_scan is true)'
         type: number
         default: 2
+      parallel:
+        description: 'Number of parallel scraper threads (I/O-bound, can go high)'
+        type: number
+        default: 30
       sources:
         description: 'Comma-separated sources to scrape, e.g. bleepingcomputer,talos (leave blank for all)'
         type: string
@@ -67,7 +71,9 @@ jobs:
 
       - name: Scrape malicious domains
         run: |
-          ARGS="--skip-ocr --parallel 5"
+          # Scheduled runs use 30 threads; manual runs use the input value (default 30)
+          PARALLEL="${{ inputs.parallel || 30 }}"
+          ARGS="--skip-ocr --parallel $PARALLEL"
 
           # Full scan vs incremental
           if [ "${{ inputs.full_scan }}" = "true" ]; then
