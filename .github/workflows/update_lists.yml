@@ -38,16 +38,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Ruby
+      - name: Set up Ruby and cache gems
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '4.0'
-          bundler-cache: false  # we handle gem install explicitly below
-
-      - name: Install RubyGems
-        run: |
-          gem update --system
-          bundle install
+          bundler-cache: true   # installs from Gemfile.lock and caches the gem bundle
+                                # cache key is derived from Gemfile.lock — auto-invalidates
+                                # when dependencies change
 
       - name: Restore private cache files
         # Cache is stored on GitHub's infrastructure — never committed, never public.
