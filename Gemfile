@@ -22,3 +22,6 @@ gem 'dspy-ruby_llm'
 
 # json is a default gem bundled with Ruby — no explicit version needed
 gem 'oj', '~> 3.16'
+
+# Pi-hole API client — used by scripts/extract_pihole_logs.rb
+gem 'pihole-api'
