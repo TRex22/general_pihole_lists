@@ -1,0 +1,18 @@
+current directory: /home/runner/work/general_pihole_lists/general_pihole_lists/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+/opt/hostedtoolcache/Ruby/4.0.3/x64/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/runner/work/general_pihole_lists/general_pihole_lists/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260422-2340-1hi1fc sitelibdir\=./.gem.20260422-2340-1hi1fc clean
+
+current directory: /home/runner/work/general_pihole_lists/general_pihole_lists/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260422-2340-1hi1fc sitelibdir\=./.gem.20260422-2340-1hi1fc
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/runner/work/general_pihole_lists/general_pihole_lists/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260422-2340-1hi1fc sitelibdir\=./.gem.20260422-2340-1hi1fc install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20260422-2340-1hi1fc/racc
+
+current directory: /home/runner/work/general_pihole_lists/general_pihole_lists/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260422-2340-1hi1fc sitelibdir\=./.gem.20260422-2340-1hi1fc clean
