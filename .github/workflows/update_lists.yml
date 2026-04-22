@@ -61,10 +61,10 @@ jobs:
             pihole-scrape-cache-${{ runner.os }}-
 
       - name: Extract uBlock Origin lists
-        run: ruby scripts/extract_ublock_lists.rb
+        run: bundle exec ruby scripts/extract_ublock_lists.rb
 
       - name: Extract Privacy Badger lists
-        run: ruby scripts/extract_privacy_badger_lists.rb
+        run: bundle exec ruby scripts/extract_privacy_badger_lists.rb
 
       - name: Scrape malicious domains
         run: |
@@ -89,8 +89,8 @@ jobs:
             ARGS="$ARGS --dry-run"
           fi
 
-          echo "Running: ruby scripts/scrape_malicious_domains.rb $ARGS"
-          ruby scripts/scrape_malicious_domains.rb $ARGS
+          echo "Running: bundle exec ruby scripts/scrape_malicious_domains.rb $ARGS"
+          bundle exec ruby scripts/scrape_malicious_domains.rb $ARGS
 
       - name: Commit and push updated lists
         # Skip commit entirely on a dry run
