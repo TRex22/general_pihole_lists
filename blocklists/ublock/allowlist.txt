@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-04-23T21:19:13Z
-# Total domains: 902
+# Generated: 2026-04-24T21:19:20Z
+# Total domains: 903
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -158,6 +158,7 @@ ccbluex.net
 cdn.atmedia.hu
 cdn.cloudflare.net
 cdn.cookielaw.org
+cdn.deviceinf.com
 cdn.duurzaam.greenchoice.nl
 cdn.ex.co
 cdn.gotraffic.net
