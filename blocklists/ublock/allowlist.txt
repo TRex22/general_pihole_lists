@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-05-02T21:16:41Z
-# Total domains: 902
+# Generated: 2026-05-03T21:17:57Z
+# Total domains: 903
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -645,6 +645,7 @@ psl.2cycomic.com
 psprices.com
 pt.afl.rakuten.co.jp
 public-cis.exponea.com
+public.profitwell.com
 publicwww.com
 puzzles-games-api.gp-prod.conde.digital
 pvtag.yahoo.co.jp
