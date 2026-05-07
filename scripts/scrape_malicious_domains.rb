@@ -436,6 +436,11 @@ class BaseScraper
   # Default no-op for scrapers without Cloudflare protection
   def cloudflare_challenge?(_html) = false
 
+  # Hook called during article scraping after text and IoC-section extraction.
+  # Subclasses can override to perform additional domain/IP extraction (e.g. table scanning).
+  # Mutates the supplied domains and ips Sets directly.
+  def scan_extra(_doc, _url, _domains, _ips) = nil
+
   # ── HTTP ────────────────────────────────────────────────────────────────────
 
   def fetch_via_browser(url, wait_seconds: 5)
@@ -1033,6 +1038,8 @@ class StandardPaginatedScraper < BaseScraper
     ioc_text = extract_ioc_section(doc, headings: ioc_headings)
     scan_for_iocs(ioc_text.to_s, domains, ips, plain_text: true)
 
+    scan_extra(doc, url, domains, ips)
+
     images   = extract_images(doc, url)
     ocr_doms = extract_domains_from_images(images)
     domains.merge(ocr_doms)
@@ -1079,6 +1086,7 @@ require_relative 'scrapers/proofpoint'
 require_relative 'scrapers/microsoft_security'
 require_relative 'scrapers/google_threat_intel'
 require_relative 'scrapers/anyrun'
+require_relative 'scrapers/sophos'
 
 ALL_SCRAPERS = {
   'thehackernews'       => THNScraper,
@@ -1094,6 +1102,7 @@ ALL_SCRAPERS = {
   'microsoft_security'  => MicrosoftSecurityScraper,
   'google_threat_intel' => GoogleThreatIntelScraper,
   'anyrun'              => AnyRunScraper,
+  'sophos'              => SophosScraper,
 }.freeze
 
 # ────────────────────────────────────────────────────────────────────────────
