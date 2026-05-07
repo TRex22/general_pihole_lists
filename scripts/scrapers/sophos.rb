@@ -1,69 +1,129 @@
 # frozen_string_literal: true
 # Sophos Threat Research Blog scraper
-# Pagination: https://www.sophos.com/en-us/blog?page=N
-# IoC section: no fixed heading — threat indicator tables are scanned directly via scan_extra.
+#
+# Discovery: sitemap at https://www.sophos.com/sitemap.xml
+#   The listing page (/en-us/blog?page=N) renders its article list entirely
+#   client-side (Next.js RSC) — no articles appear in the server-side HTML.
+#   The sitemap is the only reliable source of all ~2000+ article URLs.
+#
+# Dates: extracted from JSON-LD (datePublished) on each article page.
+#   Articles older than the cutoff are cached as skipped so they are never
+#   re-probed on subsequent runs.
+#
+# IoC section: no fixed heading — threat indicator tables are scanned directly
+#   via the scan_extra hook.
 
 class SophosScraper < StandardPaginatedScraper
   SOURCE_NAME = 'Sophos Threat Research'
   SOURCE_KEY  = 'sophos'
   BASE_URL    = 'https://www.sophos.com'
+  SITEMAP_URL = 'https://www.sophos.com/sitemap.xml'
 
   private
 
-  def listing_url(page)
-    page == 1 ? "#{BASE_URL}/en-us/blog" : "#{BASE_URL}/en-us/blog?page=#{page}"
-  end
-
-  def parse_listing(doc)
-    articles = []
-    seen     = Set.new
-
-    doc.css('article, [class*="blog-card"], [class*="post-card"], [class*="article-card"]').each do |card|
-      link = card.at_css('a[href*="/en-us/blog/"]') || card.at_css('h2 a, h3 a, h4 a')
-      next unless link
-
-      href = link['href'].to_s
-      next if href.empty?
-      href = href.start_with?('http') ? href : "#{BASE_URL}#{href}"
-      next unless href.include?('/en-us/blog/')
-      next if href.match?(%r{/en-us/blog/?\z})
-      next if seen.include?(href)
-      seen.add(href)
-
-      title = link['title']&.strip || link.text.strip
-      next if title.empty?
-
-      date = parse_article_date(card)
-      articles << { url: href, title: title, date_str: date&.to_s, date: date }
+  # Replaces paginated listing with sitemap-based discovery.
+  def collect_article_urls
+    puts "Fetching Sophos sitemap (#{SITEMAP_URL})..."
+    resp = fetch_with_retry(SITEMAP_URL)
+    unless resp
+      puts '  -> Sitemap fetch failed — cannot collect articles.'
+      return []
     end
 
-    # Fallback: any blog-post-depth link found on the page
-    if articles.empty?
-      doc.css('a[href*="/en-us/blog/"]').each do |link|
-        href = link['href'].to_s
-        href = href.start_with?('http') ? href : "#{BASE_URL}#{href}"
-        next unless href.match?(%r{/en-us/blog/[^/?#]+\z})
-        next if seen.include?(href)
-        seen.add(href)
-        title = link['title']&.strip || link.text.strip
-        next if title.empty? || title.length < 8
-        articles << { url: href, title: title, date_str: nil, date: nil }
+    xml      = Nokogiri::XML(resp.body)
+    all_urls = xml.css('url loc').map(&:text)
+                  .select { |u| u.match?(%r{/en-us/blog/[^/]+\z}) }
+    puts "  -> #{all_urls.size} blog post URLs in sitemap"
+
+    new_urls = all_urls.reject { |u| @cache['articles'][u] }
+    puts "  -> #{new_urls.size} not yet cached"
+
+    new_urls.map { |u| { url: u, title: nil, date_str: nil, date: nil } }
+  end
+
+  # Fetches each article, extracts date from JSON-LD, skips if before cutoff,
+  # then extracts IoCs from text, IoC sections, and threat-indicator tables.
+  def scrape_article(article)
+    url  = article[:url]
+    resp = fetch_with_retry(url)
+    unless resp
+      @mutex.synchronize { puts "  [FAILED  ] #{url}" }
+      return
+    end
+
+    doc    = Nokogiri::HTML(resp.body)
+    date   = extract_jsonld_date(doc)
+    cutoff = Date.today << ((@years || DEFAULT_YEARS) * 12)
+
+    if date && date < cutoff
+      @mutex.synchronize do
+        @cache['articles'][url] = {
+          'url'                  => url,
+          'date'                 => date.to_s,
+          'scraped_at'           => Time.now.utc.iso8601,
+          'domains'              => [],
+          'images'               => [],
+          'written_to_blocklist' => true,
+          'skipped_too_old'      => true
+        }
+        puts "  [TOO OLD ] #{url} (#{date})"
       end
+      return
     end
 
-    articles
+    title   = doc.at_css('h1')&.text&.strip
+    domains = Set.new
+    ips     = Set.new
+    content = article_content(doc)
+    scan_for_iocs(content&.text.to_s, domains, ips)
+
+    ioc_text = extract_ioc_section(doc, headings: ioc_headings)
+    scan_for_iocs(ioc_text.to_s, domains, ips, plain_text: true)
+
+    scan_extra(doc, url, domains, ips)
+
+    images   = extract_images(doc, url)
+    ocr_doms = extract_domains_from_images(images)
+    domains.merge(ocr_doms)
+
+    all_found = (domains.to_a + ips.to_a).sort.uniq
+
+    entry = {
+      'url'                  => url,
+      'title'                => title,
+      'date'                 => date&.to_s,
+      'scraped_at'           => Time.now.utc.iso8601,
+      'domains'              => all_found,
+      'images'               => images,
+      'image_ocr_domains'    => ocr_doms.to_a.sort,
+      'images_ocr_at'        => (images.any? && ocr_backend && !@skip_ocr ? Time.now.utc.iso8601 : nil),
+      'written_to_blocklist' => false
+    }
+
+    @mutex.synchronize do
+      @cache['articles'][url] = entry
+      label = all_found.any? ? "[FOUND #{all_found.size.to_s.rjust(3)}]" : '[NO DOMAINS ]'
+      puts "  #{label} #{url}"
+      all_found.each { |d| puts "               #{d}" }
+      puts "               (#{images.size} image(s), #{ocr_doms.size} via OCR)" if images.any?
+      @pending[url] = { domains: all_found, title: title, date: date&.to_s } if all_found.any?
+    end
   end
 
-  def parse_article_date(node)
-    time_el = node.at_css('time[datetime]')
-    return (Date.parse(time_el['datetime']) rescue nil) if time_el
-
-    # Common prose formats: "May 5, 2026", "5 May 2026", "2026-05-05"
-    text = node.text
-    if text =~ /\b(\w{3,9}\s+\d{1,2},?\s+\d{4}|\d{1,2}\s+\w{3,9}\s+\d{4}|\d{4}-\d{2}-\d{2})\b/
-      return (Date.parse(::Regexp.last_match(1)) rescue nil)
+  # Pull datePublished from the first matching Article node in JSON-LD.
+  def extract_jsonld_date(doc)
+    doc.css('script[type="application/ld+json"]').each do |s|
+      data  = JSON.parse(s.text)
+      nodes = data.is_a?(Hash) && data['@graph'] ? data['@graph'] : [data]
+      nodes.each do |node|
+        next unless node.is_a?(Hash)
+        date_str = node['datePublished']
+        next unless date_str.is_a?(String)
+        return Date.parse(date_str)
+      end
+    rescue JSON::ParserError, ArgumentError
+      nil
     end
-
     nil
   end
 
@@ -82,14 +142,12 @@ class SophosScraper < StandardPaginatedScraper
     ]
   end
 
-  # Scans tables whose column headers suggest threat-indicator content.
-  # Uses plain_text mode so non-defanged IPs and domains are also captured.
-  # Called automatically by StandardPaginatedScraper#scrape_article via scan_extra hook.
+  # Scans tables whose column headers suggest threat-indicator content using
+  # plain_text mode, catching non-defanged IPs and domains Sophos may publish.
   def scan_extra(doc, _url, domains, ips)
     doc.css('table').each do |table|
       header_text = table.css('th').map { |th| th.text.strip.downcase }.join(' ')
       next unless header_text.match?(/domain|ip[\s_-]?address|indicator|host(?:name)?|c2|command[\s_-]and[\s_-]control/)
-
       table.css('td').each do |td|
         scan_for_iocs(td.text.strip, domains, ips, plain_text: true)
       end
@@ -101,7 +159,13 @@ class SophosScraper < StandardPaginatedScraper
       doc.at_css('body')
   end
 
-  def parallel_workers   = 3
-  def batch_delay        = 1
-  def listing_page_delay = 1
+  # Unused — collect_article_urls bypasses pagination entirely, but
+  # StandardPaginatedScraper requires these to be defined.
+  def listing_url(page) = "#{BASE_URL}/en-us/blog?page=#{page}"
+  def parse_listing(_doc) = []
+
+  # Higher concurrency is safe here since the rate limiter caps actual req/s.
+  def parallel_workers   = DEFAULT_PARALLEL
+  def batch_delay        = 0
+  def listing_page_delay = 0
 end
