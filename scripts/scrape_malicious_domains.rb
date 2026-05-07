@@ -1140,6 +1140,83 @@ rescue JSON::ParserError => e
 end
 
 # ────────────────────────────────────────────────────────────────────────────
+# Cache status report
+# ────────────────────────────────────────────────────────────────────────────
+
+def print_cache_status(cache_file, all_scrapers)
+  cache = load_full_cache(cache_file)
+  prog  = File.basename($PROGRAM_NAME)
+
+  puts
+  puts 'Malicious Domain Scraper — Cache Status'
+  puts '=' * 78
+  puts "Cache : #{File.expand_path(cache_file)}"
+  puts
+
+  name_w   = 28
+  art_w    =  8
+  date_w   = 12
+  dom_w    =  8
+
+  header = format("%-#{name_w}s  %#{art_w}s  %-#{date_w}s  %-#{date_w}s  %#{dom_w}s",
+                  'Source', 'Articles', 'Earliest', 'Latest', 'Domains')
+  divider = '─' * header.size
+
+  puts header
+  puts divider
+
+  all_scrapers.each do |source_key, klass|
+    source_cache = cache[source_key] || { 'articles' => {} }
+    real         = (source_cache['articles'] || {}).reject { |_, v| v['skipped_too_old'] }
+    dates        = real.values.filter_map { |v| Date.parse(v['date']) rescue nil }
+
+    count    = real.size
+    earliest = dates.min&.to_s || '—'
+    latest   = dates.max&.to_s || '—'
+    domains  = real.values.sum { |v| v['domains']&.size.to_i }
+    name     = klass::SOURCE_NAME
+    name     = name[0, name_w - 1] + '…' if name.length > name_w
+
+    puts format("%-#{name_w}s  %#{art_w}d  %-#{date_w}s  %-#{date_w}s  %#{dom_w}d",
+                name, count, earliest, latest, domains)
+  end
+
+  puts divider
+
+  all_dates = all_scrapers.flat_map do |source_key, _|
+    ((cache[source_key] || {})['articles'] || {})
+      .reject { |_, v| v['skipped_too_old'] }
+      .values.filter_map { |v| Date.parse(v['date']) rescue nil }
+  end
+  oldest      = all_dates.min
+  years_back  = oldest ? [Date.today.year - oldest.year + 1, DEFAULT_YEARS].max : DEFAULT_YEARS
+  source_keys = all_scrapers.keys
+
+  puts
+  puts 'Example commands'
+  puts '─' * 50
+  puts
+  puts '  Re-run incrementally (new articles since last cached date):'
+  puts "    ruby #{prog}"
+  puts
+  puts '  Extend lookback window (N days before last cached date):'
+  puts "    ruby #{prog} --lookback-days 30"
+  puts "    ruby #{prog} --lookback-days 90"
+  puts
+  puts '  Full scan going further back in time:'
+  puts "    ruby #{prog} --years #{years_back + 1}"
+  puts "    ruby #{prog} --years #{years_back + 2}"
+  puts
+  puts '  Scan a single source:'
+  puts "    ruby #{prog} --sources #{source_keys.first}"
+  puts "    ruby #{prog} --sources #{source_keys.first} --years #{years_back + 1}"
+  puts
+  puts '  Scan multiple specific sources:'
+  puts "    ruby #{prog} --sources #{source_keys.first(3).join(',')}"
+  puts
+end
+
+# ────────────────────────────────────────────────────────────────────────────
 # CLI
 # ────────────────────────────────────────────────────────────────────────────
 
@@ -1156,6 +1233,7 @@ options = {
   skip_ocr:       false,            # cache images but do not run OCR
   ocr_only:       false,            # skip article scraping; only re-OCR cached images
   sources:        nil,              # nil = all; comma-separated SOURCE_KEYs to restrict
+  status:         false,            # print cache status table and exit
 }
 
 OptionParser.new do |opts|
@@ -1223,11 +1301,21 @@ OptionParser.new do |opts|
     options[:sources] = v.split(',').map(&:strip).map(&:downcase)
   end
 
+  opts.on('--status',
+          'Print a table of cached article date ranges per source with example commands, then exit') do
+    options[:status] = true
+  end
+
   opts.on('-h', '--help', 'Show this help') do
     puts opts
     exit
   end
 end.parse!
+
+if options[:status]
+  print_cache_status(options[:cache_file], ALL_SCRAPERS)
+  exit 0
+end
 
 puts 'Malicious Domain Scraper'
 puts '=' * 60
