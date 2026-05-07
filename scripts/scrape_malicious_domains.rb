@@ -150,6 +150,11 @@ class BaseScraper
     tld = domain.split('.').last.downcase
     return false if FILE_EXTENSION_TLDS.include?(tld)
 
+    # CVE IDs (e.g. CVE-2024-38229) adjacent to ".net"/".asp.net" in Patch Tuesday
+    # articles produce false positives like cve-2024-38229.net or
+    # severitycve-2026-23666.net. Any domain containing a CVE ID pattern is rejected.
+    return false if domain.match?(/cve-\d{4}-\d+/i)
+
     # Validate the TLD against the Mozilla Public Suffix List.
     # default_rule: nil means reject domains whose TLD is not in the PSL.
     PublicSuffix.valid?(domain, default_rule: nil)

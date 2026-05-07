@@ -1,5 +1,3 @@
-# Domains to block that are malicious and no-one is tracking
-
 # From Wikimedia "hack"
 basemetrika.ru
 
@@ -11833,12 +11831,6 @@ call-history-ecc1e-default-rtdb.firebaseio.com
 ch-ap-4-default-rtdb.firebaseio.com
 chh1-ac0a3-default-rtdb.firebaseio.com
 
-# Source: https://www.sophos.com/en-us/blog/159-cve-january-patch-tuesday-smashes-single-month-record
-cve-2025-21171.net
-cve-2025-21172.net
-cve-2025-21173.net
-cve-2025-21176.net
-
 # Source: https://www.sophos.com/en-us/blog/2025-sophos-active-adversary-report
 29travels.com
 
@@ -11854,20 +11846,8 @@ msquick.link
 # Source: https://www.sophos.com/en-us/blog/active-adversary-report-2024-12
 mapchart.net
 
-# Source: https://www.sophos.com/en-us/blog/april-2026-microsoft-patch-tuesday
-severitycve-2026-23666.net
-severitycve-2026-26171.net
-vulnerabilitycve-2026-32178.net
-vulnerabilitycve-2026-32203.net
-vulnerabilitycve-2026-32226.net
-vulnerabilitycve-2026-33116.net
-
 # Source: https://www.sophos.com/en-us/blog/atomic-macos-stealer-leads-sensitive-data-theft-on-macos
 macpaw.us
-
-# Source: https://www.sophos.com/en-us/blog/august-patch-tuesday-goes-big
-cve-2024-38167.net
-cve-2024-38168.net
 
 # Source: https://www.sophos.com/en-us/blog/bengal-cat-lovers-in-australia-get-psspsspssd-in-google-driven-gootloader-campaign
 climatehero.me
@@ -11949,9 +11929,6 @@ biokdsl.com
 consa.zip
 updbiklkfd.com
 
-# Source: https://www.sophos.com/en-us/blog/little-fires-everywhere-for-march-patch-tuesday
-cve-2025-24070asp.net
-
 # Source: https://www.sophos.com/en-us/blog/lumma-stealer-coming-and-going
 104.21.84.251
 artist.zip
@@ -11959,8 +11936,6 @@ camplytic.com
 snail-r1ced.cyou
 
 # Source: https://www.sophos.com/en-us/blog/microsoft-primes-71-fixes-for-may-patch-tuesday
-8.07.0cve-2025-26646.net
-cve-2025-26646.net
 msagsfeedback.azurewebsites.net
 
 # Source: https://www.sophos.com/en-us/blog/nickel-tapestry-infrastructure-associated-with-crowdfunding-scheme
@@ -11971,25 +11946,6 @@ astra.com
 astrabytesyncs.com
 publicshare.org
 talentacq.pro
-
-# Source: https://www.sophos.com/en-us/blog/no-mayday-call-necessary-for-the-years-fifth-patch-tuesday
-cve-2024-30045.net
-
-# Source: https://www.sophos.com/en-us/blog/november-patch-tuesday-loads-up-everyones-plate
-cve-2024-43498.net
-cve-2024-43499.net
-
-# Source: https://www.sophos.com/en-us/blog/october-patch-tuesday-beats-january-25-record
-9.98.6cve-2025-55315asp.net
-cve-2025-55247.net
-cve-2025-55248.net
-cve-2025-55315asp.net
-
-# Source: https://www.sophos.com/en-us/blog/october-patch-tuesday-harvest-hauls-in-117-cves
-cve-2024-38229.net
-cve-2024-43483.net
-cve-2024-43484.net
-cve-2024-43485.net
 
 # Source: https://www.sophos.com/en-us/blog/operation-crimson-palace-sophos-threat-hunting-unveils-multiple-clusters-of-chinese-state-sponsored-activity-targeting-southeast-asia
 # Source: https://www.sophos.com/en-us/blog/operation-crimson-palace-a-technical-deep-dive
@@ -12077,4 +12033,3 @@ rlim.com
 
 # Source: https://www.sophos.com/en-us/blog/whatsapp-worm-targets-brazilian-banking-customers
 www.zapgrande.com
-
