@@ -46,6 +46,9 @@ device.login.microsoftonline.com
 logincert.microsoftonline.com
 loginex.microsoftonline.com
 logincdn.msauth.net
+logincdn.msftauth.net
+aadcdn.msftauth.net
+aadcdn.msauthimages.net
 nexus.microsoftonline-p.com
 passwordreset.microsoftonline.com
 provisioningapi.microsoftonline.com
@@ -224,6 +227,7 @@ static.microsoft
 usercontent.microsoft
 www.microsoft365.com
 admin.microsoft.com
+cortana.ai
 
 # Microsoft redirects and utilities
 aka.ms
