@@ -1,9 +1,9 @@
 # Claude (Anthropic) Allowlist for Pi-hole
 # Required domains for Claude AI services
 # Sources:
-#   - Anthropic documentation: https://docs.anthropic.com/
-#   - Claude Code network requirements: https://code.claude.com/docs/en/network-config
+#   - Anthropic documentation: https://platform.claude.com/docs/
 #   - Claude API IP addresses: https://platform.claude.com/docs/en/api/ip-addresses
+#   - Inbound IPs: 160.79.104.0/23 | Outbound IPs: 160.79.104.0/21
 
 # Main Anthropic domains
 anthropic.com
