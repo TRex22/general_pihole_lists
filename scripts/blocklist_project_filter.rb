@@ -75,7 +75,7 @@ SKIP_DOMAINS = Set.new(%w[
   msidentity.com microsoftidentity.com
   apple.com icloud.com
   amazon.com amazon.pl amazonaws.com
-  cloudflare.com bootcdn.net bootcss.com
+  cloudflare.com cloudflare-dns.com bootcdn.net bootcss.com
   github.com githubusercontent.com github.dev
   gitlab.com bitbucket.org
   wikipedia.org wikimedia.org
