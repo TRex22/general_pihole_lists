@@ -155,6 +155,15 @@ class BaseScraper
     # severitycve-2026-23666.net. Any domain containing a CVE ID pattern is rejected.
     return false if domain.match?(/cve-\d{4}-\d+/i)
 
+    # .zip is a real gTLD but multi-label .zip strings with purely numeric labels are
+    # version strings or dates parsed as domains (e.g. blender-3.4.1-windows-x64.zip,
+    # 10.08.22.zip, 3.5.2.1.zip). Single-label .zip domains (chrome.zip, setup.zip)
+    # are left in — attackers genuinely register those.
+    if tld == 'zip' && domain.count('.') > 1
+      inner_labels = domain.split('.')[0..-2]
+      return false if inner_labels.any? { |l| l.match?(/\A\d+\z/) }
+    end
+
     # Validate the TLD against the Mozilla Public Suffix List.
     # default_rule: nil means reject domains whose TLD is not in the PSL.
     PublicSuffix.valid?(domain, default_rule: nil)
