@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-05-07T21:23:23Z
+! Generated: 2026-05-08T21:24:32Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 3125
+! Total domains: 3120
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -328,7 +328,6 @@
 ||algolia.io^
 ||aliapp.org^
 ||alibaba.com^
-||aliexpress.com^
 ||aliyun.com^
 ||alkimi-onboarding.com^
 ||allopjwwybt.com^
@@ -979,8 +978,6 @@
 ||eagle-insight.com^
 ||earmuffpostnasalrisotto.com^
 ||earringsatisfiedsplice.com^
-||ebay.com^
-||ebayadservices.com^
 ||ebdb7bb99d.com^
 ||ebis.ne.jp^
 ||ebxcdn.com^
@@ -2434,7 +2431,6 @@
 ||shinobi.jp^
 ||shinystat.com^
 ||shiprocket.in^
-||shop.app^
 ||shop.pe^
 ||shopnetic.com^
 ||shoppinggives.com^
@@ -2689,7 +2685,6 @@
 ||technoratimedia.com^
 ||techtarget.com^
 ||telkomsel.com^
-||temu.com^
 ||tend-table.com^
 ||tenmax.io^
 ||terabox.com^
