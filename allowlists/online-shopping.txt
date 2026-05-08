@@ -1,0 +1,418 @@
+# Online Shopping Allowlist for Pi-hole
+# Covers South African, international, and Asian e-commerce platforms.
+# Sources:
+#   - Netify AliExpress app info:   https://www.netify.ai/resources/applications/aliexpress
+#   - Netify eBay app info:         https://www.netify.ai/resources/applications/ebay
+#   - Netify Temu app info:         https://www.netify.ai/resources/applications/temu
+#   - Netify Shein app info:        https://www.netify.ai/resources/applications/shein
+#   - Pi-hole discourse (eBay):     https://discourse.pi-hole.net/t/ebay-samt-subdomainen-auf-whitelist/21044
+#   - Pi-hole discourse (AliExpress images): https://discourse.pi-hole.net/t/having-a-lot-of-troubles-with-aliexpress-images-wont-load/26683
+#   - Pi-hole discourse commonly whitelisted: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
+#   - StevenBlack hosts (AliExpress best.): https://github.com/StevenBlack/hosts/issues/1086
+#   - anudeepND whitelist (track.aliexpress.com): https://github.com/anudeepND/whitelist/issues/126
+#   - bubusan80 AliExpress whitelist: https://github.com/bubusan80/whitelist_hosting_public/blob/main/In_base_al_servizio/Aliexpress_Alibaba.txt
+#   - Cloudflare community (g.alicdn.com login): https://community.cloudflare.com/t/cant-login-to-aliexpress-g-alicdn-com-doesnt-resolve-w-1-1-1-1/135953
+#   - JamieFarrelly eBay subdomains: https://github.com/JamieFarrelly/Popular-Site-Subdomains/blob/master/Ebay.com.txt
+#   - EFF HTTPS Everywhere (ebayrtm.com): https://www.eff.org/https-everywhere/atlas/domains/ebayrtm.com.html
+#   - vedbex Shein subdomains: https://www.vedbex.com/subdomain-finder/shein.com
+#   - Buyee partner media subdomain: https://media.buyee.jp/content/en/bcsite-list-en/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Takealot (South Africa's largest online retailer)
+# ─────────────────────────────────────────────────────────────────────────────
+takealot.com
+www.takealot.com
+m.takealot.com
+api.takealot.com
+cdn.takealot.com
+images.takealot.com
+static.takealot.com
+accounts.takealot.com
+seller.takealot.com
+sellers.takealot.com
+seller-api.takealot.com
+help.takealot.com
+
+# Takealot payment processing (Peach Payments)
+peachpayments.com
+secure.peachpayments.com
+checkout.peachpayments.com
+
+# ─────────────────────────────────────────────────────────────────────────────
+# AliExpress / Alibaba
+# ─────────────────────────────────────────────────────────────────────────────
+aliexpress.com
+www.aliexpress.com
+m.aliexpress.com
+best.aliexpress.com
+aplus.aliexpress.com
+ae.aliexpress.com
+gw.aliexpress.com
+login.aliexpress.com
+login.aliexpress.us
+mail.aliexpress.com
+s.aliexpress.com
+s.click.aliexpress.com
+campaign.aliexpress.com
+feedback.aliexpress.com
+deal.aliexpress.com
+help.aliexpress.com
+service.aliexpress.com
+server.aliexpress.com
+track.aliexpress.com
+message.aliexpress.com
+lighthouse.aliexpress.com
+cdp.aliexpress.com
+nocn-ru-akamai.aliexpress.com
+
+# AliExpress locale subdomains
+de.aliexpress.com
+es.aliexpress.com
+fr.aliexpress.com
+id.aliexpress.com
+it.aliexpress.com
+nl.aliexpress.com
+pl.aliexpress.com
+pt.aliexpress.com
+ru.aliexpress.com
+tr.aliexpress.com
+
+# Alibaba CDN (alicdn.com) — serves product images and static assets
+alicdn.com
+ae01.alicdn.com
+ae02.alicdn.com
+ae03.alicdn.com
+ae04.alicdn.com
+assets.alicdn.com
+aeu.alicdn.com
+alinw.alicdn.com
+camo.alicdn.com
+imgaz.static.alicdn.com
+laz-g-cdn.alicdn.com
+laz-img-cdn.alicdn.com
+aeproductsourcesite.alicdn.com
+img.alicdn.com
+i.alicdn.com
+is.alicdn.com
+dorangesource.alicdn.com
+# g.alicdn.com is the critical JS/CSS delivery CDN — required for login and page rendering
+g.alicdn.com
+danuoyi.alicdn.com
+
+# Alibaba cross-service (required for some payment/account flows)
+cmap.alibaba.com
+ynuf.alipay.com
+
+# Alibaba affiliate / link tracking (required for order confirmation emails)
+alinkcorp.com
+alilc.com
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Temu (PDD Holdings)
+# ─────────────────────────────────────────────────────────────────────────────
+temu.com
+www.temu.com
+m.temu.com
+api.temu.com
+static.temu.com
+img.temu.com
+sukia.temu.com
+
+# Temu image/asset CDN (kwcdn.com — PDD Holdings CDN)
+kwcdn.com
+img.kwcdn.com
+aimg.kwcdn.com
+aimg-1.kwcdn.com
+goods-vod.kwcdn.com
+goods-vod-2.kwcdn.com
+avatar-us.kwcdn.com
+dl.kwcdn.com
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Shein
+# ─────────────────────────────────────────────────────────────────────────────
+shein.com
+www.shein.com
+m.shein.com
+us.shein.com
+api.shein.com
+api-service.shein.com
+api-shein.shein.com
+api-offline.shein.com
+img.shein.com
+static.shein.com
+checkout.shein.com
+login.shein.com
+im-api-chat-us.shein.com
+link-us.shein.com
+onelink.shein.com
+pubkey.shein.com
+seller-us.shein.com
+
+# Shein regional subdomains
+eur.shein.com
+de.shein.com
+br.shein.com
+ph.shein.com
+sg.shein.com
+
+# Shein image CDN
+imgshein.com
+img.imgshein.com
+
+# Shein corporate/developer
+sheincorp.com
+open.sheincorp.com
+sheincorp.cn
+sdoc.sheincorp.com
+
+# Romwe (Shein sister brand)
+romwe.com
+www.romwe.com
+img.romwe.com
+
+# ─────────────────────────────────────────────────────────────────────────────
+# eBay
+# ─────────────────────────────────────────────────────────────────────────────
+ebay.com
+www.ebay.com
+my.ebay.com
+signin.ebay.com
+browse.ebay.com
+cgi.ebay.com
+pages.ebay.com
+pay.ebay.com
+checkout.ebay.com
+motors.ebay.com
+api.ebay.com
+svcs.ebay.com
+rover.ebay.com
+mesg.ebay.com
+ship.ebay.com
+feedback.ebay.com
+contact.ebay.com
+community.ebay.com
+picassets.ebay.com
+
+# eBay static assets CDN
+ebaystatic.com
+ir.ebaystatic.com
+thumbs.ebaystatic.com
+pics.ebaystatic.com
+securepics.ebaystatic.com
+
+# eBay product images
+ebayimg.com
+i.ebayimg.com
+
+# eBay item description CDN
+ebaydesc.com
+vi.vipr.ebaydesc.com
+
+# eBay CDN network
+ebaycdn.net
+
+# eBay security / bot detection (required for login and checkout)
+sdx.ebay.com
+
+# eBay real-time monitoring (required for anti-fraud / bot detection)
+ebayrtm.com
+srx.main.ebayrtm.com
+
+# eBay ad services (required for some page elements)
+ebayadservices.com
+
+# eBay regional storefronts
+ebay.co.uk
+ebay.com.au
+ebay.de
+ebay.fr
+ebay.it
+ebay.ca
+ebay.es
+ebay.co.jp
+ebay.pl
+ebay.at
+ebay.nl
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Buyee (Japanese proxy shopping service by Beenos)
+# ─────────────────────────────────────────────────────────────────────────────
+buyee.jp
+www.buyee.jp
+cdn.buyee.jp
+cdncampaign.buyee.jp
+static.buyee.jp
+img.buyee.jp
+media.buyee.jp
+help.buyee.jp
+bc.help.buyee.jp
+connect.buyee.jp
+
+# Beenos (parent company — may be needed for account/payment flows)
+beenos.com
+
+# Tenso (Beenos forwarding/shipping service, sister to Buyee)
+tenso.com
+www.tenso.com
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Shopify (e-commerce platform powering many online stores)
+# ─────────────────────────────────────────────────────────────────────────────
+shopify.com
+cdn.shopify.com
+myshopify.com
+shopifycloud.com
+shopifysvc.com
+cdn.shopifycloud.com
+checkouts.shopify.com
+pay.shopify.com
+shop.app
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Amazon (global + South Africa)
+# ─────────────────────────────────────────────────────────────────────────────
+amazon.com
+www.amazon.com
+smile.amazon.com
+sellercentral.amazon.com
+pay.amazon.com
+payments.amazon.com
+music.amazon.com
+
+# Amazon regional storefronts
+amazon.co.za
+amazon.co.uk
+amazon.de
+amazon.fr
+amazon.it
+amazon.es
+amazon.ca
+amazon.com.au
+amazon.co.jp
+amazon.in
+amazon.ae
+amazon.sg
+amazon.nl
+amazon.pl
+amazon.se
+amazon.com.br
+amazon.com.mx
+amazon.com.tr
+
+# Amazon image CDN
+ssl-images-amazon.com
+images-na.ssl-images-amazon.com
+images-eu.ssl-images-amazon.com
+images-fe.ssl-images-amazon.com
+media-amazon.com
+m.media-amazon.com
+ecx.images-amazon.com
+images-amazon.com
+
+# Amazon affiliate (required for referral links to resolve)
+assoc-amazon.com
+
+# ─────────────────────────────────────────────────────────────────────────────
+# South African online shopping
+# ─────────────────────────────────────────────────────────────────────────────
+
+# One Day Only (daily deals)
+onedayonly.co.za
+www.onedayonly.co.za
+
+# Loot (books, electronics, gaming)
+loot.co.za
+www.loot.co.za
+
+# Bob Shop / BidorBuy (auction and marketplace)
+bobshop.co.za
+www.bobshop.co.za
+bidorbuy.co.za
+www.bidorbuy.co.za
+
+# Aucor (South African auction house)
+aucor.co.za
+www.aucor.co.za
+
+# Decoferns (home décor)
+decoferns.co.za
+www.decoferns.co.za
+
+# Wannitall (general retail)
+wannitall.co.za
+www.wannitall.co.za
+
+# Buyitall (general retail)
+buyitall.co.za
+www.buyitall.co.za
+
+# Yagga (shopping comparison / marketplace)
+yagga.co.za
+www.yagga.co.za
+
+# Outdoor Photo (photography and outdoor gear)
+outdoorphoto.co.za
+www.outdoorphoto.co.za
+
+# Leroy Merlin (hardware and home improvement)
+leroymerlin.co.za
+www.leroymerlin.co.za
+
+# HiFi Corp (electronics)
+hificorp.co.za
+www.hificorp.co.za
+
+# Makro (wholesale / bulk retail)
+makro.co.za
+www.makro.co.za
+
+# PriceCheck (price comparison)
+pricecheck.co.za
+www.pricecheck.co.za
+
+# Wootware (PC components)
+wootware.co.za
+www.wootware.co.za
+
+# Pishop (electronics, Raspberry Pi, maker supplies)
+pishop.co.za
+www.pishop.co.za
+
+# Evetech (PC components and gaming)
+evetech.co.za
+www.evetech.co.za
+
+# Checkers Sixty60 (grocery delivery)
+sixty60.co.za
+www.sixty60.co.za
+checkers.co.za
+www.checkers.co.za
+
+# Woolworths SA (fashion and food)
+woolworths.co.za
+www.woolworths.co.za
+
+# bash.com (South African fashion marketplace, formerly Superbalist spin-off)
+bash.com
+www.bash.com
+
+# Yuppiechef (kitchen and cooking)
+yuppiechef.com
+www.yuppiechef.com
+
+# Mr Price / MRP (clothing and homeware)
+mrp.com
+www.mrp.com
+mrpricehome.com
+mrpsport.com
+mrpricemoney.com
+
+# Superbalist (fashion and lifestyle)
+superbalist.com
+www.superbalist.com
+cdn.superbalist.com
+
+# Facebook Marketplace
+# Note: Facebook domains (graph.facebook.com, upload.facebook.com, etc.)
+# are already covered in allowlists/general.txt

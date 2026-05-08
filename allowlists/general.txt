@@ -93,9 +93,6 @@ entitlement.auth.adobe.com
 # Unifi
 ping.ui.com
 
-# Shopify
-cdn.shopify.com
-
 # Xbox Live
 xsts.auth.xboxlive.com
 
@@ -194,22 +191,6 @@ pushbullet.imgix.net
 update.pushbullet.com
 # zebra.pushbullet.com  # telemetry, but blocks desktop app startup if blocked
 
-# Takealot
-takealot.com
-www.takealot.com
-m.takealot.com
-api.takealot.com
-cdn.takealot.com
-images.takealot.com
-static.takealot.com
-accounts.takealot.com
-seller.takealot.com
-
-# Takealot payment processing (Peach Payments)
-peachpayments.com
-secure.peachpayments.com
-checkout.peachpayments.com
-
 # Malwarebytes
 # Sources:
 #   - https://app-support.malwarebytes.com/docs/DOC-1652
@@ -297,11 +278,6 @@ textfiles.com
 
 # Manually tracked domains
 mail.google.com
-
-# Takealot
-api.takealot.com
-cdn.takealot.com
-images.takealot.com
 
 frog.wix.com
 bundler-velo.parastorage.com
