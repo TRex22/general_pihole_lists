@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-05-07T21:23:19Z
-# Total domains: 904
+# Generated: 2026-05-08T21:24:28Z
+# Total domains: 906
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -168,6 +168,7 @@ cdn.playwire.com
 cdn.questionpro.com
 cdn.rozetka.com.ua
 cdn.smartclip-services.com
+cdn.sophi.io
 cdpn.io
 ceesty.com
 centro.co.il
@@ -234,6 +235,7 @@ datadome.garena.com.first-party-js.datadome.co
 datadome.monster.com.first-party-js.datadome.co
 dd.blackhawknetwork.com.first-party-js.datadome.co
 dd.qa.moneygram.com.first-party-js.datadome.co
+dd.subito.it.first-party-js.datadome.co
 dd.wizzair.com.first-party-js.datadome.co
 debridup.com
 deezer.com
