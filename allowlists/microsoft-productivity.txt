@@ -114,13 +114,14 @@ g.live.com
 # ============================================
 # Required: ID 31 (OptimizeRequired), ID 37 (DefaultRequired)
 
+sharepoint.com
 sharepointonline.com
 cdn.sharepointonline.com
 privatecdn.sharepointonline.com
 publiccdn.sharepointonline.com
 static.sharepointonline.com
 spoprod-a.akamaihd.net
-# *.svc.ms - requires regex wildcard in Pi-hole (SharePoint/OneDrive internal APIs)
+# *.svc.ms — regex entry (^|\.)svc\.ms$ added to regex_allowlist.txt
 
 # ============================================
 # OFFICE ONLINE (PowerPoint, Word, Excel Online)
@@ -187,7 +188,6 @@ security.microsoft.com
 defender.microsoft.com
 purview.microsoft.com
 compliance.microsoft.com
-protection.office.com
 
 # ============================================
 # INFORMATION PROTECTION / RIGHTS MANAGEMENT
@@ -246,9 +246,9 @@ officepreviewredir.microsoft.com
 officeredir.microsoft.com
 r.office.microsoft.com
 
-# Windows Activity (telemetry - commented out)
-# activity.windows.com
-# settings-win.data.microsoft.com
+# Windows Activity — DefaultRequired for Microsoft 365 activity feed / Teams (ID 156)
+activity.windows.com
+# settings-win.data.microsoft.com  # Windows telemetry — keep blocked
 
 # Certificate validation
 wdcp.microsoft.com
@@ -310,6 +310,10 @@ account.hotmail.com
 smtp-mail.outlook.com
 imap-mail.outlook.com
 pop-mail.outlook.com
+
+# Outlook for Android and iOS (ID 95)
+outlookmobile.com
+acompli.net
 
 # ============================================
 # SKYPE
@@ -482,6 +486,10 @@ isrg.trustid.ocsp.identrust.com
 mscrl.microsoft.com
 ocsp.msocsp.com
 oneocsp.microsoft.com
+# Microsoft PKI roots (ID 125)
+omniroot.com
+public-trust.com
+msauth.net
 
 # Virtual Earth (Maps in Microsoft products)
 dev.virtualearth.net
@@ -493,11 +501,26 @@ weather.partners.msn.com
 weather.partners.msn.com.edgekey.net
 
 # ============================================
+# YAMMER / VIVA ENGAGE
+# ============================================
+# Source: https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges (ID 117/118)
+
+yammer.com
+www.yammer.com
+yammerusercontent.com
+assets-yammer.com
+
+# ============================================
 # SWAY
 # ============================================
 
 sway.com
 www.sway.com
+# Sway CDN — required for embedded Sway content (ID 122)
+eus-www.sway-cdn.com
+wus-www.sway-cdn.com
+eus-www.sway-extensions.com
+wus-www.sway-extensions.com
 
 # ============================================
 # WINDOWS NOTIFICATION SERVICE (WNS)
