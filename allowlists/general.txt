@@ -398,6 +398,39 @@ pki.goog
 ocsp.pki.goog
 crl.pki.goog
 
+# DigiCert
+# Source: https://www.digicert.com/kb/util/utility-test-ocsp-and-crl-access-from-a-server.htm
+digicert.com
+www.digicert.com
+cacerts.digicert.com
+ocsp.digicert.com
+ocspx.digicert.com
+crl3.digicert.com
+crl4.digicert.com
+
+# GlobalSign
+# Source: https://support.globalsign.com/ca-certificates/root-certificates/globalsign-root-certificates
+globalsign.com
+ocsp.globalsign.com
+ocsp2.globalsign.com
+crl.globalsign.com
+crl.globalsign.net
+secure.globalsign.com
+
+# GeoTrust / Thawte / VeriSign (legacy DigiCert brands)
+# Source: https://www.digicert.com/kb/digicert-root-certificates.htm
+geotrust.com
+thawte.com
+verisign.com
+verisign.net
+ocsp.verisign.net
+symcd.com
+
+# IdenTrust — used by Let's Encrypt cross-signed certificates
+identrust.com
+crl.identrust.com
+isrg.trustid.ocsp.identrust.com
+
 # Entrust
 ocsp.entrust.net
 crl.entrust.net
@@ -499,7 +532,6 @@ letsdatascience.com
 www.ign.com
 www.claudecodecamp.com
 iv.okcdn.ru
-cloudflare-dns.com
 
 # ─────────────────────────────────────────────────────────────────────
 # CDN Additions
@@ -524,10 +556,46 @@ bunnycdn.com
 kxcdn.com
 keycdn.com
 
-# Cloudflare ecosystem (beyond cloudflare.com itself)
+# Cloudflare
+# Source: https://www.cloudflare.com/ips/
+cloudflare.com
+www.cloudflare.com
+dash.cloudflare.com
+cloudflare.net
+cdn.cloudflare.net
+cloudflare-dns.com
+
+# Cloudflare developer platform
 pages.dev
 workers.dev
 cfcdn.net
+
+# Cloudflare R2 object storage
+r2.dev
+cloudflarestorage.com
+
+# Cloudflare media delivery
+imagedelivery.net
+videodelivery.net
+
+# Cloudflare Zero Trust / Access
+cloudflareaccess.com
+
+# Cloudflare WARP (VPN/DNS client)
+cloudflarewarp.com
+warp.plus
+
+# Cloudflare Tunnel (temporary dev tunnels)
+trycloudflare.com
+
+# Cloudflare IPFS gateway
+cf-ipfs.com
+
+# Cloudflare status page
+cloudflarestatus.com
+
+# Cloudflare 1.1.1.1 DoH resolver
+one.one.one.one
 
 # Netlify static hosting
 netlify.app

@@ -43,6 +43,16 @@ All list files use Pi-hole compatible format:
 - Comments start with `#`
 - No wildcards (Pi-hole regex lists require separate handling)
 
+## Regex and Plain Domain Policy
+
+When a regex pattern is added to `regex_allowlist.txt` (e.g. `(^|\.)sharepoint\.com$`), do **NOT** remove the corresponding explicit domain entries from the plain allowlist files. Both must coexist because:
+- Plain entries work on Pi-hole instances without regex allowlist support
+- Plain entries document intent and are self-describing
+- Plain entries match faster than regex patterns
+- Plain entries survive regex file misconfiguration
+
+Example: `sharepoint.com` stays in `microsoft-productivity.txt` even though `(^|\.)sharepoint\.com$` is in `regex_allowlist.txt`.
+
 ## Available Filter List Sources
 
 The Ruby script supports these sources: `ublock-filters`, `ublock-badware`, `ublock-privacy`, `ublock-unbreak`, `easylist`, `easyprivacy`, `peter-lowe`, `urlhaus-malware`, `adguard-dns`, `steven-black-hosts`, `energized-basic`, `oisd-basic`

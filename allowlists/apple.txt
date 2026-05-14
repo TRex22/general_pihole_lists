@@ -164,16 +164,39 @@ certs.apple.com
 cl2.apple.com
 pancake.apple.com
 crl.apple.com
-crl.entrust.net
-crl3.digicert.com
-crl4.digicert.com
 ocsp.apple.com
-ocsp.digicert.cn
-ocsp.digicert.com
-ocsp.entrust.net
-ocsp.verisign.net
 ocsp2.apple.com
 valid.apple.com
+
+# DigiCert (used by Apple services)
+crl3.digicert.com
+crl4.digicert.com
+ocsp.digicert.com
+ocsp.digicert.cn
+
+# Entrust
+crl.entrust.net
+ocsp.entrust.net
+
+# VeriSign (legacy)
+ocsp.verisign.net
+
+# Sectigo/Comodo
+ocsp.sectigo.com
+crl.sectigo.com
+
+# Let's Encrypt (CRL only — OCSP ended 2025-08-06)
+lencr.org
+c.lencr.org
+
+# Google Trust Services
+pki.goog
+ocsp.pki.goog
+crl.pki.goog
+
+# GlobalSign
+ocsp.globalsign.com
+crl.globalsign.com
 
 # Apple Music
 play.music.apple.com
