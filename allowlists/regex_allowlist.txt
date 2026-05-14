@@ -56,3 +56,17 @@
 # (e.g. r1---sn-54gpivnu15-woce.gvt1.com). redirector.gvt1.com is explicitly in
 # google.txt; this regex covers all dynamic subdomain variants.
 (^|\.)gvt1\.com$
+
+# ── Apple Push Notification Service ──────────────────────────────────────────
+# APNs uses numbered courier subdomains (1-courier.push.apple.com, etc.).
+# push.apple.com and gateway.*.push.apple.com are in apple.txt; this covers all variants.
+(^|\.)push\.apple\.com$
+
+# ── SharePoint Online ──────────────────────────────────────────────────────────
+# SharePoint uses tenant-specific subdomains (tenant.sharepoint.com).
+# sharepoint.com is in microsoft-productivity.txt; this covers all tenant subdomains.
+(^|\.)sharepoint\.com$
+
+# ── Microsoft svc.ms (SharePoint/OneDrive internal APIs) ──────────────────────
+# Required for SharePoint and OneDrive internal API calls (ID 39).
+(^|\.)svc\.ms$

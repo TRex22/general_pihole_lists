@@ -190,7 +190,6 @@ manifest.googlevideo.com
 # Google Video CDN beacons (playback health telemetry, required for adaptive streaming)
 beacons.gvt2.com
 beacons.gcp.gvt2.com
-redirector.gvt1.com
 
 # Specific CDN node previously needed — now covered by regex; kept for reference
 # rr4---sn-woc7kn7y.googlevideo.com
