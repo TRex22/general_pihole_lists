@@ -171,7 +171,17 @@ confluence-connect.gliffy.net
 mantra.cloudanvil.net
 
 # Canva
+# Source: https://www.canva.com/help/allow-canva-through-firewall/
+canva.com
+www.canva.com
 static.canva.com
+canvausercontent.com
+canva-apps.com
+canvastatus.com
+media.canva.com
+export.canva.com
+fonts.canva.com
+product.canva.com
 
 # Development Tooling
 rvm.io
@@ -240,10 +250,30 @@ cdn.us.exposure-analytics.insight.rapid7.com
 exposure-analytics.insight.rapid7.com
 insight.rapid7.com
 
+# Notion
+# Source: https://www.notion.com/help/allowlist-ip
+notion.com
+www.notion.com
+notion.so
+www.notion.so
+notion.site
+api.notion.com
+notionusercontent.com
+img.notionusercontent.com
+secure.notion-static.com
+
 # Coda.io
+# Source: https://help.coda.io/en/articles/9971298-allow-required-domains-for-firewall-access
 coda.io
+www.coda.io
+app.coda.io
+api.coda.io
 cdn.coda.io
 codacontent.io
+egress.coda.io
+embed.coda.io
+forms.coda.io
+help.coda.io
 
 # Luno (cryptocurrency exchange)
 luno.com
@@ -337,20 +367,51 @@ blog.n8n.io
 app.n8n.cloud
 n8n.cloud
 
-# Comodo/Sectigo Certificate Authority (OCSP & CRL)
-# OCSP = Online Certificate Status Protocol — browsers check these to validate SSL certs
+# Certificate Authorities — OCSP & CRL
+# OCSP = Online Certificate Status Protocol; CRL = Certificate Revocation List
+# Browsers and OS certificate stores probe these to validate SSL/TLS certificates.
+# Source: https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA01N000000zFJr
+
+# Comodo / Sectigo (same CA, rebranded 2018)
+# Source: https://www.sectigo.com/knowledge-base/detail/OCSP-and-CRL-access-information
+sectigo.com
+ocsp.sectigo.com
+crl.sectigo.com
 ocsp.comodoca.com
 ocsp.comodoca4.com
 ocsp.usertrust.com
 crl.comodoca.com
 crt.comodoca.com
 
+# Let's Encrypt
+# Note: Let's Encrypt ended OCSP support on 2025-08-06; CRL (lencr.org) remains active
+# Source: https://letsencrypt.org/docs/lencr.org/
+letsencrypt.org
+acme-v02.api.letsencrypt.org
+lencr.org
+c.lencr.org
+o.lencr.org
+
+# Google Trust Services (GTS) — used by Google's own certificates
+# Source: https://pki.goog/
+pki.goog
+ocsp.pki.goog
+crl.pki.goog
+
+# Entrust
+ocsp.entrust.net
+crl.entrust.net
+
 # Medium
 medium.com
 www.medium.com
 miro.medium.com
 cdn-images-1.medium.com
+cdn-images-2.medium.com
+cdn-images-3.medium.com
 api.medium.com
+embed.medium.com
+medium.engineering
 
 # ─────────────────────────────────────────────────────────────────────
 # Domains identified in AI blocklist review (2026-04-16)
