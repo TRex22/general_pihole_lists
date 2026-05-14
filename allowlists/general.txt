@@ -11,6 +11,12 @@ msftncsi.com
 ipv6.msftncsi.com
 captive.apple.com
 
+# IANA reserved domain — used by many services and tools as a safe connectivity
+# test target (RFC 2606 / RFC 5737); Pi-hole and various apps probe it
+example.org
+example.com
+example.net
+
 # Spotify
 spotify.com
 open.spotify.com
@@ -175,7 +181,18 @@ cdn.playwright.dev
 api.workos.com
 auth.workos.com
 
-# Nothing Tech
+# Nothing Phone / Nothing Tech
+# Source: https://nothing.tech
+# NothingOS backend services, CMF by Nothing devices, and Glyph interface
+nothing.tech
+www.nothing.tech
+cloud.nothing.tech
+api.nothing.tech
+auth.nothing.tech
+ota.nothing.tech
+update.nothing.tech
+notification.nothing.tech
+nothingtech.link
 weather1.nothingtech.link
 
 # Pushbullet
@@ -228,9 +245,15 @@ coda.io
 cdn.coda.io
 codacontent.io
 
-# Luno
+# Luno (cryptocurrency exchange)
+luno.com
+www.luno.com
+app.luno.com
+api.luno.com
+help.luno.com
+status.luno.com
+lunostatic.com
 prod.lunostatic.com
-codacontent.io
 
 # DNS Resolver Discovery (RFC 9462 - used by browsers for encrypted DNS)
 _dns.resolver.arpa
@@ -243,6 +266,8 @@ cdn.assets.ipinfo.io
 website-cdn.assets.ipinfo.io
 
 proofpoint.com
+pphosted.com
+proofpointessentials.com
 sourceforge.net
 head.protondb.pages.dev
 
@@ -265,8 +290,10 @@ email.mg-d1.substack.com
 click.fidelityinvestments.com
 
 # Tuya Smart Devices
-m3-eu.lifeaiot.com
+# Note: regex (^|\.)lifeaiot\.com$ in regex_allowlist.txt covers all subdomains
 lifeaiot.com
+m3-eu.lifeaiot.com
+a3-eu.lifeaiot.com
 
 # South Africa Newsletters
 broadmedia.9.evlink.net
@@ -277,29 +304,22 @@ cd.textfiles.com
 textfiles.com
 
 # Manually tracked domains
-mail.google.com
-
 frog.wix.com
 bundler-velo.parastorage.com
+static.wixstatic.com
+static.parastorage.com
+siteassets.parastorage.com
 omghitched.com
 email.thefieldberryfarm.com
-
 simonwillison.net
-
-www.whitescreen.online
-
-prod.lunostatic.com
-
-docs.paperclip.ing
-skillsmp.com
-
-proofpoint.com
+thejoyapp.com
 
 # Steam
 steamcommunity.com
 store.steampowered.com
 steampowered.com
 steamserver.net
+steamconnecttest.com
 
 # Blackmagic
 blackmagicdesign.com
@@ -417,8 +437,322 @@ newsletter.towardsdatascience.com
 letsdatascience.com
 www.ign.com
 www.claudecodecamp.com
-static.canva.com
 iv.okcdn.ru
 cloudflare-dns.com
-medium.com
-ocsp.comodoca.com
+
+# ─────────────────────────────────────────────────────────────────────
+# CDN Additions
+# ─────────────────────────────────────────────────────────────────────
+
+# Akamai Edge CDN infrastructure
+akamaiedge.net
+edgekey.net
+akamaihd.net
+
+# Fastly CDN — used by npm, PyPI, GitHub, Stripe, Wikimedia, and many others
+fastly.net
+fastly.com
+fastlylb.net
+
+# BunnyCDN — popular mid-market CDN
+b-cdn.net
+bunny.net
+bunnycdn.com
+
+# KeyCDN
+kxcdn.com
+keycdn.com
+
+# Cloudflare ecosystem (beyond cloudflare.com itself)
+pages.dev
+workers.dev
+cfcdn.net
+
+# Netlify static hosting
+netlify.app
+netlify.com
+netlify-cdn.com
+
+# Vercel static hosting
+vercel.app
+vercel.com
+vercel-dns.com
+
+# Render cloud hosting
+onrender.com
+render.com
+
+# Fly.io
+fly.dev
+fly.io
+
+# Railway
+railway.app
+
+# Heroku
+heroku.com
+herokudns.com
+
+# DigitalOcean Spaces (object storage CDN)
+digitaloceanspaces.com
+cdn.digitaloceanspaces.com
+
+# Backblaze B2 CDN
+backblazeb2.com
+
+# WordPress infrastructure
+# s.w.org serves core WordPress JS/CSS loaded by virtually every self-hosted WP site
+s.w.org
+wp.com
+i0.wp.com
+i1.wp.com
+i2.wp.com
+i3.wp.com
+wpcalypso.wordpress.com
+
+# WP Engine managed WordPress CDN
+wpengine.com
+wpenginecloud.com
+
+# Squarespace CDN
+sqspcdn.com
+
+# Bootstrap CDN (StackPath/jsDelivr)
+bootstrapcdn.com
+stackpath.com
+stackpathcdn.com
+
+# Azure Front Door & static web hosting (complement to azureedge.net in microsoft-productivity.txt)
+azurefd.net
+azurewebsites.net
+msecnd.net
+vo.msecnd.net
+blob.core.windows.net
+
+# Cloudinary image/video CDN
+cloudinary.com
+res.cloudinary.com
+
+# Statically — free CDN for open-source and GitHub-hosted assets
+statically.io
+
+# jsDelivr mirror domains
+jsdelivr.com
+
+# Future PLC tech media CDN (Tom's Hardware, TechRadar, PC Gamer, etc.)
+futurecdn.net
+cdn.mos.cms.futurecdn.net
+images.fie.futurecdn.net
+
+# Intercom customer support widget assets
+static.intercomassets.com
+
+# Reddit image CDN (for Reddit embeds elsewhere)
+i.redd.it
+preview.redd.it
+redd.it
+
+# ─────────────────────────────────────────────────────────────────────
+# Mozilla / Firefox
+# Source: https://wiki.mozilla.org/Websites/Domain_List
+# ─────────────────────────────────────────────────────────────────────
+
+mozilla.org
+www.mozilla.org
+addons.mozilla.org
+firefox.com
+www.firefox.com
+services.mozilla.com
+merino.services.mozilla.com
+cdn.mozilla.net
+img-getpocket.cdn.mozilla.net
+getpocket.com
+app.getpocket.com
+mozilla-ohttp-gateway.fastly.net
+
+# ─────────────────────────────────────────────────────────────────────
+# Programming Language Package Managers & Dev Tool Hosts
+# ─────────────────────────────────────────────────────────────────────
+
+# Python (PyPI)
+# Source: https://packaging.python.org/en/latest/guides/index-mirrors-and-caches/
+pypi.org
+files.pythonhosted.org
+pythonhosted.org
+bootstrap.pypa.io
+
+# Node.js / npm
+# Source: https://docs.npmjs.com/cli/v10/using-npm/registry
+registry.npmjs.org
+npmjs.com
+www.npmjs.com
+
+# Yarn
+registry.yarnpkg.com
+yarnpkg.com
+classic.yarnpkg.com
+
+# Ruby (RubyGems)
+# Source: https://guides.rubygems.org/
+rubygems.org
+www.rubygems.org
+api.rubygems.org
+index.rubygems.org
+
+# Rust (crates.io)
+# Source: https://doc.rust-lang.org/cargo/reference/registries.html
+crates.io
+static.crates.io
+index.crates.io
+
+# .NET / NuGet (C#)
+# Source: https://learn.microsoft.com/en-us/nuget/
+nuget.org
+www.nuget.org
+api.nuget.org
+globalcdn.nuget.org
+dotnet.microsoft.com
+
+# Java / Maven / Kotlin
+# Source: https://maven.apache.org/
+repo1.maven.org
+repo.maven.apache.org
+search.maven.org
+mvnrepository.com
+kotlinlang.org
+
+# Gradle
+# Source: https://gradle.org/
+gradle.org
+services.gradle.org
+downloads.gradle.org
+plugins.gradle.org
+
+# Swift / Objective-C (CocoaPods)
+# Source: https://guides.cocoapods.org/
+cocoapods.org
+cdn.cocoapods.org
+trunk.cocoapods.org
+
+# JavaScript CDNs (shared across languages/frameworks)
+unpkg.com
+cdnjs.cloudflare.com
+jsdelivr.net
+cdn.jsdelivr.net
+
+# Go
+# Source: https://go.dev/ref/mod#module-proxy
+pkg.go.dev
+sum.golang.org
+proxy.golang.org
+go.dev
+
+# PHP / Composer
+# Source: https://getcomposer.org/doc/
+packagist.org
+repo.packagist.org
+getcomposer.org
+
+# Dart / Flutter
+# Source: https://dart.dev/tools/pub/
+pub.dev
+dart.dev
+flutter.dev
+
+# Deno
+deno.land
+deno.com
+
+# ─────────────────────────────────────────────────────────────────────
+# Source Control & Container Registries
+# ─────────────────────────────────────────────────────────────────────
+
+# GitHub
+github.com
+api.github.com
+raw.githubusercontent.com
+objects.githubusercontent.com
+githubusercontent.com
+github.io
+ghcr.io
+pkg.github.com
+
+# GitLab
+gitlab.com
+about.gitlab.com
+gitlab.io
+registry.gitlab.com
+
+# Docker Hub & container registries
+hub.docker.com
+registry-1.docker.io
+docker.io
+auth.docker.io
+production.cloudflare.docker.com
+download.docker.com
+
+# ─────────────────────────────────────────────────────────────────────
+# Linux Distribution Package Sources
+# ─────────────────────────────────────────────────────────────────────
+
+# Debian
+deb.debian.org
+security.debian.org
+packages.debian.org
+ftp.debian.org
+
+# Ubuntu
+archive.ubuntu.com
+security.ubuntu.com
+ports.ubuntu.com
+launchpad.net
+ppa.launchpad.net
+
+# Arch Linux (and AUR)
+archlinux.org
+www.archlinux.org
+aur.archlinux.org
+geo.mirror.pkgbuild.com
+
+# Fedora / RHEL
+dl.fedoraproject.org
+mirrors.fedoraproject.org
+fedoraproject.org
+
+# openSUSE
+download.opensuse.org
+
+# NodeSource (Node.js on Debian/Ubuntu/CentOS)
+deb.nodesource.com
+rpm.nodesource.com
+
+# ─────────────────────────────────────────────────────────────────────
+# Blocklist Sources & Security Research
+# (Domains used as sources for blocklists and allowlists in this repo)
+# ─────────────────────────────────────────────────────────────────────
+
+# Palo Alto Networks Unit 42 threat research
+paloaltonetworks.com
+unit42.paloaltonetworks.com
+
+# Pi-hole community & documentation
+pi-hole.net
+discourse.pi-hole.net
+docs.pi-hole.net
+
+# Peter Lowe adserver list
+pgl.yoyo.org
+
+# Malware filter / URLhaus (source for urlhaus-malware list in this repo)
+malware-filter.gitlab.io
+
+# OISD blocklist
+oisd.nl
+abp.oisd.nl
+
+# Energized Protection blocklist
+block.energized.pro
+
+# Netify network intelligence (used for shopping/service research)
+netify.ai
+www.netify.ai

@@ -83,6 +83,12 @@ phonedeviceverification-pa.googleapis.com
 # Device provisioning (Android setup)
 device-provisioning.googleapis.com
 
+# Chrome / Android optimization guide (offline browsing prediction, prefetch)
+optimizationguide-pa.googleapis.com
+
+# Phone number management (Android dialer, Google contacts)
+myphonenumbers-pa.googleapis.com
+
 # ============================================
 # GOOGLE KEEP / FIREBASE
 # ============================================
@@ -109,6 +115,28 @@ meet.turns.goog
 # ============================================
 
 docs.google.com
+
+# ============================================
+# ANDROID OTA & SYSTEM UPDATES
+# ============================================
+
+# Google Cloud Storage — serves Android OTA packages and app data
+storage.googleapis.com
+
+# Android OTA update delivery (HTTPS)
+ota.googlezip.net
+ota-cache1.googlezip.net
+
+# Google Play Services API (app installs, system updates, phone upgrades)
+play.googleapis.com
+content.googleapis.com
+
+# Android website connectivity checks
+android.com
+www.android.com
+
+# Maven repository for Android/Kotlin dependencies
+maven.google.com
 
 # ============================================
 # FIREBASE CLOUD MESSAGING (FCM)

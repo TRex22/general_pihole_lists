@@ -99,3 +99,7 @@ opfcaptcha-prod.s3.amazonaws.com
 # Documentation and Support
 docs.aws.amazon.com
 aws.amazon.com
+
+# AWS WAF (Web Application Firewall)
+# Token subdomain used for bot-detection challenges — dynamic subdomains under awswaf.com
+awswaf.com

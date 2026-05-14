@@ -51,5 +51,8 @@
 # The m3-eu.lifeaiot.com entry in general.txt only covers one region.
 (^|\.)lifeaiot\.com$
 
-# ── Google ────────────────────────────────────────────────────────────────────
-(^|\.)googlevideo\.com$
+# ── Google CDN nodes (gvt1.com) ───────────────────────────────────────────────
+# gvt1.com serves Chrome, Android app content via dynamically-numbered edge nodes
+# (e.g. r1---sn-54gpivnu15-woce.gvt1.com). redirector.gvt1.com is explicitly in
+# google.txt; this regex covers all dynamic subdomain variants.
+(^|\.)gvt1\.com$
