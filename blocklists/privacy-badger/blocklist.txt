@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-05-13T21:33:47Z
+! Generated: 2026-05-14T09:26:50Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 3120
+! Total domains: 3118
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -594,7 +594,6 @@
 ||bullionglidingscuttle.com^
 ||bulrev.com^
 ||bumlam.com^
-||bunny.net^
 ||buzzfighter.com^
 ||buzzoola.com^
 ||bybit-aws.com^
@@ -3025,7 +3024,6 @@
 ||woorank.com^
 ||worldshopping.global^
 ||worldshopping.jp^
-||wp.com^
 ||wp.pl^
 ||wpmudev.com^
 ||wt-eu02.net^
