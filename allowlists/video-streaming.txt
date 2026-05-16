@@ -1,0 +1,389 @@
+# Video Streaming Allowlist for Pi-hole
+# Covers licensed anime streaming, alternative streaming services,
+# manga/manhwa readers, art platforms, creator platforms, and
+# fanfiction/written content. Includes services that may contain adult
+# content sections but are not exclusively adult.
+#
+# Note: dailymotion.com, rumble.com, kaltura.com are already in general.txt
+# Note: vimeo.com, youtube.com are already in easyllama.txt
+
+# ─────────────────────────────────────────────────────────────────────
+# Anime Streaming — Licensed Services
+# ─────────────────────────────────────────────────────────────────────
+
+# Crunchyroll (Sony — world's largest licensed anime library)
+crunchyroll.com
+www.crunchyroll.com
+static.crunchyroll.com
+api.crunchyroll.com
+beta-api.crunchyroll.com
+img1.ak.crunchyroll.com
+imgsrv.crunchyroll.com
+subs.crunchyroll.com
+vilos.crunchyroll.com
+player.crunchyroll.com
+
+# HIDIVE (licensed anime + simulcasts)
+hidive.com
+www.hidive.com
+api.hidive.com
+cdn.hidive.com
+img.hidive.com
+static.hidive.com
+
+# Funimation (merged into Crunchyroll 2024; legacy domains may still resolve)
+funimation.com
+www.funimation.com
+static.funimation.com
+static2.funimation.com
+
+# Tubi (free, ad-supported — large legal anime library)
+tubi.tv
+www.tubi.tv
+tubitv.com
+www.tubitv.com
+api.tubitv.com
+
+# Pluto TV (free ad-supported — dedicated anime channels)
+pluto.tv
+www.pluto.tv
+api.pluto.tv
+
+# RetroCrush (classic anime, free with ads)
+retrocrush.tv
+www.retrocrush.tv
+
+# ─────────────────────────────────────────────────────────────────────
+# Anime Streaming — Alternative / Free
+# ─────────────────────────────────────────────────────────────────────
+
+# AnimePahe (free streaming, minimal ads)
+animepahe.com
+animepahe.org
+animepahe.ru
+kwik.si             # AnimePahe video player CDN
+
+# AnimeSuge (free streaming — several mirror domains)
+animesuge.to
+animesuge.io
+animesuge.cc
+animesuge.one
+
+# AnimeOwl (free streaming, subbed and dubbed)
+animeowl.net
+www.animeowl.net
+
+# AnimeHub (ongoing and complete anime)
+animehub.ac
+www.animehub.ac
+
+# AllManga / AllAnime (anime streaming)
+allmanga.to
+www.allmanga.to
+
+# 123Anime
+123animehub.cc
+www.123animehub.cc
+
+# AnimeFreak (long-running free site, large back-catalogue)
+animefreak.tv
+www.animefreak.tv
+
+# AnimeDAO (no sign-up, auto-skip feature)
+animedao.to
+www.animedao.to
+
+# ─────────────────────────────────────────────────────────────────────
+# Anime Community & Tracking
+# ─────────────────────────────────────────────────────────────────────
+
+# MyAnimeList (community, tracking, database)
+myanimelist.net
+www.myanimelist.net
+cdn.myanimelist.net
+mcdn.myanimelist.net
+
+# AniList (anime/manga tracking — GraphQL API)
+anilist.co
+www.anilist.co
+graphql.anilist.co
+s4.anilist.co
+img.anilist.co
+media.anilist.co
+
+# Kitsu (anime tracking app)
+kitsu.io
+www.kitsu.io
+media.kitsu.io
+api.kitsu.io
+
+# Anime-Planet (anime tracking, legal streaming links)
+anime-planet.com
+www.anime-planet.com
+
+# ─────────────────────────────────────────────────────────────────────
+# "Omega" — Streaming Services
+# ─────────────────────────────────────────────────────────────────────
+
+# OmegaScans (manhwa/manga scanlation reader)
+# Source: https://omegascans.org / https://omegascans.my
+omegascans.org
+www.omegascans.org
+omegascans.my
+www.omegascans.my
+
+# OmegaTV (IPTV streaming app — 200+ TV channels including Ukrainian TV)
+omegatv.com
+www.omegatv.com
+api.omegatv.com
+cdn.omegatv.com
+
+# ─────────────────────────────────────────────────────────────────────
+# "Moon" — Streaming Services
+# ─────────────────────────────────────────────────────────────────────
+
+# MoonFlix (free movie, TV show, and anime streaming — multiple domains)
+# Source: https://moonflix.net
+moonflix.net
+www.moonflix.net
+moonflix.org
+www.moonflix.org
+moonflix.in
+www.moonflix.in
+moonflix.com.co
+
+# Moonscans (manga/manhwa scanlation reader)
+moonscans.net
+www.moonscans.net
+
+# LunarrScan (manga/manhwa reader — lunar = moon)
+lunarrscan.com
+www.lunarrscan.com
+
+# ─────────────────────────────────────────────────────────────────────
+# "Nova" — Streaming Services
+# ─────────────────────────────────────────────────────────────────────
+
+# Nova TV APK (free movie and TV streaming aggregator app)
+# Source: https://www.novatvapk.com
+novatvapk.com
+www.novatvapk.com
+novatv.app
+www.novatv.app
+
+# ─────────────────────────────────────────────────────────────────────
+# Manga / Manhwa / Webtoon Readers
+# ─────────────────────────────────────────────────────────────────────
+
+# MangaDex (community manga reader — largest online library)
+mangadex.org
+www.mangadex.org
+api.mangadex.org
+uploads.mangadex.org
+
+# MangaPlus (official Shueisha reader — Jump titles, free)
+mangaplus.shueisha.co.jp
+www.mangaplus.shueisha.co.jp
+
+# LINE Webtoon (official webtoon platform)
+webtoons.com
+www.webtoons.com
+dl.webtoons.com
+static.webtoons.com
+
+# Tapas.io (indie comics and novels)
+tapas.io
+www.tapas.io
+
+# AsuraScans (popular manhwa scanlation reader)
+asurascans.com
+www.asurascans.com
+asuratoon.com
+www.asuratoon.com
+
+# ReaperScans (manhwa scanlation)
+reaperscans.com
+www.reaperscans.com
+
+# Toonily (manhwa — includes adult content sections)
+toonily.com
+www.toonily.com
+
+# ─────────────────────────────────────────────────────────────────────
+# General Video Streaming
+# ─────────────────────────────────────────────────────────────────────
+
+# Twitch (live streaming)
+# Source: https://github.com/daylamtayari/Twitch-Domains
+twitch.tv
+www.twitch.tv
+api.twitch.tv
+gql.twitch.tv
+link.twitch.tv
+clips.twitch.tv
+passport.twitch.tv
+twitchapps.com
+jtvnw.net
+static-cdn.jtvnw.net
+ttvnw.net
+twitchcdn.net
+static.twitchcdn.net
+twitchsvc.net
+
+# Bilibili (Chinese video platform — major source of anime content)
+bilibili.com
+www.bilibili.com
+api.bilibili.com
+bangumi.bilibili.com
+live.bilibili.com
+manga.bilibili.com
+hdslb.com           # Bilibili CDN (s1/i0/i1/i2 subdomains)
+s1.hdslb.com
+i0.hdslb.com
+i1.hdslb.com
+i2.hdslb.com
+
+# Niconico (Japanese video platform — anime clips, official uploads)
+nicovideo.jp
+www.nicovideo.jp
+live.nicovideo.jp
+dmc.nico
+
+# Odysee / LBRY (decentralised video platform)
+odysee.com
+www.odysee.com
+api.odysee.com
+cdn.lbryplayer.xyz
+
+# Internet Archive (public domain movies, old TV, anime)
+archive.org
+www.archive.org
+ia801.us.archive.org
+
+# ─────────────────────────────────────────────────────────────────────
+# Streaming Aggregator Video CDNs
+# (Used by Nova TV, MoonFlix, and other aggregator apps for video delivery)
+# ─────────────────────────────────────────────────────────────────────
+
+# VidSrc (video embedding API used by many streaming aggregator apps)
+vidsrc.to
+vidsrc.me
+vidsrc.dev
+vidsrc.cc
+vidsrc.xyz
+vidsrc.net
+vidsrc.stream
+
+# MegaCloud (video hosting backend used by multiple streaming sites)
+megacloud.tv
+www.megacloud.tv
+
+# Real-Debrid (premium link resolver used by aggregator apps)
+real-debrid.com
+www.real-debrid.com
+api.real-debrid.com
+
+# AllDebrid (link resolver)
+alldebrid.com
+www.alldebrid.com
+
+# Premiumize (debrid service)
+premiumize.me
+www.premiumize.me
+
+# Trakt (watching tracker — integrated by Nova TV, MoonFlix, and others)
+trakt.tv
+www.trakt.tv
+api.trakt.tv
+
+# ─────────────────────────────────────────────────────────────────────
+# Art & Creative Platforms (may contain adult content sections)
+# Not exclusively adult — primarily art, animation, and gaming communities
+# ─────────────────────────────────────────────────────────────────────
+
+# pixiv (Japanese art platform — adult content opt-in behind login)
+pixiv.net
+www.pixiv.net
+i.pximg.net         # Image CDN for pixiv illustrations
+s.pximg.net
+d.pximg.net
+
+# pixiv FANBOX (creator crowdfunding — NSFW allowed, similar to Patreon)
+fanbox.cc
+www.fanbox.cc
+api.fanbox.cc
+
+# DeviantArt (art community — has adult content sections requiring opt-in)
+deviantart.com
+www.deviantart.com
+sta.sh              # DeviantArt shortlink file hosting
+api.deviantart.com
+
+# Newgrounds (animation, games, music — adult content section exists)
+newgrounds.com
+www.newgrounds.com
+uploads.ungrounded.net
+art.ngfiles.com
+img.ngfiles.com
+audio.ngfiles.com
+
+# ArtStation (professional portfolio — some mature/violent content)
+artstation.com
+www.artstation.com
+cdn.artstation.com
+media.artstation.com
+
+# Tumblr (blog platform — adult content allowed since policy reversal)
+tumblr.com
+www.tumblr.com
+assets.tumblr.com
+api.tumblr.com
+
+# 4chan / 4channel (imageboards — mix of SFW and NSFW boards)
+4chan.org
+www.4chan.org
+4channel.org
+www.4channel.org
+boards.4chan.org
+i.4cdn.org          # Image/file CDN
+s.4cdn.org          # Static assets CDN
+
+# ─────────────────────────────────────────────────────────────────────
+# Creator & Crowdfunding Platforms (may include adult creator tiers)
+# ─────────────────────────────────────────────────────────────────────
+
+# Patreon (crowdfunding — some creators post adult content)
+patreon.com
+www.patreon.com
+api.patreon.com
+img.patreon.com
+patreonusercontent.com
+cdn.patreon.com
+
+# SubscribeStar (Patreon alternative — adult content permitted)
+subscribestar.com
+www.subscribestar.com
+subscribestar.adult
+www.subscribestar.adult
+
+# ─────────────────────────────────────────────────────────────────────
+# Fanfiction & Written Content (may include adult-rated works)
+# Not visual adult content — written fiction only
+# ─────────────────────────────────────────────────────────────────────
+
+# Archive of Our Own / AO3 (fan fiction — explicit-rated works exist)
+archiveofourown.org
+www.archiveofourown.org
+
+# FanFiction.net (classic fan fiction — max rating M, no explicit)
+fanfiction.net
+www.fanfiction.net
+m.fanfiction.net
+
+# Royal Road (web novels — has adult sections)
+royalroad.com
+www.royalroad.com
+
+# Webnovel / Qidian (Chinese web novels)
+webnovel.com
+www.webnovel.com
