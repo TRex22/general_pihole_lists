@@ -43,6 +43,14 @@ All list files use Pi-hole compatible format:
 - Comments start with `#`
 - No wildcards (Pi-hole regex lists require separate handling)
 
+## Cross-File Duplication Policy
+
+Duplicating a domain across multiple allowlist files is acceptable and intentional. Pi-hole deduplicates allowlist entries at load time, so there is no functional impact. Duplication is preferred when:
+- A domain logically belongs in a themed file (e.g. `video-streaming.txt`) but already exists in a general file
+- A file should be self-contained and readable without cross-referencing other files
+
+When duplicating, add a comment noting the cross-reference (e.g. `# also in general.txt`) so the redundancy is deliberate and visible.
+
 ## Regex and Plain Domain Policy
 
 When a regex pattern is added to `regex_allowlist.txt` (e.g. `(^|\.)sharepoint\.com$`), do **NOT** remove the corresponding explicit domain entries from the plain allowlist files. Both must coexist because:
