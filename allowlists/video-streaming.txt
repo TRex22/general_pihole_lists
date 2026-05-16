@@ -4,8 +4,9 @@
 # fanfiction/written content. Includes services that may contain adult
 # content sections but are not exclusively adult.
 #
-# Note: dailymotion.com, rumble.com, kaltura.com are already in general.txt
-# Note: vimeo.com, youtube.com are already in easyllama.txt
+# Cross-listed from other files for completeness (Pi-hole deduplicates):
+# YouTube is also in google.txt; Vimeo/Wistia in easyllama.txt;
+# Spotify/Plex/Sonarr/Radarr/Kaltura/Rumble/DailyMotion in general.txt
 
 # ─────────────────────────────────────────────────────────────────────
 # Anime Streaming — Licensed Services
@@ -387,3 +388,130 @@ www.royalroad.com
 # Webnovel / Qidian (Chinese web novels)
 webnovel.com
 www.webnovel.com
+
+# ─────────────────────────────────────────────────────────────────────
+# YouTube
+# Cross-listed from google.txt
+# Source: https://support.google.com/youtube/answer/10046411
+# ─────────────────────────────────────────────────────────────────────
+
+youtube.com
+www.youtube.com
+m.youtube.com
+youtu.be
+youtube-nocookie.com
+www.youtube-nocookie.com
+
+# YouTube API (Shorts feed, search, playback control)
+youtubei.googleapis.com
+youtube-ui.l.google.com
+wwide-youtube.l.google.com
+
+# YouTube Shorts notifications + feed
+jnn-pa.googleapis.com
+
+# YouTube playback stats (watch history, resume position)
+s.youtube.com
+video-stats.l.google.com
+
+# YouTube image / thumbnail CDN
+i.ytimg.com
+s.ytimg.com
+yt3.ggpht.com
+yt3.googleusercontent.com
+ytimg.com
+
+# YouTube video delivery CDN
+googlevideo.com
+redirector.googlevideo.com
+manifest.googlevideo.com
+
+# Google Video CDN beacons (adaptive streaming telemetry)
+beacons.gvt2.com
+beacons.gcp.gvt2.com
+
+# ─────────────────────────────────────────────────────────────────────
+# Vimeo
+# Cross-listed from easyllama.txt
+# ─────────────────────────────────────────────────────────────────────
+
+vimeo.com
+www.vimeo.com
+player.vimeo.com
+api.vimeo.com
+vimeocdn.com
+f.vimeocdn.com
+i.vimeocdn.com
+fresnel.vimeo.com
+# *.vimeo.com, *.vimeocdn.com (requires regex wildcard entries in Pi-hole)
+
+# ─────────────────────────────────────────────────────────────────────
+# Wistia (enterprise video hosting)
+# Cross-listed from easyllama.txt
+# ─────────────────────────────────────────────────────────────────────
+
+wistia.com
+fast.wistia.net
+embed-fastly.wistia.com
+embed-cloudfront.wistia.com
+embedwistia-a.akamaihd.net
+# *.wistia.com (requires regex wildcard entry in Pi-hole)
+
+# ─────────────────────────────────────────────────────────────────────
+# Spotify (music + podcast streaming)
+# Cross-listed from general.txt
+# ─────────────────────────────────────────────────────────────────────
+
+spotify.com
+open.spotify.com
+spclient.wg.spotify.com
+apresolve.spotify.com
+api-tv.spotify.com
+
+# ─────────────────────────────────────────────────────────────────────
+# Plex (self-hosted media server)
+# Cross-listed from general.txt
+# ─────────────────────────────────────────────────────────────────────
+
+plex.tv
+www.plex.tv
+app.plex.tv
+status.plex.tv
+tvdb2.plex.tv
+pubsub.plex.bz
+pubsub.plex.tv
+proxy.plex.bz
+proxy.plex.tv
+meta.plex.bz
+meta.plex.tv
+node.plexapp.com
+tvthemes.plexapp.com
+
+# ─────────────────────────────────────────────────────────────────────
+# Sonarr / Radarr (TV and movie download automation)
+# Cross-listed from general.txt
+# ─────────────────────────────────────────────────────────────────────
+
+services.sonarr.tv
+skyhook.sonarr.tv
+download.sonarr.tv
+apt.sonarr.tv
+
+# ─────────────────────────────────────────────────────────────────────
+# Media Databases (used by Plex, Sonarr, Radarr, Kodi, etc.)
+# Cross-listed from general.txt
+# ─────────────────────────────────────────────────────────────────────
+
+thetvdb.com
+themoviedb.org
+api.themoviedb.org
+image.tmdb.org
+
+# ─────────────────────────────────────────────────────────────────────
+# Other Video Platforms
+# Cross-listed from general.txt
+# ─────────────────────────────────────────────────────────────────────
+
+kaltura.com             # Enterprise video platform
+rumble.com              # Video sharing (conservative/political content heavy)
+dailymotion.com         # General video sharing
