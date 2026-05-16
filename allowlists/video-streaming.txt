@@ -515,3 +515,67 @@ image.tmdb.org
 kaltura.com             # Enterprise video platform
 rumble.com              # Video sharing (conservative/political content heavy)
 dailymotion.com         # General video sharing
+
+# ─────────────────────────────────────────────────────────────────────
+# Cloud Provider Video Streaming CDNs
+# (cloudfront.net, Akamai, Fastly, Cloudflare, Azure are in other files)
+# ─────────────────────────────────────────────────────────────────────
+
+# AWS Interactive Video Service (IVS) — live stream delivery layer
+# Used by Twitch live streams and any app built on AWS IVS
+live-video.net
+ivs.us-east-1.amazonaws.com
+ivs.us-west-2.amazonaws.com
+ivs.eu-west-1.amazonaws.com
+
+# Limelight Networks / Edgio (major video CDN)
+# Used by HBO Max, ESPN, Paramount+, Discovery+, and others
+# Source: https://edg.io
+llnwd.net
+llnw.net
+edgio.net
+edgecastcdn.net
+
+# Mux (video infrastructure used by many streaming services)
+# Source: https://mux.com
+mux.com
+www.mux.com
+stream.mux.com
+ingest.mux.com
+api.mux.com
+
+# JW Player (widely embedded video player and CDN)
+# Source: https://jwplayer.com
+jwplayer.com
+www.jwplayer.com
+jwpcdn.com
+content.jwplatform.com
+cdn.jwplayer.com
+
+# Brightcove (enterprise video platform)
+# Source: https://brightcove.com
+brightcove.com
+www.brightcove.com
+players.brightcove.net
+brightcovecdn.com
+bcove.video
+
+# CDN77 (popular CDN — used by AnimePahe and other streaming sites)
+# Source: https://cdn77.com
+cdn77.com
+www.cdn77.com
+cdn77.org
+www.cdn77.org
+
+# Gcore / G-Core Labs (European CDN — used by some streaming services)
+# Source: https://gcore.com
+gcore.com
+www.gcore.com
+gcdn.co
+
+# Highwinds / hwcdn.net (StackPath legacy CDN — still widely used)
+hwcdn.net
+
+# Cloudflare Stream (management plane — delivery is videodelivery.net in general.txt)
+cloudflarestream.com
+www.cloudflarestream.com
