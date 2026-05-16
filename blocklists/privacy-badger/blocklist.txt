@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-05-15T21:25:20Z
+! Generated: 2026-05-16T10:34:45Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 3118
+! Total domains: 3114
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -986,7 +986,6 @@
 ||econda-monitor.de^
 ||ed-sys.net^
 ||edgetag.io^
-||edgio.net^
 ||edigitalsurvey.com^
 ||edkt.io^
 ||ednplus.com^
@@ -1286,7 +1285,6 @@
 ||hcn.health^
 ||hdbkell.com^
 ||hdbkome.com^
-||hdslb.com^
 ||he7ll.com^
 ||heapanalytics.com^
 ||hellobar.com^
@@ -1505,7 +1503,6 @@
 ||junior-shine.com^
 ||justpremium.com^
 ||jwplatform.com^
-||jwplayer.com^
 ||jwpltx.com^
 ||k-analytix.com^
 ||k5a.io^
@@ -2821,7 +2818,6 @@
 ||twinrdsyte.com^
 ||twinrtb.com^
 ||twinsrv.com^
-||twitch.tv^
 ||tynt.com^
 ||typekit.net^
 ||ubembed.com^
