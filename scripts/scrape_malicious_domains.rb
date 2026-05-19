@@ -959,12 +959,14 @@ class StandardPaginatedScraper < BaseScraper
   end
 
   def collect_article_urls
-    articles    = []
-    seen        = Set.new
-    cutoff      = Date.today << ((@years || DEFAULT_YEARS) * 12)
-    last_date   = most_recent_cached_date
-    incremental = @years.nil? && !last_date.nil?
-    pages_beyond = 0
+    articles          = []
+    seen              = Set.new
+    cutoff            = Date.today << ((@years || DEFAULT_YEARS) * 12)
+    last_date         = most_recent_cached_date
+    incremental       = @years.nil? && !last_date.nil?
+    has_any_cache     = !@cache['articles'].empty?
+    pages_beyond      = 0
+    consecutive_empty = 0
 
     puts "Collecting article URLs..."
 
@@ -1028,6 +1030,23 @@ class StandardPaginatedScraper < BaseScraper
         elsif oldest_date < last_date
           pages_beyond += 1
           break if pages_beyond >= @pages_back
+        end
+      end
+
+      # When the cache has articles but no date metadata (e.g. scraper whose
+      # listing pages carry no dates and articles haven't been probed yet),
+      # stop after @pages_back consecutive pages that yielded nothing new.
+      # This avoids scanning the full history on every run. Resets when new
+      # articles are found so partial back-fills still complete correctly.
+      if !incremental && @years.nil? && has_any_cache
+        if new_count == 0
+          consecutive_empty += 1
+          if consecutive_empty >= @pages_back
+            puts "  -> #{@pages_back} consecutive fully-cached pages — stopping."
+            break
+          end
+        else
+          consecutive_empty = 0
         end
       end
 
