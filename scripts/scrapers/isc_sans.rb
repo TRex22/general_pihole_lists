@@ -62,10 +62,21 @@ class ISCSansScraper < BaseScraper
   end
 
   def collect_article_urls
-    articles = []
-    seen     = Set.new
-    cutoff   = Date.today << ((@years || DEFAULT_YEARS) * 12)
-    today    = Date.today
+    articles    = []
+    seen        = Set.new
+    today       = Date.today
+    last_date   = most_recent_cached_date
+    incremental = @years.nil? && !last_date.nil?
+
+    cutoff = if incremental
+      if @lookback_days&.positive?
+        last_date - @lookback_days
+      else
+        Date.new(last_date.year, last_date.month, 1) << @pages_back
+      end
+    else
+      today << ((@years || DEFAULT_YEARS) * 12)
+    end
 
     puts "Collecting SANS ISC diary entries by year/month..."
 

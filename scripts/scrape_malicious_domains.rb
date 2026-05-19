@@ -455,6 +455,10 @@ class BaseScraper
   # Mutates the supplied domains and ips Sets directly.
   def scan_extra(_doc, _url, _domains, _ips) = nil
 
+  # Override in subclasses that need to extract a publication date from article HTML
+  # (e.g. scrapers whose listing pages carry no dates). Returns a Date or nil.
+  def extract_article_date(_doc) = nil
+
   # ── HTTP ────────────────────────────────────────────────────────────────────
 
   def fetch_via_browser(url, wait_seconds: 5)
@@ -1059,11 +1063,12 @@ class StandardPaginatedScraper < BaseScraper
     domains.merge(ocr_doms)
 
     all_found = (domains.to_a + ips.to_a).sort.uniq
+    date_str  = article[:date_str] || extract_article_date(doc)&.to_s
 
     entry = {
       'url'                  => url,
       'title'                => title,
-      'date'                 => article[:date_str],
+      'date'                 => date_str,
       'scraped_at'           => Time.now.utc.iso8601,
       'domains'              => all_found,
       'images'               => images,
@@ -1078,7 +1083,7 @@ class StandardPaginatedScraper < BaseScraper
       puts "  #{label} #{url}"
       all_found.each { |d| puts "               #{d}" }
       puts "               (#{images.size} image(s), #{ocr_doms.size} via OCR)" if images.any?
-      @pending[url] = { domains: all_found, title: title, date: article[:date_str] } if all_found.any?
+      @pending[url] = { domains: all_found, title: title, date: date_str } if all_found.any?
     end
   end
 end

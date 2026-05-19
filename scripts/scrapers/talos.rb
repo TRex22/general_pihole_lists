@@ -32,15 +32,27 @@ class TalosScraper < StandardPaginatedScraper
   end
 
   # Fetch the last article on a listing page and extract its published date.
+  # Uses the cache when available. When a fetch is needed and the entry is already
+  # cached with a nil date, backfills the date so future runs use incremental mode.
   def probe_page_boundary_date(entries)
     last = entries.last
     return nil unless last
 
+    cached = @cache['articles'][last[:url]]
+    if cached&.dig('date')
+      return Date.parse(cached['date']) rescue nil
+    end
+
     resp = fetch_with_retry(last[:url])
     return nil unless resp
 
-    doc = Nokogiri::HTML(resp.body)
+    date = extract_article_date(Nokogiri::HTML(resp.body))
+    cached['date'] = date.to_s if date && cached
 
+    date
+  end
+
+  def extract_article_date(doc)
     meta = doc.at_css('meta[property="article:published_time"]')
     return Date.parse(meta['content']) if meta
 
