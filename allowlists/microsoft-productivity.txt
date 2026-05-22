@@ -165,6 +165,7 @@ msedge.api.cdp.microsoft.com
 www.bing.com
 bing.com
 c.bing.net
+officespeech.platform.bing.com  # Office Dictation feature (ID 126)
 
 # Azure
 portal.azure.com
@@ -228,6 +229,11 @@ usercontent.microsoft
 www.microsoft365.com
 admin.microsoft.com
 cortana.ai
+
+# Microsoft Bookings (new unified .microsoft TLD URL)
+bookings.cloud.microsoft
+# Alternate/redirect form under .com TLD
+bookings.cloud.microsoft.com
 
 # Microsoft redirects and utilities
 aka.ms
