@@ -36,8 +36,10 @@ proxy.plex.tv
 app.plex.tv
 www.plex.tv
 status.plex.tv
+dashboard.plex.tv
 node.plexapp.com
 tvthemes.plexapp.com
+nine.plugins.plexapp.com
 
 # Dropbox
 dl.dropboxusercontent.com
@@ -49,6 +51,7 @@ styles.redditmedia.com
 www.redditstatic.com
 reddit.map.fastly.net
 www.redditmedia.com
+reddit.app.link  # Branch.io deep link for Reddit app (install banners, app deep links)
 
 ## Needed for Reddit emails to work
 click.redditmail.com  # Reddit click tracking
@@ -82,6 +85,7 @@ services.sonarr.tv
 skyhook.sonarr.tv
 download.sonarr.tv
 apt.sonarr.tv
+forums.sonarr.tv
 
 # Gravatar (profile images)
 gravatar.com
@@ -854,6 +858,20 @@ download.opensuse.org
 # NodeSource (Node.js on Debian/Ubuntu/CentOS)
 deb.nodesource.com
 rpm.nodesource.com
+
+# ─────────────────────────────────────────────────────────────────────
+# Tailscale (VPN mesh network)
+# Source: https://tailscale.com/kb/1082/firewall-ports
+# Note: (^|\.)tailscale\.com$ regex in regex_allowlist.txt covers DERP relay servers
+#       (derp1-all through derp28-all.tailscale.com) and all other subdomains.
+# ─────────────────────────────────────────────────────────────────────
+
+tailscale.com
+login.tailscale.com
+controlplane.tailscale.com
+console.tailscale.com
+log.tailscale.com
+pkgs.tailscale.com
 
 # ─────────────────────────────────────────────────────────────────────
 # Blocklist Sources & Security Research

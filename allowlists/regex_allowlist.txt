@@ -70,3 +70,11 @@
 # ── Microsoft svc.ms (SharePoint/OneDrive internal APIs) ──────────────────────
 # Required for SharePoint and OneDrive internal API calls (ID 39).
 (^|\.)svc\.ms$
+
+# ── Tailscale ─────────────────────────────────────────────────────────────────
+# Tailscale DERP relay servers use numbered subdomains (derp1-all through
+# derp28-all.tailscale.com, count grows over time). This regex covers all
+# DERP servers plus login/controlplane/log/pkgs and any future subdomains.
+# Core domains are also listed explicitly in general.txt.
+# Source: https://tailscale.com/kb/1082/firewall-ports
+(^|\.)tailscale\.com$
