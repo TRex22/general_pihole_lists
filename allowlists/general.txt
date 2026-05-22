@@ -860,6 +860,79 @@ deb.nodesource.com
 rpm.nodesource.com
 
 # ─────────────────────────────────────────────────────────────────────
+# Internet Archive / Wayback Machine
+# Source: https://archive.org
+# Note: (^|\.)archive\.org$ regex in regex_allowlist.txt covers the
+#       numbered item CDN servers (ia800xxx.us.archive.org, ia600xxx, etc.)
+# Cross-listed: archive.org, www.archive.org, ia801.us.archive.org in video-streaming.txt
+# ─────────────────────────────────────────────────────────────────────
+
+archive.org
+www.archive.org
+web.archive.org
+static.archive.org
+s3.us.archive.org
+archive-it.org
+
+# Open Library (Internet Archive's book-lending platform)
+openlibrary.org
+www.openlibrary.org
+covers.openlibrary.org
+bookcover.openlibrary.org
+
+# ─────────────────────────────────────────────────────────────────────
+# archive.ph / archive.today (independent web snapshot service)
+# Multiple mirror domains — all serve the same platform
+# ─────────────────────────────────────────────────────────────────────
+archive.ph
+www.archive.ph
+archive.today
+www.archive.today
+archive.fo
+www.archive.fo
+archive.li
+www.archive.li
+archive.vn
+www.archive.vn
+archive.md
+www.archive.md
+
+# ─────────────────────────────────────────────────────────────────────
+# National and Regional Web Archives
+# ─────────────────────────────────────────────────────────────────────
+
+# Swiss Internet Archive (Swiss National Library / SNL)
+# Preserves Swiss web heritage under .ch and related domains
+webarchiv.ch
+www.webarchiv.ch
+web.archive.swiss
+www.archive.swiss
+
+# UK Web Archive (British Library)
+# Selective and domain crawls of .uk websites
+webarchive.org.uk
+www.webarchive.org.uk
+bl.uk
+www.bl.uk
+
+# Portuguese Web Archive (Arquivo.pt — FCCN / FCT)
+# Searches and replays Portuguese web content since 1996
+arquivo.pt
+www.arquivo.pt
+
+# Perma.cc (Harvard Law School — legal citation archiving)
+perma.cc
+www.perma.cc
+
+# Common Crawl (open petabyte-scale web crawl dataset)
+commoncrawl.org
+www.commoncrawl.org
+
+# Memento Time Travel (aggregates multiple web archives)
+timetravel.mementoweb.org
+mementoweb.org
+
+# ─────────────────────────────────────────────────────────────────────
 # Tailscale (VPN mesh network)
 # Source: https://tailscale.com/kb/1082/firewall-ports
 # Note: (^|\.)tailscale\.com$ regex in regex_allowlist.txt covers DERP relay servers
