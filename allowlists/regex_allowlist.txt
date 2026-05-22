@@ -71,6 +71,13 @@
 # Required for SharePoint and OneDrive internal API calls (ID 39).
 (^|\.)svc\.ms$
 
+# ── Internet Archive ──────────────────────────────────────────────────────────
+# Item content is served from dynamically-numbered CDN servers:
+#   ia800801.us.archive.org, ia600908.us.archive.org, ia903xxx.us.archive.org, etc.
+# Core domains are also listed explicitly in general.txt.
+# Source: https://archive.org
+(^|\.)archive\.org$
+
 # ── Tailscale ─────────────────────────────────────────────────────────────────
 # Tailscale DERP relay servers use numbered subdomains (derp1-all through
 # derp28-all.tailscale.com, count grows over time). This regex covers all
