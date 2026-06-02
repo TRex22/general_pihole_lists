@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-06-01T22:04:37Z
-# Total domains: 908
+# Generated: 2026-06-02T21:59:24Z
+# Total domains: 909
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -231,6 +231,7 @@ darkw.pl
 data.digital.costco.ca
 data.digital.costco.com
 data.notify.macys.com
+data.orders.costco.ca
 data.orders.costco.com
 datadome.garena.com.first-party-js.datadome.co
 datadome.monster.com.first-party-js.datadome.co
