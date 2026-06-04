@@ -19,7 +19,11 @@ on:
         type: number
         default: 30
       sources:
-        description: 'Comma-separated sources to scrape, e.g. bleepingcomputer,talos (leave blank for all)'
+        description: 'Comma-separated domain sources to scrape, e.g. bleepingcomputer,talos (leave blank for all)'
+        type: string
+        default: ''
+      package_sources:
+        description: 'Comma-separated package sources to scrape, e.g. ossf,socket_dev (leave blank for all)'
         type: string
         default: ''
       dry_run:
@@ -42,20 +46,15 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '4.0'
-          bundler-cache: true   # installs from Gemfile.lock and caches the gem bundle
-                                # cache key is derived from Gemfile.lock — auto-invalidates
-                                # when dependencies change
+          bundler-cache: true
 
       - name: Restore private cache files
-        # Cache is stored on GitHub's infrastructure — never committed, never public.
-        # A cache miss on first run is fine: scripts create the files from scratch.
         uses: actions/cache@v4
         with:
           path: |
             scripts/malicious_domains_cache.json
+            scripts/malicious_packages_cache.json
             scripts/blocklist_project_cache.json
-          # Key rotates when any scraper script changes (forces a fresh cache).
-          # restore-keys provides a fallback to the most recent existing cache.
           key: pihole-scrape-cache-${{ runner.os }}-${{ hashFiles('scripts/**/*.rb') }}
           restore-keys: |
             pihole-scrape-cache-${{ runner.os }}-
@@ -68,23 +67,19 @@ jobs:
 
       - name: Scrape malicious domains
         run: |
-          # Scheduled runs use 30 threads; manual runs use the input value (default 30)
           PARALLEL="${{ inputs.parallel || 30 }}"
           ARGS="--skip-ocr --parallel $PARALLEL"
 
-          # Full scan vs incremental
           if [ "${{ inputs.full_scan }}" = "true" ]; then
             ARGS="$ARGS --years 2"
           else
             ARGS="$ARGS --lookback-days ${{ inputs.lookback_days || 2 }}"
           fi
 
-          # Restrict to specific sources if provided
           if [ -n "${{ inputs.sources }}" ]; then
             ARGS="$ARGS --sources ${{ inputs.sources }}"
           fi
 
-          # Dry run flag
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             ARGS="$ARGS --dry-run"
           fi
@@ -92,14 +87,35 @@ jobs:
           echo "Running: bundle exec ruby scripts/scrape_malicious_domains.rb $ARGS"
           bundle exec ruby scripts/scrape_malicious_domains.rb $ARGS
 
+      - name: Scrape malicious packages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ARGS="--parallel 5"
+
+          if [ "${{ inputs.full_scan }}" = "true" ]; then
+            ARGS="$ARGS --years 2"
+          else
+            ARGS="$ARGS --lookback-days ${{ inputs.lookback_days || 2 }}"
+          fi
+
+          if [ -n "${{ inputs.package_sources }}" ]; then
+            ARGS="$ARGS --sources ${{ inputs.package_sources }}"
+          fi
+
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+
+          echo "Running: bundle exec ruby scripts/scrape_malicious_packages.rb $ARGS"
+          bundle exec ruby scripts/scrape_malicious_packages.rb $ARGS
+
       - name: Commit and push updated lists
-        # Skip commit entirely on a dry run
         if: ${{ inputs.dry_run != true }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          # Exit cleanly if there are no changes — avoids noise commits
           git diff --staged --quiet && echo "No list changes today, nothing to commit." && exit 0
           git commit -m "chore: automated list update $(date -u '+%Y-%m-%d')"
           git push
