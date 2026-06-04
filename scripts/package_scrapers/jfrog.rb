@@ -1,18 +1,20 @@
 # frozen_string_literal: true
 # JFrog Security Research blog scraper
-# https://jfrog.com/blog/category/security/
-# Covers malicious packages in npm, PyPI, NuGet, and Maven.
+# Tag: /blog/tag/security-research/ — confirmed working, /page/N/ pagination.
+# Covers malicious packages (npm, PyPI, Go) plus CVEs and vulnerability research.
+
+JFROG_BASE          = 'https://jfrog.com'
+JFROG_SECURITY_TAG  = "#{JFROG_BASE}/blog/tag/security-research"
 
 class JFrogScraper < PackageStandardPaginatedScraper
   SOURCE_NAME = 'JFrog Security Research'
   SOURCE_KEY  = 'jfrog'
-  BASE_URL    = 'https://jfrog.com'
-  LISTING_BASE = "#{BASE_URL}/blog/category/security"
+  BASE_URL    = JFROG_BASE
 
   private
 
   def listing_url(page)
-    page == 1 ? "#{LISTING_BASE}/" : "#{LISTING_BASE}/page/#{page}/"
+    page == 1 ? "#{JFROG_SECURITY_TAG}/" : "#{JFROG_SECURITY_TAG}/page/#{page}/"
   end
 
   def parse_listing(doc)
@@ -25,13 +27,25 @@ class JFrogScraper < PackageStandardPaginatedScraper
 
       href = link['href'].to_s
       next if href.empty?
-      href = href.start_with?('http') ? href : "#{BASE_URL}#{href}"
-      next unless href.include?('jfrog.com')
+      href = href.start_with?('http') ? href : "#{JFROG_BASE}#{href}"
+      next unless href.include?('jfrog.com/blog/')
       next unless seen.add?(href)
 
       title = link.text.strip
       date  = parse_article_date(art)
       articles << { url: href, title: title, date_str: date&.to_s, date: date }
+    end
+
+    # Fallback: generic anchor scan
+    if articles.empty?
+      doc.css('a[href*="/blog/"]').each do |link|
+        href = link['href'].to_s
+        href = href.start_with?('http') ? href : "#{JFROG_BASE}#{href}"
+        next unless href.match?(%r{jfrog\.com/blog/[a-z0-9\-]+/?$})
+        next if href.include?('/tag/') || href.include?('/category/')
+        next unless seen.add?(href)
+        articles << { url: href, title: link.text.strip, date_str: nil, date: nil }
+      end
     end
 
     articles
