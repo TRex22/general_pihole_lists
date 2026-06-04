@@ -1,10 +1,23 @@
 # frozen_string_literal: true
 # JFrog Security Research blog scraper
-# Tag: /blog/tag/security-research/ — confirmed working, /page/N/ pagination.
-# Covers malicious packages (npm, PyPI, Go) plus CVEs and vulnerability research.
+#
+# Discovery: post-sitemap.xml (all blog post URLs + lastmod dates).
+# Archive pagination is client-side JavaScript and cannot be scraped with plain
+# HTTP — the tag listing page always returns page 1 content regardless of query
+# params (?pagenum=N, ?paged=N). The sitemap gives full URL coverage without
+# JavaScript and is the authoritative source for blog post URLs.
+#
+# URL filter: only fetch articles whose slug suggests security/package content,
+# avoiding the 1000+ general blog posts about Artifactory and DevOps.
 
-JFROG_BASE          = 'https://jfrog.com'
-JFROG_SECURITY_TAG  = "#{JFROG_BASE}/blog/tag/security-research"
+JFROG_BASE         = 'https://jfrog.com'
+JFROG_SITEMAP_URL  = "#{JFROG_BASE}/post-sitemap.xml"
+
+JFROG_SLUG_KEYWORDS = %w[
+  malware malicious supply-chain package npm pypi python ruby cargo nuget maven
+  vulnerability cve attack backdoor trojan stealer security-research
+  typosquat dependency threat shai-hulud picklescan obfuscat
+].freeze
 
 class JFrogScraper < PackageStandardPaginatedScraper
   SOURCE_NAME = 'JFrog Security Research'
@@ -13,59 +26,66 @@ class JFrogScraper < PackageStandardPaginatedScraper
 
   private
 
-  def listing_url(page)
-    page == 1 ? "#{JFROG_SECURITY_TAG}/" : "#{JFROG_SECURITY_TAG}/page/#{page}/"
-  end
+  # Override: enumerate from sitemap, no pagination needed.
+  def collect_article_urls
+    cutoff      = Date.today << ((@years || PKG_DEFAULT_YEARS) * 12)
+    last_date   = most_recent_cached_date
+    incremental = @years.nil? && !last_date.nil?
 
-  def parse_listing(doc)
-    articles = []
-    seen     = Set.new
-
-    doc.css('article, .post, .blog-post').each do |art|
-      link = art.at_css('h1 a, h2 a, h3 a, .entry-title a')
-      next unless link
-
-      href = link['href'].to_s
-      next if href.empty?
-      href = href.start_with?('http') ? href : "#{JFROG_BASE}#{href}"
-      next unless href.include?('jfrog.com/blog/')
-      next unless seen.add?(href)
-
-      title = link.text.strip
-      date  = parse_article_date(art)
-      articles << { url: href, title: title, date_str: date&.to_s, date: date }
+    puts "  Fetching JFrog post sitemap..."
+    resp = fetch_with_retry(JFROG_SITEMAP_URL)
+    unless resp
+      warn '  -> Sitemap unreachable — skipping JFrog.'
+      return []
     end
 
-    # Fallback: generic anchor scan
-    if articles.empty?
-      doc.css('a[href*="/blog/"]').each do |link|
-        href = link['href'].to_s
-        href = href.start_with?('http') ? href : "#{JFROG_BASE}#{href}"
-        next unless href.match?(%r{jfrog\.com/blog/[a-z0-9\-]+/?$})
-        next if href.include?('/tag/') || href.include?('/category/')
-        next unless seen.add?(href)
-        articles << { url: href, title: link.text.strip, date_str: nil, date: nil }
-      end
+    xml      = Nokogiri::XML(resp.body)
+    all_urls = xml.css('url').filter_map do |node|
+      loc     = node.at_css('loc')&.text&.strip
+      lastmod = node.at_css('lastmod')&.text&.strip
+      next unless loc&.match?(%r{jfrog\.com/blog/[a-z0-9]})
+      date = lastmod ? (Date.parse(lastmod) rescue nil) : nil
+      { url: loc, date: date }
+    end
+
+    puts "  -> #{all_urls.size} blog post URLs in sitemap"
+
+    articles = all_urls.filter_map do |entry|
+      url  = entry[:url]
+      date = entry[:date]
+
+      next if date && date < cutoff
+      next if @cache['articles'][url]
+
+      slug = url.split('/').last(2).join('/')
+      next unless JFROG_SLUG_KEYWORDS.any? { |kw| slug.include?(kw) }
+
+      { url: url, title: nil, date_str: date&.to_s, date: date }
+    end
+
+    puts "  -> #{articles.size} security-relevant uncached articles"
+
+    if incremental && last_date
+      lookback = @lookback_days&.positive? ? last_date - @lookback_days : last_date
+      articles.select! { |a| a[:date].nil? || a[:date] >= lookback }
+      puts "  -> #{articles.size} after incremental date filter"
     end
 
     articles
   end
 
-  def parse_article_date(node)
-    time_el = node.at_css('time[datetime]')
-    return Date.parse(time_el['datetime']) if time_el
-    span = node.at_css('.entry-date, .post-date, .date')
-    return Date.parse(span.text.strip) if span
-    nil
-  rescue ArgumentError, TypeError
-    nil
-  end
-
   def extract_article_date(doc)
     meta = doc.at_css('meta[property="article:published_time"]')
     return Date.parse(meta['content']) if meta
+
     time_el = doc.at_css('time[datetime]')
     return Date.parse(time_el['datetime']) if time_el
+
+    # Plain text date in card/header: "March 05, 2026"
+    doc.css('p, span').each do |el|
+      text = el.text.strip
+      return Date.parse(text) if text.match?(/\A[A-Z][a-z]+ \d{1,2},\s*\d{4}\z/)
+    end
     nil
   rescue ArgumentError, TypeError
     nil
@@ -74,4 +94,8 @@ class JFrogScraper < PackageStandardPaginatedScraper
   def article_content(doc)
     doc.at_css('.entry-content, .post-content, article, main') || doc.at_css('body')
   end
+
+  # Unused — collect_article_urls overrides the pagination loop entirely
+  def listing_url(page) = "#{JFROG_BASE}/blog/tag/security-research/"
+  def parse_listing(_doc) = []
 end
