@@ -5,6 +5,13 @@ scripts/malicious_domains_cache.json.*
 scripts/thn_scrape_cache.json
 scripts/blocklist_project_cache.json
 
+# Malicious package scraper cache
+scripts/malicious_packages_cache.json
+scripts/malicious_packages_cache.json.*
+
+# Temporary file used as dummy output_file placeholder during package scraping
+databases/.pkg_tmp
+
 # Compiled macOS OCR helper binary (built from ocr_macos.swift on first run)
 scripts/ocr_macos
 
