@@ -1001,6 +1001,99 @@ class StandardPaginatedScraper < BaseScraper
       @pending[url] = { domains: all_found, title: title, date: date_str } if all_found.any?
     end
   end
+
+  def collect_via_rss(rss_url)
+    puts "  Fetching RSS (#{rss_url})..."
+    resp = fetch_with_retry(rss_url)
+    return nil unless resp&.success?
+
+    articles = []
+    seen     = Set.new
+    cutoff   = Date.today << ((@years || DEFAULT_YEARS) * 12)
+    doc      = Nokogiri::XML(resp.body)
+
+    doc.css('item, entry').each do |item|
+      url_str = item.at_css('link:not([rel="self"])')&.text&.strip.to_s
+      url_str = item.at_css('link[href]:not([rel="self"])')&.attr('href').to_s.strip if url_str.empty?
+      next if url_str.empty? || seen.include?(url_str)
+      seen.add(url_str)
+
+      date_str = (item.at_css('pubDate') ||
+                  item.at_css('published') ||
+                  item.at_xpath('.//dc:date', 'dc' => 'http://purl.org/dc/elements/1.1/'))
+                    &.text&.strip
+      date     = (Date.parse(date_str) rescue nil)
+      next if date && date < cutoff
+      next if @cache['articles'][url_str]
+
+      title = item.at_css('title')&.text.to_s.strip
+      articles << { url: url_str, title: title, date: date, date_str: date&.to_s }
+    end
+
+    if articles.empty? && doc.css('item, entry').none? && doc.css('channel, feed').none?
+      warn "  RSS/Atom: no items or feed root found — feed may be unrecognised format"
+    end
+    puts "  -> #{articles.size} new articles from RSS"
+    articles
+  rescue StandardError => e
+    warn "  RSS fetch/parse error: #{e.message}"
+    nil
+  end
+
+  def collect_via_sitemap(sitemap_url, path_re:)
+    puts "  Fetching sitemap (#{sitemap_url})..."
+    resp = fetch_with_retry(sitemap_url)
+    unless resp&.success?
+      warn "  Sitemap unreachable (HTTP #{resp&.code || 'no response'})"
+      return nil
+    end
+
+    cutoff   = Date.today << ((@years || DEFAULT_YEARS) * 12)
+    xml      = Nokogiri::XML(resp.body)
+    articles = []
+    seen     = Set.new
+
+    sub_sitemaps = xml.css('sitemap')
+    url_nodes = if sub_sitemaps.any?
+      eligible = sub_sitemaps.reject do |s|
+        lm = s.at_css('lastmod')&.text&.strip
+        d  = lm ? (Date.parse(lm) rescue nil) : nil
+        d && d < cutoff
+      end
+      puts "  -> Sitemap index: #{eligible.size}/#{sub_sitemaps.size} sub-sitemaps within cutoff"
+      eligible.flat_map do |s|
+        sub_url  = s.at_css('loc')&.text.to_s.strip
+        next [] if sub_url.empty?
+        sub_resp = fetch_with_retry(sub_url)
+        unless sub_resp&.success?
+          warn "  -> Sub-sitemap unreachable: #{sub_url}"
+          next []
+        end
+        Nokogiri::XML(sub_resp.body).css('url')
+      end
+    else
+      xml.css('url')
+    end
+
+    url_nodes.each do |url_el|
+      loc = url_el.at_css('loc')&.text.to_s.strip
+      next if loc.empty? || !loc.match?(path_re) || seen.include?(loc)
+      seen.add(loc)
+
+      lastmod = url_el.at_css('lastmod')&.text&.strip
+      date    = lastmod ? (Date.parse(lastmod) rescue nil) : nil
+      next if date && date < cutoff
+      next if @cache['articles'][loc]
+
+      articles << { url: loc, title: nil, date: date, date_str: date&.to_s }
+    end
+
+    puts "  -> #{articles.size} not yet cached"
+    articles
+  rescue StandardError => e
+    warn "  Sitemap error: #{e.message}"
+    nil
+  end
 end
 
 # ────────────────────────────────────────────────────────────────────────────
