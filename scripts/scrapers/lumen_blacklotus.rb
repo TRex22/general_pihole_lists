@@ -1,15 +1,22 @@
 # frozen_string_literal: true
 # Lumen Black Lotus Labs scraper
 #
-# blog.lumen.com redirects to lumen.com/blog-and-news/en-us/home (AEM CMS).
-# No URL pagination — uses sitemap for article discovery.
-# Filter: paths containing "black-lotus" or "security" in the blog path.
+# blog.lumen.com redirects to lumen.com/blog-and-news/en-us/home (AEM CMS, JS-rendered).
+# The sitemap (sitemap-index.xml → en-us/sitemap.xml) does NOT include blog posts.
+# The archive page (blog-and-news/en-us/black-lotus-labs) is JS-rendered — no static links.
 #
-# Article URLs: https://www.lumen.com/blog-and-news/en-us/<slug>
+# Working approach:
+#   Fetch the static Black Lotus Labs landing page which embeds article links in HTML,
+#   then extract all /blog/en-us/<slug> hrefs.
+#
+# Article URLs: https://www.lumen.com/blog/en-us/<slug>
 
-LUMEN_BASE        = 'https://www.lumen.com'
-LUMEN_SITEMAP_URL = "#{LUMEN_BASE}/sitemap.xml"
-LUMEN_PATH_RE     = %r{lumen\.com/(?:blog(?:-and-news)?|en-us)/.*(?:black[-\s]?lotus|securit|threat)}i
+LUMEN_BASE          = 'https://www.lumen.com'
+LUMEN_LANDING_URL   = "#{LUMEN_BASE}/en-us/security/black-lotus-labs.html"
+LUMEN_ARCHIVE_URL   = "#{LUMEN_BASE}/blog-and-news/en-us/black-lotus-labs"
+
+# Matches /blog/en-us/<slug> — excludes hub/archive pages like /blog-and-news/en-us/black-lotus-labs
+LUMEN_PATH_RE = %r{lumen\.com/blog/en-us/[a-z0-9][a-z0-9\-]+/?$}
 
 class LumenBlackLotusLabsScraper < StandardPaginatedScraper
   SOURCE_NAME = 'Lumen Black Lotus Labs'
@@ -19,36 +26,33 @@ class LumenBlackLotusLabsScraper < StandardPaginatedScraper
   private
 
   def collect_article_urls
-    articles = collect_via_sitemap(LUMEN_SITEMAP_URL, path_re: LUMEN_PATH_RE)
-    return articles if articles&.any?
-
-    warn '  Sitemap empty or unreachable — trying blog listing page.'
-    collect_via_listing_crawl
-  end
-
-  def collect_via_listing_crawl
-    resp = fetch_with_retry("#{LUMEN_BASE}/blog-and-news/en-us/home")
-    return [] unless resp&.success?
-
-    doc      = Nokogiri::HTML(resp.body)
     articles = []
     seen     = Set.new
 
-    doc.css('a[href*="black-lotus"], a[href*="security"], a[href*="threat"]').each do |link|
-      href = link['href'].to_s.strip
-      next if href.empty?
-      href = href.start_with?('http') ? href : "#{LUMEN_BASE}#{href}"
-      next unless href.match?(LUMEN_PATH_RE)
-      next unless seen.add?(href)
-      next if cached?(href)
-      articles << { url: href, title: link.text.strip, date: nil, date_str: nil }
+    # Primary: landing page has hardcoded article links in static HTML
+    [LUMEN_LANDING_URL, LUMEN_ARCHIVE_URL].each do |page_url|
+      resp = fetch_with_retry(page_url)
+      next unless resp&.success?
+
+      doc = Nokogiri::HTML(resp.body)
+      doc.css('a[href*="/blog/en-us/"]').each do |link|
+        href = link['href'].to_s.strip
+        next if href.empty?
+        href = href.start_with?('http') ? href : "#{LUMEN_BASE}#{href}"
+        next unless href.match?(LUMEN_PATH_RE)
+        next unless seen.add?(href)
+        next if cached?(href)
+
+        title = link.text.strip
+        articles << { url: href, title: title, date: nil, date_str: nil }
+      end
     end
 
-    puts "  -> #{articles.size} articles from listing page"
+    puts "  -> #{articles.size} Black Lotus Labs articles found"
     articles
   end
 
-  def listing_url(page) = "#{LUMEN_BASE}/blog-and-news/en-us/home"
+  def listing_url(_page) = LUMEN_LANDING_URL
   def parse_listing(_doc) = []
 
   def extract_article_date(doc)
@@ -57,12 +61,19 @@ class LumenBlackLotusLabsScraper < StandardPaginatedScraper
     return Date.parse(meta['content']) if meta
     time_el = doc.at_css('time[datetime]')
     return Date.parse(time_el['datetime']) if time_el
+    # AEM pages sometimes embed date in JSON-LD
+    ld = doc.at_css('script[type="application/ld+json"]')
+    if ld
+      data = JSON.parse(scrub(ld.text)) rescue {}
+      pub = data['datePublished'] || data['dateCreated']
+      return Date.parse(pub) if pub
+    end
     nil
   rescue ArgumentError, TypeError
     nil
   end
 
   def article_content(doc)
-    doc.at_css('.article-content, .blog-content, article, main') || doc.at_css('body')
+    doc.at_css('.article-content, .blog-content, .rte, article, main') || doc.at_css('body')
   end
 end
