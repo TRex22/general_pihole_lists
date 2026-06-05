@@ -1,7 +1,10 @@
 # frozen_string_literal: true
-# Cisco Talos package scraper
-# Pagination: https://blog.talosintelligence.com/page/N/
-# Listing pages carry no dates — probe last article for boundary date.
+# Cisco Talos Intelligence Blog package scraper (Ghost CMS)
+# Pagination: /page/N/ (confirmed working)
+# Listing pages carry no dates — probe_page_boundary_date fetches the last
+# article on each page to get a boundary date for the cutoff check.
+# PackageStandardPaginatedScraper#collect_article_urls calls probe_page_boundary_date
+# after processing each page's entries.
 
 class PackageTalosScraper < PackageStandardPaginatedScraper
   SOURCE_NAME = 'Cisco Talos (packages)'
@@ -29,6 +32,8 @@ class PackageTalosScraper < PackageStandardPaginatedScraper
     articles
   end
 
+  # Fetch the last article on the listing page to extract its published date.
+  # Uses cached date if already known to avoid an extra HTTP request.
   def probe_page_boundary_date(entries)
     last = entries.last
     return nil unless last
@@ -58,4 +63,6 @@ class PackageTalosScraper < PackageStandardPaginatedScraper
   def article_content(doc)
     doc.at_css('.post-content, article, main') || doc.at_css('body')
   end
+
+  def max_pages = 15
 end

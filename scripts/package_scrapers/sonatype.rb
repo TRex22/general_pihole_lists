@@ -1,19 +1,18 @@
 # frozen_string_literal: true
 # Sonatype Security Research blog scraper
 # URL: https://www.sonatype.com/blog (note: blog.sonatype.com is defunct)
-# Pagination: ?page=N (HubSpot CMS, 17+ pages)
-# Category filter: ?category=all&type=all&page=N
-# Supply-chain articles confirmed at paths like:
-#   /blog/lazarus-groups-latest-brandjacking-campaign-on-npm
+# Pagination: ?category=all&type=all&page=N (HubSpot CMS, 0-indexed, ~18 pages)
+# Confirmed: page=1 returns "Shai-Hulud npm" and "Lazarus/npm" articles
+# Article links are <h3> headings; wrapper class unknown — use URL-pattern scan.
 
-SONATYPE_BASE    = 'https://www.sonatype.com'
-SONATYPE_BLOG    = "#{SONATYPE_BASE}/blog"
+SONATYPE_BASE = 'https://www.sonatype.com'
+SONATYPE_BLOG = "#{SONATYPE_BASE}/blog"
 
-# Title keywords to avoid fetching every Sonatype blog post
 SONATYPE_TITLE_KEYWORDS = %w[
   npm pypi pip rubygems package packages supply.chain typosquat
   malicious.package open.source nuget maven gradle crates dependency
-  backdoor stealer brandjacking confusion attack
+  backdoor backdoored stealer brandjacking confusion attack malware
+  lazarus shai-hulud poisoning
 ].freeze
 
 class SonatypeScraper < PackageStandardPaginatedScraper
@@ -23,41 +22,44 @@ class SonatypeScraper < PackageStandardPaginatedScraper
 
   private
 
+  # HubSpot CMS — 0-indexed pages, full params required.
+  # collect_article_urls passes page=1,2,3… so subtract 1 for the query param.
   def listing_url(page)
-    # HubSpot CMS uses ?page=N (0-indexed, but page 0 and page 1 both work)
-    page == 1 ? SONATYPE_BLOG : "#{SONATYPE_BLOG}?page=#{page}"
+    page == 1 ? SONATYPE_BLOG : "#{SONATYPE_BLOG}?category=all&type=all&page=#{page - 1}"
   end
 
   def parse_listing(doc)
     articles = []
     seen     = Set.new
 
-    doc.css('article, .post, [class*="blog-post"], [class*="BlogCard"]').each do |art|
-      link = art.at_css('h1 a, h2 a, h3 a, .entry-title a, [class*="title"] a')
-      next unless link
-
+    # Try heading-link pattern (articles use <h3><a href>...)
+    doc.css('h3 a[href*="/blog/"], h2 a[href*="/blog/"]').each do |link|
       href = link['href'].to_s
       next if href.empty?
       href = href.start_with?('http') ? href : "#{SONATYPE_BASE}#{href}"
-      next unless href.include?('sonatype.com/blog')
+      next unless href.match?(%r{sonatype\.com/blog/[a-z0-9\-]+/?$})
       next unless seen.add?(href)
 
       title = link.text.strip
       next unless SONATYPE_TITLE_KEYWORDS.any? { |kw| title.downcase.match?(kw) }
 
-      date = parse_article_date(art)
+      date = extract_nearby_date(link)
       articles << { url: href, title: title, date_str: date&.to_s, date: date }
     end
 
-    # Fallback
+    # Fallback: broader anchor scan
     if articles.empty?
       doc.css('a[href*="/blog/"]').each do |link|
         href = link['href'].to_s
         href = href.start_with?('http') ? href : "#{SONATYPE_BASE}#{href}"
-        next unless href.match?(%r{sonatype\.com/blog/[a-z0-9\-]+/?$})
+        next unless href.match?(%r{sonatype\.com/blog/[a-z0-9][a-z0-9\-]+/?$})
+        next if href.end_with?('/blog/', '/blog')
         next unless seen.add?(href)
+
         title = link.text.strip
+        next if title.empty? || title.length < 10
         next unless SONATYPE_TITLE_KEYWORDS.any? { |kw| title.downcase.match?(kw) }
+
         articles << { url: href, title: title, date_str: nil, date: nil }
       end
     end
@@ -65,11 +67,16 @@ class SonatypeScraper < PackageStandardPaginatedScraper
     articles
   end
 
-  def parse_article_date(node)
-    time_el = node.at_css('time[datetime]')
-    return Date.parse(time_el['datetime']) if time_el
-    span = node.at_css('.entry-date, .post-date, .date, [class*="date"]')
-    return Date.parse(span.text.strip) if span
+  def extract_nearby_date(link)
+    el = link
+    3.times do
+      el = el.parent
+      break unless el
+      time_el = el.at_css('time[datetime]')
+      return Date.parse(time_el['datetime']) if time_el
+      span = el.at_css('.date, [class*="date"]')
+      return Date.parse(span.text.strip) if span
+    end
     nil
   rescue ArgumentError, TypeError
     nil
@@ -89,7 +96,7 @@ class SonatypeScraper < PackageStandardPaginatedScraper
     doc.at_css('.entry-content, .post-content, article, main') || doc.at_css('body')
   end
 
+  def max_pages = 20
   def parallel_workers = 3
-  def batch_delay      = 1
-  def max_pages        = 20
+  def batch_delay = 1
 end

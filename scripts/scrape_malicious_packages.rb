@@ -287,7 +287,7 @@ class PackageStandardPaginatedScraper < PackageBaseScraper
 
   private
 
-  def max_pages = 200
+  def max_pages = 50
 
   def collect_article_urls
     articles          = []
@@ -340,6 +340,10 @@ class PackageStandardPaginatedScraper < PackageBaseScraper
         new_count += 1
       end
 
+      # For scrapers whose listing pages carry no dates (Talos, etc.), probe the
+      # last article on this page to get a boundary date for the cutoff check.
+      oldest_date ||= probe_page_boundary_date(entries)
+
       puts "  -> #{new_count} new (total #{articles.size})"
       break if hit_cutoff || (oldest_date && oldest_date < cutoff)
 
@@ -352,14 +356,16 @@ class PackageStandardPaginatedScraper < PackageBaseScraper
         end
       end
 
-      if !incremental && @years.nil? && has_any_cache && new_count == 0
+      # Stop when pages are fully cached. Applies to all modes except an
+      # explicit --years full scan (which must traverse all N years).
+      if @years.nil? && new_count == 0 && has_any_cache
         consecutive_empty += 1
         if consecutive_empty >= @pages_back
           puts "  -> #{@pages_back} consecutive fully-cached pages — stopping."
           break
         end
-      else
-        consecutive_empty = 0 if new_count > 0
+      elsif new_count > 0
+        consecutive_empty = 0
       end
 
       sleep listing_page_delay
@@ -372,6 +378,44 @@ end
 # ────────────────────────────────────────────────────────────────────────────
 # Database writer — aggregates all cached packages into JSON + CSV
 # ────────────────────────────────────────────────────────────────────────────
+
+PKG_TYPE_CANONICAL = {
+  'pypi'            => 'PyPI',
+  'pip'             => 'PyPI',
+  'python'          => 'PyPI',
+  'npm'             => 'npm',
+  'node'            => 'npm',
+  'nodejs'          => 'npm',
+  'rubygems'        => 'RubyGems',
+  'ruby'            => 'RubyGems',
+  'gem'             => 'RubyGems',
+  'cargo'           => 'Cargo',
+  'crates.io'       => 'Cargo',
+  'rust'            => 'Cargo',
+  'nuget'           => 'NuGet',
+  'dotnet'          => 'NuGet',
+  '.net'            => 'NuGet',
+  'go'              => 'Go',
+  'golang'          => 'Go',
+  'maven'           => 'Maven',
+  'gradle'          => 'Maven',
+  'java'            => 'Maven',
+  'packagist'       => 'Packagist',
+  'composer'        => 'Packagist',
+  'php'             => 'Packagist',
+  'hex'             => 'Hex',
+  'elixir'          => 'Hex',
+  'github actions'  => 'GitHub Actions',
+  'github-actions'  => 'GitHub Actions',
+  'pub'             => 'Pub',
+  'dart'            => 'Pub',
+  'swift'           => 'Swift',
+  'cocoapods'       => 'CocoaPods',
+}.freeze
+
+def canonical_pkg_type(raw)
+  PKG_TYPE_CANONICAL[raw.downcase] || raw
+end
 
 def write_package_database(full_cache, json_file, csv_file, dry_run: false)
   # Aggregate: key = "name::type", value = {name, type, sources[], dates[]}
@@ -392,10 +436,10 @@ def write_package_database(full_cache, json_file, csv_file, dry_run: false)
 
       pkgs.each do |pkg|
         name = pkg['name'].to_s.strip
-        type = pkg['type'].to_s.strip
+        type = canonical_pkg_type(pkg['type'].to_s.strip)
         next if name.empty? || type.empty?
 
-        # Canonical key normalises npm package name to lowercase for deduplication
+        # Canonical key: npm names lowercased, others case-preserved
         canon_name = type == 'npm' ? name.downcase : name
         key = "#{canon_name}::#{type}"
 

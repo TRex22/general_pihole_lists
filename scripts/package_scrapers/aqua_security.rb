@@ -1,37 +1,64 @@
 # frozen_string_literal: true
 # Aqua Security (Team Nautilus) blog scraper
-# https://www.aquasec.com/blog/category/supply-chain-security/
-# Covers malicious packages in npm, PyPI, RubyGems, and container images.
+# WordPress site: /blog/page/N/ pagination (confirmed)
+# /blog/category/supply-chain-security/ returns 404 — scrape main blog instead.
+# Card selectors unknown; use URL-pattern link scan as reliable fallback.
+
+AQUA_BASE = 'https://www.aquasec.com'
+
+AQUA_TITLE_KEYWORDS = %w[
+  npm pypi pip rubygems package packages supply.chain typosquat
+  malicious.package nuget crates cargo maven dependency
+  backdoor stealer trojan attack open.source
+].freeze
 
 class AquaSecurityScraper < PackageStandardPaginatedScraper
   SOURCE_NAME = 'Aqua Security (Team Nautilus)'
   SOURCE_KEY  = 'aqua_security'
-  BASE_URL    = 'https://www.aquasec.com'
-  LISTING_BASE = "#{BASE_URL}/blog/category/supply-chain-security"
+  BASE_URL    = AQUA_BASE
 
   private
 
   def listing_url(page)
-    page == 1 ? "#{LISTING_BASE}/" : "#{LISTING_BASE}/page/#{page}/"
+    page == 1 ? "#{AQUA_BASE}/blog/" : "#{AQUA_BASE}/blog/page/#{page}/"
   end
 
   def parse_listing(doc)
     articles = []
     seen     = Set.new
 
-    doc.css('article, .post, .blog-post, [class*="BlogPost"]').each do |art|
-      link = art.at_css('h1 a, h2 a, h3 a, .entry-title a')
+    # Try WordPress article containers first
+    doc.css('article, .post, .blog-post, [class*="post-card"], [class*="article-card"]').each do |art|
+      link = art.at_css('h1 a, h2 a, h3 a, h4 a, .entry-title a')
       next unless link
 
       href = link['href'].to_s
       next if href.empty?
-      href = href.start_with?('http') ? href : "#{BASE_URL}#{href}"
-      next unless href.include?('aquasec.com')
+      href = href.start_with?('http') ? href : "#{AQUA_BASE}#{href}"
+      next unless href.include?('aquasec.com/blog/')
       next unless seen.add?(href)
 
       title = link.text.strip
-      date  = parse_article_date(art)
+      next unless AQUA_TITLE_KEYWORDS.any? { |kw| title.downcase.match?(kw) }
+
+      date = parse_article_date(art)
       articles << { url: href, title: title, date_str: date&.to_s, date: date }
+    end
+
+    # Fallback: URL-pattern scan (catches any card structure)
+    if articles.empty?
+      doc.css('a[href*="aquasec.com/blog/"]').each do |link|
+        href = link['href'].to_s
+        next if href.end_with?('/blog/', '/blog')
+        next unless href.match?(%r{aquasec\.com/blog/[a-z0-9\-]+/?$})
+        next unless seen.add?(href)
+
+        title = link.text.strip
+        next if title.empty?
+        next unless AQUA_TITLE_KEYWORDS.any? { |kw| title.downcase.match?(kw) }
+
+        articles << { url: href, title: title, date_str: nil, date: nil }
+      end
     end
 
     articles
@@ -60,4 +87,6 @@ class AquaSecurityScraper < PackageStandardPaginatedScraper
   def article_content(doc)
     doc.at_css('.entry-content, .post-content, article, main') || doc.at_css('body')
   end
+
+  def max_pages = 20
 end
