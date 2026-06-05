@@ -4,6 +4,11 @@
 #   - AWS service endpoints: https://docs.aws.amazon.com/general/latest/gr/rande.html
 #   - AWS IP address ranges: https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
 #   - AWS Sign-In allowlist domains: https://docs.aws.amazon.com/signin/latest/userguide/allowlist-domains.html
+#   - AWS dual-stack / threat mitigation endpoints: https://docs.aws.amazon.com/signin/latest/userguide/allowlist-domains.html (captcha section)
+#   - Amazon device network requirements: https://developer.amazon.com/docs/fire-tv/network-requirements.html
+#   - Amazon Alexa network requirements: https://developer.amazon.com/docs/alexa/alexa-voice-service/avs-for-aws-iot-getting-started.html
+# Note: unagi.amazon.com and dcape-na.amazon.com are undocumented internal endpoints
+#       discovered via traffic analysis (Amazon apps, Kindle, Shopping). No official source page exists.
 
 # AWS Console and Authentication
 console.aws.amazon.com
@@ -93,8 +98,16 @@ aws.dev
 uis.awsstatic.com
 console.aws.a2z.com
 
-# Sign-In CAPTCHA
+# Sign-In CAPTCHA (classic + dual-stack)
 opfcaptcha-prod.s3.amazonaws.com
+amcs-captcha-prod-us-east-1.s3.dualstack.us-east-1.amazonaws.com
+
+# Threat Mitigation CDN (new AWS access portal flow)
+cdn.us-east-1.threat-mitigation.aws.amazon.com
+us-east-1.threat-mitigation.aws.amazon.com
+
+# Short-form sign-in domain (newer AWS access portal)
+us-east-1.signin.aws
 
 # Documentation and Support
 docs.aws.amazon.com
