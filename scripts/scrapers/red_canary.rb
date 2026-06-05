@@ -2,14 +2,21 @@
 # Red Canary scraper
 #
 # No URL-based pagination found on listing page (uses JS filter widgets).
-# Sitemap is the reliable discovery path.
-# Articles are under /blog/<slug>/ — other /resources/ paths skipped.
+# Sitemap (sitemap_index → post-sitemap.xml + threat-sitemap.xml) is the discovery path.
 #
-# Article URLs: https://redcanary.com/blog/<slug>/
+# Blog articles use a two-level path: /blog/<category>/<slug>/
+# e.g. /blog/threat-detection/detection-profile-silent-periodic-activity/
+#
+# Threat profiles are also useful: /threat-detection-report/threats/<slug>/
 
 RED_CANARY_BASE        = 'https://redcanary.com'
 RED_CANARY_SITEMAP_URL = "#{RED_CANARY_BASE}/sitemap.xml"
-RED_CANARY_PATH_RE     = %r{redcanary\.com/blog/[a-z0-9][a-z0-9\-]+/?$}
+
+# Matches /blog/[category]/[slug]/ (two-level) and /threat-detection-report/threats/[slug]/
+RED_CANARY_PATH_RE = %r{
+  redcanary\.com/blog/[a-z0-9][a-z0-9\-]+/[a-z0-9][a-z0-9\-]+/?$ |
+  redcanary\.com/threat-detection-report/threats/[a-z0-9][a-z0-9\-]+/?$
+}x
 
 class RedCanaryScraper < StandardPaginatedScraper
   SOURCE_NAME = 'Red Canary'
@@ -33,7 +40,7 @@ class RedCanaryScraper < StandardPaginatedScraper
     return Date.parse(time_el['datetime']) if time_el
     ld = doc.at_css('script[type="application/ld+json"]')
     if ld
-      data = JSON.parse(ld.text) rescue {}
+      data = JSON.parse(scrub(ld.text)) rescue {}
       pub = data['datePublished']
       return Date.parse(pub) if pub
     end
