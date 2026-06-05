@@ -1,0 +1,79 @@
+# Avast Antivirus Allowlist for Pi-hole
+# Required domains for Avast to update, activate, and scan correctly.
+# Telemetry and analytics domains (stats*.avast.com, analytics.*, ping.avast.com,
+# double.avast.com, deals.avast.com) are intentionally excluded.
+# Business/managed-deployment-only domains (islonline.net, sosonlinebackup.com) excluded.
+# Sources:
+#   - Avast Business firewall requirements: https://businesshelp.avast.com/Content/Products/AfB_Antivirus/AntivirusManagement/FirewallRequirements.htm
+#   - Avast Business full firewall reqs:    https://businesshelp.avast.com/Content/Products/SysReqs/FirewallReqs_Full.htm
+#   - Avast Linux update requirements:      https://businesshelp.avast.com/Content/Products/AfB_Antivirus/Linux/UpdatingAvastBusinessAntivirusLinux.htm
+#   - Netify Avast app info:                https://www.netify.ai/resources/applications/avast
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Connectivity check
+# (Avast explicitly requires this; blocking it breaks LiveUpdate and update checks)
+# ─────────────────────────────────────────────────────────────────────────────
+ncc.avast.com
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Virus definition and program updates
+# ─────────────────────────────────────────────────────────────────────────────
+update.avast.com
+uupdate.avast.com
+su.ff.avast.com
+bits.ff.avast.com
+bits.avast.com
+emupdate.avcdn.net
+emupdate.bav.avcdn.net
+u.avcdn.net
+linux-av.u.avcdn.net
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Activation and licensing
+# ─────────────────────────────────────────────────────────────────────────────
+id.avast.com
+setupini.avast.com
+config.avast.com
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Cloud scanning and threat intelligence
+# ─────────────────────────────────────────────────────────────────────────────
+ff.avast.com
+shepherd.ff.avast.com
+shepherd.avcdn.net
+filerep-replica.ff.avast.com
+filerep-replica-win.ff.avast.com
+filerep-squared.ff.avast.com
+urlite.ff.avast.com
+urlite-prod-gcp.ff.avast.com
+ip-info.ff.avast.com
+connectivity.ff.avast.com
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Account portal and UI
+# ─────────────────────────────────────────────────────────────────────────────
+avast.com
+www.avast.com
+my-win.avast.com
+remote.avast.com
+store.avast.com
+ng.avast.com
+static.avast.com
+s-nuistatic.avcdn.net
+
+# ─────────────────────────────────────────────────────────────────────────────
+# In-product messaging / notifications
+# (Blocks upsell popups and in-app prompts if removed; does not affect scanning)
+# ─────────────────────────────────────────────────────────────────────────────
+ipm-provider.ff.avast.com
+ipmcdn.avast.com
+ipm.avcdn.net
+uib.ff.avast.com
+nos.ns1.ff.avast.com
+push.ff.avast.com
+
+# ─────────────────────────────────────────────────────────────────────────────
+# AVG (Avast-owned product — required for mixed Avast/AVG environments)
+# ─────────────────────────────────────────────────────────────────────────────
+avg.com
+www.avg.com

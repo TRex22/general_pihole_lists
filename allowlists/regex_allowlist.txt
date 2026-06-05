@@ -86,6 +86,16 @@
 # Source: https://tailscale.com/kb/1082/firewall-ports
 (^|\.)tailscale\.com$
 
+# ── Avast / AVG ───────────────────────────────────────────────────────────────
+# Avast uses many dynamic subdomains under avast.com (ff.avast.com subtree,
+# update servers, cloud scanning) and avcdn.net (CDN for definitions and assets).
+# Plain entries in avast.txt cover known specific hostnames; these regexes catch
+# any additional subdomains Avast introduces without requiring a file update.
+# Source: https://businesshelp.avast.com/Content/Products/SysReqs/FirewallReqs_Full.htm
+(^|\.)avast\.com$
+(^|\.)avcdn\.net$
+(^|\.)avg\.com$
+
 # ── MediaFire ─────────────────────────────────────────────────────────────────
 # Download servers use dynamically-numbered subdomains (download1825.mediafire.com,
 # download2389.mediafire.com, etc.). Plain entries in general.txt cover the root
