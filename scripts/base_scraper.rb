@@ -133,6 +133,9 @@ class BaseScraper
   def scan_for_iocs(text, domains, ips, plain_text: false)
     return if text.nil? || text.empty?
 
+    # Scrub invalid bytes (e.g. from Wayback Machine pages with mixed encodings)
+    text = text.encode('UTF-8', invalid: :replace, undef: :replace, replace: '')
+
     text.scan(DEFANGED_TOKEN_RE) do |m|
       candidate = normalize_domain(m)
       if valid_ipv4?(candidate)
@@ -437,6 +440,7 @@ class BaseScraper
     end
     sleep(delay) if delay > 0
 
+    last_code = nil
     retries.times do |attempt|
       begin
         response = HTTParty.get(
@@ -448,6 +452,7 @@ class BaseScraper
 
         return response if response.success?
 
+        last_code = response.code
         warn "  HTTP #{response.code} for #{url} (attempt #{attempt + 1}/#{retries})"
       rescue StandardError => e
         warn "  Error: #{e.message} for #{url} (attempt #{attempt + 1}/#{retries})"
@@ -456,7 +461,37 @@ class BaseScraper
       sleep(1 * (attempt + 1)) unless attempt == retries - 1
     end
 
+    # Fallback: try Wayback Machine when all retries got a 403 (bot protection)
+    return fetch_via_wayback(url) if last_code == 403
+
     nil
+  end
+
+  # Fetch a URL via the Internet Archive Wayback Machine.
+  # Used as a transparent fallback when the live page returns 403.
+  def fetch_via_wayback(url)
+    avail_url = "https://archive.org/wayback/available?url=#{URI.encode_www_form_component(url)}"
+
+    begin
+      check = HTTParty.get(avail_url, timeout: 20, follow_redirects: true)
+      return nil unless check.success?
+
+      data     = JSON.parse(check.body)
+      snapshot = data.dig('archived_snapshots', 'closest')
+      return nil unless snapshot&.fetch('available', false) && snapshot['status'] == '200'
+
+      # Availability API returns http:// — force HTTPS (archive.org refuses port 80)
+      wayback_url = snapshot['url'].sub(/\Ahttp:\/\//, 'https://')
+      puts "  [Wayback] #{url.split('/').last(2).join('/')} → #{snapshot['timestamp']}"
+
+      HTTParty.get(wayback_url,
+                   headers:          request_headers,
+                   timeout:          60,
+                   follow_redirects: true)
+    rescue StandardError => e
+      warn "  [Wayback] error for #{url}: #{e.message}"
+      nil
+    end
   end
 
   # ── OCR ─────────────────────────────────────────────────────────────────────
@@ -513,8 +548,14 @@ class BaseScraper
 
     ensure_macos_ocr_compiled if ocr_backend == :macos
 
+    # Percent-encode non-ASCII characters (e.g. em dashes, Cyrillic in filenames)
+    # Also force HTTPS for Wayback Machine image proxy URLs (availability API returns http://)
+    safe_url = image_url.encode('UTF-8').gsub(/[^\x00-\x7F]/) { |c|
+      c.bytes.map { |b| format('%%%02X', b) }.join
+    }.sub(/\Ahttp:\/\/web\.archive\.org/, 'https://web.archive.org')
+
     response = HTTParty.get(
-      image_url,
+      safe_url,
       headers: request_headers,
       timeout: 30,
       follow_redirects: true

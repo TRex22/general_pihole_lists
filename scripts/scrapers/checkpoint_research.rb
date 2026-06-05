@@ -91,4 +91,8 @@ class CheckpointResearchScraper < StandardPaginatedScraper
   def article_content(doc)
     doc.at_css('.entry-content, .post-content, article, main') || doc.at_css('body')
   end
+
+  # 10 workers: Cloudflare blocks bursts >20, but archive.org handles concurrency fine
+  def parallel_workers = [@parallel, 10].min
+  def batch_delay      = 2
 end
