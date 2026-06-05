@@ -3,6 +3,10 @@
 # Useful old source: https://github.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/tree/master/Whitelist-Modules
 # Common domains that may need whitelisting for functionality
 
+# Public IP lookup — used by home automation, dev tools, and network scripts
+api.ipify.org
+ipify.org
+
 # Captive Portal Detection (required for WiFi login pages)
 # Google captive portal domains are in google.txt
 www.msftncsi.com
@@ -96,9 +100,11 @@ themoviedb.org
 api.themoviedb.org
 image.tmdb.org
 
-# Adobe (for updates/activation)
+# Adobe (for updates/activation, DC API, Creative Cloud sharing)
 fpdownload.adobe.com
 entitlement.auth.adobe.com
+dc-api.adobe.io
+cdn-sharing.adobecc.com
 
 # Unifi
 ping.ui.com
@@ -208,6 +214,7 @@ update.nothing.tech
 notification.nothing.tech
 nothingtech.link
 weather1.nothingtech.link
+news.nothingtech.link
 
 # Pushbullet
 # Source: https://docs.pushbullet.com/
@@ -976,3 +983,76 @@ block.energized.pro
 # Netify network intelligence (used for shopping/service research)
 netify.ai
 www.netify.ai
+
+# ─────────────────────────────────────────────────────────────────────
+# Malicious Domain Scraper Sources
+# (Domains fetched by scripts/scrape_malicious_domains.rb)
+# ─────────────────────────────────────────────────────────────────────
+
+# Existing sources (also in Blocklist Sources & Security Research section)
+thehackernews.com
+blogger.googleusercontent.com
+bleepingcomputer.com
+bleepstatic.com
+krebsonsecurity.com
+isc.sans.edu
+blog.talosintelligence.com
+talosintelligence.com
+# unit42.paloaltonetworks.com  # already in Blocklist Sources section (line 956)
+securelist.com
+# malwarebytes.com  # already listed above (line 229)
+welivesecurity.com
+# proofpoint.com  # already listed above (line 302)
+microsoft.com
+cloud.google.com
+any.run
+sophos.com
+news.sophos.com
+
+# New sources (Tier 1)
+research.checkpoint.com
+checkpoint.com
+sentinelone.com
+fortinet.com
+fortiguard.com
+trendmicro.com
+zscaler.com
+elastic.co
+search.elastic.co
+
+# New sources (Tier 2)
+lumen.com
+assets.lumen.com
+crowdstrike.com
+huntress.com
+volexity.com
+security.com
+symantec-enterprise-blogs.security.com
+redcanary.com
+
+# ─────────────────────────────────────────────────────────────────────
+# Package Scraper Sources
+# (Domains fetched by scripts/scrape_malicious_packages.rb)
+# ─────────────────────────────────────────────────────────────────────
+
+socket.dev
+checkmarx.com
+jfrog.com
+snyk.io
+sonatype.com
+www.sonatype.com
+blog.sonatype.com
+aquasecurity.github.io
+www.aquasec.com
+# github.com  # already in Source Control & Container Registries section (line 804)
+# raw.githubusercontent.com  # already in Source Control & Container Registries section (line 806)
+# api.github.com  # already in Source Control & Container Registries section (line 805)
+
+# Product manuals reference site
+manualsdump.com
+
+# Mailchimp transactional email (Mandrill)
+mandrillapp.com
+
+# DuckDB extensions
+extensions.duckdb.org
