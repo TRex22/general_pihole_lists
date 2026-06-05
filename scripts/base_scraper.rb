@@ -68,6 +68,13 @@ class BaseScraper
 
   private
 
+  # Scrub any invalid / undefined bytes from a string to valid UTF-8.
+  # Used on all text extracted from external HTML (especially Wayback Machine
+  # pages, which can mix encodings).
+  def scrub(str)
+    str.to_s.encode('UTF-8', invalid: :replace, undef: :replace, replace: '')
+  end
+
   # ── Domain helpers ──────────────────────────────────────────────────────────
 
   def refang(text)
@@ -133,8 +140,7 @@ class BaseScraper
   def scan_for_iocs(text, domains, ips, plain_text: false)
     return if text.nil? || text.empty?
 
-    # Scrub invalid bytes (e.g. from Wayback Machine pages with mixed encodings)
-    text = text.encode('UTF-8', invalid: :replace, undef: :replace, replace: '')
+    text = scrub(text)
 
     text.scan(DEFANGED_TOKEN_RE) do |m|
       candidate = normalize_domain(m)
@@ -187,14 +193,14 @@ class BaseScraper
 
   def extract_ioc_section(doc, headings: IOC_HEADINGS)
     doc.css('h1,h2,h3,h4,h5,h6,strong,b,th,td').each do |node|
-      text = node.text.strip.downcase
+      text = scrub(node.text).strip.downcase
       next unless headings.any? { |h| text.include?(h) }
 
       ioc_parts = []
       sib = node.next_sibling
       while sib
         break if sib.element? && sib.name.match?(/\Ah[1-6]\z/i)
-        ioc_parts << sib.text
+        ioc_parts << scrub(sib.text)
         sib = sib.next_sibling
       end
 
@@ -203,7 +209,7 @@ class BaseScraper
         sib = parent&.next_sibling
         while sib
           break if sib.element? && sib.name.match?(/\Ah[1-6]\z/i)
-          ioc_parts << sib.text
+          ioc_parts << scrub(sib.text)
           sib = sib.next_sibling
         end
       end
@@ -1004,12 +1010,12 @@ class StandardPaginatedScraper < BaseScraper
     end
 
     doc   = Nokogiri::HTML(resp.body)
-    title = article[:title] || doc.at_css('h1')&.text&.strip
+    title = article[:title] || scrub(doc.at_css('h1')&.text.to_s).strip
 
     domains  = Set.new
     ips      = Set.new
     content  = article_content(doc)
-    scan_for_iocs(content&.text.to_s, domains, ips)
+    scan_for_iocs(scrub(content&.text.to_s), domains, ips)
 
     ioc_text = extract_ioc_section(doc, headings: ioc_headings)
     scan_for_iocs(ioc_text.to_s, domains, ips, plain_text: true)

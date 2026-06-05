@@ -86,6 +86,7 @@ apps.apple.com
 amp-api.apps.apple.com
 bag.itunes.apple.com
 fpinit.itunes.apple.com
+init.itunes.apple.com
 mzstatic.com
 s.mzstatic.com
 is1-ssl.mzstatic.com
@@ -108,8 +109,9 @@ gateway.icloud.com
 init.gc.apple.com
 ocsp2.g.aaplimg.com
 
-# Carrier Updates
+# Carrier Updates / Akamai edge hostnames (plain entries are exact-match; subdomains of edgekey.net in general.txt don't cover these)
 appldnld.apple.com.edgesuite.net
+itunes.apple.com.edgekey.net
 
 # iCloud Core Services
 www.icloud.com
