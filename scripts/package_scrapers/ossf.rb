@@ -16,21 +16,24 @@
 
 OSSF_REPO_BASE = 'https://api.github.com/repos/ossf/malicious-packages'
 
+# Normalises OSSF directory names to canonical ecosystem labels.
+# Includes both the capitalised forms (repo README) and lowercase forms
+# (actual directory names observed in the repo tree).
 OSSF_ECOSYSTEM_MAP = {
-  'PyPI'           => 'PyPI',
+  'PyPI'           => 'PyPI',  'pypi'           => 'PyPI',
   'npm'            => 'npm',
-  'RubyGems'       => 'RubyGems',
-  'crates.io'      => 'Cargo',
-  'NuGet'          => 'NuGet',
-  'Go'             => 'Go',
-  'Maven'          => 'Maven',
-  'GitHub Actions' => 'GitHub Actions',
-  'Packagist'      => 'Packagist',
-  'Hex'            => 'Hex',
+  'RubyGems'       => 'RubyGems', 'rubygems'    => 'RubyGems',
+  'crates.io'      => 'Cargo',    'cargo'       => 'Cargo',
+  'NuGet'          => 'NuGet',    'nuget'       => 'NuGet',
+  'Go'             => 'Go',       'go'          => 'Go',
+  'Maven'          => 'Maven',    'maven'       => 'Maven',
+  'GitHub Actions' => 'GitHub Actions', 'github-actions' => 'GitHub Actions',
+  'Packagist'      => 'Packagist', 'packagist'  => 'Packagist',
+  'Hex'            => 'Hex',      'hex'         => 'Hex',
   'Hex.pm'         => 'Hex',
-  'SwiftURL'       => 'Swift',
-  'CocoaPods'      => 'CocoaPods',
-  'Pub'            => 'Pub',
+  'SwiftURL'       => 'Swift',    'swift'       => 'Swift',
+  'CocoaPods'      => 'CocoaPods', 'cocoapods'  => 'CocoaPods',
+  'Pub'            => 'Pub',      'pub'         => 'Pub',
   'OSS-Fuzz'       => 'OSS-Fuzz',
   'GHSAdb'         => 'GHSAdb',
 }.freeze
