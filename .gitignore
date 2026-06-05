@@ -9,6 +9,9 @@ scripts/blocklist_project_cache.json
 scripts/malicious_packages_cache.json
 scripts/malicious_packages_cache.json.*
 
+# AI blocklist reviewer cache — tracks (model, domain) pairs already reviewed
+scripts/ai_review_cache.json
+
 # Temporary file used as dummy output_file placeholder during package scraping
 databases/.pkg_tmp
 
