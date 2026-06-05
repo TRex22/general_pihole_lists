@@ -39,7 +39,7 @@ class SophosScraper < StandardPaginatedScraper
     end
 
     warn '  -> Sitemap unreachable — falling back to RSS feed.'
-    collect_via_rss
+    collect_via_sophos_rss
   end
 
   def parse_sitemap_urls(body)
@@ -52,7 +52,7 @@ class SophosScraper < StandardPaginatedScraper
       .map    { |u| { url: u, title: nil, date_str: nil, date: nil } }
   end
 
-  def collect_via_rss
+  def collect_via_sophos_rss
     puts "  Fetching RSS feed (#{RSS_URL})..."
     resp = fetch_with_retry(RSS_URL)
     unless resp

@@ -48,6 +48,18 @@ require_relative 'scrapers/microsoft_security'
 require_relative 'scrapers/google_threat_intel'
 require_relative 'scrapers/anyrun'
 require_relative 'scrapers/sophos'
+require_relative 'scrapers/checkpoint_research'
+require_relative 'scrapers/volexity'
+require_relative 'scrapers/sentinelone'
+require_relative 'scrapers/elastic_security'
+require_relative 'scrapers/zscaler_threatlabz'
+require_relative 'scrapers/symantec_threatintel'
+require_relative 'scrapers/lumen_blacklotus'
+require_relative 'scrapers/red_canary'
+require_relative 'scrapers/fortiguard'
+require_relative 'scrapers/trendmicro'
+require_relative 'scrapers/crowdstrike'
+require_relative 'scrapers/huntress'
 
 ALL_SCRAPERS = {
   'thehackernews'       => THNScraper,
@@ -64,6 +76,18 @@ ALL_SCRAPERS = {
   'google_threat_intel' => GoogleThreatIntelScraper,
   'anyrun'              => AnyRunScraper,
   'sophos'              => SophosScraper,
+  'checkpoint_research'  => CheckpointResearchScraper,
+  'volexity'             => VolexityScraper,
+  'sentinelone'          => SentinelOneScraper,
+  'elastic_security'     => ElasticSecurityScraper,
+  'zscaler_threatlabz'   => ZscalerThreatLabzScraper,
+  'symantec_threatintel' => SymantecThreatIntelScraper,
+  'lumen_blacklotus'     => LumenBlackLotusLabsScraper,
+  'red_canary'           => RedCanaryScraper,
+  'fortiguard'           => FortiguardScraper,
+  'trendmicro'           => TrendMicroScraper,
+  'crowdstrike'          => CrowdStrikeScraper,
+  'huntress'             => HuntressScraper,
 }.freeze
 
 # ────────────────────────────────────────────────────────────────────────────
