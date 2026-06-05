@@ -103,3 +103,7 @@ aws.amazon.com
 # AWS WAF (Web Application Firewall)
 # Token subdomain used for bot-detection challenges — dynamic subdomains under awswaf.com
 awswaf.com
+
+# Amazon internal service subdomains (used by Amazon apps/devices)
+unagi.amazon.com
+dcape-na.amazon.com

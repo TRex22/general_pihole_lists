@@ -26,3 +26,5 @@ query_logs/
 # Bundler — gems installed by CI or local bundle install --path
 vendor/bundle
 .bundle/
+
+tmp/
