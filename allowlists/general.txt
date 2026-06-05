@@ -50,6 +50,10 @@ dl.dropboxusercontent.com
 ns1.dropbox.com
 ns2.dropbox.com
 
+# MediaFire (file hosting — legitimate service; download servers use dynamic numbered subdomains covered by regex)
+mediafire.com
+www.mediafire.com
+
 # Reddit
 styles.redditmedia.com
 www.redditstatic.com

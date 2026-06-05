@@ -85,3 +85,10 @@
 # Core domains are also listed explicitly in general.txt.
 # Source: https://tailscale.com/kb/1082/firewall-ports
 (^|\.)tailscale\.com$
+
+# ── MediaFire ─────────────────────────────────────────────────────────────────
+# Download servers use dynamically-numbered subdomains (download1825.mediafire.com,
+# download2389.mediafire.com, etc.). Plain entries in general.txt cover the root
+# and www; this regex covers all download subdomains.
+# Note: ww.mediafire.com (typosquat) is intentionally kept in malicious.txt.
+(^|\.)mediafire\.com$
