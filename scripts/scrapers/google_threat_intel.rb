@@ -53,7 +53,7 @@ class GoogleThreatIntelScraper < StandardPaginatedScraper
           break
         end
 
-        next if @cache['articles'][entry[:url]]
+        next if cached?(entry[:url])
         articles << entry
       end
 

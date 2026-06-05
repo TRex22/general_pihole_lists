@@ -59,7 +59,7 @@ class AnyRunScraper < StandardPaginatedScraper
           break
         end
 
-        next if @cache['articles'][url_str]
+        next if cached?(url_str)
 
         raw_title = post.dig('title', 'rendered') || post['title'].to_s
         title     = Nokogiri::HTML(raw_title).text.strip

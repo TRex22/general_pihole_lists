@@ -183,6 +183,7 @@ options = {
   browser_fetch:  false,
   skip_ocr:       false,
   ocr_only:       false,
+  ignore_cache:   false,
   sources:        nil,
   status:         false,
 }
@@ -245,6 +246,11 @@ OptionParser.new do |opts|
     options[:ocr_only] = true
   end
 
+  opts.on('--ignore-cache',
+          'Re-fetch every article even if already cached (cache is still updated)') do
+    options[:ignore_cache] = true
+  end
+
   opts.on('--sources KEYS',
           'Comma-separated source keys to scrape (default: all)') do |v|
     options[:sources] = v.split(',').map(&:strip).map(&:downcase)
@@ -271,6 +277,7 @@ puts '=' * 60
 puts "Output file : #{File.expand_path(options[:output_file])}"
 puts "Cache file  : #{File.expand_path(options[:cache_file])}"
 puts "Dry run     : #{options[:dry_run]}"
+puts "Ignore cache: #{options[:ignore_cache]}"
 all_sources_label = "all (#{ALL_SCRAPERS.keys.join(', ')})"
 puts "Sources     : #{options[:sources] ? options[:sources].join(', ') : all_sources_label}"
 puts
@@ -340,7 +347,8 @@ scrapers_to_run.each do |source_key, klass|
       rescan_images: options[:rescan_images],
       browser_fetch: options[:browser_fetch],
       skip_ocr:      options[:skip_ocr],
-      ocr_only:      options[:ocr_only]
+      ocr_only:      options[:ocr_only],
+      ignore_cache:  options[:ignore_cache]
     ).run
   rescue StandardError => e
     warn "Error scraping #{source_name}: #{e.message}"

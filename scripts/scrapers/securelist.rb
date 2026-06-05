@@ -58,7 +58,7 @@ class SecurelistScraper < StandardPaginatedScraper
           seen.add(entry[:url])
           # Listing pages carry no dates — skip per-entry date check here;
           # we probe the last article below instead.
-          next if @cache['articles'][entry[:url]]
+          next if cached?(entry[:url])
           articles << entry
           new_count += 1
         end

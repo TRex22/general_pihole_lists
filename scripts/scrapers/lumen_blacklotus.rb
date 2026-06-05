@@ -40,7 +40,7 @@ class LumenBlackLotusLabsScraper < StandardPaginatedScraper
       href = href.start_with?('http') ? href : "#{LUMEN_BASE}#{href}"
       next unless href.match?(LUMEN_PATH_RE)
       next unless seen.add?(href)
-      next if @cache['articles'][href]
+      next if cached?(href)
       articles << { url: href, title: link.text.strip, date: nil, date_str: nil }
     end
 

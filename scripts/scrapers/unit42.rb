@@ -90,7 +90,7 @@ class Unit42Scraper < StandardPaginatedScraper
           break
         end
 
-        next if @cache['articles'][url_str]
+        next if cached?(url_str)
 
         raw_title = post.dig('title', 'rendered').to_s
         title     = Nokogiri::HTML(raw_title).text.strip
@@ -155,7 +155,7 @@ class Unit42Scraper < StandardPaginatedScraper
           hit_cutoff = true
           break
         end
-        next if @cache['articles'][entry[:url]]
+        next if cached?(entry[:url])
         articles << entry
       end
 

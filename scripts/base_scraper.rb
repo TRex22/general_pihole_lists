@@ -52,7 +52,8 @@ IOC_HEADINGS = %w[
 # ────────────────────────────────────────────────────────────────────────────
 
 class BaseScraper
-  def initialize(output_file:, cache:, full_cache:, cache_file:, dry_run:, browser_fetch: false, skip_ocr: false)
+  def initialize(output_file:, cache:, full_cache:, cache_file:, dry_run:,
+                 browser_fetch: false, skip_ocr: false, ignore_cache: false)
     @output_file     = File.expand_path(output_file)
     @cache           = cache
     @full_cache      = full_cache
@@ -60,6 +61,7 @@ class BaseScraper
     @dry_run         = dry_run
     @browser_fetch   = browser_fetch
     @skip_ocr        = skip_ocr
+    @ignore_cache    = ignore_cache
     @pending         = {}
     @mutex           = Mutex.new
     @request_mutex   = Mutex.new
@@ -67,6 +69,12 @@ class BaseScraper
   end
 
   private
+
+  # Returns true when a URL is already in cache and --ignore-cache was not set.
+  def cached?(url)
+    return false if @ignore_cache
+    @cache['articles'].key?(url)
+  end
 
   # Scrub any invalid / undefined bytes from a string to valid UTF-8.
   # Used on all text extracted from external HTML (especially Wayback Machine
@@ -849,10 +857,10 @@ end
 class StandardPaginatedScraper < BaseScraper
   def initialize(years:, pages_back:, parallel:, output_file:, cache:, full_cache:,
                  cache_file:, dry_run:, browser_fetch: false, skip_ocr: false,
-                 ocr_only: false, lookback_days: nil, **_opts)
+                 ocr_only: false, lookback_days: nil, ignore_cache: false, **_opts)
     super(output_file: output_file, cache: cache, full_cache: full_cache,
           cache_file: cache_file, dry_run: dry_run, browser_fetch: browser_fetch,
-          skip_ocr: skip_ocr)
+          skip_ocr: skip_ocr, ignore_cache: ignore_cache)
     @years         = years
     @pages_back    = pages_back
     @lookback_days = lookback_days
@@ -963,7 +971,7 @@ class StandardPaginatedScraper < BaseScraper
           break
         end
 
-        next if @cache['articles'][entry[:url]]
+        next if cached?(entry[:url])
 
         articles << entry
         new_count += 1
@@ -1073,7 +1081,7 @@ class StandardPaginatedScraper < BaseScraper
                     &.text&.strip
       date     = (Date.parse(date_str) rescue nil)
       next if date && date < cutoff
-      next if @cache['articles'][url_str]
+      next if cached?(url_str)
 
       title = item.at_css('title')&.text.to_s.strip
       articles << { url: url_str, title: title, date: date, date_str: date&.to_s }
@@ -1132,7 +1140,7 @@ class StandardPaginatedScraper < BaseScraper
       lastmod = url_el.at_css('lastmod')&.text&.strip
       date    = lastmod ? (Date.parse(lastmod) rescue nil) : nil
       next if date && date < cutoff
-      next if @cache['articles'][loc]
+      next if cached?(loc)
 
       articles << { url: loc, title: nil, date: date, date_str: date&.to_s }
     end

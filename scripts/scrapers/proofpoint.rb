@@ -55,7 +55,7 @@ class ProofpointScraper < StandardPaginatedScraper
           break
         end
 
-        next if @cache['articles'][url]
+        next if cached?(url)
         title = hit['title'] || hit['post_title']
         articles << { url: url, title: title, date_str: date&.to_s, date: date }
       end
