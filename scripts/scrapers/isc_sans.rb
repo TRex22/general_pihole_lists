@@ -12,10 +12,10 @@ class ISCSansScraper < BaseScraper
 
   def initialize(years:, pages_back:, parallel:, output_file:, cache:, full_cache:,
                  cache_file:, dry_run:, browser_fetch: false, skip_ocr: false,
-                 ocr_only: false, lookback_days: nil, **_opts)
+                 ocr_only: false, lookback_days: nil, ignore_cache: false, **_opts)
     super(output_file: output_file, cache: cache, full_cache: full_cache,
           cache_file: cache_file, dry_run: dry_run, browser_fetch: browser_fetch,
-          skip_ocr: skip_ocr)
+          skip_ocr: skip_ocr, ignore_cache: ignore_cache)
     @years         = years
     @pages_back    = pages_back
     @lookback_days = lookback_days
@@ -107,7 +107,7 @@ class ISCSansScraper < BaseScraper
         next unless href.start_with?('http') && href.match?(/\/diary\//)
         next if seen.include?(href)
         seen.add(href)
-        next if @cache['articles'][href]
+        next if cached?(href)
         title = link.text.strip
         articles << { url: href, title: title, date_str: current.to_s, date: current }
       end

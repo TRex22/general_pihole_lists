@@ -51,7 +51,7 @@ class CheckpointResearchScraper < StandardPaginatedScraper
           hit_cutoff = true
           break
         end
-        next if @cache['articles'][url_str]
+        next if cached?(url_str)
 
         title = Nokogiri::HTML(post.dig('title', 'rendered').to_s).text.strip
         articles << { url: url_str, title: title, date: date, date_str: date&.to_s }

@@ -40,7 +40,7 @@ class SymantecThreatIntelScraper < StandardPaginatedScraper
       href = href.start_with?('http') ? href : "#{SYMANTEC_BASE}#{href}"
       next unless href.match?(SYMANTEC_PATH_RE)
       next unless seen.add?(href)
-      next if @cache['articles'][href]
+      next if cached?(href)
 
       articles << { url: href, title: link.text.strip, date: nil, date_str: nil }
     end
