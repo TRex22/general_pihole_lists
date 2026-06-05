@@ -440,7 +440,6 @@ class BaseScraper
     end
     sleep(delay) if delay > 0
 
-    last_code = nil
     retries.times do |attempt|
       begin
         response = HTTParty.get(
@@ -452,7 +451,13 @@ class BaseScraper
 
         return response if response.success?
 
-        last_code = response.code
+        if response.code == 403
+          warn "  HTTP 403 for #{url} (attempt #{attempt + 1}/#{retries}) — retrying via archive.org"
+          wayback = fetch_via_wayback(url)
+          return wayback if wayback
+          break  # Wayback also failed; no point retrying the blocked URL
+        end
+
         warn "  HTTP #{response.code} for #{url} (attempt #{attempt + 1}/#{retries})"
       rescue StandardError => e
         warn "  Error: #{e.message} for #{url} (attempt #{attempt + 1}/#{retries})"
@@ -460,9 +465,6 @@ class BaseScraper
 
       sleep(1 * (attempt + 1)) unless attempt == retries - 1
     end
-
-    # Fallback: try Wayback Machine when all retries got a 403 (bot protection)
-    return fetch_via_wayback(url) if last_code == 403
 
     nil
   end
