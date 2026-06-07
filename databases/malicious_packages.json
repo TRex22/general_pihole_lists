@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06T21:54:44Z",
-  "total": 51082,
+  "generated_at": "2026-06-07T21:52:02Z",
+  "total": 51090,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -16209,6 +16209,18 @@
       "last_seen": null
     },
     {
+      "name": "bittensor-burn-watch",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bittensor-burn-watch",
+          "title": "PyPI/bittensor-burn-watch"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "biup-utils",
       "type": "PyPI",
       "sources": [
@@ -20769,6 +20781,18 @@
       "last_seen": null
     },
     {
+      "name": "clip-logger",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/clip-logger",
+          "title": "PyPI/clip-logger"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "clipcord",
       "type": "PyPI",
       "sources": [
@@ -20919,6 +20943,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/clowpy",
           "title": "PyPI/clowpy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "cmd2func",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cmd2func",
+          "title": "PyPI/cmd2func"
         }
       ],
       "first_seen": null,
@@ -23438,6 +23474,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cookiesjar",
           "title": "PyPI/cookiesjar"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "coolbox",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/coolbox",
+          "title": "PyPI/coolbox"
         }
       ],
       "first_seen": null,
@@ -42725,6 +42773,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/execjs",
           "title": "PyPI/execjs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "executor-engine",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/executor-engine",
+          "title": "PyPI/executor-engine"
         }
       ],
       "first_seen": null,
@@ -67012,6 +67072,30 @@
       "last_seen": null
     },
     {
+      "name": "magique",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/magique",
+          "title": "PyPI/magique"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "magique-ai",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/magique-ai",
+          "title": "PyPI/magique-ai"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "magtape",
       "type": "PyPI",
       "sources": [
@@ -74722,6 +74806,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pandsa",
           "title": "PyPI/pandsa"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "pantheon-agents",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pantheon-agents",
+          "title": "PyPI/pantheon-agents"
         }
       ],
       "first_seen": null,
