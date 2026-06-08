@@ -12,7 +12,7 @@ blocklists/
   malicious.txt       Scraped malicious domains (auto-updated daily)
   ublock/             Generated from uBlock Origin filter lists
   privacy-badger/     Generated from EFF Privacy Badger seed data
-databases/
+malicious_package_database/
   malicious_packages.json   Known malicious package database (JSON)
   malicious_packages.csv    Known malicious package database (CSV)
 scripts/              Automation scripts (see below)
@@ -57,7 +57,7 @@ ruby scripts/scrape_malicious_domains.rb --help
 
 ### `scrape_malicious_packages.rb`
 
-Builds a database of known malicious packages (npm, PyPI, RubyGems, Cargo, NuGet, Go, Maven, etc.) from structured feeds and security blog scraping. Output is written to `databases/` and committed to the repository.
+Builds a database of known malicious packages (npm, PyPI, RubyGems, Cargo, NuGet, Go, Maven, etc.) from structured feeds and security blog scraping. Output is written to `malicious_package_database/` and committed to the repository.
 
 ```sh
 # Incremental run — only new content since last cached date (recommended)
@@ -100,7 +100,7 @@ ruby scripts/scrape_malicious_packages.rb --help
 
 #### Database output format
 
-**JSON** (`databases/malicious_packages.json`):
+**JSON** (`malicious_package_database/malicious_packages.json`):
 ```json
 {
   "generated_at": "2026-01-01T00:00:00Z",
@@ -119,7 +119,7 @@ ruby scripts/scrape_malicious_packages.rb --help
 }
 ```
 
-**CSV** (`databases/malicious_packages.csv`) — columns: `name, type, sources (JSON array), first_seen, last_seen`
+**CSV** (`malicious_package_database/malicious_packages.csv`) — columns: `name, type, sources (JSON array), first_seen, last_seen`
 
 ---
 
