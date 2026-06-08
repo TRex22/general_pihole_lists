@@ -6,7 +6,7 @@
 # Builds a database of known malicious packages (npm, PyPI, RubyGems, Cargo,
 # NuGet, Go, Maven, etc.) from structured feeds and security blog scraping.
 #
-# Output: databases/malicious_packages.json and databases/malicious_packages.csv
+# Output: malicious_package_database/malicious_packages.json and malicious_package_database/malicious_packages.csv
 #
 # Each package entry records every source URL where it was found (sources array).
 # The cache in scripts/malicious_packages_cache.json tracks processed articles
@@ -30,7 +30,7 @@ PKG_DEFAULT_PAGES_BACK = 2
 PKG_DEFAULT_YEARS      = 2
 
 PKG_CACHE_FILE_DEFAULT  = File.join(__dir__, 'malicious_packages_cache.json')
-PKG_OUTPUT_DIR_DEFAULT  = File.join(__dir__, '..', 'databases')
+PKG_OUTPUT_DIR_DEFAULT  = File.join(__dir__, '..', 'malicious_package_database')
 PKG_JSON_FILE_DEFAULT   = File.join(PKG_OUTPUT_DIR_DEFAULT, 'malicious_packages.json')
 PKG_CSV_FILE_DEFAULT    = File.join(PKG_OUTPUT_DIR_DEFAULT, 'malicious_packages.csv')
 
@@ -634,11 +634,11 @@ OptionParser.new do |opts|
     options[:cache_file] = f
   end
 
-  opts.on('--json FILE', "JSON output (default: databases/malicious_packages.json)") do |f|
+  opts.on('--json FILE', "JSON output (default: malicious_package_database/malicious_packages.json)") do |f|
     options[:json_file] = f
   end
 
-  opts.on('--csv FILE', "CSV output (default: databases/malicious_packages.csv)") do |f|
+  opts.on('--csv FILE', "CSV output (default: malicious_package_database/malicious_packages.csv)") do |f|
     options[:csv_file] = f
   end
 
@@ -716,7 +716,7 @@ scrapers_to_run.each do |source_key, klass|
   source_cache = full_cache[source_key] ||= { 'articles' => {}, 'last_updated' => nil }
 
   # Dummy output_file — package scrapers don't write a blocklist
-  dummy_output = File.join(__dir__, '..', 'databases', '.pkg_tmp')
+  dummy_output = File.join(__dir__, '..', 'malicious_package_database', '.pkg_tmp')
 
   begin
     elapsed = Benchmark.realtime do

@@ -57,7 +57,7 @@ The Privacy Badger browser extension and its seed data are licensed under the GN
 
 ## Malicious Packages Database — Source Licenses
 
-Files in `databases/` (`malicious_packages.json`, `malicious_packages.csv`) aggregate data from multiple sources. The database as a compilation is licensed under the MIT License, but data derived from specific sources carries their original licenses.
+Files in `malicious_package_database/` (`malicious_packages.json`, `malicious_packages.csv`) aggregate data from multiple sources. The database as a compilation is licensed under the MIT License, but data derived from specific sources carries their original licenses.
 
 ### Structured Data Sources
 
@@ -146,7 +146,7 @@ To avoid copyleft requirements, generate blocklists from MIT/CC0 sources only:
 ruby scripts/extract_ublock_lists.rb --lists steven-black-hosts,urlhaus-malware,energized-basic
 ```
 
-### For `databases/malicious_packages.*`
+### For `malicious_package_database/malicious_packages.*`
 
 **For personal use:** No restrictions apply.
 

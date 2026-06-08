@@ -17,9 +17,9 @@ blocklists/         Domain blocklists
   malicious.txt     Scraped malicious domains (auto-updated)
   ublock/           Generated from uBlock Origin filter lists
   privacy-badger/   Generated from Privacy Badger lists
-databases/          Generated databases (committed to repo)
-  malicious_packages.json   Malicious package database (JSON)
-  malicious_packages.csv    Malicious package database (CSV)
+malicious_package_database/  Generated databases (committed to repo)
+  malicious_packages.json      Malicious package database (JSON)
+  malicious_packages.csv       Malicious package database (CSV)
 scripts/
   base_scraper.rb             Shared BaseScraper + StandardPaginatedScraper
   blocklist_project_filter.rb Shared domain skip constants + Blocklist Project API
@@ -99,7 +99,7 @@ ruby scripts/scrape_malicious_packages.rb --status          # show cache stats
 ruby scripts/scrape_malicious_packages.rb --help
 ```
 
-Output: `databases/malicious_packages.json` and `databases/malicious_packages.csv`
+Output: `malicious_package_database/malicious_packages.json` and `malicious_package_database/malicious_packages.csv`
 Cache: `scripts/malicious_packages_cache.json` (git-ignored)
 
 Package sources:
@@ -117,7 +117,7 @@ Structure: `osv/{status}/{ecosystem}/{package}` where status ∈ {malicious, unm
 
 ## Database Output Format
 
-### JSON (`databases/malicious_packages.json`)
+### JSON (`malicious_package_database/malicious_packages.json`)
 ```json
 {
   "generated_at": "2026-01-01T00:00:00Z",
@@ -136,7 +136,7 @@ Structure: `osv/{status}/{ecosystem}/{package}` where status ∈ {malicious, unm
 }
 ```
 
-### CSV (`databases/malicious_packages.csv`)
+### CSV (`malicious_package_database/malicious_packages.csv`)
 Columns: `name, type, sources (JSON array), first_seen, last_seen`
 
 ## List File Format
