@@ -53,7 +53,8 @@ IOC_HEADINGS = %w[
 
 class BaseScraper
   def initialize(output_file:, cache:, full_cache:, cache_file:, dry_run:,
-                 browser_fetch: false, skip_ocr: false, ignore_cache: false)
+                 browser_fetch: false, skip_ocr: false, ignore_cache: false,
+                 read_timeout: 30)
     @output_file     = File.expand_path(output_file)
     @cache           = cache
     @full_cache      = full_cache
@@ -62,6 +63,7 @@ class BaseScraper
     @browser_fetch   = browser_fetch
     @skip_ocr        = skip_ocr
     @ignore_cache    = ignore_cache
+    @read_timeout    = read_timeout
     @pending         = {}
     @mutex           = Mutex.new
     @request_mutex   = Mutex.new
@@ -459,7 +461,7 @@ class BaseScraper
         response = HTTParty.get(
           url,
           headers: request_headers,
-          timeout:          30,
+          timeout:          @read_timeout,
           follow_redirects: true
         )
 
@@ -857,10 +859,11 @@ end
 class StandardPaginatedScraper < BaseScraper
   def initialize(years:, pages_back:, parallel:, output_file:, cache:, full_cache:,
                  cache_file:, dry_run:, browser_fetch: false, skip_ocr: false,
-                 ocr_only: false, lookback_days: nil, ignore_cache: false, **_opts)
+                 ocr_only: false, lookback_days: nil, ignore_cache: false,
+                 read_timeout: 30, **_opts)
     super(output_file: output_file, cache: cache, full_cache: full_cache,
           cache_file: cache_file, dry_run: dry_run, browser_fetch: browser_fetch,
-          skip_ocr: skip_ocr, ignore_cache: ignore_cache)
+          skip_ocr: skip_ocr, ignore_cache: ignore_cache, read_timeout: read_timeout)
     @years         = years
     @pages_back    = pages_back
     @lookback_days = lookback_days
