@@ -407,6 +407,7 @@ class BaseScraper
   def cloudflare_challenge?(_html) = false
   def scan_extra(_doc, _url, _domains, _ips) = nil
   def extract_article_date(_doc) = nil
+  def skip_sub_sitemap?(_url) = false
 
   # ── HTTP ────────────────────────────────────────────────────────────────────
 
@@ -467,6 +468,13 @@ class BaseScraper
 
         return response if response.success?
 
+        if response.code == 429
+          wait = parse_retry_after(response.headers['retry-after'], attempt)
+          warn "  HTTP 429 for #{url} (attempt #{attempt + 1}/#{retries}) — backing off #{wait}s"
+          sleep(wait)
+          next
+        end
+
         if response.code == 403
           warn "  HTTP 403 for #{url} (attempt #{attempt + 1}/#{retries}) — retrying via archive.org"
           wayback = fetch_via_wayback(url)
@@ -483,6 +491,20 @@ class BaseScraper
     end
 
     nil
+  end
+
+  # Parses a Retry-After header value (seconds integer or HTTP date string).
+  # Falls back to exponential backoff (10s, 20s, 40s) when the header is absent.
+  def parse_retry_after(header, attempt)
+    if header
+      if header =~ /\A\d+\z/
+        [header.to_i, 1].max
+      else
+        [Time.parse(header) - Time.now, 1].max.ceil rescue 30
+      end
+    else
+      10 * (2**attempt)
+    end
   end
 
   # Fetch a URL via the Internet Archive Wayback Machine.
@@ -647,6 +669,7 @@ class BaseScraper
   def clean_blocklist
     return unless File.exist?(@output_file)
 
+    t0       = Process.clock_gettime(Process::CLOCK_MONOTONIC)
     lines    = File.readlines(@output_file, chomp: true)
     removed  = []
     sections = parse_sections(lines)
@@ -675,12 +698,14 @@ class BaseScraper
       has_domains && !still_has_domains ? nil : filtered
     end
 
+    elapsed = (Process.clock_gettime(Process::CLOCK_MONOTONIC) - t0).round(2)
+
     if removed.empty?
-      puts 'No skip-listed entries found in blocklist — nothing to clean.'
+      puts "No skip-listed entries found in blocklist — nothing to clean. (#{elapsed}s)"
       return
     end
 
-    puts "Removed #{removed.size} skip-listed entr#{removed.size == 1 ? 'y' : 'ies'} from #{@output_file}:"
+    puts "Removed #{removed.size} skip-listed entr#{removed.size == 1 ? 'y' : 'ies'} from #{@output_file}: (#{elapsed}s)"
     removed.each { |d| puts "  - #{d}" }
 
     output_lines = []
@@ -1124,6 +1149,10 @@ class StandardPaginatedScraper < BaseScraper
       eligible.flat_map do |s|
         sub_url  = s.at_css('loc')&.text.to_s.strip
         next [] if sub_url.empty?
+        if skip_sub_sitemap?(sub_url)
+          puts "  -> Skipping sub-sitemap: #{sub_url}"
+          next []
+        end
         sub_resp = fetch_with_retry(sub_url)
         unless sub_resp&.success?
           warn "  -> Sub-sitemap unreachable: #{sub_url}"

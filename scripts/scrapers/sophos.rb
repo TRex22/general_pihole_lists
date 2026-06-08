@@ -2,7 +2,7 @@
 # Sophos Threat Research Blog scraper
 #
 # Discovery (in priority order):
-#   1. Sitemap (https://www.sophos.com/sitemap.xml) — full ~2400-URL corpus.
+#   1. Sitemap (https://www.sophos.com/en-us/sitemap.xml) — full ~2400-URL corpus.
 #      The listing page (/en-us/blog?page=N) renders client-side (Next.js RSC)
 #      so the sitemap is the only source of all historical article URLs.
 #   2. RSS feed — fallback when the sitemap is blocked (e.g. GitHub Actions IPs
@@ -20,7 +20,7 @@ class SophosScraper < StandardPaginatedScraper
   SOURCE_NAME = 'Sophos Threat Research'
   SOURCE_KEY  = 'sophos'
   BASE_URL    = 'https://www.sophos.com'
-  SITEMAP_URL = 'https://www.sophos.com/sitemap.xml'
+  SITEMAP_URL = 'https://www.sophos.com/en-us/sitemap.xml'
   RSS_URL     = 'https://www.sophos.com/en-us/blog/feed'
 
   private
