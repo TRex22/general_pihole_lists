@@ -534,6 +534,16 @@ class BaseScraper
     end
   end
 
+  # Strips a spurious Wayback Machine prefix from article URLs extracted from
+  # listing pages served via Wayback. When the live listing page returns 403,
+  # fetch_with_retry returns the Wayback HTML whose internal links look like
+  # /web/20260323175348/https://original.com/article. parse_listing resolves
+  # those against the original domain → https://original.com/web/20260323175348/...
+  # This method restores the original URL so fetch_with_retry can handle it normally.
+  def normalize_wayback_url(url)
+    url.sub(%r{\Ahttps?://(?!web\.archive\.org)[^/]+/web/\d{14}/(https?://)}, '\1')
+  end
+
   # ── OCR ─────────────────────────────────────────────────────────────────────
 
   # Class-level cache so all scraper instances share a single detection result.
@@ -987,7 +997,7 @@ class StandardPaginatedScraper < BaseScraper
       end
 
       doc     = Nokogiri::HTML(resp.body)
-      entries = parse_listing(doc)
+      entries = parse_listing(doc).map { |e| e.merge(url: normalize_wayback_url(e[:url])) }
 
       if entries.empty?
         puts "  -> No entries, done."

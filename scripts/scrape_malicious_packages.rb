@@ -313,7 +313,7 @@ class PackageStandardPaginatedScraper < PackageBaseScraper
       end
 
       doc     = Nokogiri::HTML(resp.body)
-      entries = parse_listing(doc)
+      entries = parse_listing(doc).map { |e| e.merge(url: normalize_wayback_url(e[:url])) }
 
       if entries.empty?
         puts "  -> No entries, done."
@@ -600,6 +600,7 @@ options = {
   csv_file:      PKG_CSV_FILE_DEFAULT,
   dry_run:       false,
   sources:       nil,
+  skip_sources:  [],
   status:        false,
   read_timeout:  30,
 }
@@ -650,6 +651,11 @@ OptionParser.new do |opts|
     options[:sources] = v.split(',').map(&:strip).map(&:downcase)
   end
 
+  opts.on('--skip-sources KEYS',
+          'Comma-separated source keys to exclude (e.g. socket_dev)') do |v|
+    options[:skip_sources] = v.split(',').map(&:strip).map(&:downcase)
+  end
+
   opts.on('--status', 'Print cache status table and exit') do
     options[:status] = true
   end
@@ -672,12 +678,13 @@ end
 
 puts 'Malicious Package Scraper'
 puts '=' * 60
-puts "Cache file : #{File.expand_path(options[:cache_file])}"
-puts "JSON output: #{File.expand_path(options[:json_file])}"
-puts "CSV output : #{File.expand_path(options[:csv_file])}"
-puts "Dry run    : #{options[:dry_run]}"
+puts "Cache file   : #{File.expand_path(options[:cache_file])}"
+puts "JSON output  : #{File.expand_path(options[:json_file])}"
+puts "CSV output   : #{File.expand_path(options[:csv_file])}"
+puts "Dry run      : #{options[:dry_run]}"
 all_sources_label = "all (#{ALL_PACKAGE_SCRAPERS.keys.join(', ')})"
-puts "Sources    : #{options[:sources] ? options[:sources].join(', ') : all_sources_label}"
+puts "Sources      : #{options[:sources] ? options[:sources].join(', ') : all_sources_label}"
+puts "Skip sources : #{options[:skip_sources].any? ? options[:skip_sources].join(', ') : 'none'}"
 puts
 
 full_cache = load_package_cache(options[:cache_file])
@@ -688,8 +695,12 @@ else
   ALL_PACKAGE_SCRAPERS
 end
 
+if options[:skip_sources].any?
+  scrapers_to_run = scrapers_to_run.reject { |k, _| options[:skip_sources].include?(k) }
+end
+
 if scrapers_to_run.empty?
-  warn "No matching scrapers for: #{options[:sources].join(', ')}"
+  warn "No scrapers to run after applying --sources / --skip-sources filters."
   warn "Available: #{ALL_PACKAGE_SCRAPERS.keys.join(', ')}"
   exit 1
 end

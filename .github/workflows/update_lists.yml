@@ -30,6 +30,10 @@ on:
         description: 'Comma-separated package sources to scrape, e.g. ossf,socket_dev (leave blank for all)'
         type: string
         default: ''
+      package_skip_sources:
+        description: 'Comma-separated package sources to skip — socket_dev blocks GitHub IP ranges'
+        type: string
+        default: 'socket_dev'
       dry_run:
         description: 'Dry run — scrape and cache but do not write to blocklist or commit'
         type: boolean
@@ -102,7 +106,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           READ_TIMEOUT="${{ inputs.read_timeout || 5 }}"
-          ARGS="--parallel 5 --read-timeout $READ_TIMEOUT"
+          PKG_SKIP_SOURCES="${{ inputs.package_skip_sources || 'socket_dev' }}"
+          ARGS="--parallel 5 --read-timeout $READ_TIMEOUT --skip-sources $PKG_SKIP_SOURCES"
 
           if [ "${{ inputs.full_scan }}" = "true" ]; then
             ARGS="$ARGS --years 2"
