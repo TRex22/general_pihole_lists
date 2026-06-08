@@ -30,6 +30,10 @@ on:
         description: 'Dry run — scrape and cache but do not write to blocklist or commit'
         type: boolean
         default: false
+      read_timeout:
+        description: 'HTTP read timeout in seconds per attempt (default: 5 for CI, increase for slow sources)'
+        type: number
+        default: 5
 
 permissions:
   contents: write           # needed to push the updated list files back
@@ -68,7 +72,8 @@ jobs:
       - name: Scrape malicious domains
         run: |
           PARALLEL="${{ inputs.parallel || 30 }}"
-          ARGS="--skip-ocr --parallel $PARALLEL"
+          READ_TIMEOUT="${{ inputs.read_timeout || 5 }}"
+          ARGS="--skip-ocr --parallel $PARALLEL --read-timeout $READ_TIMEOUT"
 
           if [ "${{ inputs.full_scan }}" = "true" ]; then
             ARGS="$ARGS --years 2"
@@ -91,7 +96,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ARGS="--parallel 5"
+          READ_TIMEOUT="${{ inputs.read_timeout || 5 }}"
+          ARGS="--parallel 5 --read-timeout $READ_TIMEOUT"
 
           if [ "${{ inputs.full_scan }}" = "true" ]; then
             ARGS="$ARGS --years 2"

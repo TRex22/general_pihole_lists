@@ -187,6 +187,7 @@ options = {
   ignore_cache:   false,
   sources:        nil,
   status:         false,
+  read_timeout:   30,
 }
 
 OptionParser.new do |opts|
@@ -260,6 +261,11 @@ OptionParser.new do |opts|
   opts.on('--status',
           'Print a table of cached article date ranges per source, then exit') do
     options[:status] = true
+  end
+
+  opts.on('--read-timeout N', Integer,
+          'HTTP read timeout in seconds per attempt (default: 30)') do |n|
+    options[:read_timeout] = n
   end
 
   opts.on('-h', '--help', 'Show this help') do
@@ -352,7 +358,8 @@ scrapers_to_run.each do |source_key, klass|
         browser_fetch: options[:browser_fetch],
         skip_ocr:      options[:skip_ocr],
         ocr_only:      options[:ocr_only],
-        ignore_cache:  options[:ignore_cache]
+        ignore_cache:  options[:ignore_cache],
+        read_timeout:  options[:read_timeout]
       ).run
     end
     puts "\n#{source_name} completed in #{elapsed.round(2)}s"

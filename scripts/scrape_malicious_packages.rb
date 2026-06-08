@@ -180,9 +180,9 @@ end
 
 class PackageBaseScraper < BaseScraper
   def initialize(years:, pages_back:, parallel:, output_file:, cache:, full_cache:,
-                 cache_file:, dry_run:, lookback_days: nil, **_opts)
+                 cache_file:, dry_run:, lookback_days: nil, read_timeout: 30, **_opts)
     super(output_file: output_file, cache: cache, full_cache: full_cache,
-          cache_file: cache_file, dry_run: dry_run)
+          cache_file: cache_file, dry_run: dry_run, read_timeout: read_timeout)
     @years         = years
     @pages_back    = pages_back
     @lookback_days = lookback_days
@@ -601,6 +601,7 @@ options = {
   dry_run:       false,
   sources:       nil,
   status:        false,
+  read_timeout:  30,
 }
 
 OptionParser.new do |opts|
@@ -651,6 +652,11 @@ OptionParser.new do |opts|
 
   opts.on('--status', 'Print cache status table and exit') do
     options[:status] = true
+  end
+
+  opts.on('--read-timeout N', Integer,
+          'HTTP read timeout in seconds per attempt (default: 30)') do |n|
+    options[:read_timeout] = n
   end
 
   opts.on('-h', '--help', 'Show this help') do
@@ -712,7 +718,8 @@ scrapers_to_run.each do |source_key, klass|
         cache:         source_cache,
         full_cache:    full_cache,
         cache_file:    options[:cache_file],
-        dry_run:       options[:dry_run]
+        dry_run:       options[:dry_run],
+        read_timeout:  options[:read_timeout]
       ).run
     end
     puts "\n#{source_name} completed in #{elapsed.round(2)}s"
