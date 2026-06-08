@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-08T11:53:56Z",
-  "total": 51112,
+  "generated_at": "2026-06-08T21:41:04Z",
+  "total": 51120,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -16203,6 +16203,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bittcoinlib",
           "title": "PyPI/bittcoinlib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bittensor-burn",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bittensor-burn",
+          "title": "PyPI/bittensor-burn"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bittensor-burn-alert",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bittensor-burn-alert",
+          "title": "PyPI/bittensor-burn-alert"
         }
       ],
       "first_seen": null,
@@ -71332,6 +71356,18 @@
       "last_seen": null
     },
     {
+      "name": "nerfstudio-gs",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/nerfstudio-gs",
+          "title": "PyPI/nerfstudio-gs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "nerst",
       "type": "PyPI",
       "sources": [
@@ -119373,12 +119409,36 @@
       "last_seen": null
     },
     {
+      "name": "spaysdatarbx",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/spaysdatarbx",
+          "title": "PyPI/spaysdatarbx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "spaysrbdata",
       "type": "PyPI",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/spaysrbdata",
           "title": "PyPI/spaysrbdata"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "spaysrbx",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/spaysrbx",
+          "title": "PyPI/spaysrbx"
         }
       ],
       "first_seen": null,
@@ -143581,6 +143641,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/xfilesyncerx",
           "title": "PyPI/xfilesyncerx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "xforpy",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/xforpy",
+          "title": "PyPI/xforpy"
         }
       ],
       "first_seen": null,
@@ -221997,6 +222069,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@lir-portal/web-components",
           "title": "npm/@lir-portal/web-components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@listings/energy-labels",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@listings/energy-labels",
+          "title": "npm/@listings/energy-labels"
         }
       ],
       "first_seen": null,
@@ -338645,6 +338729,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zillow-types/constellation",
           "title": "npm/@zillow-types/constellation"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zimmo/last_search",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zimmo/last_search",
+          "title": "npm/@zimmo/last_search"
         }
       ],
       "first_seen": null,
