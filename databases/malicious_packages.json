@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-07T21:52:02Z",
-  "total": 51090,
+  "generated_at": "2026-06-08T08:37:50Z",
+  "total": 51091,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -45137,6 +45137,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fuckyoubitchbro",
           "title": "PyPI/fuckyoubitchbro"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "funcdesc",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/funcdesc",
+          "title": "PyPI/funcdesc"
         }
       ],
       "first_seen": null,
