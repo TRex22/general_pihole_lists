@@ -26,6 +26,7 @@ require 'json'
 require 'optparse'
 require 'fileutils'
 require 'set'
+require 'benchmark'
 require_relative 'blocklist_project_filter'
 
 DATA_SOURCES = {
@@ -376,4 +377,5 @@ extractor = PrivacyBadgerExtractor.new(
   include_cookieblock: options[:include_cookieblock],
   dnt_allowlist: options[:dnt_allowlist]
 )
-extractor.run
+elapsed = Benchmark.realtime { extractor.run }
+puts "Completed in #{elapsed.round(2)}s"

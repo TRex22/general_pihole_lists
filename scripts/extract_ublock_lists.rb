@@ -17,6 +17,7 @@ require 'uri'
 require 'optparse'
 require 'fileutils'
 require 'set'
+require 'benchmark'
 require_relative 'blocklist_project_filter'
 
 # Default filter list sources
@@ -290,4 +291,5 @@ extractor = UBlockExtractor.new(
   output_dir: options[:output_dir],
   lists: options[:lists]
 )
-extractor.run
+elapsed = Benchmark.realtime { extractor.run }
+puts "Completed in #{elapsed.round(2)}s"
