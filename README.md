@@ -24,7 +24,7 @@ scripts/              Automation scripts (see below)
 
 ### `scrape_malicious_domains.rb`
 
-Scrapes security news blogs for defanged IoC domains (e.g. `evil[.]com`) and appends them to `blocklists/malicious.txt`. Uses incremental caching so each run only processes new articles.
+Scrapes security news blogs for defanged IoC domains (e.g. `evil[.]com`) and appends them to `blocklists/malicious.txt`. Uses incremental caching so each run only processes new articles. Each source is timed and a total elapsed time is printed at the end.
 
 ```sh
 # Incremental run — only new articles since last cached date (recommended)
@@ -39,6 +39,12 @@ ruby scripts/scrape_malicious_domains.rb --years 3 --rescan-images
 # Specific sources only
 ruby scripts/scrape_malicious_domains.rb --sources bleepingcomputer,talos
 
+# Skip specific sources (e.g. those that block your IP range)
+ruby scripts/scrape_malicious_domains.rb --skip-sources trendmicro,sophos
+
+# Control parallel threads and HTTP read timeout
+ruby scripts/scrape_malicious_domains.rb --parallel 10 --read-timeout 10
+
 # Dry run (scrape and cache but don't write to blocklist)
 ruby scripts/scrape_malicious_domains.rb --dry-run
 
@@ -49,7 +55,9 @@ ruby scripts/scrape_malicious_domains.rb --status
 ruby scripts/scrape_malicious_domains.rb --help
 ```
 
-**Sources:** `thehackernews`, `bleepingcomputer`, `krebsonsecurity`, `isc_sans`, `talos`, `unit42`, `securelist`, `malwarebytes`, `welivesecurity`, `proofpoint`, `microsoft_security`, `google_threat_intel`, `anyrun`, `sophos`
+**Sources:** `thehackernews`, `bleepingcomputer`, `krebsonsecurity`, `isc_sans`, `talos`, `unit42`, `securelist`, `malwarebytes`, `welivesecurity`, `proofpoint`, `microsoft_security`, `google_threat_intel`, `anyrun`, `sophos`, `checkpoint_research`, `volexity`, `sentinelone`, `elastic_security`, `zscaler_threatlabz`, `symantec_threatintel`, `lumen_blacklotus`, `red_canary`, `fortiguard`, `trendmicro`, `crowdstrike`, `huntress`
+
+> **Note:** `fortiguard`, `trendmicro`, `sophos`, `crowdstrike`, and `huntress` block datacenter IP ranges. The GitHub Actions workflow skips `trendmicro` and `sophos` by default (`--skip-sources trendmicro,sophos`). Run with `--browser-fetch` or from a residential/office network if these return 0 articles.
 
 **Cache file:** `scripts/malicious_domains_cache.json` (git-ignored)
 
@@ -57,7 +65,7 @@ ruby scripts/scrape_malicious_domains.rb --help
 
 ### `scrape_malicious_packages.rb`
 
-Builds a database of known malicious packages (npm, PyPI, RubyGems, Cargo, NuGet, Go, Maven, etc.) from structured feeds and security blog scraping. Output is written to `malicious_package_database/` and committed to the repository.
+Builds a database of known malicious packages (npm, PyPI, RubyGems, Cargo, NuGet, Go, Maven, etc.) from structured feeds and security blog scraping. Output is written to `malicious_package_database/` and committed to the repository. Each source is timed and a total elapsed time is printed at the end.
 
 ```sh
 # Incremental run — only new content since last cached date (recommended)
@@ -71,6 +79,12 @@ ruby scripts/scrape_malicious_packages.rb --years 2
 
 # Specific sources only
 ruby scripts/scrape_malicious_packages.rb --sources ossf,socket_dev
+
+# Skip specific sources (e.g. those that block your IP range)
+ruby scripts/scrape_malicious_packages.rb --skip-sources socket_dev
+
+# Control parallel threads and HTTP read timeout
+ruby scripts/scrape_malicious_packages.rb --parallel 5 --read-timeout 10
 
 # Dry run (scrape and cache but don't write database files)
 ruby scripts/scrape_malicious_packages.rb --dry-run
@@ -95,6 +109,8 @@ ruby scripts/scrape_malicious_packages.rb --help
 
 **Generalist security blogs** (medium confidence, filtered by title keywords):
 `thehackernews`, `bleepingcomputer`, `talos`, `unit42`, `securelist`, `microsoft_security`, `google_threat_intel`
+
+> **Note:** `socket_dev` blocks datacenter IP ranges. The GitHub Actions workflow skips it by default (`--skip-sources socket_dev`).
 
 **Cache file:** `scripts/malicious_packages_cache.json` (git-ignored)
 
@@ -154,6 +170,23 @@ ruby scripts/extract_privacy_badger_lists.rb --include-cookieblock
 
 ---
 
+### `ai_review_blocklists.rb`
+
+AI-powered blocklist/allowlist reviewer using a local Ollama model via DSPy. Scans blocklists for mainstream domains that should not be blocked, audits allowlists for suspicious domains, and generates `allowlists/general_allowlist_from_broad_blocklists.txt`.
+
+Requires a running [Ollama](https://ollama.com) instance with a model loaded (default: `mistral`).
+
+```sh
+ruby scripts/ai_review_blocklists.rb
+ruby scripts/ai_review_blocklists.rb --model llama3
+ruby scripts/ai_review_blocklists.rb --host 192.168.1.10 --port 11434
+ruby scripts/ai_review_blocklists.rb --batch 50
+ruby scripts/ai_review_blocklists.rb --include-large   # include blocklists with >50k domains (slow)
+ruby scripts/ai_review_blocklists.rb --dry-run         # skip writing the output allowlist file
+```
+
+---
+
 ### `update_all_lists.sh`
 
 Runs all four update scripts in sequence.
@@ -161,6 +194,19 @@ Runs all four update scripts in sequence.
 ```sh
 bash scripts/update_all_lists.sh
 ```
+
+---
+
+## GitHub Actions
+
+The workflow (`.github/workflows/update_lists.yml`) runs daily at 23:00 SAST and can be triggered manually via `workflow_dispatch`. Manual runs expose all key options as inputs.
+
+**Default CI settings** (designed to avoid timeouts and IP blocks):
+- `--read-timeout 5` — 5 s per HTTP attempt (vs 30 s default for local runs)
+- `--skip-sources trendmicro,sophos` — both block GitHub datacenter IP ranges
+- `--skip-sources socket_dev` (packages) — also blocks GitHub datacenter IP ranges
+
+Override these via the `workflow_dispatch` inputs when running manually from a non-CI context.
 
 ---
 
@@ -202,6 +248,7 @@ ruby -e '
 - `bundle install` to install gem dependencies
 - For OCR on images: Xcode Command Line Tools (macOS) or Tesseract (Linux)
 - For OSSF full scans: set `GITHUB_TOKEN` env var for 5 000 req/hr (vs 60/hr unauthenticated)
+- For `ai_review_blocklists.rb`: [Ollama](https://ollama.com) running locally with at least one model pulled
 
 ---
 
