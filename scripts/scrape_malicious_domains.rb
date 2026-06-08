@@ -22,6 +22,7 @@
 # WARNING: Extracted domains are NEVER accessed/resolved. Validation is regex-only.
 
 require 'optparse'
+require 'benchmark'
 require_relative 'base_scraper'
 
 DEFAULT_PARALLEL   = 20
@@ -325,6 +326,8 @@ if scrapers_to_run.empty?
   exit 1
 end
 
+total_elapsed = 0.0
+
 scrapers_to_run.each do |source_key, klass|
   source_name = klass::SOURCE_NAME
   puts
@@ -334,24 +337,31 @@ scrapers_to_run.each do |source_key, klass|
   source_cache = full_cache[source_key] ||= { 'articles' => {}, 'last_updated' => nil }
 
   begin
-    klass.new(
-      years:         options[:years],
-      pages_back:    options[:pages_back],
-      lookback_days: options[:lookback_days],
-      parallel:      options[:parallel],
-      output_file:   options[:output_file],
-      cache:         source_cache,
-      full_cache:    full_cache,
-      cache_file:    options[:cache_file],
-      dry_run:       options[:dry_run],
-      rescan_images: options[:rescan_images],
-      browser_fetch: options[:browser_fetch],
-      skip_ocr:      options[:skip_ocr],
-      ocr_only:      options[:ocr_only],
-      ignore_cache:  options[:ignore_cache]
-    ).run
+    elapsed = Benchmark.realtime do
+      klass.new(
+        years:         options[:years],
+        pages_back:    options[:pages_back],
+        lookback_days: options[:lookback_days],
+        parallel:      options[:parallel],
+        output_file:   options[:output_file],
+        cache:         source_cache,
+        full_cache:    full_cache,
+        cache_file:    options[:cache_file],
+        dry_run:       options[:dry_run],
+        rescan_images: options[:rescan_images],
+        browser_fetch: options[:browser_fetch],
+        skip_ocr:      options[:skip_ocr],
+        ocr_only:      options[:ocr_only],
+        ignore_cache:  options[:ignore_cache]
+      ).run
+    end
+    puts "\n#{source_name} completed in #{elapsed.round(2)}s"
+    total_elapsed += elapsed
   rescue StandardError => e
     warn "Error scraping #{source_name}: #{e.message}"
     warn e.backtrace.first(5).join("\n") if e.backtrace
   end
 end
+
+puts
+puts "Total scraping time: #{total_elapsed.round(2)}s"

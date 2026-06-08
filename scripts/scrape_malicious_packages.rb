@@ -22,6 +22,7 @@
 
 require 'optparse'
 require 'csv'
+require 'benchmark'
 require_relative 'base_scraper'
 
 PKG_DEFAULT_PARALLEL   = 10
@@ -687,9 +688,12 @@ if scrapers_to_run.empty?
   exit 1
 end
 
+total_elapsed = 0.0
+
 scrapers_to_run.each do |source_key, klass|
+  source_name = klass::SOURCE_NAME
   puts
-  puts "=== Scraping: #{klass::SOURCE_NAME} ==="
+  puts "=== Scraping: #{source_name} ==="
   puts
 
   source_cache = full_cache[source_key] ||= { 'articles' => {}, 'last_updated' => nil }
@@ -698,22 +702,29 @@ scrapers_to_run.each do |source_key, klass|
   dummy_output = File.join(__dir__, '..', 'databases', '.pkg_tmp')
 
   begin
-    klass.new(
-      years:         options[:years],
-      pages_back:    options[:pages_back],
-      lookback_days: options[:lookback_days],
-      parallel:      options[:parallel],
-      output_file:   dummy_output,
-      cache:         source_cache,
-      full_cache:    full_cache,
-      cache_file:    options[:cache_file],
-      dry_run:       options[:dry_run]
-    ).run
+    elapsed = Benchmark.realtime do
+      klass.new(
+        years:         options[:years],
+        pages_back:    options[:pages_back],
+        lookback_days: options[:lookback_days],
+        parallel:      options[:parallel],
+        output_file:   dummy_output,
+        cache:         source_cache,
+        full_cache:    full_cache,
+        cache_file:    options[:cache_file],
+        dry_run:       options[:dry_run]
+      ).run
+    end
+    puts "\n#{source_name} completed in #{elapsed.round(2)}s"
+    total_elapsed += elapsed
   rescue StandardError => e
-    warn "Error scraping #{klass::SOURCE_NAME}: #{e.message}"
+    warn "Error scraping #{source_name}: #{e.message}"
     warn e.backtrace.first(5).join("\n") if e.backtrace
   end
 end
+
+puts
+puts "Total scraping time: #{total_elapsed.round(2)}s"
 
 write_package_database(full_cache, options[:json_file], options[:csv_file],
                        dry_run: options[:dry_run])
