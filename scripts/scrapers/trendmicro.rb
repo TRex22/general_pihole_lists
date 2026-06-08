@@ -66,4 +66,16 @@ class TrendMicroScraper < StandardPaginatedScraper
   end
 
   def max_pages = 100
+
+  # trendmicro.com is slow and rate-limits HTML pagination around page 6+.
+  # Add a delay between listing page fetches to avoid compounding the issue.
+  def listing_page_delay = 3
+
+  # en_tt requires HTTP authentication (401); en_id does not exist (404).
+  # Both waste retries and can contribute to rate limiting — skip them.
+  SKIP_SITEMAP_LOCALES = %w[/en_tt/ /en_id/].freeze
+
+  def skip_sub_sitemap?(url)
+    SKIP_SITEMAP_LOCALES.any? { |pat| url.include?(pat) }
+  end
 end

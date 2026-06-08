@@ -45,4 +45,9 @@ class ZscalerThreatLabzScraper < StandardPaginatedScraper
   def article_content(doc)
     doc.at_css('.blog-content, .post-body, article, main') || doc.at_css('body')
   end
+
+  # Zscaler rate-limits aggressively — cap workers and add inter-batch delay
+  # to avoid triggering 429s. The global MIN_REQUEST_INTERVAL still applies.
+  def parallel_workers = [@parallel, 5].min
+  def batch_delay      = 3
 end
