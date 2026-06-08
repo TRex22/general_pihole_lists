@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-08T08:37:50Z",
-  "total": 51091,
+  "generated_at": "2026-06-08T11:53:56Z",
+  "total": 51112,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -16209,6 +16209,18 @@
       "last_seen": null
     },
     {
+      "name": "bittensor-burn-monitor",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bittensor-burn-monitor",
+          "title": "PyPI/bittensor-burn-monitor"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bittensor-burn-watch",
       "type": "PyPI",
       "sources": [
@@ -17175,6 +17187,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bsodinator",
           "title": "PyPI/bsodinator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bt-burn-watch",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bt-burn-watch",
+          "title": "PyPI/bt-burn-watch"
         }
       ],
       "first_seen": null,
@@ -29999,6 +30023,18 @@
       "last_seen": null
     },
     {
+      "name": "dreamgen",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/dreamgen",
+          "title": "PyPI/dreamgen"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "dremel",
       "type": "PyPI",
       "sources": [
@@ -30923,6 +30959,18 @@
       "last_seen": null
     },
     {
+      "name": "embiggen",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/embiggen",
+          "title": "PyPI/embiggen"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "emd-ext",
       "type": "PyPI",
       "sources": [
@@ -31133,6 +31181,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/enquiry-exam",
           "title": "PyPI/enquiry-exam"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ensmallen",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ensmallen",
+          "title": "PyPI/ensmallen"
         }
       ],
       "first_seen": null,
@@ -47135,6 +47195,18 @@
       "last_seen": null
     },
     {
+      "name": "gpsea",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/gpsea",
+          "title": "PyPI/gpsea"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "gpt-requests",
       "type": "PyPI",
       "sources": [
@@ -52872,6 +52944,18 @@
       "last_seen": null
     },
     {
+      "name": "instructor-mcp",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/instructor-mcp",
+          "title": "PyPI/instructor-mcp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "intcontrol",
       "type": "PyPI",
       "sources": [
@@ -55086,6 +55170,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/lanchain-openai",
           "title": "PyPI/lanchain-openai"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "langchain-core-mcp",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/langchain-core-mcp",
+          "title": "PyPI/langchain-core-mcp"
         }
       ],
       "first_seen": null,
@@ -68860,6 +68956,18 @@
       "last_seen": null
     },
     {
+      "name": "mem8",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mem8",
+          "title": "PyPI/mem8"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "memlib",
       "type": "PyPI",
       "sources": [
@@ -69046,6 +69154,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mevguard",
           "title": "PyPI/mevguard"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "mflux-streamlit",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mflux-streamlit",
+          "title": "PyPI/mflux-streamlit"
         }
       ],
       "first_seen": null,
@@ -71704,6 +71824,18 @@
       "last_seen": null
     },
     {
+      "name": "nhmpy",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/nhmpy",
+          "title": "PyPI/nhmpy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "nifty-cli",
       "type": "PyPI",
       "sources": [
@@ -73216,6 +73348,18 @@
       "last_seen": null
     },
     {
+      "name": "openai-mcp",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/openai-mcp",
+          "title": "PyPI/openai-mcp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "openai-py3",
       "type": "PyPI",
       "sources": [
@@ -74038,6 +74182,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/oracle-tools",
           "title": "PyPI/oracle-tools"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "orchestr8-platform",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/orchestr8-platform",
+          "title": "PyPI/orchestr8-platform"
         }
       ],
       "first_seen": null,
@@ -75766,6 +75922,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/phasedibd",
           "title": "PyPI/phasedibd"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "phenopacket-store-toolkit",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/phenopacket-store-toolkit",
+          "title": "PyPI/phenopacket-store-toolkit"
         }
       ],
       "first_seen": null,
@@ -78658,6 +78826,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ppillow",
           "title": "PyPI/ppillow"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ppkt2synergy",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ppkt2synergy",
+          "title": "PyPI/ppkt2synergy"
         }
       ],
       "first_seen": null,
@@ -94916,6 +95096,18 @@
       "last_seen": null
     },
     {
+      "name": "pyphetools",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pyphetools",
+          "title": "PyPI/pyphetools"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "pypi-package-explore",
       "type": "PyPI",
       "sources": [
@@ -99920,6 +100112,18 @@
       "last_seen": null
     },
     {
+      "name": "ray-mcp-server",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ray-mcp-server",
+          "title": "PyPI/ray-mcp-server"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "raydium",
       "type": "PyPI",
       "sources": [
@@ -103605,6 +103809,18 @@
       "last_seen": null
     },
     {
+      "name": "rlask",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/rlask",
+          "title": "PyPI/rlask"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "rllib3",
       "type": "PyPI",
       "sources": [
@@ -104535,6 +104751,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/rsacracker",
           "title": "PyPI/rsacracker"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "rsquests",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/rsquests",
+          "title": "PyPI/rsquests"
         }
       ],
       "first_seen": null,
@@ -124538,6 +124766,18 @@
       "last_seen": null
     },
     {
+      "name": "tiktoken-mcp",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tiktoken-mcp",
+          "title": "PyPI/tiktoken-mcp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "tiktokthon",
       "type": "PyPI",
       "sources": [
@@ -125264,6 +125504,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tktoken",
           "title": "PyPI/tktoken"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "tlask",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tlask",
+          "title": "PyPI/tlask"
         }
       ],
       "first_seen": null,
