@@ -186,6 +186,7 @@ options = {
   ocr_only:       false,
   ignore_cache:   false,
   sources:        nil,
+  skip_sources:   [],
   status:         false,
   read_timeout:   30,
 }
@@ -258,6 +259,11 @@ OptionParser.new do |opts|
     options[:sources] = v.split(',').map(&:strip).map(&:downcase)
   end
 
+  opts.on('--skip-sources KEYS',
+          'Comma-separated source keys to exclude (e.g. trendmicro,sophos)') do |v|
+    options[:skip_sources] = v.split(',').map(&:strip).map(&:downcase)
+  end
+
   opts.on('--status',
           'Print a table of cached article date ranges per source, then exit') do
     options[:status] = true
@@ -281,12 +287,14 @@ end
 
 puts 'Malicious Domain Scraper'
 puts '=' * 60
-puts "Output file : #{File.expand_path(options[:output_file])}"
-puts "Cache file  : #{File.expand_path(options[:cache_file])}"
-puts "Dry run     : #{options[:dry_run]}"
-puts "Ignore cache: #{options[:ignore_cache]}"
+puts "Output file  : #{File.expand_path(options[:output_file])}"
+puts "Cache file   : #{File.expand_path(options[:cache_file])}"
+puts "Dry run      : #{options[:dry_run]}"
+puts "Ignore cache : #{options[:ignore_cache]}"
 all_sources_label = "all (#{ALL_SCRAPERS.keys.join(', ')})"
-puts "Sources     : #{options[:sources] ? options[:sources].join(', ') : all_sources_label}"
+puts "Sources      : #{options[:sources] ? options[:sources].join(', ') : all_sources_label}"
+puts "Skip sources : #{options[:skip_sources].any? ? options[:skip_sources].join(', ') : 'none'}"
+puts "OCR backend  : #{options[:skip_ocr] ? 'skipped (--skip-ocr)' : (BaseScraper.ocr_backend || 'none')}"
 puts
 
 # Load allowlists and apply Blocklist Project category filter
@@ -326,8 +334,12 @@ else
   ALL_SCRAPERS
 end
 
+if options[:skip_sources].any?
+  scrapers_to_run = scrapers_to_run.reject { |k, _| options[:skip_sources].include?(k) }
+end
+
 if scrapers_to_run.empty?
-  warn "No matching scrapers for: #{options[:sources].join(', ')}"
+  warn "No scrapers to run after applying --sources / --skip-sources filters."
   warn "Available: #{ALL_SCRAPERS.keys.join(', ')}"
   exit 1
 end

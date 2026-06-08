@@ -22,6 +22,10 @@ on:
         description: 'Comma-separated domain sources to scrape, e.g. bleepingcomputer,talos (leave blank for all)'
         type: string
         default: ''
+      skip_sources:
+        description: 'Comma-separated domain sources to skip — trendmicro and sophos block GitHub IP ranges'
+        type: string
+        default: 'trendmicro,sophos'
       package_sources:
         description: 'Comma-separated package sources to scrape, e.g. ossf,socket_dev (leave blank for all)'
         type: string
@@ -73,7 +77,8 @@ jobs:
         run: |
           PARALLEL="${{ inputs.parallel || 30 }}"
           READ_TIMEOUT="${{ inputs.read_timeout || 5 }}"
-          ARGS="--skip-ocr --parallel $PARALLEL --read-timeout $READ_TIMEOUT"
+          SKIP_SOURCES="${{ inputs.skip_sources || 'trendmicro,sophos' }}"
+          ARGS="--skip-ocr --parallel $PARALLEL --read-timeout $READ_TIMEOUT --skip-sources $SKIP_SOURCES"
 
           if [ "${{ inputs.full_scan }}" = "true" ]; then
             ARGS="$ARGS --years 2"

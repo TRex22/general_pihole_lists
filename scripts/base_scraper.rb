@@ -536,21 +536,33 @@ class BaseScraper
 
   # ── OCR ─────────────────────────────────────────────────────────────────────
 
-  def ocr_backend
-    @ocr_backend ||= detect_ocr_backend
-  end
-
-  def detect_ocr_backend
+  # Class-level cache so all scraper instances share a single detection result.
+  # Avoids running `which swiftc`/`which tesseract` once per source.
+  def self.detect_ocr_backend
     if RUBY_PLATFORM.include?('darwin')
       if File.exist?(OCR_MACOS_SCRIPT) &&
          (system('which swiftc > /dev/null 2>&1') || system('which swift > /dev/null 2>&1'))
         return :macos
       end
     end
-
     return :tesseract if system('which tesseract > /dev/null 2>&1')
-
     nil
+  end
+
+  def self.ocr_backend
+    defined?(@ocr_backend) ? @ocr_backend : (@ocr_backend = detect_ocr_backend)
+  end
+
+  def self.ocr_backend=(value)
+    @ocr_backend = value
+  end
+
+  def ocr_backend
+    BaseScraper.ocr_backend
+  end
+
+  def detect_ocr_backend
+    BaseScraper.detect_ocr_backend
   end
 
   def warn_orange(msg)
@@ -578,7 +590,7 @@ class BaseScraper
       success = system('swiftc', OCR_MACOS_SCRIPT, '-o', OCR_MACOS_BINARY)
       unless success && File.exist?(OCR_MACOS_BINARY)
         warn_orange('  Warning: could not compile macOS OCR helper — falling back to tesseract')
-        @ocr_backend = system('which tesseract > /dev/null 2>&1') ? :tesseract : nil
+        BaseScraper.ocr_backend = system('which tesseract > /dev/null 2>&1') ? :tesseract : nil
       end
     end
   end
