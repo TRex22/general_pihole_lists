@@ -55,6 +55,7 @@ passwordreset.microsoftonline.com
 provisioningapi.microsoftonline.com
 main.iam.ad.ext.azure.com
 ccs.login.microsoftonline.com
+phonefactor.net             # Microsoft MFA (Azure Multi-Factor Auth) — ID 59 DefaultRequired: *.phonefactor.net
 
 # Office 365 / Exchange Online
 outlook.office365.com
@@ -222,6 +223,14 @@ otelrules.azureedge.net
 azureedge.net
 msedge.net
 compass-ssl.microsoft.com
+# ID 70 (DefaultRequired): Office app assets, shell CDN, and supporting infrastructure
+appsforoffice.microsoft.com
+assets.onestore.ms
+auth.gfx.ms
+c1.microsoft.com
+prod.msocdn.com
+shellprod.msocdn.com
+amp.azure.net
 
 # Microsoft 365 Unified Domains (Source: https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges)
 cloud.microsoft

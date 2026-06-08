@@ -2,6 +2,7 @@
 # Required domains for AWS services functionality
 # Sources:
 #   - AWS service endpoints: https://docs.aws.amazon.com/general/latest/gr/rande.html
+#   - AWS STS regional endpoints: https://docs.aws.amazon.com/general/latest/gr/sts.html
 #   - AWS IP address ranges: https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
 #   - AWS Sign-In allowlist domains: https://docs.aws.amazon.com/signin/latest/userguide/allowlist-domains.html
 #   - AWS dual-stack / threat mitigation endpoints: https://docs.aws.amazon.com/signin/latest/userguide/allowlist-domains.html (captcha section)
@@ -14,8 +15,56 @@
 console.aws.amazon.com
 signin.aws.amazon.com
 us-east-1.signin.aws.amazon.com
-sts.amazonaws.com
 iam.amazonaws.com
+
+# STS (Security Token Service)
+# Source: https://docs.aws.amazon.com/general/latest/gr/sts.html
+# AWS recommends Regional endpoints over the global legacy endpoint (better redundancy, lower latency).
+# GovCloud (us-gov-east-1, us-gov-west-1) and FIPS endpoints excluded — add if needed.
+sts.amazonaws.com               # global legacy endpoint (hosted in us-east-1; no automatic failover)
+# US
+sts.us-east-1.amazonaws.com
+sts.us-east-2.amazonaws.com
+sts.us-west-1.amazonaws.com
+sts.us-west-2.amazonaws.com
+# Africa
+sts.af-south-1.amazonaws.com
+# Asia Pacific
+sts.ap-east-1.amazonaws.com
+sts.ap-east-2.amazonaws.com
+sts.ap-south-1.amazonaws.com
+sts.ap-south-2.amazonaws.com
+sts.ap-southeast-1.amazonaws.com
+sts.ap-southeast-2.amazonaws.com
+sts.ap-southeast-3.amazonaws.com
+sts.ap-southeast-4.amazonaws.com
+sts.ap-southeast-5.amazonaws.com
+sts.ap-southeast-6.amazonaws.com
+sts.ap-southeast-7.amazonaws.com
+sts.ap-northeast-1.amazonaws.com
+sts.ap-northeast-2.amazonaws.com
+sts.ap-northeast-3.amazonaws.com
+# Canada
+sts.ca-central-1.amazonaws.com
+sts.ca-west-1.amazonaws.com
+# Europe
+sts.eu-central-1.amazonaws.com
+sts.eu-central-2.amazonaws.com
+sts.eu-west-1.amazonaws.com
+sts.eu-west-2.amazonaws.com
+sts.eu-west-3.amazonaws.com
+sts.eu-north-1.amazonaws.com
+sts.eu-south-1.amazonaws.com
+sts.eu-south-2.amazonaws.com
+# Israel
+sts.il-central-1.amazonaws.com
+# Mexico
+sts.mx-central-1.amazonaws.com
+# Middle East
+sts.me-central-1.amazonaws.com
+sts.me-south-1.amazonaws.com
+# South America
+sts.sa-east-1.amazonaws.com
 
 # S3 Storage
 s3.amazonaws.com

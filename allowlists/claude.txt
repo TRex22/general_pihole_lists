@@ -3,7 +3,7 @@
 # Sources:
 #   - Anthropic documentation: https://platform.claude.com/docs/
 #   - Claude API IP addresses: https://platform.claude.com/docs/en/api/ip-addresses
-#   - Inbound IPs: 160.79.104.0/23 | Outbound IPs: 160.79.104.0/21
+#   - Inbound IPv4: 160.79.104.0/23 | Inbound IPv6: 2607:6bc0::/48 | Outbound IPv4: 160.79.104.0/21
 
 # Main Anthropic domains
 anthropic.com
