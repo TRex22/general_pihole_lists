@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-09T21:43:19Z",
-  "total": 51196,
+  "generated_at": "2026-06-10T21:51:52Z",
+  "total": 51216,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -16251,6 +16251,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bittensor-burn-watch",
           "title": "PyPI/bittensor-burn-watch"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bittensor-emission-tracker",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bittensor-emission-tracker",
+          "title": "PyPI/bittensor-emission-tracker"
         }
       ],
       "first_seen": null,
@@ -49313,6 +49325,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/hello-bozzo2",
           "title": "PyPI/hello-bozzo2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "hello-dynamic",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/hello-dynamic",
+          "title": "PyPI/hello-dynamic"
         }
       ],
       "first_seen": null,
@@ -102488,6 +102512,18 @@
       "last_seen": null
     },
     {
+      "name": "requests-toolbelt-plus",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/requests-toolbelt-plus",
+          "title": "PyPI/requests-toolbelt-plus"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "requests-toolbelt-v2",
       "type": "PyPI",
       "sources": [
@@ -122895,6 +122931,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/telegramdoxing",
           "title": "PyPI/telegramdoxing"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "telegramlite",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/telegramlite",
+          "title": "PyPI/telegramlite"
         }
       ],
       "first_seen": null,
@@ -161411,6 +161459,18 @@
       "last_seen": null
     },
     {
+      "name": "@access-risk/browser-remedy-react",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@access-risk/browser-remedy-react",
+          "title": "npm/@access-risk/browser-remedy-react"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@accesshsc/access-forms-engine",
       "type": "npm",
       "sources": [
@@ -173981,6 +174041,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bugtestester/simple-web-app-package",
           "title": "npm/@bugtestester/simple-web-app-package"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@builder.io/dev-tools",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@builder.io/dev-tools",
+          "title": "npm/@builder.io/dev-tools"
         }
       ],
       "first_seen": null,
@@ -199503,6 +199575,18 @@
       "last_seen": null
     },
     {
+      "name": "@easytipsportal/pos-adapters",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@easytipsportal/pos-adapters",
+          "title": "npm/@easytipsportal/pos-adapters"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@eb1a3227cdc3fedbaec2fe38bf6c044a/do-not-install",
       "type": "npm",
       "sources": [
@@ -208905,6 +208989,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@help_center/utilities",
           "title": "npm/@help_center/utilities"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@helpcentre/tesco-help",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@helpcentre/tesco-help",
+          "title": "npm/@helpcentre/tesco-help"
         }
       ],
       "first_seen": null,
@@ -232335,6 +232431,18 @@
       "last_seen": null
     },
     {
+      "name": "@meme-sdk/trade",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@meme-sdk/trade",
+          "title": "npm/@meme-sdk/trade"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@mendeley-internal/api",
       "type": "npm",
       "sources": [
@@ -251859,6 +251967,42 @@
       "last_seen": null
     },
     {
+      "name": "@orion-design-system/components",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@orion-design-system/components",
+          "title": "npm/@orion-design-system/components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@orion-design-system/foundation",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@orion-design-system/foundation",
+          "title": "npm/@orion-design-system/foundation"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@orion-design-system/store",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@orion-design-system/store",
+          "title": "npm/@orion-design-system/store"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@orlserg32112/socket-test-vulndep",
       "type": "npm",
       "sources": [
@@ -263521,6 +263665,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@solana-labs/web3-js",
           "title": "npm/@solana-labs/web3-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@solana-labs/web3.js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@solana-labs/web3.js",
+          "title": "npm/@solana-labs/web3.js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@solana-launchpad/sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@solana-launchpad/sdk",
+          "title": "npm/@solana-launchpad/sdk"
         }
       ],
       "first_seen": null,
@@ -278939,12 +279107,36 @@
       "last_seen": null
     },
     {
+      "name": "@validate-ethereum-address/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@validate-ethereum-address/core",
+          "title": "npm/@validate-ethereum-address/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@validate-pubkey/hex",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@validate-pubkey/hex",
           "title": "npm/@validate-pubkey/hex"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@validate-sdk/v2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@validate-sdk/v2",
+          "title": "npm/@validate-sdk/v2"
         }
       ],
       "first_seen": null,
@@ -278969,6 +279161,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@validator-lut-sdk/v3",
           "title": "npm/@validator-lut-sdk/v3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@validator-sdk/pubkey",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@validator-sdk/pubkey",
+          "title": "npm/@validator-sdk/pubkey"
         }
       ],
       "first_seen": null,
@@ -421955,6 +422159,18 @@
       "last_seen": null
     },
     {
+      "name": "anaylze-json",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/anaylze-json",
+          "title": "npm/anaylze-json"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "ancdmoklxitjwqbf",
       "type": "npm",
       "sources": [
@@ -451061,6 +451277,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/argon2-napi",
           "title": "npm/argon2-napi"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "argoncrypt",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/argoncrypt",
+          "title": "npm/argoncrypt"
         }
       ],
       "first_seen": null,
@@ -614178,6 +614406,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "will",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://www.bleepingcomputer.com/news/security/github-announces-npm-security-changes-to-tackle-supply-chain-attacks/",
+          "title": "GitHub announces npm security changes to tackle supply-chain attacks",
+          "date": "2026-06-10"
+        }
+      ],
+      "first_seen": "2026-06-10",
+      "last_seen": "2026-06-10"
     },
     {
       "name": "workrally",
