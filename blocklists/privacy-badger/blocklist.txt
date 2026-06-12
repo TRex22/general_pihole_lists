@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-06-11T21:43:24Z
+! Generated: 2026-06-12T15:33:58Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 3113
+! Total domains: 3111
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -1501,7 +1501,6 @@
 ||juicyads.com^
 ||junior-shine.com^
 ||justpremium.com^
-||jwplatform.com^
 ||jwpltx.com^
 ||k-analytix.com^
 ||k5a.io^
@@ -1604,7 +1603,6 @@
 ||liquidus.net^
 ||listhub.net^
 ||listrakbi.com^
-||litix.io^
 ||littlecutecats.com^
 ||livechat-files.com^
 ||livedoor.com^
