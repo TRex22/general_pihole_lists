@@ -186,6 +186,14 @@ community.atlassian.com
 developer.atlassian.com
 confluence-connect.gliffy.net
 mantra.cloudanvil.net
+ss-inf.net
+atlassian-dev.net
+atlassian-3p.com
+teamworkgraph.com
+www.teamworkgraph.com
+teamworkgraph.ai
+www.teamworkgraph.ai
+teamwork-graph.atlassian.com
 
 # Kollabe (Planning Poker / Sprint Retrospectives)
 # Source: https://kollabe.com
@@ -239,6 +247,8 @@ stream-android.pushbullet.com
 static.pushbullet.com
 pushbullet.imgix.net
 update.pushbullet.com
+upload.pushbullet.com
+dl.pushbulletusercontent.com
 # zebra.pushbullet.com  # telemetry, but blocks desktop app startup if blocked
 
 # Malwarebytes
@@ -284,6 +294,8 @@ api.notion.com
 notionusercontent.com
 img.notionusercontent.com
 secure.notion-static.com
+app.notion.com
+audioprocessor.app.notion.com
 
 # Coda.io
 # Source: https://help.coda.io/en/articles/9971298-allow-required-domains-for-firewall-access
@@ -407,6 +419,7 @@ crl.sectigo.com
 ocsp.comodoca.com
 ocsp.comodoca4.com
 ocsp.usertrust.com
+crl.usertrust.com
 crl.comodoca.com
 crt.comodoca.com
 
@@ -418,6 +431,7 @@ acme-v02.api.letsencrypt.org
 lencr.org
 c.lencr.org
 o.lencr.org
+i.lencr.org
 
 # Google Trust Services (GTS) — used by Google's own certificates
 # Source: https://pki.goog/
@@ -443,6 +457,7 @@ ocsp2.globalsign.com
 crl.globalsign.com
 crl.globalsign.net
 secure.globalsign.com
+secure.globalsign.net
 
 # GeoTrust / Thawte / VeriSign (legacy DigiCert brands)
 # Source: https://www.digicert.com/kb/digicert-root-certificates.htm
@@ -812,6 +827,7 @@ getcomposer.org
 # Dart / Flutter
 # Source: https://dart.dev/tools/pub/
 pub.dev
+pub.dartlang.org
 dart.dev
 flutter.dev
 
