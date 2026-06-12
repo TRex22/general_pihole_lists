@@ -152,6 +152,8 @@ www.moonflix.org
 moonflix.in
 www.moonflix.in
 moonflix.com.co
+moonflix.site
+www.moonflix.site
 
 # Moonscans (manga/manhwa scanlation reader)
 moonscans.net
@@ -223,6 +225,8 @@ gql.twitch.tv
 link.twitch.tv
 clips.twitch.tv
 passport.twitch.tv
+usher.twitch.tv
+irc-ws.chat.twitch.tv
 twitchapps.com
 jtvnw.net
 static-cdn.jtvnw.net
@@ -531,6 +535,10 @@ ivs.eu-west-1.amazonaws.com
 # Limelight Networks / Edgio (major video CDN)
 # Used by HBO Max, ESPN, Paramount+, Discovery+, and others
 # Source: https://edg.io
+# NOTE: Edgio filed for Chapter 11 bankruptcy and shut down operations on
+# 2025-01-15; assets were sold off piecemeal (Akamai, Parler Cloud, Encore
+# Technologies, etc.). Service is defunct — entries kept for any legacy
+# CNAMEs/customers still pointing at these domains during migration.
 llnwd.net
 llnw.net
 edgio.net
@@ -541,8 +549,10 @@ edgecastcdn.net
 mux.com
 www.mux.com
 stream.mux.com
+image.mux.com
 ingest.mux.com
 api.mux.com
+litix.io
 
 # JW Player (widely embedded video player and CDN)
 # Source: https://jwplayer.com
@@ -551,6 +561,8 @@ www.jwplayer.com
 jwpcdn.com
 content.jwplatform.com
 cdn.jwplayer.com
+jwplatform.com
+jwpsrv.com
 
 # Brightcove (enterprise video platform)
 # Source: https://brightcove.com
@@ -559,6 +571,8 @@ www.brightcove.com
 players.brightcove.net
 brightcovecdn.com
 bcove.video
+api.brightcove.com
+edge.api.brightcove.com
 
 # CDN77 (popular CDN — used by AnimePahe and other streaming sites)
 # Source: https://cdn77.com
