@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-06-12T21:36:02Z
-# Total domains: 911
+# Generated: 2026-06-13T21:30:14Z
+# Total domains: 930
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -57,6 +57,25 @@ akinator.mobi.cdn.ezoic.net
 alibaba.tanx.com
 aliexpress.com
 allkaicerteam.com
+amazon.ae
+amazon.ca
+amazon.cn
+amazon.co.jp
+amazon.co.uk
+amazon.com.au
+amazon.com.br
+amazon.com.mx
+amazon.com.tr
+amazon.de
+amazon.eg
+amazon.es
+amazon.fr
+amazon.in
+amazon.it
+amazon.nl
+amazon.sa
+amazon.se
+amazon.sg
 amc.com
 anghami.com
 anime-loads.org

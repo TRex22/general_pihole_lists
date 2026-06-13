@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-12T21:41:37Z",
-  "total": 51280,
+  "generated_at": "2026-06-13T21:37:36Z",
+  "total": 51286,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -27075,6 +27075,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/darkmanontop",
           "title": "PyPI/darkmanontop"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "dash-grid-normalizer",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/dash-grid-normalizer",
+          "title": "PyPI/dash-grid-normalizer"
         }
       ],
       "first_seen": null,
@@ -159367,6 +159379,18 @@
       "last_seen": null
     },
     {
+      "name": "2fa-exe",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/2fa-exe",
+          "title": "npm/2fa-exe"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "2hvogw",
       "type": "npm",
       "sources": [
@@ -161969,6 +161993,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@acesso-io/genoma-ui",
           "title": "npm/@acesso-io/genoma-ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@achuthvp/postinstall-poc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@achuthvp/postinstall-poc",
+          "title": "npm/@achuthvp/postinstall-poc"
         }
       ],
       "first_seen": null,
@@ -175869,6 +175905,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@chysev/exreact",
           "title": "npm/@chysev/exreact"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ci-lifecycle-test/postinstall-ping",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ci-lifecycle-test/postinstall-ping",
+          "title": "npm/@ci-lifecycle-test/postinstall-ping"
         }
       ],
       "first_seen": null,
@@ -207837,6 +207885,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gfgtech/ui",
           "title": "npm/@gfgtech/ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@giftyhq/widget-components",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@giftyhq/widget-components",
+          "title": "npm/@giftyhq/widget-components"
         }
       ],
       "first_seen": null,
@@ -498593,6 +498653,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/axis-ui-generator",
           "title": "npm/axis-ui-generator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "axl-ui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/axl-ui",
+          "title": "npm/axl-ui"
         }
       ],
       "first_seen": null,
