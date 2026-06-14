@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-13T21:37:36Z",
-  "total": 51286,
+  "generated_at": "2026-06-14T21:37:00Z",
+  "total": 51297,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -11996,6 +11996,18 @@
       "last_seen": null
     },
     {
+      "name": "anthropickit",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/anthropickit",
+          "title": "PyPI/anthropickit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "anthropy",
       "type": "PyPI",
       "sources": [
@@ -14367,6 +14379,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/base-local-planner",
           "title": "PyPI/base-local-planner"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bash8",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bash8",
+          "title": "PyPI/bash8"
         }
       ],
       "first_seen": null,
@@ -30419,6 +30443,30 @@
       "last_seen": null
     },
     {
+      "name": "easyaillm",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/easyaillm",
+          "title": "PyPI/easyaillm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "easyaillm2",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/easyaillm2",
+          "title": "PyPI/easyaillm2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "easyascii",
       "type": "PyPI",
       "sources": [
@@ -30473,6 +30521,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/easyioctl",
           "title": "PyPI/easyioctl"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "easyllmai",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/easyllmai",
+          "title": "PyPI/easyllmai"
         }
       ],
       "first_seen": null,
@@ -43103,6 +43163,18 @@
       "last_seen": null
     },
     {
+      "name": "ezllmgen",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ezllmgen",
+          "title": "PyPI/ezllmgen"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "f2d5cfdc642c3d4",
       "type": "PyPI",
       "sources": [
@@ -46025,6 +46097,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/gen-user-random-agent",
           "title": "PyPI/gen-user-random-agent"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "generatellm",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/generatellm",
+          "title": "PyPI/generatellm"
         }
       ],
       "first_seen": null,
@@ -66180,12 +66264,36 @@
       "last_seen": null
     },
     {
+      "name": "llamagenerator",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/llamagenerator",
+          "title": "PyPI/llamagenerator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "llmboost-hub",
       "type": "PyPI",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/llmboost-hub",
           "title": "PyPI/llmboost-hub"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "llmgenerator",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/llmgenerator",
+          "title": "PyPI/llmgenerator"
         }
       ],
       "first_seen": null,
@@ -105459,6 +105567,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sajodecrypto",
           "title": "PyPI/sajodecrypto"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "salesforce-sysutils-diagnostics",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/salesforce-sysutils-diagnostics",
+          "title": "PyPI/salesforce-sysutils-diagnostics"
         }
       ],
       "first_seen": null,
@@ -207573,6 +207693,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gartner/fetlife-assets",
           "title": "npm/@gartner/fetlife-assets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gbrlxvi/ts-form-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gbrlxvi/ts-form-utils",
+          "title": "npm/@gbrlxvi/ts-form-utils"
         }
       ],
       "first_seen": null,
