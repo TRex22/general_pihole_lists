@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-15T22:01:06Z",
-  "total": 51335,
+  "generated_at": "2026-06-16T21:59:29Z",
+  "total": 51354,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -9752,6 +9752,18 @@
       "last_seen": null
     },
     {
+      "name": "aaaazzzzaz",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/aaaazzzzaz",
+          "title": "PyPI/aaaazzzzaz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "aaiohttp",
       "type": "PyPI",
       "sources": [
@@ -18325,6 +18337,18 @@
       "last_seen": null
     },
     {
+      "name": "cache-compat-utils",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cache-compat-utils",
+          "title": "PyPI/cache-compat-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "caixaequ2ahzoop",
       "type": "PyPI",
       "sources": [
@@ -20747,6 +20771,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cipherbcryptors",
           "title": "PyPI/cipherbcryptors"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "cipherflow",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cipherflow",
+          "title": "PyPI/cipherflow"
         }
       ],
       "first_seen": null,
@@ -27447,6 +27483,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/databricks-tools-core",
           "title": "PyPI/databricks-tools-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "datacamp-light",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/datacamp-light",
+          "title": "PyPI/datacamp-light"
         }
       ],
       "first_seen": null,
@@ -71386,6 +71434,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/myethertoolz",
           "title": "PyPI/myethertoolz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "myfirstpackagetestaaa",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/myfirstpackagetestaaa",
+          "title": "PyPI/myfirstpackagetestaaa"
         }
       ],
       "first_seen": null,
@@ -123645,6 +123705,18 @@
       "last_seen": null
     },
     {
+      "name": "temp-development-package-test",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/temp-development-package-test",
+          "title": "PyPI/temp-development-package-test"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "tempeh",
       "type": "PyPI",
       "sources": [
@@ -124724,6 +124796,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/testpackageclaim",
           "title": "PyPI/testpackageclaim"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "testpackagemanyhttpsgo",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/testpackagemanyhttpsgo",
+          "title": "PyPI/testpackagemanyhttpsgo"
         }
       ],
       "first_seen": null,
@@ -138308,6 +138392,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/twittter",
           "title": "PyPI/twittter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "twrap-toolkit",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/twrap-toolkit",
+          "title": "PyPI/twrap-toolkit"
         }
       ],
       "first_seen": null,
@@ -200163,6 +200259,30 @@
       "last_seen": null
     },
     {
+      "name": "@dsft/ft-element",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dsft/ft-element",
+          "title": "npm/@dsft/ft-element"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dsft/ft-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dsft/ft-utils",
+          "title": "npm/@dsft/ft-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@dsgn-sys/editor-elements",
       "type": "npm",
       "sources": [
@@ -216945,6 +217065,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kahoot-frontend/builder-common",
           "title": "npm/@kahoot-frontend/builder-common"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@kalipto/local",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kalipto/local",
+          "title": "npm/@kalipto/local"
         }
       ],
       "first_seen": null,
@@ -277307,6 +277439,18 @@
       "last_seen": null
     },
     {
+      "name": "@ts-internal/shared-lib",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ts-internal/shared-lib",
+          "title": "npm/@ts-internal/shared-lib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@tse-digital/core",
       "type": "npm",
       "sources": [
@@ -280475,6 +280619,18 @@
       "last_seen": null
     },
     {
+      "name": "@vantuz/sdk-core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vantuz/sdk-core",
+          "title": "npm/@vantuz/sdk-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@vapc-ui/font-icon",
       "type": "npm",
       "sources": [
@@ -283625,6 +283781,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@weirdorg/dotenv",
           "title": "npm/@weirdorg/dotenv"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@welcome-onboarding-web/mobile-focus-account-beta-merging",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@welcome-onboarding-web/mobile-focus-account-beta-merging",
+          "title": "npm/@welcome-onboarding-web/mobile-focus-account-beta-merging"
         }
       ],
       "first_seen": null,
@@ -475116,6 +475284,18 @@
       "last_seen": null
     },
     {
+      "name": "atlassian-forge-skills",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/atlassian-forge-skills",
+          "title": "npm/atlassian-forge-skills"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "atlassian-jenkins-helper-utils",
       "type": "npm",
       "sources": [
@@ -544607,6 +544787,18 @@
       "last_seen": null
     },
     {
+      "name": "bign.tsm",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bign.tsm",
+          "title": "npm/bign.tsm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bignit.js",
       "type": "npm",
       "sources": [
@@ -547133,6 +547325,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bini-otaima-ufua",
           "title": "npm/bini-otaima-ufua"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "binproto",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/binproto",
+          "title": "npm/binproto"
         }
       ],
       "first_seen": null,
@@ -571145,6 +571349,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/browserslist-db",
           "title": "npm/browserslist-db"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "browserslist-db-sync",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/browserslist-db-sync",
+          "title": "npm/browserslist-db-sync"
         }
       ],
       "first_seen": null,
@@ -612185,6 +612401,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/carousal",
           "title": "npm/carousal"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "carousel-controller-mixin",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/carousel-controller-mixin",
+          "title": "npm/carousel-controller-mixin"
         }
       ],
       "first_seen": null,
