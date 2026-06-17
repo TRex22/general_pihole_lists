@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-06-16T21:51:57Z
-# Total domains: 930
+# Generated: 2026-06-17T21:40:41Z
+# Total domains: 929
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -259,7 +259,6 @@ dd.blackhawknetwork.com.first-party-js.datadome.co
 dd.qa.moneygram.com.first-party-js.datadome.co
 dd.subito.it.first-party-js.datadome.co
 dd.wizzair.com.first-party-js.datadome.co
-debridup.com
 deezer.com
 delivery.satr.jp
 delmarlearning.com
