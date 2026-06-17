@@ -21768,6 +21768,7 @@ zlzefe.in
 
 # Source: https://unit42.paloaltonetworks.com/connectwise-threat-brief-cve-2024-1708-cve-2024-1709/
 # Source: https://cloud.google.com/blog/topics/threat-intelligence/investigating-ivanti-zero-day-exploitation
+# Source: https://redcanary.com/blog/security-operations/rmm-detection/
 116.0.56.101
 118.69.65.60
 119.3.12.54
@@ -41951,11 +41952,9 @@ cembusconfort.ro
 # Source: https://unit42.paloaltonetworks.com/hijacking-vertex-ai-model/
 gcp-sa-aiplatform.iam.gserviceaccount.com
 
-
 # Source: https://www.welivesecurity.com/en/eset-research/fishmongers-arsenal-upgraded-sprysocks-windows/
 207.148.75.122
 207.148.78.36
-
 
 # Source: https://www.security.com/threat-intelligence/dragonforce-msteams-backdoor
 192.36.27.51
@@ -41980,7 +41979,6 @@ toolssocialbizsolutions.com
 toolsturnkeyaiagents.com
 turnkeyaiagents.com
 
-
 # Source: https://www.huntress.com/blog/potemkin-loader-rmmproject-clickfix-attack
 198.41.192.77
 198.41.200.63
@@ -41994,4 +41992,23 @@ resumeacceptable.com
 rule-bead-dust.xyz
 sonra.eutialyson.com
 uglyshop-mare.xyz
+
+# Source: http://thehackernews.com/2026/06/malicious-jetbrains-plugins-steal-ai.html
+# Source: https://www.bleepingcomputer.com/news/security/malicious-jetbrains-marketplace-plugins-steal-ai-api-keys-from-developers/
+39.107.60.51
+
+# Source: http://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html
+23.254.164.123
+23.254.164.92
+
+# Source: https://redcanary.com/blog/security-operations/rmm-detection/
+atera-agent-heartbeat.servicebus.windows.net
+atera.com
+kabutoservices.com
+logmein.com
+pdq.com
+remotedesktop.com.how
+remotepc.com
+syncroapi.com
+syncromsp.com
 

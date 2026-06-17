@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-06-16T21:52:01Z
+# Generated: 2026-06-17T21:40:45Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 776
+# Total domains: 779
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -122,6 +122,7 @@ bootstrapcdn.com
 brand-sdk.kmsmep.com
 brands.kmsmep.com
 brightcove.com
+brightspotcdn.com
 brm-core-0.brsrvr.com
 browser.translate.yandex.net
 builder-assets.unbounce.com
@@ -405,6 +406,7 @@ lib.getshogun.com
 libraries.unbxdapi.com
 libsyn.com
 line-apps.com
+live-video.net
 live.primis.tech
 liveapi.yext.com
 livechatinc.com
@@ -567,6 +569,7 @@ rest.growinginteractive.com
 rewardstyle.com
 robot-vr-public.cdn.bcebos.com
 runkit.com
+s.hs-data.com
 s0.wp.com
 s1.wp.com
 s2.wp.com
