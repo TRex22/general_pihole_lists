@@ -2,11 +2,15 @@
 # Required domains for Google services functionality
 # Excludes: ads, tracking, analytics, and location-reporting domains
 # Sources:
-#   - Google Workspace network endpoints: https://support.google.com/a/answer/1279090
+#   - Google Workspace network endpoints: https://knowledge.workspace.google.com/admin/meet/prepare-your-network-for-meet-meetings-and-live-streams
+#     (https://support.google.com/a/answer/1279090 now redirects here)
 #   - Android connectivity check: https://support.google.com/android/answer/9654714
-#   - Chrome Safe Browsing: https://support.google.com/chrome/a/answer/6334504
-#   - Firebase Cloud Messaging: https://firebase.google.com/docs/cloud-messaging/concept-options
+#   - Chrome Safe Browsing / hostname allowlist: https://support.google.com/chrome/a/answer/6334001
+#     (https://support.google.com/chrome/a/answer/6334504 returns 404 as of 2026-06; superseded by 6334001)
+#   - Firebase Cloud Messaging: https://firebase.google.com/docs/cloud-messaging/network-configuration
+#     (https://firebase.google.com/docs/cloud-messaging/concept-options returns 404 as of 2026-06; superseded by network-configuration)
 #   - YouTube required domains: https://support.google.com/youtube/answer/10046411
+#     (returns 404 as of 2026-06 — likely removed/merged into another article; kept for reference)
 #   - Pi-hole commonly whitelisted: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
 
 # ============================================
@@ -44,11 +48,24 @@ maps.googleapis.com
 translate.googleapis.com
 
 # Safe Browsing (security feature — keeps phishing/malware warnings working)
+# Source: https://support.google.com/chrome/a/answer/6334001 (Chrome hostname allowlist)
 safebrowsing.googleapis.com
+safebrowsing.google.com
+safebrowsing-cache.google.com
+sb-ssl.google.com
 
 # Chrome / Android update delivery
 dl.google.com
 redirector.gvt1.com
+tools.google.com
+m.google.com
+edgedl.me.gvt1.com
+
+# Chrome sign-in / policy sync
+# Source: https://support.google.com/chrome/a/answer/6334001
+ssl.gstatic.com
+accounts.gstatic.com
+policies.google.com
 
 # ============================================
 # GOOGLE WORKSPACE / GMAIL

@@ -106,6 +106,9 @@ login.live.com
 # intercom-sheets.com
 # intercom.help
 # www.intercom-reporting.com
+# app.intercom.com
+# app.eu.intercom.com
+# app.au.intercom.com
 # Intercom messenger/attachments (requires regex wildcard entries in Pi-hole)
 # *.intercom-messenger.com
 # *.intercom-attachments-1.com
@@ -176,6 +179,10 @@ f.vimeocdn.com
 # terminal.stripe.com
 # uploads.stripe.com
 # verify.stripe.com
+# atlas.stripe.com
+# climate.stripe.com
+# express.stripe.com
+# merchant-ui-api.stripe.com
 # hcaptcha.com
 
 # CDN and static assets

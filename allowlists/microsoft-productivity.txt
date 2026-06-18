@@ -56,6 +56,10 @@ provisioningapi.microsoftonline.com
 main.iam.ad.ext.azure.com
 ccs.login.microsoftonline.com
 phonefactor.net             # Microsoft MFA (Azure Multi-Factor Auth) — ID 59 DefaultRequired: *.phonefactor.net
+msecnd.net                  # ID 59 DefaultRequired: *.msecnd.net (Microsoft auth/CDN)
+msauthimages.net            # ID 59 DefaultRequired: *.msauthimages.net
+msftauthimages.net          # ID 59 DefaultRequired: *.msftauthimages.net
+aadcdn.microsoftonline-p.com # Azure portal authentication (azure-portal-safelist-urls)
 
 # Office 365 / Exchange Online
 outlook.office365.com
@@ -182,6 +186,8 @@ iga.azure.com
 mspim.azure.com
 api.azrbac.mspim.azure.com
 appmanagement.activedirectory.microsoft.com
+hosting.partners.azure.net          # Azure portal framework (azure-portal-safelist-urls)
+# *.onmicrosoft.com — tenant domain, requires regex wildcard (autodiscover.<tenant>.onmicrosoft.com)
 
 # ============================================
 # SECURITY AND COMPLIANCE
@@ -262,6 +268,15 @@ officepreviewredir.microsoft.com
 officeredir.microsoft.com
 r.office.microsoft.com
 
+# Office docs/support (ID 70 DefaultRequired)
+config.office.com
+o365weve.com
+docs.microsoft.com
+msdn.microsoft.com
+support.microsoft.com
+technet.microsoft.com
+dgps.support.microsoft.com
+
 # Windows Activity — DefaultRequired for Microsoft 365 activity feed / Teams (ID 156)
 activity.windows.com
 # settings-win.data.microsoft.com  # Windows telemetry — keep blocked
@@ -289,6 +304,7 @@ urlp.sfbassets.com
 keydelivery.mediaservices.windows.net
 streaming.mediaservices.windows.net
 tenor.com
+skypemaprdsitus.trafficmanager.net  # Skype/Teams routing (TheSmashy O365 Whitelist)
 
 # Teams connectivity and routing
 config.teams.microsoft.com
