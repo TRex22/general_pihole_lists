@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-06-18T07:54:20Z
+! Generated: 2026-06-18T21:43:56Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2793
+! Total domains: 2791
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -1002,7 +1002,6 @@
 ||forseasky.com^
 ||forter.com^
 ||fouanalytics.com^
-||fourhoi.com^
 ||fout.jp^
 ||fpjs.io^
 ||fpjscdn.net^
@@ -1162,7 +1161,6 @@
 ||heapanalytics.com^
 ||heatmapcore.com^
 ||hellofresh.com^
-||helpshift.com^
 ||hengam.io^
 ||hentaigold.net^
 ||herbgreencolumn.com^
