@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-06-18T07:54:20Z
+# Generated: 2026-06-18T21:43:56Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 779
+# Total domains: 787
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -88,6 +88,7 @@ aspnetcdn.com
 assets-cdk.com
 assets.bigcartel.com
 assets.braintreegateway.com
+assets.finn.no
 assets.rebelmouse.io
 assets.reviews.io
 assets.scrippsdigital.com
@@ -313,6 +314,7 @@ forms.hsforms.com
 forms.hubspot.com
 forms.tildaapi.com
 formstack.com
+fourhoi.com
 frankerfacez.com
 fundraiseup.com
 fups.com
@@ -343,6 +345,7 @@ h-microsoft.online-metrix.net
 h-walmart.online-metrix.net
 hcaptcha.com
 hdr.sundaysky.com
+helpshift.com
 highwebmedia.com
 homepagedesigner.telekom.de
 homestead.com
@@ -365,9 +368,14 @@ iheartjane.com
 image.rakuten.co.jp
 imagekit.io
 images-amazon.com
+images.justwatch.com
 images.pexels.com
 images.powerreviews.com
 images.sundaysky.com
+images1.cmp.optimizely.com
+images2.cmp.optimizely.com
+images3.cmp.optimizely.com
+images4.cmp.optimizely.com
 imbox.io
 img.purch.com
 img.strpst.com
