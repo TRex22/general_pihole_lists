@@ -7,10 +7,13 @@
 #   - AWS IP address ranges: https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
 #   - AWS Sign-In allowlist domains: https://docs.aws.amazon.com/signin/latest/userguide/allowlist-domains.html
 #   - AWS dual-stack / threat mitigation endpoints: https://docs.aws.amazon.com/signin/latest/userguide/allowlist-domains.html (captcha section)
-#   - Amazon device network requirements: https://developer.amazon.com/docs/fire-tv/network-requirements.html
-#   - Amazon Alexa network requirements: https://developer.amazon.com/docs/alexa/alexa-voice-service/avs-for-aws-iot-getting-started.html
+#   - Amazon device network requirements: https://developer.amazon.com/docs/fire-tv/network-requirements.html (DEAD as of 2026-06-18, 404 — no official replacement found)
+#   - Amazon Alexa network requirements: https://developer.amazon.com/docs/alexa/alexa-voice-service/avs-for-aws-iot-getting-started.html (DEAD as of 2026-06-18, 404 — see https://docs.aws.amazon.com/iot/latest/developerguide/avs-integration-aws-iot.html instead)
 # Note: unagi.amazon.com and dcape-na.amazon.com are undocumented internal endpoints
 #       discovered via traffic analysis (Amazon apps, Kindle, Shopping). No official source page exists.
+# Note: community-reported Fire TV/Alexa endpoints (e.g. arcus-uswest.amazon.com, dp-gw-na.amazon.com,
+#       api.amazonalexa.com) are NOT added here — unverified against an official AWS/Amazon source page,
+#       per repo policy of citing a documented source for additions.
 
 # AWS Console and Authentication
 console.aws.amazon.com
@@ -185,6 +188,14 @@ us-east-1.sso-portal.amazonaws.com
 oidc.us-east-1.amazonaws.com
 awsapps.com
 view.awsapps.com
+
+# AWS Sign-In administration / dual-stack API endpoints (us-east-1)
+# Source: https://docs.aws.amazon.com/signin/latest/userguide/allowlist-domains.html (admin + access-portal sections, fetched 2026-06-18)
+signin.us-east-1.api.aws
+oidc.us-east-1.api.aws
+sso.us-east-1.api.aws
+portal.sso.us-east-1.api.aws
+us-east-1.sso.signin.aws
 
 # AWS Builder ID / Profile
 profile.aws.amazon.com

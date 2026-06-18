@@ -3,6 +3,8 @@
 # Sources:
 #   - Anthropic documentation: https://platform.claude.com/docs/
 #   - Claude API IP addresses: https://platform.claude.com/docs/en/api/ip-addresses
+#   - Claude Code network config: https://code.claude.com/docs/en/network-config
+#   - Claude Code data usage / telemetry: https://code.claude.com/docs/en/data-usage
 #   - Inbound IPv4: 160.79.104.0/23 | Inbound IPv6: 2607:6bc0::/48 | Outbound IPv4: 160.79.104.0/21
 
 # Main Anthropic domains
@@ -30,6 +32,14 @@ auth.claude.ai
 
 # WebSocket connections for real-time chat
 wss.claude.ai
+
+# Claude Code (CLI) network requirements
+downloads.claude.ai
+bridge.claudeusercontent.com
+storage.googleapis.com
+# also in google.txt
+raw.githubusercontent.com
+# also in general.txt
 
 # CDN and static assets (Cloudflare)
 cdnjs.cloudflare.com

@@ -77,6 +77,10 @@ pt.aliexpress.com
 ru.aliexpress.com
 tr.aliexpress.com
 
+# AliExpress Russia (separate primary domain, listed by Netify)
+# Source: https://www.netify.ai/resources/applications/aliexpress
+aliexpress.ru
+
 # Alibaba CDN (alicdn.com) — serves product images and static assets
 alicdn.com
 ae01.alicdn.com
@@ -222,6 +226,15 @@ srx.main.ebayrtm.com
 # eBay ad services (required for some page elements)
 ebayadservices.com
 
+# eBay US storefront (separate primary domain, listed by Netify)
+# Source: https://www.netify.ai/resources/applications/ebay
+ebay-us.com
+
+# eBay commerce subdomains (storefront / seller flows)
+# Source: https://github.com/JamieFarrelly/Popular-Site-Subdomains/blob/master/Ebay.com.txt
+shop.ebay.com
+sell.ebay.com
+
 # eBay regional storefronts
 ebay.co.uk
 ebay.com.au
@@ -312,6 +325,11 @@ images-amazon.com
 
 # Amazon affiliate (required for referral links to resolve)
 assoc-amazon.com
+
+# Amazon corporate/security infrastructure (primary domains per Netify)
+# Source: https://www.netify.ai/resources/applications/amazon
+a2z.com
+amazontrust.com
 
 # ─────────────────────────────────────────────────────────────────────────────
 # South African online shopping
