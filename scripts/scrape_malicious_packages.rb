@@ -70,6 +70,8 @@ PACKAGE_INSTALL_PATTERNS = [
     type: 'Go' },
   { re: /\bcomposer\s+require\s+['"]?([a-zA-Z0-9][a-zA-Z0-9\-_\.\/]{1,100})['"]?(?:\s|$)/,
     type: 'Packagist' },
+  { re: /\b(?:yay|paru|pikaur)\s+(?:-S|--sync|install)\s+(?:-[^\s]+\s+)*['"]?([a-zA-Z0-9][a-zA-Z0-9\-_\.]{1,100})['"]?(?:\s|$)/,
+    type: 'AUR' },
 ].freeze
 
 # High-confidence contextual mention patterns. Capture group 1 = package name.
@@ -100,6 +102,9 @@ PACKAGE_MENTION_PATTERNS = [
   # GitHub Actions malicious workflow step
   { re: /(?:malicious|compromised?|backdoored?)\s+(?:GitHub\s+Actions?|action)\s+[`'""\[]([a-zA-Z0-9][a-zA-Z0-9\-_\.@\/]{1,100})[`'""\]]/i,
     type: 'GitHub Actions' },
+  # "malicious AUR package 'x'"
+  { re: /(?:malicious|backdoored?|trojanized|infected|fake|rogue|typosquatt?\w*|stealer)\s+AUR\s+(?:package|pkgbuild)?\s*[`'""\[]([a-zA-Z0-9][a-zA-Z0-9\-_\.]{1,100})[`'""\]]/i,
+    type: 'AUR' },
 ].freeze
 
 def normalize_package_ecosystem(raw)
@@ -115,6 +120,7 @@ def normalize_package_ecosystem(raw)
   when /\bcomposer\b/, /\bpackagist\b/, /\bphp\b/ then 'Packagist'
   when /\bhex(?:\.pm)?\b/, /\belixir\b/       then 'Hex'
   when /\bgithub\s+actions?\b/                then 'GitHub Actions'
+  when /\baur\b/, /\barch\s+user\s+repository\b/, /\byay\b/, /\bpacman\b/ then 'AUR'
   else raw.strip
   end
 end
@@ -144,6 +150,8 @@ def valid_package_name?(name, type)
     !!(name =~ /\A[a-zA-Z0-9][a-zA-Z0-9\-_\.]{0,212}\z/)
   when 'Go'
     !!(name =~ /\A[a-zA-Z0-9][a-zA-Z0-9\-_\.\/]{0,212}\z/)
+  when 'AUR'
+    !!(name =~ /\A[a-z0-9][a-z0-9\-_\.@\+]{0,212}\z/)
   else
     !!(name =~ /\A[a-zA-Z0-9][\w\-_\.@\/]{0,212}\z/)
   end
