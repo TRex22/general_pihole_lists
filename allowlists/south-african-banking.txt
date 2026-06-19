@@ -1,0 +1,106 @@
+# South African Banking Allowlist for Pi-hole
+# Domains required for South African bank websites and online/mobile banking
+# portals to function correctly.
+#
+# Sources:
+#   - List of banks in South Africa: https://en.wikipedia.org/wiki/List_of_banks_in_South_Africa
+#   - SA Reserve Bank registered banks: https://www.resbank.co.za
+#   - Absa: https://www.absa.co.za/ , https://ib.absa.co.za/login.html
+#   - FNB: https://www.fnb.co.za/
+#   - Standard Bank: https://www.standardbank.co.za/ , https://experience.standardbank.co.za/
+#   - Nedbank: https://www.nedbank.co.za/
+#   - Capitec: https://www.capitecbank.co.za/ , https://direct.capitecbank.co.za/
+#   - Investec: https://www.investec.com/en_za.html , https://login.secure.investec.com/
+#   - African Bank: https://www.africanbank.co.za/ , https://ib.africanbank.co.za/
+#   - Bidvest Bank: https://www.bidvestbank.co.za/
+#   - TymeBank / GoTyme Bank: https://www.tymebank.co.za/ , https://bank.tymedigital.co.za/
+#   - Discovery Bank: https://www.discovery.co.za/bank/
+#   - Bank Zero: https://www.bankzero.co.za/
+#   - Sasfin Bank: https://www.sasfin.com/
+#   - Mercantile Bank (now Capitec Business): https://www.mercantile.co.za/
+#   - OM Bank (Old Mutual): https://www.oldmutual.co.za/bank
+#   - Postbank: https://www.postbank.co.za/
+#   - Ithala Bank: https://www.ithala.co.za/ , https://banking.ithala.co.za/
+#   - Grindrod Bank: https://www.grindrodbank.co.za/
+#   - Access Bank South Africa: https://southafrica.accessbankplc.com/
+#   - Albaraka Bank: https://www.albaraka.co.za/ , https://www.ibanking.albarakaonline.co.za/
+
+# Nedbank (Adobe Experience Cloud first-party tracking, required for online
+# banking portal functionality — also listed in general.txt)
+nedbank.data.adobedc.net
+nedbank.sc.omtrdc.net
+
+# Nedbank
+nedbank.co.za
+www.nedbank.co.za
+
+# Absa
+absa.co.za
+www.absa.co.za
+ib.absa.co.za
+
+# FNB (First National Bank)
+fnb.co.za
+www.fnb.co.za
+
+# Standard Bank
+standardbank.co.za
+www.standardbank.co.za
+experience.standardbank.co.za
+
+# Capitec Bank
+capitecbank.co.za
+www.capitecbank.co.za
+direct.capitecbank.co.za
+
+# Investec
+investec.com
+login.secure.investec.com
+
+# African Bank
+africanbank.co.za
+www.africanbank.co.za
+ib.africanbank.co.za
+
+# Bidvest Bank
+bidvestbank.co.za
+www.bidvestbank.co.za
+
+# TymeBank / GoTyme Bank
+tymebank.co.za
+bank.tymedigital.co.za
+gotyme.co.za
+
+# Discovery Bank
+discovery.co.za
+www.discovery.co.za
+
+# Bank Zero
+bankzero.co.za
+
+# Sasfin Bank
+sasfin.com
+
+# Mercantile Bank
+mercantile.co.za
+
+# OM Bank (Old Mutual)
+oldmutual.co.za
+
+# Postbank
+postbank.co.za
+www.postbank.co.za
+
+# Ithala Bank
+ithala.co.za
+banking.ithala.co.za
+
+# Grindrod Bank
+grindrodbank.co.za
+
+# Access Bank South Africa
+southafrica.accessbankplc.com
+
+# Albaraka Bank
+albaraka.co.za
+www.ibanking.albarakaonline.co.za
