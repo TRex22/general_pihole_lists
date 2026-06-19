@@ -707,6 +707,10 @@ res.cloudinary.com
 # Statically — free CDN for open-source and GitHub-hosted assets
 statically.io
 
+# Tailwind CSS CDN (Play CDN, used for prototyping/dev)
+tailwindcss.com
+cdn.tailwindcss.com
+
 # jsDelivr mirror domains
 jsdelivr.com
 
@@ -1101,6 +1105,12 @@ manualsdump.com
 
 # Mailchimp transactional email (Mandrill)
 mandrillapp.com
+
+# Nedbank (Adobe Experience Cloud first-party tracking, required for online banking
+# portal functionality — same omtrdc.net pattern used by LinkedIn in
+# microsoft-productivity.txt)
+nedbank.data.adobedc.net
+nedbank.sc.omtrdc.net
 
 # DuckDB extensions
 extensions.duckdb.org
