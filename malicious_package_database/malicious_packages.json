@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-18T21:52:14Z",
-  "total": 51487,
+  "generated_at": "2026-06-19T21:34:54Z",
+  "total": 51514,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -43775,6 +43775,30 @@
       "last_seen": null
     },
     {
+      "name": "fastercode",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fastercode",
+          "title": "PyPI/fastercode"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "fastercoding",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fastercoding",
+          "title": "PyPI/fastercoding"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "fastertelethon",
       "type": "PyPI",
       "sources": [
@@ -44753,6 +44777,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/flowpeek",
           "title": "PyPI/flowpeek"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "fluent-panel-metrics",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fluent-panel-metrics",
+          "title": "PyPI/fluent-panel-metrics"
         }
       ],
       "first_seen": null,
@@ -118221,6 +118257,18 @@
       "last_seen": null
     },
     {
+      "name": "shoaib-done-pack",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/shoaib-done-pack",
+          "title": "PyPI/shoaib-done-pack"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "shokobo",
       "type": "PyPI",
       "sources": [
@@ -166883,6 +166931,18 @@
       "last_seen": null
     },
     {
+      "name": "@antoncarlos1/nodelamp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@antoncarlos1/nodelamp",
+          "title": "npm/@antoncarlos1/nodelamp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@antstackio/eslint-config-antstack",
       "type": "npm",
       "sources": [
@@ -170603,6 +170663,18 @@
       "last_seen": null
     },
     {
+      "name": "@apexcraft/nano-key",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@apexcraft/nano-key",
+          "title": "npm/@apexcraft/nano-key"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@apiary-annex/meta",
       "type": "npm",
       "sources": [
@@ -170633,6 +170705,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@apics/apps-ppp-web",
           "title": "npm/@apics/apps-ppp-web"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@apiwizards/auth-middleware",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@apiwizards/auth-middleware",
+          "title": "npm/@apiwizards/auth-middleware"
         }
       ],
       "first_seen": null,
@@ -174779,6 +174863,18 @@
       "last_seen": null
     },
     {
+      "name": "@briskforge/envcheck",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@briskforge/envcheck",
+          "title": "npm/@briskforge/envcheck"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@brix-crypto/crypto-js",
       "type": "npm",
       "sources": [
@@ -175349,6 +175445,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bytedanc/mona-max",
           "title": "npm/@bytedanc/mona-max"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bytemend/mfebus",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bytemend/mfebus",
+          "title": "npm/@bytemend/mfebus"
         }
       ],
       "first_seen": null,
@@ -176613,6 +176721,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@chtijs/eslint-config",
           "title": "npm/@chtijs/eslint-config"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@chunklab/hexparse",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@chunklab/hexparse",
+          "title": "npm/@chunklab/hexparse"
         }
       ],
       "first_seen": null,
@@ -234963,6 +235083,18 @@
       "last_seen": null
     },
     {
+      "name": "@mep-exp/api-tools",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mep-exp/api-tools",
+          "title": "npm/@mep-exp/api-tools"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@merge-api/merge-javascript-shared",
       "type": "npm",
       "sources": [
@@ -259885,6 +260017,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@qcsfe/venus-token",
           "title": "npm/@qcsfe/venus-token"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@qlab/component-intelligence",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@qlab/component-intelligence",
+          "title": "npm/@qlab/component-intelligence"
         }
       ],
       "first_seen": null,
@@ -363299,6 +363443,18 @@
       "last_seen": null
     },
     {
+      "name": "accordion-animationtiming-authorization",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/accordion-animationtiming-authorization",
+          "title": "npm/accordion-animationtiming-authorization"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "account-feapp-commons",
       "type": "npm",
       "sources": [
@@ -366881,6 +367037,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/actionaid",
           "title": "npm/actionaid"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "actionbars-infinitescroll-searchbar",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/actionbars-infinitescroll-searchbar",
+          "title": "npm/actionbars-infinitescroll-searchbar"
         }
       ],
       "first_seen": null,
@@ -398183,6 +398351,42 @@
       "last_seen": null
     },
     {
+      "name": "aikaf6688812",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aikaf6688812",
+          "title": "npm/aikaf6688812"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aikaf668897",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aikaf668897",
+          "title": "npm/aikaf668897"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aikaf788812",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aikaf788812",
+          "title": "npm/aikaf788812"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "aikido-module",
       "type": "npm",
       "sources": [
@@ -424601,6 +424805,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/analytics-q",
           "title": "npm/analytics-q"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "analytics-readability-gestures",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/analytics-readability-gestures",
+          "title": "npm/analytics-readability-gestures"
         }
       ],
       "first_seen": null,
@@ -469092,6 +469308,18 @@
       "last_seen": null
     },
     {
+      "name": "assert-kit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/assert-kit",
+          "title": "npm/assert-kit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "assert-new-compress-mu-key",
       "type": "npm",
       "sources": [
@@ -475470,6 +475698,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/async-promise-testing",
           "title": "npm/async-promise-testing"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "async-protobuf-av",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/async-protobuf-av",
+          "title": "npm/async-protobuf-av"
         }
       ],
       "first_seen": null,
@@ -484108,6 +484348,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "automatically",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/postinstall-payload-inside-mastra-npm-supply-chain-compromise/",
+          "title": "From package to postinstall payload: Inside the Mastra npm supply chain compromise by Sapphire Sleet",
+          "date": "2026-06-17"
+        }
+      ],
+      "first_seen": "2026-06-17",
+      "last_seen": "2026-06-17"
     },
     {
       "name": "automatio-extension",
@@ -507899,6 +508152,18 @@
       "last_seen": null
     },
     {
+      "name": "backgroundprocessing-contextmenus",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/backgroundprocessing-contextmenus",
+          "title": "npm/backgroundprocessing-contextmenus"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "backjob",
       "type": "npm",
       "sources": [
@@ -519371,6 +519636,18 @@
       "last_seen": null
     },
     {
+      "name": "barcodescanner-reconnect",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/barcodescanner-reconnect",
+          "title": "npm/barcodescanner-reconnect"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "barcodeuv",
       "type": "npm",
       "sources": [
@@ -520661,6 +520938,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base65536gen",
           "title": "npm/base65536gen"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "base_parts_ai",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base_parts_ai",
+          "title": "npm/base_parts_ai"
         }
       ],
       "first_seen": null,
@@ -585191,6 +585480,18 @@
       "last_seen": null
     },
     {
+      "name": "build-tracker-n5p1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/build-tracker-n5p1",
+          "title": "npm/build-tracker-n5p1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "build-triton-webpack-wezen",
       "type": "npm",
       "sources": [
@@ -585281,6 +585582,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/buildaurora",
           "title": "npm/buildaurora"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "buildautomation-touch",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/buildautomation-touch",
+          "title": "npm/buildautomation-touch"
         }
       ],
       "first_seen": null,
@@ -617144,6 +617457,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "or",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/postinstall-payload-inside-mastra-npm-supply-chain-compromise/",
+          "title": "From package to postinstall payload: Inside the Mastra npm supply chain compromise by Sapphire Sleet",
+          "date": "2026-06-17"
+        }
+      ],
+      "first_seen": "2026-06-17",
+      "last_seen": "2026-06-17"
     },
     {
       "name": "peertube-plugin-google-analytics-js",
