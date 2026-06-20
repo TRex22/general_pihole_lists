@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-19T21:34:54Z",
-  "total": 51514,
+  "generated_at": "2026-06-20T21:36:48Z",
+  "total": 51528,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -27081,6 +27081,30 @@
       "last_seen": null
     },
     {
+      "name": "d0rk3r",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/d0rk3r",
+          "title": "PyPI/d0rk3r"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "d0rk3r-telemetry",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/d0rk3r-telemetry",
+          "title": "PyPI/d0rk3r-telemetry"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "d1n0-exploit-aaaa",
       "type": "PyPI",
       "sources": [
@@ -29969,6 +29993,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/django-aerospike-sessions",
           "title": "PyPI/django-aerospike-sessions"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "django-auth-middleware-plus",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/django-auth-middleware-plus",
+          "title": "PyPI/django-auth-middleware-plus"
         }
       ],
       "first_seen": null,
@@ -44783,6 +44819,18 @@
       "last_seen": null
     },
     {
+      "name": "fluent-dashboard-panel-metrics",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fluent-dashboard-panel-metrics",
+          "title": "PyPI/fluent-dashboard-panel-metrics"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "fluent-panel-metrics",
       "type": "PyPI",
       "sources": [
@@ -52650,6 +52698,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/importsetup",
           "title": "PyPI/importsetup"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "improvado-layout-panel-metrics",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/improvado-layout-panel-metrics",
+          "title": "PyPI/improvado-layout-panel-metrics"
         }
       ],
       "first_seen": null,
@@ -99724,6 +99784,18 @@
       "last_seen": null
     },
     {
+      "name": "query-profile",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/query-profile",
+          "title": "PyPI/query-profile"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "queryservice-client",
       "type": "PyPI",
       "sources": [
@@ -102514,6 +102586,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/requessts-toolbelt",
           "title": "PyPI/requessts-toolbelt"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "request-cache-py",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/request-cache-py",
+          "title": "PyPI/request-cache-py"
         }
       ],
       "first_seen": null,
@@ -477066,6 +477150,90 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/atlaskit-registry",
           "title": "npm/atlaskit-registry"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "atlasora-api",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/atlasora-api",
+          "title": "npm/atlasora-api"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "atlasora-client",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/atlasora-client",
+          "title": "npm/atlasora-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "atlasora-config",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/atlasora-config",
+          "title": "npm/atlasora-config"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "atlasora-sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/atlasora-sdk",
+          "title": "npm/atlasora-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "atlasora-shared",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/atlasora-shared",
+          "title": "npm/atlasora-shared"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "atlasora-types",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/atlasora-types",
+          "title": "npm/atlasora-types"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "atlasora-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/atlasora-utils",
+          "title": "npm/atlasora-utils"
         }
       ],
       "first_seen": null,
