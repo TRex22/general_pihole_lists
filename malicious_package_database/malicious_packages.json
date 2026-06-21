@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-20T21:36:48Z",
-  "total": 51528,
+  "generated_at": "2026-06-21T21:38:57Z",
+  "total": 51531,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -54456,6 +54456,18 @@
       "last_seen": null
     },
     {
+      "name": "jsonschema-viewer",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/jsonschema-viewer",
+          "title": "PyPI/jsonschema-viewer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "jsonschemex",
       "type": "PyPI",
       "sources": [
@@ -102922,6 +102934,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/requests-core-plugin",
           "title": "PyPI/requests-core-plugin"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "requests-enhancer",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/requests-enhancer",
+          "title": "PyPI/requests-enhancer"
         }
       ],
       "first_seen": null,
@@ -556782,6 +556806,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/blingbling-dasda",
           "title": "npm/blingbling-dasda"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "blinkit-core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/blinkit-core",
+          "title": "npm/blinkit-core"
         }
       ],
       "first_seen": null,
