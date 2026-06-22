@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-06-21T21:31:39Z
+! Generated: 2026-06-22T21:44:05Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2791
+! Total domains: 2789
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -327,7 +327,6 @@
 ||apptracer.ru^
 ||aprtx.com^
 ||aralego.com^
-||arc-cdn.net^
 ||arcade.software^
 ||archive-digger.com^
 ||arnedtolethi.com^
@@ -1854,7 +1853,6 @@
 ||pickrr.com^
 ||pinklion.io^
 ||pinterest.com^
-||pipedriveassets.com^
 ||pippio.com^
 ||piwik.pro^
 ||pixad.com.tr^

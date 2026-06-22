@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-06-21T21:31:39Z
+# Generated: 2026-06-22T21:44:05Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 787
+# Total domains: 792
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -74,6 +74,7 @@ appconsent.io
 apps.mypurecloud.com.au
 apps.mypurecloud.de
 appspot.com
+arc-cdn.net
 arcgis.com
 arcgisonline.com
 arcot.com
@@ -291,6 +292,7 @@ eventsub.wss.twitch.tv
 everyaction.com
 ex.co
 expedia.com
+explicit.bing.net
 fbcdn.net
 feeds.soundcloud.com
 filepicker.io
@@ -522,6 +524,7 @@ pic.rmb.bdstatic.com
 pico.tools
 pics.dmm.co.jp
 pinimg.com
+pipedriveassets.com
 platform-au.cloud.coveo.com
 platform-eu.cloud.coveo.com
 platform.cloud.coveo.com
@@ -535,6 +538,7 @@ player.glomex.com
 player.kwikmotion.com
 player.sundaysky.com
 players.brightcove.net
+playerv9.kwikmotion.com
 playvideo.qcloud.com
 plex.tv
 pling.com
@@ -774,6 +778,7 @@ www.tradingview-widget.com
 www.tripadvisor.com
 xhpingcdn.com
 xsrv.jp
+xvideos.com
 yahoo.net
 yahooapis.com
 yastatic.net
