@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-21T21:38:57Z",
-  "total": 51531,
+  "generated_at": "2026-06-22T21:48:27Z",
+  "total": 51533,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -53850,6 +53850,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/intver",
           "title": "PyPI/intver"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "inversiones-common",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/inversiones-common",
+          "title": "PyPI/inversiones-common"
         }
       ],
       "first_seen": null,
@@ -285893,6 +285905,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wisetail/wds-selector",
           "title": "npm/@wisetail/wds-selector"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@withgoogle/stitch-sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@withgoogle/stitch-sdk",
+          "title": "npm/@withgoogle/stitch-sdk"
         }
       ],
       "first_seen": null,
