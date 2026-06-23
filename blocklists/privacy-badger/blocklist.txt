@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-06-23T17:40:20Z
+! Generated: 2026-06-23T21:35:01Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2787
+! Total domains: 2781
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -498,7 +498,6 @@
 ||brilliantlocco.com^
 ||bringads.ru^
 ||broadstreetads.com^
-||browser-intake-datadoghq.com^
 ||browser-intake-datadoghq.eu^
 ||browser-intake-us3-datadoghq.com^
 ||browser-intake-us5-datadoghq.com^
@@ -951,7 +950,6 @@
 ||fbot.me^
 ||feathr.co^
 ||featureassets.org^
-||featuregates.org^
 ||fedoq.com^
 ||feedad.com^
 ||feedify.net^
@@ -1770,7 +1768,6 @@
 ||opamarketplace.com^
 ||opecloud.com^
 ||open-adsyield.com^
-||openai.com^
 ||openfpcdn.io^
 ||openssp.ru^
 ||openweb.bid^
@@ -1908,7 +1905,6 @@
 ||prod-forum-proxy-connext.azurewebsites.net^
 ||prod-masthead-proxy-connext.azurewebsites.net^
 ||prodmp.ru^
-||prodregistryv2.org^
 ||producthunt.com^
 ||programattik.com^
 ||programmatica.com^
@@ -2322,8 +2318,6 @@
 ||statcounter.com^
 ||static-segmentpool.com^
 ||statmedia.ru^
-||statsig.com^
-||statsigapi.net^
 ||stay22.com^
 ||steelhousemedia.com^
 ||stellarlabs.ai^

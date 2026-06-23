@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-06-23T17:40:20Z
+# Generated: 2026-06-23T21:35:01Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 794
+# Total domains: 796
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -61,6 +61,7 @@ api.split.io
 api.spotify.com
 api.spreaker.com
 api.tenor.com
+api.termly.io
 api.transcend.io
 api.trustedform.com
 api.twisto.cz
@@ -233,6 +234,7 @@ consentcdn.cookiebot.com
 consentframework.com
 consentmanager.net
 content.jwplatform.com
+content.powerapps.com
 contentstack.com
 cookie-cdn.cookiepro.com
 cookieblock.trackersimulate.org
