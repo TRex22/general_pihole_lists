@@ -117,8 +117,10 @@ oneclient.sfx.ms
 skyapi.onedrive.live.com
 storage.live.com
 g.live.com
+api.onedrive.com
+cass.api.microsoft.com
 
-# ============================================
+# ==========================================
 # SHAREPOINT ONLINE
 # ============================================
 # Required: ID 31 (OptimizeRequired), ID 37 (DefaultRequired)
@@ -283,6 +285,7 @@ dgps.support.microsoft.com
 # Windows Activity — DefaultRequired for Microsoft 365 activity feed / Teams (ID 156)
 activity.windows.com
 # settings-win.data.microsoft.com  # Windows telemetry — keep blocked
+in.appcenter.ms
 
 # Certificate validation
 wdcp.microsoft.com
