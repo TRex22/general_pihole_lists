@@ -722,6 +722,20 @@ images.fie.futurecdn.net
 # Intercom customer support widget assets
 static.intercomassets.com
 
+# Disqus comment widget (includes tracking/analytics and ad-serving subdomains —
+# blocking these breaks comment loading and counts on many sites)
+disqus.com
+www.disqus.com
+disq.us
+c.disquscdn.com
+a.disquscdn.com
+referrer.disqus.com
+links.services.disqus.com
+glitter.services.disqus.com
+juggler.services.disqus.com
+tempest.services.disqus.com
+disqusads.com
+
 # Reddit image CDN (for Reddit embeds elsewhere)
 i.redd.it
 preview.redd.it
