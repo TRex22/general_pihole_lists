@@ -83,24 +83,47 @@ api-iam.intercom.io
 
 openai.com
 chatgpt.com
+chat.com
 chat.openai.com
 tcr9i.chat.openai.com
 ios.chat.openai.com
 android.chat.openai.com
 desktop.chat.openai.com
+auth.openai.com
 auth0.openai.com
 platform.openai.com
+developers.openai.com
+community.openai.com
+help.openai.com
+status.openai.com
 api.openai.com
+sora.com
+sora.openai.com
+crixet.com
 oaiusercontent.com
 oaistatic.com
+oaistatsig.com
 cdn.oaistatic.com
 featuregates.org
 prodregistryv2.org
+
+# Azure-hosted CDN/API infra used by OpenAI
+openaiapi-site.azureedge.net
+openaicom.imgix.net
+openaicomproductionae4b.blob.core.windows.net
+production-openaicom-storage.azureedge.net
+
+# Advanced Voice (LiveKit infrastructure)
+chatgpt.livekit.cloud
+host.livekit.cloud
+turn.livekit.cloud
 
 # Shared third-party infra also used by OpenAI (may already exist in other files)
 statsig.com
 statsigapi.net
 events.statsigapi.net
+o33249.ingest.sentry.io
+browser-intake-datadoghq.com
 
 # ============================================
 # PERPLEXITY
@@ -109,11 +132,16 @@ events.statsigapi.net
 perplexity.ai
 www.perplexity.ai
 api.perplexity.ai
+console.perplexity.ai
+login.perplexity.ai
+account.perplexity.ai
+agate.i.perplexity.ai
 labs.perplexity.ai
 frontend-cdn.perplexity.ai
 r2cdn.perplexity.ai
 pplx-next-static-public.perplexity.ai
 suggest.perplexity.ai
+stripe.perplexity.ai
 
 # ============================================
 # GOOGLE GEMINI
@@ -143,6 +171,7 @@ copilot.live.com
 x.ai
 grok.com
 api.x.ai
+accounts.x.ai
 
 # ============================================
 # MISTRAL AI
@@ -151,6 +180,7 @@ api.x.ai
 mistral.ai
 chat.mistral.ai
 console.mistral.ai
+auth.mistral.ai
 api.mistral.ai
 
 # ============================================
@@ -163,6 +193,7 @@ chat.deepseek.com
 api.deepseek.com
 platform.deepseek.com
 cdn.deepseek.com
+download.deepseek.com
 
 # ============================================
 # QWEN (Alibaba)
