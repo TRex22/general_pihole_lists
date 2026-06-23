@@ -292,6 +292,11 @@ in.appcenter.ms
 api.appcenter.ms
 api.mobile.azure.com
 
+# Windows Autopilot / Intune Device Directory Service (device enrollment & deployment profiles)
+dds.microsoft.com
+cs.dds.microsoft.com
+aad.cs.dds.microsoft.com
+
 # Certificate validation
 wdcp.microsoft.com
 wdcpalt.microsoft.com
