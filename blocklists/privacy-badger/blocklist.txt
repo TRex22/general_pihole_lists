@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-06-22T21:44:05Z
+! Generated: 2026-06-23T15:03:52Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2789
+! Total domains: 2787
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -789,7 +789,6 @@
 ||digitalvideoplatform.com^
 ||directadvert.ru^
 ||direqt.ai^
-||disqus.com^
 ||divisiondrearilyunfiled.com^
 ||diwhuteshu.com^
 ||dmca.com^
@@ -1389,7 +1388,6 @@
 ||knotch.com^
 ||knotch.it^
 ||kntxy.com^
-||ko-fi.com^
 ||koddi.com^
 ||kombinat.digital^
 ||komdigi.go.id^
