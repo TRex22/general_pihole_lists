@@ -1,0 +1,233 @@
+# AI Services Allowlist for Pi-hole
+# Required domains for major AI chat/assistant platforms
+# Sources:
+#   - Anthropic documentation: https://platform.claude.com/docs/
+#   - Claude API IP addresses: https://platform.claude.com/docs/en/api/ip-addresses
+#   - Claude Code network config: https://code.claude.com/docs/en/network-config
+#   - Claude Code data usage / telemetry: https://code.claude.com/docs/en/data-usage
+#   - Inbound IPv4: 160.79.104.0/23 | Inbound IPv6: 2607:6bc0::/48 | Outbound IPv4: 160.79.104.0/21
+#   - OpenAI network recommendations: https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps
+#   - Perplexity firewall policy: https://www.perplexity.ai/help-center/en/articles/14092010-configuring-network-firewall-policy-for-computer
+#   - Google Gemini app firewall settings: https://support.google.com/a/answer/15627649
+#   - Microsoft 365 Copilot network requirements: https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-requirements
+#   - xAI developer docs: https://docs.x.ai/
+#   - DeepSeek API docs: https://api-docs.deepseek.com/
+#   - Ollama required domains: https://github.com/ollama/ollama/issues/2390
+#   - RTK (Rust Token Killer): https://www.rtk-ai.app/ / https://github.com/rtk-ai/rtk
+#   - Pi coding agent: https://pi.dev/
+#   - Hugging Face Hub whitelist: https://discuss.huggingface.co/t/how-to-get-a-list-of-all-huggingface-download-redirections-to-whitelist/30486
+
+# ============================================
+# CLAUDE / ANTHROPIC
+# ============================================
+
+# Main Anthropic domains
+anthropic.com
+www.anthropic.com
+api.anthropic.com
+a-api.anthropic.com
+console.anthropic.com
+cdn.anthropic.com
+static.anthropic.com
+files.anthropic.com
+statsig.anthropic.com
+a-cdn.anthropic.com
+s-cdn.anthropic.com
+
+# Claude applications
+claude.com
+claude.ai
+www.claude.com
+www.claude.ai
+api.claude.ai
+platform.claude.com
+
+# Authentication and sessions
+auth.anthropic.com
+auth.claude.ai
+
+# WebSocket connections for real-time chat
+wss.claude.ai
+
+# Claude Code (CLI) network requirements
+downloads.claude.ai
+bridge.claudeusercontent.com
+storage.googleapis.com
+# also in google.txt
+raw.githubusercontent.com
+# also in general.txt
+
+# CDN and static assets (Cloudflare)
+cdnjs.cloudflare.com
+challenges.cloudflare.com
+
+# Stripe (for billing/subscriptions)
+stripe.com
+api.stripe.com
+js.stripe.com
+m.stripe.com
+
+# Intercom (for support)
+widget.intercom.io
+api-iam.intercom.io
+
+# Sentry (error reporting - may choose to block)
+# sentry.io
+
+# Analytics (may choose to block)
+# www.google-analytics.com
+
+# ============================================
+# OPENAI / CHATGPT
+# ============================================
+
+openai.com
+chatgpt.com
+chat.openai.com
+tcr9i.chat.openai.com
+ios.chat.openai.com
+android.chat.openai.com
+desktop.chat.openai.com
+auth0.openai.com
+platform.openai.com
+api.openai.com
+oaiusercontent.com
+oaistatic.com
+cdn.oaistatic.com
+featuregates.org
+prodregistryv2.org
+
+# Shared third-party infra also used by OpenAI (may already exist in other files)
+statsig.com
+statsigapi.net
+events.statsigapi.net
+
+# ============================================
+# PERPLEXITY
+# ============================================
+
+perplexity.ai
+www.perplexity.ai
+api.perplexity.ai
+labs.perplexity.ai
+frontend-cdn.perplexity.ai
+r2cdn.perplexity.ai
+pplx-next-static-public.perplexity.ai
+suggest.perplexity.ai
+
+# ============================================
+# GOOGLE GEMINI
+# ============================================
+# Most supporting Google infrastructure (googleapis.com, gstatic.com, etc.)
+# is already covered in google.txt
+
+gemini.google.com
+ogs.google.com
+waa-pa.clients6.google.com
+ogads-pa.clients6.google.com
+
+# ============================================
+# MICROSOFT COPILOT
+# ============================================
+# Core *.cloud.microsoft and office.com domains are already covered in
+# microsoft-productivity.txt
+
+copilot.microsoft.com
+copilot.cloud.microsoft
+copilot.live.com
+
+# ============================================
+# XAI / GROK
+# ============================================
+
+x.ai
+grok.com
+api.x.ai
+
+# ============================================
+# MISTRAL AI
+# ============================================
+
+mistral.ai
+chat.mistral.ai
+console.mistral.ai
+api.mistral.ai
+
+# ============================================
+# DEEPSEEK
+# ============================================
+
+deepseek.com
+www.deepseek.com
+chat.deepseek.com
+api.deepseek.com
+platform.deepseek.com
+cdn.deepseek.com
+
+# ============================================
+# QWEN (Alibaba)
+# ============================================
+
+qwen.ai
+chat.qwen.ai
+dashscope.aliyuncs.com
+
+# ============================================
+# OPENROUTER
+# ============================================
+
+openrouter.ai
+api.openrouter.ai
+
+# ============================================
+# GLM / Z.AI (Zhipu AI)
+# ============================================
+
+z.ai
+chat.z.ai
+api.z.ai
+bigmodel.cn
+open.bigmodel.cn
+zhipuai.cn
+
+# ============================================
+# OLLAMA (local model runner / registry)
+# ============================================
+
+ollama.com
+ollama.ai
+registry.ollama.ai
+
+# ============================================
+# PI (pi.dev coding agent)
+# ============================================
+
+pi.dev
+
+# ============================================
+# RTK (Rust Token Killer — CLI token-reduction proxy)
+# ============================================
+
+rtk-ai.app
+www.rtk-ai.app
+
+# ============================================
+# HUGGING FACE
+# ============================================
+
+huggingface.co
+hf.co
+hub-ci.huggingface.co
+
+# CDN / LFS (model and dataset weight downloads)
+cdn-lfs.hf.co
+cdn-lfs-us-1.hf.co
+cdn-lfs-eu-1.hf.co
+cdn-lfs.huggingface.co
+cdn-lfs-us-1.huggingface.co
+cdn-lfs-eu-1.huggingface.co
+
+# Xet storage backend (newer large-file transfer protocol)
+cas-bridge.xethub.hf.co
+cas-server.xethub.hf.co
+transfer.xethub.hf.co
