@@ -102,7 +102,6 @@ portal.office.com
 protection.office.com
 account.office.net
 pus8-collabhubrtc.officeapps.live.com
-# in.appcenter.ms  # App Center analytics/crash reporting
 # powerpointonline.nel.measure.office.net  # Network telemetry measurement
 # js.monitor.azure.com  # Azure JS monitoring (telemetry)
 # browser.events.data.microsoft.com  # Browser telemetry
@@ -119,6 +118,8 @@ storage.live.com
 g.live.com
 api.onedrive.com
 cass.api.microsoft.com
+1drv.com
+www.odwebp.svc.ms
 
 # ==========================================
 # SHAREPOINT ONLINE
@@ -265,6 +266,8 @@ crl.microsoft.com
 
 # Office activation
 activation.sls.microsoft.com
+ols.officeapps.live.com
+nexus.officeapps.live.com
 office15client.microsoft.com
 
 # Office redirects
@@ -286,6 +289,8 @@ dgps.support.microsoft.com
 activity.windows.com
 # settings-win.data.microsoft.com  # Windows telemetry — keep blocked
 in.appcenter.ms
+api.appcenter.ms
+api.mobile.azure.com
 
 # Certificate validation
 wdcp.microsoft.com
