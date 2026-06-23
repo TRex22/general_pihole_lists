@@ -150,9 +150,18 @@ stripe.perplexity.ai
 # is already covered in google.txt
 
 gemini.google.com
+bard.google.com
 ogs.google.com
 waa-pa.clients6.google.com
 ogads-pa.clients6.google.com
+
+# Google DeepMind / AI Studio (Gemini API, model research)
+deepmind.google
+deepmind.com
+generativelanguage.googleapis.com
+ai.google.dev
+aistudio.google.com
+makersuite.google.com
 
 # ============================================
 # MICROSOFT COPILOT
@@ -262,3 +271,67 @@ cdn-lfs-eu-1.huggingface.co
 cas-bridge.xethub.hf.co
 cas-server.xethub.hf.co
 transfer.xethub.hf.co
+
+# ============================================
+# CHARACTER.AI
+# ============================================
+
+character.ai
+beta.character.ai
+c.ai
+
+# ============================================
+# GRAMMARLY
+# ============================================
+
+grammarly.com
+www.grammarly.com
+app.grammarly.com
+capi.grammarly.com
+auth.grammarly.com
+grammarly.io
+grammarlyaws.com
+
+# ============================================
+# MIDJOURNEY
+# ============================================
+
+midjourney.com
+www.midjourney.com
+cdn.midjourney.com
+docs.midjourney.com
+
+# ============================================
+# LEONARDO.AI
+# ============================================
+
+leonardo.ai
+app.leonardo.ai
+
+# ============================================
+# GITHUB COPILOT
+# ============================================
+# Source: https://docs.github.com/en/copilot/reference/copilot-allowlist-reference
+
+githubcopilot.com
+individual.githubcopilot.com
+business.githubcopilot.com
+enterprise.githubcopilot.com
+api.githubcopilot.com
+copilot-proxy.githubusercontent.com
+copilot-telemetry.githubusercontent.com
+default.exp-tas.com
+
+# ============================================
+# REPLIT (AI Agent)
+# ============================================
+
+replit.com
+repl.co
+
+# ============================================
+# SOURCEGRAPH / CODY
+# ============================================
+
+sourcegraph.com
+cody-gateway.sourcegraph.com
