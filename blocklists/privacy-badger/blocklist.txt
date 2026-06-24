@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-06-23T21:35:01Z
+! Generated: 2026-06-24T21:32:52Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2781
+! Total domains: 2743
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -316,7 +316,6 @@
 ||apollo.io^
 ||app-us1.com^
 ||app.link^
-||appdynamics.com^
 ||appier.net^
 ||applovin.com^
 ||appocean.media^
@@ -401,7 +400,6 @@
 ||bartererfaxtingling.com^
 ||bashirian.biz^
 ||bbrdbr.com^
-||bce.ca^
 ||bcebos.com^
 ||bdg.com^
 ||beehiiv.com^
@@ -651,14 +649,12 @@
 ||condenastdigital.com^
 ||condorx.io^
 ||connatix.com^
-||connect.aws^
 ||connectad.io^
 ||connectedinteractive.com^
 ||connecto.io^
 ||connextra.com^
 ||consent.studio^
 ||consentag.eu^
-||constantcontact.com^
 ||contanuity.com^
 ||contentdsp.com^
 ||contentexchange.me^
@@ -687,7 +683,6 @@
 ||cootlogix.com^
 ||copper6.com^
 ||corewebvitals.io^
-||coupang.com^
 ||coveo.com^
 ||coverdistilltile.com^
 ||cpex.cz^
@@ -731,7 +726,6 @@
 ||dable.io^
 ||dadata.com.br^
 ||dailymail.co.uk^
-||dailymail.com^
 ||darkpetalia.com^
 ||darnobedienceupscale.com^
 ||dashfi.dev^
@@ -773,7 +767,6 @@
 ||detoxifylagoonsnugness.com^
 ||devconops.com^
 ||diagramjawlineunhappy.com^
-||dialpad.com^
 ||dianomi.com^
 ||diginetica.net^
 ||diginpat.com^
@@ -799,7 +792,6 @@
 ||dmsik.com^
 ||dmxleo.com^
 ||dnacdn.net^
-||dnb.com^
 ||doceree.com^
 ||docodoco.jp^
 ||docomo.ne.jp^
@@ -881,13 +873,11 @@
 ||eigene.io^
 ||ekcs.us^
 ||elementwidget.com^
-||elevenlabs.io^
 ||eln3ax.com^
 ||elnnap.com^
 ||eloqua.com^
 ||eltiempo.co^
 ||embed.ly^
-||embedly.com^
 ||emberhush.com^
 ||empowerlocal.co^
 ||emxdgt.com^
@@ -974,9 +964,7 @@
 ||fixidle.com^
 ||flashb.id^
 ||flashtalking.com^
-||flaticon.com^
 ||flipdesk.workers.dev^
-||flipp.com^
 ||flirtify.com^
 ||flocdn.com^
 ||flocktory.com^
@@ -987,7 +975,6 @@
 ||flyingpress.com^
 ||fmlabsonline.com^
 ||focas.jp^
-||fontshare.com^
 ||footbathmockerpurse.com^
 ||forethought.ai^
 ||formalhood.com^
@@ -1033,7 +1020,6 @@
 ||gammaplatform.com^
 ||gamoshi.io^
 ||garlicice.store^
-||gartner.com^
 ||gatorapi.com^
 ||gaug.es^
 ||gayporn.live^
@@ -1105,7 +1091,6 @@
 ||gokwik.co^
 ||gokwik.io^
 ||google-analytics.com^
-||google.be^
 ||googleadservices.com^
 ||googlesyndication.com^
 ||gosimplr.com^
@@ -1140,7 +1125,6 @@
 ||gumgum.com^
 ||gunosy.com^
 ||guoshipartners.com^
-||gyazo.com^
 ||h-cdn.com^
 ||h-f-a-4.com^
 ||hackle.io^
@@ -1185,14 +1169,11 @@
 ||hrzn-nxt.com^
 ||hs-analytics.net^
 ||hs-banner.com^
-||hs-data.com^
 ||hs-sites-eu1.com^
 ||hs-sites-na2.com^
 ||hs-sites.com^
 ||hsforms.com^
 ||htplayground.com^
-||hubspot.com^
-||hubspot.net^
 ||hubspotvideo.com^
 ||hubvisor.io^
 ||humblytics.com^
@@ -1218,7 +1199,6 @@
 ||iesnare.com^
 ||igaw.io^
 ||igodigital.com^
-||iheart.com^
 ||ihg.com^
 ||iid.jp^
 ||iionads.com^
@@ -1249,7 +1229,6 @@
 ||infinigrow.com^
 ||infinity-tracking.net^
 ||influ2.com^
-||infogram.com^
 ||infolinks.com^
 ||informz.net^
 ||infostation.digital^
@@ -1847,7 +1826,6 @@
 ||phywi.org^
 ||pickrr.com^
 ||pinklion.io^
-||pinterest.com^
 ||pippio.com^
 ||piwik.pro^
 ||pixad.com.tr^
@@ -1951,7 +1929,6 @@
 ||pyrus.com^
 ||q-bid.ru^
 ||q2s15.com^
-||qcloud.com^
 ||qiota.com^
 ||qiyukf.com^
 ||qlitics.com^
@@ -1960,7 +1937,6 @@
 ||qortex.ai^
 ||qq.com^
 ||qualified.com^
-||qualtrics.com^
 ||quantcount.com^
 ||quantserve.com^
 ||quantumdex.io^
@@ -1977,8 +1953,6 @@
 ||r2b2.io^
 ||raceusid.com^
 ||rageagainstthesoap.com^
-||rakuten.co.jp^
-||rakuten.com^
 ||rapidedge.io^
 ||rapidresultsearch.com^
 ||rapidspike.com^
@@ -2030,7 +2004,6 @@
 ||riamiavid.com^
 ||richaudience.com^
 ||riddle.com^
-||ringcentral.com^
 ||ringieraxelspringer.tech^
 ||riskified.com^
 ||rkdms.com^
@@ -2103,7 +2076,6 @@
 ||salesmartly.com^
 ||samba.tv^
 ||samplicio.us^
-||samsung.com^
 ||sankei-digital.co.jp^
 ||sape.ru^
 ||sardine.ai^
@@ -2264,7 +2236,6 @@
 ||sonobi.com^
 ||sophi.io^
 ||sorynna.com^
-||soundcloud.com^
 ||soundestlink.com^
 ||sovrn.com^
 ||sp-gn.com^
@@ -2338,7 +2309,6 @@
 ||stupsouchig.com^
 ||stylitics.com^
 ||sugarcams.com^
-||sumologic.com^
 ||sumome.com^
 ||sundaysky.com^
 ||sunmedia.tv^
@@ -2395,7 +2365,6 @@
 ||technoratimedia.com^
 ||techtarget.com^
 ||teepublic.com^
-||telkomsel.com^
 ||tend-table.com^
 ||tenmax.io^
 ||terminus.services^
@@ -2411,10 +2380,8 @@
 ||thehotelsnetwork.com^
 ||thenewsbox.net^
 ||thepointyspritesclub.com^
-||theweathernetwork.com^
 ||thisgreencolumn.com^
 ||thisisdax.com^
-||threads.com^
 ||thrtle.com^
 ||thunderhead.com^
 ||tickaroo.com^
@@ -2435,7 +2402,6 @@
 ||toast.com^
 ||tobsnssdk.com^
 ||togreencolumn.com^
-||tokopedia.com^
 ||tolstoycomments.com^
 ||tomi.ai^
 ||tomlldahehun.org^
@@ -2626,7 +2592,6 @@
 ||vk.ru^
 ||vkvideo.ru^
 ||vm5apis.com^
-||voiceflow.com^
 ||voipbuster.com^
 ||voisetech.com^
 ||volceapplog.com^
@@ -2779,10 +2744,7 @@
 ||zlink7.com^
 ||zlinkp.com^
 ||zlinkt.com^
-||zoho.in^
-||zohocloud.ca^
 ||zohopublic.ca^
-||zohopublic.in^
 ||zonos.com^
 ||zoominfo.com^
 ||zprk.io^

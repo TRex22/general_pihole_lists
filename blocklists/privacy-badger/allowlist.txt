@@ -1,11 +1,12 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-06-23T21:35:01Z
+# Generated: 2026-06-24T21:32:52Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 796
+# Total domains: 800
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
 25livepub.collegenet.com
+3ds.entersekt.com
 acast.com
 accounts.spotify.com
 actionnetwork.org
@@ -91,6 +92,7 @@ assets-cdk.com
 assets.bigcartel.com
 assets.braintreegateway.com
 assets.finn.no
+assets.mediadelivery.net
 assets.rebelmouse.io
 assets.reviews.io
 assets.scrippsdigital.com
@@ -294,7 +296,6 @@ eventsub.wss.twitch.tv
 everyaction.com
 ex.co
 expedia.com
-explicit.bing.net
 fbcdn.net
 feeds.soundcloud.com
 filepicker.io
@@ -368,6 +369,7 @@ i3.wp.com
 iapi.campus.qq.com
 icons8.com
 id.twitch.tv
+iframe.mediadelivery.net
 iheartjane.com
 image.rakuten.co.jp
 imagekit.io
@@ -482,6 +484,7 @@ nanorep.co
 nanorep.com
 navigation-api.project1service.com
 nbcuni.com
+ncsa.sdapi.io
 netdna-ssl.com
 newsmemory.com
 nextcloud.com
@@ -517,6 +520,7 @@ paper-attachments.dropboxusercontent.com
 parastorage.com
 parts.blog.livedoor.jp
 pathfactory.com
+patreon.com
 pay.naver.com
 payments-amazon.com
 paypalobjects.com
@@ -751,6 +755,7 @@ website-start.de
 weebly.com
 weixin.qq.com
 widget-sheriff.tradingview-widget.com
+widget.kapa.ai
 widget.reviews.io
 widget.spreaker.com
 widgets.guidestar.org
@@ -782,7 +787,6 @@ www.tradingview-widget.com
 www.tripadvisor.com
 xhpingcdn.com
 xsrv.jp
-xvideos.com
 yahoo.net
 yahooapis.com
 yastatic.net

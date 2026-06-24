@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-23T21:41:32Z",
-  "total": 51558,
+  "generated_at": "2026-06-24T21:41:53Z",
+  "total": 51569,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -29951,6 +29951,18 @@
       "last_seen": null
     },
     {
+      "name": "ditenv",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ditenv",
+          "title": "PyPI/ditenv"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "diuser",
       "type": "PyPI",
       "sources": [
@@ -44519,6 +44531,18 @@
       "last_seen": null
     },
     {
+      "name": "fkaks",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fkaks",
+          "title": "PyPI/fkaks"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "fkask",
       "type": "PyPI",
       "sources": [
@@ -49085,6 +49109,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/guivm",
           "title": "PyPI/guivm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "gunicorm",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/gunicorm",
+          "title": "PyPI/gunicorm"
         }
       ],
       "first_seen": null,
@@ -69418,6 +69454,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mcpost",
           "title": "PyPI/mcpost"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "mcpsever",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mcpsever",
+          "title": "PyPI/mcpsever"
         }
       ],
       "first_seen": null,
@@ -97494,6 +97542,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/python-dateutil-malicious",
           "title": "PyPI/python-dateutil-malicious"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "python-dateutil2",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/python-dateutil2",
+          "title": "PyPI/python-dateutil2"
         }
       ],
       "first_seen": null,
@@ -217857,6 +217917,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kjma/mailcraft",
           "title": "npm/@kjma/mailcraft"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@kl-dolphin/swim",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kl-dolphin/swim",
+          "title": "npm/@kl-dolphin/swim"
         }
       ],
       "first_seen": null,
@@ -469788,6 +469860,18 @@
       "last_seen": null
     },
     {
+      "name": "assertcore",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/assertcore",
+          "title": "npm/assertcore"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "assessment-zmarta",
       "type": "npm",
       "sources": [
@@ -508734,6 +508818,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/backpack-foundations",
           "title": "npm/backpack-foundations"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "backpack-ios",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/backpack-ios",
+          "title": "npm/backpack-ios"
         }
       ],
       "first_seen": null,
@@ -560856,6 +560952,18 @@
       "last_seen": null
     },
     {
+      "name": "bn-lint",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bn-lint",
+          "title": "npm/bn-lint"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bn.sj",
       "type": "npm",
       "sources": [
@@ -584424,6 +584532,18 @@
       "last_seen": null
     },
     {
+      "name": "buffer-wrap-67d7",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/buffer-wrap-67d7",
+          "title": "npm/buffer-wrap-67d7"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "buffer-xenon-meissa-server",
       "type": "npm",
       "sources": [
@@ -585342,6 +585462,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bug-bounty-hunter",
           "title": "npm/bug-bounty-hunter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bug-monorepo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bug-monorepo",
+          "title": "npm/bug-monorepo"
         }
       ],
       "first_seen": null,
