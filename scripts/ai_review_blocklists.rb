@@ -23,6 +23,7 @@ require 'set'
 require 'optparse'
 require 'dspy'
 require 'tqdm'
+require_relative 'blocklist_project_filter'
 
 # ── ANSI colour helpers ──────────────────────────────────────────────────────────
 module Color
@@ -121,12 +122,77 @@ end
 skip_domains, exact_skip_domains = load_skip_domain_sets(SKIP_CONSTANTS_SCRIPT)
 puts "\nLoaded #{skip_domains.size} SKIP_DOMAINS + #{exact_skip_domains.size} EXACT_SKIP_DOMAINS from scrape script"
 
+# ── Pre-filter against Blocklist Project (malware/phishing/scam/fraud/ads/etc.) ──
+# This is an authoritative third-party blocklist, cached locally for a day.
+# Any domain found here is rejected outright — no AI call needed — which both
+# speeds up the review and stops the (unreliable) local model from ever
+# suggesting we allow something independently confirmed malicious.
+blp_domains = load_blocklist_project_domains
+puts "Loaded #{blp_domains.size} Blocklist Project domains (malware/phishing/scam/fraud/ads/etc.)"
+
+def in_blocklist_project?(domain, blp_domains)
+  return true if blp_domains.include?(domain)
+  # Subdomain cascade: api.evil.com is rejected if evil.com is listed
+  parts = domain.split('.')
+  return false if parts.size < 2
+  (1...parts.size - 1).any? { |i| blp_domains.include?(parts[i..].join('.')) }
+end
+
 # Replicates the scrape script's skip_domain? logic:
 # SKIP_DOMAINS matches root domain AND all subdomains
 # EXACT_SKIP_DOMAINS matches only the exact root entry
 def in_skip_domains?(domain, skip_domains, exact_skip_domains)
   return true if exact_skip_domains.include?(domain)
   skip_domains.any? { |s| domain == s || domain.end_with?(".#{s}") }
+end
+
+# ── Post-AI hallucination filter ────────────────────────────────────────────
+# The local model still sometimes says "allow" for a domain that is actually
+# unsafe but doesn't (yet) appear in Blocklist Project — e.g. a malicious
+# subdomain on a legitimate cloud host, a cheap-TLD phishing domain, or a
+# malformed/fake domain. This runs as a second gate AFTER the AI decision,
+# on both fresh and previously-cached "allow" results, so a poisoned cache
+# entry from an earlier run gets self-corrected on the next run too.
+
+# Cloud/serverless hosting platforms where a random specific subdomain must
+# never be auto-trusted just because the parent platform is legitimate.
+GENERIC_HOSTING_SUFFIXES = Set.new(%w[
+  azurewebsites.net azureedge.net blob.core.windows.net web.core.windows.net
+  cloudfront.net trycloudflare.com r2.dev firebaseio.com
+  workers.dev pages.dev netlify.app vercel.app
+  oss-cn-shenzhen.aliyuncs.com oss-accelerate.aliyuncs.com
+  digitaloceanspaces.com s3.amazonaws.com gserviceaccount.com
+  kesug.com
+]).freeze
+
+# Cheap/abused TLDs disproportionately used for phishing, scam, and malware
+# infrastructure. A handful of legitimate services do use some of these —
+# such exceptions belong in SKIP_DOMAINS, not here.
+SUSPICIOUS_TLDS = Set.new(%w[
+  tk ml ga cf gq xyz top club icu buzz click loan win bid review vip work
+  online pw sbs life site store cyou space help
+]).freeze
+
+# Words that are NOT real TLDs but repeatedly show up as a malformed final
+# label on fake/garbled brand domains (e.g. "go.microsoft", "mail.google").
+FAKE_TLD_LABELS = Set.new(%w[google microsoft apple bing cisco youtube yahoo aws]).freeze
+
+VALID_HOSTNAME_RE = /\A([a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}\z/
+
+def hallucination_reject_reason(domain, blp_domains)
+  return 'Blocklist Project' if in_blocklist_project?(domain, blp_domains)
+  return 'malformed hostname' unless VALID_HOSTNAME_RE.match?(domain)
+
+  labels = domain.split('.')
+  tld    = labels.last
+  return 'fake TLD (not a real domain)' if FAKE_TLD_LABELS.include?(tld)
+  return 'suspicious TLD' if SUSPICIOUS_TLDS.include?(tld)
+
+  if GENERIC_HOSTING_SUFFIXES.any? { |s| domain.end_with?(".#{s}") }
+    return 'random subdomain on generic hosting platform'
+  end
+
+  nil
 end
 
 def load_ai_cache
@@ -286,7 +352,27 @@ def ai_call_error(e)
   warn Color.yellow("    [AI ERROR] #{msg}")
 end
 
-def ai_review_blocklist_batch(reviewer, domains, context, model, cache)
+# Re-validates "allow" decisions against the static heuristics, self-healing
+# the cache (allow → block) for anything that fails. Shared by both the
+# fast-path (all-cached) and the live-AI-call path so a hallucinated decision
+# never survives a second run, however it was reached.
+def filter_hallucinated_allows(candidates, review_cache, blp_domains, cache)
+  cache_changed = false
+  validated = candidates.reject do |d|
+    reason = hallucination_reject_reason(d, blp_domains)
+    next false unless reason
+    puts Color.red("    [HALLUCINATION] rejecting AI allow for #{d} (#{reason})")
+    if review_cache[d.downcase] == 'allow'
+      review_cache[d.downcase] = 'block'
+      cache_changed = true
+    end
+    true
+  end
+  save_ai_cache(cache) if cache_changed
+  validated
+end
+
+def ai_review_blocklist_batch(reviewer, domains, context, model, cache, blp_domains)
   model_cache  = (cache[model]                    ||= {})
   review_cache = (model_cache['blocklist_review'] ||= {})
 
@@ -302,7 +388,8 @@ def ai_review_blocklist_batch(reviewer, domains, context, model, cache)
     save_ai_cache(cache)
   end
 
-  (cached_allows + new_allows).uniq
+  candidates = (cached_allows + new_allows).uniq
+  filter_hallucinated_allows(candidates, review_cache, blp_domains, cache)
 rescue => e
   ai_call_error(e)
   []
@@ -376,15 +463,25 @@ blocklist_files.each do |bfile|
     end
   end
 
-  # ── AI review — only domains not already known-safe, and not IPs ─────────
+  # ── Pre-filter: drop domains confirmed malicious by Blocklist Project ──────
+  # before the AI even sees them. Saves API calls and removes the risk of the
+  # local model overriding a corroborated-bad domain.
+  blp_confirmed = domains.select { |d| in_blocklist_project?(d, blp_domains) }
+  if blp_confirmed.any?
+    puts Color.yellow("  [BLOCKLIST PROJECT] #{blp_confirmed.size} domain(s) confirmed malicious — skipped, not sent to AI")
+    blp_confirmed.each { |d| puts "    #{d}" } if blp_confirmed.size <= 10
+  end
+
+  # ── AI review — only domains not already known-safe/known-bad, and not IPs ─
   reviewable = domains.reject do |d|
     ip_address?(d) ||
       in_skip_domains?(d, skip_domains, exact_skip_domains) ||
-      existing_allowlist_domains.include?(d)
+      existing_allowlist_domains.include?(d) ||
+      in_blocklist_project?(d, blp_domains)
   end
 
   if reviewable.empty?
-    puts "  All domains covered by SKIP_DOMAINS / existing allowlists — no AI review needed."
+    puts "  All domains covered by SKIP_DOMAINS / existing allowlists / Blocklist Project — no AI review needed."
     puts ""
     next
   end
@@ -392,7 +489,8 @@ blocklist_files.each do |bfile|
   model_review_cache  = ai_cache.dig(options[:model], 'blocklist_review') || {}
   cached_count        = reviewable.count { |d| model_review_cache.key?(d.downcase) }
   uncached_reviewable = reviewable.reject { |d| model_review_cache.key?(d.downcase) }
-  cached_allows_now   = reviewable.select { |d| model_review_cache[d.downcase] == 'allow' }
+  cached_allows_raw   = reviewable.select { |d| model_review_cache[d.downcase] == 'allow' }
+  cached_allows_now   = filter_hallucinated_allows(cached_allows_raw, model_review_cache, blp_domains, ai_cache)
   cached_allows_now.each { |d| all_domains_to_allow.add(d) }
 
   if uncached_reviewable.empty?
@@ -404,7 +502,7 @@ blocklist_files.each do |bfile|
   puts "  AI reviewing #{uncached_reviewable.size} domain(s) (#{cached_count} already cached)..."
   batches = uncached_reviewable.each_slice(options[:batch_size]).to_a
   batches.tqdm(desc: "  #{File.basename(bfile)}", unit: 'batch', leave: true).each do |batch|
-    allowed = ai_review_blocklist_batch(blocklist_reviewer, batch, rel, options[:model], ai_cache)
+    allowed = ai_review_blocklist_batch(blocklist_reviewer, batch, rel, options[:model], ai_cache, blp_domains)
     next unless allowed.any?
     allowed.each { |d| all_domains_to_allow.add(d) }
     allowed.each { |d| puts Color.green("  + #{d}") }
@@ -431,9 +529,18 @@ allowlist_files.each do |afile|
   domains = load_list_domains(afile).to_a.sort.reject { |d| ip_address?(d) }
   next if domains.empty?
 
+  # ── Pre-flag allowlist entries that collide with Blocklist Project ─────────
+  blp_conflicts = domains.select { |d| in_blocklist_project?(d, blp_domains) }
+  if blp_conflicts.any?
+    blp_conflicts.each do |d|
+      suspicious_by_file[rel] << d
+      puts Color.red("  ! #{d} (Blocklist Project conflict)")
+    end
+  end
+
   model_audit_cache   = ai_cache.dig(options[:model], 'allowlist_audit') || {}
   cached_count        = domains.count { |d| model_audit_cache.key?(d.downcase) }
-  uncached_domains    = domains.reject { |d| model_audit_cache.key?(d.downcase) }
+  uncached_domains    = domains.reject { |d| model_audit_cache.key?(d.downcase) || in_blocklist_project?(d, blp_domains) }
   cached_susp_now     = domains.select { |d| model_audit_cache[d.downcase] == 'suspicious' }
   cached_susp_now.each do |d|
     suspicious_by_file[rel] << d
