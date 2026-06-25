@@ -1,7 +1,7 @@
 ! Pi-hole Cookieblock List (ABP format) - Domains Privacy Badger allows but strips cookies
-! Generated: 2026-06-24T21:32:52Z
+! Generated: 2026-06-25T21:34:45Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
-! Total domains: 536
+! Total domains: 535
 !
 ! These domains can load resources but would have cookies stripped by Privacy Badger.
 ! Blocking them in Pi-hole is more aggressive than Privacy Badger's default.
@@ -448,7 +448,6 @@
 ||static.qiota.com^
 ||static.userback.io^
 ||static.vidgyor.com^
-||statuspage.io^
 ||steampowered.com^
 ||storage.pardot.com^
 ||storage.yandex.net^
