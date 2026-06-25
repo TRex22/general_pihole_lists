@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-06-24T21:32:52Z
+# Generated: 2026-06-25T21:34:45Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 800
+# Total domains: 803
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -187,6 +187,7 @@ cdn.quilljs.com
 cdn.qumucloud.com
 cdn.ravenjs.com
 cdn.rawgit.com
+cdn.riddle.com
 cdn.seondf.com
 cdn.smooch.io
 cdn.sophi.io
@@ -543,6 +544,7 @@ play.sundaysky.com
 player.avplayer.com
 player.glomex.com
 player.kwikmotion.com
+player.mediadelivery.net
 player.sundaysky.com
 players.brightcove.net
 playerv9.kwikmotion.com
@@ -581,6 +583,7 @@ recaptcha.net
 recurly.com
 redcdn.pl
 redefine.pl
+redsara.es
 register.feefo.com
 res.wx.qq.com
 resize.blogsys.jp
@@ -664,7 +667,6 @@ static.twisto.cz
 static.userback.io
 static.vidgyor.com
 staticflickr.com
-statuspage.io
 steampowered.com
 stonly.com
 storage.pardot.com
@@ -780,6 +782,7 @@ www.klaviyo.com
 www.powr.io
 www.qiota.com
 www.queryly.com
+www.riddle.com
 www.searchanise.com
 www.surveygizmo.com
 www.tickaroo.com

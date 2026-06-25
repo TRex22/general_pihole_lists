@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-06-24T21:32:52Z
+! Generated: 2026-06-25T21:34:45Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2743
+! Total domains: 2741
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -1252,7 +1252,6 @@
 ||insight-x.tech^
 ||insightexpressai.com^
 ||insightly.services^
-||instana.io^
 ||instaread.co^
 ||insticator.com^
 ||instiengage.com^
@@ -1968,7 +1967,6 @@
 ||recapture.io^
 ||receptivity.io^
 ||redprn.com^
-||redsara.es^
 ||reebr.com^
 ||reemo-ad.jp^
 ||ref-r.com^
