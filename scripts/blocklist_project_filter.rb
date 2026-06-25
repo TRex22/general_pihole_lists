@@ -176,6 +176,9 @@ SKIP_DOMAINS = Set.new(%w[
   mailmeteor.com
   nifty.com
   newrelic.com datadoghq.com sentry.io dynatrace.com loggly.com
+  honeybadger.io appdynamics.com instana.io instana.com
+  bugsnag.com rollbar.com raygun.com airbrake.io
+  pagerduty.com statuspage.io elastic.co grafana.com grafana.net splunk.com
   riotgames.com
   kaltura.com
   opera.com
