@@ -524,6 +524,26 @@ sentry.io               # Sentry error monitoring - also in SKIP_DOMAINS
 dynatrace.com           # Dynatrace APM - also in SKIP_DOMAINS
 loggly.com              # Loggly log management - also in SKIP_DOMAINS
 
+# APM / error monitoring / observability tools
+honeybadger.io          # Honeybadger error/uptime monitoring - also in SKIP_DOMAINS
+api.honeybadger.io
+app.honeybadger.io
+instana.io              # Instana (IBM) APM - also in SKIP_DOMAINS
+instana.com
+bugsnag.com             # Bugsnag error monitoring - also in SKIP_DOMAINS
+sessions.bugsnag.com
+notify.bugsnag.com
+rollbar.com             # Rollbar error monitoring - also in SKIP_DOMAINS
+api.rollbar.com
+raygun.com              # Raygun error/performance monitoring - also in SKIP_DOMAINS
+api.raygun.io
+airbrake.io             # Airbrake error monitoring - also in SKIP_DOMAINS
+pagerduty.com           # PagerDuty incident response - also in SKIP_DOMAINS
+events.pagerduty.com
+grafana.com             # Grafana Labs (metrics/observability) - also in SKIP_DOMAINS
+grafana.net
+splunk.com              # Splunk observability/log management - also in SKIP_DOMAINS
+
 # E-commerce / consumer services
 mercadolibre.com        # Latin American e-commerce
 wondershare.com         # Software company
@@ -1099,7 +1119,7 @@ trendmicro.com
 www.trendmicro.com
 zscaler.com
 www.zscaler.com
-elastic.co
+elastic.co              # also in APM/observability block above and SKIP_DOMAINS
 www.elastic.co
 search.elastic.co
 
@@ -1319,7 +1339,7 @@ scribd.com
 shopifycdn.com
 shoplineapp.com
 socket.io
-statuspage.io
+statuspage.io           # Atlassian Statuspage - also in APM/observability block above and SKIP_DOMAINS
 streamtheworld.com
 sumologic.com
 surveymonkey.com
@@ -1386,7 +1406,7 @@ api.split.io
 events.split.io
 api.spreaker.com
 api.tenor.com
-appdynamics.com
+appdynamics.com         # AppDynamics APM - also in APM/observability block above and SKIP_DOMAINS
 arcgis.com
 arcgisonline.com
 assets.finn.no
