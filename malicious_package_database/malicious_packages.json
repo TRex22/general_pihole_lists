@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-25T21:39:32Z",
-  "total": 51585,
+  "generated_at": "2026-06-26T21:37:02Z",
+  "total": 51610,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -20950,6 +20950,10 @@
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/clearml-truen-patch",
+          "title": "PyPI/clearml-truen-patch"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/pypi/clearml-truen-patch",
           "title": "PyPI/clearml-truen-patch"
         }
       ],
@@ -43379,6 +43383,18 @@
       "last_seen": null
     },
     {
+      "name": "extra-huggingface",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/extra-huggingface",
+          "title": "PyPI/extra-huggingface"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "extracolorsv2",
       "type": "PyPI",
       "sources": [
@@ -53286,6 +53302,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/inkpy-jinja",
           "title": "PyPI/inkpy-jinja"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "inlifegram",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/inlifegram",
+          "title": "PyPI/inlifegram"
         }
       ],
       "first_seen": null,
@@ -69952,6 +69980,18 @@
       "last_seen": null
     },
     {
+      "name": "mi-test-99-tuapellido",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mi-test-99-tuapellido",
+          "title": "PyPI/mi-test-99-tuapellido"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "microauth",
       "type": "PyPI",
       "sources": [
@@ -74276,6 +74316,18 @@
       "last_seen": null
     },
     {
+      "name": "openblox",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/openblox",
+          "title": "PyPI/openblox"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "openclaw-agent",
       "type": "PyPI",
       "sources": [
@@ -76262,6 +76314,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pdatainstaller",
           "title": "PyPI/pdatainstaller"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "pdf-converter-pro",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pdf-converter-pro",
+          "title": "PyPI/pdf-converter-pro"
         }
       ],
       "first_seen": null,
@@ -94362,6 +94426,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pyexecutorsme",
           "title": "PyPI/pyexecutorsme"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "pyext6cc8cd",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pyext6cc8cd",
+          "title": "PyPI/pyext6cc8cd"
         }
       ],
       "first_seen": null,
@@ -121047,6 +121123,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sqlalchemy-requests",
           "title": "PyPI/sqlalchemy-requests"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "sqligen",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sqligen",
+          "title": "PyPI/sqligen"
         }
       ],
       "first_seen": null,
@@ -171119,6 +171207,18 @@
       "last_seen": null
     },
     {
+      "name": "@appupdate/cdn-sync",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@appupdate/cdn-sync",
+          "title": "npm/@appupdate/cdn-sync"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@arbocollab/arbo-web-people",
       "type": "npm",
       "sources": [
@@ -176285,6 +176385,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@cartus-core/cartus-common-ui2",
           "title": "npm/@cartus-core/cartus-common-ui2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@carvana.authentication-flows/shared",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@carvana.authentication-flows/shared",
+          "title": "npm/@carvana.authentication-flows/shared"
         }
       ],
       "first_seen": null,
@@ -190383,6 +190495,18 @@
       "last_seen": null
     },
     {
+      "name": "@dervix/ws",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dervix/ws",
+          "title": "npm/@dervix/ws"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@desesap289/dev_dependency",
       "type": "npm",
       "sources": [
@@ -203523,6 +203647,18 @@
       "last_seen": null
     },
     {
+      "name": "@epsteinlovekids483/crossmint-wallets-sdk-pentest",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@epsteinlovekids483/crossmint-wallets-sdk-pentest",
+          "title": "npm/@epsteinlovekids483/crossmint-wallets-sdk-pentest"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@eqder/bird",
       "type": "npm",
       "sources": [
@@ -210579,6 +210715,18 @@
       "last_seen": null
     },
     {
+      "name": "@help-forms/application-aff",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@help-forms/application-aff",
+          "title": "npm/@help-forms/application-aff"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@help_api/config",
       "type": "npm",
       "sources": [
@@ -214557,6 +214705,54 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@immersive-composer/scripting-api",
           "title": "npm/@immersive-composer/scripting-api"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@immobiliarelabs/backstage-plugin-gitlab",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@immobiliarelabs/backstage-plugin-gitlab",
+          "title": "npm/@immobiliarelabs/backstage-plugin-gitlab"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@immobiliarelabs/backstage-plugin-gitlab-backend",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@immobiliarelabs/backstage-plugin-gitlab-backend",
+          "title": "npm/@immobiliarelabs/backstage-plugin-gitlab-backend"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@immobiliarelabs/backstage-plugin-ldap-auth",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@immobiliarelabs/backstage-plugin-ldap-auth",
+          "title": "npm/@immobiliarelabs/backstage-plugin-ldap-auth"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@immobiliarelabs/backstage-plugin-ldap-auth-backend",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@immobiliarelabs/backstage-plugin-ldap-auth-backend",
+          "title": "npm/@immobiliarelabs/backstage-plugin-ldap-auth-backend"
         }
       ],
       "first_seen": null,
@@ -220365,6 +220561,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kp-admin/main",
           "title": "npm/@kp-admin/main"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@krentzen/buffer-reverse",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@krentzen/buffer-reverse",
+          "title": "npm/@krentzen/buffer-reverse"
         }
       ],
       "first_seen": null,
@@ -235413,6 +235621,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mep-exp/api-tools",
           "title": "npm/@mep-exp/api-tools"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@merceas/anchor",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@merceas/anchor",
+          "title": "npm/@merceas/anchor"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@merceas/cross-fetch",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@merceas/cross-fetch",
+          "title": "npm/@merceas/cross-fetch"
         }
       ],
       "first_seen": null,
@@ -260665,6 +260897,10 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@qwedqwed/axios",
           "title": "npm/@qwedqwed/axios"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@qwedqwed/axios",
+          "title": "npm/@qwedqwed/axios"
         }
       ],
       "first_seen": null,
@@ -262177,6 +262413,10 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@remitee-money-transfer/rmt-base",
           "title": "npm/@remitee-money-transfer/rmt-base"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@remitee-money-transfer/rmt-base",
+          "title": "npm/@remitee-money-transfer/rmt-base"
         }
       ],
       "first_seen": null,
@@ -263353,6 +263593,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@saif777/codemirror5",
           "title": "npm/@saif777/codemirror5"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@salem_jalal/osc-components",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@salem_jalal/osc-components",
+          "title": "npm/@salem_jalal/osc-components"
         }
       ],
       "first_seen": null,
@@ -395903,6 +396155,30 @@
       "last_seen": null
     },
     {
+      "name": "ai-node-agent",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ai-node-agent",
+          "title": "npm/ai-node-agent"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ai-node-relay",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ai-node-relay",
+          "title": "npm/ai-node-relay"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "ai-playground",
       "type": "npm",
       "sources": [
@@ -438053,6 +438329,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animalrightshistory_888",
           "title": "npm/animalrightshistory_888"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "animatecss-postcss-plugin",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animatecss-postcss-plugin",
+          "title": "npm/animatecss-postcss-plugin"
         }
       ],
       "first_seen": null,
@@ -618373,6 +618661,18 @@
       "last_seen": null
     },
     {
+      "name": "prjct-cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/prjct-cli",
+          "title": "npm/prjct-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "process.",
       "type": "npm",
       "sources": [
@@ -618694,6 +618994,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/supabase",
           "title": "npm/supabase"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "tango-app-api-trax",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/tango-app-api-trax",
+          "title": "npm/tango-app-api-trax"
         }
       ],
       "first_seen": null,

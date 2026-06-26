@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-06-25T21:34:45Z
+! Generated: 2026-06-26T21:31:37Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2741
+! Total domains: 2737
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -630,7 +630,6 @@
 ||coframe.com^
 ||cog-tr101.com^
 ||cognigy.ai^
-||cognigy.cloud^
 ||cognitivlabs.com^
 ||cohesionapps.com^
 ||coinbase.com^
@@ -883,7 +882,6 @@
 ||emxdgt.com^
 ||endlesshandbaglinked.com^
 ||endowmentoverhangutmost.com^
-||enetscores.com^
 ||engage-x.io^
 ||enrtx.com^
 ||ensighten.com^
@@ -1036,7 +1034,6 @@
 ||geniusmonkey.com^
 ||gentle-report.com^
 ||gentlefieldpattern.com^
-||geocomply.com^
 ||geoedge.be^
 ||geoip-js.com^
 ||geoproapp.com^
@@ -1862,7 +1859,6 @@
 ||postrelease.com^
 ||postscript.io^
 ||powerad.ai^
-||powerbi.com^
 ||powerreviews.com^
 ||powerrobotflower.com^
 ||powerstarsbuilding.com^
