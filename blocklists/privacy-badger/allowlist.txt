@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-06-25T21:34:45Z
+# Generated: 2026-06-26T21:31:37Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 803
+# Total domains: 812
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -52,6 +52,7 @@ api.mapy.cz
 api.media.atlassian.com
 api.mercadopago.com
 api.moonpay.com
+api.openai.com
 api.pinterest.com
 api.prefixbox.com
 api.razorpay.com
@@ -129,6 +130,7 @@ brands.kmsmep.com
 brightcove.com
 brightspotcdn.com
 brm-core-0.brsrvr.com
+broadcast-live-delivery-cdn.jwplayer.com
 browser.translate.yandex.net
 builder-assets.unbounce.com
 bungie.net
@@ -183,6 +185,7 @@ cdn.ngenix.net
 cdn.plaid.com
 cdn.prefixbox.com
 cdn.privacy-mgmt.com
+cdn.prod.website-files.com
 cdn.quilljs.com
 cdn.qumucloud.com
 cdn.ravenjs.com
@@ -228,11 +231,13 @@ code.createjs.com
 code.highcharts.com
 codepen.io
 codesandbox.io
+cognigy.cloud
 coin-eu.amazonpay.com
 coin.amazonpay.com
 config.smooch.io
 connect.breadpayments.com
 consent.api.osano.com
+consent.cookiefirst.com
 consentcdn.cookiebot.com
 consentframework.com
 consentmanager.net
@@ -285,6 +290,8 @@ elfsight.com
 elfsightcdn.com
 embed.avplayer.com
 embed.crowdriff.com
+embed.flowplayer.com
+enetscores.com
 episerver.net
 epoq.de
 essearchapi-na.hawksearch.com
@@ -328,6 +335,7 @@ futurecdn.net
 gcaptcha.eo.gtimg.com
 gcaptcha.eo.qcloud.com
 geetest.com
+geocomply.com
 geotrust.com
 getpocket.com
 gettyimages.com
@@ -557,6 +565,7 @@ podcasts.captivate.fm
 poll.fm
 poool.fr
 postimg.cc
+powerbi.com
 pp.ephapay.net
 prcdn.co
 pricespider.com

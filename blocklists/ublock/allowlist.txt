@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-06-25T21:34:41Z
-# Total domains: 928
+# Generated: 2026-06-26T21:31:34Z
+# Total domains: 929
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -37,6 +37,7 @@ ads.openai.com
 ads.rogersmedia.com
 ads.spotify.com
 ads.taboola.com
+ads.temu.com
 ads.vk.ru
 adserver.va3.megaphone.cloud
 adsninja.ca
