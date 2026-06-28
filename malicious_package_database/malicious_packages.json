@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T21:31:40Z",
-  "total": 51612,
+  "generated_at": "2026-06-28T21:31:39Z",
+  "total": 51617,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -45651,6 +45651,18 @@
       "last_seen": null
     },
     {
+      "name": "fsociety-tools",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fsociety-tools",
+          "title": "PyPI/fsociety-tools"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "fsspecc",
       "type": "PyPI",
       "sources": [
@@ -78702,6 +78714,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pjllow",
           "title": "PyPI/pjllow"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "pkg-fallback",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pkg-fallback",
+          "title": "PyPI/pkg-fallback"
         }
       ],
       "first_seen": null,
@@ -123847,6 +123871,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tcloud-python-test",
           "title": "PyPI/tcloud-python-test"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "tdata-grabber",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tdata-grabber",
+          "title": "PyPI/tdata-grabber"
         }
       ],
       "first_seen": null,
@@ -217885,6 +217921,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@justworkshr/alma",
           "title": "npm/@justworkshr/alma"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@k18n/creatormarketplace-admin-language",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@k18n/creatormarketplace-admin-language",
+          "title": "npm/@k18n/creatormarketplace-admin-language"
         }
       ],
       "first_seen": null,
@@ -442493,6 +442541,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/anthropic-claude-latest",
           "title": "npm/anthropic-claude-latest"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "anthropic-internal-tools",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/anthropic-internal-tools",
+          "title": "npm/anthropic-internal-tools"
         }
       ],
       "first_seen": null,
