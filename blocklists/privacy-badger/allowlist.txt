@@ -1,12 +1,13 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-06-28T21:25:46Z
+# Generated: 2026-06-29T21:33:04Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 812
+# Total domains: 814
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
 25livepub.collegenet.com
 3ds.entersekt.com
+91app.com
 acast.com
 accounts.spotify.com
 actionnetwork.org
@@ -234,6 +235,7 @@ codesandbox.io
 cognigy.cloud
 coin-eu.amazonpay.com
 coin.amazonpay.com
+commerce.adobe.io
 config.smooch.io
 connect.breadpayments.com
 consent.api.osano.com
