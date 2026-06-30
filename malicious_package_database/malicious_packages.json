@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T21:39:17Z",
-  "total": 51688,
+  "generated_at": "2026-06-30T21:43:21Z",
+  "total": 51694,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -175779,6 +175779,18 @@
       "last_seen": null
     },
     {
+      "name": "@businessapp-microsites/apis",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@businessapp-microsites/apis",
+          "title": "npm/@businessapp-microsites/apis"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@buzzblocks/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -270413,6 +270425,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@subsplash/auth",
           "title": "npm/@subsplash/auth"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sudoughnym/enviro-demo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sudoughnym/enviro-demo",
+          "title": "npm/@sudoughnym/enviro-demo"
         }
       ],
       "first_seen": null,
@@ -386579,6 +386603,18 @@
       "last_seen": null
     },
     {
+      "name": "agent-starter-pack",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/agent-starter-pack",
+          "title": "npm/agent-starter-pack"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "agentbas",
       "type": "npm",
       "sources": [
@@ -443369,6 +443405,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/anthropic-shared-logger",
           "title": "npm/anthropic-shared-logger"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "anthropic-toolkit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/anthropic-toolkit",
+          "title": "npm/anthropic-toolkit"
         }
       ],
       "first_seen": null,
@@ -573882,6 +573930,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brock-fetch-utils",
           "title": "npm/brock-fetch-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "brock-loader",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brock-loader",
+          "title": "npm/brock-loader"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "brock-react-alerts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brock-react-alerts",
+          "title": "npm/brock-react-alerts"
         }
       ],
       "first_seen": null,
