@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-30T21:43:21Z",
-  "total": 51694,
+  "generated_at": "2026-07-01T21:40:41Z",
+  "total": 51697,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -138930,6 +138930,18 @@
       "last_seen": null
     },
     {
+      "name": "twrap-tool",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/twrap-tool",
+          "title": "PyPI/twrap-tool"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "twrap-toolkit",
       "type": "PyPI",
       "sources": [
@@ -167217,6 +167229,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@anchor-ds/core",
           "title": "npm/@anchor-ds/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@andes-tools/colors",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@andes-tools/colors",
+          "title": "npm/@andes-tools/colors"
         }
       ],
       "first_seen": null,
@@ -522942,6 +522966,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base64-paypal",
           "title": "npm/base64-paypal"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "base65-85x",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base65-85x",
+          "title": "npm/base65-85x"
         }
       ],
       "first_seen": null,
