@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T21:40:41Z",
-  "total": 51697,
+  "generated_at": "2026-07-02T21:34:00Z",
+  "total": 51704,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -30579,6 +30579,18 @@
       "last_seen": null
     },
     {
+      "name": "dt-validator",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/dt-validator",
+          "title": "PyPI/dt-validator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "dtb-bytehouse",
       "type": "PyPI",
       "sources": [
@@ -31773,6 +31785,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/eosio-signerz",
           "title": "PyPI/eosio-signerz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "epic-build-scripts",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/epic-build-scripts",
+          "title": "PyPI/epic-build-scripts"
         }
       ],
       "first_seen": null,
@@ -50577,6 +50601,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/hooktest3",
           "title": "PyPI/hooktest3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "horde-python-client",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/horde-python-client",
+          "title": "PyPI/horde-python-client"
         }
       ],
       "first_seen": null,
@@ -121345,6 +121381,18 @@
       "last_seen": null
     },
     {
+      "name": "starlette-healthcheck",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/starlette-healthcheck",
+          "title": "PyPI/starlette-healthcheck"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "stationschedule",
       "type": "PyPI",
       "sources": [
@@ -139062,6 +139110,18 @@
       "last_seen": null
     },
     {
+      "name": "ue-python-tools",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ue-python-tools",
+          "title": "PyPI/ue-python-tools"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "ufish",
       "type": "PyPI",
       "sources": [
@@ -139572,6 +139632,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/unrartest",
           "title": "PyPI/unrartest"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "unreal-mladapter",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/unreal-mladapter",
+          "title": "PyPI/unreal-mladapter"
         }
       ],
       "first_seen": null,
@@ -251077,6 +251149,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@modals/layout",
           "title": "npm/@modals/layout"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@modhamanish/rn-mm-template",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@modhamanish/rn-mm-template",
+          "title": "npm/@modhamanish/rn-mm-template"
         }
       ],
       "first_seen": null,
