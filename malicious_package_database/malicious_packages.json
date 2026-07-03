@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T21:34:00Z",
-  "total": 51704,
+  "generated_at": "2026-07-03T21:34:42Z",
+  "total": 51710,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -216079,6 +216079,18 @@
       "last_seen": null
     },
     {
+      "name": "@jacobtan/decode-sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jacobtan/decode-sdk",
+          "title": "npm/@jacobtan/decode-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@jaggle/resizeobserves",
       "type": "npm",
       "sources": [
@@ -225577,6 +225589,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@locallife/page",
           "title": "npm/@locallife/page"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@lodash-en/lodash-en",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@lodash-en/lodash-en",
+          "title": "npm/@lodash-en/lodash-en"
         }
       ],
       "first_seen": null,
@@ -253561,6 +253585,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nobixe9651/ng-fds",
           "title": "npm/@nobixe9651/ng-fds"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@node-cloud/create",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@node-cloud/create",
+          "title": "npm/@node-cloud/create"
         }
       ],
       "first_seen": null,
@@ -407411,6 +407447,18 @@
       "last_seen": null
     },
     {
+      "name": "alder_morrgan",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alder_morrgan",
+          "title": "npm/alder_morrgan"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "aldipratama",
       "type": "npm",
       "sources": [
@@ -447215,6 +447263,18 @@
       "last_seen": null
     },
     {
+      "name": "api-node-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/api-node-utils",
+          "title": "npm/api-node-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "api-nodejs-template",
       "type": "npm",
       "sources": [
@@ -447401,6 +447461,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/api-token-admin",
           "title": "npm/api-token-admin"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "api-ts-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/api-ts-utils",
+          "title": "npm/api-ts-utils"
         }
       ],
       "first_seen": null,
@@ -619080,10 +619152,15 @@
           "url": "http://thehackernews.com/2025/08/malicious-pypi-and-npm-packages.html",
           "title": "Malicious PyPI and npm Packages Discovered Exploiting Dependencies in Supply Chain Attacks",
           "date": "2025-08-18"
+        },
+        {
+          "url": "http://thehackernews.com/2026/07/north-korea-linked-npm-packages-mimic.html",
+          "title": "North Korea-Linked npm Packages Mimic Rollup Polyfills to Steal Developer Secrets",
+          "date": "2026-07-03"
         }
       ],
       "first_seen": "2024-11-04",
-      "last_seen": "2025-08-18"
+      "last_seen": "2026-07-03"
     },
     {
       "name": "common-frontend-components",
