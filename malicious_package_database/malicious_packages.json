@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-03T21:34:42Z",
-  "total": 51710,
+  "generated_at": "2026-07-04T21:28:44Z",
+  "total": 51718,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -18145,6 +18145,18 @@
       "last_seen": null
     },
     {
+      "name": "bytekit",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bytekit",
+          "title": "PyPI/bytekit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bytemlperf",
       "type": "PyPI",
       "sources": [
@@ -23174,6 +23186,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/config4py",
           "title": "PyPI/config4py"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "confighub",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/confighub",
+          "title": "PyPI/confighub"
         }
       ],
       "first_seen": null,
@@ -49719,6 +49743,18 @@
       "last_seen": null
     },
     {
+      "name": "haproxy-config-client",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/haproxy-config-client",
+          "title": "PyPI/haproxy-config-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "haqawi",
       "type": "PyPI",
       "sources": [
@@ -51153,6 +51189,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/httppost",
           "title": "PyPI/httppost"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "httpprobe",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/httpprobe",
+          "title": "PyPI/httpprobe"
         }
       ],
       "first_seen": null,
@@ -54046,6 +54094,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ip-rotat",
           "title": "PyPI/ip-rotat"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ipa-user-collector",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ipa-user-collector",
+          "title": "PyPI/ipa-user-collector"
         }
       ],
       "first_seen": null,
@@ -80238,6 +80298,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/procoder",
           "title": "PyPI/procoder"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "procwire",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/procwire",
+          "title": "PyPI/procwire"
         }
       ],
       "first_seen": null,
@@ -106579,6 +106651,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sccrapy",
           "title": "PyPI/sccrapy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "schemavault",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/schemavault",
+          "title": "PyPI/schemavault"
         }
       ],
       "first_seen": null,
@@ -146477,6 +146561,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ysocks",
           "title": "PyPI/ysocks"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "yt-api-dlp",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/yt-api-dlp",
+          "title": "PyPI/yt-api-dlp"
         }
       ],
       "first_seen": null,
