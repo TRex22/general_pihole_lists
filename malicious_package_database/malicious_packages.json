@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-04T21:28:44Z",
-  "total": 51718,
+  "generated_at": "2026-07-05T21:32:14Z",
+  "total": 51720,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -140190,6 +140190,18 @@
       "last_seen": null
     },
     {
+      "name": "urlllib321",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/urlllib321",
+          "title": "PyPI/urlllib321"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "urlload",
       "type": "PyPI",
       "sources": [
@@ -163797,6 +163809,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@adnovum-eslint/eslint-plugin",
           "title": "npm/@adnovum-eslint/eslint-plugin"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@adobesign/as-dev-tools",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@adobesign/as-dev-tools",
+          "title": "npm/@adobesign/as-dev-tools"
         }
       ],
       "first_seen": null,
