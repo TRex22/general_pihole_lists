@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-05T21:32:14Z",
-  "total": 51720,
+  "generated_at": "2026-07-06T21:41:16Z",
+  "total": 51756,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -177343,6 +177343,18 @@
       "last_seen": null
     },
     {
+      "name": "@checkrhq/adjudication-api-client",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@checkrhq/adjudication-api-client",
+          "title": "npm/@checkrhq/adjudication-api-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@chegg-me-components/header",
       "type": "npm",
       "sources": [
@@ -234793,6 +234805,306 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@market-explorer/market-explorer",
           "title": "npm/@market-explorer/market-explorer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/actualordersnippetpopup",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/actualordersnippetpopup",
+          "title": "npm/@marketfront/actualordersnippetpopup"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/advertisingdevtool",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/advertisingdevtool",
+          "title": "npm/@marketfront/advertisingdevtool"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/bannerpopup",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/bannerpopup",
+          "title": "npm/@marketfront/bannerpopup"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/baobabtech",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/baobabtech",
+          "title": "npm/@marketfront/baobabtech"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/basemarkettemplate",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/basemarkettemplate",
+          "title": "npm/@marketfront/basemarkettemplate"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/blenderdevtool",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/blenderdevtool",
+          "title": "npm/@marketfront/blenderdevtool"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/captchaservice",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/captchaservice",
+          "title": "npm/@marketfront/captchaservice"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/changefilter",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/changefilter",
+          "title": "npm/@marketfront/changefilter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/commonecommerce",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/commonecommerce",
+          "title": "npm/@marketfront/commonecommerce"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/customdealsfeed",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/customdealsfeed",
+          "title": "npm/@marketfront/customdealsfeed"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/designsystemdevtool",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/designsystemdevtool",
+          "title": "npm/@marketfront/designsystemdevtool"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/devtoolsloader",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/devtoolsloader",
+          "title": "npm/@marketfront/devtoolsloader"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/digitalherobannercarousel",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/digitalherobannercarousel",
+          "title": "npm/@marketfront/digitalherobannercarousel"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/dynamicpageparams",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/dynamicpageparams",
+          "title": "npm/@marketfront/dynamicpageparams"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/errorcounter",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/errorcounter",
+          "title": "npm/@marketfront/errorcounter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/fashiononboardingpopup",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/fashiononboardingpopup",
+          "title": "npm/@marketfront/fashiononboardingpopup"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/fingerprint",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/fingerprint",
+          "title": "npm/@marketfront/fingerprint"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/footer",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/footer",
+          "title": "npm/@marketfront/footer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/gotoauthpopup",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/gotoauthpopup",
+          "title": "npm/@marketfront/gotoauthpopup"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/header",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/header",
+          "title": "npm/@marketfront/header"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/infopopup",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/infopopup",
+          "title": "npm/@marketfront/infopopup"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/livestreampreviewpopup",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/livestreampreviewpopup",
+          "title": "npm/@marketfront/livestreampreviewpopup"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/madvpopup",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/madvpopup",
+          "title": "npm/@marketfront/madvpopup"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/mychatspreloader",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/mychatspreloader",
+          "title": "npm/@marketfront/mychatspreloader"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@marketfront/navbar",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketfront/navbar",
+          "title": "npm/@marketfront/navbar"
         }
       ],
       "first_seen": null,
@@ -456731,6 +457043,18 @@
       "last_seen": null
     },
     {
+      "name": "argonflux",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/argonflux",
+          "title": "npm/argonflux"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "argonist",
       "type": "npm",
       "sources": [
@@ -501025,6 +501349,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/awesome-camera",
           "title": "npm/awesome-camera"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "awesome-cli-logger",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/awesome-cli-logger",
+          "title": "npm/awesome-cli-logger"
         }
       ],
       "first_seen": null,
@@ -548364,6 +548700,42 @@
       "last_seen": null
     },
     {
+      "name": "big-numer",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/big-numer",
+          "title": "npm/big-numer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "big-numerate",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/big-numerate",
+          "title": "npm/big-numerate"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "big-numerator",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/big-numerator",
+          "title": "npm/big-numerator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "big-nunber",
       "type": "npm",
       "sources": [
@@ -548418,6 +548790,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/big-towel",
           "title": "npm/big-towel"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "big256-ts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/big256-ts",
+          "title": "npm/big256-ts"
         }
       ],
       "first_seen": null,
@@ -548910,6 +549294,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bigint.fs",
           "title": "npm/bigint.fs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bigint.os",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bigint.os",
+          "title": "npm/bigint.os"
         }
       ],
       "first_seen": null,
@@ -562704,12 +563100,36 @@
       "last_seen": null
     },
     {
+      "name": "bn-eslint.js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bn-eslint.js",
+          "title": "npm/bn-eslint.js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bn-lint",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bn-lint",
           "title": "npm/bn-lint"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bn-math",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bn-math",
+          "title": "npm/bn-math"
         }
       ],
       "first_seen": null,
@@ -566454,6 +566874,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bootstrap-uglify-js-proxima-transform",
           "title": "npm/bootstrap-uglify-js-proxima-transform"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bootstrap-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bootstrap-utils",
+          "title": "npm/bootstrap-utils"
         }
       ],
       "first_seen": null,
