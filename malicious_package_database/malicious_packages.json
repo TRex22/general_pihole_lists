@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-06T21:41:16Z",
-  "total": 51756,
+  "generated_at": "2026-07-07T21:40:20Z",
+  "total": 51771,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -54700,6 +54700,18 @@
       "last_seen": null
     },
     {
+      "name": "jsonschemavalidation",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/jsonschemavalidation",
+          "title": "PyPI/jsonschemavalidation"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "jsonschemex",
       "type": "PyPI",
       "sources": [
@@ -76362,6 +76374,54 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/paypalsplit",
           "title": "PyPI/paypalsplit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "paysafe-api",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/paysafe-api",
+          "title": "PyPI/paysafe-api"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "paysafe-kyc",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/paysafe-kyc",
+          "title": "PyPI/paysafe-kyc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "paysafe-payments",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/paysafe-payments",
+          "title": "PyPI/paysafe-payments"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "paysafe-sdk",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/paysafe-sdk",
+          "title": "PyPI/paysafe-sdk"
         }
       ],
       "first_seen": null,
@@ -203107,6 +203167,18 @@
       "last_seen": null
     },
     {
+      "name": "@engagehub/test-claim",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@engagehub/test-claim",
+          "title": "npm/@engagehub/test-claim"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@ensdomains/address-encoder",
       "type": "npm",
       "sources": [
@@ -211717,6 +211789,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hi.editor/core",
           "title": "npm/@hi.editor/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@higherlogic/ocfe",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@higherlogic/ocfe",
+          "title": "npm/@higherlogic/ocfe"
         }
       ],
       "first_seen": null,
@@ -270311,6 +270395,54 @@
       "last_seen": null
     },
     {
+      "name": "@sqlite-access/nodesql",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sqlite-access/nodesql",
+          "title": "npm/@sqlite-access/nodesql"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sqlite-list/createsql",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sqlite-list/createsql",
+          "title": "npm/@sqlite-list/createsql"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sqlite-list/schema-generator",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sqlite-list/schema-generator",
+          "title": "npm/@sqlite-list/schema-generator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sqlite-list/sql-creator",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sqlite-list/sql-creator",
+          "title": "npm/@sqlite-list/sql-creator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@sqlite-node/createsql",
       "type": "npm",
       "sources": [
@@ -287873,6 +288005,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@white-team/wte",
           "title": "npm/@white-team/wte"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@whs4/whs4_npm",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@whs4/whs4_npm",
+          "title": "npm/@whs4/whs4_npm"
         }
       ],
       "first_seen": null,
@@ -440903,6 +441047,18 @@
       "last_seen": null
     },
     {
+      "name": "annotator-harvardx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/annotator-harvardx",
+          "title": "npm/annotator-harvardx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "announcesir",
       "type": "npm",
       "sources": [
@@ -523512,6 +523668,18 @@
       "last_seen": null
     },
     {
+      "name": "base58-cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base58-cli",
+          "title": "npm/base58-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "base58-core",
       "type": "npm",
       "sources": [
@@ -576282,6 +576450,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brunodias",
           "title": "npm/brunodias"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "brunomenozzi-test-pkg",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brunomenozzi-test-pkg",
+          "title": "npm/brunomenozzi-test-pkg"
         }
       ],
       "first_seen": null,
