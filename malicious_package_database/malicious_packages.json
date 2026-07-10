@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-09T21:40:53Z",
-  "total": 54581,
+  "generated_at": "2026-07-10T21:33:20Z",
+  "total": 54591,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -81916,6 +81916,18 @@
       "last_seen": null
     },
     {
+      "name": "proxy-check-i",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/proxy-check-i",
+          "title": "PyPI/proxy-check-i"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "proxycpz",
       "type": "PyPI",
       "sources": [
@@ -106951,6 +106963,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sampling-util",
           "title": "PyPI/sampling-util"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "sankislayer",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sankislayer",
+          "title": "PyPI/sankislayer"
         }
       ],
       "first_seen": null,
@@ -139524,6 +139548,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tulipgui-python",
           "title": "PyPI/tulipgui-python"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "turbocalc",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/turbocalc",
+          "title": "PyPI/turbocalc"
         }
       ],
       "first_seen": null,
@@ -198423,6 +198459,18 @@
       "last_seen": null
     },
     {
+      "name": "@amtrav/webservice",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@amtrav/webservice",
+          "title": "npm/@amtrav/webservice"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@anchor-ds/core",
       "type": "npm",
       "sources": [
@@ -205161,6 +205209,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@bcrumbs.net/bc-chat",
           "title": "npm/@bcrumbs.net/bc-chat"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bcryptln/becryptjs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bcryptln/becryptjs",
+          "title": "npm/@bcryptln/becryptjs"
         }
       ],
       "first_seen": null,
@@ -241231,6 +241291,18 @@
       "last_seen": null
     },
     {
+      "name": "@genie-auth/config",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@genie-auth/config",
+          "title": "npm/@genie-auth/config"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@genoma-ui/components",
       "type": "npm",
       "sources": [
@@ -247339,6 +247411,18 @@
       "last_seen": null
     },
     {
+      "name": "@injectivelabs/sdk-ts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@injectivelabs/sdk-ts",
+          "title": "npm/@injectivelabs/sdk-ts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@inner-source/ciam-sdk",
       "type": "npm",
       "sources": [
@@ -250513,6 +250597,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kl-dolphin/swim",
           "title": "npm/@kl-dolphin/swim"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@kl-starfish/test-01",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kl-starfish/test-01",
+          "title": "npm/@kl-starfish/test-01"
         }
       ],
       "first_seen": null,
@@ -478847,6 +478943,18 @@
       "last_seen": null
     },
     {
+      "name": "ap3-components-ui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ap3-components-ui",
+          "title": "npm/ap3-components-ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "ap607",
       "type": "npm",
       "sources": [
@@ -620575,6 +620683,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/buffer-util-extend",
           "title": "npm/buffer-util-extend"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "buffer-util-internal",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/buffer-util-internal",
+          "title": "npm/buffer-util-internal"
         }
       ],
       "first_seen": null,
