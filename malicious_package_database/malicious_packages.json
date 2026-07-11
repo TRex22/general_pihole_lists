@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-10T21:33:20Z",
-  "total": 54591,
+  "generated_at": "2026-07-11T21:26:44Z",
+  "total": 54596,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -206931,6 +206931,18 @@
       "last_seen": null
     },
     {
+      "name": "@broadpeak/smartlib-ad",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@broadpeak/smartlib-ad",
+          "title": "npm/@broadpeak/smartlib-ad"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@brokenzzz/garfish",
       "type": "npm",
       "sources": [
@@ -248029,6 +248041,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jayeshsadhwani/telemetry-sdk",
           "title": "npm/@jayeshsadhwani/telemetry-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@jaymara/jsononifier",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jaymara/jsononifier",
+          "title": "npm/@jaymara/jsononifier"
         }
       ],
       "first_seen": null,
@@ -316313,6 +316337,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@utilcode/simple-http",
           "title": "npm/@utilcode/simple-http"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@uwr/colors",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@uwr/colors",
+          "title": "npm/@uwr/colors"
         }
       ],
       "first_seen": null,
@@ -518442,6 +518478,18 @@
       "last_seen": null
     },
     {
+      "name": "auth-next-gen",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/auth-next-gen",
+          "title": "npm/auth-next-gen"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "auth-nightwatch-grunt-forever",
       "type": "npm",
       "sources": [
@@ -519816,6 +519864,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/authub-core-module",
           "title": "npm/authub-core-module"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "authvaultx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/authvaultx",
+          "title": "npm/authvaultx"
         }
       ],
       "first_seen": null,
