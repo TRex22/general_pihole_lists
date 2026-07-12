@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-11T21:26:44Z",
-  "total": 54596,
+  "generated_at": "2026-07-12T21:28:01Z",
+  "total": 54609,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -27397,6 +27397,18 @@
       "last_seen": null
     },
     {
+      "name": "data-harvester",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/data-harvester",
+          "title": "PyPI/data-harvester"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "data-pipeline-check",
       "type": "PyPI",
       "sources": [
@@ -28075,6 +28087,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/defi-risk-scanner",
           "title": "PyPI/defi-risk-scanner"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "defi-tools",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/defi-tools",
+          "title": "PyPI/defi-tools"
         }
       ],
       "first_seen": null,
@@ -42339,6 +42363,18 @@
       "last_seen": null
     },
     {
+      "name": "eth-agent",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/eth-agent",
+          "title": "PyPI/eth-agent"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "eth-defi",
       "type": "PyPI",
       "sources": [
@@ -54922,6 +54958,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/jupiter-helper",
           "title": "PyPI/jupiter-helper"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "jupiter-sdk",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/jupiter-sdk",
+          "title": "PyPI/jupiter-sdk"
         }
       ],
       "first_seen": null,
@@ -70208,6 +70256,18 @@
       "last_seen": null
     },
     {
+      "name": "metemask-sdk",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/metemask-sdk",
+          "title": "PyPI/metemask-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "methantiafkxd",
       "type": "PyPI",
       "sources": [
@@ -78804,6 +78864,18 @@
       "last_seen": null
     },
     {
+      "name": "pipspeed",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pipspeed",
+          "title": "PyPI/pipspeed"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "pipsplit",
       "type": "PyPI",
       "sources": [
@@ -82954,6 +83026,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/py-adtoolurl",
           "title": "PyPI/py-adtoolurl"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "py-base58",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/py-base58",
+          "title": "PyPI/py-base58"
         }
       ],
       "first_seen": null,
@@ -120715,6 +120799,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/solidity-coverage",
           "title": "PyPI/solidity-coverage"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "solidity-dev",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/solidity-dev",
+          "title": "PyPI/solidity-dev"
         }
       ],
       "first_seen": null,
@@ -268765,6 +268861,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@metronetinc/react-component-library-next-plugin",
           "title": "npm/@metronetinc/react-component-library-next-plugin"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@meziizana/frontend-logger",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@meziizana/frontend-logger",
+          "title": "npm/@meziizana/frontend-logger"
         }
       ],
       "first_seen": null,
@@ -481079,6 +481187,18 @@
       "last_seen": null
     },
     {
+      "name": "api-changelly",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/api-changelly",
+          "title": "npm/api-changelly"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "api-chat-fanpage-facebook",
       "type": "npm",
       "sources": [
@@ -519966,6 +520086,18 @@
       "last_seen": null
     },
     {
+      "name": "auto-debug-tool",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/auto-debug-tool",
+          "title": "npm/auto-debug-tool"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "auto-instrumentations-node",
       "type": "npm",
       "sources": [
@@ -535165,6 +535297,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/awesome-icon",
           "title": "npm/awesome-icon"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "awesome-ts-jest",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/awesome-ts-jest",
+          "title": "npm/awesome-ts-jest"
         }
       ],
       "first_seen": null,
@@ -621799,6 +621943,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bugcrowd-npm-poc",
           "title": "npm/bugcrowd-npm-poc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bugexploit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bugexploit",
+          "title": "npm/bugexploit"
         }
       ],
       "first_seen": null,
