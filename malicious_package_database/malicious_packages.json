@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-14T21:31:51Z",
-  "total": 54756,
+  "generated_at": "2026-07-15T21:33:09Z",
+  "total": 54786,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -27541,6 +27541,18 @@
       "last_seen": null
     },
     {
+      "name": "data-proxy-for-test",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/data-proxy-for-test",
+          "title": "PyPI/data-proxy-for-test"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "database-roblox",
       "type": "PyPI",
       "sources": [
@@ -42741,6 +42753,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ethereuim",
           "title": "PyPI/ethereuim"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ethereum-input-decorder",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ethereum-input-decorder",
+          "title": "PyPI/ethereum-input-decorder"
         }
       ],
       "first_seen": null,
@@ -67648,6 +67672,18 @@
       "last_seen": null
     },
     {
+      "name": "log-guru",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/log-guru",
+          "title": "PyPI/log-guru"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "loganx",
       "type": "PyPI",
       "sources": [
@@ -73358,6 +73394,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/noonutil",
           "title": "PyPI/noonutil"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "northstart-sdk",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/northstart-sdk",
+          "title": "PyPI/northstart-sdk"
         }
       ],
       "first_seen": null,
@@ -82066,6 +82114,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/proxy-check-ii",
           "title": "PyPI/proxy-check-ii"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "proxy-checker-j",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/proxy-checker-j",
+          "title": "PyPI/proxy-checker-j"
         }
       ],
       "first_seen": null,
@@ -96352,6 +96412,18 @@
       "last_seen": null
     },
     {
+      "name": "pylogora",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pylogora",
+          "title": "PyPI/pylogora"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "pylogxo",
       "type": "PyPI",
       "sources": [
@@ -100838,6 +100910,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/quizdom",
           "title": "PyPI/quizdom"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "qwen-asr-pvt",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/qwen-asr-pvt",
+          "title": "PyPI/qwen-asr-pvt"
         }
       ],
       "first_seen": null,
@@ -139038,6 +139122,18 @@
       "last_seen": null
     },
     {
+      "name": "trongridweb",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongridweb",
+          "title": "PyPI/trongridweb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "tronhap",
       "type": "PyPI",
       "sources": [
@@ -146849,6 +146945,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/xxx-bale",
           "title": "PyPI/xxx-bale"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "xyq-drama-skill",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/xyq-drama-skill",
+          "title": "PyPI/xyq-drama-skill"
         }
       ],
       "first_seen": null,
@@ -205539,6 +205647,42 @@
       "last_seen": null
     },
     {
+      "name": "@bcs-mi-ui/message",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bcs-mi-ui/message",
+          "title": "npm/@bcs-mi-ui/message"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bcs-mi-ui/message-block",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bcs-mi-ui/message-block",
+          "title": "npm/@bcs-mi-ui/message-block"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bcs-mi-ui/test1243npmpacket76",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bcs-mi-ui/test1243npmpacket76",
+          "title": "npm/@bcs-mi-ui/test1243npmpacket76"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@bcs-mi/store",
       "type": "npm",
       "sources": [
@@ -222523,6 +222667,18 @@
       "last_seen": null
     },
     {
+      "name": "@ddh-libraries/analytics",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ddh-libraries/analytics",
+          "title": "npm/@ddh-libraries/analytics"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@ddh-libs/analytics",
       "type": "npm",
       "sources": [
@@ -222577,6 +222733,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@deathpoolxrs/dependency-confusion-poc",
           "title": "npm/@deathpoolxrs/dependency-confusion-poc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@debile/require-dir",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@debile/require-dir",
+          "title": "npm/@debile/require-dir"
         }
       ],
       "first_seen": null,
@@ -239875,6 +240043,30 @@
       "last_seen": null
     },
     {
+      "name": "@fhkry/baileys-v2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fhkry/baileys-v2",
+          "title": "npm/@fhkry/baileys-v2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@fhkry/x-baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fhkry/x-baileys",
+          "title": "npm/@fhkry/x-baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@fhnw/angular-app-configuration",
       "type": "npm",
       "sources": [
@@ -245773,6 +245965,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hkbn/es-header-footer",
           "title": "npm/@hkbn/es-header-footer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hkyyy/portal-widget-helper-0601",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hkyyy/portal-widget-helper-0601",
+          "title": "npm/@hkyyy/portal-widget-helper-0601"
         }
       ],
       "first_seen": null,
@@ -257413,6 +257617,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@lessondesk/schoolbus",
           "title": "npm/@lessondesk/schoolbus"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@leviosa86com/leviosa86-test",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@leviosa86com/leviosa86-test",
+          "title": "npm/@leviosa86com/leviosa86-test"
         }
       ],
       "first_seen": null,
@@ -291571,6 +291787,30 @@
       "last_seen": null
     },
     {
+      "name": "@pimy-b2cweb/apiclient-b2cweb-r2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pimy-b2cweb/apiclient-b2cweb-r2",
+          "title": "npm/@pimy-b2cweb/apiclient-b2cweb-r2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@pimy-b2cweb/frontend-lib",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pimy-b2cweb/frontend-lib",
+          "title": "npm/@pimy-b2cweb/frontend-lib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@pingone/net",
       "type": "npm",
       "sources": [
@@ -295443,6 +295683,18 @@
       "last_seen": null
     },
     {
+      "name": "@react-case/option",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@react-case/option",
+          "title": "npm/@react-case/option"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@react-native-aria/button",
       "type": "npm",
       "sources": [
@@ -297631,6 +297883,18 @@
       "last_seen": null
     },
     {
+      "name": "@saladin0x1/js-shared-modules",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@saladin0x1/js-shared-modules",
+          "title": "npm/@saladin0x1/js-shared-modules"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@salem_jalal/osc-components",
       "type": "npm",
       "sources": [
@@ -297997,6 +298261,42 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sauravthakur/corplib",
           "title": "npm/@sauravthakur/corplib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sauruslord/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sauruslord/baileys",
+          "title": "npm/@sauruslord/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sauruslord/eslint-config",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sauruslord/eslint-config",
+          "title": "npm/@sauruslord/eslint-config"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sauruslord/libsignal",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sauruslord/libsignal",
+          "title": "npm/@sauruslord/libsignal"
         }
       ],
       "first_seen": null,
@@ -303125,6 +303425,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sqlite-clone/nodesql",
           "title": "npm/@sqlite-clone/nodesql"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sqlite-frame/nodesql",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sqlite-frame/nodesql",
+          "title": "npm/@sqlite-frame/nodesql"
         }
       ],
       "first_seen": null,
@@ -397187,6 +397499,18 @@
       "last_seen": null
     },
     {
+      "name": "ac-raf-emitter",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ac-raf-emitter",
+          "title": "npm/ac-raf-emitter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "ac-sasskit",
       "type": "npm",
       "sources": [
@@ -431471,6 +431795,18 @@
       "last_seen": null
     },
     {
+      "name": "ai-explain",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ai-explain",
+          "title": "npm/ai-explain"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "ai-fast-auto-trader",
       "type": "npm",
       "sources": [
@@ -431621,6 +431957,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ai-plugin-template",
           "title": "npm/ai-plugin-template"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ai-pro-sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ai-pro-sdk",
+          "title": "npm/ai-pro-sdk"
         }
       ],
       "first_seen": null,
@@ -656804,6 +657152,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "time.",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "http://thehackernews.com/2026/07/compromised-asyncapi-npm-packages.html",
+          "title": "Compromised AsyncAPI npm Packages Deliver Multi-Stage Botnet Malware",
+          "date": "2026-07-15"
+        }
+      ],
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15"
     },
     {
       "name": "to",
