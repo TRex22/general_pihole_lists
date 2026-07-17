@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-16T21:34:18Z",
-  "total": 54823,
+  "generated_at": "2026-07-17T21:29:42Z",
+  "total": 54827,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -48129,6 +48129,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/gorilla2",
           "title": "PyPI/gorilla2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "govpkg",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/govpkg",
+          "title": "PyPI/govpkg"
         }
       ],
       "first_seen": null,
@@ -139206,12 +139218,36 @@
       "last_seen": null
     },
     {
+      "name": "trongridev",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongridev",
+          "title": "PyPI/trongridev"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "trongridlib",
       "type": "PyPI",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongridlib",
           "title": "PyPI/trongridlib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "trongridme",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongridme",
+          "title": "PyPI/trongridme"
         }
       ],
       "first_seen": null,
@@ -190973,6 +191009,10 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-demo1",
           "title": "npm/0x2ai-demo1"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-demo1",
+          "title": "npm/0x2ai-demo1"
         }
       ],
       "first_seen": null,
@@ -190984,6 +191024,10 @@
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-demo10x",
+          "title": "npm/0x2ai-demo10x"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-demo10x",
           "title": "npm/0x2ai-demo10x"
         }
       ],
@@ -190997,6 +191041,10 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-demo2",
           "title": "npm/0x2ai-demo2"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-demo2",
+          "title": "npm/0x2ai-demo2"
         }
       ],
       "first_seen": null,
@@ -191008,6 +191056,10 @@
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-demo3",
+          "title": "npm/0x2ai-demo3"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-demo3",
           "title": "npm/0x2ai-demo3"
         }
       ],
@@ -191021,6 +191073,10 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-demo4",
           "title": "npm/0x2ai-demo4"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-demo4",
+          "title": "npm/0x2ai-demo4"
         }
       ],
       "first_seen": null,
@@ -191032,6 +191088,10 @@
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-demo6",
+          "title": "npm/0x2ai-demo6"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-demo6",
           "title": "npm/0x2ai-demo6"
         }
       ],
@@ -191045,6 +191105,10 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-demo6x",
           "title": "npm/0x2ai-demo6x"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-demo6x",
+          "title": "npm/0x2ai-demo6x"
         }
       ],
       "first_seen": null,
@@ -191056,6 +191120,10 @@
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-demo7x",
+          "title": "npm/0x2ai-demo7x"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-demo7x",
           "title": "npm/0x2ai-demo7x"
         }
       ],
@@ -191069,6 +191137,10 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-demo8",
           "title": "npm/0x2ai-demo8"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-demo8",
+          "title": "npm/0x2ai-demo8"
         }
       ],
       "first_seen": null,
@@ -191080,6 +191152,10 @@
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-demo8x",
+          "title": "npm/0x2ai-demo8x"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-demo8x",
           "title": "npm/0x2ai-demo8x"
         }
       ],
@@ -191093,6 +191169,10 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-demo9",
           "title": "npm/0x2ai-demo9"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-demo9",
+          "title": "npm/0x2ai-demo9"
         }
       ],
       "first_seen": null,
@@ -191104,6 +191184,10 @@
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-demo9x",
+          "title": "npm/0x2ai-demo9x"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-demo9x",
           "title": "npm/0x2ai-demo9x"
         }
       ],
@@ -191117,6 +191201,10 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-ivo",
           "title": "npm/0x2ai-ivo"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-ivo",
+          "title": "npm/0x2ai-ivo"
         }
       ],
       "first_seen": null,
@@ -191128,6 +191216,10 @@
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-multi-mq",
+          "title": "npm/0x2ai-multi-mq"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-multi-mq",
           "title": "npm/0x2ai-multi-mq"
         }
       ],
@@ -191141,6 +191233,10 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-multi-q",
           "title": "npm/0x2ai-multi-q"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-multi-q",
+          "title": "npm/0x2ai-multi-q"
         }
       ],
       "first_seen": null,
@@ -191152,6 +191248,10 @@
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0x2ai-zoe",
+          "title": "npm/0x2ai-zoe"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/0x2ai-zoe",
           "title": "npm/0x2ai-zoe"
         }
       ],
@@ -234121,6 +234221,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@eda.yandex/web-router",
           "title": "npm/@eda.yandex/web-router"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@edgecommons/edgecommons",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@edgecommons/edgecommons",
+          "title": "npm/@edgecommons/edgecommons"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@edgecommons/streamlog-node",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@edgecommons/streamlog-node",
+          "title": "npm/@edgecommons/streamlog-node"
         }
       ],
       "first_seen": null,
@@ -657596,19 +657720,6 @@
       ],
       "first_seen": null,
       "last_seen": null
-    },
-    {
-      "name": "time.",
-      "type": "npm",
-      "sources": [
-        {
-          "url": "http://thehackernews.com/2026/07/compromised-asyncapi-npm-packages.html",
-          "title": "Compromised AsyncAPI npm Packages Deliver Multi-Stage Botnet Malware",
-          "date": "2026-07-15"
-        }
-      ],
-      "first_seen": "2026-07-15",
-      "last_seen": "2026-07-15"
     },
     {
       "name": "to",
