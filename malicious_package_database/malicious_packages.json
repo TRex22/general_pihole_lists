@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-17T21:29:42Z",
-  "total": 54827,
+  "generated_at": "2026-07-18T21:30:48Z",
+  "total": 54829,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -71354,6 +71354,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mle-py-connector",
           "title": "PyPI/mle-py-connector"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "mlflow-ui",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mlflow-ui",
+          "title": "PyPI/mlflow-ui"
         }
       ],
       "first_seen": null,
@@ -539830,6 +539842,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/axios-mutation-stop-testcafe",
           "title": "npm/axios-mutation-stop-testcafe"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "axios-native",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/axios-native",
+          "title": "npm/axios-native"
         }
       ],
       "first_seen": null,
