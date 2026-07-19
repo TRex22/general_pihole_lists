@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-18T21:30:48Z",
-  "total": 54829,
+  "generated_at": "2026-07-19T21:29:14Z",
+  "total": 54831,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -27499,6 +27499,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/data-harvester",
           "title": "PyPI/data-harvester"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "data-parser-utils",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/data-parser-utils",
+          "title": "PyPI/data-parser-utils"
         }
       ],
       "first_seen": null,
@@ -657744,6 +657756,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "time.",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "http://thehackernews.com/2026/07/compromised-asyncapi-npm-packages.html",
+          "title": "Compromised AsyncAPI npm Packages Deliver Multi-Stage Botnet Malware",
+          "date": "2026-07-15"
+        }
+      ],
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15"
     },
     {
       "name": "to",
