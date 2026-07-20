@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-19T21:29:14Z",
-  "total": 54831,
+  "generated_at": "2026-07-20T21:40:23Z",
+  "total": 54957,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -14082,6 +14082,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/auto-backup-wsl",
           "title": "PyPI/auto-backup-wsl"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "automatic-octo-invention",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/automatic-octo-invention",
+          "title": "PyPI/automatic-octo-invention"
         }
       ],
       "first_seen": null,
@@ -28213,6 +28225,18 @@
       "last_seen": null
     },
     {
+      "name": "defi-kit",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/defi-kit",
+          "title": "PyPI/defi-kit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "defi-risk-scanner",
       "type": "PyPI",
       "sources": [
@@ -30957,6 +30981,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/durabletask",
           "title": "PyPI/durabletask"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "dwh-kafka-client",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/dwh-kafka-client",
+          "title": "PyPI/dwh-kafka-client"
         }
       ],
       "first_seen": null,
@@ -50355,6 +50391,30 @@
       "last_seen": null
     },
     {
+      "name": "hello-world-test-mh2",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/hello-world-test-mh2",
+          "title": "PyPI/hello-world-test-mh2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "hello-world-test-mh3",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/hello-world-test-mh3",
+          "title": "PyPI/hello-world-test-mh3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "hellodista",
       "type": "PyPI",
       "sources": [
@@ -52762,6 +52822,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ibmodules",
           "title": "PyPI/ibmodules"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ibreak",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ibreak",
+          "title": "PyPI/ibreak"
         }
       ],
       "first_seen": null,
@@ -55834,6 +55906,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/killvisa",
           "title": "PyPI/killvisa"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "kimichat",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/kimichat",
+          "title": "PyPI/kimichat"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "kimitalk",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/kimitalk",
+          "title": "PyPI/kimitalk"
         }
       ],
       "first_seen": null,
@@ -71276,6 +71372,18 @@
       "last_seen": null
     },
     {
+      "name": "ml-core-airflow-auth",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ml-core-airflow-auth",
+          "title": "PyPI/ml-core-airflow-auth"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "ml-linear-regression-lib",
       "type": "PyPI",
       "sources": [
@@ -72440,6 +72548,30 @@
       "last_seen": null
     },
     {
+      "name": "mysupergoodpython",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mysupergoodpython",
+          "title": "PyPI/mysupergoodpython"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "mysuperlicense",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mysuperlicense",
+          "title": "PyPI/mysuperlicense"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "mytonctrl",
       "type": "PyPI",
       "sources": [
@@ -72764,6 +72896,18 @@
       "last_seen": null
     },
     {
+      "name": "nemopush",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/nemopush",
+          "title": "PyPI/nemopush"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "neov",
       "type": "PyPI",
       "sources": [
@@ -72794,6 +72938,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/nerfstudio-gs",
           "title": "PyPI/nerfstudio-gs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "neroteam-v1",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/neroteam-v1",
+          "title": "PyPI/neroteam-v1"
         }
       ],
       "first_seen": null,
@@ -76566,6 +76722,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/papara",
           "title": "PyPI/papara"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "paperclip-ai",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/paperclip-ai",
+          "title": "PyPI/paperclip-ai"
         }
       ],
       "first_seen": null,
@@ -98584,6 +98752,18 @@
       "last_seen": null
     },
     {
+      "name": "python-devplatform-client",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/python-devplatform-client",
+          "title": "PyPI/python-devplatform-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "python-doenv",
       "type": "PyPI",
       "sources": [
@@ -106479,6 +106659,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/roku-aihub",
           "title": "PyPI/roku-aihub"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "roles-royce",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/roles-royce",
+          "title": "PyPI/roles-royce"
         }
       ],
       "first_seen": null,
@@ -119389,6 +119581,18 @@
       "last_seen": null
     },
     {
+      "name": "shark-e2e-bnsneo",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/shark-e2e-bnsneo",
+          "title": "PyPI/shark-e2e-bnsneo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "shelipp",
       "type": "PyPI",
       "sources": [
@@ -124981,6 +125185,18 @@
       "last_seen": null
     },
     {
+      "name": "telebot-bot-run",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/telebot-bot-run",
+          "title": "PyPI/telebot-bot-run"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "telebot-infe",
       "type": "PyPI",
       "sources": [
@@ -127524,6 +127740,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tingetone",
           "title": "PyPI/tingetone"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "tinkoff-cloud-apis-internal",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tinkoff-cloud-apis-internal",
+          "title": "PyPI/tinkoff-cloud-apis-internal"
         }
       ],
       "first_seen": null,
@@ -139242,6 +139470,18 @@
       "last_seen": null
     },
     {
+      "name": "trongrider",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongrider",
+          "title": "PyPI/trongrider"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "trongridev",
       "type": "PyPI",
       "sources": [
@@ -139272,6 +139512,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongridme",
           "title": "PyPI/trongridme"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "trongridmy",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongridmy",
+          "title": "PyPI/trongridmy"
         }
       ],
       "first_seen": null,
@@ -141913,6 +142165,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/validatekey",
           "title": "PyPI/validatekey"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "vantrala",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/vantrala",
+          "title": "PyPI/vantrala"
         }
       ],
       "first_seen": null,
@@ -160799,6 +161063,18 @@
       "last_seen": null
     },
     {
+      "name": "ike-artifactory-ruby",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/ike-artifactory-ruby",
+          "title": "RubyGems/ike-artifactory-ruby"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "indonesian-province",
       "type": "RubyGems",
       "sources": [
@@ -166205,6 +166481,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/mvv9",
           "title": "RubyGems/mvv9"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "my_shoaib_gem",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/my_shoaib_gem",
+          "title": "RubyGems/my_shoaib_gem"
         }
       ],
       "first_seen": null,
@@ -204439,6 +204727,18 @@
       "last_seen": null
     },
     {
+      "name": "@atlaskit-internal_.smart-card/hover-card",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@atlaskit-internal_.smart-card/hover-card",
+          "title": "npm/@atlaskit-internal_.smart-card/hover-card"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@atlasmonorepo/atlas-base-service",
       "type": "npm",
       "sources": [
@@ -205021,6 +205321,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@aznb/extension-gather",
           "title": "npm/@aznb/extension-gather"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@azure-lab-services/ml-ts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@azure-lab-services/ml-ts",
+          "title": "npm/@azure-lab-services/ml-ts"
         }
       ],
       "first_seen": null,
@@ -234011,6 +234323,102 @@
       "last_seen": null
     },
     {
+      "name": "@dxcl/account-js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dxcl/account-js",
+          "title": "npm/@dxcl/account-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dxcl/customer-js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dxcl/customer-js",
+          "title": "npm/@dxcl/customer-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dxcl/fund-js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dxcl/fund-js",
+          "title": "npm/@dxcl/fund-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dxcl/http-common-js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dxcl/http-common-js",
+          "title": "npm/@dxcl/http-common-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dxcl/indicators-js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dxcl/indicators-js",
+          "title": "npm/@dxcl/indicators-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dxcl/log-function-js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dxcl/log-function-js",
+          "title": "npm/@dxcl/log-function-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dxcl/transaction-js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dxcl/transaction-js",
+          "title": "npm/@dxcl/transaction-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dxcl/user-js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dxcl/user-js",
+          "title": "npm/@dxcl/user-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@dydxprotocol/perpetual",
       "type": "npm",
       "sources": [
@@ -239399,6 +239807,18 @@
       "last_seen": null
     },
     {
+      "name": "@examplecorptest/hearsay-design-system-test",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@examplecorptest/hearsay-design-system-test",
+          "title": "npm/@examplecorptest/hearsay-design-system-test"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@exarad/verfuegbarkeitspruefung-vue2",
       "type": "npm",
       "sources": [
@@ -242849,6 +243269,966 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@goatapp/web-content-components",
           "title": "npm/@goatapp/web-content-components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-agpl-1-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-agpl-1-0",
+          "title": "npm/@gocortexio/npmgremlinbox-agpl-1-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-agpl-1-0-only",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-agpl-1-0-only",
+          "title": "npm/@gocortexio/npmgremlinbox-agpl-1-0-only"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-agpl-1-0-or-later",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-agpl-1-0-or-later",
+          "title": "npm/@gocortexio/npmgremlinbox-agpl-1-0-or-later"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-agpl-3-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-agpl-3-0",
+          "title": "npm/@gocortexio/npmgremlinbox-agpl-3-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-agpl-3-0-only",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-agpl-3-0-only",
+          "title": "npm/@gocortexio/npmgremlinbox-agpl-3-0-only"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-agpl-3-0-or-later",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-agpl-3-0-or-later",
+          "title": "npm/@gocortexio/npmgremlinbox-agpl-3-0-or-later"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-apsl",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-apsl",
+          "title": "npm/@gocortexio/npmgremlinbox-apsl"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-arphic-1999",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-arphic-1999",
+          "title": "npm/@gocortexio/npmgremlinbox-arphic-1999"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-artistic-1-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-artistic-1-0",
+          "title": "npm/@gocortexio/npmgremlinbox-artistic-1-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-base",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-base",
+          "title": "npm/@gocortexio/npmgremlinbox-base"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-busl-1-1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-busl-1-1",
+          "title": "npm/@gocortexio/npmgremlinbox-busl-1-1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-c-uda-1-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-c-uda-1-0",
+          "title": "npm/@gocortexio/npmgremlinbox-c-uda-1-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cal-1-0-combined-work-exception",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cal-1-0-combined-work-exception",
+          "title": "npm/@gocortexio/npmgremlinbox-cal-1-0-combined-work-exception"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-nc-3-0-de",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-nc-3-0-de",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-nc-3-0-de"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-nc-nd-3-0-de",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-nc-nd-3-0-de",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-nc-nd-3-0-de"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-nc-nd-3-0-igo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-nc-nd-3-0-igo",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-nc-nd-3-0-igo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-nc-sa-2-0-de",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-nc-sa-2-0-de",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-nc-sa-2-0-de"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-nc-sa-2-0-fr",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-nc-sa-2-0-fr",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-nc-sa-2-0-fr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-nc-sa-2-0-uk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-nc-sa-2-0-uk",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-nc-sa-2-0-uk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-nc-sa-3-0-de",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-nc-sa-3-0-de",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-nc-sa-3-0-de"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-nc-sa-3-0-igo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-nc-sa-3-0-igo",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-nc-sa-3-0-igo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-nd-3-0-de",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-nd-3-0-de",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-nd-3-0-de"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-sa-2-0-uk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-sa-2-0-uk",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-sa-2-0-uk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-sa-2-1-jp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-sa-2-1-jp",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-sa-2-1-jp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-sa-3-0-at",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-sa-3-0-at",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-sa-3-0-at"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-sa-3-0-de",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-sa-3-0-de",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-sa-3-0-de"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cc-by-sa-4-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cc-by-sa-4-0",
+          "title": "npm/@gocortexio/npmgremlinbox-cc-by-sa-4-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cddl-1-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cddl-1-0",
+          "title": "npm/@gocortexio/npmgremlinbox-cddl-1-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cdla-sharing-1-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cdla-sharing-1-0",
+          "title": "npm/@gocortexio/npmgremlinbox-cdla-sharing-1-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cern-ohl-s-2-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cern-ohl-s-2-0",
+          "title": "npm/@gocortexio/npmgremlinbox-cern-ohl-s-2-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cern-ohl-w-2-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cern-ohl-w-2-0",
+          "title": "npm/@gocortexio/npmgremlinbox-cern-ohl-w-2-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-copyleft-next-0-3-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-copyleft-next-0-3-0",
+          "title": "npm/@gocortexio/npmgremlinbox-copyleft-next-0-3-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-copyleft-next-0-3-1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-copyleft-next-0-3-1",
+          "title": "npm/@gocortexio/npmgremlinbox-copyleft-next-0-3-1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-cpol-1-02",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-cpol-1-02",
+          "title": "npm/@gocortexio/npmgremlinbox-cpol-1-02"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-ecos-2-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-ecos-2-0",
+          "title": "npm/@gocortexio/npmgremlinbox-ecos-2-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-epl-1-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-epl-1-0",
+          "title": "npm/@gocortexio/npmgremlinbox-epl-1-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-epl-2-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-epl-2-0",
+          "title": "npm/@gocortexio/npmgremlinbox-epl-2-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-eupl-1-1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-eupl-1-1",
+          "title": "npm/@gocortexio/npmgremlinbox-eupl-1-1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-eupl-1-2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-eupl-1-2",
+          "title": "npm/@gocortexio/npmgremlinbox-eupl-1-2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-eupl-3-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-eupl-3-0",
+          "title": "npm/@gocortexio/npmgremlinbox-eupl-3-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-fdk-aac",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-fdk-aac",
+          "title": "npm/@gocortexio/npmgremlinbox-fdk-aac"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-gpl-2-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-gpl-2-0",
+          "title": "npm/@gocortexio/npmgremlinbox-gpl-2-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-gpl-3-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-gpl-3-0",
+          "title": "npm/@gocortexio/npmgremlinbox-gpl-3-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-hippocratic-2-1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-hippocratic-2-1",
+          "title": "npm/@gocortexio/npmgremlinbox-hippocratic-2-1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-jpl-image",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-jpl-image",
+          "title": "npm/@gocortexio/npmgremlinbox-jpl-image"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-lgpl-2-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-lgpl-2-0",
+          "title": "npm/@gocortexio/npmgremlinbox-lgpl-2-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-lgpl-2-1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-lgpl-2-1",
+          "title": "npm/@gocortexio/npmgremlinbox-lgpl-2-1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-lgpl-3-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-lgpl-3-0",
+          "title": "npm/@gocortexio/npmgremlinbox-lgpl-3-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-linux-man-pages-copyleft",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-linux-man-pages-copyleft",
+          "title": "npm/@gocortexio/npmgremlinbox-linux-man-pages-copyleft"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-malware-c2-beacon",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-malware-c2-beacon",
+          "title": "npm/@gocortexio/npmgremlinbox-malware-c2-beacon"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-malware-code-obfuscation",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-malware-code-obfuscation",
+          "title": "npm/@gocortexio/npmgremlinbox-malware-code-obfuscation"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-malware-credential-harvesting",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-malware-credential-harvesting",
+          "title": "npm/@gocortexio/npmgremlinbox-malware-credential-harvesting"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-malware-cryptomining-indicators",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-malware-cryptomining-indicators",
+          "title": "npm/@gocortexio/npmgremlinbox-malware-cryptomining-indicators"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-malware-install-execution",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-malware-install-execution",
+          "title": "npm/@gocortexio/npmgremlinbox-malware-install-execution"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-malware-network-indicators",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-malware-network-indicators",
+          "title": "npm/@gocortexio/npmgremlinbox-malware-network-indicators"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-mpl-1-1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-mpl-1-1",
+          "title": "npm/@gocortexio/npmgremlinbox-mpl-1-1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-mpl-2-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-mpl-2-0",
+          "title": "npm/@gocortexio/npmgremlinbox-mpl-2-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-ms-lpl",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-ms-lpl",
+          "title": "npm/@gocortexio/npmgremlinbox-ms-lpl"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-ncgl-uk-2-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-ncgl-uk-2-0",
+          "title": "npm/@gocortexio/npmgremlinbox-ncgl-uk-2-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-openpbs-2-3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-openpbs-2-3",
+          "title": "npm/@gocortexio/npmgremlinbox-openpbs-2-3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-osl-3-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-osl-3-0",
+          "title": "npm/@gocortexio/npmgremlinbox-osl-3-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-polyform-noncommercial-1-0-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-polyform-noncommercial-1-0-0",
+          "title": "npm/@gocortexio/npmgremlinbox-polyform-noncommercial-1-0-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-polyform-small-business-1-0-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-polyform-small-business-1-0-0",
+          "title": "npm/@gocortexio/npmgremlinbox-polyform-small-business-1-0-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-qpl-1-0-inria-2004",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-qpl-1-0-inria-2004",
+          "title": "npm/@gocortexio/npmgremlinbox-qpl-1-0-inria-2004"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-sendmail-8-23",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-sendmail-8-23",
+          "title": "npm/@gocortexio/npmgremlinbox-sendmail-8-23"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-simpl-2-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-simpl-2-0",
+          "title": "npm/@gocortexio/npmgremlinbox-simpl-2-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-sspl-1-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-sspl-1-0",
+          "title": "npm/@gocortexio/npmgremlinbox-sspl-1-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-tapr-ohl-1-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-tapr-ohl-1-0",
+          "title": "npm/@gocortexio/npmgremlinbox-tapr-ohl-1-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-tpl-1-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-tpl-1-0",
+          "title": "npm/@gocortexio/npmgremlinbox-tpl-1-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-typosquat-axios",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-typosquat-axios",
+          "title": "npm/@gocortexio/npmgremlinbox-typosquat-axios"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-typosquat-chalk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-typosquat-chalk",
+          "title": "npm/@gocortexio/npmgremlinbox-typosquat-chalk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-typosquat-commander",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-typosquat-commander",
+          "title": "npm/@gocortexio/npmgremlinbox-typosquat-commander"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-typosquat-express",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-typosquat-express",
+          "title": "npm/@gocortexio/npmgremlinbox-typosquat-express"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-typosquat-lodash",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-typosquat-lodash",
+          "title": "npm/@gocortexio/npmgremlinbox-typosquat-lodash"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-typosquat-moment",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-typosquat-moment",
+          "title": "npm/@gocortexio/npmgremlinbox-typosquat-moment"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-typosquat-react",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-typosquat-react",
+          "title": "npm/@gocortexio/npmgremlinbox-typosquat-react"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-typosquat-webpack",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-typosquat-webpack",
+          "title": "npm/@gocortexio/npmgremlinbox-typosquat-webpack"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-ucl-1-0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-ucl-1-0",
+          "title": "npm/@gocortexio/npmgremlinbox-ucl-1-0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-unlicense",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-unlicense",
+          "title": "npm/@gocortexio/npmgremlinbox-unlicense"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gocortexio/npmgremlinbox-wxwindows",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gocortexio/npmgremlinbox-wxwindows",
+          "title": "npm/@gocortexio/npmgremlinbox-wxwindows"
         }
       ],
       "first_seen": null,
@@ -248933,6 +250313,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@iptm-components/intl",
           "title": "npm/@iptm-components/intl"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@irys-solutions/odesa-main",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@irys-solutions/odesa-main",
+          "title": "npm/@irys-solutions/odesa-main"
         }
       ],
       "first_seen": null,
@@ -294851,6 +296243,30 @@
       "last_seen": null
     },
     {
+      "name": "@public-for-cdao/backend",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@public-for-cdao/backend",
+          "title": "npm/@public-for-cdao/backend"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@public-for-cdao/bot",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@public-for-cdao/bot",
+          "title": "npm/@public-for-cdao/bot"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@public-for-cdao/common",
       "type": "npm",
       "sources": [
@@ -294875,12 +296291,72 @@
       "last_seen": null
     },
     {
+      "name": "@public-for-cdao/contracts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@public-for-cdao/contracts",
+          "title": "npm/@public-for-cdao/contracts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@public-for-cdao/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@public-for-cdao/core",
+          "title": "npm/@public-for-cdao/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@public-for-cdao/deploy",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@public-for-cdao/deploy",
+          "title": "npm/@public-for-cdao/deploy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@public-for-cdao/hooks",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@public-for-cdao/hooks",
           "title": "npm/@public-for-cdao/hooks"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@public-for-cdao/sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@public-for-cdao/sdk",
+          "title": "npm/@public-for-cdao/sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@public-for-cdao/signer",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@public-for-cdao/signer",
+          "title": "npm/@public-for-cdao/signer"
         }
       ],
       "first_seen": null,
@@ -294905,6 +296381,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@public-for-cdao/types",
           "title": "npm/@public-for-cdao/types"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@public-for-cdao/utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@public-for-cdao/utils",
+          "title": "npm/@public-for-cdao/utils"
         }
       ],
       "first_seen": null,
@@ -441711,6 +443199,18 @@
       "last_seen": null
     },
     {
+      "name": "alb-lambda-cdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alb-lambda-cdk",
+          "title": "npm/alb-lambda-cdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "alb-um-availa-ble-zip-mp3-file-131408-zeppelin-over-china-ylmq2-mamqni",
       "type": "npm",
       "sources": [
@@ -461913,6 +463413,10 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/analysis-chart",
           "title": "npm/analysis-chart"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/analysis-chart\r",
+          "title": "npm/analysis-chart\r"
         }
       ],
       "first_seen": null,
@@ -637547,6 +639051,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bytecore",
           "title": "npm/bytecore"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bytecraft",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bytecraft",
+          "title": "npm/bytecraft"
         }
       ],
       "first_seen": null,
