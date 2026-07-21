@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-20T21:40:23Z",
-  "total": 54957,
+  "generated_at": "2026-07-21T21:39:04Z",
+  "total": 54978,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -12032,6 +12032,18 @@
       "last_seen": null
     },
     {
+      "name": "animated-octo-spoon",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/animated-octo-spoon",
+          "title": "PyPI/animated-octo-spoon"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "aniresolve",
       "type": "PyPI",
       "sources": [
@@ -22970,6 +22982,18 @@
       "last_seen": null
     },
     {
+      "name": "colorstack",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/colorstack",
+          "title": "PyPI/colorstack"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "colorstextprint",
       "type": "PyPI",
       "sources": [
@@ -23162,6 +23186,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/common-test",
           "title": "PyPI/common-test"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "comp-colors",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/comp-colors",
+          "title": "PyPI/comp-colors"
         }
       ],
       "first_seen": null,
@@ -45327,6 +45363,18 @@
       "last_seen": null
     },
     {
+      "name": "fluffy-octo-broccoli",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fluffy-octo-broccoli",
+          "title": "PyPI/fluffy-octo-broccoli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "fluiddaddy",
       "type": "PyPI",
       "sources": [
@@ -56734,6 +56782,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/leavemealone",
           "title": "PyPI/leavemealone"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "lebinfmt",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/lebinfmt",
+          "title": "PyPI/lebinfmt"
         }
       ],
       "first_seen": null,
@@ -102284,6 +102344,30 @@
       "last_seen": null
     },
     {
+      "name": "rasterkit",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/rasterkit",
+          "title": "PyPI/rasterkit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "rasterkit-demo",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/rasterkit-demo",
+          "title": "PyPI/rasterkit-demo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "rawrequest",
       "type": "PyPI",
       "sources": [
@@ -102854,6 +102938,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/rehttps",
           "title": "PyPI/rehttps"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "reimagined-broccoli",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/reimagined-broccoli",
+          "title": "PyPI/reimagined-broccoli"
         }
       ],
       "first_seen": null,
@@ -196291,6 +196387,42 @@
       "last_seen": null
     },
     {
+      "name": "@akrai/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@akrai/core",
+          "title": "npm/@akrai/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@akrai/report",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@akrai/report",
+          "title": "npm/@akrai/report"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@akrai/report_new",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@akrai/report_new",
+          "title": "npm/@akrai/report_new"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@akshajrawat/plugin-repo-cli",
       "type": "npm",
       "sources": [
@@ -250307,6 +250439,30 @@
       "last_seen": null
     },
     {
+      "name": "@iphouse/api",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@iphouse/api",
+          "title": "npm/@iphouse/api"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@iphouse/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@iphouse/core",
+          "title": "npm/@iphouse/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@iptm-components/intl",
       "type": "npm",
       "sources": [
@@ -269645,6 +269801,54 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@marketplace-shared/components",
           "title": "npm/@marketplace-shared/components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@markscan/api",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@markscan/api",
+          "title": "npm/@markscan/api"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@markscan/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@markscan/core",
+          "title": "npm/@markscan/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@markscan/reports",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@markscan/reports",
+          "title": "npm/@markscan/reports"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@markscan/utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@markscan/utils",
+          "title": "npm/@markscan/utils"
         }
       ],
       "first_seen": null,
@@ -423135,6 +423339,42 @@
       "last_seen": null
     },
     {
+      "name": "aftermath-finance",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aftermath-finance",
+          "title": "npm/aftermath-finance"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aftermath-sui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aftermath-sui",
+          "title": "npm/aftermath-sui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aftermathfi",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aftermathfi",
+          "title": "npm/aftermathfi"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "afterpay",
       "type": "npm",
       "sources": [
@@ -442917,6 +443157,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/akpxflytjsmiuckg",
           "title": "npm/akpxflytjsmiuckg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "akrai-report",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/akrai-report",
+          "title": "npm/akrai-report"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "akrai-report-new",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/akrai-report-new",
+          "title": "npm/akrai-report-new"
         }
       ],
       "first_seen": null,
@@ -659272,19 +659536,6 @@
       ],
       "first_seen": null,
       "last_seen": null
-    },
-    {
-      "name": "time.",
-      "type": "npm",
-      "sources": [
-        {
-          "url": "http://thehackernews.com/2026/07/compromised-asyncapi-npm-packages.html",
-          "title": "Compromised AsyncAPI npm Packages Deliver Multi-Stage Botnet Malware",
-          "date": "2026-07-15"
-        }
-      ],
-      "first_seen": "2026-07-15",
-      "last_seen": "2026-07-15"
     },
     {
       "name": "to",
