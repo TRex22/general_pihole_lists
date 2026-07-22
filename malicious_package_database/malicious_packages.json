@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-21T21:39:04Z",
-  "total": 54978,
+  "generated_at": "2026-07-22T21:39:21Z",
+  "total": 54985,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -28567,6 +28567,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/detectron4",
           "title": "PyPI/detectron4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "dev-helper-bg",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/dev-helper-bg",
+          "title": "PyPI/dev-helper-bg"
         }
       ],
       "first_seen": null,
@@ -68678,6 +68690,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/maiter",
           "title": "PyPI/maiter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "make-helper",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/make-helper",
+          "title": "PyPI/make-helper"
         }
       ],
       "first_seen": null,
@@ -128976,6 +129000,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/torahbiblecodes",
           "title": "PyPI/torahbiblecodes"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "torch-musa",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/torch-musa",
+          "title": "PyPI/torch-musa"
         }
       ],
       "first_seen": null,
@@ -203449,6 +203485,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@apexcraft/nano-key",
           "title": "npm/@apexcraft/nano-key"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@apexfdn/apex",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@apexfdn/apex",
+          "title": "npm/@apexfdn/apex"
         }
       ],
       "first_seen": null,
@@ -487327,6 +487375,18 @@
       "last_seen": null
     },
     {
+      "name": "app-data-ist",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/app-data-ist",
+          "title": "npm/app-data-ist"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "app-hotmart-blog-headless",
       "type": "npm",
       "sources": [
@@ -490417,6 +490477,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/application-phskck",
           "title": "npm/application-phskck"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "application-util",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/application-util",
+          "title": "npm/application-util"
         }
       ],
       "first_seen": null,
@@ -514596,7 +514668,7 @@
       "type": "npm",
       "sources": [
         {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/astro",
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/astro",
           "title": "npm/astro"
         }
       ],
@@ -659536,6 +659608,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "time.",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "http://thehackernews.com/2026/07/compromised-asyncapi-npm-packages.html",
+          "title": "Compromised AsyncAPI npm Packages Deliver Multi-Stage Botnet Malware",
+          "date": "2026-07-15"
+        }
+      ],
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15"
     },
     {
       "name": "to",
