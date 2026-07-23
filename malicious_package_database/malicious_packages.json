@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-22T21:39:21Z",
-  "total": 54985,
+  "generated_at": "2026-07-23T21:40:07Z",
+  "total": 54992,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -48237,6 +48237,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/gorilla2",
           "title": "PyPI/gorilla2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "govapkg",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/govapkg",
+          "title": "PyPI/govapkg"
         }
       ],
       "first_seen": null,
@@ -206365,6 +206377,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@bcrumbs.net/bc-chat",
           "title": "npm/@bcrumbs.net/bc-chat"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bcryptln/bcryptjs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bcryptln/bcryptjs",
+          "title": "npm/@bcryptln/bcryptjs"
         }
       ],
       "first_seen": null,
@@ -437643,6 +437667,18 @@
       "last_seen": null
     },
     {
+      "name": "aio-commerce-lib-app",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aio-commerce-lib-app",
+          "title": "npm/aio-commerce-lib-app"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "aiohappyeyeballs",
       "type": "npm",
       "sources": [
@@ -463725,10 +463761,6 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/analysis-chart",
           "title": "npm/analysis-chart"
-        },
-        {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/analysis-chart\r",
-          "title": "npm/analysis-chart\r"
         }
       ],
       "first_seen": null,
@@ -615177,6 +615209,18 @@
       "last_seen": null
     },
     {
+      "name": "bs58-88",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bs58-88",
+          "title": "npm/bs58-88"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bs58-basic",
       "type": "npm",
       "sources": [
@@ -642129,6 +642173,18 @@
       "last_seen": null
     },
     {
+      "name": "caldryn",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/caldryn",
+          "title": "npm/caldryn"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "calemcroissant",
       "type": "npm",
       "sources": [
@@ -643989,6 +644045,18 @@
       "last_seen": null
     },
     {
+      "name": "calmora",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/calmora",
+          "title": "npm/calmora"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "calotescu",
       "type": "npm",
       "sources": [
@@ -644019,6 +644087,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/calserver",
           "title": "npm/calserver"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "calvora",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/calvora",
+          "title": "npm/calvora"
         }
       ],
       "first_seen": null,
