@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-23T21:40:07Z",
-  "total": 54992,
+  "generated_at": "2026-07-24T21:41:08Z",
+  "total": 54998,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -29967,6 +29967,18 @@
       "last_seen": null
     },
     {
+      "name": "discordnv",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/discordnv",
+          "title": "PyPI/discordnv"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "discordpy-bypass",
       "type": "PyPI",
       "sources": [
@@ -54232,6 +54244,18 @@
       "last_seen": null
     },
     {
+      "name": "intel-cicd-repo-infrastructure",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/intel-cicd-repo-infrastructure",
+          "title": "PyPI/intel-cicd-repo-infrastructure"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "intelcraft",
       "type": "PyPI",
       "sources": [
@@ -55570,6 +55594,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/karma-jasmine-sinon",
           "title": "PyPI/karma-jasmine-sinon"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "karpatkey",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/karpatkey",
+          "title": "PyPI/karpatkey"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "karpatkit",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/karpatkit",
+          "title": "PyPI/karpatkit"
         }
       ],
       "first_seen": null,
@@ -72026,6 +72074,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mrfeastpip",
           "title": "PyPI/mrfeastpip"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "mrmustard",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mrmustard",
+          "title": "PyPI/mrmustard"
         }
       ],
       "first_seen": null,
@@ -223457,6 +223517,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@david-lab/sol-lib",
           "title": "npm/@david-lab/sol-lib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@daylightqc/date-fmt-lite",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@daylightqc/date-fmt-lite",
+          "title": "npm/@daylightqc/date-fmt-lite"
         }
       ],
       "first_seen": null,
