@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-24T21:41:08Z",
-  "total": 54998,
+  "generated_at": "2026-07-25T21:31:59Z",
+  "total": 55002,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -139764,6 +139764,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongridweb",
           "title": "PyPI/trongridweb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "trongridy",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongridy",
+          "title": "PyPI/trongridy"
         }
       ],
       "first_seen": null,
@@ -487491,6 +487503,30 @@
       "last_seen": null
     },
     {
+      "name": "app-data-layer",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/app-data-layer",
+          "title": "npm/app-data-layer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "app-data-lts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/app-data-lts",
+          "title": "npm/app-data-lts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "app-hotmart-blog-headless",
       "type": "npm",
       "sources": [
@@ -487533,6 +487569,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/app-next-example-plugin",
           "title": "npm/app-next-example-plugin"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "app-node-layer",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/app-node-layer",
+          "title": "npm/app-node-layer"
         }
       ],
       "first_seen": null,
