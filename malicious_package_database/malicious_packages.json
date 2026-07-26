@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-25T21:31:59Z",
-  "total": 55002,
+  "generated_at": "2026-07-26T21:34:24Z",
+  "total": 55005,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -16819,6 +16819,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/blazeted",
           "title": "PyPI/blazeted"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "blessclient",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/blessclient",
+          "title": "PyPI/blessclient"
         }
       ],
       "first_seen": null,
@@ -102122,6 +102134,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/random-security-test-pkg",
           "title": "PyPI/random-security-test-pkg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "random-ua-generator",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/random-ua-generator",
+          "title": "PyPI/random-ua-generator"
         }
       ],
       "first_seen": null,
@@ -256085,6 +256109,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ks-radar/olap-auth",
           "title": "npm/@ks-radar/olap-auth"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ks-radar/radar",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ks-radar/radar",
+          "title": "npm/@ks-radar/radar"
         }
       ],
       "first_seen": null,
