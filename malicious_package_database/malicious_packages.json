@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-26T19:30:48Z",
-  "total": 55058,
+  "generated_at": "2026-07-26T21:34:24Z",
+  "total": 55059,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -102199,6 +102199,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/random-security-test-pkg",
           "title": "pypi/random-security-test-pkg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "random-ua-generator",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/random-ua-generator",
+          "title": "PyPI/random-ua-generator"
         }
       ],
       "first_seen": null,
