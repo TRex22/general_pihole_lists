@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-27T21:41:43Z",
-  "total": 55015,
+  "generated_at": "2026-07-28T21:39:53Z",
+  "total": 55043,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -20507,6 +20507,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cfgmgr-sync",
           "title": "PyPI/cfgmgr-sync"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "cfgzen",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cfgzen",
+          "title": "PyPI/cfgzen"
         }
       ],
       "first_seen": null,
@@ -143995,6 +144007,18 @@
       "last_seen": null
     },
     {
+      "name": "vtranalytic",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/vtranalytic",
+          "title": "PyPI/vtranalytic"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "vtvqa",
       "type": "PyPI",
       "sources": [
@@ -196315,6 +196339,18 @@
       "last_seen": null
     },
     {
+      "name": "@ai_/autoprefixers",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ai_/autoprefixers",
+          "title": "npm/@ai_/autoprefixers"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@aia-digital/request-module",
       "type": "npm",
       "sources": [
@@ -203611,6 +203647,18 @@
       "last_seen": null
     },
     {
+      "name": "@apexfnd/apex",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@apexfnd/apex",
+          "title": "npm/@apexfnd/apex"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@apiary-annex/meta",
       "type": "npm",
       "sources": [
@@ -203953,6 +204001,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@array-util/nodepull",
           "title": "npm/@array-util/nodepull"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@array-util/subsearch",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@array-util/subsearch",
+          "title": "npm/@array-util/subsearch"
         }
       ],
       "first_seen": null,
@@ -222617,6 +222677,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@crackle-fixtures/single-entry-library",
           "title": "npm/@crackle-fixtures/single-entry-library"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@crbrc/xbt",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@crbrc/xbt",
+          "title": "npm/@crbrc/xbt"
         }
       ],
       "first_seen": null,
@@ -320343,6 +320415,30 @@
       "last_seen": null
     },
     {
+      "name": "@vaultflow/create-flow",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vaultflow/create-flow",
+          "title": "npm/@vaultflow/create-flow"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@vaultflow/update-flow",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vaultflow/update-flow",
+          "title": "npm/@vaultflow/update-flow"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@ve-private/test-helpers",
       "type": "npm",
       "sources": [
@@ -322359,12 +322455,36 @@
       "last_seen": null
     },
     {
+      "name": "@wagni_bot/bsc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wagni_bot/bsc",
+          "title": "npm/@wagni_bot/bsc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@wagni_bot/bsc-sdk",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wagni_bot/bsc-sdk",
           "title": "npm/@wagni_bot/bsc-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wagni_bot/eth",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wagni_bot/eth",
+          "title": "npm/@wagni_bot/eth"
         }
       ],
       "first_seen": null,
@@ -322395,6 +322515,18 @@
       "last_seen": null
     },
     {
+      "name": "@wagni_bot/hyperliquid",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wagni_bot/hyperliquid",
+          "title": "npm/@wagni_bot/hyperliquid"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@wagni_bot/hyperliquid-sdk",
       "type": "npm",
       "sources": [
@@ -322413,6 +322545,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wagni_bot/jupiter-sdk",
           "title": "npm/@wagni_bot/jupiter-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wagni_bot/metamask",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wagni_bot/metamask",
+          "title": "npm/@wagni_bot/metamask"
         }
       ],
       "first_seen": null,
@@ -322443,6 +322587,18 @@
       "last_seen": null
     },
     {
+      "name": "@wagni_bot/opensea",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wagni_bot/opensea",
+          "title": "npm/@wagni_bot/opensea"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@wagni_bot/opensea-sdk",
       "type": "npm",
       "sources": [
@@ -322467,12 +322623,36 @@
       "last_seen": null
     },
     {
+      "name": "@wagni_bot/polygon",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wagni_bot/polygon",
+          "title": "npm/@wagni_bot/polygon"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@wagni_bot/polygon-sdk",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wagni_bot/polygon-sdk",
           "title": "npm/@wagni_bot/polygon-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wagni_bot/polymarket",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wagni_bot/polymarket",
+          "title": "npm/@wagni_bot/polymarket"
         }
       ],
       "first_seen": null,
@@ -322509,6 +322689,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wagni_bot/solana-sdk",
           "title": "npm/@wagni_bot/solana-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wagni_bot/wagni",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wagni_bot/wagni",
+          "title": "npm/@wagni_bot/wagni"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wagni_bot/web3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wagni_bot/web3",
+          "title": "npm/@wagni_bot/web3"
         }
       ],
       "first_seen": null,
@@ -326001,6 +326205,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yahoo-engadget/i13n",
           "title": "npm/@yahoo-engadget/i13n"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@yancyyu/agentcli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yancyyu/agentcli",
+          "title": "npm/@yancyyu/agentcli"
         }
       ],
       "first_seen": null,
@@ -485931,6 +486147,18 @@
       "last_seen": null
     },
     {
+      "name": "api-node-sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/api-node-sdk",
+          "title": "npm/api-node-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "api-node-utils",
       "type": "npm",
       "sources": [
@@ -486069,6 +486297,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/api-rs-node",
           "title": "npm/api-rs-node"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "api-rust-sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/api-rust-sdk",
+          "title": "npm/api-rust-sdk"
         }
       ],
       "first_seen": null,
@@ -487821,6 +488061,54 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/app-shims",
           "title": "npm/app-shims"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "app-sim-layer",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/app-sim-layer",
+          "title": "npm/app-sim-layer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "app-sima-layer",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/app-sima-layer",
+          "title": "npm/app-sima-layer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "app-soda-layer",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/app-soda-layer",
+          "title": "npm/app-soda-layer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "app-svm-layer",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/app-svm-layer",
+          "title": "npm/app-svm-layer"
         }
       ],
       "first_seen": null,
@@ -506499,6 +506787,18 @@
       "last_seen": null
     },
     {
+      "name": "array-node-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/array-node-utils",
+          "title": "npm/array-node-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "array-public-code-async-decompress",
       "type": "npm",
       "sources": [
@@ -506529,6 +506829,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/array-simple-water-tau-book",
           "title": "npm/array-simple-water-tau-book"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "array-sort-helper",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/array-sort-helper",
+          "title": "npm/array-sort-helper"
         }
       ],
       "first_seen": null,
@@ -562900,6 +563212,18 @@
       "last_seen": null
     },
     {
+      "name": "basic-vite",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/basic-vite",
+          "title": "npm/basic-vite"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "basic-webpack-project",
       "type": "npm",
       "sources": [
@@ -587003,6 +587327,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bianckjgtoexpqzv",
           "title": "npm/bianckjgtoexpqzv"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bianira-ui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bianira-ui",
+          "title": "npm/bianira-ui"
         }
       ],
       "first_seen": null,
