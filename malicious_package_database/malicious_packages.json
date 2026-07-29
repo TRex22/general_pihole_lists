@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-28T21:39:53Z",
-  "total": 55043,
+  "generated_at": "2026-07-29T21:34:38Z",
+  "total": 55051,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -241319,6 +241319,18 @@
       "last_seen": null
     },
     {
+      "name": "@finxsecdemo/utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@finxsecdemo/utils",
+          "title": "npm/@finxsecdemo/utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@firecracker-microvm/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -251429,6 +251441,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@joshcyber123/frontend-logger",
           "title": "npm/@joshcyber123/frontend-logger"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@joyfill/components",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@joyfill/components",
+          "title": "npm/@joyfill/components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@joyfill/layouts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@joyfill/layouts",
+          "title": "npm/@joyfill/layouts"
         }
       ],
       "first_seen": null,
@@ -287705,6 +287741,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@myop/vue-remote",
           "title": "npm/@myop/vue-remote"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@mypwn/hawkeye",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mypwn/hawkeye",
+          "title": "npm/@mypwn/hawkeye"
         }
       ],
       "first_seen": null,
@@ -483591,6 +483639,42 @@
       "last_seen": null
     },
     {
+      "name": "aone-kit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aone-kit",
+          "title": "npm/aone-kit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aone-kit-cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aone-kit-cli",
+          "title": "npm/aone-kit-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aone-sandbox",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aone-sandbox",
+          "title": "npm/aone-sandbox"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "aonetecha",
       "type": "npm",
       "sources": [
@@ -601139,6 +601223,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/blossom_vvkcd_wyskm_crystal",
           "title": "npm/blossom_vvkcd_wyskm_crystal"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "blots",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/blots",
+          "title": "npm/blots"
         }
       ],
       "first_seen": null,
