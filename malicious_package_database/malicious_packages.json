@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-29T21:34:38Z",
-  "total": 55051,
+  "generated_at": "2026-07-30T21:42:28Z",
+  "total": 55062,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -10754,6 +10754,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ai-labs-snippets-sdk",
           "title": "PyPI/ai-labs-snippets-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ai-perf-toolkit",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ai-perf-toolkit",
+          "title": "PyPI/ai-perf-toolkit"
         }
       ],
       "first_seen": null,
@@ -70232,6 +70244,18 @@
       "last_seen": null
     },
     {
+      "name": "mcp-search-server",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mcp-search-server",
+          "title": "PyPI/mcp-search-server"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "mcp-transport-proto",
       "type": "PyPI",
       "sources": [
@@ -77850,6 +77874,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/pypi/pgrayy-wasmtime",
           "title": "PyPI/pgrayy-wasmtime"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "phabricator-client",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/phabricator-client",
+          "title": "PyPI/phabricator-client"
         }
       ],
       "first_seen": null,
@@ -196291,12 +196327,72 @@
       "last_seen": null
     },
     {
+      "name": "@ai-agent-node/agent-node",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ai-agent-node/agent-node",
+          "title": "npm/@ai-agent-node/agent-node"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ai-agent-node/createnode",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ai-agent-node/createnode",
+          "title": "npm/@ai-agent-node/createnode"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ai-agent-node/nodesql",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ai-agent-node/nodesql",
+          "title": "npm/@ai-agent-node/nodesql"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@ai-document-translation/ui-core",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ai-document-translation/ui-core",
           "title": "npm/@ai-document-translation/ui-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ai-plus/de-agent",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ai-plus/de-agent",
+          "title": "npm/@ai-plus/de-agent"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ai-plus/de-agent-sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ai-plus/de-agent-sdk",
+          "title": "npm/@ai-plus/de-agent-sdk"
         }
       ],
       "first_seen": null,
@@ -208201,6 +208297,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bosch-rollouts-extensions/soup",
           "title": "npm/@bosch-rollouts-extensions/soup"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bowozzz/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bowozzz/baileys",
+          "title": "npm/@bowozzz/baileys"
         }
       ],
       "first_seen": null,
@@ -293939,6 +294047,30 @@
       "last_seen": null
     },
     {
+      "name": "@peptide-unit/js-unimode",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@peptide-unit/js-unimode",
+          "title": "npm/@peptide-unit/js-unimode"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@peptide-unit/peptide-modify",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@peptide-unit/peptide-modify",
+          "title": "npm/@peptide-unit/peptide-modify"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@pergel/cli",
       "type": "npm",
       "sources": [
@@ -323697,6 +323829,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wbgo/shared",
           "title": "npm/@wbgo/shared"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wbnr/design",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wbnr/design",
+          "title": "npm/@wbnr/design"
         }
       ],
       "first_seen": null,
@@ -381153,6 +381297,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zalastax/nolb-react-uy",
           "title": "npm/@zalastax/nolb-react-uy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zannstore/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zannstore/baileys",
+          "title": "npm/@zannstore/baileys"
         }
       ],
       "first_seen": null,
@@ -483633,6 +483789,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aoisa",
           "title": "npm/aoisa"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aone-cloud-cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aone-cloud-cli",
+          "title": "npm/aone-cloud-cli"
         }
       ],
       "first_seen": null,
@@ -644753,18 +644921,6 @@
       "last_seen": null
     },
     {
-      "name": "calmora",
-      "type": "npm",
-      "sources": [
-        {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/calmora",
-          "title": "npm/calmora"
-        }
-      ],
-      "first_seen": null,
-      "last_seen": null
-    },
-    {
       "name": "calotescu",
       "type": "npm",
       "sources": [
@@ -644795,30 +644951,6 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/calserver",
           "title": "npm/calserver"
-        }
-      ],
-      "first_seen": null,
-      "last_seen": null
-    },
-    {
-      "name": "calvora",
-      "type": "npm",
-      "sources": [
-        {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/calvora",
-          "title": "npm/calvora"
-        }
-      ],
-      "first_seen": null,
-      "last_seen": null
-    },
-    {
-      "name": "calvuepro",
-      "type": "npm",
-      "sources": [
-        {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/calvuepro",
-          "title": "npm/calvuepro"
         }
       ],
       "first_seen": null,
