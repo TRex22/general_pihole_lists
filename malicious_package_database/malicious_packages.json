@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-01T21:35:29Z",
-  "total": 55128,
+  "generated_at": "2026-08-02T21:34:32Z",
+  "total": 55130,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -139938,6 +139938,18 @@
       "last_seen": null
     },
     {
+      "name": "trongriden",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongriden",
+          "title": "PyPI/trongriden"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "trongrider",
       "type": "PyPI",
       "sources": [
@@ -144481,6 +144493,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/w722-poc",
           "title": "PyPI/w722-poc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "wacve-utils",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/wacve-utils",
+          "title": "PyPI/wacve-utils"
         }
       ],
       "first_seen": null,
