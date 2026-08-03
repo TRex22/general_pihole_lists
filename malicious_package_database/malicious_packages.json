@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-02T21:34:32Z",
-  "total": 55130,
+  "generated_at": "2026-08-03T21:41:13Z",
+  "total": 55159,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -54262,6 +54262,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/installyoura",
           "title": "PyPI/installyoura"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "instalogin1234",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/instalogin1234",
+          "title": "PyPI/instalogin1234"
         }
       ],
       "first_seen": null,
@@ -194883,12 +194895,36 @@
       "last_seen": null
     },
     {
+      "name": "@0xlr/dep-confusion-poc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@0xlr/dep-confusion-poc",
+          "title": "npm/@0xlr/dep-confusion-poc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@0xlr/prisma-client-js",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@0xlr/prisma-client-js",
           "title": "npm/@0xlr/prisma-client-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@0xlr/question-types",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@0xlr/question-types",
+          "title": "npm/@0xlr/question-types"
         }
       ],
       "first_seen": null,
@@ -194937,6 +194973,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@0xlr/supabase-db",
           "title": "npm/@0xlr/supabase-db"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@0xlr/test-callback",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@0xlr/test-callback",
+          "title": "npm/@0xlr/test-callback"
         }
       ],
       "first_seen": null,
@@ -195309,6 +195357,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@403name/fsevent",
           "title": "npm/@403name/fsevent"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@404c3s4r/lodash",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@404c3s4r/lodash",
+          "title": "npm/@404c3s4r/lodash"
         }
       ],
       "first_seen": null,
@@ -213443,6 +213503,18 @@
       "last_seen": null
     },
     {
+      "name": "@cr-invested-ui-components/chart",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@cr-invested-ui-components/chart",
+          "title": "npm/@cr-invested-ui-components/chart"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@crabas0npm/a-aliquid-ducimus-non",
       "type": "npm",
       "sources": [
@@ -223613,6 +223685,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@custom-widget/sdk",
           "title": "npm/@custom-widget/sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@custombots/custombot",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@custombots/custombot",
+          "title": "npm/@custombots/custombot"
         }
       ],
       "first_seen": null,
@@ -241715,6 +241799,30 @@
       "last_seen": null
     },
     {
+      "name": "@finance-ui/finance-view",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@finance-ui/finance-view",
+          "title": "npm/@finance-ui/finance-view"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@finance-ui/snackbar-ifpe",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@finance-ui/snackbar-ifpe",
+          "title": "npm/@finance-ui/snackbar-ifpe"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@financials/ui-components",
       "type": "npm",
       "sources": [
@@ -243107,6 +243215,18 @@
       "last_seen": null
     },
     {
+      "name": "@fuji-web-components/maps",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fuji-web-components/maps",
+          "title": "npm/@fuji-web-components/maps"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@funnel-analysis/isengard-client",
       "type": "npm",
       "sources": [
@@ -243989,6 +244109,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@global-engineering-shared/gweb-material-global",
           "title": "npm/@global-engineering-shared/gweb-material-global"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@global-theme/context",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@global-theme/context",
+          "title": "npm/@global-theme/context"
         }
       ],
       "first_seen": null,
@@ -272207,6 +272339,18 @@
       "last_seen": null
     },
     {
+      "name": "@meli-testing/jest-react",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@meli-testing/jest-react",
+          "title": "npm/@meli-testing/jest-react"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@meme-sdk/trade",
       "type": "npm",
       "sources": [
@@ -287531,6 +287675,18 @@
       "last_seen": null
     },
     {
+      "name": "@moxfive-llc/common",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@moxfive-llc/common",
+          "title": "npm/@moxfive-llc/common"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@mozilla-mobile/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -287561,6 +287717,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mp-food/restaurant-orders",
           "title": "npm/@mp-food/restaurant-orders"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@mp-op-ss-front-lib/tracks",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mp-op-ss-front-lib/tracks",
+          "title": "npm/@mp-op-ss-front-lib/tracks"
         }
       ],
       "first_seen": null,
@@ -287609,6 +287777,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mparpaillon/page",
           "title": "npm/@mparpaillon/page"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@mplay-core-lib/utilities",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mplay-core-lib/utilities",
+          "title": "npm/@mplay-core-lib/utilities"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@mplay-frontend-ui/link",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mplay-frontend-ui/link",
+          "title": "npm/@mplay-frontend-ui/link"
         }
       ],
       "first_seen": null,
@@ -289775,6 +289967,18 @@
       "last_seen": null
     },
     {
+      "name": "@nordic-dev/linting-tools",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nordic-dev/linting-tools",
+          "title": "npm/@nordic-dev/linting-tools"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@nosinovacao/nosid-mfe-common",
       "type": "npm",
       "sources": [
@@ -291317,6 +291521,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@omniwatch-wick/cli",
           "title": "npm/@omniwatch-wick/cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@one-chat/react",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@one-chat/react",
+          "title": "npm/@one-chat/react"
         }
       ],
       "first_seen": null,
@@ -294497,6 +294713,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pentestleg/core",
           "title": "npm/@pentestleg/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@peptide-packets/js-unimode",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@peptide-packets/js-unimode",
+          "title": "npm/@peptide-packets/js-unimode"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@peptide-packets/peptide-modify",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@peptide-packets/peptide-modify",
+          "title": "npm/@peptide-packets/peptide-modify"
         }
       ],
       "first_seen": null,
@@ -304787,6 +305027,18 @@
       "last_seen": null
     },
     {
+      "name": "@sof-assistant-fe-lib/vertical-faqs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sof-assistant-fe-lib/vertical-faqs",
+          "title": "npm/@sof-assistant-fe-lib/vertical-faqs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@sok-brand-sites/common-frontend-components",
       "type": "npm",
       "sources": [
@@ -305505,6 +305757,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@spectrocoin/sc-currencies",
           "title": "npm/@spectrocoin/sc-currencies"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@spending-behavior-ui/cashflow-widget",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@spending-behavior-ui/cashflow-widget",
+          "title": "npm/@spending-behavior-ui/cashflow-widget"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@spending-behavior-ui/widget-insights",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@spending-behavior-ui/widget-insights",
+          "title": "npm/@spending-behavior-ui/widget-insights"
         }
       ],
       "first_seen": null,
@@ -308145,6 +308421,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@suraj_h/medium-common",
           "title": "npm/@suraj_h/medium-common"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sw-commons-components/message-upsell",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sw-commons-components/message-upsell",
+          "title": "npm/@sw-commons-components/message-upsell"
         }
       ],
       "first_seen": null,
@@ -319185,6 +319473,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@type-script-node/vite",
           "title": "npm/@type-script-node/vite"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@types-beta/sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@types-beta/sdk",
+          "title": "npm/@types-beta/sdk"
         }
       ],
       "first_seen": null,
@@ -420831,6 +421131,18 @@
       "last_seen": null
     },
     {
+      "name": "adpanel-core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/adpanel-core",
+          "title": "npm/adpanel-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "adrenline",
       "type": "npm",
       "sources": [
@@ -435297,6 +435609,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ai-aws-manager",
           "title": "npm/ai-aws-manager"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ai-backup-script",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ai-backup-script",
+          "title": "npm/ai-backup-script"
         }
       ],
       "first_seen": null,
@@ -451689,6 +452013,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/allure-js",
           "title": "npm/allure-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "allurectl",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/allurectl",
+          "title": "npm/allurectl"
         }
       ],
       "first_seen": null,
@@ -520132,6 +520468,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/attention-editor",
           "title": "npm/attention-editor"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "attio-discover",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/attio-discover",
+          "title": "npm/attio-discover"
         }
       ],
       "first_seen": null,
