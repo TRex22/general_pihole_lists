@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-03T21:41:13Z",
-  "total": 55159,
+  "generated_at": "2026-08-04T21:45:08Z",
+  "total": 55175,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -21903,6 +21903,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/colaroma",
           "title": "PyPI/colaroma"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "coldcard-helpers",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/coldcard-helpers",
+          "title": "PyPI/coldcard-helpers"
         }
       ],
       "first_seen": null,
@@ -56932,6 +56944,18 @@
       "last_seen": null
     },
     {
+      "name": "launchdarkly-ai-server-sdk",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/launchdarkly-ai-server-sdk",
+          "title": "PyPI/launchdarkly-ai-server-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "layoutspecs",
       "type": "PyPI",
       "sources": [
@@ -82894,6 +82918,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pruebasdemalware",
           "title": "PyPI/pruebasdemalware"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "psbt-helpers",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/psbt-helpers",
+          "title": "PyPI/psbt-helpers"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "psbt-utils",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/psbt-utils",
+          "title": "PyPI/psbt-utils"
         }
       ],
       "first_seen": null,
@@ -387699,6 +387747,18 @@
       "last_seen": null
     },
     {
+      "name": "@zzzgenesis00/bip39-generator",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zzzgenesis00/bip39-generator",
+          "title": "npm/@zzzgenesis00/bip39-generator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "a-constructor.js",
       "type": "npm",
       "sources": [
@@ -403887,12 +403947,36 @@
       "last_seen": null
     },
     {
+      "name": "accounts-final-form",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/accounts-final-form",
+          "title": "npm/accounts-final-form"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "accounts-fonts",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/accounts-fonts",
           "title": "npm/accounts-fonts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "accounts-loading-state",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/accounts-loading-state",
+          "title": "npm/accounts-loading-state"
         }
       ],
       "first_seen": null,
@@ -425077,6 +425161,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "against",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://www.bleepingcomputer.com/news/security/massive-chaindrop-npm-supply-chain-attack-infects-hundreds-of-packages/",
+          "title": "Massive ChainDrop npm supply-chain attack infects hundreds of packages",
+          "date": "2026-08-04"
+        }
+      ],
+      "first_seen": "2026-08-04",
+      "last_seen": "2026-08-04"
     },
     {
       "name": "agate-build",
@@ -575620,6 +575717,78 @@
       "last_seen": null
     },
     {
+      "name": "beaver-ui-date-range-picker",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/beaver-ui-date-range-picker",
+          "title": "npm/beaver-ui-date-range-picker"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "beaver-ui-form",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/beaver-ui-form",
+          "title": "npm/beaver-ui-form"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "beaver-ui-grid",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/beaver-ui-grid",
+          "title": "npm/beaver-ui-grid"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "beaver-ui-header",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/beaver-ui-header",
+          "title": "npm/beaver-ui-header"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "beaver-ui-items-with-more",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/beaver-ui-items-with-more",
+          "title": "npm/beaver-ui-items-with-more"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "beaver-ui-layout",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/beaver-ui-layout",
+          "title": "npm/beaver-ui-layout"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bebekair",
       "type": "npm",
       "sources": [
@@ -590015,6 +590184,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bignunmberjs",
           "title": "npm/bignunmberjs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bigops-chat-messages",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bigops-chat-messages",
+          "title": "npm/bigops-chat-messages"
         }
       ],
       "first_seen": null,
@@ -642587,6 +642768,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/cache-luna-socketio-foundation",
           "title": "npm/cache-luna-socketio-foundation"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "cache-manager",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/cache-manager",
+          "title": "npm/cache-manager"
         }
       ],
       "first_seen": null,
