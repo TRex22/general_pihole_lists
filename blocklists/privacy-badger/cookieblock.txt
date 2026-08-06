@@ -1,14 +1,16 @@
 ! Pi-hole Cookieblock List (ABP format) - Domains Privacy Badger allows but strips cookies
-! Generated: 2026-08-05T21:27:34Z
+! Generated: 2026-08-06T22:55:50Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
-! Total domains: 535
+! Total domains: 594
 !
 ! These domains can load resources but would have cookies stripped by Privacy Badger.
 ! Blocking them in Pi-hole is more aggressive than Privacy Badger's default.
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
 
+||1c5c1ecf7303.0b384439.ap-southeast-1.token.awswaf.com^
 ||25livepub.collegenet.com^
-||7eb9691df16f.d1fa493a.us-west-1.token.awswaf.com^
+||659-jst-226.mktoweb.com^
+||91app.com^
 ||a.klaviyo.com^
 ||a02.azurefd.net^
 ||acast.com^
@@ -20,6 +22,7 @@
 ||aliyuncs.com^
 ||amazoncustomerservice.d2.sc.omtrdc.net^
 ||ampproject.net^
+||api-2-0.spot.im^
 ||api-cdn.embed.ly^
 ||api-cdn.mypurecloud.com.au^
 ||api-cdn.mypurecloud.de^
@@ -43,6 +46,7 @@
 ||api.maptiler.com^
 ||api.media.atlassian.com^
 ||api.mercadopago.com^
+||api.openai.com^
 ||api.pinterest.com^
 ||api.prefixbox.com^
 ||api.reviews.io^
@@ -51,11 +55,11 @@
 ||api.split.io^
 ||api.spotify.com^
 ||api.tenor.com^
+||api.termly.io^
 ||api.transcend.io^
 ||api.trustedform.com^
 ||api.twitch.tv^
 ||api.userback.io^
-||api.viafoura.co^
 ||api64.ipify.org^
 ||app.hubspot.com^
 ||app.termly.io^
@@ -63,10 +67,12 @@
 ||apps.cac1.pure.cloud^
 ||apps.mypurecloud.com.au^
 ||apps.mypurecloud.de^
+||arc-cdn.net^
 ||arcpublishing.com^
 ||arkoselabs.com^
 ||assets.braintreegateway.com^
 ||assets.customer.io^
+||assets.mediadelivery.net^
 ||assets.reviews.io^
 ||assets.scrippsdigital.com^
 ||attservicesinc.tt.omtrdc.net^
@@ -76,6 +82,8 @@
 ||auth.split.io^
 ||auth0.com^
 ||authorize.net^
+||avplayer-cdn.sportradar.com^
+||avplayer.sportradar.com^
 ||awswaf.com^
 ||b02.azurefd.net^
 ||bazaarvoice.com^
@@ -88,7 +96,9 @@
 ||brand-sdk.kmsmep.com^
 ||brands.kmsmep.com^
 ||brightcove.com^
+||brightspotcdn.com^
 ||brm-core-0.brsrvr.com^
+||broadcast-live-delivery-cdn.jwplayer.com^
 ||browser.translate.yandex.net^
 ||byteoversea.com^
 ||c.riskified.com^
@@ -104,6 +114,7 @@
 ||captcha.qq.com^
 ||captcha.yandex.net^
 ||cardyb.bsky.app^
+||cart-imgs.fc2.com^
 ||catalog-service.adobe.io^
 ||cdn-eu.dynamicyield.com^
 ||cdn-icons-png.flaticon.com^
@@ -127,13 +138,14 @@
 ||cdn.livechat-files.com^
 ||cdn.maptiler.com^
 ||cdn.optimizely.com^
-||cdn.pendo.io^
 ||cdn.prefixbox.com^
 ||cdn.qumucloud.com^
+||cdn.riddle.com^
 ||cdn.seondf.com^
 ||cdn.smooch.io^
 ||cdn.sophi.io^
 ||cdn.split.io^
+||cdn.tailwindcss.com^
 ||cdn.technolutions.net^
 ||cdn.tickaroo.com^
 ||cdn.transcend.io^
@@ -159,13 +171,18 @@
 ||cmsembed.avplayer.com^
 ||code.createjs.com^
 ||code.highcharts.com^
+||codepen.io^
+||cognigy.cloud^
+||commerce.adobe.io^
 ||config.smooch.io^
 ||connect.breadpayments.com^
 ||consent.api.osano.com^
 ||consent.cookiebot.com^
+||consent.cookiefirst.com^
 ||consentcdn.cookiebot.com^
 ||consentmanager.net^
 ||content.jwplatform.com^
+||content.powerapps.com^
 ||contentstack.com^
 ||cookie-cdn.cookiepro.com^
 ||creatorapp.zohopublic.com^
@@ -174,6 +191,7 @@
 ||d1af033869koo7.cloudfront.net^
 ||d1hyarjnwqrenh.cloudfront.net^
 ||d1qmrxg9gbf226.cloudfront.net^
+||d229oaghhl3bjt.cloudfront.net^
 ||d2cmvbq7sxx33j.cloudfront.net^
 ||d2dpiwfhf3tz0r.cloudfront.net^
 ||d2eucxqqcsb0mb.cloudfront.net^
@@ -203,6 +221,7 @@
 ||dsw.tt.omtrdc.net^
 ||duuytoqss3gu4.cloudfront.net^
 ||duwriicdzpsrh.cloudfront.net^
+||dwcdn.net^
 ||dynamics.com^
 ||e.infogram.com^
 ||edge-geo.nc0.co^
@@ -210,6 +229,8 @@
 ||elfsight.com^
 ||elfsightcdn.com^
 ||embed.avplayer.com^
+||embed.flowplayer.com^
+||enetscores.com^
 ||entitlements.jwplayer.com^
 ||episerver.net^
 ||events.split.io^
@@ -235,12 +256,13 @@
 ||forms.hubspot.com^
 ||forms.tildaapi.com^
 ||formstack.com^
+||fourhoi.com^
 ||foxvideo-fts.akamaized.net^
 ||fundraiseup.com^
 ||fwmrm.net^
 ||gcaptcha.eo.qcloud.com^
-||gcp-na-images.contentstack.com^
 ||geetest.com^
+||geocomply.com^
 ||gifs.bsky.app^
 ||gigya.com^
 ||giphy.com^
@@ -257,6 +279,7 @@
 ||hbx.media.net^
 ||hcaptcha.com^
 ||hdr.sundaysky.com^
+||helpshift.com^
 ||homedepotofcainc.us-7.evergage.com^
 ||i-cdn.embed.ly^
 ||i.creativecommons.org^
@@ -269,10 +292,16 @@
 ||iapi.campus.qq.com^
 ||icons8.com^
 ||id.twitch.tv^
+||iframe.mediadelivery.net^
 ||image.rakuten.co.jp^
+||images.justwatch.com^
 ||images.pexels.com^
 ||images.powerreviews.com^
 ||images.sundaysky.com^
+||images1.cmp.optimizely.com^
+||images2.cmp.optimizely.com^
+||images3.cmp.optimizely.com^
+||images4.cmp.optimizely.com^
 ||imagesrv.adition.com^
 ||img.riskified.com^
 ||imgssl.constantcontact.com^
@@ -292,19 +321,23 @@
 ||js.braintreegateway.com^
 ||js.hubspot.com^
 ||js.recurly.com^
+||jsdelivr.b-cdn.net^
 ||judge.me^
 ||kapi.kakao.com^
 ||kinescope.io^
+||ko-fi.com^
 ||kohls.com.ssl.sc.omtrdc.net^
 ||kustomerapp.com^
 ||libraries.unbxdapi.com^
 ||libsyn.com^
 ||licensing.bitmovin.com^
 ||lightboxcdn.com^
+||live-video.net^
 ||live.primis.tech^
 ||liveapi.yext.com^
 ||livechatinc.com^
 ||liveperson.net^
+||ls.fn.sportradar.com^
 ||mailerlite.com^
 ||make.cohesionapps.com^
 ||map.naver.com^
@@ -332,8 +365,8 @@
 ||mux.com^
 ||my.salesforce-sites.com^
 ||my.site.com^
-||myadp.my.site.com^
 ||navigation-api.project1service.com^
+||ncsa.sdapi.io^
 ||newsmemory.com^
 ||ngpvan.com^
 ||nice-incontact.com^
@@ -356,6 +389,7 @@
 ||paper-attachments.dropboxusercontent.com^
 ||parts.blog.livedoor.jp^
 ||pathfactory.com^
+||patreon.com^
 ||pay.naver.com^
 ||paypalobjects.com^
 ||pdp.gokwik.co^
@@ -363,6 +397,7 @@
 ||photo.store.qq.com^
 ||piano.io^
 ||pics.dmm.co.jp^
+||pipedriveassets.com^
 ||platform-au.cloud.coveo.com^
 ||platform-eu.cloud.coveo.com^
 ||platform.cloud.coveo.com^
@@ -375,16 +410,20 @@
 ||player.avplayer.com^
 ||player.glomex.com^
 ||player.kwikmotion.com^
+||player.mediadelivery.net^
 ||player.sundaysky.com^
 ||players.brightcove.net^
+||playerv9.kwikmotion.com^
 ||playvideo.qcloud.com^
 ||podbean.com^
 ||poool.fr^
+||powerbi.com^
 ||public-api.eventim.com^
 ||pubsub-edge.twitch.tv^
 ||pure.cloud^
 ||pusher.com^
 ||puzzles-games-api.gp-prod.conde.digital^
+||pxlclnmdecom-a.akamaihd.net^
 ||qsearch-a.akamaihd.net^
 ||quadpay.com^
 ||queue-it.net^
@@ -393,9 +432,11 @@
 ||rcom.dynamicyield.com^
 ||recaptcha.net^
 ||recurly.com^
+||redsara.es^
 ||res.wx.qq.com^
 ||rfksrv.com^
 ||robot-vr-public.cdn.bcebos.com^
+||s.hs-data.com^
 ||s0.wp.com^
 ||s1.wp.com^
 ||s2.wp.com^
@@ -403,12 +444,12 @@
 ||salesforceliveagent.com^
 ||scdn.cxense.com^
 ||schibsted.io^
+||scoreboard.itfmp.sportradar.com^
 ||scribd.com^
 ||script.ioam.de^
 ||sdk.mercadopago.com^
 ||sdk.privacy-center.org^
 ||sdk.split.io^
-||seal-mwco.bbb.org^
 ||search-eu.cloud.coveo.com^
 ||search.cloud.coveo.com^
 ||search.unbxd.io^
@@ -448,6 +489,7 @@
 ||static.qiota.com^
 ||static.userback.io^
 ||static.vidgyor.com^
+||static1.squarespace.com^
 ||steampowered.com^
 ||storage.pardot.com^
 ||storage.yandex.net^
@@ -462,37 +504,49 @@
 ||tarteaucitron.io^
 ||tawk.to^
 ||tfaforms.net^
+||thumb.fc2.com^
 ||tildacdn.com^
 ||tinypass.com^
 ||tiqcdn.com^
 ||tms-monitoring-dot-project-id-4181994499646779312.ew.r.appspot.com^
 ||tradingview.com^
+||transistor.fm^
 ||trinitymedia.ai^
 ||troweprice.com.ssl.d2.sc.omtrdc.net^
 ||trustarc.com^
 ||trustpilot.com^
 ||ttvnw.net^
+||turing.captcha.qcloud.com^
 ||typeform.com^
 ||typography.com^
+||uc006184086b1b4be45b66e900fb.dl.dropboxusercontent.com^
+||uc061794f266e761459033bebc1b.dl.dropboxusercontent.com^
 ||uc14532b770d2ca74da20a995164.dl.dropboxusercontent.com^
+||uc14c15421550dc76ba57cacbe44.dl.dropboxusercontent.com^
+||uc5a74a5c3fa75b1d0eae0fb016a.dl.dropboxusercontent.com^
 ||uc5c27d1a7ab4b7c9139ee95bec1.dl.dropboxusercontent.com^
+||uc65c99503f6bb8f0d29434cff1f.dl.dropboxusercontent.com^
+||uc950c175ca0dacacd80f7265e9c.dl.dropboxusercontent.com^
+||uc9885958df8900ec12805d7f775.dl.dropboxusercontent.com^
 ||ucab6dafbffecc523efe151aaa15.dl.dropboxusercontent.com^
+||ucd03600e4598db0be78a7fd5585.dl.dropboxusercontent.com^
 ||ucd3b17ff389db07e6c008b5b419.dl.dropboxusercontent.com^
 ||ucdda6838aef716248417e5d096c.dl.dropboxusercontent.com^
 ||uce84b05dca3b9b6af7685349800.dl.dropboxusercontent.com^
 ||ui.powerreviews.com^
 ||ultimedia.com^
-||uploads-ssl.webflow.com^
 ||uplynk.com^
 ||use.typekit.net^
 ||usercentrics.eu^
 ||userway.org^
 ||usestoryteller.com^
+||validate.perfdrive.com^
 ||verifi.podscribe.com^
 ||viafoura.co^
 ||video-cdn.net^
 ||video.bsky.app^
 ||video.cloud.yandex.net^
+||video.onnetwork.tv^
 ||video.primis.tech^
 ||vidyard.com^
 ||viewlicense.adobe.io^
@@ -504,14 +558,17 @@
 ||walgreenco.tt.omtrdc.net^
 ||walgreens.com.ssl.d1.sc.omtrdc.net^
 ||weather.com^
+||weather.gov^
 ||web.sdk.qcloud.com^
 ||web.sundaysky.com^
 ||webflow.com^
 ||webloader.smooch.io^
+||webmessaging.mypurecloud.com^
 ||webmessaging.mypurecloud.com.au^
 ||webmessaging.mypurecloud.de^
 ||weixin.qq.com^
 ||widget-sheriff.tradingview-widget.com^
+||widget.kapa.ai^
 ||widget.reviews.io^
 ||widget.weibo.com^
 ||widgets.wp.com^
@@ -525,6 +582,7 @@
 ||www.comeet.co^
 ||www.klaviyo.com^
 ||www.qiota.com^
+||www.riddle.com^
 ||www.surveygizmo.com^
 ||www.tickaroo.com^
 ||www.tradingview-widget.com^
@@ -535,6 +593,7 @@
 ||yimg.jp^
 ||yotpo.com^
 ||yottaa.net^
+||youku.com^
 ||youtube-nocookie.com^
 ||z02.azurefd.net^
 ||zephr.com^
