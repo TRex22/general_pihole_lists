@@ -44,6 +44,9 @@ static.xx.fbcdn.net
 # *.cdn.whatsapp.net
 # *.whatsapp.net
 # *.whatsapp.com
+# whatsapp-cdn-shv-*.fbcdn.net (Facebook CDN shard naming used for WhatsApp media,
+# per discourse.pi-hole.net/t/commonly-whitelisted-domains/212 regex entry;
+# example shard confirmed resolving via dig 2026-08-07)
 
 # WhatsApp link shortener
 wa.me

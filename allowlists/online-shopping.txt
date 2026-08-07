@@ -77,9 +77,11 @@ pt.aliexpress.com
 ru.aliexpress.com
 tr.aliexpress.com
 
-# AliExpress Russia (separate primary domain, listed by Netify)
+# AliExpress Russia (separate primary domains, listed by Netify)
 # Source: https://www.netify.ai/resources/applications/aliexpress
 aliexpress.ru
+ae-rus.net
+aerdns.ru
 
 # Alibaba CDN (alicdn.com) — serves product images and static assets
 alicdn.com
@@ -154,15 +156,45 @@ pubkey.shein.com
 seller-us.shein.com
 
 # Shein regional subdomains
+# Source: https://www.vedbex.com/subdomain-finder/shein.com
 eur.shein.com
 de.shein.com
 br.shein.com
 ph.shein.com
 sg.shein.com
+nl.shein.com
+jp.shein.com
+fr.shein.com
+ar.shein.com
+ca.shein.com
+pt.shein.com
+tw.shein.com
+uk.shein.com
+ru.shein.com
+id.shein.com
+es.shein.com
+in.shein.com
+it.shein.com
+my.shein.com
+co.shein.com
+
+# Shein help center and app backend
+help.shein.com
+app.shein.com
+s1.shein.com
+
+# Shein regional ccTLD domains (separate primary domains, listed by Netify)
+# Source: https://www.netify.ai/resources/applications/shein
+shein.com.mx
+shein.com.vn
+shein.se
 
 # Shein image CDN
 imgshein.com
 img.imgshein.com
+
+# Shein static assets CDN (separate primary domain, listed by Netify)
+ltwebstatic.com
 
 # Shein corporate/developer
 sheincorp.com
