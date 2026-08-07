@@ -1,4 +1,4 @@
-# Microsoft, Outlook, Slack, Zoom, ZScaler, LinkedIn Allowlist for Pi-hole
+# Microsoft, Outlook, Slack, Zoom, ZScaler, LinkedIn, Xbox Live Allowlist for Pi-hole
 # Required domains for productivity tools functionality
 # Sources:
 #   - Microsoft 365 URLs and IP ranges: https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges
@@ -598,6 +598,27 @@ wus-www.sway-extensions.com
 
 # Windows device updates (required for Teams end-user device updates)
 adl.windows.com
+
+# ============================================
+# XBOX LIVE
+# ============================================
+# Source: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
+# attestation.xboxlive.com, xboxexperiencesprod.experimentation.xboxlive.com,
+# and def-vef.xboxlive.com from that thread no longer resolve (dead) — omitted
+
+xsts.auth.xboxlive.com
+device.auth.xboxlive.com
+title.auth.xboxlive.com
+title.mgt.xboxlive.com
+cert.mgt.xboxlive.com
+xflight.xboxlive.com
+xkms.xboxlive.com
+notify.xboxlive.com
+help.ui.xboxlive.com
+licensing.xboxlive.com
+eds.xboxlive.com
+www.xboxlive.com
+xbox.ipv6.microsoft.com
 
 # ============================================
 # GITHUB (Microsoft-owned)

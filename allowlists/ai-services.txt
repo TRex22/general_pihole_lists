@@ -30,9 +30,9 @@ console.anthropic.com
 cdn.anthropic.com
 static.anthropic.com
 files.anthropic.com
-statsig.anthropic.com
 a-cdn.anthropic.com
 s-cdn.anthropic.com
+# statsig.anthropic.com  # feature-flag/analytics SDK (Statsig) - telemetry, may choose to block
 
 # Claude applications
 claude.com
@@ -56,6 +56,16 @@ storage.googleapis.com
 # also in google.txt
 raw.githubusercontent.com
 # also in general.txt
+mcp-proxy.anthropic.com
+code.claude.com
+assets-proxy.anthropic.com
+# Desktop app / claude.ai in browser — artifacts CDN
+formulae.brew.sh
+# Homebrew-install update checks only
+
+# Telemetry (optional — disable with DISABLE_TELEMETRY/DO_NOT_TRACK) — not allowlisted
+# http-intake.logs.us5.datadoghq.com
+# browser-intake-us5-datadoghq.com
 
 # CDN and static assets (Cloudflare)
 cdnjs.cloudflare.com
@@ -102,10 +112,10 @@ sora.openai.com
 crixet.com
 oaiusercontent.com
 oaistatic.com
-oaistatsig.com
 cdn.oaistatic.com
-featuregates.org
 prodregistryv2.org
+# oaistatsig.com  # Statsig feature-flag/analytics SDK - telemetry, may choose to block
+# featuregates.org  # Statsig "Feature Gates" - telemetry, may choose to block
 
 # Azure-hosted CDN/API infra used by OpenAI
 openaiapi-site.azureedge.net
@@ -118,12 +128,12 @@ chatgpt.livekit.cloud
 host.livekit.cloud
 turn.livekit.cloud
 
-# Shared third-party infra also used by OpenAI (may already exist in other files)
-statsig.com
-statsigapi.net
-events.statsigapi.net
-o33249.ingest.sentry.io
-browser-intake-datadoghq.com
+# Shared third-party telemetry infra also used by OpenAI - not allowlisted (may choose to block)
+# statsig.com
+# statsigapi.net
+# events.statsigapi.net
+# o33249.ingest.sentry.io
+# browser-intake-datadoghq.com
 
 # ============================================
 # PERPLEXITY
@@ -319,8 +329,8 @@ business.githubcopilot.com
 enterprise.githubcopilot.com
 api.githubcopilot.com
 copilot-proxy.githubusercontent.com
-copilot-telemetry.githubusercontent.com
-default.exp-tas.com
+# copilot-telemetry.githubusercontent.com  # Copilot usage telemetry - not allowlisted (may choose to block)
+# default.exp-tas.com  # Microsoft Experimentation Task Assignment Service (A/B testing) - telemetry, may choose to block
 
 # ============================================
 # REPLIT (AI Agent)

@@ -1,6 +1,23 @@
 # WhatsApp Tracking/Telemetry Blocklist for Pi-hole
-# Source: https://www.reddit.com/r/pihole/comments/y1cmdf/what_domains_i_need_to_whitelist_for_whatsapp/
+# Sources:
+#   - Reddit r/pihole: https://www.reddit.com/r/pihole/comments/y1cmdf/what_domains_i_need_to_whitelist_for_whatsapp/
+#   - Meta engineering blog on DIT (formerly "PrivateStats"): https://engineering.fb.com/2021/04/16/security/dit/
+#   - Hagezi DNS blocklists (ultimate list, META/WhatsApp trackers): https://github.com/hagezi/dns-blocklists
+#   - Netify hostname info: https://www.netify.ai/resources/hostnames/crashlogs.whatsapp.net
 # These domains are used for tracking/telemetry - blocking may not affect core functionality
+# Note: graph.whatsapp.com / graph.whatsapp.net are the WhatsApp Business Platform API and
+# are NOT included here — that's core functionality, allowlisted in allowlists/whatsapp.txt
 
+# De-identified Tracking (DIT) — metadata/usage analytics, formerly "PrivateStats"
 dit.whatsapp.net
+privatestats.whatsapp.net
+
+# Crash reporting — collects device/activity info alongside crash data
+crashlogs.whatsapp.net
+
+# Analytics/telemetry beacon
+sonar-iad.cdn.whatsapp.net
+event.whatsapp.com
+
+# Unclassified (from original Reddit source, still resolving)
 e6.whatsapp.net
