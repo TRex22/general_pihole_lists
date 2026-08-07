@@ -12,6 +12,8 @@
 #   - YouTube required domains: https://support.google.com/youtube/answer/10046411
 #     (returns 404 as of 2026-06 — likely removed/merged into another article; kept for reference)
 #   - Pi-hole commonly whitelisted: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
+#   - Gemini app firewall settings: https://support.google.com/a/answer/15627649
+#     (redirects to https://knowledge.workspace.google.com/admin/gemini/gemini-app-firewall-settings)
 
 # ============================================
 # CAPTIVE PORTAL DETECTION
@@ -42,12 +44,31 @@ clientservices.googleapis.com
 www.gstatic.com
 fonts.gstatic.com
 lh3.googleusercontent.com
+lh5.googleusercontent.com
+lh3.google.com
+
+# Image thumbnails (search results, Gemini image results)
+# Source: Gemini app firewall settings (knowledge.workspace.google.com/admin/gemini/gemini-app-firewall-settings)
+encrypted-tbn0.gstatic.com
+encrypted-tbn1.gstatic.com
+encrypted-tbn2.gstatic.com
+encrypted-tbn3.gstatic.com
 
 # Google APIs (web fonts, AJAX libraries, Maps, Translate)
 fonts.googleapis.com
 ajax.googleapis.com
 maps.googleapis.com
+maps.gstatic.com
 translate.googleapis.com
+
+# Street View imagery (Maps, Gemini location results)
+streetviewpixels-pa.googleapis.com
+
+# Content Security Policy report collector (required by several Google web apps)
+csp.withgoogle.com
+
+# Browser autofill suggestions backed by Google account data
+content-autofill.googleapis.com
 
 # Safe Browsing (security feature — keeps phishing/malware warnings working)
 # Source: https://support.google.com/chrome/a/answer/6334001 (Chrome hostname allowlist)

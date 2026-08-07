@@ -32,6 +32,8 @@ auth.microsoft.com
 login.windows.net
 login-us.microsoftonline.com
 account.live.com
+signup.live.com             # Office Mobile / iPad sign-up flow (ID 114/116, urls-and-ip-address-ranges)
+c.live.com                  # Office Mobile URLs (ID 114, urls-and-ip-address-ranges)
 myaccount.microsoft.com
 api.myaccount.microsoft.com
 clientconfig.passport.net
@@ -120,6 +122,7 @@ api.onedrive.com
 cass.api.microsoft.com
 1drv.com
 www.odwebp.svc.ms
+apis.live.net              # OneDrive for Business supportability/telemetry API (ID 53, urls-and-ip-address-ranges)
 
 # ==========================================
 # SHAREPOINT ONLINE
@@ -177,6 +180,9 @@ msedge.api.cdp.microsoft.com
 www.bing.com
 bing.com
 c.bing.net
+c.bing.com                  # ID 114, Office Mobile URLs (urls-and-ip-address-ranges)
+tse1.mm.bing.net            # ProPlus auxiliary URLs (ID 93, urls-and-ip-address-ranges)
+ocos-office365-s2s.msedge.net  # ProPlus auxiliary URLs (ID 93, urls-and-ip-address-ranges)
 officespeech.platform.bing.com  # Office Dictation feature (ID 126)
 
 # Azure
@@ -193,7 +199,14 @@ mspim.azure.com
 api.azrbac.mspim.azure.com
 appmanagement.activedirectory.microsoft.com
 hosting.partners.azure.net          # Azure portal framework (azure-portal-safelist-urls)
+api.aadrm.com                       # Microsoft Entra / Azure RMS (azure-portal-safelist-urls)
 # *.onmicrosoft.com — tenant domain, requires regex wildcard (autodiscover.<tenant>.onmicrosoft.com)
+
+# Azure services (Source: azure-portal-safelist-urls)
+dev.azure.com                       # Azure DevOps
+shell.azure.com                     # Azure Cloud Shell
+ux.console.azure.com                # Azure Cloud Shell console UI
+azure.status.microsoft              # Azure status page
 
 # ============================================
 # SECURITY AND COMPLIANCE
@@ -239,10 +252,12 @@ compass-ssl.microsoft.com
 appsforoffice.microsoft.com
 assets.onestore.ms
 auth.gfx.ms
+mem.gfx.ms                  # Captcha services (ID 75, urls-and-ip-address-ranges)
 c1.microsoft.com
 prod.msocdn.com
 shellprod.msocdn.com
 amp.azure.net
+partnerservices.getmicrosoftkey.com  # Office Mobile URLs (ID 114, urls-and-ip-address-ranges)
 
 # Microsoft 365 Unified Domains (Source: https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges)
 cloud.microsoft
@@ -505,6 +520,7 @@ linkedinmail.com
 
 # Advertising / Insight Tag
 px.ads.linkedin.com
+px4.ads.linkedin.com
 dc.ads.linkedin.com
 bizographics.com
 sjs.bizographics.com

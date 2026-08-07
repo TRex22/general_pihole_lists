@@ -122,7 +122,7 @@ upload.facebook.com
 b-graph.facebook.com
 
 # Lucid Charts
-# Source: https://lucid.app/network-requirements
+# Source: https://lucid.app/network-requirements (DEAD as of 2026-08-07, 404 — lucid.co/security/network-requirements exists but blocks automated fetches; no verified replacement content found)
 lucid.app
 lucidchart.com
 lucidspark.com
@@ -198,6 +198,10 @@ www.teamworkgraph.com
 teamworkgraph.ai
 www.teamworkgraph.ai
 teamwork-graph.atlassian.com
+api-private.atlassian.com
+migration.atlassian.com
+migration-service.services.atlassian.com
+canvas-workers.atlassian.com
 
 # Kollabe (Planning Poker / Sprint Retrospectives)
 # Source: https://kollabe.com
@@ -1172,7 +1176,7 @@ extensions.duckdb.org
 france24.com
 www.france24.com
 
-RTRT (live blog/sports ticker widget)
+# RTRT (live blog/sports ticker widget)
 cdn.rtrt.me
 api3.rtrt.me
 static.rtrt.me
