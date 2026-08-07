@@ -1,6 +1,6 @@
 # Pi-hole Hosts Format Blocklist - Privacy Badger
-# Generated: 2026-08-06T22:55:50Z
-# Total domains: 2867
+# Generated: 2026-08-07T21:15:58Z
+# Total domains: 2870
 
 0.0.0.0 00px.net
 0.0.0.0 03d1265eb7.com
@@ -515,6 +515,7 @@
 0.0.0.0 brilliantlocco.com
 0.0.0.0 bringads.ru
 0.0.0.0 broadstreetads.com
+0.0.0.0 browser-intake-datadoghq.com
 0.0.0.0 browser-intake-datadoghq.eu
 0.0.0.0 browser-intake-us3-datadoghq.com
 0.0.0.0 browser-intake-us5-datadoghq.com
@@ -731,7 +732,6 @@
 0.0.0.0 crsspxl.com
 0.0.0.0 crwdcntrl.net
 0.0.0.0 csdata3.com
-0.0.0.0 csp.withgoogle.com
 0.0.0.0 ctnsnet.com
 0.0.0.0 ctobsnssdk.com
 0.0.0.0 ctrltech.ai
@@ -963,6 +963,7 @@
 0.0.0.0 fc2.com
 0.0.0.0 feathr.co
 0.0.0.0 featureassets.org
+0.0.0.0 featuregates.org
 0.0.0.0 fedoq.com
 0.0.0.0 feedad.com
 0.0.0.0 feedify.info
@@ -2385,6 +2386,8 @@
 0.0.0.0 statcounter.com
 0.0.0.0 static-segmentpool.com
 0.0.0.0 statmedia.ru
+0.0.0.0 statsig.com
+0.0.0.0 statsigapi.net
 0.0.0.0 stay22.com
 0.0.0.0 stbid.ru
 0.0.0.0 steelhousemedia.com

@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-08-06T22:55:50Z
+! Generated: 2026-08-07T21:15:58Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2867
+! Total domains: 2870
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -520,6 +520,7 @@
 ||brilliantlocco.com^
 ||bringads.ru^
 ||broadstreetads.com^
+||browser-intake-datadoghq.com^
 ||browser-intake-datadoghq.eu^
 ||browser-intake-us3-datadoghq.com^
 ||browser-intake-us5-datadoghq.com^
@@ -736,7 +737,6 @@
 ||crsspxl.com^
 ||crwdcntrl.net^
 ||csdata3.com^
-||csp.withgoogle.com^
 ||ctnsnet.com^
 ||ctobsnssdk.com^
 ||ctrltech.ai^
@@ -968,6 +968,7 @@
 ||fc2.com^
 ||feathr.co^
 ||featureassets.org^
+||featuregates.org^
 ||fedoq.com^
 ||feedad.com^
 ||feedify.info^
@@ -2390,6 +2391,8 @@
 ||statcounter.com^
 ||static-segmentpool.com^
 ||statmedia.ru^
+||statsig.com^
+||statsigapi.net^
 ||stay22.com^
 ||stbid.ru^
 ||steelhousemedia.com^

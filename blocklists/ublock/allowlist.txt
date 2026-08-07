@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-08-07T11:47:06Z
-# Total domains: 880
+# Generated: 2026-08-07T21:15:50Z
+# Total domains: 879
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -818,7 +818,6 @@ urldefense.com
 userapi.com
 usercdn.com
 ustv247.tv
-vacation-et.work
 validate.perfdrive.com
 valueyourmusic.com
 vbt.io
