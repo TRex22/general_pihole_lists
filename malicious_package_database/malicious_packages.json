@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-06T23:11:08Z",
-  "total": 56181,
+  "generated_at": "2026-08-07T21:34:15Z",
+  "total": 56219,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -13700,6 +13700,18 @@
       "last_seen": null
     },
     {
+      "name": "atlas-internal",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/atlas-internal",
+          "title": "PyPI/atlas-internal"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "atlasctf-21-prod-00",
       "type": "PyPI",
       "sources": [
@@ -20363,6 +20375,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cdf-clients",
           "title": "PyPI/cdf-clients"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "cdktn-provider-azurerm",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cdktn-provider-azurerm",
+          "title": "PyPI/cdktn-provider-azurerm"
         }
       ],
       "first_seen": null,
@@ -44547,6 +44571,18 @@
       "last_seen": null
     },
     {
+      "name": "fast-hashes",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fast-hashes",
+          "title": "PyPI/fast-hashes"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "fastapi",
       "type": "PyPI",
       "sources": [
@@ -44589,6 +44625,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fastapi-requests",
           "title": "PyPI/fastapi-requests"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "fastapii",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fastapii",
+          "title": "PyPI/fastapii"
         }
       ],
       "first_seen": null,
@@ -45489,6 +45537,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/flasl",
           "title": "PyPI/flasl"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "flasq",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/flasq",
+          "title": "PyPI/flasq"
         }
       ],
       "first_seen": null,
@@ -53290,6 +53350,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/identityapi",
           "title": "PyPI/identityapi"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "idnna",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/idnna",
+          "title": "PyPI/idnna"
         }
       ],
       "first_seen": null,
@@ -95728,6 +95800,18 @@
       "last_seen": null
     },
     {
+      "name": "pydanticc",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pydanticc",
+          "title": "PyPI/pydanticc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "pydantics",
       "type": "PyPI",
       "sources": [
@@ -122491,6 +122575,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/spaysrbx",
           "title": "PyPI/spaysrbx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "speed-hashes",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/speed-hashes",
+          "title": "PyPI/speed-hashes"
         }
       ],
       "first_seen": null,
@@ -205195,6 +205291,18 @@
       "last_seen": null
     },
     {
+      "name": "@aster110/cc2wechat",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@aster110/cc2wechat",
+          "title": "npm/@aster110/cc2wechat"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@astock/core-routing",
       "type": "npm",
       "sources": [
@@ -210719,6 +210827,18 @@
       "last_seen": null
     },
     {
+      "name": "@catamania/front-components",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@catamania/front-components",
+          "title": "npm/@catamania/front-components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@catamania/ui-components",
       "type": "npm",
       "sources": [
@@ -210737,6 +210857,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@catclaw/message-logger-plugin",
           "title": "npm/@catclaw/message-logger-plugin"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@cats-cdf/authentication",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@cats-cdf/authentication",
+          "title": "npm/@cats-cdf/authentication"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@cats-cdf/browser-metrics-meter",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@cats-cdf/browser-metrics-meter",
+          "title": "npm/@cats-cdf/browser-metrics-meter"
         }
       ],
       "first_seen": null,
@@ -224999,6 +225143,18 @@
       "last_seen": null
     },
     {
+      "name": "@decido/backend-core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@decido/backend-core",
+          "title": "npm/@decido/backend-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@dedatre/xptopkg",
       "type": "npm",
       "sources": [
@@ -225173,6 +225329,54 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@depro0x/despicable-me",
           "title": "npm/@depro0x/despicable-me"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@depup/astro",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@depup/astro",
+          "title": "npm/@depup/astro"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@depup/aws-sdk__credential-provider-process",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@depup/aws-sdk__credential-provider-process",
+          "title": "npm/@depup/aws-sdk__credential-provider-process"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@depup/memfs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@depup/memfs",
+          "title": "npm/@depup/memfs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@depup/nuxt",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@depup/nuxt",
+          "title": "npm/@depup/nuxt"
         }
       ],
       "first_seen": null,
@@ -225593,6 +225797,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dier-makr/inversify",
           "title": "npm/@dier-makr/inversify"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@diezyyasha/libsignal-node",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@diezyyasha/libsignal-node",
+          "title": "npm/@diezyyasha/libsignal-node"
         }
       ],
       "first_seen": null,
@@ -261977,10 +262193,6 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@link-assistant/hive-mind",
           "title": "npm/@link-assistant/hive-mind"
-        },
-        {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@link-assistant/hive-mind",
-          "title": "npm/@link-assistant/hive-mind"
         }
       ],
       "first_seen": null,
@@ -289059,6 +289271,18 @@
       "last_seen": null
     },
     {
+      "name": "@mrbenty8jf1p9y5/oidc-bind-canary",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mrbenty8jf1p9y5/oidc-bind-canary",
+          "title": "npm/@mrbenty8jf1p9y5/oidc-bind-canary"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@mrpudidi/gravatar",
       "type": "npm",
       "sources": [
@@ -290853,6 +291077,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nerv-hq/control-system",
           "title": "npm/@nerv-hq/control-system"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@nestjs-passport/jwt",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nestjs-passport/jwt",
+          "title": "npm/@nestjs-passport/jwt"
         }
       ],
       "first_seen": null,
@@ -301431,6 +301667,18 @@
       "last_seen": null
     },
     {
+      "name": "@prototypevip/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prototypevip/baileys",
+          "title": "npm/@prototypevip/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@pruthvi21/use-debounce",
       "type": "npm",
       "sources": [
@@ -303221,6 +303469,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@rbapp/utils",
           "title": "npm/@rbapp/utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@rbxst/services",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@rbxst/services",
+          "title": "npm/@rbxst/services"
         }
       ],
       "first_seen": null,
@@ -327079,6 +327339,18 @@
       "last_seen": null
     },
     {
+      "name": "@united-airlines-org/atmos-design-system",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@united-airlines-org/atmos-design-system",
+          "title": "npm/@united-airlines-org/atmos-design-system"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@unitedcapitalfinancialadvisors/finlife-component-library",
       "type": "npm",
       "sources": [
@@ -327829,6 +328101,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@verrylinh/discord",
           "title": "npm/@verrylinh/discord"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@vertexa/prisma-fetch-engine",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vertexa/prisma-fetch-engine",
+          "title": "npm/@vertexa/prisma-fetch-engine"
         }
       ],
       "first_seen": null,
@@ -413515,6 +413799,18 @@
       "last_seen": null
     },
     {
+      "name": "aclade-agent",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aclade-agent",
+          "title": "npm/aclade-agent"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "acm-nano-logger-fe",
       "type": "npm",
       "sources": [
@@ -432530,6 +432826,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/agentbse",
           "title": "npm/agentbse"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "agenthub-ai",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/agenthub-ai",
+          "title": "npm/agenthub-ai"
         }
       ],
       "first_seen": null,
@@ -571281,6 +571589,18 @@
       "last_seen": null
     },
     {
+      "name": "base-ui-cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base-ui-cli",
+          "title": "npm/base-ui-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "base-ui-vue3",
       "type": "npm",
       "sources": [
@@ -583299,6 +583619,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/beaver-ui-popover-card",
           "title": "npm/beaver-ui-popover-card"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "beaver-ui-popover-marker",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/beaver-ui-popover-marker",
+          "title": "npm/beaver-ui-popover-marker"
         }
       ],
       "first_seen": null,
@@ -597070,6 +597402,18 @@
       "last_seen": null
     },
     {
+      "name": "big-tss",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/big-tss",
+          "title": "npm/big-tss"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "big256-ts",
       "type": "npm",
       "sources": [
@@ -597796,6 +598140,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bignunmberjs",
           "title": "npm/bignunmberjs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bigops-abstract-entity-data",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bigops-abstract-entity-data",
+          "title": "npm/bigops-abstract-entity-data"
         }
       ],
       "first_seen": null,
@@ -598582,6 +598938,30 @@
       "last_seen": null
     },
     {
+      "name": "bigops-security",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bigops-security",
+          "title": "npm/bigops-security"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bigops-shared-product-design",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bigops-shared-product-design",
+          "title": "npm/bigops-shared-product-design"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bigops-shared-ui",
       "type": "npm",
       "sources": [
@@ -598768,6 +599148,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bigops-telephony-client",
           "title": "npm/bigops-telephony-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bigops-telephony-mock",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bigops-telephony-mock",
+          "title": "npm/bigops-telephony-mock"
         }
       ],
       "first_seen": null,
@@ -608578,6 +608970,18 @@
       "last_seen": null
     },
     {
+      "name": "blekit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/blekit",
+          "title": "npm/blekit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "blendertools",
       "type": "npm",
       "sources": [
@@ -613054,6 +613458,18 @@
       "last_seen": null
     },
     {
+      "name": "bnpl-blocks-atom-bnpl-checkbox",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bnpl-blocks-atom-bnpl-checkbox",
+          "title": "npm/bnpl-blocks-atom-bnpl-checkbox"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bnpl-blocks-atom-bnpl-dangerously-html",
       "type": "npm",
       "sources": [
@@ -613114,6 +613530,18 @@
       "last_seen": null
     },
     {
+      "name": "bnpl-blocks-atom-bnpl-faq-item",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bnpl-blocks-atom-bnpl-faq-item",
+          "title": "npm/bnpl-blocks-atom-bnpl-faq-item"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bnpl-blocks-atom-bnpl-feedback",
       "type": "npm",
       "sources": [
@@ -613132,6 +613560,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bnpl-blocks-atom-bnpl-image",
           "title": "npm/bnpl-blocks-atom-bnpl-image"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bnpl-blocks-atom-bnpl-image-card",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bnpl-blocks-atom-bnpl-image-card",
+          "title": "npm/bnpl-blocks-atom-bnpl-image-card"
         }
       ],
       "first_seen": null,
@@ -613180,6 +613620,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bnpl-blocks-atom-bnpl-link-avatar",
           "title": "npm/bnpl-blocks-atom-bnpl-link-avatar"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bnpl-blocks-atom-bnpl-loader",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bnpl-blocks-atom-bnpl-loader",
+          "title": "npm/bnpl-blocks-atom-bnpl-loader"
         }
       ],
       "first_seen": null,
