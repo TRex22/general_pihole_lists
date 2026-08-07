@@ -2,7 +2,10 @@
 # Source: https://www.reddit.com/r/pihole/comments/y1cmdf/what_domains_i_need_to_whitelist_for_whatsapp/
 # Source: https://discourse.pi-hole.net/t/blacklist-whatsapp/35212
 # Source: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
+# Source: https://github.com/hagezi/dns-blocklists (graph.whatsapp.net feature notes)
 # These domains are required for WhatsApp functionality and notifications
+# Tracking/telemetry-only domains (crash logs, DIT/PrivateStats, analytics) are in
+# blocklists/whatsapp-tracking.txt instead — not here
 
 # Core WhatsApp domains
 g.whatsapp.net
@@ -30,6 +33,9 @@ e.whatsapp.net
 business.whatsapp.com
 api.whatsapp.com
 graph.whatsapp.com
+graph.whatsapp.net
+# graph.whatsapp.net also handles in-app avatars, help center, and video effects
+# (per hagezi/dns-blocklists notes — blocking it breaks those features)
 
 # Facebook CDN used by WhatsApp for GIFs and media stickers
 static.xx.fbcdn.net

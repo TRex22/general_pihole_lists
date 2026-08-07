@@ -116,9 +116,6 @@ cdn-sharing.adobecc.com
 # Unifi
 ping.ui.com
 
-# Xbox Live
-xsts.auth.xboxlive.com
-
 # Facebook / Meta (required by some apps including WhatsApp Web)
 graph.facebook.com
 upload.facebook.com
@@ -290,8 +287,8 @@ iris.mwbsys.com
 # telemetry.malwarebytes.com  # product telemetry - optional
 
 # Rapid7
-cdn.us.exposure-analytics.insight.rapid7.com
-exposure-analytics.insight.rapid7.com
+# cdn.us.exposure-analytics.insight.rapid7.com  # agent telemetry/analytics upload - not allowlisted
+# exposure-analytics.insight.rapid7.com  # agent telemetry/analytics upload - not allowlisted
 insight.rapid7.com
 
 # Notion
