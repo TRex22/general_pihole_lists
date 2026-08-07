@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-08-04T21:28:34Z
+# Generated: 2026-08-06T22:55:50Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 777
+# Total domains: 780
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -188,6 +188,7 @@ cdn.seondf.com
 cdn.smooch.io
 cdn.sophi.io
 cdn.split.io
+cdn.tailwindcss.com
 cdn.technolutions.net
 cdn.tickaroo.com
 cdn.transcend.io
@@ -678,6 +679,7 @@ tildacdn.com
 townnews.com
 toyota.com
 tradingview.com
+transistor.fm
 trbcdn.net
 trinitymedia.ai
 troweprice.com.ssl.d2.sc.omtrdc.net
@@ -722,6 +724,7 @@ walgreens.com.ssl.d1.sc.omtrdc.net
 walletconnect.com
 wallst.com
 weather.com
+weather.gov
 weatherzone.com.au
 web.poecdn.com
 web.sdk.qcloud.com

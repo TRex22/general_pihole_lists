@@ -2695,6 +2695,7 @@ qonnfp.wnrathttb.ru
 kmnl.cpfcenters.de
 
 # Source: https://www.microsoft.com/en-us/security/blog/2025/09/25/xcsset-evolves-again-analyzing-the-latest-updates-to-xcssets-inventory/
+# Source: https://unit42.paloaltonetworks.com/xcsset-v40-malware-analysis/
 adobecdn.ru
 adobetrix.ru
 applecdn.ru
@@ -30626,6 +30627,7 @@ protect-wss.com
 parkspringhotel.com
 
 # Source: https://cloud.google.com/blog/topics/threat-intelligence/blackfile-vishing-extortion-operation
+# Source: https://cloud.google.com/blog/topics/threat-intelligence/unc6671-targets-financial-services-and-enterprise-cloud-environments
 enrollms.com
 passkeyms.com
 setupsso.com
@@ -32370,6 +32372,7 @@ exmkleo.com
 invsetmx.com
 
 # Source: https://www.huntress.com/blog/the-gentlemen-ransomware-defense-evasion-ttps
+# Source: http://thehackernews.com/2026/08/threatsday-odysseus-rce-samsung-one.html
 193.233.202.17
 77.110.122.137
 
@@ -43412,9 +43415,13 @@ solthere.net
 68.235.46.214
 
 # Source: https://www.bleepingcomputer.com/news/security/massive-chaindrop-npm-supply-chain-attack-infects-hundreds-of-packages/
+# Source: https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/
+# Source: https://www.elastic.co/security-labs/shai-hulud-chaindrop-npm-supply-chain
+# Source: https://unit42.paloaltonetworks.com/chaindrop-npm-worm-analysis/
 npm-cache.com
 
 # Source: https://www.bleepingcomputer.com/news/security/77-open-vsx-extensions-found-harvesting-developer-info/
+# Source: http://thehackernews.com/2026/08/open-vsx-removes-77-malicious-evil-twin.html
 api.mangorbit.com
 cb.mangorbit.com
 mangorbit.com
@@ -43439,12 +43446,10 @@ votefokindenfo1.lol
 about.blsouqs.com
 ftabnews.com
 
-
 # Source: http://www.fortinet.com/blog/threat-research/quickfox-supply-chain-attack-used-to-deploy-fdmtp-implant
 51quickfox.cn
 wangmengsb.com
 yahoo-cdn.it
-
 
 # Source: https://www.huntress.com/blog/bank-spam-rmm
 217.60.195.167
@@ -43453,5 +43458,258 @@ cdn.uploadtourl.com
 kleinschnitg.com
 sectioncompil.com
 
-# Source: Manual
+# Source: Manual - Phishing attack
 ncino.enrollsso.com
+
+# Source: http://thehackernews.com/2026/08/over-250-clickfix-domains-use-browser.html
+applefilevault.com
+filecopperbasket.sbs
+
+# Source: http://thehackernews.com/2026/08/poison-claude-sells-discounted-claude.html
+api.claudeopus.shop
+dakaka.org
+emailinbo.live
+poison-claude.bitsender.top
+ratixq.com
+
+# Source: http://thehackernews.com/2026/08/trojanized-npm-packages-decode-c2-ip.html
+166.88.134.62
+
+# Source: http://thehackernews.com/2026/08/quickfox-supply-chain-attack-delivers.html
+51quickfox.com
+cdns3.51quickfox.cn
+
+# Source: https://www.bleepingcomputer.com/news/security/hackers-run-khunt-post-exploitation-toolkit-from-oracle-database/
+# Source: https://www.huntress.com/blog/khunt-malware-sql-injection-oracle
+# Source: http://thehackernews.com/2026/08/attackers-compile-khunt-inside-oracle.html
+178.162.151.229
+
+# Source: https://www.bleepingcomputer.com/news/security/coldcard-security-audit-phishing-attack-installs-remote-access-tool/
+activeretirementrelocation.com
+
+# Source: https://www.microsoft.com/en-us/security/blog/2026/08/05/macos-clickfix-campaign-learned-hide/
+apricotfilepoint.com
+lemonfilewave.com
+limefilescope.com
+mangocloudfile.com
+
+# Source: https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/
+# Source: https://unit42.paloaltonetworks.com/chaindrop-npm-worm-analysis/
+js-mirror.com
+pypi-get.com
+
+# Source: https://www.elastic.co/security-labs/shai-hulud-chaindrop-npm-supply-chain
+# Source: https://unit42.paloaltonetworks.com/chaindrop-npm-worm-analysis/
+awqhnjewqjkl.icu
+
+# Source: https://www.huntress.com/blog/khunt-malware-sql-injection-oracle
+khuntsam.hiv
+khuntsecurity.hiv
+khuntsystem.hiv
+
+# Source: http://thehackernews.com/2026/08/webkit-proxy-bypasses-can-expose-real.html
+leaks.psylo.app
+
+# Source: http://thehackernews.com/2026/08/chinese-made-zbtlink-routers-ship-with.html
+43.248.136.125
+45.32.81.152
+47.100.190.96
+47.107.224.89
+online-string.com
+rbdg4nzqadui.wikaba.com
+zbtctl.epplink.net
+
+# Source: https://unit42.paloaltonetworks.com/xcsset-v40-malware-analysis/
+151.243.109.188
+178.208.92.129
+178.208.92.168
+91.108.106.229
+95.142.35.206
+95.142.35.34
+95.142.37.159
+accapple.ru
+adschecks.ru
+adsmobi.ru
+adsmorein.in
+adsmoreme.in
+amdcdn.ru
+amzndev.in
+amzndev.ru
+amznprod.in
+appledisk.ru
+appledns.ru
+applehosts.ru
+appletime.in
+cdnamz.in
+cdnamz.ru
+cdnapple.in
+cdnatapple.ru
+chromeads.ru
+cnmag.ru
+devnetaps.ru
+dnsapple.ru
+dnsrelays.ru
+explorecdn.ru
+fiddlejoy.ru
+figmanets.in
+funchats.ru
+gironetcdn.ru
+goalmate.ru
+googlenets.ru
+greencn.ru
+icloudsnet.ru
+imails.ru
+legalads.in
+littleads.in
+littledns.ru
+maganet.ru
+mindelgate.ru
+netapsdev.ru
+netcdnads.in
+netcdnamz.ru
+netcdndev.in
+netcorps.ru
+netsprot.in
+netsproto.in
+networkads.in
+rigacdn.in
+rigmajoys.in
+rigmanet.ru
+rigmanets.in
+sahusuzuki.in
+stuffdns.in
+testjoys.ru
+timewebnet.in
+vigmanet.ru
+whitead.in
+whiteads.ru
+wincdn.ru
+
+# Source: https://unit42.paloaltonetworks.com/chaindrop-npm-worm-analysis/
+104.21.91.101
+172.67.215.154
+
+# Source: https://unit42.paloaltonetworks.com/ai-token-jacking/
+104.243.42.117
+116.105.166.148
+117.72.74.48
+15.204.106.173
+172.96.142.186
+198.255.70.210
+207.246.106.162
+23.236.182.215
+23.237.196.170
+3.235.109.125
+38.46.219.162
+38.46.219.163
+38.46.219.166
+47.251.72.239
+47.88.103.81
+95.214.112.26
+abb1.life
+amutes.com
+
+# Source: https://unit42.paloaltonetworks.com/malware-bypass-dns-direct-to-ip/
+103.245.236.146
+154.92.19.71
+178.16.54.109
+178.16.54.31
+194.76.227.94
+2.26.98.67
+206.189.229.43
+62.60.179.230
+87.120.107.33
+91.92.243.29
+
+# Source: https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/
+code.newcli.com
+
+# Source: https://cloud.google.com/blog/topics/threat-intelligence/unc6671-targets-financial-services-and-enterprise-cloud-environments
+107.128.45.122
+185.178.208.153
+193.34.212.132
+195.140.213.114
+195.140.213.115
+23.234.75.84
+31.7.56.52
+31.7.56.61
+38.42.59.171
+47.218.103.146
+76.103.148.180
+activatemypasskey.com
+activatepasskey.com
+activatepasskeyportal.com
+add-passkey.com
+addmypasskey.com
+addoktapasskey.com
+addpasskey2fa.com
+addssopasskey.com
+addyourpasskey.com
+assignpasskey.com
+checkpasskey.com
+createmfa.com
+createmypasskey.com
+createpasskey.com
+createssopasskey.com
+deploypasskey.com
+enablepasskey.com
+enablepasskey2fa.com
+enrollpasskey.com
+hubpasskey.com
+idokta.com
+keyokta.com
+keysyncos.com
+makepasskey.com
+mspasskey.com
+myaccountsecurity.com
+myconnectkey.com
+mynewpasskey.com
+myoktasso.com
+mypasskeyid.com
+mypasskeysso.com
+mysecurepasskey.com
+myssopasskey.com
+newpasskey.com
+oktaenroll.com
+oktaportalsso.com
+oskeyconnect.com
+oskeysync.com
+passkey-check.com
+passkey-connect.com
+passkey-enable.com
+passkey-portal.com
+passkey-setup.com
+passkeyactivation.com
+passkeyadd.com
+passkeycenter.com
+passkeycreate.com
+passkeycreator.com
+passkeydeploy.com
+passkeyenable.com
+passkeyenroll.com
+passkeyhelpdesk.com
+passkeymfa.com
+passkeyokta.com
+passkeyportal.com
+passkeyportalsetup.com
+passkeyregister.com
+passkeyregistration.com
+passkeyrollout.com
+passkeyset.com
+passkeystatus.com
+passkeysupport.com
+passkeyuser.com
+pipe.ma
+portalpasskey.com
+portalsetuphub.com
+publicdomainregistry.com
+registerpasskey.com
+secure-passkey.com
+secureauthpasskey.com
+setpasskey.com
+setupssopasskey.com
+sqfepjvmrd.xyz
+ssopasskey.com
+startpasskey.com
+startpasskeysetup.com
+tucows.com
