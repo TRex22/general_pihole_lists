@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-08-07T21:15:58Z
+! Generated: 2026-08-08T21:09:18Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2870
+! Total domains: 2868
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -256,7 +256,6 @@
 ||airbridge.io^
 ||airshedcoart.com^
 ||airtory.com^
-||airwallex.com^
 ||aisdr.com^
 ||aiservice.vn^
 ||aisiteanalytics.com^
@@ -965,7 +964,6 @@
 ||fatmedia.io^
 ||fawnlux.com^
 ||fbot.me^
-||fc2.com^
 ||feathr.co^
 ||featureassets.org^
 ||featuregates.org^
