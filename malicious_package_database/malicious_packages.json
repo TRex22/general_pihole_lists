@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-08T21:27:27Z",
-  "total": 56222,
+  "generated_at": "2026-08-09T21:26:13Z",
+  "total": 56224,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -26803,6 +26803,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cubaflixdownload",
           "title": "PyPI/cubaflixdownload"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "cubesat-upstream-driver",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cubesat-upstream-driver",
+          "title": "PyPI/cubesat-upstream-driver"
         }
       ],
       "first_seen": null,
@@ -56614,6 +56626,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/kongstrong",
           "title": "PyPI/kongstrong"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "kotanku",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/kotanku",
+          "title": "PyPI/kotanku"
         }
       ],
       "first_seen": null,
