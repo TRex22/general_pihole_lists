@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-09T21:26:13Z",
-  "total": 56224,
+  "generated_at": "2026-08-10T21:34:01Z",
+  "total": 56238,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -17701,6 +17701,30 @@
       "last_seen": null
     },
     {
+      "name": "btcflip",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/btcflip",
+          "title": "PyPI/btcflip"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "btcflx",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/btcflx",
+          "title": "PyPI/btcflx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "btcli",
       "type": "PyPI",
       "sources": [
@@ -20747,6 +20771,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/chain00x",
           "title": "PyPI/chain00x"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "chaintest",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/chaintest",
+          "title": "PyPI/chaintest"
         }
       ],
       "first_seen": null,
@@ -56656,6 +56692,18 @@
       "last_seen": null
     },
     {
+      "name": "kotoraka",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/kotoraka",
+          "title": "PyPI/kotoraka"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "kraken-trader",
       "type": "PyPI",
       "sources": [
@@ -73796,6 +73844,30 @@
       "last_seen": null
     },
     {
+      "name": "neutrl-contracts",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/neutrl-contracts",
+          "title": "PyPI/neutrl-contracts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "neutrl-core",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/neutrl-core",
+          "title": "PyPI/neutrl-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "neverbeentg",
       "type": "PyPI",
       "sources": [
@@ -80346,6 +80418,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pllow",
           "title": "PyPI/pllow"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "plp-contract",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/plp-contract",
+          "title": "PyPI/plp-contract"
         }
       ],
       "first_seen": null,
@@ -98722,6 +98806,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pyswyfter",
           "title": "PyPI/pyswyfter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "pytablute",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pytablute",
+          "title": "PyPI/pytablute"
         }
       ],
       "first_seen": null,
@@ -258407,6 +258503,18 @@
       "last_seen": null
     },
     {
+      "name": "@kuperka/chainguard-sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kuperka/chainguard-sdk",
+          "title": "npm/@kuperka/chainguard-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@kvytech/cli",
       "type": "npm",
       "sources": [
@@ -258605,6 +258713,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@lain-test-org/test-package2",
           "title": "npm/@lain-test-org/test-package2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@lambda-platform/lambda-vue",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@lambda-platform/lambda-vue",
+          "title": "npm/@lambda-platform/lambda-vue"
         }
       ],
       "first_seen": null,
@@ -291755,6 +291875,30 @@
       "last_seen": null
     },
     {
+      "name": "@noobaihome/amis-simple-area-widget",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@noobaihome/amis-simple-area-widget",
+          "title": "npm/@noobaihome/amis-simple-area-widget"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@noobaihome/amis-uni-area-widget",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@noobaihome/amis-uni-area-widget",
+          "title": "npm/@noobaihome/amis-uni-area-widget"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@nordea-web/core",
       "type": "npm",
       "sources": [
@@ -303523,6 +303667,18 @@
       "last_seen": null
     },
     {
+      "name": "@rblxts/services",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@rblxts/services",
+          "title": "npm/@rblxts/services"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@rbx-ts/services",
       "type": "npm",
       "sources": [
@@ -313665,6 +313821,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sravni/oh-my-got",
           "title": "npm/@sravni/oh-my-got"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ssgw/icon",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ssgw/icon",
+          "title": "npm/@ssgw/icon"
         }
       ],
       "first_seen": null,
