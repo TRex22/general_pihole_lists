@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-08-09T21:10:10Z
+# Generated: 2026-08-10T21:17:34Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 780
+# Total domains: 782
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -608,6 +608,7 @@ secureserver.net
 securiti.ai
 service-now.com
 servicepipe.ru
+servicepipe.tech
 serviceschipotlecom.trafficmanager.net
 share.hsforms.com
 shop-pro.jp
@@ -668,6 +669,7 @@ svea.com
 swiftype.com
 sync.transcend.io
 t-mobile.com.ssl.d1.sc.omtrdc.net
+t1.kakaocdn.net
 taleo.net
 tawk.to
 tegna-media.com
