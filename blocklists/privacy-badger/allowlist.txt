@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-08-10T21:17:34Z
+# Generated: 2026-08-11T21:18:23Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 782
+# Total domains: 787
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -106,6 +106,7 @@ auth.privy.io
 auth.split.io
 auth0.com
 authorize.net
+avatars.yandex.net
 avplayer-cdn.sportradar.com
 avplayer.sportradar.com
 awswaf.com
@@ -114,6 +115,7 @@ bandcamp.com
 bazaarvoice.com
 bbb.org
 bbvms.com
+bibliocommons.com
 bigcommerce.com
 bit.ly
 bitdefender.com.ssl.sc.omtrdc.net
@@ -201,6 +203,7 @@ cdnvideo.ru
 cern.ch
 ceros.com
 cf.aliyun.com
+cg.optimizely.com
 check.ddos-guard.net
 checkout.razorpay.com
 cidades.rdstation.com.br
@@ -301,6 +304,7 @@ fc2.com
 feeds.soundcloud.com
 filepicker.io
 filestackapi.com
+five9.com
 flattr.com
 flickr.com
 flipcause.com
@@ -664,6 +668,7 @@ streamguys1.com
 streaming.transcend.io
 streamtheworld.com
 stripecdn.com
+strm.yandex.net
 substack.com
 svea.com
 swiftype.com
