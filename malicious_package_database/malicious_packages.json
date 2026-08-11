@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-10T21:34:01Z",
-  "total": 56238,
+  "generated_at": "2026-08-11T21:35:18Z",
+  "total": 56265,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -15997,6 +15997,18 @@
       "last_seen": null
     },
     {
+      "name": "bigtime",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bigtime",
+          "title": "PyPI/bigtime"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "biip-utils",
       "type": "PyPI",
       "sources": [
@@ -30831,6 +30843,30 @@
       "last_seen": null
     },
     {
+      "name": "dlmm",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/dlmm",
+          "title": "PyPI/dlmm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "dlmm-sdk",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/dlmm-sdk",
+          "title": "PyPI/dlmm-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "dlocal-cli",
       "type": "PyPI",
       "sources": [
@@ -43827,6 +43863,18 @@
       "last_seen": null
     },
     {
+      "name": "euler-sdk",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/euler-sdk",
+          "title": "PyPI/euler-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "eutherium",
       "type": "PyPI",
       "sources": [
@@ -55522,6 +55570,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/johnhammondontop183",
           "title": "PyPI/johnhammondontop183"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "joule-btp-extension",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/joule-btp-extension",
+          "title": "PyPI/joule-btp-extension"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "joule-sbx-poc",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/joule-sbx-poc",
+          "title": "PyPI/joule-sbx-poc"
         }
       ],
       "first_seen": null,
@@ -72458,6 +72530,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/morosint",
           "title": "PyPI/morosint"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "morpho-sdk",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/morpho-sdk",
+          "title": "PyPI/morpho-sdk"
         }
       ],
       "first_seen": null,
@@ -126139,6 +126223,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/telebot-infoo",
           "title": "PyPI/telebot-infoo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "telebot-pro",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/telebot-pro",
+          "title": "PyPI/telebot-pro"
         }
       ],
       "first_seen": null,
@@ -197011,6 +197107,30 @@
       "last_seen": null
     },
     {
+      "name": "@aerodrome-finance/contracts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@aerodrome-finance/contracts",
+          "title": "npm/@aerodrome-finance/contracts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@aerodrome-finance/slipstream",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@aerodrome-finance/slipstream",
+          "title": "npm/@aerodrome-finance/slipstream"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@afasinatickets/common",
       "type": "npm",
       "sources": [
@@ -225845,6 +225965,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dexwilt/node-fetch",
           "title": "npm/@dexwilt/node-fetch"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dgn-src-click-to-pay-org/srcdcfreleasecert",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dgn-src-click-to-pay-org/srcdcfreleasecert",
+          "title": "npm/@dgn-src-click-to-pay-org/srcdcfreleasecert"
         }
       ],
       "first_seen": null,
@@ -292703,6 +292835,18 @@
       "last_seen": null
     },
     {
+      "name": "@nzeros/codebreak",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nzeros/codebreak",
+          "title": "npm/@nzeros/codebreak"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@obg/gtm.types",
       "type": "npm",
       "sources": [
@@ -294941,6 +295085,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@openwebconcept/theme-owc",
           "title": "npm/@openwebconcept/theme-owc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@openzeppelin-4/contracts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@openzeppelin-4/contracts",
+          "title": "npm/@openzeppelin-4/contracts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@openzeppelin-5/contracts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@openzeppelin-5/contracts",
+          "title": "npm/@openzeppelin-5/contracts"
         }
       ],
       "first_seen": null,
@@ -313455,6 +313623,30 @@
       "last_seen": null
     },
     {
+      "name": "@sqlite-labs/createsql",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sqlite-labs/createsql",
+          "title": "npm/@sqlite-labs/createsql"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sqlite-labs/nodesql",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sqlite-labs/nodesql",
+          "title": "npm/@sqlite-labs/nodesql"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@sqlite-list/createsql",
       "type": "npm",
       "sources": [
@@ -313509,6 +313701,54 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sqlite-panel/createsql",
           "title": "npm/@sqlite-panel/createsql"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sqlite-prime/createsql",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sqlite-prime/createsql",
+          "title": "npm/@sqlite-prime/createsql"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sqlite-prime/nodesql",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sqlite-prime/nodesql",
+          "title": "npm/@sqlite-prime/nodesql"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sqlite-table/schema-generator",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sqlite-table/schema-generator",
+          "title": "npm/@sqlite-table/schema-generator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sqlite-table/sql-creator",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sqlite-table/sql-creator",
+          "title": "npm/@sqlite-table/sql-creator"
         }
       ],
       "first_seen": null,
@@ -571997,6 +572237,78 @@
       "last_seen": null
     },
     {
+      "name": "base65-11x",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base65-11x",
+          "title": "npm/base65-11x"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "base65-12x",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base65-12x",
+          "title": "npm/base65-12x"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "base65-13x",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base65-13x",
+          "title": "npm/base65-13x"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "base65-15x",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base65-15x",
+          "title": "npm/base65-15x"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "base65-33x",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base65-33x",
+          "title": "npm/base65-33x"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "base65-77x",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base65-77x",
+          "title": "npm/base65-77x"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "base65-85x",
       "type": "npm",
       "sources": [
@@ -607560,6 +607872,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bjlnfu-devapptea",
           "title": "npm/bjlnfu-devapptea"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bjm-low-code-components",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bjm-low-code-components",
+          "title": "npm/bjm-low-code-components"
         }
       ],
       "first_seen": null,

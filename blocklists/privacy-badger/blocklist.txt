@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-08-10T21:17:34Z
+! Generated: 2026-08-11T21:18:23Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2867
+! Total domains: 2865
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -990,7 +990,6 @@
 ||firstview.gr^
 ||fishboardcrew.com^
 ||fishrobotflower.com^
-||five9.com^
 ||fixidle.com^
 ||flashb.id^
 ||flashtalking.com^
@@ -1992,7 +1991,6 @@
 ||pushub.net^
 ||pushwoosh.com^
 ||pvdpix.com^
-||pvvstream.pro^
 ||px-cdn.net^
 ||px-cloud.net^
 ||pxaction.com^
