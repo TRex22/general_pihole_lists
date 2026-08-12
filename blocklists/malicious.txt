@@ -144,6 +144,7 @@ leakbase.bz
 # Source: https://unit42.paloaltonetworks.com/teampcp-supply-chain-attacks/
 # Source: https://www.trendmicro.com/en_us/research/26/c/teampcp-telnyx-attack-marks-a-shift-in-tactics.html
 # Source: https://www.trendmicro.com/en_us/research/26/c/inside-litellm-supply-chain-compromise.html
+# Source: http://thehackernews.com/2026/08/malicious-litellm-releases-tied-to.html
 checkmarx.zone
 models.litellm.cloud
 
@@ -43425,6 +43426,7 @@ solthere.net
 # Source: https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/
 # Source: https://www.elastic.co/security-labs/shai-hulud-chaindrop-npm-supply-chain
 # Source: https://unit42.paloaltonetworks.com/chaindrop-npm-worm-analysis/
+# Source: https://www.zscaler.com/blogs/security-research/tracking-shai-hulud-inside-chaindrop-npm-worm
 npm-cache.com
 
 # Source: https://www.bleepingcomputer.com/news/security/77-open-vsx-extensions-found-harvesting-developer-info/
@@ -43818,7 +43820,6 @@ test-steve.cyou
 update-launcher.xyz
 update.constant-path.xyz
 
-
 # Source: https://www.malwarebytes.com/blog/threat-intel/2026/08/fake-popular-sites-offer-a-free-app-instead-take-over-pcs
 app.cnn-news.net
 avast-premium.shop
@@ -43826,3 +43827,12 @@ idleminer.pro
 stremiotv.online
 syncminer.xyz
 
+# Source: http://thehackernews.com/2026/08/lazarus-exploits-windows-zero-day-to.html
+enveil.online
+envell.xyz
+uxtramine.org
+
+# Source: https://www.malwarebytes.com/blog/threat-intel/2026/08/fake-ccleaner-installs-ghostdesk-chrome-spyware
+193.169.240.81
+ccleanerwind.top
+liderongrade.duckdns.org

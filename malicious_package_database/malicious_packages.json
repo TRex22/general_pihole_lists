@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-11T21:35:18Z",
-  "total": 56265,
+  "generated_at": "2026-08-12T21:37:07Z",
+  "total": 56354,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -205519,6 +205519,18 @@
       "last_seen": null
     },
     {
+      "name": "@assetshop/verify-cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@assetshop/verify-cli",
+          "title": "npm/@assetshop/verify-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@assistedtax/demo",
       "type": "npm",
       "sources": [
@@ -208297,6 +208309,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bijie/react-bnb-biz",
           "title": "npm/@bijie/react-bnb-biz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bikli/bikli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bikli/bikli",
+          "title": "npm/@bikli/bikli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bikli/cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bikli/cli",
+          "title": "npm/@bikli/cli"
         }
       ],
       "first_seen": null,
@@ -292151,6 +292187,30 @@
       "last_seen": null
     },
     {
+      "name": "@noxzacode/eslint-config",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@noxzacode/eslint-config",
+          "title": "npm/@noxzacode/eslint-config"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@noxzacode/libsignal-node",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@noxzacode/libsignal-node",
+          "title": "npm/@noxzacode/libsignal-node"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@npm-aditech387/public-repo-ui",
       "type": "npm",
       "sources": [
@@ -322119,6 +322179,18 @@
       "last_seen": null
     },
     {
+      "name": "@telekom-ods/react-ui-kit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@telekom-ods/react-ui-kit",
+          "title": "npm/@telekom-ods/react-ui-kit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@telekom-wfa/auth-core",
       "type": "npm",
       "sources": [
@@ -334725,6 +334797,822 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yeaft/webchat-agent",
           "title": "npm/@yeaft/webchat-agent"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years17/n8n-nodes-helper-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years17/n8n-nodes-helper-utils",
+          "title": "npm/@years17/n8n-nodes-helper-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years17/n8n-nodes-utils-helper",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years17/n8n-nodes-utils-helper",
+          "title": "npm/@years17/n8n-nodes-utils-helper"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years17/n8n-nodes-utils-helper-b",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years17/n8n-nodes-utils-helper-b",
+          "title": "npm/@years17/n8n-nodes-utils-helper-b"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years17/n8n-nodes-utils-helper-c",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years17/n8n-nodes-utils-helper-c",
+          "title": "npm/@years17/n8n-nodes-utils-helper-c"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years17/n8n-nodes-utils-helper-d",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years17/n8n-nodes-utils-helper-d",
+          "title": "npm/@years17/n8n-nodes-utils-helper-d"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years17/n8n-nodes-utils-helper-e",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years17/n8n-nodes-utils-helper-e",
+          "title": "npm/@years17/n8n-nodes-utils-helper-e"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years17/n8n-nodes-utils-helper-f",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years17/n8n-nodes-utils-helper-f",
+          "title": "npm/@years17/n8n-nodes-utils-helper-f"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years17/n8n-nodes-utils-helper-g",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years17/n8n-nodes-utils-helper-g",
+          "title": "npm/@years17/n8n-nodes-utils-helper-g"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years17/n8n-nodes-utils-helper-h",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years17/n8n-nodes-utils-helper-h",
+          "title": "npm/@years17/n8n-nodes-utils-helper-h"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years17/n8n-nodes-utils-helper-i",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years17/n8n-nodes-utils-helper-i",
+          "title": "npm/@years17/n8n-nodes-utils-helper-i"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-a",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-a",
+          "title": "npm/@years18/n8n-nodes-utils-helper-a"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-b",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-b",
+          "title": "npm/@years18/n8n-nodes-utils-helper-b"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-c",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-c",
+          "title": "npm/@years18/n8n-nodes-utils-helper-c"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-d",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-d",
+          "title": "npm/@years18/n8n-nodes-utils-helper-d"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-e",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-e",
+          "title": "npm/@years18/n8n-nodes-utils-helper-e"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-f",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-f",
+          "title": "npm/@years18/n8n-nodes-utils-helper-f"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-g",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-g",
+          "title": "npm/@years18/n8n-nodes-utils-helper-g"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-j",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-j",
+          "title": "npm/@years18/n8n-nodes-utils-helper-j"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-k",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-k",
+          "title": "npm/@years18/n8n-nodes-utils-helper-k"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-l",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-l",
+          "title": "npm/@years18/n8n-nodes-utils-helper-l"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-m",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-m",
+          "title": "npm/@years18/n8n-nodes-utils-helper-m"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-n",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-n",
+          "title": "npm/@years18/n8n-nodes-utils-helper-n"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-o",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-o",
+          "title": "npm/@years18/n8n-nodes-utils-helper-o"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-p",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-p",
+          "title": "npm/@years18/n8n-nodes-utils-helper-p"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-q",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-q",
+          "title": "npm/@years18/n8n-nodes-utils-helper-q"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-r",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-r",
+          "title": "npm/@years18/n8n-nodes-utils-helper-r"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-s",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-s",
+          "title": "npm/@years18/n8n-nodes-utils-helper-s"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-t",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-t",
+          "title": "npm/@years18/n8n-nodes-utils-helper-t"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-u",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-u",
+          "title": "npm/@years18/n8n-nodes-utils-helper-u"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-v",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-v",
+          "title": "npm/@years18/n8n-nodes-utils-helper-v"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-w",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-w",
+          "title": "npm/@years18/n8n-nodes-utils-helper-w"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-x",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-x",
+          "title": "npm/@years18/n8n-nodes-utils-helper-x"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years18/n8n-nodes-utils-helper-y",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years18/n8n-nodes-utils-helper-y",
+          "title": "npm/@years18/n8n-nodes-utils-helper-y"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-a",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-a",
+          "title": "npm/@years19/n8n-nodes-utils-helper-a"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-b",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-b",
+          "title": "npm/@years19/n8n-nodes-utils-helper-b"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-c",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-c",
+          "title": "npm/@years19/n8n-nodes-utils-helper-c"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-d",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-d",
+          "title": "npm/@years19/n8n-nodes-utils-helper-d"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-e",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-e",
+          "title": "npm/@years19/n8n-nodes-utils-helper-e"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-f",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-f",
+          "title": "npm/@years19/n8n-nodes-utils-helper-f"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-g",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-g",
+          "title": "npm/@years19/n8n-nodes-utils-helper-g"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-h",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-h",
+          "title": "npm/@years19/n8n-nodes-utils-helper-h"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-i",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-i",
+          "title": "npm/@years19/n8n-nodes-utils-helper-i"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-j",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-j",
+          "title": "npm/@years19/n8n-nodes-utils-helper-j"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-k",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-k",
+          "title": "npm/@years19/n8n-nodes-utils-helper-k"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-l",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-l",
+          "title": "npm/@years19/n8n-nodes-utils-helper-l"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-m",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-m",
+          "title": "npm/@years19/n8n-nodes-utils-helper-m"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-n",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-n",
+          "title": "npm/@years19/n8n-nodes-utils-helper-n"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-o",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-o",
+          "title": "npm/@years19/n8n-nodes-utils-helper-o"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-p",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-p",
+          "title": "npm/@years19/n8n-nodes-utils-helper-p"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-q",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-q",
+          "title": "npm/@years19/n8n-nodes-utils-helper-q"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-r",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-r",
+          "title": "npm/@years19/n8n-nodes-utils-helper-r"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-s",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-s",
+          "title": "npm/@years19/n8n-nodes-utils-helper-s"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-t",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-t",
+          "title": "npm/@years19/n8n-nodes-utils-helper-t"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-u",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-u",
+          "title": "npm/@years19/n8n-nodes-utils-helper-u"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-v",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-v",
+          "title": "npm/@years19/n8n-nodes-utils-helper-v"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-w",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-w",
+          "title": "npm/@years19/n8n-nodes-utils-helper-w"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-x",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-x",
+          "title": "npm/@years19/n8n-nodes-utils-helper-x"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years19/n8n-nodes-utils-helper-y",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years19/n8n-nodes-utils-helper-y",
+          "title": "npm/@years19/n8n-nodes-utils-helper-y"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years20/n8n-nodes-utils-helper-a",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years20/n8n-nodes-utils-helper-a",
+          "title": "npm/@years20/n8n-nodes-utils-helper-a"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years20/n8n-nodes-utils-helper-b",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years20/n8n-nodes-utils-helper-b",
+          "title": "npm/@years20/n8n-nodes-utils-helper-b"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years20/n8n-nodes-utils-helper-c",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years20/n8n-nodes-utils-helper-c",
+          "title": "npm/@years20/n8n-nodes-utils-helper-c"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years20/n8n-nodes-utils-helper-d",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years20/n8n-nodes-utils-helper-d",
+          "title": "npm/@years20/n8n-nodes-utils-helper-d"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years20/n8n-nodes-utils-helper-e",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years20/n8n-nodes-utils-helper-e",
+          "title": "npm/@years20/n8n-nodes-utils-helper-e"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years20/n8n-nodes-utils-helper-f",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years20/n8n-nodes-utils-helper-f",
+          "title": "npm/@years20/n8n-nodes-utils-helper-f"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years20/n8n-nodes-utils-helper-g",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years20/n8n-nodes-utils-helper-g",
+          "title": "npm/@years20/n8n-nodes-utils-helper-g"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years20/n8n-nodes-utils-helper-h",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years20/n8n-nodes-utils-helper-h",
+          "title": "npm/@years20/n8n-nodes-utils-helper-h"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years20/n8n-nodes-utils-helper-i",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years20/n8n-nodes-utils-helper-i",
+          "title": "npm/@years20/n8n-nodes-utils-helper-i"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@years20/n8n-nodes-utils-helper-j",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@years20/n8n-nodes-utils-helper-j",
+          "title": "npm/@years20/n8n-nodes-utils-helper-j"
         }
       ],
       "first_seen": null,
@@ -449332,6 +450220,18 @@
       "last_seen": null
     },
     {
+      "name": "airdzticket",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/airdzticket",
+          "title": "npm/airdzticket"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "airflow-www",
       "type": "npm",
       "sources": [
@@ -531227,6 +532127,18 @@
       "last_seen": null
     },
     {
+      "name": "augustdigital-sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/augustdigital-sdk",
+          "title": "npm/augustdigital-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "augwebapp",
       "type": "npm",
       "sources": [
@@ -582557,6 +583469,18 @@
       "last_seen": null
     },
     {
+      "name": "bb-twl-k7x2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bb-twl-k7x2",
+          "title": "npm/bb-twl-k7x2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bb-ui-tools",
       "type": "npm",
       "sources": [
@@ -583013,6 +583937,18 @@
       "last_seen": null
     },
     {
+      "name": "bcnfjndwbkf2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bcnfjndwbkf2",
+          "title": "npm/bcnfjndwbkf2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bcoi",
       "type": "npm",
       "sources": [
@@ -583247,6 +584183,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bcryptutils",
           "title": "npm/bcryptutils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bcs-compact",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bcs-compact",
+          "title": "npm/bcs-compact"
         }
       ],
       "first_seen": null,
@@ -597102,6 +598050,18 @@
       "last_seen": null
     },
     {
+      "name": "bgncvhferucfds",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bgncvhferucfds",
+          "title": "npm/bgncvhferucfds"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bgnukes",
       "type": "npm",
       "sources": [
@@ -597132,6 +598092,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bgrt4s",
           "title": "npm/bgrt4s"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bgzxcuite2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bgzxcuite2",
+          "title": "npm/bgzxcuite2"
         }
       ],
       "first_seen": null,
@@ -600048,6 +601020,42 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bikashagarwal",
           "title": "npm/bikashagarwal"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "biklimaster",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/biklimaster",
+          "title": "npm/biklimaster"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "biklirouter",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/biklirouter",
+          "title": "npm/biklirouter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bikliwrapper",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bikliwrapper",
+          "title": "npm/bikliwrapper"
         }
       ],
       "first_seen": null,
@@ -613686,6 +614694,18 @@
       "last_seen": null
     },
     {
+      "name": "bmgki3g6fh3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bmgki3g6fh3",
+          "title": "npm/bmgki3g6fh3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bmnick",
       "type": "npm",
       "sources": [
@@ -620280,6 +621300,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/boring-indigo-worm",
           "title": "npm/boring-indigo-worm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "boring-vault",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/boring-vault",
+          "title": "npm/boring-vault"
         }
       ],
       "first_seen": null,
@@ -630528,6 +631560,42 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bs-sidebar",
           "title": "npm/bs-sidebar"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bs58-11",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bs58-11",
+          "title": "npm/bs58-11"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bs58-12",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bs58-12",
+          "title": "npm/bs58-12"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bs58-13",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bs58-13",
+          "title": "npm/bs58-13"
         }
       ],
       "first_seen": null,
