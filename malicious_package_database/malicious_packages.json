@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T21:37:07Z",
-  "total": 56354,
+  "generated_at": "2026-08-13T21:37:29Z",
+  "total": 56372,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -226043,6 +226043,18 @@
       "last_seen": null
     },
     {
+      "name": "@dgxeon13/libsignal-node",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dgxeon13/libsignal-node",
+          "title": "npm/@dgxeon13/libsignal-node"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@dh-io-globalelem/footnote-component",
       "type": "npm",
       "sources": [
@@ -236135,6 +236147,30 @@
       "last_seen": null
     },
     {
+      "name": "@dreamguyxeon/baileyx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dreamguyxeon/baileyx",
+          "title": "npm/@dreamguyxeon/baileyx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dreamguyxeon/libsignal-node",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dreamguyxeon/libsignal-node",
+          "title": "npm/@dreamguyxeon/libsignal-node"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@dreamlake/lakeshore",
       "type": "npm",
       "sources": [
@@ -241637,6 +241673,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ethena/shared-ui",
           "title": "npm/@ethena/shared-ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ethers-js/contracts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ethers-js/contracts",
+          "title": "npm/@ethers-js/contracts"
         }
       ],
       "first_seen": null,
@@ -251279,6 +251327,66 @@
       "last_seen": null
     },
     {
+      "name": "@hzero-front-ui/c7n-ui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hzero-front-ui/c7n-ui",
+          "title": "npm/@hzero-front-ui/c7n-ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hzero-front-ui/cfg",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hzero-front-ui/cfg",
+          "title": "npm/@hzero-front-ui/cfg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hzero-front-ui/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hzero-front-ui/core",
+          "title": "npm/@hzero-front-ui/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hzero-front-ui/hzero-ui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hzero-front-ui/hzero-ui",
+          "title": "npm/@hzero-front-ui/hzero-ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hzero-front-ui/themes",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hzero-front-ui/themes",
+          "title": "npm/@hzero-front-ui/themes"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@i22-td-smarthome/component-library",
       "type": "npm",
       "sources": [
@@ -252965,6 +253073,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jackshanyeshuzi/curvess",
           "title": "npm/@jackshanyeshuzi/curvess"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@jacksher/install-exec-poc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jacksher/install-exec-poc",
+          "title": "npm/@jacksher/install-exec-poc"
         }
       ],
       "first_seen": null,
@@ -255815,6 +255935,42 @@
       "last_seen": null
     },
     {
+      "name": "@khaznatech/common",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@khaznatech/common",
+          "title": "npm/@khaznatech/common"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@khaznatech/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@khaznatech/core",
+          "title": "npm/@khaznatech/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@khaznatech/utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@khaznatech/utils",
+          "title": "npm/@khaznatech/utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@kibt/operation-track",
       "type": "npm",
       "sources": [
@@ -256205,6 +256361,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kodane/patch-manager",
           "title": "npm/@kodane/patch-manager"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@kolbo/mcp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kolbo/mcp",
+          "title": "npm/@kolbo/mcp"
         }
       ],
       "first_seen": null,
@@ -262145,6 +262313,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@leofinzelik/rainbowkit",
           "title": "npm/@leofinzelik/rainbowkit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@leonardo0902/vortex-kit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@leonardo0902/vortex-kit",
+          "title": "npm/@leonardo0902/vortex-kit"
         }
       ],
       "first_seen": null,
@@ -295391,6 +295571,18 @@
       "last_seen": null
     },
     {
+      "name": "@opezneppelin/contracts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@opezneppelin/contracts",
+          "title": "npm/@opezneppelin/contracts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@oplus/obus-core",
       "type": "npm",
       "sources": [
@@ -311777,6 +311969,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@solana-ipfs/sdk",
           "title": "npm/@solana-ipfs/sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@solana-js/web3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@solana-js/web3",
+          "title": "npm/@solana-js/web3"
         }
       ],
       "first_seen": null,
@@ -433863,19 +434067,6 @@
       "last_seen": null
     },
     {
-      "name": "against",
-      "type": "npm",
-      "sources": [
-        {
-          "url": "https://www.bleepingcomputer.com/news/security/massive-chaindrop-npm-supply-chain-attack-infects-hundreds-of-packages/",
-          "title": "Massive ChainDrop npm supply-chain attack infects hundreds of packages",
-          "date": "2026-08-04"
-        }
-      ],
-      "first_seen": "2026-08-04",
-      "last_seen": "2026-08-04"
-    },
-    {
       "name": "agate-build",
       "type": "npm",
       "sources": [
@@ -444418,6 +444609,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ai-agent-email",
           "title": "npm/ai-agent-email"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ai-analyzer",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ai-analyzer",
+          "title": "npm/ai-analyzer"
         }
       ],
       "first_seen": null,
@@ -631596,6 +631799,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bs58-13",
           "title": "npm/bs58-13"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bs58-15",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bs58-15",
+          "title": "npm/bs58-15"
         }
       ],
       "first_seen": null,
