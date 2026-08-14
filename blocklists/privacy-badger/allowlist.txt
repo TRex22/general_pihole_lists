@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-08-13T21:17:47Z
+# Generated: 2026-08-14T21:07:53Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 787
+# Total domains: 788
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -286,6 +286,7 @@ elfsightcdn.com
 embed.avplayer.com
 embed.crowdriff.com
 embed.flowplayer.com
+embeds.beehiiv.com
 enetscores.com
 episerver.net
 epoq.de
