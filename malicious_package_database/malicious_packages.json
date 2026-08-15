@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T21:26:46Z",
-  "total": 56407,
+  "generated_at": "2026-08-15T21:22:07Z",
+  "total": 56414,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -243311,6 +243311,18 @@
       "last_seen": null
     },
     {
+      "name": "@finaxis/common-js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@finaxis/common-js",
+          "title": "npm/@finaxis/common-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@finxsecdemo/utils",
       "type": "npm",
       "sources": [
@@ -295439,6 +295451,18 @@
       "last_seen": null
     },
     {
+      "name": "@openrepl/shared",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@openrepl/shared",
+          "title": "npm/@openrepl/shared"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@opensearch-project/opensearch",
       "type": "npm",
       "sources": [
@@ -328929,6 +328953,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@velkov/isows",
           "title": "npm/@velkov/isows"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@velliajs/discord",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@velliajs/discord",
+          "title": "npm/@velliajs/discord"
         }
       ],
       "first_seen": null,
@@ -431739,6 +431775,18 @@
       "last_seen": null
     },
     {
+      "name": "adxaa",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/adxaa",
+          "title": "npm/adxaa"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "adyaxtest",
       "type": "npm",
       "sources": [
@@ -453087,6 +453135,18 @@
       "last_seen": null
     },
     {
+      "name": "akamai-sensor",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/akamai-sensor",
+          "title": "npm/akamai-sensor"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "akamai-sensorv1",
       "type": "npm",
       "sources": [
@@ -453129,6 +453189,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/akamaijs-sensor",
           "title": "npm/akamaijs-sensor"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "akamaijs-sensorv1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/akamaijs-sensorv1",
+          "title": "npm/akamaijs-sensorv1"
         }
       ],
       "first_seen": null,
@@ -534136,6 +534208,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/austrian-black-and-tan-hound-platforms",
           "title": "npm/austrian-black-and-tan-hound-platforms"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "autbank-core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/autbank-core",
+          "title": "npm/autbank-core"
         }
       ],
       "first_seen": null,
