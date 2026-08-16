@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T21:22:07Z",
-  "total": 56414,
+  "generated_at": "2026-08-16T21:24:36Z",
+  "total": 56416,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -56110,6 +56110,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/kazer12",
           "title": "PyPI/kazer12"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "kb-ai",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/kb-ai",
+          "title": "PyPI/kb-ai"
         }
       ],
       "first_seen": null,
@@ -434341,6 +434353,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "against",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://www.bleepingcomputer.com/news/security/massive-chaindrop-npm-supply-chain-attack-infects-hundreds-of-packages/",
+          "title": "Massive ChainDrop npm supply-chain attack infects hundreds of packages",
+          "date": "2026-08-04"
+        }
+      ],
+      "first_seen": "2026-08-04",
+      "last_seen": "2026-08-04"
     },
     {
       "name": "agate-build",
