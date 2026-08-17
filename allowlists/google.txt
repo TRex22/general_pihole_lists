@@ -39,6 +39,9 @@ clients.l.google.com
 accounts.google.com
 oauthaccountmanager.googleapis.com
 clientservices.googleapis.com
+# Account/one-google-services bar used by Gemini and other embedded surfaces
+# Source: Gemini app firewall settings
+ogs.google.com
 
 # Static assets (fonts, icons, profile pictures)
 www.gstatic.com
@@ -46,6 +49,13 @@ fonts.gstatic.com
 lh3.googleusercontent.com
 lh5.googleusercontent.com
 lh3.google.com
+
+# Legacy Google Photos/Picasa CDN aliases (avatars, profile pictures)
+# Source: https://support.google.com/chrome/a/answer/6334001
+lh3.ggpht.com
+lh4.ggpht.com
+lh5.ggpht.com
+lh6.ggpht.com
 
 # Image thumbnails (search results, Gemini image results)
 # Source: Gemini app firewall settings (knowledge.workspace.google.com/admin/gemini/gemini-app-firewall-settings)
@@ -76,13 +86,23 @@ safebrowsing.googleapis.com
 safebrowsing.google.com
 safebrowsing-cache.google.com
 sb-ssl.google.com
+safebrowsingrealtime.googleapis.com
+
+# Certificate Transparency / PKI (security feature)
+# Source: https://support.google.com/chrome/a/answer/6334001
+pki.google.com
 
 # Chrome / Android update delivery
 dl.google.com
+dl-ssl.google.com
 redirector.gvt1.com
 tools.google.com
 m.google.com
 edgedl.me.gvt1.com
+update.googleapis.com
+
+# Chrome Web Store (extension install/update)
+chrome.google.com
 
 # Chrome sign-in / policy sync
 # Source: https://support.google.com/chrome/a/answer/6334001
@@ -112,8 +132,11 @@ alt7-mtalk.google.com
 alt8-mtalk.google.com
 android.clients.google.com
 android.apis.google.com
+android.googleapis.com
+clients1.google.com
 clients2.google.com
 clients4.google.com
+clients5.google.com
 clients6.google.com
 
 # ============================================
@@ -168,6 +191,7 @@ docs.google.com
 
 # Google Cloud Storage — serves Android OTA packages and app data
 storage.googleapis.com
+commondatastorage.googleapis.com
 
 # Android OTA update delivery (HTTPS)
 ota.googlezip.net
@@ -190,6 +214,7 @@ maven.google.com
 # Required for push notifications on Android
 
 fcm.googleapis.com
+fcm-xmpp.googleapis.com
 iid.googleapis.com
 firebaseinstallations.googleapis.com
 
@@ -203,6 +228,7 @@ firebaseinstallations.googleapis.com
 youtube.com
 www.youtube.com
 m.youtube.com
+accounts.youtube.com
 youtube-nocookie.com
 www.youtube-nocookie.com
 
@@ -239,6 +265,16 @@ beacons.gcp.gvt2.com
 
 # Specific CDN node previously needed — now covered by regex; kept for reference
 # rr4---sn-woc7kn7y.googlevideo.com
+
+# ============================================
+# GEMINI
+# ============================================
+# Source: Gemini app firewall settings
+
+gemini.google.com
+
+# Web activity attestation (required by Gemini/Search anti-abuse checks)
+waa-pa.clients6.google.com
 
 # ============================================
 # GOOGLE CORE (GENERAL)

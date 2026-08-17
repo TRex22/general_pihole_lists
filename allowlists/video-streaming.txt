@@ -132,6 +132,7 @@ omegascans.org
 www.omegascans.org
 omegascans.my
 www.omegascans.my
+media.omegascans.org  # image/content CDN
 
 # OmegaTV (IPTV streaming app — 200+ TV channels including Ukrainian TV)
 omegatv.com
@@ -226,6 +227,7 @@ link.twitch.tv
 clips.twitch.tv
 passport.twitch.tv
 usher.twitch.tv
+usher.ttvnw.net
 dev.twitch.tv
 vod-secure.twitch.tv
 vod-metro.twitch.tv
@@ -235,6 +237,10 @@ chatdepot.twitch.tv
 dmca.twitch.tv
 badges.twitch.tv
 bits.twitch.tv
+affiliate.twitch.tv
+app.twitch.tv
+blog.twitch.tv
+brand.twitch.tv
 twitchapps.com
 jtvnw.net
 static-cdn.jtvnw.net
@@ -242,6 +248,10 @@ ttvnw.net
 twitchcdn.net
 static.twitchcdn.net
 twitchsvc.net
+production.assets.clips.twitchcdn.net
+clips-media-assets2.twitch.tv
+ds0h3roq6wcgc.cloudfront.net  # Twitch VOD (from Twitch-Domains repo)
+d2nvs31859zcd8.cloudfront.net # Twitch VOD (from Twitch-Domains repo)
 
 # Bilibili (Chinese video platform — major source of anime content)
 bilibili.com
@@ -406,7 +416,7 @@ www.webnovel.com
 # ─────────────────────────────────────────────────────────────────────
 # YouTube
 # Cross-listed from google.txt
-# Source: https://support.google.com/youtube/answer/10046411
+# Source: https://support.google.com/youtube/answer/10046411 (DEAD as of 2026-08-17, 404 — no official replacement found)
 # ─────────────────────────────────────────────────────────────────────
 
 youtube.com
@@ -566,6 +576,9 @@ litix.io
 
 # JW Player (widely embedded video player and CDN)
 # Source: https://jwplayer.com
+# NOTE: jwplayer.com now 301-redirects to jwpconnatix.com (JW Player merged
+# with/rebranded under Connatix as of 2026); entries kept since existing
+# player/CDN subdomains still resolve and are in active use.
 jwplayer.com
 www.jwplayer.com
 jwpcdn.com

@@ -89,6 +89,11 @@ ec2.us-east-1.amazonaws.com
 ec2.us-west-2.amazonaws.com
 ec2.eu-west-1.amazonaws.com
 
+# EC2 Auto Scaling / EMR general endpoints (route to us-east-1 by default)
+# Source: https://docs.aws.amazon.com/general/latest/gr/rande.html (General endpoints section)
+autoscaling.amazonaws.com
+elasticmapreduce.amazonaws.com
+
 # CloudFront CDN
 cloudfront.net
 awsstatic.com

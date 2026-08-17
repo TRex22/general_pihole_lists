@@ -46,9 +46,40 @@ tvthemes.plexapp.com
 nine.plugins.plexapp.com
 
 # Dropbox
+# Source: https://github.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/blob/master/Whitelist-Modules/whitelist_for_dropbox.txt
+dropbox.com
+dropboxstatic.com
+db.tt
 dl.dropboxusercontent.com
 ns1.dropbox.com
 ns2.dropbox.com
+
+# Stripe
+# Source: https://github.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/blob/master/Whitelist-Modules/whitelist_for_stripe.txt
+stripe.com
+stripe.network
+
+# PayPal / Braintree
+# Source: https://github.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/blob/master/Whitelist-Modules/whitelist_for_paypal.txt
+paypal.com
+paypal.ca
+paypal.co.uk
+paypalobjects.com
+braintreegateway.com
+
+# Mega (file hosting)
+# Source: https://github.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/blob/master/Whitelist-Modules/whitelist_for_mega.txt
+mega.nz
+mega.io
+mega.co.nz
+
+# Speedtest (Ookla)
+# Source: https://github.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/blob/master/Whitelist-Modules/whitelist_for_speedtest.txt
+speedtest.net
+# ooklaserver.net, cdnst.net (apex has no A record — used only for wildcard
+# test-server subdomains, requires regex wildcard entry in Pi-hole)
+ooklaserver.net
+cdnst.net
 
 # MediaFire (file hosting — legitimate service; download servers use dynamic numbered subdomains covered by regex)
 mediafire.com

@@ -54,6 +54,8 @@ logincdn.msauth.net
 logincdn.msftauth.net
 aadcdn.msftauth.net
 aadcdn.msauthimages.net
+aadcdn.msftauthimages.net    # Azure portal authentication (azure-portal-safelist-urls)
+hip.live.com                 # Human Interaction Proof service (ID 59, urls-and-ip-address-ranges)
 nexus.microsoftonline-p.com
 passwordreset.microsoftonline.com
 provisioningapi.microsoftonline.com
@@ -107,6 +109,7 @@ pus8-collabhubrtc.officeapps.live.com
 # powerpointonline.nel.measure.office.net  # Network telemetry measurement
 # js.monitor.azure.com  # Azure JS monitoring (telemetry)
 # browser.events.data.microsoft.com  # Browser telemetry
+# events.data.microsoft.com  # Microsoft telemetry pipeline (ID 69, urls-and-ip-address-ranges)
 # powerpoint-telemetry.officeapps.live.com  # PowerPoint telemetry
 
 # Microsoft 365 / OneDrive
@@ -199,14 +202,34 @@ mspim.azure.com
 api.azrbac.mspim.azure.com
 appmanagement.activedirectory.microsoft.com
 hosting.partners.azure.net          # Azure portal framework (azure-portal-safelist-urls)
+hosting.portal.azure.net            # Azure portal framework (azure-portal-safelist-urls)
+hosting-ms.portal.azure.net         # Azure portal framework (azure-portal-safelist-urls)
+reactblade.portal.azure.net         # Azure portal framework (azure-portal-safelist-urls)
 api.aadrm.com                       # Microsoft Entra / Azure RMS (azure-portal-safelist-urls)
 # *.onmicrosoft.com — tenant domain, requires regex wildcard (autodiscover.<tenant>.onmicrosoft.com)
+
+# Azure account data (Source: azure-portal-safelist-urls)
+account.microsoft.com
+subscriptionrp.trafficmanager.net
+signup.azure.com
 
 # Azure services (Source: azure-portal-safelist-urls)
 dev.azure.com                       # Azure DevOps
 shell.azure.com                     # Azure Cloud Shell
 ux.console.azure.com                # Azure Cloud Shell console UI
 azure.status.microsoft              # Azure status page
+adf.azure.com                       # Azure Data Factory
+api.loganalytics.io                 # Log Analytics Service
+catalogapi.azure.com                # Azure Marketplace
+catalogartifact.azureedge.net       # Azure Marketplace
+changeanalysis.azure.com            # Change Analysis
+cosmos.azure.com                    # Azure Cosmos DB
+database.windows.net                # SQL Server
+functions.azure.com                 # Azure Functions
+help.kusto.windows.net              # Azure Kusto Cluster Help
+learn.microsoft.com                 # Azure/Microsoft documentation
+main.prod.marketplacedataprovider.azure.com  # Azure Marketplace
+servicebus.windows.net              # Azure Service Bus
 
 # ============================================
 # SECURITY AND COMPLIANCE
@@ -216,6 +239,7 @@ security.microsoft.com
 defender.microsoft.com
 purview.microsoft.com
 compliance.microsoft.com
+portal.cloudappsecurity.com  # Microsoft Defender for Cloud Apps portal (ID 66, urls-and-ip-address-ranges)
 
 # ============================================
 # INFORMATION PROTECTION / RIGHTS MANAGEMENT
@@ -258,6 +282,8 @@ prod.msocdn.com
 shellprod.msocdn.com
 amp.azure.net
 partnerservices.getmicrosoftkey.com  # Office Mobile URLs (ID 114, urls-and-ip-address-ranges)
+appex-rf.msn.com                     # Office Mobile URLs (ID 114, urls-and-ip-address-ranges)
+appex.bing.com                       # Office Mobile URLs (ID 114, urls-and-ip-address-ranges)
 
 # Microsoft 365 Unified Domains (Source: https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges)
 cloud.microsoft
@@ -394,6 +420,8 @@ client-s.gateway.messenger.live.com
 
 slack.com
 www.slack.com
+my.slack.com
+slack-status.com
 api.slack.com
 app.slack.com
 edgeapi.slack.com
@@ -519,6 +547,7 @@ news.linkedin.com
 linkedinmail.com
 
 # Advertising / Insight Tag
+ads.linkedin.com
 px.ads.linkedin.com
 px4.ads.linkedin.com
 dc.ads.linkedin.com
@@ -567,6 +596,8 @@ oneocsp.microsoft.com
 omniroot.com
 public-trust.com
 msauth.net
+entrust.net
+cert.int-x3.letsencrypt.org
 
 # GeoTrust / Thawte / VeriSign / Symantec (legacy DigiCert brands, ID 125)
 geotrust.com

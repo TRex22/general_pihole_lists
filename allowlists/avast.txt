@@ -2,7 +2,8 @@
 # Required domains for Avast to update, activate, and scan correctly.
 # Telemetry and analytics domains (stats*.avast.com, analytics.*, ping.avast.com,
 # double.avast.com, deals.avast.com) are intentionally excluded.
-# Business/managed-deployment-only domains (islonline.net, sosonlinebackup.com) excluded.
+# Business/managed-deployment-only domains (islonline.net, sosonlinebackup.com,
+# managedoffsitebackup.net, m.in-app.io) excluded.
 # Sources:
 #   - Avast Business firewall requirements: https://businesshelp.avast.com/Content/Products/AfB_Antivirus/AntivirusManagement/FirewallRequirements.htm
 #   - Avast Business full firewall reqs:    https://businesshelp.avast.com/Content/Products/SysReqs/FirewallReqs_Full.htm
