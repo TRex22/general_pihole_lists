@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-16T21:24:36Z",
-  "total": 56416,
+  "generated_at": "2026-08-17T21:28:04Z",
+  "total": 56421,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -197503,6 +197503,18 @@
       "last_seen": null
     },
     {
+      "name": "@ai-vertical/ai-agent",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ai-vertical/ai-agent",
+          "title": "npm/@ai-vertical/ai-agent"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@ai0x1337/budoux-extension",
       "type": "npm",
       "sources": [
@@ -299735,6 +299747,30 @@
       "last_seen": null
     },
     {
+      "name": "@peptideventure/peptide-score-modifier",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@peptideventure/peptide-score-modifier",
+          "title": "npm/@peptideventure/peptide-score-modifier"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@peptideventure/peptide-unit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@peptideventure/peptide-unit",
+          "title": "npm/@peptideventure/peptide-unit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@pergel/cli",
       "type": "npm",
       "sources": [
@@ -328959,6 +328995,18 @@
       "last_seen": null
     },
     {
+      "name": "@veertly/web-app",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@veertly/web-app",
+          "title": "npm/@veertly/web-app"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@velkov/isows",
       "type": "npm",
       "sources": [
@@ -330885,6 +330933,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vwfs-uix/core",
           "title": "npm/@vwfs-uix/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@vyzensockets/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vyzensockets/baileys",
+          "title": "npm/@vyzensockets/baileys"
         }
       ],
       "first_seen": null,
@@ -434355,19 +434415,6 @@
       "last_seen": null
     },
     {
-      "name": "against",
-      "type": "npm",
-      "sources": [
-        {
-          "url": "https://www.bleepingcomputer.com/news/security/massive-chaindrop-npm-supply-chain-attack-infects-hundreds-of-packages/",
-          "title": "Massive ChainDrop npm supply-chain attack infects hundreds of packages",
-          "date": "2026-08-04"
-        }
-      ],
-      "first_seen": "2026-08-04",
-      "last_seen": "2026-08-04"
-    },
-    {
       "name": "agate-build",
       "type": "npm",
       "sources": [
@@ -452698,6 +452745,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ak-docgen",
           "title": "npm/ak-docgen"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ak-mal-test-poc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ak-mal-test-poc",
+          "title": "npm/ak-mal-test-poc"
         }
       ],
       "first_seen": null,
@@ -584885,6 +584944,18 @@
       "last_seen": null
     },
     {
+      "name": "bcs-mini",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bcs-mini",
+          "title": "npm/bcs-mini"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bcsgb0",
       "type": "npm",
       "sources": [
@@ -644280,18 +644351,6 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/build-test-utilities",
           "title": "npm/build-test-utilities"
-        }
-      ],
-      "first_seen": null,
-      "last_seen": null
-    },
-    {
-      "name": "build-time-metrics",
-      "type": "npm",
-      "sources": [
-        {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/build-time-metrics",
-          "title": "npm/build-time-metrics"
         }
       ],
       "first_seen": null,
