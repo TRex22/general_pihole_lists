@@ -13,7 +13,7 @@
 #   - bubusan80 AliExpress whitelist: https://github.com/bubusan80/whitelist_hosting_public/blob/main/In_base_al_servizio/Aliexpress_Alibaba.txt
 #   - Cloudflare community (g.alicdn.com login): https://community.cloudflare.com/t/cant-login-to-aliexpress-g-alicdn-com-doesnt-resolve-w-1-1-1-1/135953
 #   - JamieFarrelly eBay subdomains: https://github.com/JamieFarrelly/Popular-Site-Subdomains/blob/master/Ebay.com.txt
-#   - EFF HTTPS Everywhere (ebayrtm.com): https://www.eff.org/https-everywhere/atlas/domains/ebayrtm.com.html
+#   - EFF HTTPS Everywhere (ebayrtm.com): https://www.eff.org/https-everywhere/atlas/domains/ebayrtm.com.html (DEAD as of 2026-08-17, HTTP 410 Gone — EFF retired the HTTPS Everywhere atlas)
 #   - vedbex Shein subdomains: https://www.vedbex.com/subdomain-finder/shein.com
 #   - Buyee partner media subdomain: https://media.buyee.jp/content/en/bcsite-list-en/
 
@@ -64,6 +64,8 @@ message.aliexpress.com
 lighthouse.aliexpress.com
 cdp.aliexpress.com
 nocn-ru-akamai.aliexpress.com
+# also seen when AliExpress product images fail to load with strict DNS resolvers
+global-image.aliexpress.com
 
 # AliExpress locale subdomains
 de.aliexpress.com
@@ -107,6 +109,7 @@ danuoyi.alicdn.com
 
 # Alibaba cross-service (required for some payment/account flows)
 cmap.alibaba.com
+img.alibaba.com
 ynuf.alipay.com
 
 # Alibaba affiliate / link tracking (required for order confirmation emails)
@@ -154,12 +157,18 @@ link-us.shein.com
 onelink.shein.com
 pubkey.shein.com
 seller-us.shein.com
+security.shein.com
+exchange.shein.com
+gateway.shein.com
+pdf.shein.com
+streaming.shein.com
 
 # Shein regional subdomains
 # Source: https://www.vedbex.com/subdomain-finder/shein.com
 eur.shein.com
 de.shein.com
 br.shein.com
+mx.shein.com
 ph.shein.com
 sg.shein.com
 nl.shein.com
@@ -213,6 +222,7 @@ img.romwe.com
 ebay.com
 www.ebay.com
 my.ebay.com
+m.ebay.com
 signin.ebay.com
 browse.ebay.com
 cgi.ebay.com
@@ -229,6 +239,7 @@ feedback.ebay.com
 contact.ebay.com
 community.ebay.com
 picassets.ebay.com
+resolutioncenter.ebay.com
 
 # eBay static assets CDN
 ebaystatic.com
@@ -292,6 +303,7 @@ img.buyee.jp
 media.buyee.jp
 help.buyee.jp
 bc.help.buyee.jp
+faq.buyee.jp
 connect.buyee.jp
 
 # Beenos (parent company — may be needed for account/payment flows)
@@ -300,6 +312,7 @@ beenos.com
 # Tenso (Beenos forwarding/shipping service, sister to Buyee)
 tenso.com
 www.tenso.com
+corp.tenso.com
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Shopify (e-commerce platform powering many online stores)

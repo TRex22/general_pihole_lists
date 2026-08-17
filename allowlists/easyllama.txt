@@ -89,6 +89,8 @@ login.live.com
 # nexus-europe-websocket.intercom.io
 # nexus-australia-websocket.intercom.io
 # messenger-apps.intercom.io
+# messenger-apps.eu.intercom.io
+# messenger-apps.au.intercom.io
 # uploads.intercomcdn.com
 # uploads.intercomcdn.eu
 # uploads.au.intercomcdn.com
@@ -116,11 +118,16 @@ login.live.com
 # Video streaming (Wistia)
 # EasyLlama uses Wistia for training video hosting
 wistia.com
-# *.wistia.com (requires regex wildcard entry in Pi-hole)
+# *.wistia.com, *.wistia.net, *.wistia.land, *.akamaized.net (requires regex wildcard entries in Pi-hole)
 fast.wistia.net
 embed-fastly.wistia.com
 embed-cloudfront.wistia.com
 embedwistia-a.akamaihd.net
+
+# Wistia webinar event room (also required if using EasyLlama's live/webinar training feature)
+effectssdk.ai
+assets.100ms.live
+# *.100ms.live, *.livekit.cloud, *.mux.com (requires regex wildcard entries in Pi-hole)
 
 # Video streaming (YouTube)
 www.youtube.com
