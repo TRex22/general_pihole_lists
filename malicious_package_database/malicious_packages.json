@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-17T21:28:04Z",
-  "total": 56421,
+  "generated_at": "2026-08-18T21:25:05Z",
+  "total": 56439,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -20421,7 +20421,7 @@
       "type": "PyPI",
       "sources": [
         {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cdktn-provider-azurerm",
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/pypi/cdktn-provider-azurerm",
           "title": "PyPI/cdktn-provider-azurerm"
         }
       ],
@@ -52647,6 +52647,18 @@
       "last_seen": null
     },
     {
+      "name": "httpz-requests",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/httpz-requests",
+          "title": "PyPI/httpz-requests"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "huangpy",
       "type": "PyPI",
       "sources": [
@@ -53962,6 +53974,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/infoget",
           "title": "PyPI/infoget"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "infogram-bot",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/infogram-bot",
+          "title": "PyPI/infogram-bot"
         }
       ],
       "first_seen": null,
@@ -121747,6 +121771,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/socketxio",
           "title": "PyPI/socketxio"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "socks5901",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/socks5901",
+          "title": "PyPI/socks5901"
         }
       ],
       "first_seen": null,
@@ -247487,6 +247523,18 @@
       "last_seen": null
     },
     {
+      "name": "@guildai-services/guildai",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@guildai-services/guildai",
+          "title": "npm/@guildai-services/guildai"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@gumtree/ui-library",
       "type": "npm",
       "sources": [
@@ -255701,6 +255749,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jumpstart-ui/utils",
           "title": "npm/@jumpstart-ui/utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@junofficial/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@junofficial/baileys",
+          "title": "npm/@junofficial/baileys"
         }
       ],
       "first_seen": null,
@@ -275093,6 +275153,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mikudev/signal",
           "title": "npm/@mikudev/signal"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@milleree/date-display",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@milleree/date-display",
+          "title": "npm/@milleree/date-display"
         }
       ],
       "first_seen": null,
@@ -297827,6 +297899,18 @@
       "last_seen": null
     },
     {
+      "name": "@oyo_tech/oyochat_user",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@oyo_tech/oyochat_user",
+          "title": "npm/@oyo_tech/oyochat_user"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@oyshoweb/front",
       "type": "npm",
       "sources": [
@@ -305275,6 +305359,18 @@
       "last_seen": null
     },
     {
+      "name": "@reducers/projects",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@reducers/projects",
+          "title": "npm/@reducers/projects"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@refactco/refact-os",
       "type": "npm",
       "sources": [
@@ -311765,6 +311861,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@siteaudit/amp-validator-api",
           "title": "npm/@siteaudit/amp-validator-api"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@siwatfa/yorn",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@siwatfa/yorn",
+          "title": "npm/@siwatfa/yorn"
         }
       ],
       "first_seen": null,
@@ -397251,6 +397359,18 @@
       "last_seen": null
     },
     {
+      "name": "a.poltoradnev-package-a",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/a.poltoradnev-package-a",
+          "title": "npm/a.poltoradnev-package-a"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "a.poltoradnev-package-b",
       "type": "npm",
       "sources": [
@@ -463749,6 +463869,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alphavantage-adapter",
           "title": "npm/alphavantage-adapter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "alphazone",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alphazone",
+          "title": "npm/alphazone"
         }
       ],
       "first_seen": null,
@@ -536194,6 +536326,18 @@
       "last_seen": null
     },
     {
+      "name": "autoai",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/autoai",
+          "title": "npm/autoai"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "autoapt",
       "type": "npm",
       "sources": [
@@ -573716,7 +573860,7 @@
       "type": "npm",
       "sources": [
         {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base-ui-cli",
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/base-ui-cli",
           "title": "npm/base-ui-cli"
         }
       ],
@@ -584608,6 +584752,30 @@
       "last_seen": null
     },
     {
+      "name": "bcc-design",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bcc-design",
+          "title": "npm/bcc-design"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bcc-design-icons",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bcc-design-icons",
+          "title": "npm/bcc-design-icons"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bce-service-bos-transport",
       "type": "npm",
       "sources": [
@@ -584938,6 +585106,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bcs-compact",
           "title": "npm/bcs-compact"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bcs-core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bcs-core",
+          "title": "npm/bcs-core"
         }
       ],
       "first_seen": null,
@@ -610763,6 +610943,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/blanl-pkg",
           "title": "npm/blanl-pkg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "blastradar",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/blastradar",
+          "title": "npm/blastradar"
         }
       ],
       "first_seen": null,
@@ -676353,6 +676545,18 @@
       "last_seen": null
     },
     {
+      "name": "opencode-engos-ai",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/opencode-engos-ai",
+          "title": "npm/opencode-engos-ai"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "opentiny-react",
       "type": "npm",
       "sources": [
@@ -676384,6 +676588,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/peertube-plugin-google-analytics-js",
           "title": "npm/peertube-plugin-google-analytics-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "phantomx-tool-client",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/phantomx-tool-client",
+          "title": "npm/phantomx-tool-client"
         }
       ],
       "first_seen": null,
