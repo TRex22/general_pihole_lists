@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-08-19T21:08:24Z
+! Generated: 2026-08-20T21:09:10Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2864
+! Total domains: 2863
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -1844,7 +1844,6 @@
 ||outbrain.com^
 ||outbrainimg.com^
 ||outcomes.net^
-||outpost.pub^
 ||oval.id^
 ||overjoyedbicycle.com^
 ||owneriq.net^

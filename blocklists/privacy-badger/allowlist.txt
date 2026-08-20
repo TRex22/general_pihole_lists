@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-08-19T21:08:24Z
+# Generated: 2026-08-20T21:09:10Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 788
+# Total domains: 789
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -505,6 +505,7 @@ openload.co
 openstreetmap.org
 oraclecloud.com
 org.coveo.com
+outpost.pub
 packager.avplayer.com
 packagercdn.avplayer.com
 paddle.com
