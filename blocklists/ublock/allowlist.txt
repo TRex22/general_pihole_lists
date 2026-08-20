@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-08-19T21:08:17Z
-# Total domains: 881
+# Generated: 2026-08-20T21:09:04Z
+# Total domains: 882
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -206,6 +206,7 @@ cloud.notification-naviextras.com
 cm-beacon.nakanohito.jp
 cm-widget.nakanohito.jp
 cmp.inmobi.com
+cmp.osano.com
 coachmag.co.uk
 codepen.io
 codesandbox.io

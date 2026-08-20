@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-19T21:28:20Z",
-  "total": 56475,
+  "generated_at": "2026-08-20T21:27:44Z",
+  "total": 56479,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -57874,6 +57874,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/libaryscraper",
           "title": "PyPI/libaryscraper"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "libasync",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/libasync",
+          "title": "PyPI/libasync"
         }
       ],
       "first_seen": null,
@@ -251339,6 +251351,18 @@
       "last_seen": null
     },
     {
+      "name": "@httttt/mcp-demo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@httttt/mcp-demo",
+          "title": "npm/@httttt/mcp-demo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@hub-la/payments-proto",
       "type": "npm",
       "sources": [
@@ -251897,6 +251921,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@icmb/fetlife-assets",
           "title": "npm/@icmb/fetlife-assets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@idanefraim/my-ui-kit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@idanefraim/my-ui-kit",
+          "title": "npm/@idanefraim/my-ui-kit"
         }
       ],
       "first_seen": null,
@@ -298301,6 +298337,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pa-client/power-code-sdk",
           "title": "npm/@pa-client/power-code-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@pablo_clueless/printr",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pablo_clueless/printr",
+          "title": "npm/@pablo_clueless/printr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@pablo_clueless/sniffr",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pablo_clueless/sniffr",
+          "title": "npm/@pablo_clueless/sniffr"
         }
       ],
       "first_seen": null,
@@ -644363,18 +644423,6 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bugcrowd-npm-poc",
           "title": "npm/bugcrowd-npm-poc"
-        }
-      ],
-      "first_seen": null,
-      "last_seen": null
-    },
-    {
-      "name": "bugexploit",
-      "type": "npm",
-      "sources": [
-        {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bugexploit",
-          "title": "npm/bugexploit"
         }
       ],
       "first_seen": null,
