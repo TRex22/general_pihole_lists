@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T21:27:44Z",
-  "total": 56479,
+  "generated_at": "2026-08-21T21:28:57Z",
+  "total": 56495,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -45,6 +45,78 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/amzn_consolas_client",
           "title": "Cargo/amzn_consolas_client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aovine",
+      "type": "Cargo",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/aovine",
+          "title": "Cargo/aovine"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "append_only_vec",
+      "type": "Cargo",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/append_only_vec",
+          "title": "Cargo/append_only_vec"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "arone",
+      "type": "Cargo",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/arone",
+          "title": "Cargo/arone"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aronenao",
+      "type": "Cargo",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/aronenao",
+          "title": "Cargo/aronenao"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "arrayref",
+      "type": "Cargo",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/arrayref",
+          "title": "Cargo/arrayref"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "internment",
+      "type": "Cargo",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/internment",
+          "title": "Cargo/internment"
         }
       ],
       "first_seen": null,
@@ -97,6 +169,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/mysten_metrics",
           "title": "Cargo/mysten_metrics"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "proc_macro1",
+      "type": "Cargo",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/proc_macro1",
+          "title": "Cargo/proc_macro1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "proc_macro_en",
+      "type": "Cargo",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/proc_macro_en",
+          "title": "Cargo/proc_macro_en"
         }
       ],
       "first_seen": null,
@@ -182,6 +278,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/supertag",
           "title": "Cargo/supertag"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "tinymember",
+      "type": "Cargo",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/tinymember",
+          "title": "Cargo/tinymember"
         }
       ],
       "first_seen": null,
@@ -17335,6 +17443,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/boto3-batch-utils",
           "title": "PyPI/boto3-batch-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "boto4",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/boto4",
+          "title": "PyPI/boto4"
         }
       ],
       "first_seen": null,
@@ -104372,6 +104492,18 @@
       "last_seen": null
     },
     {
+      "name": "reqcrypts",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/reqcrypts",
+          "title": "PyPI/reqcrypts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "reqeist",
       "type": "PyPI",
       "sources": [
@@ -105314,6 +105446,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/requests-core-plugin",
           "title": "PyPI/requests-core-plugin"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "requests-crypt",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/requests-crypt",
+          "title": "PyPI/requests-crypt"
         }
       ],
       "first_seen": null,
@@ -109147,6 +109291,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/scraapy",
           "title": "PyPI/scraapy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "scrambleeer",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/scrambleeer",
+          "title": "PyPI/scrambleeer"
         }
       ],
       "first_seen": null,
@@ -245375,6 +245531,18 @@
       "last_seen": null
     },
     {
+      "name": "@gfe/lx-watcher",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gfe/lx-watcher",
+          "title": "npm/@gfe/lx-watcher"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@gfgtech/ui",
       "type": "npm",
       "sources": [
@@ -253949,6 +254117,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jr0ch17/rce-jr0ch17",
           "title": "npm/@jr0ch17/rce-jr0ch17"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@js-lib-team/env-parser",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@js-lib-team/env-parser",
+          "title": "npm/@js-lib-team/env-parser"
         }
       ],
       "first_seen": null,
@@ -292133,6 +292313,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nexe/logger",
           "title": "npm/@nexe/logger"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@next-fonts/font",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@next-fonts/font",
+          "title": "npm/@next-fonts/font"
         }
       ],
       "first_seen": null,
