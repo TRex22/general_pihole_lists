@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T21:28:57Z",
-  "total": 56495,
+  "generated_at": "2026-08-22T21:25:43Z",
+  "total": 56498,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -109291,6 +109291,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/scraapy",
           "title": "PyPI/scraapy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "scrambleeeer",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/scrambleeeer",
+          "title": "PyPI/scrambleeeer"
         }
       ],
       "first_seen": null,
@@ -302045,6 +302057,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@postman-app-monolith/renderer",
           "title": "npm/@postman-app-monolith/renderer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@postman-cse/okta-aio-linux-arm64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@postman-cse/okta-aio-linux-arm64",
+          "title": "npm/@postman-cse/okta-aio-linux-arm64"
         }
       ],
       "first_seen": null,
@@ -656979,6 +657003,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "by",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://unit42.paloaltonetworks.com/sdlc-supply-chain/",
+          "title": "Connecting the Dots: Securing the Overlooked Corners of the Software Development Lifecycle (SDLC) Supply Chain",
+          "date": "2026-08-21"
+        }
+      ],
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21"
     },
     {
       "name": "by-category",
