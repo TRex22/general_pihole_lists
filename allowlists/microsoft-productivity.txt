@@ -65,6 +65,7 @@ phonefactor.net             # Microsoft MFA (Azure Multi-Factor Auth) — ID 59 
 msecnd.net                  # ID 59 DefaultRequired: *.msecnd.net (Microsoft auth/CDN)
 msauthimages.net            # ID 59 DefaultRequired: *.msauthimages.net
 msftauthimages.net          # ID 59 DefaultRequired: *.msftauthimages.net
+msftauth.net                 # ID 59 DefaultRequired: *.msftauth.net (Microsoft auth/CDN)
 aadcdn.microsoftonline-p.com # Azure portal authentication (azure-portal-safelist-urls)
 
 # Office 365 / Exchange Online
@@ -153,6 +154,7 @@ suite.office.net
 cdn.odc.officeapps.live.com
 cdn.uci.officeapps.live.com
 ajax.aspnetcdn.com
+microsoftusercontent.com    # ID 152 DefaultOptional: Office Scripts / Python in Excel (*.microsoftusercontent.com)
 
 # OneNote
 onenote.com

@@ -195,12 +195,13 @@ awsapps.com
 view.awsapps.com
 
 # AWS Sign-In administration / dual-stack API endpoints (us-east-1)
-# Source: https://docs.aws.amazon.com/signin/latest/userguide/allowlist-domains.html (admin + access-portal sections, fetched 2026-06-18)
+# Source: https://docs.aws.amazon.com/signin/latest/userguide/allowlist-domains.html (admin + access-portal sections, re-verified 2026-08-23)
 signin.us-east-1.api.aws
 oidc.us-east-1.api.aws
 sso.us-east-1.api.aws
 portal.sso.us-east-1.api.aws
 us-east-1.sso.signin.aws
+us-east-1.signin.aws.amazon.com
 
 # AWS Builder ID / Profile
 profile.aws.amazon.com

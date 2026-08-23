@@ -60,8 +60,11 @@ mcp-proxy.anthropic.com
 code.claude.com
 assets-proxy.anthropic.com
 # Desktop app / claude.ai in browser — artifacts CDN
+# *.frame.claudeusercontent.com  # Artifact content reads in Desktop/browser (requires regex wildcard in Pi-hole)
 formulae.brew.sh
 # Homebrew-install update checks only
+registry.npmjs.org
+# also in general.txt — Claude Code plugin installs, npx-launched MCP servers, npm/bun package registry
 
 # Telemetry (optional — disable with DISABLE_TELEMETRY/DO_NOT_TRACK) — not allowlisted
 # http-intake.logs.us5.datadoghq.com
@@ -212,6 +215,7 @@ chat.deepseek.com
 api.deepseek.com
 platform.deepseek.com
 cdn.deepseek.com
+static.deepseek.com
 download.deepseek.com
 
 # ============================================

@@ -234,6 +234,11 @@ migration.atlassian.com
 migration-service.services.atlassian.com
 canvas-workers.atlassian.com
 
+# Third-party partner domains required by Atlassian Cloud products (security/real-time features)
+recaptcha.net
+recaptcha.google.com
+pndsn.com  # PubNub - real-time collaborative editing
+
 # Kollabe (Planning Poker / Sprint Retrospectives)
 # Source: https://kollabe.com
 kollabe.com
@@ -816,6 +821,7 @@ redd.it
 mozilla.org
 www.mozilla.org
 addons.mozilla.org
+support.mozilla.org
 firefox.com
 www.firefox.com
 services.mozilla.com
