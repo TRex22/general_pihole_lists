@@ -5,6 +5,7 @@
 #   - Google Workspace network endpoints: https://knowledge.workspace.google.com/admin/meet/prepare-your-network-for-meet-meetings-and-live-streams
 #     (https://support.google.com/a/answer/1279090 now redirects here)
 #   - Android connectivity check: https://support.google.com/android/answer/9654714
+#     (page now covers metered Wi-Fi/Private DNS settings, not captive-portal domains; content drifted as of 2026-08-23)
 #   - Chrome Safe Browsing / hostname allowlist: https://support.google.com/chrome/a/answer/6334001
 #     (https://support.google.com/chrome/a/answer/6334504 returns 404 as of 2026-06; superseded by 6334001)
 #   - Firebase Cloud Messaging: https://firebase.google.com/docs/cloud-messaging/network-configuration
@@ -56,6 +57,10 @@ lh3.ggpht.com
 lh4.ggpht.com
 lh5.ggpht.com
 lh6.ggpht.com
+
+# Chrome Web Store extension assets (icons, screenshots)
+# Source: https://support.google.com/chrome/a/answer/6334001
+clients2.googleusercontent.com
 
 # Image thumbnails (search results, Gemini image results)
 # Source: Gemini app firewall settings (knowledge.workspace.google.com/admin/gemini/gemini-app-firewall-settings)
@@ -275,6 +280,10 @@ gemini.google.com
 
 # Web activity attestation (required by Gemini/Search anti-abuse checks)
 waa-pa.clients6.google.com
+
+# Google Ads/anti-abuse attestation companion endpoint — kept even with ads
+# personalization off per Gemini app firewall settings source; also in ai-services.txt
+ogads-pa.clients6.google.com
 
 # ============================================
 # GOOGLE CORE (GENERAL)
