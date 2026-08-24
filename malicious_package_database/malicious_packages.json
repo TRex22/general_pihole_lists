@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T21:28:11Z",
-  "total": 56512,
+  "generated_at": "2026-08-24T21:28:48Z",
+  "total": 56526,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -32661,6 +32661,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/env-loader-cli",
           "title": "PyPI/env-loader-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "envprovision",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/envprovision",
+          "title": "PyPI/envprovision"
         }
       ],
       "first_seen": null,
@@ -73154,6 +73166,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/multiutils",
           "title": "PyPI/multiutils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "multyproccess",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/multyproccess",
+          "title": "PyPI/multyproccess"
         }
       ],
       "first_seen": null,
@@ -209287,6 +209311,18 @@
       "last_seen": null
     },
     {
+      "name": "@blurrydespair/libsignal-node",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@blurrydespair/libsignal-node",
+          "title": "npm/@blurrydespair/libsignal-node"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@bmg-web-features/bmg-user-interaction-tracker",
       "type": "npm",
       "sources": [
@@ -225929,6 +225965,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@deel-ui/animation",
           "title": "npm/@deel-ui/animation"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@deepaksilaych/sess",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@deepaksilaych/sess",
+          "title": "npm/@deepaksilaych/sess"
         }
       ],
       "first_seen": null,
@@ -247649,6 +247697,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gs-ux-uitoolkit-react/theme",
           "title": "npm/@gs-ux-uitoolkit-react/theme"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gsas/gsas-sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gsas/gsas-sdk",
+          "title": "npm/@gsas/gsas-sdk"
         }
       ],
       "first_seen": null,
@@ -274841,6 +274901,54 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@medicare-tools/core",
           "title": "npm/@medicare-tools/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@medisend/auth",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@medisend/auth",
+          "title": "npm/@medisend/auth"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@medisend/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@medisend/core",
+          "title": "npm/@medisend/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@medisend/shared",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@medisend/shared",
+          "title": "npm/@medisend/shared"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@medisend/webview-bridge",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@medisend/webview-bridge",
+          "title": "npm/@medisend/webview-bridge"
         }
       ],
       "first_seen": null,
@@ -323457,6 +323565,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@template-builder/iframe-api",
           "title": "npm/@template-builder/iframe-api"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@temptation.js/utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@temptation.js/utils",
+          "title": "npm/@temptation.js/utils"
         }
       ],
       "first_seen": null,
@@ -435543,6 +435663,18 @@
       "last_seen": null
     },
     {
+      "name": "agentgui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/agentgui",
+          "title": "npm/agentgui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "agenthub-ai",
       "type": "npm",
       "sources": [
@@ -472221,6 +472353,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/amt-package-united-icons",
           "title": "npm/amt-package-united-icons"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "amundi-compare",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/amundi-compare",
+          "title": "npm/amundi-compare"
         }
       ],
       "first_seen": null,
@@ -535582,6 +535726,18 @@
       "last_seen": null
     },
     {
+      "name": "auth-otp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/auth-otp",
+          "title": "npm/auth-otp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "auth-paypal",
       "type": "npm",
       "sources": [
@@ -560098,6 +560254,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/babel-plugin-version",
           "title": "npm/babel-plugin-version"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "babel-polyfill-plugin-corejs2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/babel-polyfill-plugin-corejs2",
+          "title": "npm/babel-polyfill-plugin-corejs2"
         }
       ],
       "first_seen": null,
