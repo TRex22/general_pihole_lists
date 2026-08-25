@@ -5,7 +5,7 @@
 #   - Google Workspace network endpoints: https://knowledge.workspace.google.com/admin/meet/prepare-your-network-for-meet-meetings-and-live-streams
 #     (https://support.google.com/a/answer/1279090 now redirects here)
 #   - Android connectivity check: https://support.google.com/android/answer/9654714
-#     (page now covers metered Wi-Fi/Private DNS settings, not captive-portal domains; content drifted as of 2026-08-23)
+#     (page now covers metered Wi-Fi/Private DNS settings, not captive-portal domains; content drifted as of 2026-08-23, re-checked 2026-08-25, still no domains listed)
 #   - Chrome Safe Browsing / hostname allowlist: https://support.google.com/chrome/a/answer/6334001
 #     (https://support.google.com/chrome/a/answer/6334504 returns 404 as of 2026-06; superseded by 6334001)
 #   - Firebase Cloud Messaging: https://firebase.google.com/docs/cloud-messaging/network-configuration
@@ -93,10 +93,12 @@ safebrowsing.google.com
 safebrowsing-cache.google.com
 sb-ssl.google.com
 safebrowsingrealtime.googleapis.com
+enterprise-safebrowsing.googleapis.com
 
 # Certificate Transparency / PKI (security feature)
 # Source: https://support.google.com/chrome/a/answer/6334001
 pki.google.com
+chromeos-ca.gstatic.com
 
 # Chrome / Android update delivery
 dl.google.com
@@ -107,6 +109,11 @@ m.google.com
 edgedl.me.gvt1.com
 update.googleapis.com
 
+# Chrome/ChromeOS Omaha update proxy endpoints
+# Source: https://support.google.com/chrome/a/answer/6334001
+omahaproxy.appspot.com
+cros-omahaproxy.appspot.com
+
 # Chrome Web Store (extension install/update)
 chrome.google.com
 
@@ -115,6 +122,22 @@ chrome.google.com
 ssl.gstatic.com
 accounts.gstatic.com
 policies.google.com
+
+# Chrome misc services (legacy software distribution, first-run guide, client backend)
+# Source: https://support.google.com/chrome/a/answer/6334001
+pack.google.com
+gweb-gettingstartedguide.appspot.com
+scone-pa.clients6.google.com
+
+# ChromeOS device management (cert store already above; hardware info, display quirks database)
+# Source: https://support.google.com/chrome/a/answer/6334001
+alkalichromeosflexhwis2-pa.googleapis.com
+aratea-pa.googleapis.com
+chromeosquirksserver-pa.googleapis.com
+
+# Chrome/ChromeOS native printing (printer configuration profiles)
+# Source: https://support.google.com/chrome/a/answer/6334001
+printerconfigurations.googleusercontent.com
 
 # ============================================
 # GOOGLE WORKSPACE / GMAIL
@@ -125,6 +148,10 @@ contacts.google.com
 peoplestack-pa.googleapis.com
 photos.googleapis.com
 photosdata-pa.googleapis.com
+
+# Google Cloud Search (Workspace search across Gmail/Drive/Docs)
+# Source: https://support.google.com/chrome/a/answer/6334001
+cloudsearch.googleapis.com
 
 # Android push messaging (required for notifications on Android devices)
 mtalk.google.com
@@ -224,6 +251,13 @@ fcm.googleapis.com
 fcm-xmpp.googleapis.com
 iid.googleapis.com
 firebaseinstallations.googleapis.com
+firebaseperusertopics-pa.googleapis.com
+
+# Legacy Google Cloud Messaging (GCM) — deprecated predecessor to FCM; still listed in
+# Chrome's hostname allowlist, kept for apps that haven't migrated off the old API
+# Source: https://support.google.com/chrome/a/answer/6334001
+gcm-http.googleapis.com
+gcm-xmpp.googleapis.com
 
 # ============================================
 # YOUTUBE
@@ -238,6 +272,10 @@ m.youtube.com
 accounts.youtube.com
 youtube-nocookie.com
 www.youtube-nocookie.com
+
+# YouTube for Education
+# Source: https://support.google.com/chrome/a/answer/6334001
+youtubeeducation.com
 
 # YouTube API (required for Shorts feed, search, playback control)
 youtubei.googleapis.com

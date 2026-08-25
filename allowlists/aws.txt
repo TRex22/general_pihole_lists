@@ -222,6 +222,10 @@ us-east-1.threat-mitigation.aws.amazon.com
 # Short-form sign-in domain (newer AWS access portal)
 us-east-1.signin.aws
 
+# AWS IP address ranges (ip-ranges.json / geo-ip-feed.csv download host, fronted by CloudFront)
+# Source: https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
+ip-ranges.amazonaws.com
+
 # Documentation and Support
 docs.aws.amazon.com
 aws.amazon.com

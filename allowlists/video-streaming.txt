@@ -258,6 +258,9 @@ production.assets.clips.twitchcdn.net
 clips-media-assets2.twitch.tv
 ds0h3roq6wcgc.cloudfront.net  # Twitch VOD (from Twitch-Domains repo)
 d2nvs31859zcd8.cloudfront.net # Twitch VOD (from Twitch-Domains repo)
+# video-weaver.<region>.hls.ttvnw.net, video-edge-<id>.<region>.abs.hls.ttvnw.net
+# (dynamic per-session HLS delivery subdomains from Twitch-Domains repo;
+# require regex wildcard entries in Pi-hole, not static domains)
 
 # Bilibili (Chinese video platform — major source of anime content)
 bilibili.com
@@ -595,9 +598,10 @@ litix.io
 
 # JW Player (widely embedded video player and CDN)
 # Source: https://jwplayer.com
-# NOTE: jwplayer.com now 301-redirects to jwpconnatix.com (JW Player merged
-# with/rebranded under Connatix as of 2026); entries kept since existing
-# player/CDN subdomains still resolve and are in active use.
+# NOTE: jwplayer.com now 301-redirects through jwpconnatix.com to jwx.com
+# (JW Player merged with/rebranded under Connatix, now unified as "JWX" as
+# of 2026); entries kept since existing player/CDN subdomains still resolve
+# and are in active use.
 jwplayer.com
 www.jwplayer.com
 jwpcdn.com
