@@ -38,6 +38,7 @@ clients.l.google.com
 
 # Authentication and account management
 accounts.google.com
+passwords.google.com  # source list had "password.google.com" (typo/does not resolve) — corrected to the real Google Password Manager domain
 oauthaccountmanager.googleapis.com
 clientservices.googleapis.com
 # Account/one-google-services bar used by Gemini and other embedded surfaces
@@ -121,6 +122,7 @@ policies.google.com
 
 mail.google.com
 contacts.google.com
+peoplestack-pa.googleapis.com
 photos.googleapis.com
 photosdata-pa.googleapis.com
 

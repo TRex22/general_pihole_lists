@@ -148,6 +148,8 @@ cdn-sharing.adobecc.com
 ping.ui.com
 
 # Facebook / Meta (required by some apps including WhatsApp Web)
+facebook.com
+www.facebook.com
 graph.facebook.com
 upload.facebook.com
 b-graph.facebook.com
@@ -383,6 +385,8 @@ pphosted.com
 proofpointessentials.com
 sourceforge.net
 head.protondb.pages.dev
+www.freewareweb.com
+gutendex.com
 
 paperclip.ing
 
@@ -402,6 +406,23 @@ skillsmp.com
 hgcloud.to
 docs.paperclip.ing
 
+# 8BitDo (gaming controllers)
+8bitdo.com
+support.8bitdo.com
+
+# Weebly (website builder)
+weebly.com
+
+# IdentityMind (identity verification / fraud detection, used for account KYC checks)
+identitymind.store
+regtech.identitymind.store
+cdn1.identitymind.com
+plugin.identitymind.com
+
+# Pusher (WebSocket-as-a-service, used by many sites for real-time features)
+sockjs.pusher.com
+# stats.pusher.com  # client-side usage analytics - telemetry, not allowlisted
+
 # Newsletters / email delivery
 email.mg-d1.substack.com
 click.fidelityinvestments.com
@@ -415,6 +436,12 @@ a3-eu.lifeaiot.com
 # South Africa Newsletters
 broadmedia.9.evlink.net
 dailyinvestor.com
+dailymaverick.co.za
+www.dailymaverick.co.za
+
+# Ninety One (asset management, SA/UK-founded)
+ninetyone.com
+weare.ninetyone.com
 
 # Old Skool Cool
 cd.textfiles.com
@@ -556,6 +583,7 @@ realestate.com.au       # Australian property listings
 
 # Software / dev tools (incorrectly in Privacy Badger blocklist)
 newrelic.com            # New Relic APM - also in SKIP_DOMAINS for scraper
+js-agent.newrelic.com   # New Relic browser RUM agent script - required for pages using New Relic browser monitoring to load correctly
 datadoghq.com           # Datadog monitoring - also in SKIP_DOMAINS
 sentry.io               # Sentry error monitoring - also in SKIP_DOMAINS
 dynatrace.com           # Dynatrace APM - also in SKIP_DOMAINS
@@ -642,6 +670,10 @@ letsdatascience.com
 www.ign.com
 www.claudecodecamp.com
 iv.okcdn.ru
+pastebin.com
+api.shodan.io           # Shodan search engine API
+www.webcrawler.com
+www.yumpu.com           # Yumpu online document/magazine publishing
 
 # ─────────────────────────────────────────────────────────────────────
 # CDN Additions
