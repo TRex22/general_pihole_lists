@@ -25,8 +25,10 @@ Skip `allowlists/ublock_allowlist.txt` (hand-picked personal exceptions, not sou
    - Skip templated/dynamic entries (`{{Region}}.foo.com`, per-tenant IDs, per-instance IDs) — only add concrete hostnames.
    - Skip anything that violates the file's stated exclusion policy — see Telemetry policy below.
    - Verify it resolves with `dig +short <domain>`, checked **individually**, not in a bulk/parallel sweep — under load this resolver has produced false NXDOMAIN results for domains that are definitely live (it flagged `api.claude.ai` and `ebay.com` as dead in one run). Re-check anything suspicious on its own before acting on it.
+   - **Safety check — mandatory, no exceptions:** before adding *any* domain to an allowlist, check it against this repo's own blocklists (`blocklists/malicious.txt`, `blocklists/ublock/*`, `blocklists/privacy-badger/*`, `blocklists/whatsapp-tracking.txt`) with a plain grep for the domain and its registrable base domain. If it appears in any blocklist file — for any reason, even if a "legitimate" source pointed you at it — do **not** add it to the allowlist. Blocklist entries are never something to follow, override, or resolve in the allowlist's favor; treat a hit as a hard stop, note it plainly in your report (domain, which blocklist, and why the source suggested it), and move on. This applies to every candidate, not just rebrand/redirect destinations (see below) — a compromised or malicious domain can show up in a "commonly whitelisted" thread or official-looking doc page too.
    - Place it in the most specific matching file, not `general.txt` — e.g. Xbox domains belong in `microsoft-productivity.txt` (Microsoft-owned), not `general.txt`.
    - Add it under the right thematic section, matching the file's existing comment-banner style, with a source citation if the section doesn't already make that obvious.
+   - If a candidate/existing domain has rebranded, renamed, or now redirects elsewhere (a source page says so, or `curl -sIL <url>` shows a 301/302 chain), don't just note it in a comment — verify the destination domain(s) individually with `dig +short` and add them as active entries too, alongside the legacy domain (keep the legacy entry if it still resolves; see rebrand policy below).
 5. Never delete an existing entry on a suspicion of it being dead without the same individual verification as step 4.
 6. If a documented source itself is dead (404, expired domain), note it in the header comment with the date and status rather than silently dropping it — match the existing style, e.g. `(DEAD as of 2026-06-18, 404 — no official replacement found)`. If WebFetch simply can't reach a source (e.g. it refuses `reddit.com` outright) that's a tool limitation, not a dead source — don't mark it dead; try a corroborating source instead and say in your summary that the fetch was blocked.
 7. Report a per-file summary at the end: what was added, and explicitly state "already current, no changes" for files with nothing new — don't skip a file silently.
@@ -38,6 +40,17 @@ Files marked "Functionality Only" exclude ads, tracking, analytics, and telemetr
 - Don't add it as an active entry.
 - If worth documenting, add it commented-out with a one-line reason, matching the existing convention (see the Sentry/analytics block in `ai-services.txt`).
 - If it's a *tracker* worth blocking rather than allowing, it belongs in a blocklist (e.g. `blocklists/whatsapp-tracking.txt`), not an allowlist.
+
+## Rebrands, renames, and redirects
+
+A source may reveal that a service has renamed, merged, or now redirects its primary domain elsewhere (e.g. "JW Player merged with Connatix, jwplayer.com now redirects through jwpconnatix.com to jwx.com"; "YWBN Mutual Bank renamed to eNL Mutual Bank, new site at ownthebank.co.za"). When you find one of these:
+
+- Confirm the redirect/rename — a `NOTE:`/`Source:` comment in the file already flagging it, WebFetch content stating it, or `curl -sIL <url>` showing the actual redirect chain are all sufficient.
+- Verify the new destination domain(s) individually with `dig +short` (same false-NXDOMAIN caution as any other candidate).
+- **Run the mandatory blocklist safety check (above) on the destination domain before adding it — this matters more here than for an ordinary candidate.** A domain that stops being actively maintained (the old brand shut down, the company folded, the redirect is stale) is a classic domain-hijack/typosquat target: the destination could have been re-registered by someone unrelated to the original service. Never treat "a source page said it redirects here" as sufficient safety evidence on its own — the blocklist grep and the resolves-cleanly check both still apply, and if anything about the destination looks off (unrelated-looking content, a suspicious TLD, no plausible connection to the original service) stop and flag it in your report instead of adding it.
+- **Add the verified, blocklist-clear destination domain(s) as active entries**, not just a comment describing the redirect. A comment alone documents the fact but leaves Pi-hole blocking the thing users actually get redirected to — that defeats the point of the allowlist.
+- Keep the legacy domain(s) too if they still resolve (many rebrands keep the old domain alive as a redirector indefinitely) — this is additive, not a replacement, per the no-deletion-without-verification rule.
+- If you find an existing `NOTE:`/comment in a file that already documents a rebrand/redirect but never added the destination domain (i.e. the note was written and left there instead of acted on), treat that as a gap to fix, not settled — add the missing destination domain(s).
 
 ## Do NOT run the repo's scripts for this
 
