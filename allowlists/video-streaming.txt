@@ -600,8 +600,8 @@ litix.io
 # Source: https://jwplayer.com
 # NOTE: jwplayer.com now 301-redirects through jwpconnatix.com to jwx.com
 # (JW Player merged with/rebranded under Connatix, now unified as "JWX" as
-# of 2026); entries kept since existing player/CDN subdomains still resolve
-# and are in active use.
+# of 2026); legacy player/CDN subdomains kept since they still resolve and
+# are in active use; jwpconnatix.com/jwx.com added as the new rebrand domains.
 jwplayer.com
 www.jwplayer.com
 jwpcdn.com
@@ -609,6 +609,8 @@ content.jwplatform.com
 cdn.jwplayer.com
 jwplatform.com
 jwpsrv.com
+jwpconnatix.com
+jwx.com
 
 # Brightcove (enterprise video platform)
 # Source: https://brightcove.com
