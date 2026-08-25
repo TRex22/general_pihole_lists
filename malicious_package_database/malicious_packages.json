@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T21:28:48Z",
-  "total": 56526,
+  "generated_at": "2026-08-25T21:30:16Z",
+  "total": 56530,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -71732,6 +71732,18 @@
       "last_seen": null
     },
     {
+      "name": "minecraft-ytreceiver",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/minecraft-ytreceiver",
+          "title": "PyPI/minecraft-ytreceiver"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "minecraftskyblockapi",
       "type": "PyPI",
       "sources": [
@@ -72938,6 +72950,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/msgspec-python313-pre",
           "title": "PyPI/msgspec-python313-pre"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "msrcpoc",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/msrcpoc",
+          "title": "PyPI/msrcpoc"
         }
       ],
       "first_seen": null,
@@ -100186,6 +100210,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/python-uvicorn",
           "title": "PyPI/python-uvicorn"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "python-walletlibr-v",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/python-walletlibr-v",
+          "title": "PyPI/python-walletlibr-v"
         }
       ],
       "first_seen": null,
@@ -237485,6 +237521,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@elastic-internal/dojox",
           "title": "npm/@elastic-internal/dojox"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@elc-online/up-analytics",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@elc-online/up-analytics",
+          "title": "npm/@elc-online/up-analytics"
         }
       ],
       "first_seen": null,
