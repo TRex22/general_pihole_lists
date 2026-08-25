@@ -61,6 +61,9 @@ code.claude.com
 assets-proxy.anthropic.com
 # Desktop app / claude.ai in browser — artifacts CDN
 # *.frame.claudeusercontent.com  # Artifact content reads in Desktop/browser (requires regex wildcard in Pi-hole)
+fonts.googleapis.com
+fonts.gstatic.com
+# also in google.txt / easyllama.txt — Google Fonts used by Artifacts (optional; fallback typefaces used if blocked)
 formulae.brew.sh
 # Homebrew-install update checks only
 registry.npmjs.org
@@ -334,8 +337,17 @@ business.githubcopilot.com
 enterprise.githubcopilot.com
 api.githubcopilot.com
 copilot-proxy.githubusercontent.com
+origin-tracker.githubusercontent.com
+# Public code matching / duplicate-detection filter used by Copilot completions
+api.mcp.github.com
+# GitHub MCP registry API, used by Copilot agent mode
+ai.azure.com
+api.catalog.azureml.ms
+# Copilot Voice (Azure AI Studio / ML gallery backend)
 # copilot-telemetry.githubusercontent.com  # Copilot usage telemetry - not allowlisted (may choose to block)
 # default.exp-tas.com  # Microsoft Experimentation Task Assignment Service (A/B testing) - telemetry, may choose to block
+# collector.github.com  # Copilot telemetry/analytics collector - not allowlisted (may choose to block)
+# copilot-reports.github.com  # Copilot usage-report generation (org admin analytics) - not allowlisted (may choose to block)
 
 # ============================================
 # REPLIT (AI Agent)

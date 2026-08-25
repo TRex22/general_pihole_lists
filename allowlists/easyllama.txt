@@ -114,6 +114,8 @@ login.live.com
 # Intercom messenger/attachments (requires regex wildcard entries in Pi-hole)
 # *.intercom-messenger.com
 # *.intercom-attachments-1.com
+# *.intercom-attachments-2.com through *.intercom-attachments-9.com (verified intercom-attachments-2.com, intercom-attachments-9.com resolve, 2026-08-25)
+# *.intercom-attachments.eu, *.au.intercom-attachments.com (verified resolve, 2026-08-25)
 
 # Video streaming (Wistia)
 # EasyLlama uses Wistia for training video hosting

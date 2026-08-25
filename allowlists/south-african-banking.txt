@@ -27,7 +27,8 @@
 #   - Ubank (mutual bank): https://www.ubank.co.za/
 #   - Finbond Mutual Bank: https://www.finbond.co.za/
 #   - GBS Mutual Bank: https://www.gbsbank.co.za/
-#   - YWBN Mutual Bank: https://www.ywbn.co.za/
+#   - YWBN Mutual Bank (renamed eNL Mutual Bank effective 2025-07-01 per SARB
+#     gazette): https://www.ywbn.co.za/ , https://www.ownthebank.co.za/
 #   - HBZ Bank: https://www.hbzbank.co.za/
 
 # Nedbank (Adobe Experience Cloud first-party tracking, required for online
@@ -38,6 +39,7 @@ nedbank.sc.omtrdc.net
 # Nedbank
 nedbank.co.za
 www.nedbank.co.za
+personal.nedbank.co.za
 secured.nedbank.co.za
 
 # Absa
@@ -82,6 +84,7 @@ gotyme.co.za
 # Discovery Bank
 discovery.co.za
 www.discovery.co.za
+online.discovery.bank
 
 # Bank Zero
 bankzero.co.za
@@ -110,7 +113,9 @@ banking.ithala.co.za
 myithala.co.za
 www.myithala.co.za
 
-# Grindrod Bank
+# Grindrod Bank (banking licence returned to SARB 2024-08 after full
+# integration into African Bank per 2022 acquisition; site returns Cloudflare
+# 525 as of 2026-08-25 — entry kept, domain still resolves via DNS)
 grindrodbank.co.za
 
 # Access Bank South Africa
@@ -122,8 +127,11 @@ www.ibanking.albarakaonline.co.za
 mybanking.albaraka.co.za
 statements.albaraka.co.za
 apply.albaraka.co.za
+cdn.albaraka.co.za
 
-# Ubank (mutual bank)
+# Ubank (mutual bank; assets/liabilities acquired by African Bank 2022-08-24,
+# legal entity placed under curatorship; site returns Cloudflare 522 as of
+# 2026-08-25 — entries kept, domains still resolve via DNS)
 ubank.co.za
 www.ubank.co.za
 
@@ -138,10 +146,14 @@ gbsbank.co.za
 www.gbsbank.co.za
 ibank.gbsbank.co.za
 
-# YWBN Mutual Bank
+# YWBN Mutual Bank (renamed eNL Mutual Bank effective 2025-07-01 per SARB
+# gazette; new site at ownthebank.co.za — legacy ywbn.co.za entries kept,
+# both still resolve)
 ywbn.co.za
 www.ywbn.co.za
 ywbnmutualbank.co.za
+ownthebank.co.za
+www.ownthebank.co.za
 
 # HBZ Bank (foreign subsidiary; login/onboarding served from parent
 # Habib Bank group domain, not hbzbank.co.za)

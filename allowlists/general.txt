@@ -53,11 +53,21 @@ db.tt
 dl.dropboxusercontent.com
 ns1.dropbox.com
 ns2.dropbox.com
+dropboxapi.com
+api.dropboxapi.com
+# content.dropboxapi.com  # already listed in "Dev tools / SDKs / CDNs" AI blocklist review section below
+dropboxbusiness.com
+dropboxcaptcha.com
+dropboxforum.com
+dropboxforums.com
+dropboxpartners.com
+getdropbox.com
 
 # Stripe
 # Source: https://github.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/blob/master/Whitelist-Modules/whitelist_for_stripe.txt
 stripe.com
 stripe.network
+# stripecdn.com  # already listed in "Domains identified in AI blocklist review" Payments/fintech section below
 
 # PayPal / Braintree
 # Source: https://github.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/blob/master/Whitelist-Modules/whitelist_for_paypal.txt
@@ -153,6 +163,14 @@ www.facebook.com
 graph.facebook.com
 upload.facebook.com
 b-graph.facebook.com
+connect.facebook.com
+api.facebook.com
+fb.me
+cdn.fbsbx.com
+edge-chat.facebook.com
+web.facebook.com
+rupload.facebook.com
+l.facebook.com
 
 # Lucid Charts
 # Source: https://lucid.app/network-requirements (DEAD as of 2026-08-07, 404 — lucid.co/security/network-requirements exists but blocks automated fetches; no verified replacement content found)
@@ -240,11 +258,13 @@ canvas-workers.atlassian.com
 recaptcha.net
 recaptcha.google.com
 pndsn.com  # PubNub - real-time collaborative editing
+unsplash.com  # stock photo asset hosting used by Atlassian products
 
 # Kollabe (Planning Poker / Sprint Retrospectives)
 # Source: https://kollabe.com
 kollabe.com
 www.kollabe.com
+kollabe.supahub.com
 
 # Canva
 # Source: https://www.canva.com/help/allow-canva-through-firewall/
@@ -284,6 +304,9 @@ notification.nothing.tech
 nothingtech.link
 weather1.nothingtech.link
 news.nothingtech.link
+nothing.community
+careers.nothing.tech
+playground.nothing.tech
 
 # Pushbullet
 # Source: https://docs.pushbullet.com/
@@ -298,6 +321,9 @@ pushbullet.imgix.net
 update.pushbullet.com
 upload.pushbullet.com
 dl.pushbulletusercontent.com
+blog.pushbullet.com
+help.pushbullet.com
+docs.pushbullet.com
 # zebra.pushbullet.com  # telemetry, but blocks desktop app startup if blocked
 
 # Malwarebytes
@@ -480,6 +506,9 @@ community.n8n.io
 blog.n8n.io
 app.n8n.cloud
 n8n.cloud
+learn.n8n.io
+experts.n8n.io
+merch.n8n.io
 
 # Certificate Authorities — OCSP & CRL
 # OCSP = Online Certificate Status Protocol; CRL = Certificate Revocation List
@@ -856,6 +885,7 @@ addons.mozilla.org
 support.mozilla.org
 firefox.com
 www.firefox.com
+getfirefox.com
 services.mozilla.com
 merino.services.mozilla.com
 cdn.mozilla.net
@@ -863,6 +893,10 @@ img-getpocket.cdn.mozilla.net
 getpocket.com
 app.getpocket.com
 mozilla-ohttp-gateway.fastly.net
+bugzilla.mozilla.org
+hg.mozilla.org
+wiki.mozilla.org
+# crash-stats.mozilla.com  # crash report telemetry - not allowlisted
 
 # ─────────────────────────────────────────────────────────────────────
 # Programming Language Package Managers & Dev Tool Hosts
@@ -880,6 +914,7 @@ bootstrap.pypa.io
 registry.npmjs.org
 npmjs.com
 www.npmjs.com
+skimdb.npmjs.com
 
 # Yarn
 registry.yarnpkg.com
@@ -892,6 +927,8 @@ rubygems.org
 www.rubygems.org
 api.rubygems.org
 index.rubygems.org
+blog.rubygems.org
+status.rubygems.org
 
 # Rust (crates.io)
 # Source: https://doc.rust-lang.org/cargo/reference/registries.html
@@ -909,6 +946,7 @@ dotnet.microsoft.com
 
 # Java / Maven / Kotlin
 # Source: https://maven.apache.org/
+maven.apache.org
 repo1.maven.org
 repo.maven.apache.org
 search.maven.org
@@ -921,12 +959,17 @@ gradle.org
 services.gradle.org
 downloads.gradle.org
 plugins.gradle.org
+docs.gradle.org
+discuss.gradle.org
 
 # Swift / Objective-C (CocoaPods)
 # Source: https://guides.cocoapods.org/
 cocoapods.org
 cdn.cocoapods.org
 trunk.cocoapods.org
+guides.cocoapods.org
+blog.cocoapods.org
+status.cocoapods.org
 
 # JavaScript CDNs (shared across languages/frameworks)
 unpkg.com
@@ -953,6 +996,8 @@ pub.dev
 pub.dartlang.org
 dart.dev
 flutter.dev
+api.dart.dev
+dartpad.dev
 
 # Deno
 deno.land

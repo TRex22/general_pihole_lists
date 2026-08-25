@@ -112,6 +112,7 @@ pus8-collabhubrtc.officeapps.live.com
 # browser.events.data.microsoft.com  # Browser telemetry
 # events.data.microsoft.com  # Microsoft telemetry pipeline (ID 69, urls-and-ip-address-ranges)
 # powerpoint-telemetry.officeapps.live.com  # PowerPoint telemetry
+# dc.services.visualstudio.com  # Azure Application Insights telemetry ingestion (ID 75, urls-and-ip-address-ranges)
 
 # Microsoft 365 / OneDrive
 onedrive.live.com
@@ -258,6 +259,7 @@ informationprotection.hosting.portal.azure.net
 
 flow.microsoft.com
 make.powerautomate.com
+powerautomate.com                   # ID 153 DefaultRequired: *.powerautomate.com (base domain)
 powerapps.com
 make.powerapps.com
 # *.azure-apim.net - requires regex wildcard in Pi-hole
@@ -470,7 +472,11 @@ zdmapi.zoom.us
 
 # Zoom status page and in-meeting Zoom Apps
 zoomstatus.com
+status.zoom.us               # Official Statuspage.io status page (Zoom network firewall requirements)
 zoomapp.cloud
+
+# Zoom CAPTCHA (sign-up/login challenge flows)
+hcaptcha.com                 # Zoom network firewall requirements
 
 # Zoom CDN
 cdn.zoom.us
@@ -609,7 +615,23 @@ verisign.com
 verisign.net
 symcd.com
 
+# GoDaddy / Starfield / Sectigo / Comodo / Entrust CRL & OCSP (Zoom certificate chain, Zoom network firewall requirements)
+crl.entrust.net
+certificates.godaddy.com
+crl.godaddy.com
+ocsp.godaddy.com
+certificates.starfieldtech.com
+crl.starfieldtech.com
+ocsp.starfieldtech.com
+ocsp.sectigo.com
+crl.sectigo.com
+ocsp.usertrust.com
+crl.usertrust.com
+ocsp.comodoca.com
+crl.comodoca.com
+
 # Virtual Earth (Maps in Microsoft products)
+virtualearth.net            # ID 93 DefaultOptional: *.virtualearth.net (base domain, ProPlus auxiliary URLs)
 dev.virtualearth.net
 ecn.dev.virtualearth.net
 t0.ssl.ak.dynamic.tiles.virtualearth.net

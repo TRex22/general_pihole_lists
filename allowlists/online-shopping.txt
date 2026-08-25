@@ -111,10 +111,15 @@ danuoyi.alicdn.com
 cmap.alibaba.com
 img.alibaba.com
 ynuf.alipay.com
+us.ynuf.aliapp.org
 
 # Alibaba affiliate / link tracking (required for order confirmation emails)
 alinkcorp.com
 alilc.com
+
+# AliExpress anti-bot / slider-captcha verification (required for login/checkout)
+# Source: https://github.com/bubusan80/whitelist_hosting_public/blob/main/In_base_al_servizio/Aliexpress_Alibaba.txt
+fourier.taobao.com
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Temu (PDD Holdings)
@@ -228,6 +233,8 @@ browse.ebay.com
 cgi.ebay.com
 pages.ebay.com
 pay.ebay.com
+payments.ebay.com
+cart.payments.ebay.com
 checkout.ebay.com
 motors.ebay.com
 api.ebay.com
@@ -238,6 +245,10 @@ ship.ebay.com
 feedback.ebay.com
 contact.ebay.com
 community.ebay.com
+members.ebay.com
+stores.ebay.com
+autosug.ebay.com
+deals.ebay.com
 picassets.ebay.com
 resolutioncenter.ebay.com
 
@@ -277,6 +288,8 @@ ebay-us.com
 # Source: https://github.com/JamieFarrelly/Popular-Site-Subdomains/blob/master/Ebay.com.txt
 shop.ebay.com
 sell.ebay.com
+bulksell.ebay.com
+sales-reports.ebay.com
 
 # eBay regional storefronts
 ebay.co.uk
