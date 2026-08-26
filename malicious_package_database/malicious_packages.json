@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T21:30:16Z",
-  "total": 56530,
+  "generated_at": "2026-08-26T22:21:54Z",
+  "total": 56542,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -9704,6 +9704,18 @@
       "last_seen": null
     },
     {
+      "name": "0xfighter3",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/0xfighter3",
+          "title": "PyPI/0xfighter3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "123bla",
       "type": "PyPI",
       "sources": [
@@ -16111,6 +16123,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bigpyx",
           "title": "PyPI/bigpyx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bigquery-agent-analytics-tracing",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bigquery-agent-analytics-tracing",
+          "title": "PyPI/bigquery-agent-analytics-tracing"
         }
       ],
       "first_seen": null,
@@ -95164,6 +95188,18 @@
       "last_seen": null
     },
     {
+      "name": "pybitjs",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pybitjs",
+          "title": "PyPI/pybitjs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "pybowl",
       "type": "PyPI",
       "sources": [
@@ -103682,6 +103718,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/rc4-secure",
           "title": "PyPI/rc4-secure"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "rce-test",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/rce-test",
+          "title": "PyPI/rce-test"
         }
       ],
       "first_seen": null,
@@ -125365,6 +125413,18 @@
       "last_seen": null
     },
     {
+      "name": "syntaxerror-package-12345",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/syntaxerror-package-12345",
+          "title": "PyPI/syntaxerror-package-12345"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "syntaxlogger",
       "type": "PyPI",
       "sources": [
@@ -140880,6 +140940,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongrider",
           "title": "PyPI/trongrider"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "trongridet",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongridet",
+          "title": "PyPI/trongridet"
         }
       ],
       "first_seen": null,
@@ -244295,6 +244367,18 @@
       "last_seen": null
     },
     {
+      "name": "@fongsidev/scraper",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fongsidev/scraper",
+          "title": "npm/@fongsidev/scraper"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@foodplex/ui",
       "type": "npm",
       "sources": [
@@ -264209,6 +264293,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@loofah/fetlife-assets",
           "title": "npm/@loofah/fetlife-assets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@lordmega/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@lordmega/baileys",
+          "title": "npm/@lordmega/baileys"
         }
       ],
       "first_seen": null,
@@ -476319,6 +476415,18 @@
       "last_seen": null
     },
     {
+      "name": "analytics-v2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/analytics-v2",
+          "title": "npm/analytics-v2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "analytics.js-integration",
       "type": "npm",
       "sources": [
@@ -518913,6 +519021,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/array-routes",
           "title": "npm/array-routes"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "array-shuffler-utils-99",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/array-shuffler-utils-99",
+          "title": "npm/array-shuffler-utils-99"
         }
       ],
       "first_seen": null,
@@ -563602,6 +563722,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-dtz",
           "title": "npm/baileys-dtz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "baileys-inmemory-store",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-inmemory-store",
+          "title": "npm/baileys-inmemory-store"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "baileys-mbuilder",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-mbuilder",
+          "title": "npm/baileys-mbuilder"
         }
       ],
       "first_seen": null,
