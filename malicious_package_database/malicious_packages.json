@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T22:21:54Z",
-  "total": 56542,
+  "generated_at": "2026-08-28T00:27:58Z",
+  "total": 56557,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -28669,6 +28669,18 @@
       "last_seen": null
     },
     {
+      "name": "decoris",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/decoris",
+          "title": "PyPI/decoris"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "deepface-weight",
       "type": "PyPI",
       "sources": [
@@ -32277,6 +32289,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ehtereum",
           "title": "PyPI/ehtereum"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ekx-report-utils",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ekx-report-utils",
+          "title": "PyPI/ekx-report-utils"
         }
       ],
       "first_seen": null,
@@ -70382,6 +70406,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mathepy",
           "title": "PyPI/mathepy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "mathkitlite",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mathkitlite",
+          "title": "PyPI/mathkitlite"
         }
       ],
       "first_seen": null,
@@ -108907,6 +108943,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sankislayer",
           "title": "PyPI/sankislayer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "sap-quarterly-report",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sap-quarterly-report",
+          "title": "PyPI/sap-quarterly-report"
         }
       ],
       "first_seen": null,
@@ -215087,6 +215135,18 @@
       "last_seen": null
     },
     {
+      "name": "@cortana-md/engine",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@cortana-md/engine",
+          "title": "npm/@cortana-md/engine"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@cosell/accountplan",
       "type": "npm",
       "sources": [
@@ -248645,6 +248705,102 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hd-base/atoms",
           "title": "npm/@hd-base/atoms"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hd-team/app-dnpkg-beta",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hd-team/app-dnpkg-beta",
+          "title": "npm/@hd-team/app-dnpkg-beta"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hd-team/app-dnpkg-eight",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hd-team/app-dnpkg-eight",
+          "title": "npm/@hd-team/app-dnpkg-eight"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hd-team/app-dnpkg-prod",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hd-team/app-dnpkg-prod",
+          "title": "npm/@hd-team/app-dnpkg-prod"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hd-team/app-dnpkg-ten",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hd-team/app-dnpkg-ten",
+          "title": "npm/@hd-team/app-dnpkg-ten"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hd-team/app-dnpkg-test",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hd-team/app-dnpkg-test",
+          "title": "npm/@hd-team/app-dnpkg-test"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hd-team/app-dnpkg-three",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hd-team/app-dnpkg-three",
+          "title": "npm/@hd-team/app-dnpkg-three"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hd-team/app-impkg-prod",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hd-team/app-impkg-prod",
+          "title": "npm/@hd-team/app-impkg-prod"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hd-team/app-impkg-test",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hd-team/app-impkg-test",
+          "title": "npm/@hd-team/app-impkg-test"
         }
       ],
       "first_seen": null,
@@ -302405,6 +302561,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@postman-app-monolith/renderer",
           "title": "npm/@postman-app-monolith/renderer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@postman-cse/okta-aio-darwin-arm64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@postman-cse/okta-aio-darwin-arm64",
+          "title": "npm/@postman-cse/okta-aio-darwin-arm64"
         }
       ],
       "first_seen": null,
@@ -617063,6 +617231,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bnog-core",
           "title": "npm/bnog-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bnotify-web-sdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bnotify-web-sdk",
+          "title": "npm/bnotify-web-sdk"
         }
       ],
       "first_seen": null,
