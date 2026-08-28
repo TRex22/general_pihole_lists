@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-28T00:27:58Z",
-  "total": 56557,
+  "generated_at": "2026-08-28T22:38:35Z",
+  "total": 56980,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -18883,6 +18883,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/calc123lorc",
           "title": "PyPI/calc123lorc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "calcboxlite",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/calcboxlite",
+          "title": "PyPI/calcboxlite"
         }
       ],
       "first_seen": null,
@@ -46113,6 +46125,54 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/flyio-token-client-efgh",
           "title": "PyPI/flyio-token-client-efgh"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "flyteplugins-agento11y",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/flyteplugins-agento11y",
+          "title": "PyPI/flyteplugins-agento11y"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "flyteplugins-echo",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/flyteplugins-echo",
+          "title": "PyPI/flyteplugins-echo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "flyteplugins-nsight",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/flyteplugins-nsight",
+          "title": "PyPI/flyteplugins-nsight"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "flyteplugins-redis",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/flyteplugins-redis",
+          "title": "PyPI/flyteplugins-redis"
         }
       ],
       "first_seen": null,
@@ -96922,6 +96982,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pygame-pytorch",
           "title": "PyPI/pygame-pytorch"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "pygame-renderkit",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pygame-renderkit",
+          "title": "PyPI/pygame-renderkit"
         }
       ],
       "first_seen": null,
@@ -149015,6 +149087,42 @@
       "last_seen": null
     },
     {
+      "name": "yaml-report-formatter",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/yaml-report-formatter",
+          "title": "PyPI/yaml-report-formatter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "yamlformat-tools",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/yamlformat-tools",
+          "title": "PyPI/yamlformat-tools"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "yamlformatter-utils",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/yamlformatter-utils",
+          "title": "PyPI/yamlformatter-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "yc-as-client",
       "type": "PyPI",
       "sources": [
@@ -194631,6 +194739,4890 @@
       "last_seen": null
     },
     {
+      "name": "3layerdipstack04tdo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack04tdo",
+          "title": "npm/3layerdipstack04tdo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack0dsxsc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack0dsxsc",
+          "title": "npm/3layerdipstack0dsxsc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack0e2jp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack0e2jp",
+          "title": "npm/3layerdipstack0e2jp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack0ighvf",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack0ighvf",
+          "title": "npm/3layerdipstack0ighvf"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack0y4arx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack0y4arx",
+          "title": "npm/3layerdipstack0y4arx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack18hkx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack18hkx",
+          "title": "npm/3layerdipstack18hkx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack1a4xg",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack1a4xg",
+          "title": "npm/3layerdipstack1a4xg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack1ccrm9",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack1ccrm9",
+          "title": "npm/3layerdipstack1ccrm9"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack1eognp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack1eognp",
+          "title": "npm/3layerdipstack1eognp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack1ew1w",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack1ew1w",
+          "title": "npm/3layerdipstack1ew1w"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack1g5cxo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack1g5cxo",
+          "title": "npm/3layerdipstack1g5cxo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack1igc1l",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack1igc1l",
+          "title": "npm/3layerdipstack1igc1l"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack1lb2r",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack1lb2r",
+          "title": "npm/3layerdipstack1lb2r"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack1lkqg9",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack1lkqg9",
+          "title": "npm/3layerdipstack1lkqg9"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack1nz8o",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack1nz8o",
+          "title": "npm/3layerdipstack1nz8o"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack1qjbr",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack1qjbr",
+          "title": "npm/3layerdipstack1qjbr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack1ykdgn",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack1ykdgn",
+          "title": "npm/3layerdipstack1ykdgn"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack2cyinb",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack2cyinb",
+          "title": "npm/3layerdipstack2cyinb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack2pdlo4",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack2pdlo4",
+          "title": "npm/3layerdipstack2pdlo4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack2u8fh",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack2u8fh",
+          "title": "npm/3layerdipstack2u8fh"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack2ya7xz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack2ya7xz",
+          "title": "npm/3layerdipstack2ya7xz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack3h0mt",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack3h0mt",
+          "title": "npm/3layerdipstack3h0mt"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack3hsru3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack3hsru3",
+          "title": "npm/3layerdipstack3hsru3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack3i8km",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack3i8km",
+          "title": "npm/3layerdipstack3i8km"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack3jen8",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack3jen8",
+          "title": "npm/3layerdipstack3jen8"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack3psj0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack3psj0",
+          "title": "npm/3layerdipstack3psj0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack3vept",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack3vept",
+          "title": "npm/3layerdipstack3vept"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack4dhmdb",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack4dhmdb",
+          "title": "npm/3layerdipstack4dhmdb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack4dhts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack4dhts",
+          "title": "npm/3layerdipstack4dhts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack4ebgmu",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack4ebgmu",
+          "title": "npm/3layerdipstack4ebgmu"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack4hg6p",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack4hg6p",
+          "title": "npm/3layerdipstack4hg6p"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack4ib1jd",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack4ib1jd",
+          "title": "npm/3layerdipstack4ib1jd"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack4iivta",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack4iivta",
+          "title": "npm/3layerdipstack4iivta"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack4ilqnj",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack4ilqnj",
+          "title": "npm/3layerdipstack4ilqnj"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack4pstwd",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack4pstwd",
+          "title": "npm/3layerdipstack4pstwd"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack4wsms0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack4wsms0",
+          "title": "npm/3layerdipstack4wsms0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5a7otk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5a7otk",
+          "title": "npm/3layerdipstack5a7otk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5aycu",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5aycu",
+          "title": "npm/3layerdipstack5aycu"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5cwu1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5cwu1",
+          "title": "npm/3layerdipstack5cwu1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5dfkei",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5dfkei",
+          "title": "npm/3layerdipstack5dfkei"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5eariu",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5eariu",
+          "title": "npm/3layerdipstack5eariu"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5f0nl",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5f0nl",
+          "title": "npm/3layerdipstack5f0nl"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5f9qf",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5f9qf",
+          "title": "npm/3layerdipstack5f9qf"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5hkzmg",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5hkzmg",
+          "title": "npm/3layerdipstack5hkzmg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5nigd",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5nigd",
+          "title": "npm/3layerdipstack5nigd"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5r1sh",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5r1sh",
+          "title": "npm/3layerdipstack5r1sh"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5tuhr5",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5tuhr5",
+          "title": "npm/3layerdipstack5tuhr5"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5vnbm",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5vnbm",
+          "title": "npm/3layerdipstack5vnbm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5vpco",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5vpco",
+          "title": "npm/3layerdipstack5vpco"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack5zhcdq",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack5zhcdq",
+          "title": "npm/3layerdipstack5zhcdq"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack6ih5ru",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack6ih5ru",
+          "title": "npm/3layerdipstack6ih5ru"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack6jqkjs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack6jqkjs",
+          "title": "npm/3layerdipstack6jqkjs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack6kyra",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack6kyra",
+          "title": "npm/3layerdipstack6kyra"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack6mpbze",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack6mpbze",
+          "title": "npm/3layerdipstack6mpbze"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack6wih1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack6wih1",
+          "title": "npm/3layerdipstack6wih1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack6wovmj",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack6wovmj",
+          "title": "npm/3layerdipstack6wovmj"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack71tlcd",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack71tlcd",
+          "title": "npm/3layerdipstack71tlcd"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack74ooau",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack74ooau",
+          "title": "npm/3layerdipstack74ooau"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack75faj",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack75faj",
+          "title": "npm/3layerdipstack75faj"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack7atotw",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack7atotw",
+          "title": "npm/3layerdipstack7atotw"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack7cgotb",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack7cgotb",
+          "title": "npm/3layerdipstack7cgotb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack7d0vc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack7d0vc",
+          "title": "npm/3layerdipstack7d0vc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack7eu4ry",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack7eu4ry",
+          "title": "npm/3layerdipstack7eu4ry"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack7ezqzp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack7ezqzp",
+          "title": "npm/3layerdipstack7ezqzp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack7ke6fz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack7ke6fz",
+          "title": "npm/3layerdipstack7ke6fz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack7lknl",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack7lknl",
+          "title": "npm/3layerdipstack7lknl"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack7u3sgs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack7u3sgs",
+          "title": "npm/3layerdipstack7u3sgs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack7wbw9m",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack7wbw9m",
+          "title": "npm/3layerdipstack7wbw9m"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack7zgtws",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack7zgtws",
+          "title": "npm/3layerdipstack7zgtws"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack89dtg",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack89dtg",
+          "title": "npm/3layerdipstack89dtg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack8b4dts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack8b4dts",
+          "title": "npm/3layerdipstack8b4dts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack8e0an",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack8e0an",
+          "title": "npm/3layerdipstack8e0an"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack8lj8gm",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack8lj8gm",
+          "title": "npm/3layerdipstack8lj8gm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack8nvcr",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack8nvcr",
+          "title": "npm/3layerdipstack8nvcr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack8v1vs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack8v1vs",
+          "title": "npm/3layerdipstack8v1vs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack8xhwdm",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack8xhwdm",
+          "title": "npm/3layerdipstack8xhwdm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack8yfoyr",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack8yfoyr",
+          "title": "npm/3layerdipstack8yfoyr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack8zg7y",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack8zg7y",
+          "title": "npm/3layerdipstack8zg7y"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack97rmzr",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack97rmzr",
+          "title": "npm/3layerdipstack97rmzr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack9ai4f",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack9ai4f",
+          "title": "npm/3layerdipstack9ai4f"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack9b0cq",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack9b0cq",
+          "title": "npm/3layerdipstack9b0cq"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack9d7ow",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack9d7ow",
+          "title": "npm/3layerdipstack9d7ow"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack9gdxi6",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack9gdxi6",
+          "title": "npm/3layerdipstack9gdxi6"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack9j4ke",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack9j4ke",
+          "title": "npm/3layerdipstack9j4ke"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack9ma2d",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack9ma2d",
+          "title": "npm/3layerdipstack9ma2d"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack9nawzv",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack9nawzv",
+          "title": "npm/3layerdipstack9nawzv"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack9riv6",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack9riv6",
+          "title": "npm/3layerdipstack9riv6"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack9thbs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack9thbs",
+          "title": "npm/3layerdipstack9thbs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack9u8ge",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack9u8ge",
+          "title": "npm/3layerdipstack9u8ge"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack9umaj",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack9umaj",
+          "title": "npm/3layerdipstack9umaj"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack9umzt",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack9umzt",
+          "title": "npm/3layerdipstack9umzt"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstack9vcxi9",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstack9vcxi9",
+          "title": "npm/3layerdipstack9vcxi9"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacka1fnr",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacka1fnr",
+          "title": "npm/3layerdipstacka1fnr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackaac4df",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackaac4df",
+          "title": "npm/3layerdipstackaac4df"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackaawov4",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackaawov4",
+          "title": "npm/3layerdipstackaawov4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackaho91u",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackaho91u",
+          "title": "npm/3layerdipstackaho91u"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackaudu38",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackaudu38",
+          "title": "npm/3layerdipstackaudu38"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackay9drz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackay9drz",
+          "title": "npm/3layerdipstackay9drz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackb0eeq",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackb0eeq",
+          "title": "npm/3layerdipstackb0eeq"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackb1ojqr",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackb1ojqr",
+          "title": "npm/3layerdipstackb1ojqr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackb68qiv",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackb68qiv",
+          "title": "npm/3layerdipstackb68qiv"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackba1nq3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackba1nq3",
+          "title": "npm/3layerdipstackba1nq3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackba23j",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackba23j",
+          "title": "npm/3layerdipstackba23j"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackbgh33k",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackbgh33k",
+          "title": "npm/3layerdipstackbgh33k"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackbn5wu",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackbn5wu",
+          "title": "npm/3layerdipstackbn5wu"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackbn8wg",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackbn8wg",
+          "title": "npm/3layerdipstackbn8wg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackbndk47",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackbndk47",
+          "title": "npm/3layerdipstackbndk47"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackbopqb8",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackbopqb8",
+          "title": "npm/3layerdipstackbopqb8"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackbxw4k",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackbxw4k",
+          "title": "npm/3layerdipstackbxw4k"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackbz1nv9",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackbz1nv9",
+          "title": "npm/3layerdipstackbz1nv9"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackc6c5kn",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackc6c5kn",
+          "title": "npm/3layerdipstackc6c5kn"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackcaujb",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackcaujb",
+          "title": "npm/3layerdipstackcaujb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackcbatl4",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackcbatl4",
+          "title": "npm/3layerdipstackcbatl4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackcfbla",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackcfbla",
+          "title": "npm/3layerdipstackcfbla"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackcfu35",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackcfu35",
+          "title": "npm/3layerdipstackcfu35"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackch7e5",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackch7e5",
+          "title": "npm/3layerdipstackch7e5"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackchk77",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackchk77",
+          "title": "npm/3layerdipstackchk77"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackcjddnb",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackcjddnb",
+          "title": "npm/3layerdipstackcjddnb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackckdy9",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackckdy9",
+          "title": "npm/3layerdipstackckdy9"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackcnxrzk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackcnxrzk",
+          "title": "npm/3layerdipstackcnxrzk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackcrikda",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackcrikda",
+          "title": "npm/3layerdipstackcrikda"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackcstjn",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackcstjn",
+          "title": "npm/3layerdipstackcstjn"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackctn2v",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackctn2v",
+          "title": "npm/3layerdipstackctn2v"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackcvi67o",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackcvi67o",
+          "title": "npm/3layerdipstackcvi67o"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackcyqc7o",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackcyqc7o",
+          "title": "npm/3layerdipstackcyqc7o"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackd3cxf7",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackd3cxf7",
+          "title": "npm/3layerdipstackd3cxf7"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackd4npj",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackd4npj",
+          "title": "npm/3layerdipstackd4npj"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackd80ved",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackd80ved",
+          "title": "npm/3layerdipstackd80ved"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackd8ze8",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackd8ze8",
+          "title": "npm/3layerdipstackd8ze8"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackdanp80",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackdanp80",
+          "title": "npm/3layerdipstackdanp80"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackdb90s",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackdb90s",
+          "title": "npm/3layerdipstackdb90s"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackdci73",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackdci73",
+          "title": "npm/3layerdipstackdci73"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackdcw7ib",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackdcw7ib",
+          "title": "npm/3layerdipstackdcw7ib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackdflm1d",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackdflm1d",
+          "title": "npm/3layerdipstackdflm1d"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackdfw3wg",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackdfw3wg",
+          "title": "npm/3layerdipstackdfw3wg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackdit9j",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackdit9j",
+          "title": "npm/3layerdipstackdit9j"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackdnbulr",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackdnbulr",
+          "title": "npm/3layerdipstackdnbulr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackds3oln",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackds3oln",
+          "title": "npm/3layerdipstackds3oln"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackds5wll",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackds5wll",
+          "title": "npm/3layerdipstackds5wll"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackdsc6gn",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackdsc6gn",
+          "title": "npm/3layerdipstackdsc6gn"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackdwrofj",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackdwrofj",
+          "title": "npm/3layerdipstackdwrofj"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacke2eppx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacke2eppx",
+          "title": "npm/3layerdipstacke2eppx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackea57kt",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackea57kt",
+          "title": "npm/3layerdipstackea57kt"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackebunld",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackebunld",
+          "title": "npm/3layerdipstackebunld"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackedh67n",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackedh67n",
+          "title": "npm/3layerdipstackedh67n"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackedqpy",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackedqpy",
+          "title": "npm/3layerdipstackedqpy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackeflbpd",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackeflbpd",
+          "title": "npm/3layerdipstackeflbpd"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackefwqm",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackefwqm",
+          "title": "npm/3layerdipstackefwqm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackelcuhp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackelcuhp",
+          "title": "npm/3layerdipstackelcuhp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackenjw1i",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackenjw1i",
+          "title": "npm/3layerdipstackenjw1i"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackepcy6k",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackepcy6k",
+          "title": "npm/3layerdipstackepcy6k"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackesp1lb",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackesp1lb",
+          "title": "npm/3layerdipstackesp1lb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackesxum",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackesxum",
+          "title": "npm/3layerdipstackesxum"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackev4sn5",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackev4sn5",
+          "title": "npm/3layerdipstackev4sn5"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackewhns5",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackewhns5",
+          "title": "npm/3layerdipstackewhns5"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackf0lda9",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackf0lda9",
+          "title": "npm/3layerdipstackf0lda9"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackf9oik",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackf9oik",
+          "title": "npm/3layerdipstackf9oik"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackfdgka0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackfdgka0",
+          "title": "npm/3layerdipstackfdgka0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackfhcuh",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackfhcuh",
+          "title": "npm/3layerdipstackfhcuh"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackfkqbp4",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackfkqbp4",
+          "title": "npm/3layerdipstackfkqbp4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackfl4v8",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackfl4v8",
+          "title": "npm/3layerdipstackfl4v8"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackfm45yj",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackfm45yj",
+          "title": "npm/3layerdipstackfm45yj"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackfoajna",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackfoajna",
+          "title": "npm/3layerdipstackfoajna"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackfooret",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackfooret",
+          "title": "npm/3layerdipstackfooret"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackfourm4",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackfourm4",
+          "title": "npm/3layerdipstackfourm4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackfp5dp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackfp5dp",
+          "title": "npm/3layerdipstackfp5dp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackfqxcmc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackfqxcmc",
+          "title": "npm/3layerdipstackfqxcmc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackftd8b",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackftd8b",
+          "title": "npm/3layerdipstackftd8b"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackfywqmz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackfywqmz",
+          "title": "npm/3layerdipstackfywqmz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackfzx88",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackfzx88",
+          "title": "npm/3layerdipstackfzx88"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackg4okgs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackg4okgs",
+          "title": "npm/3layerdipstackg4okgs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackgbmd1c",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackgbmd1c",
+          "title": "npm/3layerdipstackgbmd1c"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackgbshj",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackgbshj",
+          "title": "npm/3layerdipstackgbshj"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackgcno4",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackgcno4",
+          "title": "npm/3layerdipstackgcno4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackggjd8x",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackggjd8x",
+          "title": "npm/3layerdipstackggjd8x"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackgqt6yc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackgqt6yc",
+          "title": "npm/3layerdipstackgqt6yc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackgrzn5z",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackgrzn5z",
+          "title": "npm/3layerdipstackgrzn5z"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackgyrw9d",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackgyrw9d",
+          "title": "npm/3layerdipstackgyrw9d"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackh5ax7",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackh5ax7",
+          "title": "npm/3layerdipstackh5ax7"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackhcymwm",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackhcymwm",
+          "title": "npm/3layerdipstackhcymwm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackhi9md",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackhi9md",
+          "title": "npm/3layerdipstackhi9md"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackhivao",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackhivao",
+          "title": "npm/3layerdipstackhivao"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackhr3ocw",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackhr3ocw",
+          "title": "npm/3layerdipstackhr3ocw"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackhyazlk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackhyazlk",
+          "title": "npm/3layerdipstackhyazlk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackhykud",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackhykud",
+          "title": "npm/3layerdipstackhykud"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackic0c5r",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackic0c5r",
+          "title": "npm/3layerdipstackic0c5r"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackicrmv",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackicrmv",
+          "title": "npm/3layerdipstackicrmv"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackidjlc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackidjlc",
+          "title": "npm/3layerdipstackidjlc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackieh8c",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackieh8c",
+          "title": "npm/3layerdipstackieh8c"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackihi1o9",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackihi1o9",
+          "title": "npm/3layerdipstackihi1o9"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackiud1lz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackiud1lz",
+          "title": "npm/3layerdipstackiud1lz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackj0xnu",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackj0xnu",
+          "title": "npm/3layerdipstackj0xnu"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackj3eh2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackj3eh2",
+          "title": "npm/3layerdipstackj3eh2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackjac6a",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackjac6a",
+          "title": "npm/3layerdipstackjac6a"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackjdbrp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackjdbrp",
+          "title": "npm/3layerdipstackjdbrp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackjfp5u",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackjfp5u",
+          "title": "npm/3layerdipstackjfp5u"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackjgfism",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackjgfism",
+          "title": "npm/3layerdipstackjgfism"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackjj1l0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackjj1l0",
+          "title": "npm/3layerdipstackjj1l0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackjnh4m1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackjnh4m1",
+          "title": "npm/3layerdipstackjnh4m1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackjsuvtk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackjsuvtk",
+          "title": "npm/3layerdipstackjsuvtk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackjw2t3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackjw2t3",
+          "title": "npm/3layerdipstackjw2t3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackjx20az",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackjx20az",
+          "title": "npm/3layerdipstackjx20az"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackjxbse8",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackjxbse8",
+          "title": "npm/3layerdipstackjxbse8"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackk5ewlo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackk5ewlo",
+          "title": "npm/3layerdipstackk5ewlo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackk83nm",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackk83nm",
+          "title": "npm/3layerdipstackk83nm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackkaw1i8",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackkaw1i8",
+          "title": "npm/3layerdipstackkaw1i8"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackkdz8gp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackkdz8gp",
+          "title": "npm/3layerdipstackkdz8gp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackkege4f",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackkege4f",
+          "title": "npm/3layerdipstackkege4f"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackkg0gfy",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackkg0gfy",
+          "title": "npm/3layerdipstackkg0gfy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackkirw0e",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackkirw0e",
+          "title": "npm/3layerdipstackkirw0e"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackkl17i",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackkl17i",
+          "title": "npm/3layerdipstackkl17i"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackklb52",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackklb52",
+          "title": "npm/3layerdipstackklb52"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackkpfva6",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackkpfva6",
+          "title": "npm/3layerdipstackkpfva6"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackkrgcjq",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackkrgcjq",
+          "title": "npm/3layerdipstackkrgcjq"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackkx7y2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackkx7y2",
+          "title": "npm/3layerdipstackkx7y2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackkxrxle",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackkxrxle",
+          "title": "npm/3layerdipstackkxrxle"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackkysrek",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackkysrek",
+          "title": "npm/3layerdipstackkysrek"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackkzelo0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackkzelo0",
+          "title": "npm/3layerdipstackkzelo0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackl21ibf",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackl21ibf",
+          "title": "npm/3layerdipstackl21ibf"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackl3dhz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackl3dhz",
+          "title": "npm/3layerdipstackl3dhz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackl3yyy",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackl3yyy",
+          "title": "npm/3layerdipstackl3yyy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackl52afz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackl52afz",
+          "title": "npm/3layerdipstackl52afz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackl7gab",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackl7gab",
+          "title": "npm/3layerdipstackl7gab"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackl88spb",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackl88spb",
+          "title": "npm/3layerdipstackl88spb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacklabm6",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacklabm6",
+          "title": "npm/3layerdipstacklabm6"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacklbpy50",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacklbpy50",
+          "title": "npm/3layerdipstacklbpy50"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacklbxr4c",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacklbxr4c",
+          "title": "npm/3layerdipstacklbxr4c"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacklc7lgg",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacklc7lgg",
+          "title": "npm/3layerdipstacklc7lgg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacklgszmx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacklgszmx",
+          "title": "npm/3layerdipstacklgszmx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackljpzly",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackljpzly",
+          "title": "npm/3layerdipstackljpzly"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacklrswmw",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacklrswmw",
+          "title": "npm/3layerdipstacklrswmw"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacklskknx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacklskknx",
+          "title": "npm/3layerdipstacklskknx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacklzflp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacklzflp",
+          "title": "npm/3layerdipstacklzflp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackm1j2h",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackm1j2h",
+          "title": "npm/3layerdipstackm1j2h"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackm6i9v",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackm6i9v",
+          "title": "npm/3layerdipstackm6i9v"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackm7mock",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackm7mock",
+          "title": "npm/3layerdipstackm7mock"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackm7yxnp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackm7yxnp",
+          "title": "npm/3layerdipstackm7yxnp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackmi10b",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackmi10b",
+          "title": "npm/3layerdipstackmi10b"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackmiputn",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackmiputn",
+          "title": "npm/3layerdipstackmiputn"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackmjdc98",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackmjdc98",
+          "title": "npm/3layerdipstackmjdc98"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackmjm6e",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackmjm6e",
+          "title": "npm/3layerdipstackmjm6e"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackmk7pb",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackmk7pb",
+          "title": "npm/3layerdipstackmk7pb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackmn51k",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackmn51k",
+          "title": "npm/3layerdipstackmn51k"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackmokfkh",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackmokfkh",
+          "title": "npm/3layerdipstackmokfkh"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackmplv5",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackmplv5",
+          "title": "npm/3layerdipstackmplv5"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackmu4bxx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackmu4bxx",
+          "title": "npm/3layerdipstackmu4bxx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackn2nce",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackn2nce",
+          "title": "npm/3layerdipstackn2nce"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackn71eil",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackn71eil",
+          "title": "npm/3layerdipstackn71eil"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackn7fk1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackn7fk1",
+          "title": "npm/3layerdipstackn7fk1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackn7sxtp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackn7sxtp",
+          "title": "npm/3layerdipstackn7sxtp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackn9ng1d",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackn9ng1d",
+          "title": "npm/3layerdipstackn9ng1d"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacknk2da",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacknk2da",
+          "title": "npm/3layerdipstacknk2da"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacknk99g",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacknk99g",
+          "title": "npm/3layerdipstacknk99g"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacknlxzr",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacknlxzr",
+          "title": "npm/3layerdipstacknlxzr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacknqbfz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacknqbfz",
+          "title": "npm/3layerdipstacknqbfz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacknqxij",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacknqxij",
+          "title": "npm/3layerdipstacknqxij"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacknstgz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacknstgz",
+          "title": "npm/3layerdipstacknstgz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacknuabm",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacknuabm",
+          "title": "npm/3layerdipstacknuabm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacknwgnpw",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacknwgnpw",
+          "title": "npm/3layerdipstacknwgnpw"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacko89fkl",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacko89fkl",
+          "title": "npm/3layerdipstacko89fkl"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacko8li9w",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacko8li9w",
+          "title": "npm/3layerdipstacko8li9w"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackoa1cxf",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackoa1cxf",
+          "title": "npm/3layerdipstackoa1cxf"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackobk93q",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackobk93q",
+          "title": "npm/3layerdipstackobk93q"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackodswc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackodswc",
+          "title": "npm/3layerdipstackodswc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackog84a",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackog84a",
+          "title": "npm/3layerdipstackog84a"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackogwk1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackogwk1",
+          "title": "npm/3layerdipstackogwk1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackoi4dda",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackoi4dda",
+          "title": "npm/3layerdipstackoi4dda"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackoj4nf9",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackoj4nf9",
+          "title": "npm/3layerdipstackoj4nf9"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackolosqh",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackolosqh",
+          "title": "npm/3layerdipstackolosqh"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackoms1fe",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackoms1fe",
+          "title": "npm/3layerdipstackoms1fe"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackoo1jd",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackoo1jd",
+          "title": "npm/3layerdipstackoo1jd"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackoo3m1u",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackoo3m1u",
+          "title": "npm/3layerdipstackoo3m1u"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackopdmf",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackopdmf",
+          "title": "npm/3layerdipstackopdmf"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackoue8uj",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackoue8uj",
+          "title": "npm/3layerdipstackoue8uj"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackp4yyc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackp4yyc",
+          "title": "npm/3layerdipstackp4yyc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackp5nvj",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackp5nvj",
+          "title": "npm/3layerdipstackp5nvj"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackp6m8ir",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackp6m8ir",
+          "title": "npm/3layerdipstackp6m8ir"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackp92wd",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackp92wd",
+          "title": "npm/3layerdipstackp92wd"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackp9bua",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackp9bua",
+          "title": "npm/3layerdipstackp9bua"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackpbkfvo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackpbkfvo",
+          "title": "npm/3layerdipstackpbkfvo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackpcv17m",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackpcv17m",
+          "title": "npm/3layerdipstackpcv17m"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackpd83be",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackpd83be",
+          "title": "npm/3layerdipstackpd83be"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackpfnj1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackpfnj1",
+          "title": "npm/3layerdipstackpfnj1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackplila",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackplila",
+          "title": "npm/3layerdipstackplila"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackplnt8o",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackplnt8o",
+          "title": "npm/3layerdipstackplnt8o"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackpmrxi4",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackpmrxi4",
+          "title": "npm/3layerdipstackpmrxi4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackpmw72s",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackpmw72s",
+          "title": "npm/3layerdipstackpmw72s"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackposh4n",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackposh4n",
+          "title": "npm/3layerdipstackposh4n"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackpsq4vf",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackpsq4vf",
+          "title": "npm/3layerdipstackpsq4vf"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackpvsk6r",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackpvsk6r",
+          "title": "npm/3layerdipstackpvsk6r"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackpyqy5",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackpyqy5",
+          "title": "npm/3layerdipstackpyqy5"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackq06zyy",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackq06zyy",
+          "title": "npm/3layerdipstackq06zyy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackq0lwcc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackq0lwcc",
+          "title": "npm/3layerdipstackq0lwcc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackq4ek0f",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackq4ek0f",
+          "title": "npm/3layerdipstackq4ek0f"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackq6h8eq",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackq6h8eq",
+          "title": "npm/3layerdipstackq6h8eq"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackqb6ww",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackqb6ww",
+          "title": "npm/3layerdipstackqb6ww"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackqbqwn",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackqbqwn",
+          "title": "npm/3layerdipstackqbqwn"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackqcvl6h",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackqcvl6h",
+          "title": "npm/3layerdipstackqcvl6h"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackqi4id",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackqi4id",
+          "title": "npm/3layerdipstackqi4id"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackqjq77e",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackqjq77e",
+          "title": "npm/3layerdipstackqjq77e"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackqokw95",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackqokw95",
+          "title": "npm/3layerdipstackqokw95"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackqpma84",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackqpma84",
+          "title": "npm/3layerdipstackqpma84"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackqqd7f",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackqqd7f",
+          "title": "npm/3layerdipstackqqd7f"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackqszzc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackqszzc",
+          "title": "npm/3layerdipstackqszzc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackqyhks",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackqyhks",
+          "title": "npm/3layerdipstackqyhks"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackr4geh2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackr4geh2",
+          "title": "npm/3layerdipstackr4geh2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackr5ga2v",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackr5ga2v",
+          "title": "npm/3layerdipstackr5ga2v"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackr7ib9k",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackr7ib9k",
+          "title": "npm/3layerdipstackr7ib9k"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackr8xy1r",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackr8xy1r",
+          "title": "npm/3layerdipstackr8xy1r"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackra0nf",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackra0nf",
+          "title": "npm/3layerdipstackra0nf"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackrbupl",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackrbupl",
+          "title": "npm/3layerdipstackrbupl"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackrc44f",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackrc44f",
+          "title": "npm/3layerdipstackrc44f"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackrce3qw",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackrce3qw",
+          "title": "npm/3layerdipstackrce3qw"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackrcuf3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackrcuf3",
+          "title": "npm/3layerdipstackrcuf3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackrh52pp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackrh52pp",
+          "title": "npm/3layerdipstackrh52pp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackric51a",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackric51a",
+          "title": "npm/3layerdipstackric51a"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackrkxyr1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackrkxyr1",
+          "title": "npm/3layerdipstackrkxyr1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackru7mfn",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackru7mfn",
+          "title": "npm/3layerdipstackru7mfn"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackrvc9k",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackrvc9k",
+          "title": "npm/3layerdipstackrvc9k"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackrygm3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackrygm3",
+          "title": "npm/3layerdipstackrygm3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackryyay3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackryyay3",
+          "title": "npm/3layerdipstackryyay3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacks0fpdw",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacks0fpdw",
+          "title": "npm/3layerdipstacks0fpdw"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacks42lb",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacks42lb",
+          "title": "npm/3layerdipstacks42lb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacks4wje",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacks4wje",
+          "title": "npm/3layerdipstacks4wje"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacks8qqq",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacks8qqq",
+          "title": "npm/3layerdipstacks8qqq"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacksgs6k",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacksgs6k",
+          "title": "npm/3layerdipstacksgs6k"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacksh21o",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacksh21o",
+          "title": "npm/3layerdipstacksh21o"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacksihvvg",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacksihvvg",
+          "title": "npm/3layerdipstacksihvvg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacksla5p",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacksla5p",
+          "title": "npm/3layerdipstacksla5p"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacksn9ze",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacksn9ze",
+          "title": "npm/3layerdipstacksn9ze"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacksokbgx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacksokbgx",
+          "title": "npm/3layerdipstacksokbgx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacksu99cs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacksu99cs",
+          "title": "npm/3layerdipstacksu99cs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacksz3ee",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacksz3ee",
+          "title": "npm/3layerdipstacksz3ee"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackt3wr5f",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackt3wr5f",
+          "title": "npm/3layerdipstackt3wr5f"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackta7o8u",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackta7o8u",
+          "title": "npm/3layerdipstackta7o8u"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacktc0tq7",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacktc0tq7",
+          "title": "npm/3layerdipstacktc0tq7"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacktclg9",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacktclg9",
+          "title": "npm/3layerdipstacktclg9"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacktfieac",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacktfieac",
+          "title": "npm/3layerdipstacktfieac"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacktfp41b",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacktfp41b",
+          "title": "npm/3layerdipstacktfp41b"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackthgojd",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackthgojd",
+          "title": "npm/3layerdipstackthgojd"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacktlt5o",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacktlt5o",
+          "title": "npm/3layerdipstacktlt5o"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacktm8xp5",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacktm8xp5",
+          "title": "npm/3layerdipstacktm8xp5"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacktmo3tu",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacktmo3tu",
+          "title": "npm/3layerdipstacktmo3tu"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackttd2o",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackttd2o",
+          "title": "npm/3layerdipstackttd2o"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackttt4c",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackttt4c",
+          "title": "npm/3layerdipstackttt4c"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacku03hgo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacku03hgo",
+          "title": "npm/3layerdipstacku03hgo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacku0rsp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacku0rsp",
+          "title": "npm/3layerdipstacku0rsp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacku2axz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacku2axz",
+          "title": "npm/3layerdipstacku2axz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackuayqn",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackuayqn",
+          "title": "npm/3layerdipstackuayqn"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackub7lk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackub7lk",
+          "title": "npm/3layerdipstackub7lk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackubntx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackubntx",
+          "title": "npm/3layerdipstackubntx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackudibkf",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackudibkf",
+          "title": "npm/3layerdipstackudibkf"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackuew4bh",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackuew4bh",
+          "title": "npm/3layerdipstackuew4bh"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackujb8p",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackujb8p",
+          "title": "npm/3layerdipstackujb8p"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackujfdgm",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackujfdgm",
+          "title": "npm/3layerdipstackujfdgm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackujt40",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackujt40",
+          "title": "npm/3layerdipstackujt40"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackuldhl",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackuldhl",
+          "title": "npm/3layerdipstackuldhl"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackulgnp8",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackulgnp8",
+          "title": "npm/3layerdipstackulgnp8"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackunyzh",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackunyzh",
+          "title": "npm/3layerdipstackunyzh"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackuo78n",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackuo78n",
+          "title": "npm/3layerdipstackuo78n"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackuu02ly",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackuu02ly",
+          "title": "npm/3layerdipstackuu02ly"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackuyb1e",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackuyb1e",
+          "title": "npm/3layerdipstackuyb1e"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackuyd45d",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackuyd45d",
+          "title": "npm/3layerdipstackuyd45d"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackv4z5q",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackv4z5q",
+          "title": "npm/3layerdipstackv4z5q"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackvaovrs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackvaovrs",
+          "title": "npm/3layerdipstackvaovrs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackvb5y6",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackvb5y6",
+          "title": "npm/3layerdipstackvb5y6"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackvcdkrp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackvcdkrp",
+          "title": "npm/3layerdipstackvcdkrp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackvd6za6",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackvd6za6",
+          "title": "npm/3layerdipstackvd6za6"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackvdy7nf",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackvdy7nf",
+          "title": "npm/3layerdipstackvdy7nf"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackvhbhs6",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackvhbhs6",
+          "title": "npm/3layerdipstackvhbhs6"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackvkl1hd",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackvkl1hd",
+          "title": "npm/3layerdipstackvkl1hd"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackvld3fr",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackvld3fr",
+          "title": "npm/3layerdipstackvld3fr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackvm4qaj",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackvm4qaj",
+          "title": "npm/3layerdipstackvm4qaj"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackvnmth1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackvnmth1",
+          "title": "npm/3layerdipstackvnmth1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackvo9oet",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackvo9oet",
+          "title": "npm/3layerdipstackvo9oet"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackvtd7og",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackvtd7og",
+          "title": "npm/3layerdipstackvtd7og"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackvtid3m",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackvtid3m",
+          "title": "npm/3layerdipstackvtid3m"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackw1ma2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackw1ma2",
+          "title": "npm/3layerdipstackw1ma2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackw2pt3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackw2pt3",
+          "title": "npm/3layerdipstackw2pt3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackwc0qja",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackwc0qja",
+          "title": "npm/3layerdipstackwc0qja"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackwexso",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackwexso",
+          "title": "npm/3layerdipstackwexso"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackwm7sa",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackwm7sa",
+          "title": "npm/3layerdipstackwm7sa"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackwqo67k",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackwqo67k",
+          "title": "npm/3layerdipstackwqo67k"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackwu6ij",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackwu6ij",
+          "title": "npm/3layerdipstackwu6ij"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackwudpnc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackwudpnc",
+          "title": "npm/3layerdipstackwudpnc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackx1zi8p",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackx1zi8p",
+          "title": "npm/3layerdipstackx1zi8p"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackx26ujd",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackx26ujd",
+          "title": "npm/3layerdipstackx26ujd"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackx4y4fx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackx4y4fx",
+          "title": "npm/3layerdipstackx4y4fx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackx70bgg",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackx70bgg",
+          "title": "npm/3layerdipstackx70bgg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackxav9q",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackxav9q",
+          "title": "npm/3layerdipstackxav9q"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackxdv18",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackxdv18",
+          "title": "npm/3layerdipstackxdv18"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackxlmq6",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackxlmq6",
+          "title": "npm/3layerdipstackxlmq6"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackxms0j",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackxms0j",
+          "title": "npm/3layerdipstackxms0j"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstacky2fxy",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstacky2fxy",
+          "title": "npm/3layerdipstacky2fxy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackybqdp4",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackybqdp4",
+          "title": "npm/3layerdipstackybqdp4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackyhk67g",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackyhk67g",
+          "title": "npm/3layerdipstackyhk67g"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackykas5",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackykas5",
+          "title": "npm/3layerdipstackykas5"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackykuowv",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackykuowv",
+          "title": "npm/3layerdipstackykuowv"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackyq24q",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackyq24q",
+          "title": "npm/3layerdipstackyq24q"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackyqrxdf",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackyqrxdf",
+          "title": "npm/3layerdipstackyqrxdf"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackyt68w",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackyt68w",
+          "title": "npm/3layerdipstackyt68w"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackytruq6",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackytruq6",
+          "title": "npm/3layerdipstackytruq6"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackz54iek",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackz54iek",
+          "title": "npm/3layerdipstackz54iek"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackzhe5k",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackzhe5k",
+          "title": "npm/3layerdipstackzhe5k"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackzhnxi",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackzhnxi",
+          "title": "npm/3layerdipstackzhnxi"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackzpi9o",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackzpi9o",
+          "title": "npm/3layerdipstackzpi9o"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "3layerdipstackzz0n4",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/3layerdipstackzz0n4",
+          "title": "npm/3layerdipstackzz0n4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "3lectron",
       "type": "npm",
       "sources": [
@@ -198119,7 +203111,7 @@
       "type": "npm",
       "sources": [
         {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@aicommander/agent",
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@aicommander/agent",
           "title": "npm/@aicommander/agent"
         }
       ],
@@ -244121,6 +249113,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@flcore/login",
           "title": "npm/@flcore/login"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@fleetbo/svro",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fleetbo/svro",
+          "title": "npm/@fleetbo/svro"
         }
       ],
       "first_seen": null,
@@ -330019,7 +335023,7 @@
       "type": "npm",
       "sources": [
         {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vanexalabs-ai/vanexa-agent",
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@vanexalabs-ai/vanexa-agent",
           "title": "npm/@vanexalabs-ai/vanexa-agent"
         }
       ],
@@ -397515,6 +402519,18 @@
       "last_seen": null
     },
     {
+      "name": "@znan/wabot",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@znan/wabot",
+          "title": "npm/@znan/wabot"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@zohaib2121/dtapp",
       "type": "npm",
       "sources": [
@@ -400413,6 +405429,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/abcde",
           "title": "npm/abcde"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "abcdefghijklnmopqrstuvwxyz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/abcdefghijklnmopqrstuvwxyz",
+          "title": "npm/abcdefghijklnmopqrstuvwxyz"
         }
       ],
       "first_seen": null,
@@ -616049,6 +621077,18 @@
       "last_seen": null
     },
     {
+      "name": "bluebook-testing",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bluebook-testing",
+          "title": "npm/bluebook-testing"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bluebutton-hapi",
       "type": "npm",
       "sources": [
@@ -623939,6 +628979,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/borsh-js",
           "title": "npm/borsh-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "borsh-lite",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/borsh-lite",
+          "title": "npm/borsh-lite"
         }
       ],
       "first_seen": null,
@@ -644291,18 +649343,6 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/buffer-util-extend",
           "title": "npm/buffer-util-extend"
-        }
-      ],
-      "first_seen": null,
-      "last_seen": null
-    },
-    {
-      "name": "buffer-util-internal",
-      "type": "npm",
-      "sources": [
-        {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/buffer-util-internal",
-          "title": "npm/buffer-util-internal"
         }
       ],
       "first_seen": null,
@@ -677563,6 +682603,18 @@
       "last_seen": null
     },
     {
+      "name": "ggk-happy",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/ggk-happy",
+          "title": "npm/ggk-happy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "grepleaks",
       "type": "npm",
       "sources": [
@@ -677629,6 +682681,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/invoices",
           "title": "npm/invoices"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "jagproject",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/jagproject",
+          "title": "npm/jagproject"
         }
       ],
       "first_seen": null,
@@ -678159,6 +683223,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/pwn",
           "title": "npm/pwn"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "qaq-core-util-v2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/qaq-core-util-v2",
+          "title": "npm/qaq-core-util-v2"
         }
       ],
       "first_seen": null,
