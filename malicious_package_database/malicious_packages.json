@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-28T22:38:35Z",
-  "total": 56980,
+  "generated_at": "2026-08-29T21:32:24Z",
+  "total": 56993,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -45813,6 +45813,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/flask-auth-system",
           "title": "PyPI/flask-auth-system"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "flask-header-guard",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/flask-header-guard",
+          "title": "PyPI/flask-header-guard"
         }
       ],
       "first_seen": null,
@@ -194343,6 +194355,30 @@
       "last_seen": null
     },
     {
+      "name": "2fa-secretkey",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/2fa-secretkey",
+          "title": "npm/2fa-secretkey"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "2fasecretkey",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/2fasecretkey",
+          "title": "npm/2fasecretkey"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "2hvogw",
       "type": "npm",
       "sources": [
@@ -201537,6 +201573,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@43uh3ig43/telemetry-client",
           "title": "npm/@43uh3ig43/telemetry-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@7nohe/openapi-react-query-codegen",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@7nohe/openapi-react-query-codegen",
+          "title": "npm/@7nohe/openapi-react-query-codegen"
         }
       ],
       "first_seen": null,
@@ -329313,6 +329361,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@testorgggg/pkg3",
           "title": "npm/@testorgggg/pkg3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@testrelic/playwright-analytics",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@testrelic/playwright-analytics",
+          "title": "npm/@testrelic/playwright-analytics"
         }
       ],
       "first_seen": null,
@@ -465315,6 +465375,18 @@
       "last_seen": null
     },
     {
+      "name": "alimama-minisite",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alimama-minisite",
+          "title": "npm/alimama-minisite"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "alinaseh",
       "type": "npm",
       "sources": [
@@ -477567,12 +477639,48 @@
       "last_seen": null
     },
     {
+      "name": "amplitude-experiment",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/amplitude-experiment",
+          "title": "npm/amplitude-experiment"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "amplitude-ma-ts",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/amplitude-ma-ts",
           "title": "npm/amplitude-ma-ts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "amplitude-react-native",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/amplitude-react-native",
+          "title": "npm/amplitude-react-native"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "amplitude-session-replay",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/amplitude-session-replay",
+          "title": "npm/amplitude-session-replay"
         }
       ],
       "first_seen": null,
@@ -481617,6 +481725,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/analytics-v2",
           "title": "npm/analytics-v2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "analytics-web-client",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/analytics-web-client",
+          "title": "npm/analytics-web-client"
         }
       ],
       "first_seen": null,
@@ -539494,6 +539614,18 @@
       "last_seen": null
     },
     {
+      "name": "aura-instrumentation",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aura-instrumentation",
+          "title": "npm/aura-instrumentation"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "aura-transportation-driver-messaging",
       "type": "npm",
       "sources": [
@@ -558707,6 +558839,18 @@
       "last_seen": null
     },
     {
+      "name": "aws-blog",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aws-blog",
+          "title": "npm/aws-blog"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "aws-centralized-logging",
       "type": "npm",
       "sources": [
@@ -560302,6 +560446,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/axis-components",
           "title": "npm/axis-components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "axis-datagrid",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/axis-datagrid",
+          "title": "npm/axis-datagrid"
         }
       ],
       "first_seen": null,
