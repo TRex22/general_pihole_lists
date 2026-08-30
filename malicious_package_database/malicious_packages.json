@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-29T21:32:24Z",
-  "total": 56993,
+  "generated_at": "2026-08-30T21:28:27Z",
+  "total": 56997,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -14274,6 +14274,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/aurm-python-sdk",
           "title": "PyPI/aurm-python-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "auth-app-streamlit",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/auth-app-streamlit",
+          "title": "PyPI/auth-app-streamlit"
         }
       ],
       "first_seen": null,
@@ -141138,6 +141150,18 @@
       "last_seen": null
     },
     {
+      "name": "trongridor",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongridor",
+          "title": "PyPI/trongridor"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "trongridperm",
       "type": "PyPI",
       "sources": [
@@ -248897,6 +248921,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fhnw/angular-app-configuration",
           "title": "npm/@fhnw/angular-app-configuration"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@fidzzhost/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fidzzhost/baileys",
+          "title": "npm/@fidzzhost/baileys"
         }
       ],
       "first_seen": null,
@@ -633059,6 +633095,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brasil_viagem_omsi_2_crack_portable_ckw74",
           "title": "npm/brasil_viagem_omsi_2_crack_portable_ckw74"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "brat-codex",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brat-codex",
+          "title": "npm/brat-codex"
         }
       ],
       "first_seen": null,
