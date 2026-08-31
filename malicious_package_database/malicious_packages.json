@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-30T21:28:27Z",
-  "total": 56997,
+  "generated_at": "2026-08-31T21:33:32Z",
+  "total": 57009,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -98920,6 +98920,18 @@
       "last_seen": null
     },
     {
+      "name": "pyservercheck",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pyservercheck",
+          "title": "PyPI/pyservercheck"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "pysigner",
       "type": "PyPI",
       "sources": [
@@ -141420,6 +141432,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tronlid",
           "title": "PyPI/tronlid"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "tronlinker",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tronlinker",
+          "title": "PyPI/tronlinker"
         }
       ],
       "first_seen": null,
@@ -213247,6 +213271,66 @@
       "last_seen": null
     },
     {
+      "name": "@baipiaodajun/mcbot",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@baipiaodajun/mcbot",
+          "title": "npm/@baipiaodajun/mcbot"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@baipiaodajun/mcbots",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@baipiaodajun/mcbots",
+          "title": "npm/@baipiaodajun/mcbots"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@baipiaodajun/npmsshx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@baipiaodajun/npmsshx",
+          "title": "npm/@baipiaodajun/npmsshx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@baipiaodajun/podman_env",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@baipiaodajun/podman_env",
+          "title": "npm/@baipiaodajun/podman_env"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@baipiaodajun/reverseproxy-fm",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@baipiaodajun/reverseproxy-fm",
+          "title": "npm/@baipiaodajun/reverseproxy-fm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@balajih4kr/postcss",
       "type": "npm",
       "sources": [
@@ -269867,6 +269951,18 @@
       "last_seen": null
     },
     {
+      "name": "@lucideproxy/svg",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@lucideproxy/svg",
+          "title": "npm/@lucideproxy/svg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@lui-ui/lui-nuxt",
       "type": "npm",
       "sources": [
@@ -306143,6 +306239,18 @@
       "last_seen": null
     },
     {
+      "name": "@pipi596888/ccursor",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pipi596888/ccursor",
+          "title": "npm/@pipi596888/ccursor"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@piplabs/story-contracts",
       "type": "npm",
       "sources": [
@@ -329403,6 +329511,18 @@
       "last_seen": null
     },
     {
+      "name": "@testrelic/appium-analytics",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@testrelic/appium-analytics",
+          "title": "npm/@testrelic/appium-analytics"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@testrelic/playwright-analytics",
       "type": "npm",
       "sources": [
@@ -340497,6 +340617,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@worksmobile/wmeet-sdk",
           "title": "npm/@worksmobile/wmeet-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@worrisome/reutil",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@worrisome/reutil",
+          "title": "npm/@worrisome/reutil"
         }
       ],
       "first_seen": null,
@@ -542824,6 +542956,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/autoapt",
           "title": "npm/autoapt"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "autobahn-electron-probe",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/autobahn-electron-probe",
+          "title": "npm/autobahn-electron-probe"
         }
       ],
       "first_seen": null,
