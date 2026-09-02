@@ -103,6 +103,23 @@
 (^|\.)avcdn\.net$
 (^|\.)avg\.com$
 
+# ── Microsoft auth/CDN wildcards (ID 59, urls-and-ip-address-ranges) ──────────
+# Sign-in, MFA, and Human Interaction Proof (CAPTCHA) verification traffic can land on
+# arbitrary edge/CDN subdomains under these bases (e.g. some-edge.hip.live.com,
+# some-edge.msftauth.net). Plain entries for the base domains already exist in
+# microsoft-productivity.txt but only match the exact root, not subdomains — this is
+# a likely cause of stuck/looping sign-in, MFA, or passkey challenges. msecnd.net is
+# deliberately excluded: several of its subdomains (az*.vo.msecnd.net) are ad/tracking
+# CDN endpoints already in blocklists/ublock/blocklist.txt.
+(^|\.)hip\.live\.com$
+(^|\.)msauth\.net$
+(^|\.)msftauth\.net$
+(^|\.)msauthimages\.net$
+(^|\.)msftauthimages\.net$
+(^|\.)microsoftonline\.com$
+(^|\.)microsoftonline-p\.com$
+(^|\.)phonefactor\.net$
+
 # ── MediaFire ─────────────────────────────────────────────────────────────────
 # Download servers use dynamically-numbered subdomains (download1825.mediafire.com,
 # download2389.mediafire.com, etc.). Plain entries in general.txt cover the root
