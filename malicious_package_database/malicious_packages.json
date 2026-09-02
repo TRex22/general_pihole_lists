@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-01T21:34:47Z",
-  "total": 57161,
+  "generated_at": "2026-09-02T21:29:40Z",
+  "total": 57165,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -126151,6 +126151,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sysuptoer",
           "title": "PyPI/sysuptoer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "syswatch",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/syswatch",
+          "title": "PyPI/syswatch"
         }
       ],
       "first_seen": null,
@@ -297635,6 +297647,18 @@
       "last_seen": null
     },
     {
+      "name": "@mrlegendbot/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mrlegendbot/baileys",
+          "title": "npm/@mrlegendbot/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@mrpudidi/gravatar",
       "type": "npm",
       "sources": [
@@ -323853,6 +323877,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@syska/aca-gui",
           "title": "npm/@syska/aca-gui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@systemzero/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@systemzero/baileys",
+          "title": "npm/@systemzero/baileys"
         }
       ],
       "first_seen": null,
@@ -641759,6 +641795,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bsyjkctivnzglmxd",
           "title": "npm/bsyjkctivnzglmxd"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bt2-api-gateway-node-js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bt2-api-gateway-node-js",
+          "title": "npm/bt2-api-gateway-node-js"
         }
       ],
       "first_seen": null,
