@@ -67,6 +67,10 @@ msauthimages.net            # ID 59 DefaultRequired: *.msauthimages.net
 msftauthimages.net          # ID 59 DefaultRequired: *.msftauthimages.net
 msftauth.net                 # ID 59 DefaultRequired: *.msftauth.net (Microsoft auth/CDN)
 aadcdn.microsoftonline-p.com # Azure portal authentication (azure-portal-safelist-urls)
+# *.hip.live.com, *.msauth.net, *.msftauth.net, *.msauthimages.net, *.msftauthimages.net,
+# *.microsoftonline.com, *.microsoftonline-p.com, *.phonefactor.net — ID 59 wildcards,
+# added as regex entries in regex_allowlist.txt (edge/CDN subdomains used during sign-in,
+# MFA, and CAPTCHA verification aren't covered by the plain-domain entries above)
 
 # Office 365 / Exchange Online
 outlook.office365.com
