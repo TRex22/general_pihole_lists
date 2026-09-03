@@ -94,6 +94,7 @@ safebrowsing-cache.google.com
 sb-ssl.google.com
 safebrowsingrealtime.googleapis.com
 enterprise-safebrowsing.googleapis.com
+ohttp-relay-safebrowsing-chrome.google.fastly-edge.com  # Oblivious HTTP relay for privacy-preserving Safe Browsing checks
 
 # Certificate Transparency / PKI (security feature)
 # Source: https://support.google.com/chrome/a/answer/6334001

@@ -53,6 +53,25 @@
 (^|\.)teamworkgraph\.com$
 (^|\.)teamworkgraph\.ai$
 
+# ── 1Password ────────────────────────────────────────────────────────────────
+# 1Password uses account-specific subdomains for sync/vault access
+# (e.g. <team>.1password.com) and regional user-content CDNs.
+# Source: https://support.1password.com/ports-domains/
+(^|\.)1password\.com$
+(^|\.)1password\.ca$
+(^|\.)1password\.eu$
+(^|\.)1passwordservices\.com$
+(^|\.)1passwordusercontent\.com$
+(^|\.)1passwordusercontent\.ca$
+(^|\.)1passwordusercontent\.eu$
+(^|\.)1infra\.net$
+
+# ── MWEB (South African ISP, AS20011) ───────────────────────────────────────────
+# MWEB's Ookla Speedtest servers use per-city subdomains under as20011.net
+# (e.g. speedtest-mweb-jhb.as20011.net for Johannesburg). Plain entry for the
+# jhb server is in general.txt; this regex covers other cities (cpt, dbn, etc.).
+(^|\.)as20011\.net$
+
 # ── Tuya / Lifeaiot ───────────────────────────────────────────────────────────
 # Tuya smart home devices use dynamic regional subdomains under lifeaiot.com.
 # The m3-eu.lifeaiot.com entry in general.txt only covers one region.

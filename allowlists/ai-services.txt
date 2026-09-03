@@ -262,6 +262,14 @@ registry.ollama.ai
 pi.dev
 
 # ============================================
+# CURSOR (AI code editor)
+# ============================================
+
+# Microsoft's shared experimentation/treatment-assignment service, also used
+# by VS Code and other MS-ecosystem dev tools for feature-flag delivery
+default.exp-tas.com
+
+# ============================================
 # RTK (Rust Token Killer — CLI token-reduction proxy)
 # ============================================
 

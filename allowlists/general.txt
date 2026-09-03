@@ -91,6 +91,11 @@ speedtest.net
 ooklaserver.net
 cdnst.net
 
+# MWEB (South African ISP, AS20011) hosted Speedtest server
+# speedtest-mweb-<city>.as20011.net (e.g. jhb = Johannesburg) — other cities
+# (cpt, dbn, etc.) covered by the as20011.net regex allowlist entry
+speedtest-mweb-jhb.as20011.net
+
 # MediaFire (file hosting — legitimate service; download servers use dynamic numbered subdomains covered by regex)
 mediafire.com
 www.mediafire.com
@@ -153,6 +158,7 @@ fpdownload.adobe.com
 entitlement.auth.adobe.com
 dc-api.adobe.io
 cdn-sharing.adobecc.com
+armmf.adobe.com  # Acrobat/Reader license and update check
 
 # Unifi
 ping.ui.com
@@ -259,6 +265,12 @@ recaptcha.net
 recaptcha.google.com
 pndsn.com  # PubNub - real-time collaborative editing
 unsplash.com  # stock photo asset hosting used by Atlassian products
+
+# Appfire (Atlassian Marketplace vendor) — JMWE (Jira Misc Workflow Extensions)
+jmwe.appfire.app
+
+# Bloompeak (Atlassian Marketplace vendor) — Status Time Reports (Free)
+status-time-free.bloompeak.io
 
 # Kollabe (Planning Poker / Sprint Retrospectives)
 # Source: https://kollabe.com
@@ -1578,3 +1590,36 @@ ring.com
 ringcentral.com
 runkit.com
 simplecast.com
+
+# 1Password
+# Source: https://support.1password.com/ports-domains/
+# Root domains below need wildcard subdomain coverage — see regex_allowlist.txt
+1password.com
+my.1password.com
+1password.ca
+1password.eu
+1passwordservices.com
+1passwordusercontent.com
+1passwordusercontent.ca
+1passwordusercontent.eu
+1infra.net
+app-updates.agilebits.com
+app-updates.us.svc.1infra.net
+cache.agilebits.com
+in.appcenter.ms
+api.pwnedpasswords.com  # Watchtower breached-password checking
+
+# 1Password integrations (only needed if these specific integrations are used)
+accounts.brex.com
+platform.brex.com
+fastmail.com
+jmap.fastmail.com
+globalsign.com
+lastpass.com  # LastPass import
+api.privacy.com
+
+# tldraw (collaborative whiteboard)
+www.tldraw.com
+
+# Orca Security (cloud security posture management)
+integrations.orcasecurity.io
