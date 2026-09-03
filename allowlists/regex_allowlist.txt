@@ -66,6 +66,12 @@
 (^|\.)1passwordusercontent\.eu$
 (^|\.)1infra\.net$
 
+# ── SAIX (South African ISP, Telkom SA transit infrastructure) ─────────────────
+# saix.net hosts multiple named servers (nameservers, mirrors, mail relays)
+# under the root domain. Plain entries for saix.net / igubu.saix.net are in
+# general.txt; this regex covers other named hosts.
+(^|\.)saix\.net$
+
 # ── MWEB (South African ISP, AS20011) ───────────────────────────────────────────
 # MWEB's Ookla Speedtest servers use per-city subdomains under as20011.net
 # (e.g. speedtest-mweb-jhb.as20011.net for Johannesburg). Plain entry for the
