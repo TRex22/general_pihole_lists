@@ -96,6 +96,12 @@ cdnst.net
 # (cpt, dbn, etc.) covered by the as20011.net regex allowlist entry
 speedtest-mweb-jhb.as20011.net
 
+# SAIX (South African Internet eXchange — Telkom SA's transit ISP infrastructure)
+# igubu.saix.net is a SAIX-hosted nameserver/mirror host; other subdomains
+# covered by the saix.net regex allowlist entry
+saix.net
+igubu.saix.net
+
 # MediaFire (file hosting — legitimate service; download servers use dynamic numbered subdomains covered by regex)
 mediafire.com
 www.mediafire.com
