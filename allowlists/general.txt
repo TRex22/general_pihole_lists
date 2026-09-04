@@ -113,6 +113,9 @@ reddit.map.fastly.net
 www.redditmedia.com
 reddit.app.link  # Branch.io deep link for Reddit app (install banners, app deep links)
 
+# LogBox Patient (EPI-USE healthcare form-sharing app)
+logbox-patient.app.link  # Branch.io deep link
+
 ## Needed for Reddit emails to work
 click.redditmail.com  # Reddit click tracking
 api2.branch.io  # Branch.io attribution/tracking
@@ -342,6 +345,7 @@ dl.pushbulletusercontent.com
 blog.pushbullet.com
 help.pushbullet.com
 docs.pushbullet.com
+ocelot.pushbullet.com  # backend server node, required for sync/notifications
 # zebra.pushbullet.com  # telemetry, but blocks desktop app startup if blocked
 
 # Malwarebytes
@@ -905,6 +909,7 @@ firefox.com
 www.firefox.com
 getfirefox.com
 services.mozilla.com
+push.services.mozilla.com  # Firefox Web Push (Autopush) relay
 merino.services.mozilla.com
 cdn.mozilla.net
 img-getpocket.cdn.mozilla.net
@@ -1596,6 +1601,10 @@ ring.com
 ringcentral.com
 runkit.com
 simplecast.com
+
+# Adaptiva OneSite (enterprise peer-to-peer patch/software distribution)
+globalupdate.adaptiva.cloud
+services.adaptiva.cloud
 
 # Semgrep (static analysis / SAST platform)
 semgrep.dev

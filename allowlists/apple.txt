@@ -108,6 +108,7 @@ sylvan.apple.com
 gateway.icloud.com
 init.gc.apple.com
 ocsp2.g.aaplimg.com
+pancake.g.aaplimg.com  # image/asset validation (Akamai-fronted Apple CDN)
 
 # Carrier Updates / Akamai edge hostnames (plain entries are exact-match; subdomains of edgekey.net in general.txt don't cover these)
 appldnld.apple.com.edgesuite.net
@@ -222,10 +223,14 @@ cp4.cloudflare.com
 api.smoot.apple.com
 api2.smoot.apple.com
 cdn.smoot.apple.com
+fbs.smoot.apple.com  # search backend (Siri/Spotlight/Lookup/Safari/News/Messages/Music)
 
 # Associated Domains
 app-site-association.cdn-apple.com
 app-site-association.networking.apple
+
+# Apple Edge Cache (ISP-hosted CDN nodes for Apple content delivery)
+tether.edge.apple  # CNAME to tether.v.aaplimg.com
 
 # Maps (basic functionality)
 gspe1-ssl.ls.apple.com

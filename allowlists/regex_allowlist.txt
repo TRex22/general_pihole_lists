@@ -16,6 +16,15 @@
 #
 # Sources / references documented inline per entry.
 
+# ── Microsoft Edge Network (msedge.net) ─────────────────────────────────────────
+# Microsoft's Azure/Akamai-fronted edge routing layer uses dynamically-numbered,
+# per-datacenter hostnames (e.g. b-0001.b-msedge.net, ln-0007.ln-dc-msedge.net)
+# that front login.microsoft.com, Office, Teams and other MS services. The plain
+# msedge.net entry in microsoft-productivity.txt only matches the exact root, so
+# these numbered CDN nodes need wildcard coverage — without it, sign-in flows can
+# intermittently fail/hang as if DNS-blocked, since the edge hop itself is blocked.
+(^|\.)msedge\.net$
+
 # ── Steam ──────────────────────────────────────────────────────────────────────
 # Valve's game-server CDN uses numbered subdomains (cs1–csN.steampipe.steamserver.net etc.)
 # Adding the root covers all current and future subdomains automatically.
