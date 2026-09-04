@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-09-03T21:09:46Z
+# Generated: 2026-09-04T21:08:58Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 789
+# Total domains: 790
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -205,6 +205,7 @@ ceros.com
 cf.aliyun.com
 cg.optimizely.com
 check.ddos-guard.net
+checkout.com
 checkout.razorpay.com
 cidades.rdstation.com.br
 cineca.it

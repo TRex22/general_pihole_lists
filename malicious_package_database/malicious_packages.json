@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-03T21:35:31Z",
-  "total": 57194,
+  "generated_at": "2026-09-04T21:33:32Z",
+  "total": 57219,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -13628,6 +13628,18 @@
       "last_seen": null
     },
     {
+      "name": "astlsi",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/astlsi",
+          "title": "PyPI/astlsi"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "astralnitro",
       "type": "PyPI",
       "sources": [
@@ -21059,6 +21071,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/chaostoolkit-turbulence",
           "title": "PyPI/chaostoolkit-turbulence"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "chartkit-core",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/chartkit-core",
+          "title": "PyPI/chartkit-core"
         }
       ],
       "first_seen": null,
@@ -71696,6 +71720,18 @@
       "last_seen": null
     },
     {
+      "name": "metricboxlite",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/metricboxlite",
+          "title": "PyPI/metricboxlite"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "metrok",
       "type": "PyPI",
       "sources": [
@@ -76122,6 +76158,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/olorama",
           "title": "PyPI/olorama"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "olympuslib",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/olympuslib",
+          "title": "PyPI/olympuslib"
         }
       ],
       "first_seen": null,
@@ -98188,6 +98236,18 @@
       "last_seen": null
     },
     {
+      "name": "pymaas",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pymaas",
+          "title": "PyPI/pymaas"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "pymaniac",
       "type": "PyPI",
       "sources": [
@@ -102386,6 +102446,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/qlinforge",
           "title": "PyPI/qlinforge"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "qoeoe",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/qoeoe",
+          "title": "PyPI/qoeoe"
         }
       ],
       "first_seen": null,
@@ -129450,6 +129522,18 @@
       "last_seen": null
     },
     {
+      "name": "timeweave",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/timeweave",
+          "title": "PyPI/timeweave"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "timingmcp",
       "type": "PyPI",
       "sources": [
@@ -139944,6 +140028,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tptoolvmpaypal",
           "title": "PyPI/tptoolvmpaypal"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "tpu-raiden-jax",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tpu-raiden-jax",
+          "title": "PyPI/tpu-raiden-jax"
         }
       ],
       "first_seen": null,
@@ -194555,6 +194651,18 @@
       "last_seen": null
     },
     {
+      "name": "0nestjs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/0nestjs",
+          "title": "npm/0nestjs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "0o1d7m",
       "type": "npm",
       "sources": [
@@ -195483,6 +195591,18 @@
       "last_seen": null
     },
     {
+      "name": "1nestjs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/1nestjs",
+          "title": "npm/1nestjs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "1nzcej",
       "type": "npm",
       "sources": [
@@ -196053,6 +196173,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/2mul1k",
           "title": "npm/2mul1k"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "2nestjs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/2nestjs",
+          "title": "npm/2nestjs"
         }
       ],
       "first_seen": null,
@@ -203233,6 +203365,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@_wnpm/wnpm-cli",
           "title": "npm/@_wnpm/wnpm-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@a23842/dsh-notifier",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@a23842/dsh-notifier",
+          "title": "npm/@a23842/dsh-notifier"
         }
       ],
       "first_seen": null,
@@ -213931,6 +214075,18 @@
       "last_seen": null
     },
     {
+      "name": "@avigilon/node-webrtc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@avigilon/node-webrtc",
+          "title": "npm/@avigilon/node-webrtc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@avoc-analytics-skeleton-monorepo/auth",
       "type": "npm",
       "sources": [
@@ -217465,6 +217621,42 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@buzzblocks/fetlife-assets",
           "title": "npm/@buzzblocks/fetlife-assets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bx-ui-framework/authentication",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bx-ui-framework/authentication",
+          "title": "npm/@bx-ui-framework/authentication"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bx-ui-framework/common",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bx-ui-framework/common",
+          "title": "npm/@bx-ui-framework/common"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bx-ui-framework/microfrontend",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bx-ui-framework/microfrontend",
+          "title": "npm/@bx-ui-framework/microfrontend"
         }
       ],
       "first_seen": null,
@@ -231953,6 +232145,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@cryptosrvc/shift-sdk-v4",
           "title": "npm/@cryptosrvc/shift-sdk-v4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@crysnovax/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@crysnovax/baileys",
+          "title": "npm/@crysnovax/baileys"
         }
       ],
       "first_seen": null,
@@ -297221,6 +297425,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@modhamanish/rn-mm-template",
           "title": "npm/@modhamanish/rn-mm-template"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@modss/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@modss/baileys",
+          "title": "npm/@modss/baileys"
         }
       ],
       "first_seen": null,
@@ -632825,6 +633041,30 @@
       "last_seen": null
     },
     {
+      "name": "box-sign-client",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/box-sign-client",
+          "title": "npm/box-sign-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "box-sign-client-poc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/box-sign-client-poc",
+          "title": "npm/box-sign-client-poc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "box-ui-elements-usm",
       "type": "npm",
       "sources": [
@@ -642335,6 +642575,66 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/btransfer",
           "title": "npm/btransfer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "btree-core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/btree-core",
+          "title": "npm/btree-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "btree-leaderboard",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/btree-leaderboard",
+          "title": "npm/btree-leaderboard"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "btree-lru-cache",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/btree-lru-cache",
+          "title": "npm/btree-lru-cache"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "btree-range-store",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/btree-range-store",
+          "title": "npm/btree-range-store"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "btree-time-index",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/btree-time-index",
+          "title": "npm/btree-time-index"
         }
       ],
       "first_seen": null,
