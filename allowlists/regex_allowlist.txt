@@ -75,6 +75,11 @@
 (^|\.)1passwordusercontent\.eu$
 (^|\.)1infra\.net$
 
+# ── Hexagon CDN ──────────────────────────────────────────────────────────────
+# Numbered CDN nodes (e.g. b-0.hexagon-cdn.com) — plain hexagon-cdn.com entry
+# in general.txt only matches the exact root.
+(^|\.)hexagon-cdn\.com$
+
 # ── SAIX (South African ISP, Telkom SA transit infrastructure) ─────────────────
 # saix.net hosts multiple named servers (nameservers, mirrors, mail relays)
 # under the root domain. Plain entries for saix.net / igubu.saix.net are in
