@@ -120,6 +120,11 @@ logbox-patient.app.link  # Branch.io deep link
 click.redditmail.com  # Reddit click tracking
 api2.branch.io  # Branch.io attribution/tracking
 
+# Branch.io (deep linking platform backing the .app.link domains above)
+branch.io
+api.branch.io
+cdn.branch.io
+
 # Twitter/X
 twitter.com
 x.com
@@ -1601,6 +1606,24 @@ ring.com
 ringcentral.com
 runkit.com
 simplecast.com
+
+# Sublime Text / Sublime Merge
+sublimehq.com
+www.sublimehq.com
+sublimetext.com
+www.sublimetext.com
+sublimemerge.com
+www.sublimemerge.com
+license.sublimehq.com  # license activation/validation
+# telemetry.sublimehq.com  # crash/usage telemetry - not allowlisted
+
+# Cyberhaven (data loss prevention / browser extension)
+cyberhaven.io
+content.cyberhaven.io
+
+# Hexagon CDN (Hexagon AB / Leica Geosystems asset delivery — low confidence,
+# no malicious signals found but exact product using it unconfirmed)
+hexagon-cdn.com
 
 # Adaptiva OneSite (enterprise peer-to-peer patch/software distribution)
 globalupdate.adaptiva.cloud
