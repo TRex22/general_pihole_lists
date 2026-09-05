@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-09-04T21:08:58Z
+! Generated: 2026-09-05T21:08:21Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2863
+! Total domains: 2862
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -501,7 +501,6 @@
 ||bouncex.net^
 ||boxypluckunrelated.com^
 ||bqstreamer.com^
-||branch.io^
 ||brand-display.com^
 ||brandcdn.com^
 ||brandlock.io^

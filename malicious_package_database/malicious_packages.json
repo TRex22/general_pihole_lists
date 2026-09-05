@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-04T21:33:32Z",
-  "total": 57219,
+  "generated_at": "2026-09-05T21:31:17Z",
+  "total": 57223,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -28561,6 +28561,18 @@
       "last_seen": null
     },
     {
+      "name": "dbt-sa-cli",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/dbt-sa-cli",
+          "title": "PyPI/dbt-sa-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "dbzy-tools",
       "type": "PyPI",
       "sources": [
@@ -51969,6 +51981,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/hostlists-plugins-default",
           "title": "PyPI/hostlists-plugins-default"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "houdus",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/houdus",
+          "title": "PyPI/houdus"
         }
       ],
       "first_seen": null,
@@ -83794,6 +83818,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/proxy-checker-j",
           "title": "PyPI/proxy-checker-j"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "proxycer",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/proxycer",
+          "title": "PyPI/proxycer"
         }
       ],
       "first_seen": null,
@@ -141360,6 +141396,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongridev",
           "title": "PyPI/trongridev"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "trongridew",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongridew",
+          "title": "PyPI/trongridew"
         }
       ],
       "first_seen": null,
