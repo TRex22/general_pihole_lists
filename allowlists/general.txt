@@ -27,6 +27,7 @@ open.spotify.com
 spclient.wg.spotify.com
 apresolve.spotify.com
 api-tv.spotify.com
+ap-guc3.spotify.com  # access-point streaming server
 
 # Plex
 plex.tv
@@ -102,6 +103,9 @@ speedtest-mweb-jhb.as20011.net
 saix.net
 igubu.saix.net
 
+# Aquiss (UK ISP) hosted Speedtest server
+speedtest.aquiss.net
+
 # MediaFire (file hosting — legitimate service; download servers use dynamic numbered subdomains covered by regex)
 mediafire.com
 www.mediafire.com
@@ -124,6 +128,7 @@ api2.branch.io  # Branch.io attribution/tracking
 branch.io
 api.branch.io
 cdn.branch.io
+thirdparty.bnc.lt  # Branch short-link redirect domain (bnc.lt)
 
 # Twitter/X
 twitter.com
@@ -915,6 +920,10 @@ www.firefox.com
 getfirefox.com
 services.mozilla.com
 push.services.mozilla.com  # Firefox Web Push (Autopush) relay
+firefox.settings.services.mozilla.com  # Firefox Remote Settings (blocklists, feature rollouts)
+classify-client.services.mozilla.com  # content classification (Enhanced Tracking Protection)
+detectportal.firefox.com  # captive portal detection
+firefox-portal-detection.com  # captive portal detection (alternate/backup domain)
 merino.services.mozilla.com
 cdn.mozilla.net
 img-getpocket.cdn.mozilla.net
@@ -1477,6 +1486,7 @@ image.rakuten.co.jp
 rclone.org
 research.zscaler.com
 samsung.com
+vas.samsungapps.com  # Galaxy Store value-added services (IAP/subscriptions)
 scoreboard.itfmp.sportradar.com
 scribd.com
 shopifycdn.com
@@ -1628,6 +1638,9 @@ hexagon-cdn.com
 # Adaptiva OneSite (enterprise peer-to-peer patch/software distribution)
 globalupdate.adaptiva.cloud
 services.adaptiva.cloud
+
+# Nintendo (game content CDN)
+bvc-hac-lp1.cdn.nintendo.net
 
 # Semgrep (static analysis / SAST platform)
 semgrep.dev
