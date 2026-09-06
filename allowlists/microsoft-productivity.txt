@@ -18,6 +18,8 @@
 # Connectivity and network tests
 microsoft.com
 www.microsoft.com
+uhf.microsoft.com  # shared nav header/footer UI component used across MS sites
+wcpstatic.microsoft.com  # EU cookie-consent banner library (wcp-consent.js) used across MS sites
 www.msftncsi.com
 www.msftconnecttest.com
 msftncsi.com
@@ -145,6 +147,7 @@ cdn.sharepointonline.com
 privatecdn.sharepointonline.com
 publiccdn.sharepointonline.com
 static.sharepointonline.com
+static2.sharepointonline.com
 spoprod-a.akamaihd.net
 # *.svc.ms — regex entry (^|\.)svc\.ms$ added to regex_allowlist.txt
 

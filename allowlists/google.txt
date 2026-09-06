@@ -35,6 +35,8 @@ googleapis.l.google.com
 gstaticadssl.l.google.com
 plus.l.google.com
 clients.l.google.com
+lh2.l.google.com  # image-serving infrastructure
+stun.l.google.com  # public STUN server for WebRTC (Meet, and many third-party apps)
 
 # Authentication and account management
 accounts.google.com
