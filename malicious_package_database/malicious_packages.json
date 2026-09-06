@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-05T21:31:17Z",
-  "total": 57223,
+  "generated_at": "2026-09-06T21:34:29Z",
+  "total": 57225,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -28015,6 +28015,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/dabrius-utils",
           "title": "PyPI/dabrius-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "dac-tools",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/dac-tools",
+          "title": "PyPI/dac-tools"
         }
       ],
       "first_seen": null,
@@ -72002,6 +72014,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/minecraft-ytreceiver",
           "title": "PyPI/minecraft-ytreceiver"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "minecraftmodes",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/minecraftmodes",
+          "title": "PyPI/minecraftmodes"
         }
       ],
       "first_seen": null,
