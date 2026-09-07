@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-09-06T21:08:25Z
+# Generated: 2026-09-07T21:08:59Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 790
+# Total domains: 791
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -451,6 +451,7 @@ matterport.com
 mdstrm.com
 media.beehiiv.com
 media.tenor.com
+media1.tenor.com
 mediawiki.org
 meetings.hubspot.com
 megaphone.fm
