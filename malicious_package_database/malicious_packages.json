@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-07T21:33:46Z",
-  "total": 57263,
+  "generated_at": "2026-09-08T21:33:59Z",
+  "total": 57278,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -127143,6 +127143,18 @@
       "last_seen": null
     },
     {
+      "name": "telegram-helper",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/telegram-helper",
+          "title": "PyPI/telegram-helper"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "telegram-lite-grabber",
       "type": "PyPI",
       "sources": [
@@ -142202,6 +142214,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tsesyx",
           "title": "PyPI/tsesyx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "tsshare",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tsshare",
+          "title": "PyPI/tsshare"
         }
       ],
       "first_seen": null,
@@ -205113,6 +205137,42 @@
       "last_seen": null
     },
     {
+      "name": "@aircanada/components",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@aircanada/components",
+          "title": "npm/@aircanada/components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@aircanada/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@aircanada/core",
+          "title": "npm/@aircanada/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@aircanada/navigation-handler",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@aircanada/navigation-handler",
+          "title": "npm/@aircanada/navigation-handler"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@airmiles/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -212979,6 +213039,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@asdfvr/qaqazzaaa",
           "title": "npm/@asdfvr/qaqazzaaa"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@aspect-adv-ui/consent-manager",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@aspect-adv-ui/consent-manager",
+          "title": "npm/@aspect-adv-ui/consent-manager"
         }
       ],
       "first_seen": null,
@@ -259891,6 +259963,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@identity-authn/authn-js-sdk",
           "title": "npm/@identity-authn/authn-js-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@idkruan-10/dpd-depconf-probe",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@idkruan-10/dpd-depconf-probe",
+          "title": "npm/@idkruan-10/dpd-depconf-probe"
         }
       ],
       "first_seen": null,
@@ -336893,6 +336977,18 @@
       "last_seen": null
     },
     {
+      "name": "@umschool/analytics",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@umschool/analytics",
+          "title": "npm/@umschool/analytics"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@undress-ai/best-undress-ai",
       "type": "npm",
       "sources": [
@@ -337535,6 +337631,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@uselagoon/ui-library",
           "title": "npm/@uselagoon/ui-library"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@usemosaik/template-react-js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@usemosaik/template-react-js",
+          "title": "npm/@usemosaik/template-react-js"
         }
       ],
       "first_seen": null,
@@ -341387,6 +341495,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@web-utilities/url",
           "title": "npm/@web-utilities/url"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@web2apk/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@web2apk/baileys",
+          "title": "npm/@web2apk/baileys"
         }
       ],
       "first_seen": null,
@@ -583386,6 +583506,30 @@
       "last_seen": null
     },
     {
+      "name": "base-account-core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base-account-core",
+          "title": "npm/base-account-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "base-app-data",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base-app-data",
+          "title": "npm/base-app-data"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "base-app-unauth",
       "type": "npm",
       "sources": [
@@ -624259,6 +624403,18 @@
       "last_seen": null
     },
     {
+      "name": "blueai-cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/blueai-cli",
+          "title": "npm/blueai-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bluebidr",
       "type": "npm",
       "sources": [
@@ -625285,6 +625441,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bmatrix",
           "title": "npm/bmatrix"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bmc-i18n-extract-cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bmc-i18n-extract-cli",
+          "title": "npm/bmc-i18n-extract-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bmc-translate-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bmc-translate-utils",
+          "title": "npm/bmc-translate-utils"
         }
       ],
       "first_seen": null,
