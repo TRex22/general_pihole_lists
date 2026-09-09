@@ -165,3 +165,10 @@
 # and www; this regex covers all download subdomains.
 # Note: ww.mediafire.com (typosquat) is intentionally kept in malicious.txt.
 (^|\.)mediafire\.com$
+
+# ── SolarWinds Papertrail ────────────────────────────────────────────────────
+# Log ingest/collector endpoints use dynamically-numbered subdomains
+# (logs1.papertrailapp.com, logs2.papertrailapp.com, etc.) and the web app uses
+# my.papertrailapp.com. Plain entries in general.txt cover the apex domains.
+(^|\.)papertrailapp\.com$
+(^|\.)solarwinds\.com$
