@@ -671,6 +671,9 @@ grafana.com             # Grafana Labs (metrics/observability) - also in SKIP_DO
 grafana.net
 signoz.io               # SigNoz observability platform (self-hosted/cloud dashboards)
 splunk.com              # Splunk observability/log management - also in SKIP_DOMAINS
+papertrailapp.com       # SolarWinds Papertrail log management
+solarwinds.com          # SolarWinds (Papertrail parent company)
+swo.cloud.solarwinds.com  # SolarWinds Observability Cloud (Papertrail ingest)
 
 # E-commerce / consumer services
 mercadolibre.com        # Latin American e-commerce
