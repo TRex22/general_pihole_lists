@@ -652,6 +652,10 @@ log-api.newrelic.com    # New Relic Logs API
 insights-collector.newrelic.com  # New Relic Events/Insights API
 bam.nr-data.net         # New Relic browser RUM beacon
 bam-cell.nr-data.net    # New Relic browser RUM beacon (cell region)
+login.newrelic.com      # New Relic dashboard login
+one.newrelic.com        # New Relic unified dashboard UI
+try.newrelic.com        # New Relic signup/trial site
+cdn.trackjs.com         # TrackJS error monitoring
 datadoghq.com           # Datadog monitoring - also in SKIP_DOMAINS
 sentry.io               # Sentry error monitoring - also in SKIP_DOMAINS
 dynatrace.com           # Dynatrace APM - also in SKIP_DOMAINS
@@ -680,6 +684,8 @@ splunk.com              # Splunk observability/log management - also in SKIP_DOM
 papertrailapp.com       # SolarWinds Papertrail log management
 solarwinds.com          # SolarWinds (Papertrail parent company)
 swo.cloud.solarwinds.com  # SolarWinds Observability Cloud (Papertrail ingest)
+static.solarwinds.com   # SolarWinds Observability dashboard static assets
+# smetrics.solarwinds.com is SolarWinds' own Adobe Analytics tracking beacon - deliberately NOT allowlisted
 
 # E-commerce / consumer services
 mercadolibre.com        # Latin American e-commerce
@@ -1694,6 +1700,27 @@ www.tldraw.com
 # Orca Security (cloud security posture management)
 integrations.orcasecurity.io
 
+# Snipcart (embeddable e-commerce cart widget)
+app.snipcart.com
+
+# OneSignal (push notification SDK)
+cdn.onesignal.com
+
+# shields.io (developer README/CI status badge images)
+img.shields.io
+
+# Stream (video/chat SDK)
+hint.stream-io-video.com
+
+# Yahoo Finance (streaming stock/ticker data)
+streamer.finance.yahoo.com
+
+# Adobe Fonts (Typekit)
+p.typekit.net
+
+# opusfived.dev (user's own site)
+opusfived.dev
+
 # SavvyCal (scheduling tool embed widget)
 embed.savvycal.com
 
@@ -1702,6 +1729,7 @@ ga.jspm.io
 
 # Fandom (wiki hosting site infrastructure)
 services.fandom.com
+services.fandom.com.cdn.cloudflare.net  # Fandom services, Cloudflare-fronted hostname
 services.fandom-dev.us
 
 # Knock (notifications-as-a-service API, used by various SaaS apps)
