@@ -116,6 +116,7 @@ www.redditstatic.com
 reddit.map.fastly.net
 www.redditmedia.com
 reddit.app.link  # Branch.io deep link for Reddit app (install banners, app deep links)
+alb.reddit.com  # Reddit AWS Application Load Balancer (API/site traffic, not tracking)
 
 # LogBox Patient (EPI-USE healthcare form-sharing app)
 logbox-patient.app.link  # Branch.io deep link
@@ -668,6 +669,7 @@ pagerduty.com           # PagerDuty incident response - also in SKIP_DOMAINS
 events.pagerduty.com
 grafana.com             # Grafana Labs (metrics/observability) - also in SKIP_DOMAINS
 grafana.net
+signoz.io               # SigNoz observability platform (self-hosted/cloud dashboards)
 splunk.com              # Splunk observability/log management - also in SKIP_DOMAINS
 
 # E-commerce / consumer services
@@ -1492,6 +1494,7 @@ scribd.com
 shopifycdn.com
 shoplineapp.com
 socket.io
+cdn.socket.io  # Socket.IO client library CDN
 statuspage.io           # Atlassian Statuspage - also in APM/observability block above and SKIP_DOMAINS
 streamtheworld.com
 sumologic.com
@@ -1681,3 +1684,16 @@ www.tldraw.com
 
 # Orca Security (cloud security posture management)
 integrations.orcasecurity.io
+
+# SavvyCal (scheduling tool embed widget)
+embed.savvycal.com
+
+# jspm.io (JS module CDN, used by websites loading ES modules)
+ga.jspm.io
+
+# Fandom (wiki hosting site infrastructure)
+services.fandom.com
+services.fandom-dev.us
+
+# Knock (notifications-as-a-service API, used by various SaaS apps)
+api.knock.app

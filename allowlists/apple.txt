@@ -76,6 +76,7 @@ updates-http.cdn-apple.com
 xp.apple.com
 wkms-public.apple.com
 fcs-keys-pub-prod.cdn-apple.com
+sequoia.cdn-apple.com  # Apple content delivery (app/OS data CDN)
 swscan-cdn.apple.com.akadns.net
 xp.v.aaplimg.com
 xp-cdn-lb.itunes-apple.com.akadns.net
@@ -85,6 +86,7 @@ apps-marketplace.apple.com
 
 # App Store, iTunes and Content
 itunes.apple.com
+sandbox.itunes.apple.com  # In-app purchase (StoreKit) sandbox testing
 itunes.com
 apps.apple.com
 amp-api.apps.apple.com
