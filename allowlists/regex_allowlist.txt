@@ -172,3 +172,10 @@
 # my.papertrailapp.com. Plain entries in general.txt cover the apex domains.
 (^|\.)papertrailapp\.com$
 (^|\.)solarwinds\.com$
+
+# ── New Relic ─────────────────────────────────────────────────────────────────
+# Browser RUM agent beacon/config hosts use dynamically-numbered subdomains
+# (staticNN.nr-data.net, etc.). Plain entries in general.txt cover the known
+# fixed endpoints (bam.nr-data.net, collector.newrelic.com, etc.).
+(^|\.)nr-data\.net$
+(^|\.)newrelic\.com$
