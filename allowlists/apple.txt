@@ -19,6 +19,7 @@ captive.apple.com
 captive.g.aaplimg.com  # captive portal detection helper
 gs.apple.com
 gs-loc.apple.com  # Wi-Fi/location services
+gs-loc.ls-apple.com.akadns.net  # Wi-Fi/location services (Akamai-fronted variant)
 internalcheck.apple.com  # network connectivity check
 humb.apple.com
 static.ips.apple.com
@@ -27,6 +28,8 @@ tbsc.apple.com
 gsp-ssl.ls.apple.com
 gsp-ssl.ls-apple.com.akadns.net
 gsp1.apple.com
+gsp10-ssl.apple.com
+init-p01md.apple.com  # Apple push/provisioning init endpoint
 lcdn-locator-usuqo.apple.com.akadns.net  # local CDN cache locator
 
 # Device Management
@@ -77,8 +80,10 @@ xp.apple.com
 wkms-public.apple.com
 fcs-keys-pub-prod.cdn-apple.com
 sequoia.cdn-apple.com  # Apple content delivery (app/OS data CDN)
+static.cdn-apple.com   # Apple static CDN assets
 swscan-cdn.apple.com.akadns.net
 xp.v.aaplimg.com
+updates.g.aaplimg.com  # Apple software update CDN (Akamai-fronted)
 xp-cdn-lb.itunes-apple.com.akadns.net
 
 # EU App Marketplace
@@ -138,6 +143,8 @@ p01-calendar.icloud.com
 statici.icloud.com
 ws-ee-maidsvc.icloud.com
 p70-fmip.icloud.com
+p112-fmip.icloud.com
+p112-fmfmobile.icloud.com
 
 # iCloud Private Relay
 mask.icloud.com
@@ -176,6 +183,8 @@ doh.dns.apple.com
 # Certificate Validation and CDN
 certs.apple.com
 cl2.apple.com
+cl3.apple.com
+cl4.apple.com
 pancake.apple.com
 crl.apple.com
 ocsp.apple.com

@@ -168,10 +168,11 @@
 
 # ── SolarWinds Papertrail ────────────────────────────────────────────────────
 # Log ingest/collector endpoints use dynamically-numbered subdomains
-# (logs1.papertrailapp.com, logs2.papertrailapp.com, etc.) and the web app uses
-# my.papertrailapp.com. Plain entries in general.txt cover the apex domains.
+# (logs1.papertrailapp.com, logs2.papertrailapp.com, etc.).
+# NOTE: solarwinds.com itself is intentionally NOT wildcarded here - that would
+# also allow smetrics.solarwinds.com, SolarWinds' own Adobe Analytics tracking
+# beacon. Needed solarwinds.com subdomains are plain entries in general.txt.
 (^|\.)papertrailapp\.com$
-(^|\.)solarwinds\.com$
 
 # ── New Relic ─────────────────────────────────────────────────────────────────
 # Browser RUM agent beacon/config hosts use dynamically-numbered subdomains
