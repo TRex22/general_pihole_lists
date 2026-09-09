@@ -646,6 +646,12 @@ realestate.com.au       # Australian property listings
 # Software / dev tools (incorrectly in Privacy Badger blocklist)
 newrelic.com            # New Relic APM - also in SKIP_DOMAINS for scraper
 js-agent.newrelic.com   # New Relic browser RUM agent script - required for pages using New Relic browser monitoring to load correctly
+collector.newrelic.com  # New Relic APM data collector
+otlp.nr-data.net        # New Relic OTLP ingest endpoint
+log-api.newrelic.com    # New Relic Logs API
+insights-collector.newrelic.com  # New Relic Events/Insights API
+bam.nr-data.net         # New Relic browser RUM beacon
+bam-cell.nr-data.net    # New Relic browser RUM beacon (cell region)
 datadoghq.com           # Datadog monitoring - also in SKIP_DOMAINS
 sentry.io               # Sentry error monitoring - also in SKIP_DOMAINS
 dynatrace.com           # Dynatrace APM - also in SKIP_DOMAINS
