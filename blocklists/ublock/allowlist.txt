@@ -1,5 +1,5 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-09-08T21:08:09Z
+# Generated: 2026-09-10T21:08:29Z
 # Total domains: 882
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
@@ -26,6 +26,7 @@ adcdn.pingan.com
 addicted.es
 admin.dable.io
 ads.atmosphere.copernicus.eu
+ads.cs.washington.edu
 ads.doordash.com
 ads.elevateplatform.co.uk
 ads.finance
@@ -235,7 +236,6 @@ curiositystream.com.first-party-js.datadome.co
 cutcaptcha.com
 cwtv.com
 cz.mrezadosa.com
-dailythanthi.com
 damnripped.com
 darkw.pl
 data.digital.costco.ca
@@ -489,7 +489,6 @@ m.faz.net
 m.kuku.lu
 m.photos.timesofindia.com
 ma135-r.analytics.edgekey.net
-maalaimalar.com
 mabzicle.com
 magiclen.org
 magyarhang.org
@@ -818,6 +817,7 @@ unlockapk.com
 unsubscribe.lhinsights.com
 up-load.io
 urldefense.com
+used.ca
 userapi.com
 usercdn.com
 ustv247.tv

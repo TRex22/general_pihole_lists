@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T21:33:59Z",
-  "total": 57278,
+  "generated_at": "2026-09-10T21:36:16Z",
+  "total": 57301,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -17605,6 +17605,30 @@
       "last_seen": null
     },
     {
+      "name": "bq-build-probe-vrp-2026",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bq-build-probe-vrp-2026",
+          "title": "PyPI/bq-build-probe-vrp-2026"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bq-sdist-probe-vrp",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bq-sdist-probe-vrp",
+          "title": "PyPI/bq-sdist-probe-vrp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bramin",
       "type": "PyPI",
       "sources": [
@@ -28411,6 +28435,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/databricks-tools-core",
           "title": "PyPI/databricks-tools-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "databricks-webapp-navigation-homepage",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/databricks-webapp-navigation-homepage",
+          "title": "PyPI/databricks-webapp-navigation-homepage"
         }
       ],
       "first_seen": null,
@@ -69376,6 +69412,18 @@
       "last_seen": null
     },
     {
+      "name": "lucy-python-script-2030",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/lucy-python-script-2030",
+          "title": "PyPI/lucy-python-script-2030"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "lukz",
       "type": "PyPI",
       "sources": [
@@ -97984,6 +98032,18 @@
       "last_seen": null
     },
     {
+      "name": "pylever",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pylever",
+          "title": "PyPI/pylever"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "pylibarys",
       "type": "PyPI",
       "sources": [
@@ -106904,19 +106964,6 @@
       "last_seen": null
     },
     {
-      "name": "requirements.txt",
-      "type": "PyPI",
-      "sources": [
-        {
-          "url": "https://jfrog.com/blog/introducing-agent-package-resolution/",
-          "title": "Coding Agents Just Reopened Your Software Supply Chain Blind Spot",
-          "date": "2026-08-25"
-        }
-      ],
-      "first_seen": "2026-08-25",
-      "last_seen": "2026-08-25"
-    },
-    {
       "name": "requirementstxtx",
       "type": "PyPI",
       "sources": [
@@ -108512,19 +108559,6 @@
       ],
       "first_seen": null,
       "last_seen": null
-    },
-    {
-      "name": "route",
-      "type": "PyPI",
-      "sources": [
-        {
-          "url": "https://jfrog.com/blog/introducing-agent-package-resolution/",
-          "title": "Coding Agents Just Reopened Your Software Supply Chain Blind Spot",
-          "date": "2026-08-25"
-        }
-      ],
-      "first_seen": "2026-08-25",
-      "last_seen": "2026-08-25"
     },
     {
       "name": "route-search",
@@ -147303,6 +147337,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/websend",
           "title": "PyPI/websend"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "websetup",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/websetup",
+          "title": "PyPI/websetup"
         }
       ],
       "first_seen": null,
@@ -214053,6 +214099,54 @@
       "last_seen": null
     },
     {
+      "name": "@auction-fe/base",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@auction-fe/base",
+          "title": "npm/@auction-fe/base"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@auction-fe/portal",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@auction-fe/portal",
+          "title": "npm/@auction-fe/portal"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@auction-fe/reporting-system",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@auction-fe/reporting-system",
+          "title": "npm/@auction-fe/reporting-system"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@auction-fe/ui-kit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@auction-fe/ui-kit",
+          "title": "npm/@auction-fe/ui-kit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@audi-cct/teaser-feature-app",
       "type": "npm",
       "sources": [
@@ -222067,6 +222161,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@conversation-app/core-api",
           "title": "npm/@conversation-app/core-api"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@convertics/script",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@convertics/script",
+          "title": "npm/@convertics/script"
         }
       ],
       "first_seen": null,
@@ -252769,6 +252875,18 @@
       "last_seen": null
     },
     {
+      "name": "@fyxzpediaa/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fyxzpediaa/baileys",
+          "title": "npm/@fyxzpediaa/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@g.genie/api-demo-sample-lib4",
       "type": "npm",
       "sources": [
@@ -255607,6 +255725,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@h1shiny/ismobile",
           "title": "npm/@h1shiny/ismobile"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@haimiya/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@haimiya/baileys",
+          "title": "npm/@haimiya/baileys"
         }
       ],
       "first_seen": null,
@@ -300241,6 +300371,18 @@
       "last_seen": null
     },
     {
+      "name": "@neroxkira/vangal-baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@neroxkira/vangal-baileys",
+          "title": "npm/@neroxkira/vangal-baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@nerv-hq/control-system",
       "type": "npm",
       "sources": [
@@ -300643,6 +300785,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nexthink/waas",
           "title": "npm/@nexthink/waas"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@nexustechpro/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nexustechpro/baileys",
+          "title": "npm/@nexustechpro/baileys"
         }
       ],
       "first_seen": null,
@@ -315349,6 +315503,18 @@
       "last_seen": null
     },
     {
+      "name": "@sahril2nd/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sahril2nd/baileys",
+          "title": "npm/@sahril2nd/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@saidddddddddd/somethingelse",
       "type": "npm",
       "sources": [
@@ -323531,6 +323697,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@starmind/collector-cli",
           "title": "npm/@starmind/collector-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@staticj/cropperxmjs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@staticj/cropperxmjs",
+          "title": "npm/@staticj/cropperxmjs"
         }
       ],
       "first_seen": null,
@@ -336989,6 +337167,18 @@
       "last_seen": null
     },
     {
+      "name": "@umschool/platform",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@umschool/platform",
+          "title": "npm/@umschool/platform"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@undress-ai/best-undress-ai",
       "type": "npm",
       "sources": [
@@ -337805,6 +337995,18 @@
       "last_seen": null
     },
     {
+      "name": "@vallensofficial/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vallensofficial/baileys",
+          "title": "npm/@vallensofficial/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@vampirchik147/libxmljs2",
       "type": "npm",
       "sources": [
@@ -338135,6 +338337,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@verrylinh/discord",
           "title": "npm/@verrylinh/discord"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@versacode/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@versacode/baileys",
+          "title": "npm/@versacode/baileys"
         }
       ],
       "first_seen": null,
@@ -338987,6 +339201,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vmo-community/video-player",
           "title": "npm/@vmo-community/video-player"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@vnxsync/libsignal-node",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vnxsync/libsignal-node",
+          "title": "npm/@vnxsync/libsignal-node"
         }
       ],
       "first_seen": null,
@@ -345575,6 +345801,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yoimiiya/fetchs",
           "title": "npm/@yoimiiya/fetchs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@yongot/canary-mcp-isolation",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yongot/canary-mcp-isolation",
+          "title": "npm/@yongot/canary-mcp-isolation"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@yongot/canary-mcp-test",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yongot/canary-mcp-test",
+          "title": "npm/@yongot/canary-mcp-test"
         }
       ],
       "first_seen": null,
@@ -471113,6 +471363,18 @@
       "last_seen": null
     },
     {
+      "name": "alloy-graphql",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alloy-graphql",
+          "title": "npm/alloy-graphql"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "alloy-icons",
       "type": "npm",
       "sources": [
@@ -480827,6 +481089,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/amplitude-ts",
           "title": "npm/amplitude-ts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "amprem-activator",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/amprem-activator",
+          "title": "npm/amprem-activator"
         }
       ],
       "first_seen": null,

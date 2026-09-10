@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-09-08T21:08:17Z
+! Generated: 2026-09-10T21:08:36Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2862
+! Total domains: 2861
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -2318,7 +2318,6 @@
 ||soflopxl.com^
 ||softbank.jp^
 ||sojern.com^
-||solarwinds.com^
 ||solera.com^
 ||sonobi.com^
 ||sophi.io^
