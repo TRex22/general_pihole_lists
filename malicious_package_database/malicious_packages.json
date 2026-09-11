@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-10T21:36:16Z",
-  "total": 57301,
+  "generated_at": "2026-09-11T21:36:10Z",
+  "total": 57313,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -11654,6 +11654,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/aistac-foundation",
           "title": "PyPI/aistac-foundation"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aitextkit-py",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/aitextkit-py",
+          "title": "PyPI/aitextkit-py"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aitextutils-py",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/aitextutils-py",
+          "title": "PyPI/aitextutils-py"
         }
       ],
       "first_seen": null,
@@ -43383,6 +43407,18 @@
       "last_seen": null
     },
     {
+      "name": "eth-account-web3",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/eth-account-web3",
+          "title": "PyPI/eth-account-web3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "eth-agent",
       "type": "PyPI",
       "sources": [
@@ -57670,6 +57706,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/langer-updater",
           "title": "PyPI/langer-updater"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "langgrap",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/langgrap",
+          "title": "PyPI/langgrap"
         }
       ],
       "first_seen": null,
@@ -76260,6 +76308,18 @@
       "last_seen": null
     },
     {
+      "name": "ollamaa",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ollamaa",
+          "title": "PyPI/ollamaa"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "olorama",
       "type": "PyPI",
       "sources": [
@@ -76518,6 +76578,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/openai-spellcheckers",
           "title": "PyPI/openai-spellcheckers"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "openaii",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/openaii",
+          "title": "PyPI/openaii"
         }
       ],
       "first_seen": null,
@@ -98404,6 +98476,18 @@
       "last_seen": null
     },
     {
+      "name": "pymem-win",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pymem-win",
+          "title": "PyPI/pymem-win"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "pyminor",
       "type": "PyPI",
       "sources": [
@@ -106964,6 +107048,19 @@
       "last_seen": null
     },
     {
+      "name": "requirements.txt",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://jfrog.com/blog/introducing-agent-package-resolution/",
+          "title": "Coding Agents Just Reopened Your Software Supply Chain Blind Spot",
+          "date": "2026-08-25"
+        }
+      ],
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-25"
+    },
+    {
       "name": "requirementstxtx",
       "type": "PyPI",
       "sources": [
@@ -108559,6 +108656,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "route",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://jfrog.com/blog/introducing-agent-package-resolution/",
+          "title": "Coding Agents Just Reopened Your Software Supply Chain Blind Spot",
+          "date": "2026-08-25"
+        }
+      ],
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-25"
     },
     {
       "name": "route-search",
@@ -141162,6 +141272,18 @@
       "last_seen": null
     },
     {
+      "name": "transfomers",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/transfomers",
+          "title": "PyPI/transfomers"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "transformars",
       "type": "PyPI",
       "sources": [
@@ -146701,6 +146823,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/web3-eth",
           "title": "PyPI/web3-eth"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "web3-eth-account",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/web3-eth-account",
+          "title": "PyPI/web3-eth-account"
         }
       ],
       "first_seen": null,
@@ -300833,6 +300967,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ngt-frontend/widgets-core",
           "title": "npm/@ngt-frontend/widgets-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@nimbusedge/auth",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nimbusedge/auth",
+          "title": "npm/@nimbusedge/auth"
         }
       ],
       "first_seen": null,
