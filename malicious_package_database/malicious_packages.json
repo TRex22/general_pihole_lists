@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-11T21:36:10Z",
-  "total": 57313,
+  "generated_at": "2026-09-12T21:32:54Z",
+  "total": 57315,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -81144,6 +81144,18 @@
       "last_seen": null
     },
     {
+      "name": "platform-telemetry-client",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/platform-telemetry-client",
+          "title": "PyPI/platform-telemetry-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "platforms",
       "type": "PyPI",
       "sources": [
@@ -100582,6 +100594,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/python-files-mod",
           "title": "PyPI/python-files-mod"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "python-fork",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/python-fork",
+          "title": "PyPI/python-fork"
         }
       ],
       "first_seen": null,
