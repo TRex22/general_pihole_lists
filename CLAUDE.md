@@ -9,6 +9,28 @@ Pi-hole allowlist and blocklist collection with Ruby scripts for:
 - Scraping security news sites for malicious domains (defanged IoCs)
 - Building a malicious packages database (npm, PyPI, RubyGems, Cargo, NuGet, Go, Maven, etc.)
 
+## Related Repository: `private_pihole_lists`
+
+This repo (`general_pihole_lists`) is the **public** list — everything here must be
+safe to publish (no personal/household-identifying entries, no adult-content sites,
+no one-off entries tied to a specific person's accounts or devices).
+
+A sibling repo at `~/development/private_pihole_lists` holds **personal, not-for-release**
+allow entries: household-specific allowlisting decisions (adult sites, personal remote-access
+tools, personal device/companion-app domains, streaming/torrent sites, etc.) exported from the
+user's own Pi-hole instance. It has its own `CLAUDE.md` with a "never `git commit`" policy
+matching this repo's.
+
+When triaging domains (e.g. from blocked-query logs) for allowlisting:
+- Safe, non-tracking, and generically useful/publishable → add here.
+- Safe and non-tracking but personal in nature (adult content, personal device/account-specific,
+  household-specific tools) → add to `private_pihole_lists/allowlists/custom_pihole_allow_list.txt`
+  instead.
+- Regex/wildcard entries added to this repo's `allowlists/regex_allowlist.txt` should also be
+  mirrored into `private_pihole_lists/allowlists/private_regex_wildcard_allowlists.txt` (that file
+  is a consolidated copy of every regex ALLOW rule from this repo, per its own header comment).
+- Tracking/ads/telemetry, or anything inconclusive/unverified → leave blocked in both.
+
 ## Repository Structure
 
 ```
