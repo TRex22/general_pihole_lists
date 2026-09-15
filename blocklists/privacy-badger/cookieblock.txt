@@ -1,7 +1,7 @@
 ! Pi-hole Cookieblock List (ABP format) - Domains Privacy Badger allows but strips cookies
-! Generated: 2026-09-14T21:09:37Z
+! Generated: 2026-09-15T21:09:13Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
-! Total domains: 594
+! Total domains: 623
 !
 ! These domains can load resources but would have cookies stripped by Privacy Badger.
 ! Blocking them in Pi-hole is more aggressive than Privacy Badger's default.
@@ -10,6 +10,7 @@
 ||1c5c1ecf7303.0b384439.ap-southeast-1.token.awswaf.com^
 ||25livepub.collegenet.com^
 ||659-jst-226.mktoweb.com^
+||7bgwjjboquq1.servicepipe.tech^
 ||91app.com^
 ||a.klaviyo.com^
 ||a02.azurefd.net^
@@ -18,6 +19,7 @@
 ||affirm.com^
 ||afterpay.com^
 ||airtrfx.com^
+||airwallex.com^
 ||alicdn.com^
 ||aliyuncs.com^
 ||amazoncustomerservice.d2.sc.omtrdc.net^
@@ -49,6 +51,7 @@
 ||api.openai.com^
 ||api.pinterest.com^
 ||api.prefixbox.com^
+||api.razorpay.com^
 ||api.reviews.io^
 ||api.smooch.io^
 ||api.soundcloud.com^
@@ -70,6 +73,7 @@
 ||arc-cdn.net^
 ||arcpublishing.com^
 ||arkoselabs.com^
+||asicsdigitalinc.my.site.com^
 ||assets.braintreegateway.com^
 ||assets.customer.io^
 ||assets.mediadelivery.net^
@@ -82,6 +86,7 @@
 ||auth.split.io^
 ||auth0.com^
 ||authorize.net^
+||avatars.yandex.net^
 ||avplayer-cdn.sportradar.com^
 ||avplayer.sportradar.com^
 ||awswaf.com^
@@ -100,6 +105,7 @@
 ||brm-core-0.brsrvr.com^
 ||broadcast-live-delivery-cdn.jwplayer.com^
 ||browser.translate.yandex.net^
+||buzzsprout.com^
 ||byteoversea.com^
 ||c.riskified.com^
 ||c0.wp.com^
@@ -138,6 +144,7 @@
 ||cdn.livechat-files.com^
 ||cdn.maptiler.com^
 ||cdn.optimizely.com^
+||cdn.paddle.com^
 ||cdn.prefixbox.com^
 ||cdn.qumucloud.com^
 ||cdn.riddle.com^
@@ -156,7 +163,9 @@
 ||cdnvideo.ru^
 ||ceros.com^
 ||cf.aliyun.com^
+||cg.optimizely.com^
 ||check.ddos-guard.net^
+||checkout.razorpay.com^
 ||cidades.rdstation.com.br^
 ||classy.org^
 ||client.axept.io^
@@ -222,6 +231,7 @@
 ||duuytoqss3gu4.cloudfront.net^
 ||duwriicdzpsrh.cloudfront.net^
 ||dwcdn.net^
+||dyleigm6ncg1.servicepipe.tech^
 ||dynamics.com^
 ||e.infogram.com^
 ||edge-geo.nc0.co^
@@ -230,6 +240,7 @@
 ||elfsightcdn.com^
 ||embed.avplayer.com^
 ||embed.flowplayer.com^
+||embeds.beehiiv.com^
 ||enetscores.com^
 ||entitlements.jwplayer.com^
 ||episerver.net^
@@ -239,7 +250,10 @@
 ||everyaction.com^
 ||ex.co^
 ||explicit.bing.net^
+||f55685555563t3i3o3a3b3n3n0079556626.us-5.evergage.com^
+||fc2.com^
 ||feeds.soundcloud.com^
+||five9.com^
 ||flickr.com^
 ||flixcdn.com^
 ||fontawesome.com^
@@ -350,6 +364,7 @@
 ||medallia.com^
 ||media.beehiiv.com^
 ||media.tenor.com^
+||media1.tenor.com^
 ||meetings.hubspot.com^
 ||members.tildaapi.com^
 ||metadata.decagon.ai^
@@ -357,6 +372,7 @@
 ||mirrors.creativecommons.org^
 ||mktoweb.com^
 ||mm.bing.net^
+||mmmxstpfe4y1.servicepipe.tech^
 ||mncdn.com^
 ||mod.bsky.app^
 ||mp.lura.live^
@@ -366,6 +382,7 @@
 ||my.salesforce-sites.com^
 ||my.site.com^
 ||navigation-api.project1service.com^
+||navvy.akamaized.net^
 ||ncsa.sdapi.io^
 ||newsmemory.com^
 ||ngpvan.com^
@@ -383,6 +400,7 @@
 ||open-images.acast.com^
 ||oraclecloud.com^
 ||org.coveo.com^
+||outpost.pub^
 ||packager.avplayer.com^
 ||packagercdn.avplayer.com^
 ||paddle.com^
@@ -423,11 +441,13 @@
 ||pure.cloud^
 ||pusher.com^
 ||puzzles-games-api.gp-prod.conde.digital^
+||pvvstream.pro^
 ||pxlclnmdecom-a.akamaihd.net^
 ||qsearch-a.akamaihd.net^
 ||quadpay.com^
 ||queue-it.net^
 ||quotemedia.com^
+||razorpay.com^
 ||rcom-eu.dynamicyield.com^
 ||rcom.dynamicyield.com^
 ||recaptcha.net^
@@ -459,6 +479,7 @@
 ||secureserver.net^
 ||securiti.ai^
 ||servicepipe.ru^
+||servicepipe.tech^
 ||share.hsforms.com^
 ||shield.sitelock.com^
 ||shopify.com^
@@ -498,9 +519,12 @@
 ||streamguys1.com^
 ||streaming.transcend.io^
 ||streamtheworld.com^
+||stripecdn.com^
+||strm.yandex.net^
 ||substack.com^
 ||sync.transcend.io^
 ||t-mobile.com.ssl.d1.sc.omtrdc.net^
+||t1.kakaocdn.net^
 ||tarteaucitron.io^
 ||tawk.to^
 ||tfaforms.net^
@@ -508,6 +532,7 @@
 ||tildacdn.com^
 ||tinypass.com^
 ||tiqcdn.com^
+||tjuugs2yx8c1.servicepipe.tech^
 ||tms-monitoring-dot-project-id-4181994499646779312.ew.r.appspot.com^
 ||tradingview.com^
 ||transistor.fm^
@@ -526,9 +551,11 @@
 ||uc5a74a5c3fa75b1d0eae0fb016a.dl.dropboxusercontent.com^
 ||uc5c27d1a7ab4b7c9139ee95bec1.dl.dropboxusercontent.com^
 ||uc65c99503f6bb8f0d29434cff1f.dl.dropboxusercontent.com^
+||uc791941a9dc12dada1ee3726f2c.dl.dropboxusercontent.com^
 ||uc950c175ca0dacacd80f7265e9c.dl.dropboxusercontent.com^
 ||uc9885958df8900ec12805d7f775.dl.dropboxusercontent.com^
 ||ucab6dafbffecc523efe151aaa15.dl.dropboxusercontent.com^
+||ucc32b52d32f6fc4be2f1ae8a50f.dl.dropboxusercontent.com^
 ||ucd03600e4598db0be78a7fd5585.dl.dropboxusercontent.com^
 ||ucd3b17ff389db07e6c008b5b419.dl.dropboxusercontent.com^
 ||ucdda6838aef716248417e5d096c.dl.dropboxusercontent.com^
@@ -540,6 +567,7 @@
 ||usercentrics.eu^
 ||userway.org^
 ||usestoryteller.com^
+||v9wmawcdbea1.servicepipe.tech^
 ||validate.perfdrive.com^
 ||verifi.podscribe.com^
 ||viafoura.co^
@@ -587,6 +615,7 @@
 ||www.tickaroo.com^
 ||www.tradingview-widget.com^
 ||www.tripadvisor.com^
+||xhpingcdn.com^
 ||yastatic.net^
 ||yccdn.cloud.yandex.net^
 ||yimg.com^

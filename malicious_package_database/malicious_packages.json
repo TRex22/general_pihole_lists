@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T21:38:34Z",
-  "total": 57320,
+  "generated_at": "2026-09-15T21:34:47Z",
+  "total": 57331,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -129,6 +129,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/littest",
           "title": "Cargo/littest"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "logs_update",
+      "type": "Cargo",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/logs_update",
+          "title": "Cargo/logs_update"
         }
       ],
       "first_seen": null,
@@ -216669,6 +216681,102 @@
       "last_seen": null
     },
     {
+      "name": "@biz44/id10-client",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@biz44/id10-client",
+          "title": "npm/@biz44/id10-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@biz44/id12-client",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@biz44/id12-client",
+          "title": "npm/@biz44/id12-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@biz44/id44-client",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@biz44/id44-client",
+          "title": "npm/@biz44/id44-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@biz44/id79-client",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@biz44/id79-client",
+          "title": "npm/@biz44/id79-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@biz44/id95-client",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@biz44/id95-client",
+          "title": "npm/@biz44/id95-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@biz44/id99-client",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@biz44/id99-client",
+          "title": "npm/@biz44/id99-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@biz44/process-runtime-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@biz44/process-runtime-utils",
+          "title": "npm/@biz44/process-runtime-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@biz44/runtime-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@biz44/runtime-utils",
+          "title": "npm/@biz44/runtime-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@bizone/prettier-config",
       "type": "npm",
       "sources": [
@@ -345929,6 +346037,18 @@
       "last_seen": null
     },
     {
+      "name": "@yggbrasil/api",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yggbrasil/api",
+          "title": "npm/@yggbrasil/api"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@yieldstreet/ui-kit",
       "type": "npm",
       "sources": [
@@ -470651,6 +470771,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aliyundrive",
           "title": "npm/aliyundrive"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "alkajsdfoiwqeusdflkjsdf",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alkajsdfoiwqeusdflkjsdf",
+          "title": "npm/alkajsdfoiwqeusdflkjsdf"
         }
       ],
       "first_seen": null,
