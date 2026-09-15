@@ -25,6 +25,13 @@
 # intermittently fail/hang as if DNS-blocked, since the edge hop itself is blocked.
 (^|\.)msedge\.net$
 
+# The apex for these numbered nodes is actually a hyphenated form like
+# "e-msedge.net" or "b-msedge.net" (e.g. e-0014.e-msedge.net), not bare
+# "msedge.net" — the plain regex above does NOT match that apex since the
+# hyphen sits directly against "msedge.net" with no dot separator. This
+# covers the hyphen-prefixed apex forms.
+(^|\.)[a-z0-9-]+-msedge\.net$
+
 # ── Steam ──────────────────────────────────────────────────────────────────────
 # Valve's game-server CDN uses numbered subdomains (cs1–csN.steampipe.steamserver.net etc.)
 # Adding the root covers all current and future subdomains automatically.
