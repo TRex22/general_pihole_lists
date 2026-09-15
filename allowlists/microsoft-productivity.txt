@@ -33,6 +33,7 @@ login.microsoftonline-p.com
 login.microsoft.com
 auth.microsoft.com
 login.windows.net
+login.windows-ppe.net        # Outlook for Android/iOS pre-production auth endpoint (ID 96, urls-and-ip-address-ranges)
 login-us.microsoftonline.com
 account.live.com
 signup.live.com             # Office Mobile / iPad sign-up flow (ID 114/116, urls-and-ip-address-ranges)
