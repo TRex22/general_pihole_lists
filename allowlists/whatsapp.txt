@@ -41,6 +41,12 @@ graph.whatsapp.net
 # Facebook CDN used by WhatsApp for GIFs and media stickers
 static.xx.fbcdn.net
 
+# WhatsApp Business Platform (Cloud API) media delivery — hosts media links for
+# messages/images sent by WhatsApp Business accounts to regular WhatsApp users
+# (source: Meta/WhatsApp Business API network requirements guidance; confirmed
+# resolving via dig 2026-09-15)
+lookaside.fbsbx.com
+
 # Additional CDN patterns (wildcard - use regex in Pi-hole if needed)
 # *.cdn.whatsapp.net
 # *.whatsapp.net

@@ -143,12 +143,27 @@ chromeosquirksserver-pa.googleapis.com
 # Source: https://support.google.com/chrome/a/answer/6334001
 printerconfigurations.googleusercontent.com
 
+# Chrome enterprise policy/error reporting
+# Source: https://support.google.com/chrome/a/answer/6334001
+chromereporting-pa.googleapis.com
+
+# Chrome Enterprise Premium (secure/managed connections)
+# Source: https://support.google.com/chrome/a/answer/6334001
+secureconnect-pa.clients6.google.com
+secureconnect-pa.googleapis.com
+secureconnect-pa.mtls.clients6.google.com
+ingress.cloudproxy.app
+# securegateway.goog resolved 0.0.0.0/:: on 2026-09-15 (sinkholed/placeholder) — not added, re-verify later
+
 # ============================================
 # GOOGLE WORKSPACE / GMAIL
 # ============================================
 
 mail.google.com
 contacts.google.com
+# Google Chat (Workspace messaging, also a Meet API dependency)
+# Source: Google Workspace network endpoints (Meet prepare-your-network doc)
+chat.google.com
 peoplestack-pa.googleapis.com
 peoplestackwebexperiments-pa.clients6.google.com  # experiment-flag delivery for People/Contacts features, incl. Photos Face Grouping
 photos.googleapis.com
@@ -169,6 +184,9 @@ alt5-mtalk.google.com
 alt6-mtalk.google.com
 alt7-mtalk.google.com
 alt8-mtalk.google.com
+# Staging/dev push messaging endpoints — also in Chrome's hostname allowlist / FCM network docs
+mtalk-staging.google.com
+mtalk-dev.google.com
 android.clients.google.com
 android.apis.google.com
 android.googleapis.com
@@ -235,6 +253,10 @@ commondatastorage.googleapis.com
 # Android OTA update delivery (HTTPS)
 ota.googlezip.net
 ota-cache1.googlezip.net
+
+# Moto/OEM Android OS update channel
+# Source: Pi-hole commonly whitelisted domains
+appspot-preview.l.google.com
 
 # Google Play Services API (app installs, system updates, phone upgrades)
 play.googleapis.com
@@ -329,6 +351,14 @@ waa-pa.clients6.google.com
 # Google Ads/anti-abuse attestation companion endpoint — kept even with ads
 # personalization off per Gemini app firewall settings source; also in ai-services.txt
 ogads-pa.clients6.google.com
+
+# Telemetry/ads endpoints also listed on the Gemini app firewall settings page —
+# excluded per this file's "Functionality Only" policy (analytics/ads, not required for use)
+# www.googletagmanager.com
+# www.google-analytics.com  (already directly blocklisted in blocklists/ublock/*)
+# static.doubleclick.net
+# td.doubleclick.net
+# googleads.g.doubleclick.net
 
 # ============================================
 # GOOGLE CORE (GENERAL)
