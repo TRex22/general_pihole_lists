@@ -9,6 +9,19 @@ Pi-hole allowlist and blocklist collection with Ruby scripts for:
 - Scraping security news sites for malicious domains (defanged IoCs)
 - Building a malicious packages database (npm, PyPI, RubyGems, Cargo, NuGet, Go, Maven, etc.)
 
+## Public List Policy
+
+This repo is a **public** list — everything here must be safe to publish (no
+personal/household-identifying entries, no adult-content sites, no one-off entries tied to a
+specific person's accounts or devices). Domains that are safe but not publishable are handled
+outside this repo and must not be referenced anywhere in it.
+
+When triaging domains (e.g. from blocked-query logs) for allowlisting:
+- Safe, non-tracking, and generically useful/publishable → add here.
+- Safe and non-tracking but not publishable (adult content, piracy, personal
+  device/account-specific, household-specific tools) → do not add here.
+- Tracking/ads/telemetry, or anything inconclusive/unverified → leave blocked.
+
 ## Repository Structure
 
 ```
