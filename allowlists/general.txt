@@ -297,6 +297,7 @@ status-time-free.bloompeak.io
 kollabe.com
 www.kollabe.com
 kollabe.supahub.com
+dashboard.kollabe.com  # verified 2026-09-15, source: kollabe.com homepage
 
 # Canva
 # Source: https://www.canva.com/help/allow-canva-through-firewall/
@@ -583,6 +584,7 @@ i.lencr.org
 pki.goog
 ocsp.pki.goog
 crl.pki.goog
+status.pki.goog  # verified 2026-09-15, GTS status page
 
 # DigiCert
 # Source: https://www.digicert.com/kb/util/utility-test-ocsp-and-crl-access-from-a-server.htm
@@ -951,6 +953,9 @@ detectportal.firefox.com  # captive portal detection
 firefox-portal-detection.com  # captive portal detection (alternate/backup domain)
 merino.services.mozilla.com
 cdn.mozilla.net
+thunderbird.org  # verified 2026-09-15, source: wiki.mozilla.org/Websites/Domain_List
+extensions.mozilla.org  # verified 2026-09-15, source: wiki.mozilla.org/Websites/Domain_List
+hacks.mozilla.org  # verified 2026-09-15, Mozilla developer blog
 img-getpocket.cdn.mozilla.net
 getpocket.com
 app.getpocket.com
