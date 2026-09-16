@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-09-15T21:09:13Z
+# Generated: 2026-09-16T21:09:48Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 791
+# Total domains: 792
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -172,6 +172,7 @@ cdn.fontshare.com
 cdn.getshogun.com
 cdn.hinet.net
 cdn.hometogo.net
+cdn.intelligems.io
 cdn.jwplayer.com
 cdn.livechat-files.com
 cdn.maptiler.com

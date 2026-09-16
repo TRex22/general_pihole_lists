@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-15T21:34:47Z",
-  "total": 57331,
+  "generated_at": "2026-09-16T21:34:00Z",
+  "total": 57344,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -21687,6 +21687,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/clearsrc",
           "title": "PyPI/clearsrc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "cli-anything-ai-market",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cli-anything-ai-market",
+          "title": "PyPI/cli-anything-ai-market"
         }
       ],
       "first_seen": null,
@@ -44937,6 +44949,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fairsequence",
           "title": "PyPI/fairsequence"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "faiss-cpu-avx512",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/faiss-cpu-avx512",
+          "title": "PyPI/faiss-cpu-avx512"
         }
       ],
       "first_seen": null,
@@ -68380,6 +68404,18 @@
       "last_seen": null
     },
     {
+      "name": "licloud",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/licloud",
+          "title": "PyPI/licloud"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "lightfm-ext",
       "type": "PyPI",
       "sources": [
@@ -82398,6 +82434,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ppytorch",
           "title": "PyPI/ppytorch"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "praetorian-mind-rce-test-2026",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/praetorian-mind-rce-test-2026",
+          "title": "PyPI/praetorian-mind-rce-test-2026"
         }
       ],
       "first_seen": null,
@@ -103118,6 +103166,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/raimbowxyz",
           "title": "PyPI/raimbowxyz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "rak-lab-yoav-orca-zrktd2cp5hjmo4x7",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/rak-lab-yoav-orca-zrktd2cp5hjmo4x7",
+          "title": "PyPI/rak-lab-yoav-orca-zrktd2cp5hjmo4x7"
         }
       ],
       "first_seen": null,
@@ -141578,6 +141638,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongap",
           "title": "PyPI/trongap"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "trongappy",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trongappy",
+          "title": "PyPI/trongappy"
         }
       ],
       "first_seen": null,
@@ -311197,6 +311269,42 @@
       "last_seen": null
     },
     {
+      "name": "@prime0/alanced-match",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/alanced-match",
+          "title": "npm/@prime0/alanced-match"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/inimatch",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/inimatch",
+          "title": "npm/@prime0/inimatch"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/pcomatch",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/pcomatch",
+          "title": "npm/@prime0/pcomatch"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@primeo/address",
       "type": "npm",
       "sources": [
@@ -334349,6 +334457,30 @@
       "last_seen": null
     },
     {
+      "name": "@traktis/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@traktis/core",
+          "title": "npm/@traktis/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@traktis/environment",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@traktis/environment",
+          "title": "npm/@traktis/environment"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@transaction-history/ui-components",
       "type": "npm",
       "sources": [
@@ -346403,6 +346535,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zahlen/checkout-react",
           "title": "npm/@zahlen/checkout-react"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zaka13/thing",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zaka13/thing",
+          "title": "npm/@zaka13/thing"
         }
       ],
       "first_seen": null,
@@ -605365,6 +605509,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bender-lyaml-loader",
           "title": "npm/bender-lyaml-loader"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bender-rspack-config",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bender-rspack-config",
+          "title": "npm/bender-rspack-config"
         }
       ],
       "first_seen": null,
