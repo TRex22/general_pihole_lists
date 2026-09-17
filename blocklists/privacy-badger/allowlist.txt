@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-09-16T21:09:48Z
+# Generated: 2026-09-17T21:09:42Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 792
+# Total domains: 798
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -48,6 +48,7 @@ api.framer.com
 api.hsforms.com
 api.hubspot.com
 api.idalgo.idalgo-hosting.com
+api.kaching.eu.com
 api.line.me
 api.maptiler.com
 api.mapy.cz
@@ -174,6 +175,7 @@ cdn.hinet.net
 cdn.hometogo.net
 cdn.intelligems.io
 cdn.jwplayer.com
+cdn.kaching.eu.com
 cdn.livechat-files.com
 cdn.maptiler.com
 cdn.myopenpass.com
@@ -450,6 +452,7 @@ maps.yandex.net
 mapserver.mapy.cz
 matterport.com
 mdstrm.com
+media-cdn.atlassian.com
 media.beehiiv.com
 media.tenor.com
 media1.tenor.com
@@ -556,9 +559,12 @@ postimg.cc
 powerbi.com
 pp.ephapay.net
 prcdn.co
+prensaiberica.es
 pricespider.com
 prismic.io
 privacy.ezodn.com
+prod.api.digitalvideoplatform.com
+prod.player.fox.digitalvideoplatform.com
 production.plaid.com
 providesupport.com
 public-api.eventim.com
