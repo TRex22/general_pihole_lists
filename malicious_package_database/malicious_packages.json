@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-16T21:34:00Z",
-  "total": 57344,
+  "generated_at": "2026-09-17T21:35:56Z",
+  "total": 57349,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -11474,6 +11474,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/aiopbotocore",
           "title": "PyPI/aiopbotocore"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aiosendletter",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/aiosendletter",
+          "title": "PyPI/aiosendletter"
         }
       ],
       "first_seen": null,
@@ -70298,6 +70310,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/marinff-test",
           "title": "PyPI/marinff-test"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "marketing-mcp",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/marketing-mcp",
+          "title": "PyPI/marketing-mcp"
         }
       ],
       "first_seen": null,
@@ -264529,6 +264553,30 @@
       "last_seen": null
     },
     {
+      "name": "@kartyk-github-org/takedown-a",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kartyk-github-org/takedown-a",
+          "title": "npm/@kartyk-github-org/takedown-a"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@kartyk-github-org/takedown-b",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kartyk-github-org/takedown-b",
+          "title": "npm/@kartyk-github-org/takedown-b"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@kaspersky/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -313275,6 +313323,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@rafaelsene01/agent-flow",
           "title": "npm/@rafaelsene01/agent-flow"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@railone/image-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@railone/image-utils",
+          "title": "npm/@railone/image-utils"
         }
       ],
       "first_seen": null,
