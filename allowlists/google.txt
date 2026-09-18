@@ -1,4 +1,293 @@
-YOUTUBE
+# Google Allowlist for Pi-hole - Functionality Only
+# Required domains for Google services functionality
+# Excludes: ads, tracking, analytics, and location-reporting domains
+# Sources:
+#   - Google Workspace network endpoints: https://knowledge.workspace.google.com/admin/meet/prepare-your-network-for-meet-meetings-and-live-streams
+#     (https://support.google.com/a/answer/1279090 now redirects here)
+#   - Android connectivity check: https://support.google.com/android/answer/9654714
+#     (page now covers metered Wi-Fi/Private DNS settings, not captive-portal domains; content drifted as of 2026-08-23, re-checked 2026-08-25, still no domains listed)
+#   - Chrome Safe Browsing / hostname allowlist: https://support.google.com/chrome/a/answer/6334001
+#     (https://support.google.com/chrome/a/answer/6334504 returns 404 as of 2026-06; superseded by 6334001)
+#   - Firebase Cloud Messaging: https://firebase.google.com/docs/cloud-messaging/network-configuration
+#     (https://firebase.google.com/docs/cloud-messaging/concept-options returns 404 as of 2026-06; superseded by network-configuration)
+#   - YouTube required domains: https://support.google.com/youtube/answer/10046411
+#     (returns 404 as of 2026-06 — likely removed/merged into another article; kept for reference)
+#   - Pi-hole commonly whitelisted: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
+#   - Gemini app firewall settings: https://support.google.com/a/answer/15627649
+#     (redirects to https://knowledge.workspace.google.com/admin/gemini/gemini-app-firewall-settings)
+
+# ============================================
+# CAPTIVE PORTAL DETECTION
+# ============================================
+# Required for Android/Chrome to detect WiFi login pages
+
+connectivitycheck.android.com
+connectivitycheck.gstatic.com
+clients3.google.com
+
+# ============================================
+# CORE GOOGLE SERVICES
+# ============================================
+
+apis.google.com
+www.googleapis.com
+googleapis.l.google.com
+gstaticadssl.l.google.com
+plus.l.google.com
+clients.l.google.com
+lh2.l.google.com  # image-serving infrastructure
+stun.l.google.com  # public STUN server for WebRTC (Meet, and many third-party apps)
+
+# Authentication and account management
+accounts.google.com
+passwords.google.com  # source list had "password.google.com" (typo/does not resolve) — corrected to the real Google Password Manager domain
+oauthaccountmanager.googleapis.com
+clientservices.googleapis.com
+# Account/one-google-services bar used by Gemini and other embedded surfaces
+# Source: Gemini app firewall settings
+ogs.google.com
+
+# Static assets (fonts, icons, profile pictures)
+www.gstatic.com
+t2.gstatic.com
+fonts.gstatic.com
+lh3.googleusercontent.com
+lh5.googleusercontent.com
+lh3.google.com
+
+# Legacy Google Photos/Picasa CDN aliases (avatars, profile pictures)
+# Source: https://support.google.com/chrome/a/answer/6334001
+lh3.ggpht.com
+lh4.ggpht.com
+lh5.ggpht.com
+lh6.ggpht.com
+
+# Chrome Web Store extension assets (icons, screenshots)
+# Source: https://support.google.com/chrome/a/answer/6334001
+clients2.googleusercontent.com
+
+# Image thumbnails (search results, Gemini image results)
+# Source: Gemini app firewall settings (knowledge.workspace.google.com/admin/gemini/gemini-app-firewall-settings)
+encrypted-tbn0.gstatic.com
+encrypted-tbn1.gstatic.com
+encrypted-tbn2.gstatic.com
+encrypted-tbn3.gstatic.com
+
+# Google APIs (web fonts, AJAX libraries, Maps, Translate)
+fonts.googleapis.com
+ajax.googleapis.com
+maps.googleapis.com
+maps.gstatic.com
+translate.googleapis.com
+
+# Street View imagery (Maps, Gemini location results)
+streetviewpixels-pa.googleapis.com
+
+# Content Security Policy report collector (required by several Google web apps)
+csp.withgoogle.com
+
+# Browser autofill suggestions backed by Google account data
+content-autofill.googleapis.com
+
+# Safe Browsing (security feature — keeps phishing/malware warnings working)
+# Source: https://support.google.com/chrome/a/answer/6334001 (Chrome hostname allowlist)
+safebrowsing.googleapis.com
+safebrowsing.google.com
+safebrowsing-cache.google.com
+sb-ssl.google.com
+safebrowsingrealtime.googleapis.com
+enterprise-safebrowsing.googleapis.com
+ohttp-relay-safebrowsing-chrome.google.fastly-edge.com  # Oblivious HTTP relay for privacy-preserving Safe Browsing checks
+
+# Certificate Transparency / PKI (security feature)
+# Source: https://support.google.com/chrome/a/answer/6334001
+pki.google.com
+chromeos-ca.gstatic.com
+
+# Chrome / Android update delivery
+dl.google.com
+dl-ssl.google.com
+redirector.gvt1.com
+tools.google.com
+m.google.com
+edgedl.me.gvt1.com
+update.googleapis.com
+
+# Chrome/ChromeOS Omaha update proxy endpoints
+# Source: https://support.google.com/chrome/a/answer/6334001
+omahaproxy.appspot.com
+cros-omahaproxy.appspot.com
+
+# Chrome Web Store (extension install/update)
+chrome.google.com
+
+# Chrome sign-in / policy sync
+# Source: https://support.google.com/chrome/a/answer/6334001
+ssl.gstatic.com
+accounts.gstatic.com
+policies.google.com
+
+# Chrome misc services (legacy software distribution, first-run guide, client backend)
+# Source: https://support.google.com/chrome/a/answer/6334001
+pack.google.com
+gweb-gettingstartedguide.appspot.com
+scone-pa.clients6.google.com
+
+# ChromeOS device management (cert store already above; hardware info, display quirks database)
+# Source: https://support.google.com/chrome/a/answer/6334001
+alkalichromeosflexhwis2-pa.googleapis.com
+aratea-pa.googleapis.com
+chromeosquirksserver-pa.googleapis.com
+
+# Chrome/ChromeOS native printing (printer configuration profiles)
+# Source: https://support.google.com/chrome/a/answer/6334001
+printerconfigurations.googleusercontent.com
+
+# Chrome enterprise policy/error reporting
+# Source: https://support.google.com/chrome/a/answer/6334001
+chromereporting-pa.googleapis.com
+
+# Chrome Enterprise Premium (secure/managed connections)
+# Source: https://support.google.com/chrome/a/answer/6334001
+secureconnect-pa.clients6.google.com
+secureconnect-pa.googleapis.com
+secureconnect-pa.mtls.clients6.google.com
+ingress.cloudproxy.app
+# securegateway.goog resolved 0.0.0.0/:: on 2026-09-15 (sinkholed/placeholder) — not added, re-verify later
+
+# ============================================
+# GOOGLE WORKSPACE / GMAIL
+# ============================================
+
+mail.google.com
+contacts.google.com
+# Google Chat (Workspace messaging, also a Meet API dependency)
+# Source: Google Workspace network endpoints (Meet prepare-your-network doc)
+chat.google.com
+peoplestack-pa.googleapis.com
+peoplestackwebexperiments-pa.clients6.google.com  # experiment-flag delivery for People/Contacts features, incl. Photos Face Grouping
+photos.googleapis.com
+photosdata-pa.googleapis.com
+
+# Google Cloud Search (Workspace search across Gmail/Drive/Docs)
+# Source: https://support.google.com/chrome/a/answer/6334001
+cloudsearch.googleapis.com
+
+# Android push messaging (required for notifications on Android devices)
+mtalk.google.com
+mtalk4.google.com
+alt1-mtalk.google.com
+alt2-mtalk.google.com
+alt3-mtalk.google.com
+alt4-mtalk.google.com
+alt5-mtalk.google.com
+alt6-mtalk.google.com
+alt7-mtalk.google.com
+alt8-mtalk.google.com
+# Staging/dev push messaging endpoints — also in Chrome's hostname allowlist / FCM network docs
+mtalk-staging.google.com
+mtalk-dev.google.com
+android.clients.google.com
+android.apis.google.com
+android.googleapis.com
+clients1.google.com
+clients2.google.com
+clients4.google.com
+clients5.google.com
+clients6.google.com
+
+# ============================================
+# DEVICE FEATURES
+# ============================================
+
+# Nearby Share
+nearbysharing-pa.googleapis.com
+
+# Phone / device verification
+phonedeviceverification-pa.googleapis.com
+
+# Device provisioning (Android setup)
+device-provisioning.googleapis.com
+
+# Chrome / Android optimization guide (offline browsing prediction, prefetch)
+optimizationguide-pa.googleapis.com
+
+# Phone number management (Android dialer, Google contacts)
+myphonenumbers-pa.googleapis.com
+
+# ============================================
+# GOOGLE KEEP / FIREBASE
+# ============================================
+
+reminders-pa.googleapis.com
+firestore.googleapis.com
+
+# ============================================
+# GOOGLE MEET
+# ============================================
+
+meet.google.com
+stream.meet.google.com
+hangouts.googleapis.com
+meetings.googleapis.com
+meetings.clients6.google.com
+
+# Google Meet TURN/routing SNI hostnames (required for Meet media relay)
+workspace.turns.goog
+meet.turns.goog
+
+# ============================================
+# GOOGLE DOCS / DRIVE
+# ============================================
+
+docs.google.com
+
+# ============================================
+# ANDROID OTA & SYSTEM UPDATES
+# ============================================
+
+# Google Cloud Storage — serves Android OTA packages and app data
+storage.googleapis.com
+commondatastorage.googleapis.com
+
+# Android OTA update delivery (HTTPS)
+ota.googlezip.net
+ota-cache1.googlezip.net
+
+# Moto/OEM Android OS update channel
+# Source: Pi-hole commonly whitelisted domains
+appspot-preview.l.google.com
+
+# Google Play Services API (app installs, system updates, phone upgrades)
+play.googleapis.com
+content.googleapis.com
+
+# Android website connectivity checks
+android.com
+www.android.com
+
+# Maven repository for Android/Kotlin dependencies
+maven.google.com
+
+# ============================================
+# FIREBASE CLOUD MESSAGING (FCM)
+# ============================================
+# Required for push notifications on Android
+
+fcm.googleapis.com
+fcm-xmpp.googleapis.com
+iid.googleapis.com
+firebaseinstallations.googleapis.com
+firebaseperusertopics-pa.googleapis.com
+
+# Legacy Google Cloud Messaging (GCM) — deprecated predecessor to FCM; still listed in
+# Chrome's hostname allowlist, kept for apps that haven't migrated off the old API
+# Source: https://support.google.com/chrome/a/answer/6334001
+gcm-http.googleapis.com
+gcm-xmpp.googleapis.com
+
+# ============================================
+# YOUTUBE
 # ============================================
 # Sources:
 #   https://support.google.com/youtube/answer/10046411
@@ -50,15 +339,7 @@ beacons.gcp.gvt2.com
 # rr4---sn-woc7kn7y.googlevideo.com
 
 # ============================================
-# 
-# Additional Google domains from discourse (2026-09-15)
-# youtubei.googleapis.com - YouTube API (Shorts feed, search, playback control)
-youtubei.googleapis.com
-# oauth2.googleapis.com - OAuth 2.0 for Google services
-oauth2.googleapis.com
-# api-firestore.googleapis.com - Firestore API
-api-firestore.googleapis.com
-GEMINI
+# GEMINI
 # ============================================
 # Source: Gemini app firewall settings
 
