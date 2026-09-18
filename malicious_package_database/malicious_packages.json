@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-17T21:35:56Z",
-  "total": 57349,
+  "generated_at": "2026-09-18T21:40:00Z",
+  "total": 57360,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -54436,6 +54436,18 @@
       "last_seen": null
     },
     {
+      "name": "index-forum",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/index-forum",
+          "title": "PyPI/index-forum"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "indextts-cli",
       "type": "PyPI",
       "sources": [
@@ -98140,6 +98152,18 @@
       "last_seen": null
     },
     {
+      "name": "pyjstat-smooth",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pyjstat-smooth",
+          "title": "PyPI/pyjstat-smooth"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "pyjunkerpro",
       "type": "PyPI",
       "sources": [
@@ -106220,6 +106244,30 @@
       "last_seen": null
     },
     {
+      "name": "requests-asetwe",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/requests-asetwe",
+          "title": "PyPI/requests-asetwe"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "requests-auroras",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/requests-auroras",
+          "title": "PyPI/requests-auroras"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "requests-auth-toolkit",
       "type": "PyPI",
       "sources": [
@@ -106772,6 +106820,18 @@
       "last_seen": null
     },
     {
+      "name": "requests-triwes",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/requests-triwes",
+          "title": "PyPI/requests-triwes"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "requests-ttoolbelt",
       "type": "PyPI",
       "sources": [
@@ -107178,19 +107238,6 @@
       ],
       "first_seen": null,
       "last_seen": null
-    },
-    {
-      "name": "requirements.txt",
-      "type": "PyPI",
-      "sources": [
-        {
-          "url": "https://jfrog.com/blog/introducing-agent-package-resolution/",
-          "title": "Coding Agents Just Reopened Your Software Supply Chain Blind Spot",
-          "date": "2026-08-25"
-        }
-      ],
-      "first_seen": "2026-08-25",
-      "last_seen": "2026-08-25"
     },
     {
       "name": "requirementstxtx",
@@ -108788,19 +108835,6 @@
       ],
       "first_seen": null,
       "last_seen": null
-    },
-    {
-      "name": "route",
-      "type": "PyPI",
-      "sources": [
-        {
-          "url": "https://jfrog.com/blog/introducing-agent-package-resolution/",
-          "title": "Coding Agents Just Reopened Your Software Supply Chain Blind Spot",
-          "date": "2026-08-25"
-        }
-      ],
-      "first_seen": "2026-08-25",
-      "last_seen": "2026-08-25"
     },
     {
       "name": "route-search",
@@ -261481,6 +261515,18 @@
       "last_seen": null
     },
     {
+      "name": "@insiderintelligence/googleadmanager",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@insiderintelligence/googleadmanager",
+          "title": "npm/@insiderintelligence/googleadmanager"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@instagram/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -271231,6 +271277,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@legalzoom/auth",
           "title": "npm/@legalzoom/auth"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@lekzo/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@lekzo/baileys",
+          "title": "npm/@lekzo/baileys"
         }
       ],
       "first_seen": null,
@@ -316177,6 +316235,18 @@
       "last_seen": null
     },
     {
+      "name": "@sanzoffc/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sanzoffc/baileys",
+          "title": "npm/@sanzoffc/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@sanzxcode/baileys",
       "type": "npm",
       "sources": [
@@ -320497,12 +320567,48 @@
       "last_seen": null
     },
     {
+      "name": "@shared-runtime/modules",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@shared-runtime/modules",
+          "title": "npm/@shared-runtime/modules"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@shared-ui/global-navigation-header",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@shared-ui/global-navigation-header",
           "title": "npm/@shared-ui/global-navigation-header"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@shared-web/assets",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@shared-web/assets",
+          "title": "npm/@shared-web/assets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@shared-web/utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@shared-web/utils",
+          "title": "npm/@shared-web/utils"
         }
       ],
       "first_seen": null,
@@ -333419,6 +333525,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@timsuchanek/eb-test",
           "title": "npm/@timsuchanek/eb-test"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@tink/tink-link-core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tink/tink-link-core",
+          "title": "npm/@tink/tink-link-core"
         }
       ],
       "first_seen": null,
@@ -625249,6 +625367,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/blue-oval-theme",
           "title": "npm/blue-oval-theme"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "blue-string-formatter-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/blue-string-formatter-utils",
+          "title": "npm/blue-string-formatter-utils"
         }
       ],
       "first_seen": null,

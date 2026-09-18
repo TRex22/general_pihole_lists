@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-09-17T21:09:42Z
+# Generated: 2026-09-18T21:08:44Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 798
+# Total domains: 801
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -72,6 +72,7 @@ api.trustedform.com
 api.twisto.cz
 api.twisto.pl
 api.twitch.tv
+api.unidadeditorial.es
 api.userback.io
 api64.ipify.org
 app.hubspot.com
@@ -235,6 +236,7 @@ cognigy.cloud
 coin-eu.amazonpay.com
 coin.amazonpay.com
 commerce.adobe.io
+components.unidadeditorial.es
 config.smooch.io
 connect.breadpayments.com
 consent.api.osano.com
@@ -528,6 +530,7 @@ pdp.gokwik.co
 pendo.io
 photo.store.qq.com
 pic.rmb.bdstatic.com
+piccoma.kakaocdn.net
 pico.tools
 pics.dmm.co.jp
 pinimg.com
