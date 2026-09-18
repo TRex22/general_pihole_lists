@@ -26,12 +26,15 @@ Skip `allowlists/ublock_allowlist.txt` (hand-picked personal exceptions, not sou
    - Skip anything that violates the file's stated exclusion policy — see Telemetry policy below.
    - Verify it resolves with `dig +short <domain>`, checked **individually**, not in a bulk/parallel sweep — under load this resolver has produced false NXDOMAIN results for domains that are definitely live (it flagged `api.claude.ai` and `ebay.com` as dead in one run). Re-check anything suspicious on its own before acting on it.
    - **Safety check — mandatory, no exceptions:** before adding *any* domain to an allowlist, check it against this repo's own blocklists (`blocklists/malicious.txt`, `blocklists/ublock/*`, `blocklists/privacy-badger/*`, `blocklists/whatsapp-tracking.txt`) with a plain grep for the domain and its registrable base domain. If it appears in any blocklist file — for any reason, even if a "legitimate" source pointed you at it — do **not** add it to the allowlist. Blocklist entries are never something to follow, override, or resolve in the allowlist's favor; treat a hit as a hard stop, note it plainly in your report (domain, which blocklist, and why the source suggested it), and move on. This applies to every candidate, not just rebrand/redirect destinations (see below) — a compromised or malicious domain can show up in a "commonly whitelisted" thread or official-looking doc page too.
+   - **Dedup first:** grep every file in `allowlists/` for the exact domain before adding. If it is already present anywhere, do not add it again (cross-file duplicates are only for deliberate cross-references with a `# also in X.txt` comment). Never add the same domain twice in one file, and never paste the same block of domains into a file more than once.
+   - **Unknown domain? Research it online — mandatory.** If you can't say with confidence what company/service a domain belongs to and what it does, run a web search (WebSearch) for the bare domain name (e.g. `"appboy-images.com"`) before deciding. Direct fetches of the domain often fail because the local Pi-hole sinkholes it — go to search, not the domain itself. Decide from what the search says: first-party functional endpoint → add; analytics/ads/marketing/crash-reporting/push-engagement/fingerprinting → do not add; nothing useful found → do not add, list it under "unverified" in your report. Never add a domain you could not identify, and never guess from the hostname alone.
    - Place it in the most specific matching file, not `general.txt` — e.g. Xbox domains belong in `microsoft-productivity.txt` (Microsoft-owned), not `general.txt`.
    - Add it under the right thematic section, matching the file's existing comment-banner style, with a source citation if the section doesn't already make that obvious.
    - If a candidate/existing domain has rebranded, renamed, or now redirects elsewhere (a source page says so, or `curl -sIL <url>` shows a 301/302 chain), don't just note it in a comment — verify the destination domain(s) individually with `dig +short` and add them as active entries too, alongside the legacy domain (keep the legacy entry if it still resolves; see rebrand policy below).
 5. Never delete an existing entry on a suspicion of it being dead without the same individual verification as step 4.
 6. If a documented source itself is dead (404, expired domain), note it in the header comment with the date and status rather than silently dropping it — match the existing style, e.g. `(DEAD as of 2026-06-18, 404 — no official replacement found)`. If WebFetch simply can't reach a source (e.g. it refuses `reddit.com` outright) that's a tool limitation, not a dead source — don't mark it dead; try a corroborating source instead and say in your summary that the fetch was blocked.
-7. Report a per-file summary at the end: what was added, and explicitly state "already current, no changes" for files with nothing new — don't skip a file silently.
+7. Before reporting, run the file-integrity checks above on every file you touched.
+8. Report a per-file summary at the end: what was added, what was rejected as tracking/telemetry, what was rejected as unidentifiable (unverified), what was researched online and the finding, and explicitly state "already current, no changes" for files with nothing new — don't skip a file silently.
 
 ## Telemetry / analytics policy
 
@@ -40,6 +43,32 @@ Files marked "Functionality Only" exclude ads, tracking, analytics, and telemetr
 - Don't add it as an active entry.
 - If worth documenting, add it commented-out with a one-line reason, matching the existing convention (see the Sentry/analytics block in `ai-services.txt`).
 - If it's a *tracker* worth blocking rather than allowing, it belongs in a blocklist (e.g. `blocklists/whatsapp-tracking.txt`), not an allowlist.
+
+## Tracking / telemetry red flags (reject unless research proves otherwise)
+
+Treat these as tracking/ad-tech/telemetry by default, even when a "commonly whitelisted" list or a blocked-query log includes them:
+- Ad/video-ad platforms and engagement/marketing SDKs: Braze/`appboy`, OneSignal, vidible, coupon/affiliate CDNs (`cpnscdn`), Adobe/Typekit pixel hosts (`p.typekit.net`).
+- Crash/analytics/telemetry: App Center (`appcenter.ms`), Windows diagnostics (`*.data.microsoft.com` such as `settings-win`, `vortex-win`), `telemetry.`, `metrics.`, `analytics.`, `stats.`, `beacon`, `events.`, `logs.`, `sentry`, `segment`.
+- Meta CDN/API hosts (`*.fbcdn.net` like `external-lhr*`, `b-api.facebook.com`, `creative.ak.fbcdn.net`) — tracking-adjacent; only allow what a documented first-party Meta/WhatsApp source requires, and only in the matching file.
+- Anything with `ad`/`ads` in the service role, or location-reporting endpoints.
+- The Pi-hole discourse "commonly whitelisted domains" thread is a *mixed* source containing trackers: every candidate from it goes through this list, the research step, and the scope policy — never bulk-import it.
+
+## Placing domains in the right file
+
+A domain belongs in the file for its owner/purpose, not wherever the source was fetched for. Before writing, check the target file's header scope:
+- `ai-services.txt` — AI/LLM products and their tooling only. Password managers, whiteboards, schedulers, CDNs etc. go in `general.txt`.
+- `google.txt` / `apple.txt` / `aws.txt` / `microsoft-productivity.txt` — vendor-owned domains only (Xbox, Teams, Azure, OneDrive → Microsoft; `*.icloud.com`, `*.apple.com` → Apple; `sts.*.amazonaws.com` → aws.txt).
+- `online-shopping.txt` — retailers/marketplaces; `video-streaming.txt` — actual video/audio streaming services (not web archives, crawlers or library sites).
+- `general.txt` — only what fits no specific file, and it must not merely duplicate another file.
+- Personal/adult/household-specific domains never go in this public repo (see CLAUDE.md, `private_pihole_lists`).
+
+## File-integrity rules (append-only edits)
+
+- Edit with targeted inserts (Edit tool) — never rewrite or regenerate a whole allowlist file, and never replace a section header line with new content. Existing headers (`# GEMINI`, `# COMMON DEPENDENCIES`, `# South African online shopping`, `# YOUTUBE`) must survive unchanged; add new entries *under* a section, not on top of its banner.
+- Every domain line must be a single valid hostname: no spaces, no inline prose (e.g. `stream Microsoft.com` is invalid), no trailing text except a `# comment`.
+- Do not leave empty placeholder headers (a banner with nothing under it).
+- After editing, run `git diff --stat` and `git diff` for each file. Investigate any file whose diff shows large deletions (a run that only adds domains should show ~0 deleted lines) or hundreds of added lines from one source — that indicates truncation or a paste loop; restore with `git checkout -- <file>` and redo it properly.
+- Also verify: `sort | uniq -d` on the file's domain lines yields no new duplicates, and no domain you added appears in `blocklists/`.
 
 ## Rebrands, renames, and redirects
 
