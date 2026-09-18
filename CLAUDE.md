@@ -16,6 +16,18 @@ personal/household-identifying entries, no adult-content sites, no one-off entri
 specific person's accounts or devices). Domains that are safe but not publishable are handled
 outside this repo and must not be referenced anywhere in it.
 
+**Verifying an unfamiliar domain before allowlisting it**: a direct
+`fetch`/`WebFetch` against the domain itself commonly fails with a
+"blocked internal address"-style error (the local Pi-hole resolves it to
+a sinkhole address, e.g. `::`, precisely because it isn't allowlisted
+yet - that's Pi-hole working as intended, not a bug to report back or a
+reason to ask the user for more context). Go straight to a web search
+for what the domain/service is instead of trying to fetch it directly -
+searching the bare domain name (e.g. `"prismml.com"`) tends to succeed
+even when a more qualified query (`"prismml.com machine learning AI
+service"`) returns nothing. Only ask the user for clarification if the
+search itself also turns up nothing useful.
+
 When triaging domains (e.g. from blocked-query logs) for allowlisting:
 - Safe, non-tracking, and generically useful/publishable → add here.
 - Safe and non-tracking but not publishable (adult content, piracy, personal
