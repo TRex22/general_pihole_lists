@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-18T21:40:00Z",
-  "total": 57360,
+  "generated_at": "2026-09-19T21:34:25Z",
+  "total": 57364,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -94780,6 +94780,18 @@
       "last_seen": null
     },
     {
+      "name": "py-venv-doctor",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/py-venv-doctor",
+          "title": "PyPI/py-venv-doctor"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "py-vercraftget",
       "type": "PyPI",
       "sources": [
@@ -107240,6 +107252,19 @@
       "last_seen": null
     },
     {
+      "name": "requirements.txt",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://jfrog.com/blog/introducing-agent-package-resolution/",
+          "title": "Coding Agents Just Reopened Your Software Supply Chain Blind Spot",
+          "date": "2026-08-25"
+        }
+      ],
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-25"
+    },
+    {
       "name": "requirementstxtx",
       "type": "PyPI",
       "sources": [
@@ -108835,6 +108860,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "route",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://jfrog.com/blog/introducing-agent-package-resolution/",
+          "title": "Coding Agents Just Reopened Your Software Supply Chain Blind Spot",
+          "date": "2026-08-25"
+        }
+      ],
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-25"
     },
     {
       "name": "route-search",
@@ -143580,6 +143618,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/uprobe",
           "title": "PyPI/uprobe"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "urc",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/urc",
+          "title": "PyPI/urc"
         }
       ],
       "first_seen": null,
