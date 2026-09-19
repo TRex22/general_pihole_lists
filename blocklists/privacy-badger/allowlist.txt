@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-09-18T21:08:44Z
+# Generated: 2026-09-19T21:08:26Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 801
+# Total domains: 802
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -683,6 +683,7 @@ streaming.transcend.io
 streamtheworld.com
 stripecdn.com
 strm.yandex.net
+stytch.com
 substack.com
 svea.com
 swiftype.com

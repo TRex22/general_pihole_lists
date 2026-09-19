@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-09-18T21:08:44Z
+! Generated: 2026-09-19T21:08:26Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2964
+! Total domains: 2963
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -2489,7 +2489,6 @@
 ||stx-track.com^
 ||styleaffinity.com^
 ||stylitics.com^
-||stytch.com^
 ||sugarcams.com^
 ||sumome.com^
 ||sundaysky.com^
