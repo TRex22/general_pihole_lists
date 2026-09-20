@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-19T21:34:25Z",
-  "total": 57364,
+  "generated_at": "2026-09-20T21:38:44Z",
+  "total": 57365,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -312323,6 +312323,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pwa-ib/eslint-plugin-compat",
           "title": "npm/@pwa-ib/eslint-plugin-compat"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@pwaplatform/module-sso-integration",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pwaplatform/module-sso-integration",
+          "title": "npm/@pwaplatform/module-sso-integration"
         }
       ],
       "first_seen": null,
