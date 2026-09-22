@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-09-21T21:09:07Z
+# Generated: 2026-09-22T21:09:08Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 802
+# Total domains: 804
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -32,6 +32,7 @@ api-cdn.embed.ly
 api-cdn.mypurecloud.com.au
 api-cdn.mypurecloud.de
 api-cloud.eventim.com
+api-edge.askmiso.com
 api-v2.soundcloud.com
 api.appcues.com
 api.axept.io
@@ -579,6 +580,7 @@ pusher.com
 puzzles-games-api.gp-prod.conde.digital
 quadpay.com
 queue-it.net
+quiq-api.com
 quotemedia.com
 rackcdn.com
 radikal.ru

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-21T21:39:39Z",
-  "total": 57392,
+  "generated_at": "2026-09-22T21:42:39Z",
+  "total": 57407,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -14276,6 +14276,18 @@
       "last_seen": null
     },
     {
+      "name": "auclean",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/auclean",
+          "title": "PyPI/auclean"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "audio-separator-fork",
       "type": "PyPI",
       "sources": [
@@ -21921,6 +21933,18 @@
       "last_seen": null
     },
     {
+      "name": "cloushaar-poc-exfil-91827",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cloushaar-poc-exfil-91827",
+          "title": "PyPI/cloushaar-poc-exfil-91827"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "clowpy",
       "type": "PyPI",
       "sources": [
@@ -26131,6 +26155,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/crypto-regex-gener",
           "title": "PyPI/crypto-regex-gener"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "crypto-trader-py",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/crypto-trader-py",
+          "title": "PyPI/crypto-trader-py"
         }
       ],
       "first_seen": null,
@@ -81564,6 +81600,18 @@
       "last_seen": null
     },
     {
+      "name": "poly-check-b",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/poly-check-b",
+          "title": "PyPI/poly-check-b"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "polyclawd",
       "type": "PyPI",
       "sources": [
@@ -107264,6 +107312,19 @@
       "last_seen": null
     },
     {
+      "name": "requirements.txt",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://jfrog.com/blog/introducing-agent-package-resolution/",
+          "title": "Coding Agents Just Reopened Your Software Supply Chain Blind Spot",
+          "date": "2026-08-25"
+        }
+      ],
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-25"
+    },
+    {
       "name": "requirementstxtx",
       "type": "PyPI",
       "sources": [
@@ -108859,6 +108920,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "route",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://jfrog.com/blog/introducing-agent-package-resolution/",
+          "title": "Coding Agents Just Reopened Your Software Supply Chain Blind Spot",
+          "date": "2026-08-25"
+        }
+      ],
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-25"
     },
     {
       "name": "route-search",
@@ -122779,6 +122853,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/smtrlib",
           "title": "PyPI/smtrlib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "snap-queue",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/snap-queue",
+          "title": "PyPI/snap-queue"
         }
       ],
       "first_seen": null,
@@ -170273,6 +170359,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/nhtsa-vin",
           "title": "RubyGems/nhtsa-vin"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "no-fun",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/no-fun",
+          "title": "RubyGems/no-fun"
         }
       ],
       "first_seen": null,
@@ -284243,6 +284341,18 @@
       "last_seen": null
     },
     {
+      "name": "@mikudeveloper/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mikudeveloper/baileys",
+          "title": "npm/@mikudeveloper/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@milleree/date-display",
       "type": "npm",
       "sources": [
@@ -299177,6 +299287,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mqttapplicationsamples/mqttjsclientextensions",
           "title": "npm/@mqttapplicationsamples/mqttjsclientextensions"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@mr-supun-fernando/supunmd-bail",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mr-supun-fernando/supunmd-bail",
+          "title": "npm/@mr-supun-fernando/supunmd-bail"
         }
       ],
       "first_seen": null,
@@ -332883,6 +333005,18 @@
       "last_seen": null
     },
     {
+      "name": "@tesla-insurance/vinless-quote",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tesla-insurance/vinless-quote",
+          "title": "npm/@tesla-insurance/vinless-quote"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@test3.svt/first-npm-package-test",
       "type": "npm",
       "sources": [
@@ -338583,6 +338717,18 @@
       "last_seen": null
     },
     {
+      "name": "@uol-afiliados/affiliated-config-lib",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@uol-afiliados/affiliated-config-lib",
+          "title": "npm/@uol-afiliados/affiliated-config-lib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@upc2web/font-firasans",
       "type": "npm",
       "sources": [
@@ -338781,6 +338927,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@usemosaik/template-react-js",
           "title": "npm/@usemosaik/template-react-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@user-services/web-components",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@user-services/web-components",
+          "title": "npm/@user-services/web-components"
         }
       ],
       "first_seen": null,
@@ -339981,6 +340139,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vite-tab/tab",
           "title": "npm/@vite-tab/tab"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@vite-tab/tabui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vite-tab/tabui",
+          "title": "npm/@vite-tab/tabui"
         }
       ],
       "first_seen": null,
@@ -402213,6 +402383,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zhiend989/asdfqwer",
           "title": "npm/@zhiend989/asdfqwer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zig-design-system/react",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zig-design-system/react",
+          "title": "npm/@zig-design-system/react"
         }
       ],
       "first_seen": null,
