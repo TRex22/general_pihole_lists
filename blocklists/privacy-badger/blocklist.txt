@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-09-21T21:09:07Z
+! Generated: 2026-09-22T21:09:08Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2963
+! Total domains: 2962
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -2093,7 +2093,6 @@
 ||quantumgraph.com^
 ||quantummetric.com^
 ||questionpro.com^
-||quiq-api.com^
 ||qumucloud.com^
 ||quotiq.ru^
 ||qvdt3feo.com^
