@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-09-22T21:09:00Z
-# Total domains: 880
+# Generated: 2026-09-23T21:09:52Z
+# Total domains: 883
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -14,6 +14,7 @@ a.adwolf.ru
 a.sellpoint.net
 aargauerzeitung.ch
 aasarchitecture.com
+aax-fe.amazon.co.jp
 ac.ebis.ne.jp
 acorta-enlace.com
 acs-m.daraz.com.bd
@@ -400,6 +401,7 @@ hidive.com
 history.com
 hobbyking.com
 home.focusatwill.com
+homedepot.com.ssl.d2.sc.omtrdc.net
 honeyhunterworld.com
 how2electronics.com
 howsmyssl.com
@@ -760,6 +762,7 @@ support-beacon.nakanohito.jp
 support-widget.nakanohito.jp
 surveymyopinion.researchnow.com
 svc.dynamics.com
+swasc.homedepot.com
 t-online.de
 tagesanzeiger.ch
 taiga.maven.io

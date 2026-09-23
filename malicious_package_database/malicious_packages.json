@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-22T21:42:39Z",
-  "total": 57407,
+  "generated_at": "2026-09-23T21:42:31Z",
+  "total": 57433,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -56896,6 +56896,18 @@
       "last_seen": null
     },
     {
+      "name": "kerokwis",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/kerokwis",
+          "title": "PyPI/kerokwis"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "kersa",
       "type": "PyPI",
       "sources": [
@@ -71822,6 +71834,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/memorylib",
           "title": "PyPI/memorylib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "memoryos",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/memoryos",
+          "title": "PyPI/memoryos"
         }
       ],
       "first_seen": null,
@@ -107312,19 +107336,6 @@
       "last_seen": null
     },
     {
-      "name": "requirements.txt",
-      "type": "PyPI",
-      "sources": [
-        {
-          "url": "https://jfrog.com/blog/introducing-agent-package-resolution/",
-          "title": "Coding Agents Just Reopened Your Software Supply Chain Blind Spot",
-          "date": "2026-08-25"
-        }
-      ],
-      "first_seen": "2026-08-25",
-      "last_seen": "2026-08-25"
-    },
-    {
       "name": "requirementstxtx",
       "type": "PyPI",
       "sources": [
@@ -108920,19 +108931,6 @@
       ],
       "first_seen": null,
       "last_seen": null
-    },
-    {
-      "name": "route",
-      "type": "PyPI",
-      "sources": [
-        {
-          "url": "https://jfrog.com/blog/introducing-agent-package-resolution/",
-          "title": "Coding Agents Just Reopened Your Software Supply Chain Blind Spot",
-          "date": "2026-08-25"
-        }
-      ],
-      "first_seen": "2026-08-25",
-      "last_seen": "2026-08-25"
     },
     {
       "name": "route-search",
@@ -164113,6 +164111,18 @@
       "last_seen": null
     },
     {
+      "name": "kerokwis",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/kerokwis",
+          "title": "RubyGems/kerokwis"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "kevin-thompson",
       "type": "RubyGems",
       "sources": [
@@ -188395,6 +188405,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/wurl-aws-s3",
           "title": "RubyGems/wurl-aws-s3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "wurl_show_data",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/wurl_show_data",
+          "title": "RubyGems/wurl_show_data"
         }
       ],
       "first_seen": null,
@@ -256069,6 +256091,18 @@
       "last_seen": null
     },
     {
+      "name": "@gsutevil/hta-stage",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gsutevil/hta-stage",
+          "title": "npm/@gsutevil/hta-stage"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@gt-test-exp/profiler-exp-00000001",
       "type": "npm",
       "sources": [
@@ -260143,6 +260177,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@httttt/mcp-demo",
           "title": "npm/@httttt/mcp-demo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@httttt/mcp-npx-fetch-1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@httttt/mcp-npx-fetch-1",
+          "title": "npm/@httttt/mcp-npx-fetch-1"
         }
       ],
       "first_seen": null,
@@ -283711,6 +283757,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@meme-sdk/trade",
           "title": "npm/@meme-sdk/trade"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@memtensor/memos-cloud-openclaw-plugin",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@memtensor/memos-cloud-openclaw-plugin",
+          "title": "npm/@memtensor/memos-cloud-openclaw-plugin"
         }
       ],
       "first_seen": null,
@@ -333017,6 +333075,42 @@
       "last_seen": null
     },
     {
+      "name": "@test1230504/probe-7f3k2m-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@test1230504/probe-7f3k2m-utils",
+          "title": "npm/@test1230504/probe-7f3k2m-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@test1230504/string-format-helper",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@test1230504/string-format-helper",
+          "title": "npm/@test1230504/string-format-helper"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@test1230504/test-publish-verify",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@test1230504/test-publish-verify",
+          "title": "npm/@test1230504/test-publish-verify"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@test3.svt/first-npm-package-test",
       "type": "npm",
       "sources": [
@@ -335987,6 +336081,66 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tushar-br/file11",
           "title": "npm/@tushar-br/file11"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@tvg-mar/promos-context",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tvg-mar/promos-context",
+          "title": "npm/@tvg-mar/promos-context"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@tvg-mar/promos-gtm",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tvg-mar/promos-gtm",
+          "title": "npm/@tvg-mar/promos-gtm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@tvg-mar/storyblok-bridge",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tvg-mar/storyblok-bridge",
+          "title": "npm/@tvg-mar/storyblok-bridge"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@tvg-mar/tvg-promos-atomic-ui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tvg-mar/tvg-promos-atomic-ui",
+          "title": "npm/@tvg-mar/tvg-promos-atomic-ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@tvg-mar/utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tvg-mar/utils",
+          "title": "npm/@tvg-mar/utils"
         }
       ],
       "first_seen": null,
@@ -340169,6 +340323,18 @@
       "last_seen": null
     },
     {
+      "name": "@vitemirrorte/element-plus-vite-cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vitemirrorte/element-plus-vite-cli",
+          "title": "npm/@vitemirrorte/element-plus-vite-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@vitets/vite-ts",
       "type": "npm",
       "sources": [
@@ -343901,12 +344067,72 @@
       "last_seen": null
     },
     {
+      "name": "@wizloft/harness-authority",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wizloft/harness-authority",
+          "title": "npm/@wizloft/harness-authority"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wizloft/harness-cli-adapter",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wizloft/harness-cli-adapter",
+          "title": "npm/@wizloft/harness-cli-adapter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wizloft/harness-commands",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wizloft/harness-commands",
+          "title": "npm/@wizloft/harness-commands"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@wizloft/harness-context",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wizloft/harness-context",
           "title": "npm/@wizloft/harness-context"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wizloft/harness-evidence",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wizloft/harness-evidence",
+          "title": "npm/@wizloft/harness-evidence"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wizloft/harness-file-providers",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wizloft/harness-file-providers",
+          "title": "npm/@wizloft/harness-file-providers"
         }
       ],
       "first_seen": null,
@@ -343925,12 +344151,72 @@
       "last_seen": null
     },
     {
+      "name": "@wizloft/harness-memory",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wizloft/harness-memory",
+          "title": "npm/@wizloft/harness-memory"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wizloft/harness-plugin-file-events",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wizloft/harness-plugin-file-events",
+          "title": "npm/@wizloft/harness-plugin-file-events"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wizloft/harness-plugin-file-memory",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wizloft/harness-plugin-file-memory",
+          "title": "npm/@wizloft/harness-plugin-file-memory"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wizloft/harness-plugin-memory-context",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wizloft/harness-plugin-memory-context",
+          "title": "npm/@wizloft/harness-plugin-memory-context"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@wizloft/harness-plugin-repository-files",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wizloft/harness-plugin-repository-files",
           "title": "npm/@wizloft/harness-plugin-repository-files"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wizloft/harness-project",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wizloft/harness-project",
+          "title": "npm/@wizloft/harness-project"
         }
       ],
       "first_seen": null,
@@ -407819,6 +408105,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/a-love-letter-to-whiskey-by-kandi-steiner-on-iphone-new-version-",
           "title": "npm/a-love-letter-to-whiskey-by-kandi-steiner-on-iphone-new-version-"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "a-onesite",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/a-onesite",
+          "title": "npm/a-onesite"
         }
       ],
       "first_seen": null,
@@ -608533,6 +608831,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/better-jade-boar",
           "title": "npm/better-jade-boar"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "better-md",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/better-md",
+          "title": "npm/better-md"
         }
       ],
       "first_seen": null,
