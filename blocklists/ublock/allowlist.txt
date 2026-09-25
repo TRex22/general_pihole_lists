@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-09-24T21:10:16Z
-# Total domains: 883
+# Generated: 2026-09-25T21:09:36Z
+# Total domains: 885
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -175,6 +175,7 @@ cdn.cloudflare.net
 cdn.cookielaw.org
 cdn.deviceinf.com
 cdn.duurzaam.greenchoice.nl
+cdn.engagement.coremedia.cloud
 cdn.ex.co
 cdn.kaizenplatform.net
 cdn.playwire.com
@@ -234,6 +235,7 @@ cuatro.com
 curiositystream.com
 curiositystream.com.first-party-js.datadome.co
 cutcaptcha.com
+cuttty.com
 cwtv.com
 cz.mrezadosa.com
 damnripped.com
