@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T21:41:48Z",
-  "total": 58100,
+  "generated_at": "2026-09-25T21:41:22Z",
+  "total": 58112,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -73976,6 +73976,18 @@
       "last_seen": null
     },
     {
+      "name": "my-private-pkg",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/my-private-pkg",
+          "title": "PyPI/my-private-pkg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "my-service-manager",
       "type": "PyPI",
       "sources": [
@@ -105764,6 +105776,18 @@
       "last_seen": null
     },
     {
+      "name": "reqparser",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/reqparser",
+          "title": "PyPI/reqparser"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "reqquest",
       "type": "PyPI",
       "sources": [
@@ -127563,6 +127587,18 @@
       "last_seen": null
     },
     {
+      "name": "tego-managed-agents-test",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tego-managed-agents-test",
+          "title": "PyPI/tego-managed-agents-test"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "telco",
       "type": "PyPI",
       "sources": [
@@ -144939,6 +144975,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/vercc",
           "title": "PyPI/vercc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "vercel-runtime-python",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/vercel-runtime-python",
+          "title": "PyPI/vercel-runtime-python"
         }
       ],
       "first_seen": null,
@@ -213069,6 +213117,18 @@
       "last_seen": null
     },
     {
+      "name": "@airbnb-extended/typescript-config",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@airbnb-extended/typescript-config",
+          "title": "npm/@airbnb-extended/typescript-config"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@airbytehq/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -215739,6 +215799,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@alphasedboy/game",
           "title": "npm/@alphasedboy/game"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@alphaspace/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@alphaspace/core",
+          "title": "npm/@alphaspace/core"
         }
       ],
       "first_seen": null,
@@ -242563,6 +242635,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@digicroz/typed-api-kit",
           "title": "npm/@digicroz/typed-api-kit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@digift/cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@digift/cli",
+          "title": "npm/@digift/cli"
         }
       ],
       "first_seen": null,
@@ -310531,6 +310615,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ntnx/t",
           "title": "npm/@ntnx/t"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@nubjs/types",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nubjs/types",
+          "title": "npm/@nubjs/types"
         }
       ],
       "first_seen": null,
@@ -453665,6 +453761,30 @@
       "last_seen": null
     },
     {
+      "name": "agency-test-exercise",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/agency-test-exercise",
+          "title": "npm/agency-test-exercise"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "agency-testts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/agency-testts",
+          "title": "npm/agency-testts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "agency-web-whitelabel",
       "type": "npm",
       "sources": [
@@ -518411,6 +518531,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/app-rrhh",
           "title": "npm/app-rrhh"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "app-sca-info-banking",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/app-sca-info-banking",
+          "title": "npm/app-sca-info-banking"
         }
       ],
       "first_seen": null,
@@ -616801,6 +616933,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/better-azure-quokka",
           "title": "npm/better-azure-quokka"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "better-dotenv3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/better-dotenv3",
+          "title": "npm/better-dotenv3"
         }
       ],
       "first_seen": null,
