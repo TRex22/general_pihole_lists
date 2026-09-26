@@ -403,3 +403,13 @@ googlehomefoyer-pa.googleapis.com
 taskassist-pa.clients6.google.com
 # Favicon service (Chrome new tab / bookmarks)
 t1.gstatic.com
+
+# Developer package/container registries (Source: https://docs.github.com/en/copilot/reference/copilot-allowlist-reference)
+gcr.io
+packages.cloud.google.com
+maven-central.storage-download.googleapis.com
+
+# Google Help Center and Android help guidebooks
+# (Source: https://support.google.com/android/answer/9654714)
+support.google.com
+guidebooks.google.com
