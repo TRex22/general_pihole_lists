@@ -719,6 +719,32 @@ github.io
 ghcr.io
 pkg.github.com
 avatars.githubusercontent.com
+# VS Code for the Web (Source: https://docs.github.com/en/copilot/reference/copilot-allowlist-reference)
+vscode.dev
+# Git LFS, release/attachment uploads, and GitHub Packages registries
+# (Source: https://docs.github.com/en/copilot/reference/copilot-allowlist-reference)
+lfs.github.com
+uploads.github.com
+github-cloud.s3.amazonaws.com
+npm.pkg.github.com
+nuget.pkg.github.com
+maven.pkg.github.com
+rubygems.pkg.github.com
+
+# .NET SDK / NuGet / container registry / Azure DevOps packages / Playwright
+# (Source: https://docs.github.com/en/copilot/reference/copilot-allowlist-reference)
+dot.net
+ci.dot.net
+builds.dotnet.microsoft.com
+dotnetcli.blob.core.windows.net
+dotnetcli.azureedge.net
+dist.nuget.org
+download.visualstudio.microsoft.com
+mcr.microsoft.com
+pkgs.dev.azure.com
+packages.microsoft.com
+playwright.download.prss.microsoft.com
+playwright.azureedge.net
 camo.githubusercontent.com
 gist.githubusercontent.com
 codeload.github.com
@@ -730,7 +756,7 @@ viewscreen.githubusercontent.com
 data.teams.microsoft.com
 
 # Added 2026-09-26 from blocked query log review
-# Windows network connectivity status indicator (IPv6 probe) — also see general.txt
+# Windows network connectivity status indicator (IPv6 probe)
 ipv6.msftconnecttest.com
 # Microsoft 365 notifications
 notification.m365.svc.cloud.microsoft
@@ -738,5 +764,5 @@ notification.m365.svc.cloud.microsoft
 geo.prod.do.dsp.mp.microsoft.com
 geover.prod.do.dsp.mp.microsoft.com
 cp501.prod.do.dsp.mp.microsoft.com
-# Windows location service (Wi-Fi based positioning)
+# Windows location service (Wi-Fi based positioning — Maps, Weather, auto time zone)
 inference.location.live.net

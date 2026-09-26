@@ -19,6 +19,7 @@
 console.aws.amazon.com
 signin.aws.amazon.com
 us-east-1.signin.aws.amazon.com
+signin.aws
 iam.amazonaws.com
 
 # STS (Security Token Service)
@@ -237,3 +238,6 @@ awswaf.com
 # Amazon internal service subdomains (used by Amazon apps/devices)
 unagi.amazon.com
 dcape-na.amazon.com
+
+# Amazon ECR Public container registry (Source: https://docs.github.com/en/copilot/reference/copilot-allowlist-reference)
+public.ecr.aws

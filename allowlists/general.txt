@@ -69,6 +69,35 @@ getdropbox.com
 stripe.com
 stripe.network
 # stripecdn.com  # already listed in "Domains identified in AI blocklist review" Payments/fintech section below
+# Stripe-documented FQDNs (Source: https://docs.stripe.com/ips, added 2026-09-26)
+# Checkout, hosted payment/invoice pages, Connect onboarding, dashboard, file uploads
+atlas.stripe.com
+auth.stripe.com
+billing.stripe.com
+buy.stripe.com
+checkout.stripe.com
+climate.stripe.com
+connect.stripe.com
+connect-js.stripe.com
+dashboard.stripe.com
+express.stripe.com
+files.stripe.com
+hooks.stripe.com
+invoice.stripe.com
+invoicedata.stripe.com
+manage.stripe.com
+merchant-ui-api.stripe.com
+pay.stripe.com
+payments.stripe.com
+qr.stripe.com
+uploads.stripe.com
+verify.stripe.com
+# Stripe.js fraud-prevention frame (required by Stripe Elements/Checkout)
+m.stripe.network
+b.stripecdn.com
+f.stripecdn.com
+# q.stripe.com  # Stripe.js analytics beacon - not allowlisted (may choose to block)
+# r.stripe.com  # Stripe.js telemetry beacon (POST /0) - not allowlisted (may choose to block)
 
 # PayPal / Braintree
 # Source: https://github.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/blob/master/Whitelist-Modules/whitelist_for_paypal.txt
@@ -279,6 +308,10 @@ api-private.atlassian.com
 migration.atlassian.com
 migration-service.services.atlassian.com
 canvas-workers.atlassian.com
+app-migration-service.services.atlassian.com
+mp-module-federation.prod-east.frontend.public.atl-paas.net
+# Unsplash image picker (page/cover images in Confluence/Trello)
+images.unsplash.com
 
 # Third-party partner domains required by Atlassian Cloud products (security/real-time features)
 recaptcha.net
@@ -362,7 +395,7 @@ ocelot.pushbullet.com  # backend server node, required for sync/notifications
 
 # Malwarebytes
 # Sources:
-#   - https://app-support.malwarebytes.com/docs/DOC-1652
+#   - https://app-support.malwarebytes.com/docs/DOC-1652 (DEAD as of 2026-09-26, NXDOMAIN — host no longer resolves)
 #   - https://support.threatdown.com/hc/en-us/articles/4413798711699
 malwarebytes.com
 www.malwarebytes.com
@@ -443,6 +476,8 @@ website-cdn.assets.ipinfo.io
 # Iconify icon API (backup API host, not tracking)
 # Source: https://iconify.design/docs/api/
 api.unisvg.com
+api.iconify.design
+api.simplesvg.com
 
 proofpoint.com
 pphosted.com
@@ -574,6 +609,8 @@ crt.comodoca.com
 # Source: https://letsencrypt.org/docs/lencr.org/
 letsencrypt.org
 acme-v02.api.letsencrypt.org
+# Let's Encrypt community support forum
+community.letsencrypt.org
 lencr.org
 c.lencr.org
 o.lencr.org
@@ -588,9 +625,12 @@ status.pki.goog  # verified 2026-09-15, GTS status page
 
 # DigiCert
 # Source: https://www.digicert.com/kb/util/utility-test-ocsp-and-crl-access-from-a-server.htm
+#   (now 301-redirects to https://knowledge.digicert.com/general-information/ocsp-crl-revoked-ssl-certificates, verified 2026-09-26)
 digicert.com
 www.digicert.com
 cacerts.digicert.com
+# DigiCert knowledge base (redirect destination of the old digicert.com/kb pages)
+knowledge.digicert.com
 ocsp.digicert.com
 ocspx.digicert.com
 crl3.digicert.com
@@ -608,6 +648,7 @@ secure.globalsign.net
 
 # GeoTrust / Thawte / VeriSign (legacy DigiCert brands)
 # Source: https://www.digicert.com/kb/digicert-root-certificates.htm
+#   (now 301-redirects to https://knowledge.digicert.com/general-information/digicert-trusted-root-authority-certificates, verified 2026-09-26)
 geotrust.com
 thawte.com
 verisign.com
@@ -963,6 +1004,16 @@ mozilla-ohttp-gateway.fastly.net
 bugzilla.mozilla.org
 hg.mozilla.org
 wiki.mozilla.org
+# Release/nightly downloads, localization, blogs (added 2026-09-26)
+archive.mozilla.org
+releases.mozilla.org
+nightly.mozilla.org
+l10n.mozilla.org
+blog.mozilla.org
+planet.mozilla.org
+pulse.mozilla.org
+# Public Suffix List (used by browsers/libraries for cookie/domain boundary rules)
+publicsuffix.org
 # crash-stats.mozilla.com  # crash report telemetry - not allowlisted
 
 # ─────────────────────────────────────────────────────────────────────
@@ -982,6 +1033,7 @@ registry.npmjs.org
 npmjs.com
 www.npmjs.com
 skimdb.npmjs.com
+docs.npmjs.com
 
 # Yarn
 registry.yarnpkg.com
@@ -1226,6 +1278,10 @@ controlplane.tailscale.com
 console.tailscale.com
 log.tailscale.com
 pkgs.tailscale.com
+# DERP relay servers named in the source (plain entries coexist with the regex)
+derp1-all.tailscale.com
+derp2-all.tailscale.com
+derp28-all.tailscale.com
 
 # ─────────────────────────────────────────────────────────────────────
 # Blocklist Sources & Security Research
@@ -1767,12 +1823,17 @@ embed.savvycal.com
 
 # Added 2026-09-26 from blocked query log review
 # Academic / research
+# NOTE: arxiv.org and doi.org appear in blocklists/malicious.txt only as citations
+# scraped from security articles (false positives), not as malicious infrastructure
 arxiv.org
 doi.org
+# Academic federated login (SeamlessAccess — publisher SSO)
 service.seamlessaccess.org
 # Let's Encrypt intermediate issuer (certificate chain / AIA fetch)
 yr.i.lencr.org
 # Public IP lookup utilities (scripts/dev tools) — see api.ipify.org above
+# NOTE: ipv4.icanhazip.com / ident.me are in blocklists/malicious.txt because malware
+# uses them for IP discovery (Talos IoC lists) — the services themselves are benign
 icanhazip.com
 ipv4.icanhazip.com
 ipv6.icanhazip.com
@@ -1781,8 +1842,6 @@ ident.me
 v4.ident.me
 # WebRTC STUN (Firefox video calls)
 stun.services.mozilla.com
-# Windows IPv6 connectivity probe — also in microsoft-productivity.txt
-ipv6.msftconnecttest.com
 # Image/video hosting CDNs
 i.imgur.com
 ik.imagekit.io
@@ -1790,7 +1849,8 @@ video.gumlet.io
 cdn.ziffstatic.com
 # Ada customer-support chat widget (used by many support sites)
 static.ada.support
-# Instagram core app gateway
+# Instagram core app gateway (first-party app API host on Meta CDN)
+# Source: https://www.netify.ai/resources/hostnames/gateway.instagram.com
 gateway.instagram.com
 # Discovery Vitality (South African health/rewards programme)
 www.vitalityactive.com
@@ -1798,3 +1858,115 @@ www.vitalityactive.com
 games.gg
 # Tech review site
 thewearify.com
+
+# ============================================
+# DEVELOPER PACKAGE REGISTRIES / TOOLCHAINS / CERT REVOCATION
+# ============================================
+# Source: https://docs.github.com/en/copilot/reference/copilot-allowlist-reference
+# (added 2026-09-26; GitHub/.NET hosts are in microsoft-productivity.txt, gcr.io in google.txt,
+# public.ecr.aws in aws.txt)
+
+# Certificate revocation (CRL/OCSP) — code-signing and TLS chain validation
+ts-crl.ws.symantec.com
+ts-ocsp.ws.symantec.com
+s.symcb.com
+s.symcd.com
+crl.geotrust.com
+ocsp.geotrust.com
+crl.thawte.com
+ocsp.thawte.com
+crl.verisign.com
+ocsp.verisign.com
+crls.ssl.com
+ocsp.ssl.com
+ocsp.identrust.com
+
+# Container registries
+registry.hub.docker.com
+quay.io
+
+# Go
+golang.org
+goproxy.io
+
+# Haskell
+haskell.org
+hackage.haskell.org
+get-ghcup.haskell.org
+downloads.haskell.org
+
+# Java / JVM
+www.java.com
+jdk.java.net
+adoptium.net
+api.adoptium.net
+maven.oracle.com
+oss.sonatype.org
+repo.spring.io
+plugins-artifacts.gradle.org
+repo.grails.org
+download.eclipse.org
+download.oracle.com
+
+# JavaScript
+# NOTE: npmjs.org is in blocklists/malicious.txt only as a citation in npm supply-chain articles (false positive)
+npmjs.org
+registry.npmjs.com
+api.npms.io
+nodejs.org
+repo.yarnpkg.com
+get.pnpm.io
+bun.sh
+binaries.prisma.sh
+
+# Perl
+cpan.org
+www.cpan.org
+metacpan.org
+cpan.metacpan.org
+
+# Python
+pypi.python.org
+pip.pypa.io
+anaconda.org
+conda.anaconda.org
+repo.anaconda.com
+# NOTE: download.pytorch.org is in blocklists/malicious.txt as a citation in the 2022
+# torchtriton dependency-confusion reports (false positive — official PyTorch wheel host)
+download.pytorch.org
+
+# Ruby
+cache.ruby-lang.org
+get.rvm.io
+
+# Rust
+sh.rustup.rs
+static.rust-lang.org
+
+# Swift
+swift.org
+download.swift.org
+
+# HashiCorp / Terraform
+releases.hashicorp.com
+apt.releases.hashicorp.com
+registry.terraform.io
+
+# Schemas
+json-schema.org
+json.schemastore.org
+
+# Linux distribution package mirrors / keyservers
+keyserver.ubuntu.com
+api.snapcraft.io
+keyring.debian.org
+# NOTE: llvm.org is in blocklists/malicious.txt as an article citation (false positive)
+apt.llvm.org
+download.fedoraproject.org
+dl-cdn.alpinelinux.org
+cdn.redhat.com
+packagecloud.io
+
+# Kubernetes
+dl.k8s.io
+pkgs.k8s.io

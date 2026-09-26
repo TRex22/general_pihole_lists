@@ -79,6 +79,7 @@ SKIP_DOMAINS = Set.new(%w[
   github.com githubusercontent.com github.dev
   gitlab.com bitbucket.org
   wikipedia.org wikimedia.org
+  arxiv.org doi.org mozilla.com
   apache.org
   asp.net
   thehackernews.com
