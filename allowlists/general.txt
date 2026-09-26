@@ -1764,3 +1764,37 @@ cache.agilebits.com
 api.pwnedpasswords.com
 tldraw.com
 embed.savvycal.com
+
+# Added 2026-09-26 from blocked query log review
+# Academic / research
+arxiv.org
+doi.org
+service.seamlessaccess.org
+# Let's Encrypt intermediate issuer (certificate chain / AIA fetch)
+yr.i.lencr.org
+# Public IP lookup utilities (scripts/dev tools) — see api.ipify.org above
+icanhazip.com
+ipv4.icanhazip.com
+ipv6.icanhazip.com
+ifconfig.me
+ident.me
+v4.ident.me
+# WebRTC STUN (Firefox video calls)
+stun.services.mozilla.com
+# Windows IPv6 connectivity probe — also in microsoft-productivity.txt
+ipv6.msftconnecttest.com
+# Image/video hosting CDNs
+i.imgur.com
+ik.imagekit.io
+video.gumlet.io
+cdn.ziffstatic.com
+# Ada customer-support chat widget (used by many support sites)
+static.ada.support
+# Instagram core app gateway
+gateway.instagram.com
+# Discovery Vitality (South African health/rewards programme)
+www.vitalityactive.com
+# Gaming guides/news site
+games.gg
+# Tech review site
+thewearify.com
