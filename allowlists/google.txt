@@ -375,3 +375,31 @@ feedback.googleusercontent.com
 
 # Google Calendar push notification subscription API (sync functionality)
 calendarpushsubscription-pa.googleapis.com
+
+# Added 2026-09-26 from blocked query log review — security/account/sync functionality
+# Chrome/Android account sign-in capability checks
+accountcapabilities-pa.googleapis.com
+# Safe Browsing on Android (direct + Oblivious HTTP relays via Fastly)
+android-safebrowsing.google.com
+ohttp-relay-safebrowsing-android.google.fastly-edge.com
+# Android developer verification (app install checks) via OHTTP relay
+ohttp-relay-android-dev-verification.google.fastly-edge.com
+# Chrome sync
+chromesyncentities-pa.googleapis.com
+# CryptAuth — cross-device auth, Smart Lock, passkey/key sync
+cryptauthdevicesync.googleapis.com
+cryptauthvault.googleapis.com
+# Passkey / Google Password Manager security domain
+securitydomain-pa.googleapis.com
+# Password Checkup (leaked credential check)
+passwordsleakcheck-pa.googleapis.com
+# Play Integrity device tokens (required by banking/payment apps)
+deviceintegritytokens-pa.googleapis.com
+# On-device scam/safety detection
+ondevicesafety-pa.googleapis.com
+# Google Home app
+googlehomefoyer-pa.googleapis.com
+# Google Tasks
+taskassist-pa.clients6.google.com
+# Favicon service (Chrome new tab / bookmarks)
+t1.gstatic.com

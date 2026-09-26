@@ -728,3 +728,15 @@ viewscreen.githubusercontent.com
 
 # Teams data service
 data.teams.microsoft.com
+
+# Added 2026-09-26 from blocked query log review
+# Windows network connectivity status indicator (IPv6 probe) — also see general.txt
+ipv6.msftconnecttest.com
+# Microsoft 365 notifications
+notification.m365.svc.cloud.microsoft
+# Delivery Optimization — Windows Update / Store download peer + geo selection
+geo.prod.do.dsp.mp.microsoft.com
+geover.prod.do.dsp.mp.microsoft.com
+cp501.prod.do.dsp.mp.microsoft.com
+# Windows location service (Wi-Fi based positioning)
+inference.location.live.net
