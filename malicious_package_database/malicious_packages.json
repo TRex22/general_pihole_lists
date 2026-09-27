@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-25T21:41:22Z",
-  "total": 58112,
+  "generated_at": "2026-09-26T21:38:49Z",
+  "total": 58113,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -122025,6 +122025,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sherms",
           "title": "PyPI/sherms"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "sherpy",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sherpy",
+          "title": "PyPI/sherpy"
         }
       ],
       "first_seen": null,
