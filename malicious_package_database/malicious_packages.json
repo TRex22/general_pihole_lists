@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-26T21:38:49Z",
-  "total": 58113,
+  "generated_at": "2026-09-27T21:13:45Z",
+  "total": 58123,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -13616,6 +13616,18 @@
       "last_seen": null
     },
     {
+      "name": "aseity",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/aseity",
+          "title": "PyPI/aseity"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "aslmutetion",
       "type": "PyPI",
       "sources": [
@@ -20041,6 +20053,18 @@
       "last_seen": null
     },
     {
+      "name": "caracas4check",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/caracas4check",
+          "title": "PyPI/caracas4check"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "carcent",
       "type": "PyPI",
       "sources": [
@@ -21677,6 +21701,18 @@
       "last_seen": null
     },
     {
+      "name": "claudedashbord",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/claudedashbord",
+          "title": "PyPI/claudedashbord"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "clawdest",
       "type": "PyPI",
       "sources": [
@@ -22347,6 +22383,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/coinmate-api",
           "title": "PyPI/coinmate-api"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "coinscan",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/coinscan",
+          "title": "PyPI/coinscan"
         }
       ],
       "first_seen": null,
@@ -31617,6 +31665,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/dontdownloadthis",
           "title": "PyPI/dontdownloadthis"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "donutautosellsrc",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/donutautosellsrc",
+          "title": "PyPI/donutautosellsrc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "donutpromotion",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/donutpromotion",
+          "title": "PyPI/donutpromotion"
         }
       ],
       "first_seen": null,
@@ -72092,6 +72164,30 @@
       "last_seen": null
     },
     {
+      "name": "metrics-sdk",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/metrics-sdk",
+          "title": "PyPI/metrics-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "metrio",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/metrio",
+          "title": "PyPI/metrio"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "metrok",
       "type": "PyPI",
       "sources": [
@@ -106484,6 +106580,18 @@
       "last_seen": null
     },
     {
+      "name": "requests-cache-utils",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/requests-cache-utils",
+          "title": "PyPI/requests-cache-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "requests-core-plugin",
       "type": "PyPI",
       "sources": [
@@ -110445,6 +110553,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/scraperworldapi",
           "title": "PyPI/scraperworldapi"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "scrapetools2",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/scrapetools2",
+          "title": "PyPI/scrapetools2"
         }
       ],
       "first_seen": null,
