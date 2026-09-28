@@ -721,6 +721,14 @@ pkg.github.com
 avatars.githubusercontent.com
 # VS Code for the Web (Source: https://docs.github.com/en/copilot/reference/copilot-allowlist-reference)
 vscode.dev
+# github.com page assets (CSS/JS incl. OAuth "Authorize app" page used by MCP connectors),
+# live-update websocket, and user content hosts (added 2026-09-28)
+github.githubassets.com
+opengraph.githubassets.com
+alive.github.com
+user-images.githubusercontent.com
+gist.github.com
+docs.github.com
 # Git LFS, release/attachment uploads, and GitHub Packages registries
 # (Source: https://docs.github.com/en/copilot/reference/copilot-allowlist-reference)
 lfs.github.com
