@@ -123,57 +123,14 @@ anime-planet.com
 www.anime-planet.com
 
 # ─────────────────────────────────────────────────────────────────────
-# "Omega" — Streaming Services
+# IPTV (licensed subscription services)
 # ─────────────────────────────────────────────────────────────────────
 
-# OmegaScans (manhwa/manga scanlation reader)
-# Source: https://omegascans.org / https://omegascans.my
-omegascans.org
-www.omegascans.org
-omegascans.my
-www.omegascans.my
-media.omegascans.org  # image/content CDN
-
-# OmegaTV (IPTV streaming app — 200+ TV channels including Ukrainian TV)
+# OmegaTV (Ukrainian subscription IPTV — 100+ licensed TV channels; App Store / Google Play)
 omegatv.com
 www.omegatv.com
 api.omegatv.com
 cdn.omegatv.com
-
-# ─────────────────────────────────────────────────────────────────────
-# "Moon" — Streaming Services
-# ─────────────────────────────────────────────────────────────────────
-
-# MoonFlix (free movie, TV show, and anime streaming — multiple domains)
-# Source: https://moonflix.net
-moonflix.net
-www.moonflix.net
-moonflix.org
-www.moonflix.org
-moonflix.in
-www.moonflix.in
-moonflix.com.co
-moonflix.site
-www.moonflix.site
-
-# Moonscans (manga/manhwa scanlation reader)
-moonscans.net
-www.moonscans.net
-
-# LunarrScan (manga/manhwa reader — lunar = moon)
-lunarrscan.com
-www.lunarrscan.com
-
-# ─────────────────────────────────────────────────────────────────────
-# "Nova" — Streaming Services
-# ─────────────────────────────────────────────────────────────────────
-
-# Nova TV APK (free movie and TV streaming aggregator app)
-# Source: https://www.novatvapk.com
-novatvapk.com
-www.novatvapk.com
-novatv.app
-www.novatv.app
 
 # ─────────────────────────────────────────────────────────────────────
 # Manga / Manhwa / Webtoon Readers
@@ -199,13 +156,13 @@ static.webtoons.com
 tapas.io
 www.tapas.io
 
-# AsuraScans (popular manhwa scanlation reader)
+# AsuraScans (manhwa reader)
 asurascans.com
 www.asurascans.com
 asuratoon.com
 www.asuratoon.com
 
-# ReaperScans (manhwa scanlation)
+# ReaperScans (manhwa reader)
 reaperscans.com
 www.reaperscans.com
 
@@ -304,22 +261,8 @@ tvsubtitles.net
 www.tvsubtitles.net
 
 # ─────────────────────────────────────────────────────────────────────
-# Streaming Aggregator Video CDNs
-# (Used by Nova TV, MoonFlix, and other aggregator apps for video delivery)
+# Debrid / Link-Resolver Services and Watch Tracking
 # ─────────────────────────────────────────────────────────────────────
-
-# VidSrc (video embedding API used by many streaming aggregator apps)
-vidsrc.to
-vidsrc.me
-vidsrc.dev
-vidsrc.cc
-vidsrc.xyz
-vidsrc.net
-vidsrc.stream
-
-# MegaCloud (video hosting backend used by multiple streaming sites)
-megacloud.tv
-www.megacloud.tv
 
 # Real-Debrid (premium link resolver used by aggregator apps)
 real-debrid.com
@@ -334,7 +277,7 @@ www.alldebrid.com
 premiumize.me
 www.premiumize.me
 
-# Trakt (watching tracker — integrated by Nova TV, MoonFlix, and others)
+# Trakt (watching tracker — integrated by many media apps)
 trakt.tv
 www.trakt.tv
 app.trakt.tv
