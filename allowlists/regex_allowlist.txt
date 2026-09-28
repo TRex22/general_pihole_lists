@@ -100,9 +100,10 @@
 (^|\.)as20011\.net$
 
 # ── Tuya / Lifeaiot ───────────────────────────────────────────────────────────
-# Tuya smart home devices use dynamic regional subdomains under lifeaiot.com.
-# The m3-eu.lifeaiot.com entry in general.txt only covers one region.
+# Tuya smart home devices use dynamic regional subdomains under lifeaiot.com and
+# iotbing.com (Smart Life app/device API). Plain EU entries are in general.txt.
 (^|\.)lifeaiot\.com$
+(^|\.)iotbing\.com$
 
 # ── Google CDN nodes (gvt1.com) ───────────────────────────────────────────────
 # gvt1.com serves Chrome, Android app content via dynamically-numbered edge nodes

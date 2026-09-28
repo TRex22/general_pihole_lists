@@ -530,11 +530,61 @@ sockjs.pusher.com
 email.mg-d1.substack.com
 click.fidelityinvestments.com
 
-# Tuya Smart Devices
-# Note: regex (^|\.)lifeaiot\.com$ in regex_allowlist.txt covers all subdomains
+# Tuya Smart Devices (Tuya / Smart Life — EU / EMEA data centres)
+# Note: regexes (^|\.)lifeaiot\.com$ and (^|\.)iotbing\.com$ in regex_allowlist.txt cover all subdomains
+# Sources: https://www.f-blog.info/tuya-cloud-server-addresses/ ,
+#          https://www.netify.ai/resources/domains/tuyaeu.com (verified resolving 2026-09-28)
+# Not allowlisted (telemetry): sentry.tuyaeu.com, tpm.tuyaeu.com, tytm.tuya.com, m-ods.tuyaeu.com
 lifeaiot.com
 m3-eu.lifeaiot.com
 a3-eu.lifeaiot.com
+a1-eu.lifeaiot.com
+m1-eu.lifeaiot.com
+app-h5-eu.lifeaiot.com
+# Device DNS bootstrap (queried during pairing/activation)
+h1.iot-dns.com
+h2.iot-dns.com
+h3.iot-dns.com
+h4.iot-dns.com
+m1-eu.iot-dns.com
+# Device API (HTTPS) and MQTT gateways — Central Europe
+a.tuyaeu.com
+a1.tuyaeu.com
+a2.tuyaeu.com
+a3.tuyaeu.com
+m1.tuyaeu.com
+m2.tuyaeu.com
+a.gw.tuyaeu.com
+mq.gw.tuyaeu.com
+apigw.tuyaeu.com
+px1.tuyaeu.com
+# Western Europe data centre
+a1-weaz.tuyaeu.com
+m1-weaz.tuyaeu.com
+openapi-weaz.tuyaeu.com
+# Cloud API, camera streams, images/firmware storage, app support
+openapi.tuyaeu.com
+stream.tuyaeu.com
+images.tuyaeu.com
+encrypt-pic.tuyaeu.com
+static1.tuyaeu.com
+securityservice.tuyaeu.com
+app-support.tuyaeu.com
+ty-eu-storage-permanent.tuyaeu.com
+ty-eu-storage-permanent.s3.eu-central-1.amazonaws.com
+ty-eu-storage30-pic.s3.eu-central-1.amazonaws.com
+# Smart Life app API (iotbing.com — newer app/device API domain)
+a1-eu.iotbing.com
+m1-eu.iotbing.com
+a3-eu.iotbing.com
+m3-eu.iotbing.com
+app-h5-eu.iotbing.com
+ty-eu-storage-permanent.iotbing.com
+ty-eu-storage30-pic.iotbing.com
+# Tuya account / support
+tuya.com
+auth.tuya.com
+support.tuya.com
 
 # South Africa Newsletters
 broadmedia.9.evlink.net
