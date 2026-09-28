@@ -330,7 +330,7 @@ class PrivacyBadgerExtractor
     return false if FILE_EXTENSION_TLDS.include?(tld)
 
     # Skip well-known legitimate domains (shared constants from blocklist_project_filter.rb)
-    return false if skip_domain_static?(domain)
+    return false if skip_domain_static?(domain, ad_list: true)
 
     domain =~ /^[a-zA-Z0-9][a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}$/
   end

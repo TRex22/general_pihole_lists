@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-09-27T21:09:25Z
-# Total domains: 885
+# Generated: 2026-09-28T10:57:22Z
+# Total domains: 887
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -301,6 +301,7 @@ elnortedecastilla.es
 email.awscloud.com
 email.elitedangerous.com
 email.procook.co.uk
+emails.educause.edu
 embed.ex.co
 encoretvb.com
 energy.de
@@ -422,6 +423,7 @@ iheartradio.ca
 ikea.com
 ilpuntotecnico.com
 image.shutterstock.com
+imasdk.googleapis.com
 img.ads.tvb.com
 img.logo.dev
 impotsurlerevenu.org

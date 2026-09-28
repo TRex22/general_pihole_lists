@@ -1,7 +1,7 @@
 ! Pi-hole Cookieblock List (ABP format) - Domains Privacy Badger allows but strips cookies
-! Generated: 2026-09-27T21:09:33Z
+! Generated: 2026-09-28T10:58:24Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
-! Total domains: 623
+! Total domains: 624
 !
 ! These domains can load resources but would have cookies stripped by Privacy Badger.
 ! Blocking them in Pi-hole is more aggressive than Privacy Badger's default.
@@ -272,6 +272,7 @@
 ||formstack.com^
 ||fourhoi.com^
 ||foxvideo-fts.akamaized.net^
+||fundingchoicesmessages.google.com^
 ||fundraiseup.com^
 ||fwmrm.net^
 ||gcaptcha.eo.qcloud.com^

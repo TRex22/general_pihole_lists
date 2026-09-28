@@ -239,13 +239,37 @@ SKIP_IPS = Set.new(%w[
   0.0.0.0 127.0.0.1
 ]).freeze
 
+# Ad-serving / ad-measurement hosts that must stay in the ad & tracker lists
+# (uBlock / Privacy Badger) even though a parent domain (google.com,
+# googleapis.com, doubleclick.net) is in SKIP_DOMAINS as "never malicious".
+# Subdomain cascade, like SKIP_DOMAINS.
+AD_TRACKER_DOMAINS = Set.new(%w[
+  doubleclick.net
+  googlesyndication.com
+  googleadservices.com
+  googletagservices.com
+  adservice.google.com
+  fundingchoicesmessages.google.com
+  imasdk.googleapis.com
+  adtrafficquality.google
+]).freeze
+
+def ad_tracker_domain?(domain)
+  return false if domain.nil? || domain.empty?
+  return true if domain.match?(/\Aadservice\.google\.[a-z.]+\z/)
+  AD_TRACKER_DOMAINS.any? { |s| domain == s || domain.end_with?(".#{s}") }
+end
+
 # Returns true if +domain+ should be excluded from any generated blocklist.
 # Checks SKIP_IPS, EXACT_SKIP_DOMAINS (exact match), and SKIP_DOMAINS
 # (subdomain cascade). Does NOT check the runtime ALLOWLIST_DOMAINS that
 # scrape_malicious_domains.rb loads from allowlist files — that lives in
 # BaseScraper#skip_domain? alongside this call.
-def skip_domain_static?(domain)
+# Pass ad_list: true from the ad/tracker list generators so AD_TRACKER_DOMAINS
+# are never skipped there.
+def skip_domain_static?(domain, ad_list: false)
   return false if domain.nil? || domain.empty?
+  return false if ad_list && ad_tracker_domain?(domain)
   return true if SKIP_IPS.include?(domain)
   return true if EXACT_SKIP_DOMAINS.include?(domain)
   SKIP_DOMAINS.any? { |s| domain == s || domain.end_with?(".#{s}") }

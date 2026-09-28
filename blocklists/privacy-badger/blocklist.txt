@@ -1,8 +1,8 @@
 ! Pi-hole Blocklist (ABP format) - Generated from Privacy Badger seed data
-! Generated: 2026-09-27T21:09:33Z
+! Generated: 2026-09-28T10:58:24Z
 ! Source: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json
 ! Options: default options
-! Total domains: 2962
+! Total domains: 2964
 !
 ! Includes: 'block' action domains (cross-site cookie trackers)
 ! Format: ||domain^ blocks domain and all subdomains (ABP/uBlock syntax)
@@ -858,6 +858,7 @@
 ||dotmetrics.net^
 ||dotmetrics.rocks^
 ||dotomi.com^
+||doubleclick.net^
 ||doubleclick.uk.net^
 ||doubleverify.com^
 ||doyoudi.com^
@@ -901,6 +902,7 @@
 ||eagle-insight.com^
 ||earmuffpostnasalrisotto.com^
 ||earringsatisfiedsplice.com^
+||ebayadservices.com^
 ||ebis.ne.jp^
 ||ebxcdn.com^
 ||ecal.com^
