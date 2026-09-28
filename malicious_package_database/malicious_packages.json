@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-27T21:13:45Z",
-  "total": 58123,
+  "generated_at": "2026-09-28T21:15:30Z",
+  "total": 58129,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -14791,6 +14791,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/azure-iothub-service-client",
           "title": "PyPI/azure-iothub-service-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "azure-langchain-example",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/azure-langchain-example",
+          "title": "PyPI/azure-langchain-example"
         }
       ],
       "first_seen": null,
@@ -223773,6 +223785,18 @@
       "last_seen": null
     },
     {
+      "name": "@bb1ptest23/test-paket",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bb1ptest23/test-paket",
+          "title": "npm/@bb1ptest23/test-paket"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@bbkkfkk/pre",
       "type": "npm",
       "sources": [
@@ -230623,6 +230647,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@confluent-cfet-medusa/dataset-designer",
           "title": "npm/@confluent-cfet-medusa/dataset-designer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@consts/links",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@consts/links",
+          "title": "npm/@consts/links"
         }
       ],
       "first_seen": null,
@@ -242755,6 +242791,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@diezyyasha/libsignal-node",
           "title": "npm/@diezyyasha/libsignal-node"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@digi-kernel/digi-kernel-constrains",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@digi-kernel/digi-kernel-constrains",
+          "title": "npm/@digi-kernel/digi-kernel-constrains"
         }
       ],
       "first_seen": null,
@@ -350981,12 +351029,36 @@
       "last_seen": null
     },
     {
+      "name": "@wbnr/design-kit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wbnr/design-kit",
+          "title": "npm/@wbnr/design-kit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@wbnr/frontend-shared",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wbnr/frontend-shared",
           "title": "npm/@wbnr/frontend-shared"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wbnr/lottiefiles-loader",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wbnr/lottiefiles-loader",
+          "title": "npm/@wbnr/lottiefiles-loader"
         }
       ],
       "first_seen": null,
