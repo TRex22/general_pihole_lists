@@ -1827,8 +1827,69 @@ embed.savvycal.com
 # scraped from security articles (false positives), not as malicious infrastructure
 arxiv.org
 doi.org
+www.doi.org
+dx.doi.org
+www.arxiv.org
+export.arxiv.org
+info.arxiv.org
+static.arxiv.org
 # Academic federated login (SeamlessAccess — publisher SSO)
 service.seamlessaccess.org
+# Scholarly metadata / identifiers / discovery (added 2026-09-28)
+crossref.org
+www.crossref.org
+api.crossref.org
+search.crossref.org
+orcid.org
+www.orcid.org
+pub.orcid.org
+openalex.org
+api.openalex.org
+unpaywall.org
+api.unpaywall.org
+core.ac.uk
+dblp.org
+citeseerx.ist.psu.edu
+scholar.google.com
+www.semanticscholar.org
+api.semanticscholar.org
+pdfs.semanticscholar.org
+openreview.net
+paperswithcode.com
+# Biomedical literature
+pubmed.ncbi.nlm.nih.gov
+www.ncbi.nlm.nih.gov
+pmc.ncbi.nlm.nih.gov
+europepmc.org
+# Preprint servers / open repositories
+www.biorxiv.org
+www.medrxiv.org
+papers.ssrn.com
+zenodo.org
+figshare.com
+osf.io
+hal.science
+# Publishers / journal platforms (DOI link targets)
+www.nature.com
+www.science.org
+www.pnas.org
+www.cell.com
+elifesciences.org
+journals.plos.org
+www.frontiersin.org
+www.mdpi.com
+link.springer.com
+www.sciencedirect.com
+onlinelibrary.wiley.com
+www.tandfonline.com
+journals.sagepub.com
+academic.oup.com
+www.cambridge.org
+bioone.org
+ieeexplore.ieee.org
+dl.acm.org
+www.jstor.org
+www.researchgate.net
 # Let's Encrypt intermediate issuer (certificate chain / AIA fetch)
 yr.i.lencr.org
 # Public IP lookup utilities (scripts/dev tools) — see api.ipify.org above
