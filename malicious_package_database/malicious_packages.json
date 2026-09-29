@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-28T21:15:30Z",
-  "total": 58129,
+  "generated_at": "2026-09-29T21:16:05Z",
+  "total": 58165,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -13622,6 +13622,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/aseity",
           "title": "PyPI/aseity"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aseitylab",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/aseitylab",
+          "title": "PyPI/aseitylab"
         }
       ],
       "first_seen": null,
@@ -268213,6 +268225,414 @@
       "last_seen": null
     },
     {
+      "name": "@hrmony/account-management",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/account-management",
+          "title": "npm/@hrmony/account-management"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/api-gateway-service-config",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/api-gateway-service-config",
+          "title": "npm/@hrmony/api-gateway-service-config"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/app-gateway-templates",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/app-gateway-templates",
+          "title": "npm/@hrmony/app-gateway-templates"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/belegerfassung-pladddform",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/belegerfassung-pladddform",
+          "title": "npm/@hrmony/belegerfassung-pladddform"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/benefit-essenszuschuss",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/benefit-essenszuschuss",
+          "title": "npm/@hrmony/benefit-essenszuschuss"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/benefit-internetzuschuss",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/benefit-internetzuschuss",
+          "title": "npm/@hrmony/benefit-internetzuschuss"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/benefit-mobilitaet",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/benefit-mobilitaet",
+          "title": "npm/@hrmony/benefit-mobilitaet"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/benefit-sachbezug",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/benefit-sachbezug",
+          "title": "npm/@hrmony/benefit-sachbezug"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/benefitverwaltung",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/benefitverwaltung",
+          "title": "npm/@hrmony/benefitverwaltung"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/cdk-constructs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/cdk-constructs",
+          "title": "npm/@hrmony/cdk-constructs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/component-library",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/component-library",
+          "title": "npm/@hrmony/component-library"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/devtool-configuration",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/devtool-configuration",
+          "title": "npm/@hrmony/devtool-configuration"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/gutscheinverwaltung",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/gutscheinverwaltung",
+          "title": "npm/@hrmony/gutscheinverwaltung"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/hyper-json-builder",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/hyper-json-builder",
+          "title": "npm/@hrmony/hyper-json-builder"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/interfaces",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/interfaces",
+          "title": "npm/@hrmony/interfaces"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/kit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/kit",
+          "title": "npm/@hrmony/kit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/kit-1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/kit-1",
+          "title": "npm/@hrmony/kit-1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/kit-4",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/kit-4",
+          "title": "npm/@hrmony/kit-4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/kit-5",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/kit-5",
+          "title": "npm/@hrmony/kit-5"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/lohndateien",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/lohndateien",
+          "title": "npm/@hrmony/lohndateien"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/mailer-pladddform",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/mailer-pladddform",
+          "title": "npm/@hrmony/mailer-pladddform"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/middlewares",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/middlewares",
+          "title": "npm/@hrmony/middlewares"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/organisationsverwaltung",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/organisationsverwaltung",
+          "title": "npm/@hrmony/organisationsverwaltung"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/pladddform-application",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/pladddform-application",
+          "title": "npm/@hrmony/pladddform-application"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/pladddform-cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/pladddform-cli",
+          "title": "npm/@hrmony/pladddform-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/pladddform-codegen",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/pladddform-codegen",
+          "title": "npm/@hrmony/pladddform-codegen"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/pladddform-config",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/pladddform-config",
+          "title": "npm/@hrmony/pladddform-config"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/pladddform-core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/pladddform-core",
+          "title": "npm/@hrmony/pladddform-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/pladddform-frontend",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/pladddform-frontend",
+          "title": "npm/@hrmony/pladddform-frontend"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/pladddform-infrastructure",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/pladddform-infrastructure",
+          "title": "npm/@hrmony/pladddform-infrastructure"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/pladddform-partner-registry",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/pladddform-partner-registry",
+          "title": "npm/@hrmony/pladddform-partner-registry"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/pladddform-shared-infrastructure",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/pladddform-shared-infrastructure",
+          "title": "npm/@hrmony/pladddform-shared-infrastructure"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/pladddform-testing",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/pladddform-testing",
+          "title": "npm/@hrmony/pladddform-testing"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hrmony/valuenet",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hrmony/valuenet",
+          "title": "npm/@hrmony/valuenet"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@hrsites/fb-with-city-suggests",
       "type": "npm",
       "sources": [
@@ -353531,6 +353951,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xjs-shared-components/all-components",
           "title": "npm/@xjs-shared-components/all-components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@xoxo-momo/kit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xoxo-momo/kit",
+          "title": "npm/@xoxo-momo/kit"
         }
       ],
       "first_seen": null,
