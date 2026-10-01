@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-09-30T21:10:15Z
-# Total domains: 887
+# Generated: 2026-10-01T21:09:58Z
+# Total domains: 888
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -146,6 +146,7 @@ brighteon.com
 british-birdsongs.uk
 brownsboys.com
 browser-intake-datadoghq.com
+browser-intake-datadoghq.eu
 browser.sentry-cdn.com
 browserbench.org
 bsdex.de

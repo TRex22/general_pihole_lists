@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T21:14:33Z",
-  "total": 58234,
+  "generated_at": "2026-10-01T21:15:02Z",
+  "total": 58236,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -47277,6 +47277,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/friendly-greeting-tools",
           "title": "PyPI/friendly-greeting-tools"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "friendly-tools",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/friendly-tools",
+          "title": "PyPI/friendly-tools"
         }
       ],
       "first_seen": null,
@@ -124833,6 +124845,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/splitver",
           "title": "PyPI/splitver"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "spo365-graph",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/spo365-graph",
+          "title": "PyPI/spo365-graph"
         }
       ],
       "first_seen": null,

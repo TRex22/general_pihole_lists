@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-09-30T21:10:22Z
+# Generated: 2026-10-01T21:10:06Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 804
+# Total domains: 805
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -260,6 +260,7 @@ ddragon.leagueoflegends.com
 dealer.com
 dealerinspire.com
 demo.arcade.software
+dev.mainetodaymedia.com
 developers.kakao.com
 dibspayment.eu
 digital.nuance.com
