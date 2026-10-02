@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-01T21:15:02Z",
-  "total": 58236,
+  "generated_at": "2026-10-02T21:15:13Z",
+  "total": 58254,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -314,6 +314,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/go/github.com",
           "title": "Go/github.com"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "gocommunity.io",
+      "type": "Go",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/go/gocommunity.io",
+          "title": "Go/gocommunity.io"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "gogets.dev",
+      "type": "Go",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/go/gogets.dev",
+          "title": "Go/gogets.dev"
         }
       ],
       "first_seen": null,
@@ -29107,6 +29131,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/decoris",
           "title": "PyPI/decoris"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "dedh-devops-automation",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/dedh-devops-automation",
+          "title": "PyPI/dedh-devops-automation"
         }
       ],
       "first_seen": null,
@@ -122421,6 +122457,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/shoots-flutter",
           "title": "PyPI/shoots-flutter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "shortneer",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/shortneer",
+          "title": "PyPI/shortneer"
         }
       ],
       "first_seen": null,
@@ -225201,6 +225249,18 @@
       "last_seen": null
     },
     {
+      "name": "@bluewin/utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bluewin/utils",
+          "title": "npm/@bluewin/utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@blurrydespair/libsignal-node",
       "type": "npm",
       "sources": [
@@ -227923,6 +227983,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ceeferenderer/itg-renderer-sdk",
           "title": "npm/@ceeferenderer/itg-renderer-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@celestial-community/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@celestial-community/baileys",
+          "title": "npm/@celestial-community/baileys"
         }
       ],
       "first_seen": null,
@@ -242779,6 +242851,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@devcrypto/hdwallet-provider",
           "title": "npm/@devcrypto/hdwallet-provider"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@developmentyora/baileyss",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@developmentyora/baileyss",
+          "title": "npm/@developmentyora/baileyss"
         }
       ],
       "first_seen": null,
@@ -257821,6 +257905,18 @@
       "last_seen": null
     },
     {
+      "name": "@erlanzz/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@erlanzz/baileys",
+          "title": "npm/@erlanzz/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@eset/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -259855,6 +259951,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fazzcode/baileys",
           "title": "npm/@fazzcode/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@fazzcodestudio/wa-web",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fazzcodestudio/wa-web",
+          "title": "npm/@fazzcodestudio/wa-web"
         }
       ],
       "first_seen": null,
@@ -331357,6 +331465,18 @@
       "last_seen": null
     },
     {
+      "name": "@smart-dev-wa/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@smart-dev-wa/baileys",
+          "title": "npm/@smart-dev-wa/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@smartsteuer/solo-vue-heroicons",
       "type": "npm",
       "sources": [
@@ -331447,6 +331567,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@smt-front/tracker",
           "title": "npm/@smt-front/tracker"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@smwebserver/static",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@smwebserver/static",
+          "title": "npm/@smwebserver/static"
         }
       ],
       "first_seen": null,
@@ -411557,6 +411689,18 @@
       "last_seen": null
     },
     {
+      "name": "@zanta/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zanta/baileys",
+          "title": "npm/@zanta/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@zapier/ai-actions",
       "type": "npm",
       "sources": [
@@ -466157,6 +466301,42 @@
       "last_seen": null
     },
     {
+      "name": "ai-workshop-maa15-radio",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ai-workshop-maa15-radio",
+          "title": "npm/ai-workshop-maa15-radio"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ai-workshop-radio-app",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ai-workshop-radio-app",
+          "title": "npm/ai-workshop-radio-app"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ai-workshop-radio-lambda",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ai-workshop-radio-lambda",
+          "title": "npm/ai-workshop-radio-lambda"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "ai3",
       "type": "npm",
       "sources": [
@@ -477179,6 +477359,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alex_v1",
           "title": "npm/alex_v1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "alexa-cybertron-team-code-review-agent",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alexa-cybertron-team-code-review-agent",
+          "title": "npm/alexa-cybertron-team-code-review-agent"
         }
       ],
       "first_seen": null,
@@ -518651,6 +518843,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/apl-html",
           "title": "npm/apl-html"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "apl-rive-renderer",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/apl-rive-renderer",
+          "title": "npm/apl-rive-renderer"
         }
       ],
       "first_seen": null,
@@ -651613,6 +651817,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brinkbit-schema-user",
           "title": "npm/brinkbit-schema-user"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "brioche-apl-dev-env",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brioche-apl-dev-env",
+          "title": "npm/brioche-apl-dev-env"
         }
       ],
       "first_seen": null,
