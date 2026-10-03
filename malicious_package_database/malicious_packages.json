@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-02T21:15:13Z",
-  "total": 58254,
+  "generated_at": "2026-10-03T22:06:12Z",
+  "total": 58266,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -19657,6 +19657,18 @@
       "last_seen": null
     },
     {
+      "name": "caoxiltts",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/caoxiltts",
+          "title": "PyPI/caoxiltts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "capmoneercloudclient",
       "type": "PyPI",
       "sources": [
@@ -32409,6 +32421,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ebsockets",
           "title": "PyPI/ebsockets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "echogen",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/echogen",
+          "title": "PyPI/echogen"
         }
       ],
       "first_seen": null,
@@ -55174,6 +55198,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/infovm",
           "title": "PyPI/infovm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "infrabench",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/infrabench",
+          "title": "PyPI/infrabench"
         }
       ],
       "first_seen": null,
@@ -146679,6 +146715,114 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/voto3",
           "title": "PyPI/voto3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "voxcpmeval",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/voxcpmeval",
+          "title": "PyPI/voxcpmeval"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "voxcpmintel",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/voxcpmintel",
+          "title": "PyPI/voxcpmintel"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "voxcpmkit",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/voxcpmkit",
+          "title": "PyPI/voxcpmkit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "voxcpmruntime",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/voxcpmruntime",
+          "title": "PyPI/voxcpmruntime"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "voxcpmtts3",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/voxcpmtts3",
+          "title": "PyPI/voxcpmtts3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "voxcpmui3",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/voxcpmui3",
+          "title": "PyPI/voxcpmui3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "voxcpmui4",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/voxcpmui4",
+          "title": "PyPI/voxcpmui4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "voxel-tts",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/voxel-tts",
+          "title": "PyPI/voxel-tts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "voxeval",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/voxeval",
+          "title": "PyPI/voxeval"
         }
       ],
       "first_seen": null,
