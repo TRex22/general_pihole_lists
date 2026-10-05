@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-04T21:29:34Z",
-  "total": 58267,
+  "generated_at": "2026-10-05T21:16:06Z",
+  "total": 58338,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -158821,6 +158821,18 @@
       "last_seen": null
     },
     {
+      "name": "base58-check-helper",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/base58-check-helper",
+          "title": "RubyGems/base58-check-helper"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "basic_stats",
       "type": "RubyGems",
       "sources": [
@@ -159721,6 +159733,18 @@
       "last_seen": null
     },
     {
+      "name": "bip39-wordlist-utils",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/bip39-wordlist-utils",
+          "title": "RubyGems/bip39-wordlist-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "birundler",
       "type": "RubyGems",
       "sources": [
@@ -159763,6 +159787,78 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/bisundler",
           "title": "RubyGems/bisundler"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bitciin",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/bitciin",
+          "title": "RubyGems/bitciin"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bitcion",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/bitcion",
+          "title": "RubyGems/bitcion"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bitcion-ruby",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/bitcion-ruby",
+          "title": "RubyGems/bitcion-ruby"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bitcoij-ruby",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/bitcoij-ruby",
+          "title": "RubyGems/bitcoij-ruby"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bitcoin-address-utils",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/bitcoin-address-utils",
+          "title": "RubyGems/bitcoin-address-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bitcoin-rpc-lite",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/bitcoin-rpc-lite",
+          "title": "RubyGems/bitcoin-rpc-lite"
         }
       ],
       "first_seen": null,
@@ -161197,6 +161293,18 @@
       "last_seen": null
     },
     {
+      "name": "blockchain-sync-utils",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/blockchain-sync-utils",
+          "title": "RubyGems/blockchain-sync-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "blumdler",
       "type": "RubyGems",
       "sources": [
@@ -161887,6 +161995,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/bsusndler",
           "title": "RubyGems/bsusndler"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "btc-wallet-tools",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/btc-wallet-tools",
+          "title": "RubyGems/btc-wallet-tools"
         }
       ],
       "first_seen": null,
@@ -167797,6 +167917,18 @@
       "last_seen": null
     },
     {
+      "name": "coinmarket-utils",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/coinmarket-utils",
+          "title": "RubyGems/coinmarket-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "comic-vine",
       "type": "RubyGems",
       "sources": [
@@ -167911,6 +168043,66 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/crl-watchdog",
           "title": "RubyGems/crl-watchdog"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "crylto-toolbox",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/crylto-toolbox",
+          "title": "RubyGems/crylto-toolbox"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "cryoto-toolbox",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/cryoto-toolbox",
+          "title": "RubyGems/cryoto-toolbox"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "crypti-toolbox",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/crypti-toolbox",
+          "title": "RubyGems/crypti-toolbox"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "crypto-key-utils",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/crypto-key-utils",
+          "title": "RubyGems/crypto-key-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "crypto-mnemonic-tools",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/crypto-mnemonic-tools",
+          "title": "RubyGems/crypto-mnemonic-tools"
         }
       ],
       "first_seen": null,
@@ -169225,6 +169417,18 @@
       "last_seen": null
     },
     {
+      "name": "electrum-protocol-lite",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/electrum-protocol-lite",
+          "title": "RubyGems/electrum-protocol-lite"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "ellen_weather",
       "type": "RubyGems",
       "sources": [
@@ -169435,6 +169639,66 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/et_azure_insights",
           "title": "RubyGems/et_azure_insights"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "eth-address-utils",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/eth-address-utils",
+          "title": "RubyGems/eth-address-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "eth-keystore-utils",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/eth-keystore-utils",
+          "title": "RubyGems/eth-keystore-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "etherdum.rb",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/etherdum.rb",
+          "title": "RubyGems/etherdum.rb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "etheremu.rb",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/etheremu.rb",
+          "title": "RubyGems/etheremu.rb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ethereum-tx-helper",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/ethereum-tx-helper",
+          "title": "RubyGems/ethereum-tx-helper"
         }
       ],
       "first_seen": null,
@@ -171085,6 +171349,18 @@
       "last_seen": null
     },
     {
+      "name": "hdkey-derive-helper",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/hdkey-derive-helper",
+          "title": "RubyGems/hdkey-derive-helper"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "hello-kelvinst",
       "type": "RubyGems",
       "sources": [
@@ -171979,6 +172255,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/kaleido",
           "title": "RubyGems/kaleido"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "kecack",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/kecack",
+          "title": "RubyGems/kecack"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "keccka",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/keccka",
+          "title": "RubyGems/keccka"
         }
       ],
       "first_seen": null,
@@ -175057,6 +175357,54 @@
       "last_seen": null
     },
     {
+      "name": "ligbtning-invoice",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/ligbtning-invoice",
+          "title": "RubyGems/ligbtning-invoice"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "lighthing-invoice",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/lighthing-invoice",
+          "title": "RubyGems/lighthing-invoice"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "lightinng-invoice",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/lightinng-invoice",
+          "title": "RubyGems/lightinng-invoice"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "lightning-invoice-utils",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/lightning-invoice-utils",
+          "title": "RubyGems/lightning-invoice-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "lines-mixer",
       "type": "RubyGems",
       "sources": [
@@ -176491,6 +176839,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/melio-platform-api-client",
           "title": "RubyGems/melio-platform-api-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "merkle-proof-lite",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/merkle-proof-lite",
+          "title": "RubyGems/merkle-proof-lite"
         }
       ],
       "first_seen": null,
@@ -183145,6 +183505,18 @@
       "last_seen": null
     },
     {
+      "name": "rate-limit-mini",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/rate-limit-mini",
+          "title": "RubyGems/rate-limit-mini"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "rbi-central",
       "type": "RubyGems",
       "sources": [
@@ -183175,6 +183547,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/referral-candy",
           "title": "RubyGems/referral-candy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "req-throttle-mini",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/req-throttle-mini",
+          "title": "RubyGems/req-throttle-mini"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "request-guard",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/request-guard",
+          "title": "RubyGems/request-guard"
         }
       ],
       "first_seen": null,
@@ -187309,6 +187705,18 @@
       "last_seen": null
     },
     {
+      "name": "solaan-ruby",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/solaan-ruby",
+          "title": "RubyGems/solaan-ruby"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "sometestproxyywayle",
       "type": "RubyGems",
       "sources": [
@@ -189853,6 +190261,18 @@
       "last_seen": null
     },
     {
+      "name": "throttle-requests",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/throttle-requests",
+          "title": "RubyGems/throttle-requests"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "tiny-max-box",
       "type": "RubyGems",
       "sources": [
@@ -190099,6 +190519,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/treelights-client",
           "title": "RubyGems/treelights-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "tron-rb",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/tron-rb",
+          "title": "RubyGems/tron-rb"
         }
       ],
       "first_seen": null,
@@ -190537,6 +190969,18 @@
       "last_seen": null
     },
     {
+      "name": "tx-broadcast-utils",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/tx-broadcast-utils",
+          "title": "RubyGems/tx-broadcast-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "tzinfo-i18n",
       "type": "RubyGems",
       "sources": [
@@ -190735,6 +191179,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/ultra-smart-tool",
           "title": "RubyGems/ultra-smart-tool"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "utxo-set-utils",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/utxo-set-utils",
+          "title": "RubyGems/utxo-set-utils"
         }
       ],
       "first_seen": null,
@@ -192031,6 +192487,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/waitwhg1778555688",
           "title": "RubyGems/waitwhg1778555688"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "wallet-backup-tool",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/wallet-backup-tool",
+          "title": "RubyGems/wallet-backup-tool"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "wallet-crypto-utils",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/wallet-crypto-utils",
+          "title": "RubyGems/wallet-crypto-utils"
         }
       ],
       "first_seen": null,
@@ -194239,6 +194719,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/wcomp",
           "title": "RubyGems/wcomp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "web3-eth-utils",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/web3-eth-utils",
+          "title": "RubyGems/web3-eth-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "web3-sign-helper",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/web3-sign-helper",
+          "title": "RubyGems/web3-sign-helper"
         }
       ],
       "first_seen": null,
@@ -212145,6 +212649,18 @@
       "last_seen": null
     },
     {
+      "name": "@abgular/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@abgular/core",
+          "title": "npm/@abgular/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@abi-labs-frontend/standards",
       "type": "npm",
       "sources": [
@@ -216969,6 +217485,66 @@
       "last_seen": null
     },
     {
+      "name": "@anfular/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@anfular/core",
+          "title": "npm/@anfular/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@angjlar/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@angjlar/core",
+          "title": "npm/@angjlar/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@anguar/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@anguar/core",
+          "title": "npm/@anguar/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@angulaar/cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@angulaar/cli",
+          "title": "npm/@angulaar/cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@angulaar/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@angulaar/core",
+          "title": "npm/@angulaar/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@angular_devkit/architect",
       "type": "npm",
       "sources": [
@@ -217017,6 +217593,90 @@
       "last_seen": null
     },
     {
+      "name": "@angularr/cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@angularr/cli",
+          "title": "npm/@angularr/cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@angularr/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@angularr/core",
+          "title": "npm/@angularr/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@angularr/router",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@angularr/router",
+          "title": "npm/@angularr/router"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@angulr/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@angulr/core",
+          "title": "npm/@angulr/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@angulra/cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@angulra/cli",
+          "title": "npm/@angulra/cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@angulra/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@angulra/core",
+          "title": "npm/@angulra/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@angupar/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@angupar/core",
+          "title": "npm/@angupar/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@anhackle/test",
       "type": "npm",
       "sources": [
@@ -217035,6 +217695,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@anna-money/anna-web-lib",
           "title": "npm/@anna-money/anna-web-lib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@anngular/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@anngular/core",
+          "title": "npm/@anngular/core"
         }
       ],
       "first_seen": null,
@@ -220665,6 +221337,18 @@
       "last_seen": null
     },
     {
+      "name": "@anuglar/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@anuglar/core",
+          "title": "npm/@anuglar/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@aodocs/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -223803,6 +224487,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@baanx/solana-lib",
           "title": "npm/@baanx/solana-lib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@babell/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@babell/core",
+          "title": "npm/@babell/core"
         }
       ],
       "first_seen": null,
@@ -243307,6 +244003,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dier-makr/inversify",
           "title": "npm/@dier-makr/inversify"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@diezyclutch/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@diezyclutch/baileys",
+          "title": "npm/@diezyclutch/baileys"
         }
       ],
       "first_seen": null,
@@ -270937,6 +271645,30 @@
       "last_seen": null
     },
     {
+      "name": "@inpeek/odata",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@inpeek/odata",
+          "title": "npm/@inpeek/odata"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@inpeek/odata-angular",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@inpeek/odata-angular",
+          "title": "npm/@inpeek/odata-angular"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@insiderintelligence/componentlibrary",
       "type": "npm",
       "sources": [
@@ -274459,6 +275191,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kibt/weblogger",
           "title": "npm/@kibt/weblogger"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@kibt/www-nuxt-i18n",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kibt/www-nuxt-i18n",
+          "title": "npm/@kibt/www-nuxt-i18n"
         }
       ],
       "first_seen": null,
@@ -309409,6 +310153,30 @@
       "last_seen": null
     },
     {
+      "name": "@nagular/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nagular/core",
+          "title": "npm/@nagular/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@nagular/router",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nagular/router",
+          "title": "npm/@nagular/router"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@nasddatax/common",
       "type": "npm",
       "sources": [
@@ -322637,6 +323405,18 @@
       "last_seen": null
     },
     {
+      "name": "@qngular/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@qngular/core",
+          "title": "npm/@qngular/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@qualtrics-translations/qualtricsdesignsystemui",
       "type": "npm",
       "sources": [
@@ -334727,6 +335507,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@subdashboard/shared",
           "title": "npm/@subdashboard/shared"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@subql/common",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@subql/common",
+          "title": "npm/@subql/common"
         }
       ],
       "first_seen": null,
@@ -418277,6 +419069,18 @@
       "last_seen": null
     },
     {
+      "name": "a11y-tabindex-manager",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/a11y-tabindex-manager",
+          "title": "npm/a11y-tabindex-manager"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "a11y-test-app",
       "type": "npm",
       "sources": [
@@ -420071,6 +420875,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/abbelregiswter",
           "title": "npm/abbelregiswter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "abbishal-poc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/abbishal-poc",
+          "title": "npm/abbishal-poc"
         }
       ],
       "first_seen": null,
@@ -518369,6 +519185,18 @@
       "last_seen": null
     },
     {
+      "name": "api-nebula",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/api-nebula",
+          "title": "npm/api-nebula"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "api-node-sdk",
       "type": "npm",
       "sources": [
@@ -528155,6 +528983,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/argus3-test",
           "title": "npm/argus3-test"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aria-live-region-helper",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aria-live-region-helper",
+          "title": "npm/aria-live-region-helper"
         }
       ],
       "first_seen": null,
@@ -644749,6 +645589,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/botkit-storage-mongo-updated",
           "title": "npm/botkit-storage-mongo-updated"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "botmaker-cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/botmaker-cli",
+          "title": "npm/botmaker-cli"
         }
       ],
       "first_seen": null,
