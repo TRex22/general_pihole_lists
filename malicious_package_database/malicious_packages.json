@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-05T21:16:06Z",
-  "total": 58338,
+  "generated_at": "2026-10-06T21:16:09Z",
+  "total": 58341,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -33393,6 +33393,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/erc20-scanner",
           "title": "PyPI/erc20-scanner"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "erc7730-hackathon",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/erc7730-hackathon",
+          "title": "PyPI/erc7730-hackathon"
         }
       ],
       "first_seen": null,
@@ -151375,6 +151387,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/zelixnitro",
           "title": "PyPI/zelixnitro"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "zencleaner",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/zencleaner",
+          "title": "PyPI/zencleaner"
         }
       ],
       "first_seen": null,
@@ -319843,6 +319867,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pimy-b2cweb/frontend-lib",
           "title": "npm/@pimy-b2cweb/frontend-lib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@pinecone-experience/messages",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pinecone-experience/messages",
+          "title": "npm/@pinecone-experience/messages"
         }
       ],
       "first_seen": null,
