@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-06T21:16:09Z",
-  "total": 58341,
+  "generated_at": "2026-10-07T21:16:50Z",
+  "total": 58343,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -69718,6 +69718,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/loquru",
           "title": "PyPI/loquru"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "lore-cs",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/lore-cs",
+          "title": "PyPI/lore-cs"
         }
       ],
       "first_seen": null,
@@ -654169,6 +654181,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/browser-interaction-time-utils",
           "title": "npm/browser-interaction-time-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "browser-metrics-plugin.contrib",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/browser-metrics-plugin.contrib",
+          "title": "npm/browser-metrics-plugin.contrib"
         }
       ],
       "first_seen": null,
