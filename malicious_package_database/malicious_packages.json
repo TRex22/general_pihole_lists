@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T21:16:50Z",
-  "total": 58343,
+  "generated_at": "2026-10-08T21:17:01Z",
+  "total": 58373,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -225141,6 +225141,18 @@
       "last_seen": null
     },
     {
+      "name": "@bellaxchuu/bails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bellaxchuu/bails",
+          "title": "npm/@bellaxchuu/bails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@bellaxchuu/belbails",
       "type": "npm",
       "sources": [
@@ -225183,6 +225195,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bellaxchuu/flowblue",
           "title": "npm/@bellaxchuu/flowblue"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bellaxchuu/libsignal-node",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bellaxchuu/libsignal-node",
+          "title": "npm/@bellaxchuu/libsignal-node"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bellaxchuu/overbugs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bellaxchuu/overbugs",
+          "title": "npm/@bellaxchuu/overbugs"
         }
       ],
       "first_seen": null,
@@ -225237,12 +225273,48 @@
       "last_seen": null
     },
     {
+      "name": "@bellaxchuu/xbailey",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bellaxchuu/xbailey",
+          "title": "npm/@bellaxchuu/xbailey"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bellaxchuu/xbails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bellaxchuu/xbails",
+          "title": "npm/@bellaxchuu/xbails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@bellaxchuu/xtrxbails",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bellaxchuu/xtrxbails",
           "title": "npm/@bellaxchuu/xtrxbails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bellaxchuu/yarnbails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bellaxchuu/yarnbails",
+          "title": "npm/@bellaxchuu/yarnbails"
         }
       ],
       "first_seen": null,
@@ -225891,6 +225963,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bitwarden/cli",
           "title": "npm/@bitwarden/cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bitwardne/cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bitwardne/cli",
+          "title": "npm/@bitwardne/cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bitwardne/jslib",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bitwardne/jslib",
+          "title": "npm/@bitwardne/jslib"
         }
       ],
       "first_seen": null,
@@ -254233,6 +254329,78 @@
       "last_seen": null
     },
     {
+      "name": "@dransay/address-validation",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dransay/address-validation",
+          "title": "npm/@dransay/address-validation"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dransay/db",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dransay/db",
+          "title": "npm/@dransay/db"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dransay/feature-flags",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dransay/feature-flags",
+          "title": "npm/@dransay/feature-flags"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dransay/logger",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dransay/logger",
+          "title": "npm/@dransay/logger"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dransay/phone-fix-test",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dransay/phone-fix-test",
+          "title": "npm/@dransay/phone-fix-test"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dransay/secrets",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dransay/secrets",
+          "title": "npm/@dransay/secrets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@dreamguyxeon/baileyx",
       "type": "npm",
       "sources": [
@@ -263059,6 +263227,54 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galaxy-nft/frontend",
           "title": "npm/@galaxy-nft/frontend"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit/core",
+          "title": "npm/@galicia-toolkit/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit/error-master",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit/error-master",
+          "title": "npm/@galicia-toolkit/error-master"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit/spa-build-config",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit/spa-build-config",
+          "title": "npm/@galicia-toolkit/spa-build-config"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit/tag-manager",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit/tag-manager",
+          "title": "npm/@galicia-toolkit/tag-manager"
         }
       ],
       "first_seen": null,
@@ -272125,6 +272341,30 @@
       "last_seen": null
     },
     {
+      "name": "@itsmee_aizat.id/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@itsmee_aizat.id/baileys",
+          "title": "npm/@itsmee_aizat.id/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@itsmee_aizat.id/baileys2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@itsmee_aizat.id/baileys2",
+          "title": "npm/@itsmee_aizat.id/baileys2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@itsreduxtm/unpkg-xss-test",
       "type": "npm",
       "sources": [
@@ -278239,6 +278479,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kxa/xbails",
           "title": "npm/@kxa/xbails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@kxafunc/xbails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kxafunc/xbails",
+          "title": "npm/@kxafunc/xbails"
         }
       ],
       "first_seen": null,
@@ -321997,6 +322249,18 @@
       "last_seen": null
     },
     {
+      "name": "@praveenvjpm/color-utils-7210",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@praveenvjpm/color-utils-7210",
+          "title": "npm/@praveenvjpm/color-utils-7210"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@prescreen/distillery",
       "type": "npm",
       "sources": [
@@ -355691,6 +355955,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xayz/baileys",
           "title": "npm/@xayz/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@xayz/brat-generator",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xayz/brat-generator",
+          "title": "npm/@xayz/brat-generator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@xayz/libsignal-node",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xayz/libsignal-node",
+          "title": "npm/@xayz/libsignal-node"
         }
       ],
       "first_seen": null,
@@ -413309,6 +413597,18 @@
       "last_seen": null
     },
     {
+      "name": "@ziedzzz/demo-canary",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ziedzzz/demo-canary",
+          "title": "npm/@ziedzzz/demo-canary"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@zig-design-system/react",
       "type": "npm",
       "sources": [
@@ -420935,6 +421235,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/abbishal-poc",
           "title": "npm/abbishal-poc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "abbishal-poc-as-dependency",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/abbishal-poc-as-dependency",
+          "title": "npm/abbishal-poc-as-dependency"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "abbishal-poc2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/abbishal-poc2",
+          "title": "npm/abbishal-poc2"
         }
       ],
       "first_seen": null,
@@ -511175,6 +511499,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animatecss-postcss-plugin",
           "title": "npm/animatecss-postcss-plugin"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "animatecss-tailwind-adapter",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animatecss-tailwind-adapter",
+          "title": "npm/animatecss-tailwind-adapter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "animatecss-tailwind-bridge",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animatecss-tailwind-bridge",
+          "title": "npm/animatecss-tailwind-bridge"
         }
       ],
       "first_seen": null,
@@ -645691,6 +646039,18 @@
       "last_seen": null
     },
     {
+      "name": "bottino-baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bottino-baileys",
+          "title": "npm/bottino-baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bottom-black-chameleon",
       "type": "npm",
       "sources": [
@@ -649141,6 +649501,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brat-codex",
           "title": "npm/brat-codex"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "brat-generator",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brat-generator",
+          "title": "npm/brat-generator"
         }
       ],
       "first_seen": null,
@@ -654181,18 +654553,6 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/browser-interaction-time-utils",
           "title": "npm/browser-interaction-time-utils"
-        }
-      ],
-      "first_seen": null,
-      "last_seen": null
-    },
-    {
-      "name": "browser-metrics-plugin.contrib",
-      "type": "npm",
-      "sources": [
-        {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/browser-metrics-plugin.contrib",
-          "title": "npm/browser-metrics-plugin.contrib"
         }
       ],
       "first_seen": null,
