@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-08T21:17:01Z",
-  "total": 58373,
+  "generated_at": "2026-10-09T21:17:45Z",
+  "total": 58407,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -278,6 +278,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/semantic_search_client",
           "title": "Cargo/semantic_search_client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "sharpnes",
+      "type": "Cargo",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/sharpnes",
+          "title": "Cargo/sharpnes"
         }
       ],
       "first_seen": null,
@@ -54424,6 +54436,18 @@
       "last_seen": null
     },
     {
+      "name": "ig-gox",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ig-gox",
+          "title": "PyPI/ig-gox"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "ighack",
       "type": "PyPI",
       "sources": [
@@ -56998,6 +57022,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/k8s-node-health",
           "title": "PyPI/k8s-node-health"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "kafka-helmsman",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/kafka-helmsman",
+          "title": "PyPI/kafka-helmsman"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "kafka-roller",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/kafka-roller",
+          "title": "PyPI/kafka-roller"
         }
       ],
       "first_seen": null,
@@ -222285,6 +222333,18 @@
       "last_seen": null
     },
     {
+      "name": "@aseppxyzz12/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@aseppxyzz12/baileys",
+          "title": "npm/@aseppxyzz12/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@aspect-adv-ui/consent-manager",
       "type": "npm",
       "sources": [
@@ -227055,6 +227115,78 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@breezeai-frontend/tailwind-config",
           "title": "npm/@breezeai-frontend/tailwind-config"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@brick-v2/brand",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@brick-v2/brand",
+          "title": "npm/@brick-v2/brand"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@brick-v2/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@brick-v2/core",
+          "title": "npm/@brick-v2/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@brick-v2/form",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@brick-v2/form",
+          "title": "npm/@brick-v2/form"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@brick-v2/icons",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@brick-v2/icons",
+          "title": "npm/@brick-v2/icons"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@brick-v2/table",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@brick-v2/table",
+          "title": "npm/@brick-v2/table"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@brick-v2/tour",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@brick-v2/tour",
+          "title": "npm/@brick-v2/tour"
         }
       ],
       "first_seen": null,
@@ -261457,6 +261589,18 @@
       "last_seen": null
     },
     {
+      "name": "@fer2809fl/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fer2809fl/baileys",
+          "title": "npm/@fer2809fl/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@ferudionz/web_logger_js",
       "type": "npm",
       "sources": [
@@ -263227,6 +263371,138 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galaxy-nft/frontend",
           "title": "npm/@galaxy-nft/frontend"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit-cheques-nc/front",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit-cheques-nc/front",
+          "title": "npm/@galicia-toolkit-cheques-nc/front"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit-nestjs-20-lite/archetype",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit-nestjs-20-lite/archetype",
+          "title": "npm/@galicia-toolkit-nestjs-20-lite/archetype"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit-nestjs-20-lite/commons",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit-nestjs-20-lite/commons",
+          "title": "npm/@galicia-toolkit-nestjs-20-lite/commons"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit-nestjs-20-lite/paas",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit-nestjs-20-lite/paas",
+          "title": "npm/@galicia-toolkit-nestjs-20-lite/paas"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit-nestjs-20/archetype",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit-nestjs-20/archetype",
+          "title": "npm/@galicia-toolkit-nestjs-20/archetype"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit-nestjs-20/commons",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit-nestjs-20/commons",
+          "title": "npm/@galicia-toolkit-nestjs-20/commons"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit-nestjs-20/paas",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit-nestjs-20/paas",
+          "title": "npm/@galicia-toolkit-nestjs-20/paas"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit-nestjs/archetype",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit-nestjs/archetype",
+          "title": "npm/@galicia-toolkit-nestjs/archetype"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit-nestjs/commons",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit-nestjs/commons",
+          "title": "npm/@galicia-toolkit-nestjs/commons"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit-nestjs/paas",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit-nestjs/paas",
+          "title": "npm/@galicia-toolkit-nestjs/paas"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@galicia-toolkit-nestjs/swagger",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@galicia-toolkit-nestjs/swagger",
+          "title": "npm/@galicia-toolkit-nestjs/swagger"
         }
       ],
       "first_seen": null,
@@ -310357,6 +310633,18 @@
       "last_seen": null
     },
     {
+      "name": "@myorder-frontend-commons/analytics",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@myorder-frontend-commons/analytics",
+          "title": "npm/@myorder-frontend-commons/analytics"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@mypwn/hawkeye",
       "type": "npm",
       "sources": [
@@ -346817,6 +347105,18 @@
       "last_seen": null
     },
     {
+      "name": "@tunstock/remact-dom",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tunstock/remact-dom",
+          "title": "npm/@tunstock/remact-dom"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@tushar-br/desktop",
       "type": "npm",
       "sources": [
@@ -355895,6 +356195,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wxplugin-types/wxf51d01cf670e28d3",
           "title": "npm/@wxplugin-types/wxf51d01cf670e28d3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wxwxtest/testrrrdd",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wxwxtest/testrrrdd",
+          "title": "npm/@wxwxtest/testrrrdd"
         }
       ],
       "first_seen": null,
@@ -542544,6 +542856,102 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/asembed",
           "title": "npm/asembed"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "asepxyz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/asepxyz",
+          "title": "npm/asepxyz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "asepxyz-baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/asepxyz-baileys",
+          "title": "npm/asepxyz-baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "asepxyz-eslint-config",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/asepxyz-eslint-config",
+          "title": "npm/asepxyz-eslint-config"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "asepxyz-signal",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/asepxyz-signal",
+          "title": "npm/asepxyz-signal"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "asepxyz12",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/asepxyz12",
+          "title": "npm/asepxyz12"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "asepxyznew",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/asepxyznew",
+          "title": "npm/asepxyznew"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "asepxyzxrazamodsnew-baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/asepxyzxrazamodsnew-baileys",
+          "title": "npm/asepxyzxrazamodsnew-baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "asepxyzz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/asepxyzz",
+          "title": "npm/asepxyzz"
         }
       ],
       "first_seen": null,
