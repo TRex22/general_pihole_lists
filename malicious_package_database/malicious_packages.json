@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-09T21:17:45Z",
-  "total": 58407,
+  "generated_at": "2026-10-10T21:17:04Z",
+  "total": 58413,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -10970,6 +10970,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/agent-user-generate",
           "title": "PyPI/agent-user-generate"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "agent-vx",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/agent-vx",
+          "title": "PyPI/agent-vx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "agentaix",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/agentaix",
+          "title": "PyPI/agentaix"
         }
       ],
       "first_seen": null,
@@ -72128,6 +72152,18 @@
       "last_seen": null
     },
     {
+      "name": "media-manager5",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/media-manager5",
+          "title": "PyPI/media-manager5"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "medifile",
       "type": "PyPI",
       "sources": [
@@ -78582,6 +78618,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/packed-w3shi",
           "title": "PyPI/packed-w3shi"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "pafer",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pafer",
+          "title": "PyPI/pafer"
         }
       ],
       "first_seen": null,
@@ -148395,6 +148443,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/webquickauth",
           "title": "PyPI/webquickauth"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "webreader",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/webreader",
+          "title": "PyPI/webreader"
         }
       ],
       "first_seen": null,
@@ -282415,6 +282475,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@library-dev-team/data-sanitizer",
           "title": "npm/@library-dev-team/data-sanitizer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@library-wide/library-shell",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@library-wide/library-shell",
+          "title": "npm/@library-wide/library-shell"
         }
       ],
       "first_seen": null,
