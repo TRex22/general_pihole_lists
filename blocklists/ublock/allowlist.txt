@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-10-10T21:09:27Z
-# Total domains: 889
+# Generated: 2026-10-11T21:09:28Z
+# Total domains: 890
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -250,6 +250,7 @@ data.promo.timhortons.ca
 datadome.garena.com.first-party-js.datadome.co
 datadome.monster.com.first-party-js.datadome.co
 dd.blackhawknetwork.com.first-party-js.datadome.co
+dd.goflink.com.first-party-js.datadome.co
 dd.jaycar.com.au.first-party-js.datadome.co
 dd.qa.moneygram.com.first-party-js.datadome.co
 dd.qwant.com.first-party-js.datadome.co
