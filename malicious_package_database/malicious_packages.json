@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-12T21:16:43Z",
-  "total": 58486,
+  "generated_at": "2026-10-13T21:16:37Z",
+  "total": 58490,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -46797,6 +46797,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fonafx",
           "title": "PyPI/fonafx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "fontcase",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fontcase",
+          "title": "PyPI/fontcase"
         }
       ],
       "first_seen": null,
@@ -127209,6 +127221,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sysdatalib",
           "title": "PyPI/sysdatalib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "sysdiagd",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sysdiagd",
+          "title": "PyPI/sysdiagd"
         }
       ],
       "first_seen": null,
@@ -229735,6 +229759,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@chatclub/claude-code",
           "title": "npm/@chatclub/claude-code"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@chatest/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@chatest/baileys",
+          "title": "npm/@chatest/baileys"
         }
       ],
       "first_seen": null,
@@ -650845,6 +650881,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brasil_viagem_omsi_2_crack_portable_ckw74",
           "title": "npm/brasil_viagem_omsi_2_crack_portable_ckw74"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "brass-common",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brass-common",
+          "title": "npm/brass-common"
         }
       ],
       "first_seen": null,
