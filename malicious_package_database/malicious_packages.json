@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-13T21:16:37Z",
-  "total": 58490,
+  "generated_at": "2026-10-14T21:17:15Z",
+  "total": 58501,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -25947,6 +25947,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/credit-decision-metrics",
           "title": "PyPI/credit-decision-metrics"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "crelic-bqwheel-52f66a3f1d",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/crelic-bqwheel-52f66a3f1d",
+          "title": "PyPI/crelic-bqwheel-52f66a3f1d"
         }
       ],
       "first_seen": null,
@@ -103310,6 +103322,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pyygame",
           "title": "PyPI/pyygame"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "pyyi",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pyyi",
+          "title": "PyPI/pyyi"
         }
       ],
       "first_seen": null,
@@ -213177,6 +213201,18 @@
       "last_seen": null
     },
     {
+      "name": "@accenturecodefoundry/mfe-pot-shared-ui-scds-core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@accenturecodefoundry/mfe-pot-shared-ui-scds-core",
+          "title": "npm/@accenturecodefoundry/mfe-pot-shared-ui-scds-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@access-risk/browser-remedy-react",
       "type": "npm",
       "sources": [
@@ -278941,6 +278977,18 @@
       "last_seen": null
     },
     {
+      "name": "@kre64/hello-npm-test",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kre64/hello-npm-test",
+          "title": "npm/@kre64/hello-npm-test"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@krentzen/buffer-reverse",
       "type": "npm",
       "sources": [
@@ -310021,6 +310069,42 @@
       "last_seen": null
     },
     {
+      "name": "@mntv-analysis/ui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mntv-analysis/ui",
+          "title": "npm/@mntv-analysis/ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@mntv-analysis/ui-components",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mntv-analysis/ui-components",
+          "title": "npm/@mntv-analysis/ui-components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@mntv-analysis/workspaces-components",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mntv-analysis/workspaces-components",
+          "title": "npm/@mntv-analysis/workspaces-components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@mobile-sdk/videoads-ad-video-player-html5",
       "type": "npm",
       "sources": [
@@ -312571,6 +312655,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@newline53/newline-ts-sdk",
           "title": "npm/@newline53/newline-ts-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@newspage/lib-ng-async-routes-ui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@newspage/lib-ng-async-routes-ui",
+          "title": "npm/@newspage/lib-ng-async-routes-ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@newspage/libx-amount",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@newspage/libx-amount",
+          "title": "npm/@newspage/libx-amount"
         }
       ],
       "first_seen": null,
@@ -350993,6 +351101,18 @@
       "last_seen": null
     },
     {
+      "name": "@user-interface-common/common-styles",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@user-interface-common/common-styles",
+          "title": "npm/@user-interface-common/common-styles"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@user-services/web-components",
       "type": "npm",
       "sources": [
@@ -358007,6 +358127,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xvortexsockets/baileys",
           "title": "npm/@xvortexsockets/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@xxxfnbs21/hello-demo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xxxfnbs21/hello-demo",
+          "title": "npm/@xxxfnbs21/hello-demo"
         }
       ],
       "first_seen": null,
