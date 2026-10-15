@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-14T21:17:15Z",
-  "total": 58501,
+  "generated_at": "2026-10-15T21:18:34Z",
+  "total": 58511,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -48831,6 +48831,18 @@
       "last_seen": null
     },
     {
+      "name": "getpubip",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/getpubip",
+          "title": "PyPI/getpubip"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "getpublicip",
       "type": "PyPI",
       "sources": [
@@ -84688,6 +84700,18 @@
       "last_seen": null
     },
     {
+      "name": "proxy-rubikis",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/proxy-rubikis",
+          "title": "PyPI/proxy-rubikis"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "proxycer",
       "type": "PyPI",
       "sources": [
@@ -84706,6 +84730,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/proxycpz",
           "title": "PyPI/proxycpz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "proxyrubika",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/proxyrubika",
+          "title": "PyPI/proxyrubika"
         }
       ],
       "first_seen": null,
@@ -93988,6 +94024,18 @@
       "last_seen": null
     },
     {
+      "name": "py-sock2",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/py-sock2",
+          "title": "PyPI/py-sock2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "py-solana-cli",
       "type": "PyPI",
       "sources": [
@@ -96142,6 +96190,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/py-vord",
           "title": "PyPI/py-vord"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "py-worm",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/py-worm",
+          "title": "PyPI/py-worm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "py-wormgpt",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/py-wormgpt",
+          "title": "PyPI/py-wormgpt"
         }
       ],
       "first_seen": null,
@@ -110163,6 +110235,18 @@
       "last_seen": null
     },
     {
+      "name": "saeka",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/saeka",
+          "title": "PyPI/saeka"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "safecheckit",
       "type": "PyPI",
       "sources": [
@@ -111105,6 +111189,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/seabonr",
           "title": "PyPI/seabonr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "seapy-ops",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/seapy-ops",
+          "title": "PyPI/seapy-ops"
         }
       ],
       "first_seen": null,
@@ -262639,6 +262735,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@flex-ng/header-component",
           "title": "npm/@flex-ng/header-component"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@flexmr/ui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@flexmr/ui",
+          "title": "npm/@flexmr/ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@flexmr/utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@flexmr/utils",
+          "title": "npm/@flexmr/utils"
         }
       ],
       "first_seen": null,
