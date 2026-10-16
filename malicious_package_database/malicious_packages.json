@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-15T21:18:34Z",
-  "total": 58511,
+  "generated_at": "2026-10-16T21:18:25Z",
+  "total": 58525,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -47451,6 +47451,18 @@
       "last_seen": null
     },
     {
+      "name": "fromthehotel-poems",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fromthehotel-poems",
+          "title": "PyPI/fromthehotel-poems"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "fromwherebitch",
       "type": "PyPI",
       "sources": [
@@ -70832,6 +70844,18 @@
       "last_seen": null
     },
     {
+      "name": "marocolor",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/marocolor",
+          "title": "PyPI/marocolor"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "marshall",
       "type": "PyPI",
       "sources": [
@@ -84730,6 +84754,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/proxycpz",
           "title": "PyPI/proxycpz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "proxyrobika",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/proxyrobika",
+          "title": "PyPI/proxyrobika"
         }
       ],
       "first_seen": null,
@@ -225945,6 +225981,90 @@
       "last_seen": null
     },
     {
+      "name": "@beloved-lenora/opencode-btw",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@beloved-lenora/opencode-btw",
+          "title": "npm/@beloved-lenora/opencode-btw"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@beloved-lenora/opencode-goal",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@beloved-lenora/opencode-goal",
+          "title": "npm/@beloved-lenora/opencode-goal"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@beloved-lenora/opencode-orchestrator",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@beloved-lenora/opencode-orchestrator",
+          "title": "npm/@beloved-lenora/opencode-orchestrator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@beloved-lenora/opencode-shared-rpc",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@beloved-lenora/opencode-shared-rpc",
+          "title": "npm/@beloved-lenora/opencode-shared-rpc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@beloved-lenora/opencode-shell-guard",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@beloved-lenora/opencode-shell-guard",
+          "title": "npm/@beloved-lenora/opencode-shell-guard"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@beloved-lenora/opencode-stats",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@beloved-lenora/opencode-stats",
+          "title": "npm/@beloved-lenora/opencode-stats"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@beloved-lenora/opencode-todo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@beloved-lenora/opencode-todo",
+          "title": "npm/@beloved-lenora/opencode-todo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@benasin_2/frontend-logger",
       "type": "npm",
       "sources": [
@@ -244621,6 +244741,18 @@
       "last_seen": null
     },
     {
+      "name": "@developmentyora/yorakids",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@developmentyora/yorakids",
+          "title": "npm/@developmentyora/yorakids"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@devgandhi/cpp",
       "type": "npm",
       "sources": [
@@ -262735,6 +262867,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@flex-ng/header-component",
           "title": "npm/@flex-ng/header-component"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@flexmr/survey-client",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@flexmr/survey-client",
+          "title": "npm/@flexmr/survey-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@flexmr/survey-conversation",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@flexmr/survey-conversation",
+          "title": "npm/@flexmr/survey-conversation"
         }
       ],
       "first_seen": null,
@@ -357383,6 +357539,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@x-team/strapi",
           "title": "npm/@x-team/strapi"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@xatancchii/natabaileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xatancchii/natabaileys",
+          "title": "npm/@xatancchii/natabaileys"
         }
       ],
       "first_seen": null,
@@ -544926,6 +545094,18 @@
       "last_seen": null
     },
     {
+      "name": "asistenyorstore",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/asistenyorstore",
+          "title": "npm/asistenyorstore"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "asitam-ifut-duoa",
       "type": "npm",
       "sources": [
@@ -654901,18 +655081,6 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brinkbit-schema-user",
           "title": "npm/brinkbit-schema-user"
-        }
-      ],
-      "first_seen": null,
-      "last_seen": null
-    },
-    {
-      "name": "brioche-apl-dev-env",
-      "type": "npm",
-      "sources": [
-        {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/brioche-apl-dev-env",
-          "title": "npm/brioche-apl-dev-env"
         }
       ],
       "first_seen": null,
