@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-16T21:18:25Z",
-  "total": 58525,
+  "generated_at": "2026-10-17T21:17:45Z",
+  "total": 58535,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -31971,6 +31971,18 @@
       "last_seen": null
     },
     {
+      "name": "driftwavets",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/driftwavets",
+          "title": "PyPI/driftwavets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "ds-lime",
       "type": "PyPI",
       "sources": [
@@ -32961,6 +32973,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/embeds",
           "title": "PyPI/embeds"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "emberlytts",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/emberlytts",
+          "title": "PyPI/emberlytts"
         }
       ],
       "first_seen": null,
@@ -49353,6 +49377,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/glass-of-water",
           "title": "PyPI/glass-of-water"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "glassbeakasr",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/glassbeakasr",
+          "title": "PyPI/glassbeakasr"
         }
       ],
       "first_seen": null,
@@ -75932,6 +75968,18 @@
       "last_seen": null
     },
     {
+      "name": "novalithtts",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/novalithtts",
+          "title": "PyPI/novalithtts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "novatwo",
       "type": "PyPI",
       "sources": [
@@ -99940,6 +99988,18 @@
       "last_seen": null
     },
     {
+      "name": "pyrechoasr",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pyrechoasr",
+          "title": "PyPI/pyrechoasr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "pyregions-snowflake",
       "type": "PyPI",
       "sources": [
@@ -103694,6 +103754,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/quantumania",
           "title": "PyPI/quantumania"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "quasitonnts",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/quasitonnts",
+          "title": "PyPI/quasitonnts"
         }
       ],
       "first_seen": null,
@@ -131552,6 +131624,18 @@
       "last_seen": null
     },
     {
+      "name": "tonemaptts",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tonemaptts",
+          "title": "PyPI/tonemaptts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "toneo",
       "type": "PyPI",
       "sources": [
@@ -143876,6 +143960,18 @@
       "last_seen": null
     },
     {
+      "name": "ukraine69",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ukraine69",
+          "title": "PyPI/ukraine69"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "ultimate-ai-power",
       "type": "PyPI",
       "sources": [
@@ -147051,6 +147147,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/voipms-service",
           "title": "PyPI/voipms-service"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "voltswannts",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/voltswannts",
+          "title": "PyPI/voltswannts"
         }
       ],
       "first_seen": null,
@@ -701179,6 +701287,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "imgdecode",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "http://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
+          "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
+          "date": "2026-10-17"
+        }
+      ],
+      "first_seen": "2026-10-17",
+      "last_seen": "2026-10-17"
     },
     {
       "name": "integrations",
