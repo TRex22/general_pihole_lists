@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-10-19T21:09:36Z
+# Generated: 2026-10-20T21:09:33Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 805
+# Total domains: 812
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -32,7 +32,9 @@ api-cdn.embed.ly
 api-cdn.mypurecloud.com.au
 api-cdn.mypurecloud.de
 api-cloud.eventim.com
+api-ecommerce.hostinger.com
 api-edge.askmiso.com
+api-gw.gokwik.io
 api-v2.soundcloud.com
 api.appcues.com
 api.axept.io
@@ -46,6 +48,7 @@ api.eventim.com
 api.feefo.com
 api.fontshare.com
 api.framer.com
+api.gokwik.co
 api.hsforms.com
 api.hubspot.com
 api.idalgo.idalgo-hosting.com
@@ -173,6 +176,7 @@ cdn.embedly.com
 cdn.flowplayer.com
 cdn.fontshare.com
 cdn.getshogun.com
+cdn.gokwik.co
 cdn.hinet.net
 cdn.hometogo.net
 cdn.intelligems.io
@@ -211,6 +215,7 @@ cf.aliyun.com
 cg.optimizely.com
 check.ddos-guard.net
 checkout.com
+checkout.hostinger.com
 checkout.razorpay.com
 cidades.rdstation.com.br
 cineca.it
@@ -349,6 +354,7 @@ gifs.bsky.app
 gigya.com
 giphy.com
 gitbook.com
+gkx.gokwik.co
 gladly.com
 gleam.io
 global-e.com
@@ -424,6 +430,7 @@ klarnacdn.net
 ko-fi.com
 kohls.com.ssl.sc.omtrdc.net
 kustomerapp.com
+kwikcart.gokwik.co
 kxcdn.com
 lib.getshogun.com
 libraries.unbxdapi.com

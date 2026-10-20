@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-19T21:20:45Z",
-  "total": 58594,
+  "generated_at": "2026-10-20T21:18:30Z",
+  "total": 58628,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -13886,6 +13886,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/astronomios",
           "title": "PyPI/astronomios"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "asurion",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/asurion",
+          "title": "PyPI/asurion"
         }
       ],
       "first_seen": null,
@@ -78804,6 +78816,18 @@
       "last_seen": null
     },
     {
+      "name": "pafex",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pafex",
+          "title": "PyPI/pafex"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "paintpy",
       "type": "PyPI",
       "sources": [
@@ -108525,12 +108549,36 @@
       "last_seen": null
     },
     {
+      "name": "research-probe-6150c1c915",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/research-probe-6150c1c915",
+          "title": "PyPI/research-probe-6150c1c915"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "researchpoc",
       "type": "PyPI",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/researchpoc",
           "title": "PyPI/researchpoc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "resion",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/resion",
+          "title": "PyPI/resion"
         }
       ],
       "first_seen": null,
@@ -111429,6 +111477,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/security-automation-job",
           "title": "PyPI/security-automation-job"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "security-research-startup-snapshot-810764b303",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/security-research-startup-snapshot-810764b303",
+          "title": "PyPI/security-research-startup-snapshot-810764b303"
         }
       ],
       "first_seen": null,
@@ -122223,12 +122283,60 @@
       "last_seen": null
     },
     {
+      "name": "semmver",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/semmver",
+          "title": "PyPI/semmver"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "semurgdb",
       "type": "PyPI",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/semurgdb",
           "title": "PyPI/semurgdb"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "semveer",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/semveer",
+          "title": "PyPI/semveer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "semverr",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/semverr",
+          "title": "PyPI/semverr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "semvver",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/semvver",
+          "title": "PyPI/semvver"
         }
       ],
       "first_seen": null,
@@ -129422,6 +129530,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/test-typo-pypi",
           "title": "PyPI/test-typo-pypi"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "test-workalendar-internal",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/test-workalendar-internal",
+          "title": "PyPI/test-workalendar-internal"
         }
       ],
       "first_seen": null,
@@ -149971,6 +150091,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/woowoowo",
           "title": "PyPI/woowoowo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "workalender",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/workalender",
+          "title": "PyPI/workalender"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "workcalender",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/workcalender",
+          "title": "PyPI/workcalender"
         }
       ],
       "first_seen": null,
@@ -218373,6 +218517,90 @@
       "last_seen": null
     },
     {
+      "name": "@an1mshnpmb9c84920/gat-scope-target-125ec19a",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@an1mshnpmb9c84920/gat-scope-target-125ec19a",
+          "title": "npm/@an1mshnpmb9c84920/gat-scope-target-125ec19a"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@an1mshnpmb9c84920/oidc-cross-cafb9d929e",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@an1mshnpmb9c84920/oidc-cross-cafb9d929e",
+          "title": "npm/@an1mshnpmb9c84920/oidc-cross-cafb9d929e"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@an1mshnpmb9c84920/pipe-compat-m19r8",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@an1mshnpmb9c84920/pipe-compat-m19r8",
+          "title": "npm/@an1mshnpmb9c84920/pipe-compat-m19r8"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@an1mshnpmb9c84920/pipe-dns-m19t2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@an1mshnpmb9c84920/pipe-dns-m19t2",
+          "title": "npm/@an1mshnpmb9c84920/pipe-dns-m19t2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@an1mshnpmb9c84920/stage-fn-m19p2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@an1mshnpmb9c84920/stage-fn-m19p2",
+          "title": "npm/@an1mshnpmb9c84920/stage-fn-m19p2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@an1mshnpmb9c84920/stage-outer-m19s5",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@an1mshnpmb9c84920/stage-outer-m19s5",
+          "title": "npm/@an1mshnpmb9c84920/stage-outer-m19s5"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@an1mshnpmb9c84920/stage-repo-m19g7",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@an1mshnpmb9c84920/stage-repo-m19g7",
+          "title": "npm/@an1mshnpmb9c84920/stage-repo-m19g7"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@anchor-ds/core",
       "type": "npm",
       "sources": [
@@ -244591,6 +244819,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@decido/backend-core",
           "title": "npm/@decido/backend-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@decoopus/chatgpt-setup",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@decoopus/chatgpt-setup",
+          "title": "npm/@decoopus/chatgpt-setup"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@decoopus/claude-setup",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@decoopus/claude-setup",
+          "title": "npm/@decoopus/claude-setup"
         }
       ],
       "first_seen": null,
@@ -322021,6 +322273,18 @@
       "last_seen": null
     },
     {
+      "name": "@platform-services/hrm-mfe-core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@platform-services/hrm-mfe-core",
+          "title": "npm/@platform-services/hrm-mfe-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@platform-ui-kit/components-library-react",
       "type": "npm",
       "sources": [
@@ -330127,6 +330391,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sectest429/hello-npm-world",
           "title": "npm/@sectest429/hello-npm-world"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@securihackbot/depconf-stage-1792484738",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@securihackbot/depconf-stage-1792484738",
+          "title": "npm/@securihackbot/depconf-stage-1792484738"
         }
       ],
       "first_seen": null,
@@ -513749,6 +514025,42 @@
       "last_seen": null
     },
     {
+      "name": "animate-tailwind-kit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animate-tailwind-kit",
+          "title": "npm/animate-tailwind-kit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "animate-twcss-bridge",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animate-twcss-bridge",
+          "title": "npm/animate-twcss-bridge"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "animate-twcss-pack",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animate-twcss-pack",
+          "title": "npm/animate-twcss-pack"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "animatecss-postcss-plugin",
       "type": "npm",
       "sources": [
@@ -513773,12 +514085,96 @@
       "last_seen": null
     },
     {
+      "name": "animatecss-tailwind-binary",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animatecss-tailwind-binary",
+          "title": "npm/animatecss-tailwind-binary"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "animatecss-tailwind-bridge",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animatecss-tailwind-bridge",
           "title": "npm/animatecss-tailwind-bridge"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "animatecss-tailwind-graphic",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animatecss-tailwind-graphic",
+          "title": "npm/animatecss-tailwind-graphic"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "animatecss-tailwind-helper",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animatecss-tailwind-helper",
+          "title": "npm/animatecss-tailwind-helper"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "animatecss-tailwind-luminary",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animatecss-tailwind-luminary",
+          "title": "npm/animatecss-tailwind-luminary"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "animatecss-tailwind-plugin",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animatecss-tailwind-plugin",
+          "title": "npm/animatecss-tailwind-plugin"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "animatecss-tailwind-presets",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animatecss-tailwind-presets",
+          "title": "npm/animatecss-tailwind-presets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "animatecss-tailwind-vectrix",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animatecss-tailwind-vectrix",
+          "title": "npm/animatecss-tailwind-vectrix"
         }
       ],
       "first_seen": null,
@@ -521507,6 +521903,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/apfinal",
           "title": "npm/apfinal"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "api-anthropic",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/api-anthropic",
+          "title": "npm/api-anthropic"
         }
       ],
       "first_seen": null,
