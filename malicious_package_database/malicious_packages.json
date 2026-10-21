@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-20T21:18:30Z",
-  "total": 58628,
+  "generated_at": "2026-10-21T21:18:53Z",
+  "total": 58640,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -29161,6 +29161,18 @@
       "last_seen": null
     },
     {
+      "name": "debbug",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/debbug",
+          "title": "PyPI/debbug"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "debug-toolbar",
       "type": "PyPI",
       "sources": [
@@ -29227,6 +29239,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/dedh-devops-automation",
           "title": "PyPI/dedh-devops-automation"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "deebug",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/deebug",
+          "title": "PyPI/deebug"
         }
       ],
       "first_seen": null,
@@ -45327,6 +45351,18 @@
       "last_seen": null
     },
     {
+      "name": "facewareretargeter",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/facewareretargeter",
+          "title": "PyPI/facewareretargeter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "fadlearner",
       "type": "PyPI",
       "sources": [
@@ -52371,6 +52407,30 @@
       "last_seen": null
     },
     {
+      "name": "hijiko-pilaka",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/hijiko-pilaka",
+          "title": "PyPI/hijiko-pilaka"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "hijok-lampam",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/hijok-lampam",
+          "title": "PyPI/hijok-lampam"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "hironobunigo",
       "type": "PyPI",
       "sources": [
@@ -56632,6 +56692,18 @@
       "last_seen": null
     },
     {
+      "name": "jiklpo-tsunari-kay",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/jiklpo-tsunari-kay",
+          "title": "PyPI/jiklpo-tsunari-kay"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "jinja22",
       "type": "PyPI",
       "sources": [
@@ -56722,6 +56794,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/joule-sbx-poc",
           "title": "PyPI/joule-sbx-poc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "journey-test-helloshell",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/journey-test-helloshell",
+          "title": "PyPI/journey-test-helloshell"
         }
       ],
       "first_seen": null,
@@ -73970,6 +74054,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/movers",
           "title": "PyPI/movers"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "moveworks-capi-starter",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/moveworks-capi-starter",
+          "title": "PyPI/moveworks-capi-starter"
         }
       ],
       "first_seen": null,
@@ -122283,6 +122379,18 @@
       "last_seen": null
     },
     {
+      "name": "semer",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/semer",
+          "title": "PyPI/semer"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "semmver",
       "type": "PyPI",
       "sources": [
@@ -125721,6 +125829,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sselenium",
           "title": "PyPI/sselenium"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ssemver",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ssemver",
+          "title": "PyPI/ssemver"
         }
       ],
       "first_seen": null,
@@ -142694,6 +142814,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trickery",
           "title": "PyPI/trickery"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "trijigo-kalip",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trijigo-kalip",
+          "title": "PyPI/trijigo-kalip"
         }
       ],
       "first_seen": null,
@@ -217611,6 +217743,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@alaan/s2s-auth",
           "title": "npm/@alaan/s2s-auth"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@alannxd/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@alannxd/baileys",
+          "title": "npm/@alannxd/baileys"
         }
       ],
       "first_seen": null,
