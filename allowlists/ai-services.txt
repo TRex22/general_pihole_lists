@@ -41,6 +41,7 @@ www.claude.com
 www.claude.ai
 api.claude.ai
 platform.claude.com
+sso.claude.com
 
 # Authentication and sessions
 auth.anthropic.com
@@ -350,6 +351,7 @@ api.business.githubcopilot.com
 api.enterprise.githubcopilot.com
 copilot-proxy.githubusercontent.com
 origin-tracker.githubusercontent.com
+copilot-reports.github.com
 # Public code matching / duplicate-detection filter used by Copilot completions
 api.mcp.github.com
 # GitHub MCP registry API, used by Copilot agent mode
