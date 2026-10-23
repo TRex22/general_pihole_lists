@@ -55,7 +55,7 @@ ruby scripts/scrape_malicious_domains.rb --status
 ruby scripts/scrape_malicious_domains.rb --help
 ```
 
-**Sources:** `thehackernews`, `bleepingcomputer`, `krebsonsecurity`, `isc_sans`, `talos`, `unit42`, `securelist`, `malwarebytes`, `welivesecurity`, `proofpoint`, `microsoft_security`, `google_threat_intel`, `anyrun`, `sophos`, `checkpoint_research`, `volexity`, `sentinelone`, `elastic_security`, `zscaler_threatlabz`, `symantec_threatintel`, `lumen_blacklotus`, `red_canary`, `fortiguard`, `trendmicro`, `crowdstrike`, `huntress`
+**Sources:** `thehackernews`, `bleepingcomputer`, `krebsonsecurity`, `isc_sans`, `talos`, `unit42`, `securelist`, `malwarebytes`, `welivesecurity`, `proofpoint`, `microsoft_security`, `google_threat_intel`, `anyrun`, `sophos`, `checkpoint_research`, `volexity`, `sentinelone`, `elastic_security`, `zscaler_threatlabz`, `symantec_threatintel`, `lumen_blacklotus`, `red_canary`, `fortiguard`, `trendmicro`, `crowdstrike`, `huntress`, `safedep`
 
 > **Note:** `fortiguard`, `trendmicro`, `sophos`, `crowdstrike`, and `huntress` block datacenter IP ranges. The GitHub Actions workflow skips `trendmicro` and `sophos` by default (`--skip-sources trendmicro,sophos`). Run with `--browser-fetch` or from a residential/office network if these return 0 articles.
 

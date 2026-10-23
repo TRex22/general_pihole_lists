@@ -61,6 +61,7 @@ require_relative 'scrapers/fortiguard'
 require_relative 'scrapers/trendmicro'
 require_relative 'scrapers/crowdstrike'
 require_relative 'scrapers/huntress'
+require_relative 'scrapers/safedep'
 
 ALL_SCRAPERS = {
   'thehackernews'       => THNScraper,
@@ -89,6 +90,7 @@ ALL_SCRAPERS = {
   'trendmicro'           => TrendMicroScraper,
   'crowdstrike'          => CrowdStrikeScraper,
   'huntress'             => HuntressScraper,
+  'safedep'              => SafeDepScraper,
 }.freeze
 
 # ────────────────────────────────────────────────────────────────────────────

@@ -105,7 +105,7 @@ Domain sources: `thehackernews`, `bleepingcomputer`, `krebsonsecurity`, `isc_san
 `microsoft_security`, `google_threat_intel`, `anyrun`, `sophos`,
 `checkpoint_research`, `volexity`, `sentinelone`, `elastic_security`,
 `zscaler_threatlabz`, `symantec_threatintel`, `lumen_blacklotus`, `red_canary`,
-`fortiguard`, `trendmicro`, `crowdstrike`, `huntress`
+`fortiguard`, `trendmicro`, `crowdstrike`, `huntress`, `safedep`
 
 Note: `fortiguard`, `trendmicro`, `crowdstrike`, and `huntress` block datacenter IP
 ranges. Run with `--browser-fetch` or from a residential/office network if they
