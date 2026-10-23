@@ -311,6 +311,7 @@ cloud.microsoft
 static.microsoft
 usercontent.microsoft
 recent.svc.cloud.microsoft  # M365 "recent files" service
+augloop.svc.cloud.microsoft  # Office Augmentation Loop (cloud-powered Office features); Microsoft says allow all of *.cloud.microsoft
 www.microsoft365.com
 admin.microsoft.com
 cortana.ai
@@ -556,6 +557,7 @@ api.linkedin.com
 # CDN / media (licdn.com is LinkedIn's CDN, owned by Microsoft)
 licdn.com
 media.licdn.com
+dms.licdn.com  # LinkedIn media CDN (blocked-query review 2026-10-23)
 static.licdn.com
 dlc1-s.licdn.com
 dlc2-s.licdn.com
