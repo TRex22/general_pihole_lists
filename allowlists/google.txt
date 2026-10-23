@@ -130,6 +130,7 @@ policies.google.com
 # Chrome misc services (legacy software distribution, first-run guide, client backend)
 # Source: https://support.google.com/chrome/a/answer/6334001
 pack.google.com
+cache.pack.google.com
 gweb-gettingstartedguide.appspot.com
 scone-pa.clients6.google.com
 
@@ -413,3 +414,17 @@ maven-central.storage-download.googleapis.com
 # (Source: https://support.google.com/android/answer/9654714)
 support.google.com
 guidebooks.google.com
+
+# Google Workspace admin / documentation / Apps Script / Cloud console
+# (Source: https://knowledge.workspace.google.com/admin/gemini/gemini-app-firewall-settings, verified resolving 2026-10-23)
+knowledge.workspace.google.com
+workspace.google.com
+admin.google.com
+developers.google.com
+discuss.google.dev
+console.cloud.google.com
+script.google.com
+www.skills.google
+
+# Regional Google search (South Africa)
+www.google.co.za

@@ -207,6 +207,9 @@ officespeech.platform.bing.com  # Office Dictation feature (ID 126)
 # Azure
 portal.azure.com
 management.azure.com
+safelinks.protection.outlook.com  # Safe Links check on Copilot Chat link clicks (microsoft-365-copilot-requirements)
+bastion.azure.com  # Azure Bastion (azure-portal-safelist-urls)
+monitor.azure.com  # Azure Monitor (azure-portal-safelist-urls)
 graph.microsoft.com
 graph.windows.net
 enterpriseregistration.windows.net
@@ -466,6 +469,8 @@ zoom.us
 www.zoom.us
 zoom.com
 www.zoom.com
+assets.zoom.us  # Zoom web client assets (Zoom network firewall requirements)
+support.zoom.com  # Zoom help center (Zoom network firewall requirements)
 us02web.zoom.us
 us04web.zoom.us
 us05web.zoom.us

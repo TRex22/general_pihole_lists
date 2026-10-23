@@ -200,6 +200,7 @@ s1.shein.com
 # Shein regional ccTLD domains (separate primary domains, listed by Netify)
 # Source: https://www.netify.ai/resources/applications/shein
 shein.com.mx
+shein.tw
 shein.com.vn
 shein.se
 
@@ -518,6 +519,8 @@ url3486.yaga.co.za
 
 # Target
 api.target.com
+redsky.target.com  # Target product/catalog API (Pi-hole commonly whitelisted)
+profile.target.com  # Target account/profile API (Pi-hole commonly whitelisted)
 
 # Stonemaier Games (board game publisher — site + regional Shopify stores)
 # Source: https://stonemaiergames.com/ (links verified 2026-09-27)
