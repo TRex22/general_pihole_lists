@@ -188,3 +188,33 @@
 # fixed endpoints (bam.nr-data.net, collector.newrelic.com, etc.).
 (^|\.)nr-data\.net$
 (^|\.)newrelic\.com$
+
+# ── Microsoft cloud.microsoft (unified M365 domain) ──────────────────────────
+# Microsoft does not support allowing only selected apps within *.cloud.microsoft;
+# it asks for the whole domain (copilot.cloud.microsoft, augloop.svc.cloud.microsoft,
+# recent.svc.cloud.microsoft, etc.). Plain entries are in microsoft-productivity.txt.
+# Source: https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-requirements
+(^|\.)cloud\.microsoft$
+
+# ── GitHub Copilot ───────────────────────────────────────────────────────────
+# Copilot endpoints are per-plan subdomains (api.individual.githubcopilot.com,
+# api.business..., api.enterprise..., proxy..., telemetry is separate). Plain
+# entries are in ai-services.txt.
+# Source: https://docs.github.com/en/copilot/reference/copilot-allowlist-reference
+(^|\.)githubcopilot\.com$
+
+# ── Claude (artifact frames and MCP app widgets) ────────────────────────────
+# Anthropic documents *.frame.claudeusercontent.com (artifact content) and
+# *.claudemcpcontent.com (MCP App widgets, generated subdomains) as wildcards that
+# must be allowed with the wildcard intact. Plain entries are in ai-services.txt.
+# Source: https://code.claude.com/docs/en/network-config
+(^|\.)frame\.claudeusercontent\.com$
+(^|\.)claudemcpcontent\.com$
+
+# ── AWS sign-in / access portal ──────────────────────────────────────────────
+# Region-specific sign-in hosts (us-east-1.signin.aws, eu-west-1.sso.signin.aws) and
+# tenant access portals (<directory>.awsapps.com). aws.dev is deliberately excluded:
+# it hosts shortbread telemetry (prod.log.shortbread.aws.dev). Plain entries are in aws.txt.
+# Source: https://docs.aws.amazon.com/signin/latest/userguide/allowlist-domains.html
+(^|\.)signin\.aws$
+(^|\.)awsapps\.com$
