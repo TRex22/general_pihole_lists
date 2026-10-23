@@ -65,6 +65,7 @@ direct.capitecbank.co.za
 
 # Investec
 investec.com
+www.investec.com
 login.secure.investec.com
 
 # African Bank
@@ -78,6 +79,7 @@ www.bidvestbank.co.za
 
 # TymeBank / GoTyme Bank
 tymebank.co.za
+www.tymebank.co.za
 bank.tymedigital.co.za
 gotyme.co.za
 www.gotyme.co.za  # www.tymebank.co.za 301-redirects to gotyme.co.za (verified 2026-09-26)
@@ -92,17 +94,21 @@ discoverysouthafrica.germany-2.evergage.com  # Evergage/Salesforce Interaction S
 
 # Bank Zero
 bankzero.co.za
+www.bankzero.co.za
 
 # Sasfin Bank (voluntarily relinquished its banking licence 2026-06-30;
 # accounts transferred to OM Bank — entry kept for legacy site access)
 sasfin.com
+www.sasfin.com
 
 # Mercantile Bank (301-redirects to capitecbank.co.za as of 2026-08-23 —
 # confirmed absorbed into Capitec Business per header note; entry kept for the redirect hop)
 mercantile.co.za
+www.mercantile.co.za
 
 # OM Bank (Old Mutual)
 oldmutual.co.za
+www.oldmutual.co.za
 my.oldmutual.co.za
 secure.oldmutual.co.za
 secure.moneyaccount.co.za
@@ -114,6 +120,7 @@ www.postbank.co.za
 
 # Ithala Bank
 ithala.co.za
+www.ithala.co.za
 banking.ithala.co.za
 myithala.co.za
 www.myithala.co.za
@@ -122,12 +129,14 @@ www.myithala.co.za
 # integration into African Bank per 2022 acquisition; site returns Cloudflare
 # 525 as of 2026-08-25 — entry kept, domain still resolves via DNS)
 grindrodbank.co.za
+www.grindrodbank.co.za
 
 # Access Bank South Africa
 southafrica.accessbankplc.com
 
 # Albaraka Bank
 albaraka.co.za
+www.albaraka.co.za
 www.ibanking.albarakaonline.co.za
 mybanking.albaraka.co.za
 statements.albaraka.co.za
