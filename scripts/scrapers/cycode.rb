@@ -16,6 +16,11 @@ class CycodeScraper < StandardPaginatedScraper
 
   private
 
+  # cycode.com answers 429 (Retry-After: 1) after a handful of quick article fetches, so fetch gently and wait much longer than the header says.
+  def parallel_workers = [@parallel, 3].min
+  def batch_delay      = 4
+  def min_backoff      = 20
+
   def collect_article_urls
     articles     = []
     seen         = Set.new

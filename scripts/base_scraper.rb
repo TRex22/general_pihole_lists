@@ -402,6 +402,7 @@ class BaseScraper
 
   def parallel_workers  = @parallel
   def batch_delay       = 0
+  def min_backoff       = 0   # seconds; a scraper whose server sends a tiny Retry-After (or none) overrides this to wait longer on a 429, scaled by attempt
   def listing_page_delay = 0.5
   def probe_page_boundary_date(_entries) = nil
   def cloudflare_challenge?(_html) = false
@@ -469,7 +470,7 @@ class BaseScraper
         return response if response.success?
 
         if response.code == 429
-          wait = parse_retry_after(response.headers['retry-after'], attempt)
+          wait = [parse_retry_after(response.headers['retry-after'], attempt), min_backoff * (attempt + 1)].max
           warn "  HTTP 429 for #{url} (attempt #{attempt + 1}/#{retries}) — backing off #{wait}s"
           sleep(wait)
           next
