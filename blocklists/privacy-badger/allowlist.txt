@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-10-23T21:09:45Z
+# Generated: 2026-10-24T21:08:18Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 812
+# Total domains: 813
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -187,6 +187,7 @@ cdn.maptiler.com
 cdn.myopenpass.com
 cdn.ngenix.net
 cdn.plaid.com
+cdn.platform.openai.com
 cdn.prefixbox.com
 cdn.privacy-mgmt.com
 cdn.prod.website-files.com
