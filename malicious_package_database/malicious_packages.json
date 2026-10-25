@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-24T21:18:11Z",
-  "total": 58745,
+  "generated_at": "2026-10-25T21:11:48Z",
+  "total": 58769,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -47187,6 +47187,18 @@
       "last_seen": null
     },
     {
+      "name": "fontus",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/fontus",
+          "title": "PyPI/fontus"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "foop",
       "type": "PyPI",
       "sources": [
@@ -75578,6 +75590,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ncurses",
           "title": "PyPI/ncurses"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "nebulallm",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/nebulallm",
+          "title": "PyPI/nebulallm"
         }
       ],
       "first_seen": null,
@@ -152935,6 +152959,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/zafira",
           "title": "PyPI/zafira"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "zagents-message-bus",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/zagents-message-bus",
+          "title": "PyPI/zagents-message-bus"
         }
       ],
       "first_seen": null,
@@ -230469,6 +230505,30 @@
       "last_seen": null
     },
     {
+      "name": "@capsense/ccx-welcome-page",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@capsense/ccx-welcome-page",
+          "title": "npm/@capsense/ccx-welcome-page"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@capsense/core-ui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@capsense/core-ui",
+          "title": "npm/@capsense/core-ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@captivateiq/events",
       "type": "npm",
       "sources": [
@@ -256981,6 +257041,30 @@
       "last_seen": null
     },
     {
+      "name": "@drone-js-ext/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@drone-js-ext/core",
+          "title": "npm/@drone-js-ext/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@drone-js-ext/vip-badge",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@drone-js-ext/vip-badge",
+          "title": "npm/@drone-js-ext/vip-badge"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@dropbox-photo-viewer/electron-app",
       "type": "npm",
       "sources": [
@@ -257743,6 +257827,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@edwardjones/fetlife-assets",
           "title": "npm/@edwardjones/fetlife-assets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@eforms/forms-api",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@eforms/forms-api",
+          "title": "npm/@eforms/forms-api"
         }
       ],
       "first_seen": null,
@@ -263473,6 +263569,18 @@
       "last_seen": null
     },
     {
+      "name": "@factoryz/apollo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@factoryz/apollo",
+          "title": "npm/@factoryz/apollo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@fahmisugeng13/tea_fahmisugeng13",
       "type": "npm",
       "sources": [
@@ -264865,6 +264973,18 @@
       "last_seen": null
     },
     {
+      "name": "@fmr-ap153177/apex-kit-icons",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fmr-ap153177/apex-kit-icons",
+          "title": "npm/@fmr-ap153177/apex-kit-icons"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@fmr-pr103625/apex-core",
       "type": "npm",
       "sources": [
@@ -265849,6 +265969,18 @@
       "last_seen": null
     },
     {
+      "name": "@futurae-public/adaptive-js",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@futurae-public/adaptive-js",
+          "title": "npm/@futurae-public/adaptive-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@fxinternal/netdiagnostics",
       "type": "npm",
       "sources": [
@@ -266443,6 +266575,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gener8/fetlife-assets",
           "title": "npm/@gener8/fetlife-assets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@generic-means/ing-feat-scanner-libs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@generic-means/ing-feat-scanner-libs",
+          "title": "npm/@generic-means/ing-feat-scanner-libs"
         }
       ],
       "first_seen": null,
@@ -268411,6 +268555,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@grappi/automations",
           "title": "npm/@grappi/automations"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@greenlake/common-context",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@greenlake/common-context",
+          "title": "npm/@greenlake/common-context"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@greenlake/session",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@greenlake/session",
+          "title": "npm/@greenlake/session"
         }
       ],
       "first_seen": null,
@@ -275719,6 +275887,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jitoz/encrypted-tools",
           "title": "npm/@jitoz/encrypted-tools"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@jm-telefonica/multibrand-components",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jm-telefonica/multibrand-components",
+          "title": "npm/@jm-telefonica/multibrand-components"
         }
       ],
       "first_seen": null,
@@ -324193,6 +324373,18 @@
       "last_seen": null
     },
     {
+      "name": "@postex/common",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@postex/common",
+          "title": "npm/@postex/common"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@posthog/agent",
       "type": "npm",
       "sources": [
@@ -325411,6 +325603,78 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@powpegtest/powpeg",
           "title": "npm/@powpegtest/powpeg"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ppa-web-components/ppa-banner",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ppa-web-components/ppa-banner",
+          "title": "npm/@ppa-web-components/ppa-banner"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ppa-web-components/ppa-builder",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ppa-web-components/ppa-builder",
+          "title": "npm/@ppa-web-components/ppa-builder"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ppa-web-components/ppa-headerfooter",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ppa-web-components/ppa-headerfooter",
+          "title": "npm/@ppa-web-components/ppa-headerfooter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ppa-web-components/ppa-hotel-collection",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ppa-web-components/ppa-hotel-collection",
+          "title": "npm/@ppa-web-components/ppa-hotel-collection"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ppa-web-components/ppa-navigation",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ppa-web-components/ppa-navigation",
+          "title": "npm/@ppa-web-components/ppa-navigation"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ppa-web-components/ppa-searchform",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ppa-web-components/ppa-searchform",
+          "title": "npm/@ppa-web-components/ppa-searchform"
         }
       ],
       "first_seen": null,
@@ -526931,6 +527195,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/appinsightsnew",
           "title": "npm/appinsightsnew"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "appit-cordova-admob",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/appit-cordova-admob",
+          "title": "npm/appit-cordova-admob"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "appit-cordova-plugin-ionic",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/appit-cordova-plugin-ionic",
+          "title": "npm/appit-cordova-plugin-ionic"
         }
       ],
       "first_seen": null,
