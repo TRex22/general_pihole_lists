@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-26T21:13:43Z",
-  "total": 58795,
+  "generated_at": "2026-10-27T21:12:12Z",
+  "total": 58818,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -33261,6 +33261,22 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/elementary-data",
           "title": "PyPI/elementary-data"
+        },
+        {
+          "url": "https://snyk.io/blog/malicious-release-of-elementary-data-pypi-package-steals-cloud-credentials-from-data-engineers/",
+          "title": "Malicious Release of elementary-data PyPI Package Steals Cloud Credentials from Data Engineers"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "elementary-dataVersion",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/malicious-release-of-elementary-data-pypi-package-steals-cloud-credentials-from-data-engineers/",
+          "title": "Malicious Release of elementary-data PyPI Package Steals Cloud Credentials from Data Engineers"
         }
       ],
       "first_seen": null,
@@ -51639,6 +51655,18 @@
       "last_seen": null
     },
     {
+      "name": "h13t0ry-hello-demo",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/h13t0ry-hello-demo",
+          "title": "PyPI/h13t0ry-hello-demo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "h4xupdate",
       "type": "PyPI",
       "sources": [
@@ -56798,6 +56826,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "itself.",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/poisoned-security-scanner-backdooring-litellm/",
+          "title": "How a Poisoned Security Scanner Became the Key to Backdooring LiteLLM",
+          "date": "2026-03-24"
+        }
+      ],
+      "first_seen": "2026-03-24",
+      "last_seen": "2026-03-24"
     },
     {
       "name": "iufgbewroibgfowiebc",
@@ -69694,10 +69735,15 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/litellm",
           "title": "PyPI/litellm"
+        },
+        {
+          "url": "https://snyk.io/blog/poisoned-security-scanner-backdooring-litellm/",
+          "title": "How a Poisoned Security Scanner Became the Key to Backdooring LiteLLM",
+          "date": "2026-03-24"
         }
       ],
-      "first_seen": null,
-      "last_seen": null
+      "first_seen": "2026-03-24",
+      "last_seen": "2026-03-24"
     },
     {
       "name": "littelbitx0",
@@ -76958,6 +77004,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/nump",
           "title": "PyPI/nump"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "numprint",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/numprint",
+          "title": "PyPI/numprint"
         }
       ],
       "first_seen": null,
@@ -151259,6 +151317,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "would",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/poisoned-security-scanner-backdooring-litellm/",
+          "title": "How a Poisoned Security Scanner Became the Key to Backdooring LiteLLM",
+          "date": "2026-03-24"
+        }
+      ],
+      "first_seen": "2026-03-24",
+      "last_seen": "2026-03-24"
     },
     {
       "name": "wr-test",
@@ -226173,6 +226244,18 @@
       "last_seen": null
     },
     {
+      "name": "@azure-growth/signup-ux-components",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@azure-growth/signup-ux-components",
+          "title": "npm/@azure-growth/signup-ux-components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@azure-lab-services/ml-ts",
       "type": "npm",
       "sources": [
@@ -230487,6 +230570,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@camdenliving/fetlife-assets",
           "title": "npm/@camdenliving/fetlife-assets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@camera.ui/camera-ui-nvr-windows-amd64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@camera.ui/camera-ui-nvr-windows-amd64",
+          "title": "npm/@camera.ui/camera-ui-nvr-windows-amd64"
         }
       ],
       "first_seen": null,
@@ -458441,6 +458536,18 @@
       "last_seen": null
     },
     {
+      "name": "adyen-web-v6",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/adyen-web-v6",
+          "title": "npm/adyen-web-v6"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "adyenaddon",
       "type": "npm",
       "sources": [
@@ -460959,6 +461066,23 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "against",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/mini-shai-hulud-antv-npm-supply-chain-attack/",
+          "title": "Mini Shai-Hulud Hits AntV: 300+ Malicious npm Packages Published via Compromised Maintainer Account"
+        },
+        {
+          "url": "https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages/",
+          "title": "\"A Mini Shai-Hulud Has Appeared\": Bun-Based Stealer Hits SAP @cap-js and mbt npm Packages",
+          "date": "2026-04-29"
+        }
+      ],
+      "first_seen": "2026-04-29",
+      "last_seen": "2026-04-29"
     },
     {
       "name": "agate-build",
@@ -491003,6 +491127,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alright_wildebeest_0xrequest",
           "title": "npm/alright_wildebeest_0xrequest"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "also",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/embedded-malicious-code-in-tinycolor-and-ngx-bootstrap-releases-on-npm/",
+          "title": "Zero-day Extensive NPM Package Compromise - Shai Hulud Supply Chain Attack"
         }
       ],
       "first_seen": null,
@@ -521291,6 +521427,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/anxious_wolf_tomato-89",
           "title": "npm/anxious_wolf_tomato-89"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "any",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/mini-shai-hulud-antv-npm-supply-chain-attack/",
+          "title": "Mini Shai-Hulud Hits AntV: 300+ Malicious npm Packages Published via Compromised Maintainer Account"
         }
       ],
       "first_seen": null,
@@ -564931,10 +565079,15 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/autotel",
           "title": "npm/autotel"
+        },
+        {
+          "url": "https://snyk.io/blog/node-gyp-supply-chain-compromise-self-propagating-npm-worm-binding-gyp/",
+          "title": "Node-gyp Supply Chain Compromise: A Self-Propagating npm Worm That Hides in binding.gyp",
+          "date": "2026-06-04"
         }
       ],
-      "first_seen": null,
-      "last_seen": null
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04"
     },
     {
       "name": "autotel-adapters",
@@ -580843,6 +580996,10 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/axios",
           "title": "npm/axios"
+        },
+        {
+          "url": "https://snyk.io/blog/axios-npm-package-compromised-supply-chain-attack-delivers-cross-platform/",
+          "title": "Axios npm Package Compromised: Supply Chain Attack Delivers Cross-Platform RAT"
         },
         {
           "url": "https://www.microsoft.com/en-us/security/blog/2026/04/01/mitigating-the-axios-npm-supply-chain-compromise/",
@@ -704072,6 +704229,23 @@
       "last_seen": null
     },
     {
+      "name": "CI",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/node-gyp-supply-chain-compromise-self-propagating-npm-worm-binding-gyp/",
+          "title": "Node-gyp Supply Chain Compromise: A Self-Propagating npm Worm That Hides in binding.gyp",
+          "date": "2026-06-04"
+        },
+        {
+          "url": "https://snyk.io/blog/mini-shai-hulud-antv-npm-supply-chain-attack/",
+          "title": "Mini Shai-Hulud Hits AntV: 300+ Malicious npm Packages Published via Compromised Maintainer Account"
+        }
+      ],
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04"
+    },
+    {
       "name": "clawpro-diagnostics-metrics-cls",
       "type": "npm",
       "sources": [
@@ -704252,6 +704426,19 @@
       "last_seen": null
     },
     {
+      "name": "explicitly",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages/",
+          "title": "\"A Mini Shai-Hulud Has Appeared\": Bun-Based Stealer Hits SAP @cap-js and mbt npm Packages",
+          "date": "2026-04-29"
+        }
+      ],
+      "first_seen": "2026-04-29",
+      "last_seen": "2026-04-29"
+    },
+    {
       "name": "fca-eryxenx",
       "type": "npm",
       "sources": [
@@ -704420,6 +704607,18 @@
       ],
       "first_seen": "2026-10-17",
       "last_seen": "2026-10-17"
+    },
+    {
+      "name": "in",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/axios-npm-package-compromised-supply-chain-attack-delivers-cross-platform/",
+          "title": "Axios npm Package Compromised: Supply Chain Attack Delivers Cross-Platform RAT"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
     },
     {
       "name": "integrations",
@@ -704603,6 +704802,19 @@
       "last_seen": null
     },
     {
+      "name": "mbt",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages/",
+          "title": "\"A Mini Shai-Hulud Has Appeared\": Bun-Based Stealer Hits SAP @cap-js and mbt npm Packages",
+          "date": "2026-04-29"
+        }
+      ],
+      "first_seen": "2026-04-29",
+      "last_seen": "2026-04-29"
+    },
+    {
       "name": "mcp-server-iehub-proxy",
       "type": "npm",
       "sources": [
@@ -704724,6 +704936,19 @@
       "last_seen": null
     },
     {
+      "name": "nx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/weaponizing-ai-coding-agents-for-malware-in-the-nx-malicious-package/",
+          "title": "Weaponizing AI Coding Agents for Malware in the Nx Malicious Package Security Incident",
+          "date": "2025-08-27"
+        }
+      ],
+      "first_seen": "2025-08-27",
+      "last_seen": "2025-08-27"
+    },
+    {
       "name": "ocore",
       "type": "npm",
       "sources": [
@@ -704746,6 +704971,28 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "on",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/node-gyp-supply-chain-compromise-self-propagating-npm-worm-binding-gyp/",
+          "title": "Node-gyp Supply Chain Compromise: A Self-Propagating npm Worm That Hides in binding.gyp",
+          "date": "2026-06-04"
+        },
+        {
+          "url": "https://snyk.io/blog/tanstack-npm-packages-compromised/",
+          "title": "TanStack Npm Packages Compromised Inside The Mini Shai Hulud Supply Chain Attack",
+          "date": "2026-05-11"
+        },
+        {
+          "url": "https://snyk.io/blog/axios-npm-package-compromised-supply-chain-attack-delivers-cross-platform/",
+          "title": "Axios npm Package Compromised: Supply Chain Attack Delivers Cross-Platform RAT"
+        }
+      ],
+      "first_seen": "2026-05-11",
+      "last_seen": "2026-06-04"
     },
     {
       "name": "onboardconnect-agent",
@@ -704813,12 +705060,21 @@
       "type": "npm",
       "sources": [
         {
+          "url": "https://snyk.io/blog/axios-npm-package-compromised-supply-chain-attack-delivers-cross-platform/",
+          "title": "Axios npm Package Compromised: Supply Chain Attack Delivers Cross-Platform RAT"
+        },
+        {
+          "url": "https://snyk.io/blog/weaponizing-ai-coding-agents-for-malware-in-the-nx-malicious-package/",
+          "title": "Weaponizing AI Coding Agents for Malware in the Nx Malicious Package Security Incident",
+          "date": "2025-08-27"
+        },
+        {
           "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/postinstall-payload-inside-mastra-npm-supply-chain-compromise/",
           "title": "From package to postinstall payload: Inside the Mastra npm supply chain compromise by Sapphire Sleet",
           "date": "2026-06-17"
         }
       ],
-      "first_seen": "2026-06-17",
+      "first_seen": "2025-08-27",
       "last_seen": "2026-06-17"
     },
     {
@@ -704862,12 +705118,17 @@
       "type": "npm",
       "sources": [
         {
+          "url": "https://snyk.io/blog/malicious-mcp-server-on-npm-postmark-mcp-harvests-emails/",
+          "title": "Malicious MCP Server on npm postmark-mcp Harvests Emails",
+          "date": "2025-09-25"
+        },
+        {
           "url": "http://thehackernews.com/2025/09/first-malicious-mcp-server-found.html",
           "title": "First Malicious MCP Server Found Stealing Emails in Rogue Postmark-MCP Package",
           "date": "2025-09-29"
         }
       ],
-      "first_seen": "2025-09-29",
+      "first_seen": "2025-09-25",
       "last_seen": "2025-09-29"
     },
     {
@@ -705122,6 +705383,45 @@
       "last_seen": "2026-07-30"
     },
     {
+      "name": "resolves",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/a-forgotten-contributor-account-compromised-the-entire-mastra-npm-package-scope/",
+          "title": "A Forgotten Contributor Account Compromised the Entire Mastra npm Package Scope",
+          "date": "2026-06-17"
+        }
+      ],
+      "first_seen": "2026-06-17",
+      "last_seen": "2026-06-17"
+    },
+    {
+      "name": "returns",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages/",
+          "title": "\"A Mini Shai-Hulud Has Appeared\": Bun-Based Stealer Hits SAP @cap-js and mbt npm Packages",
+          "date": "2026-04-29"
+        }
+      ],
+      "first_seen": "2026-04-29",
+      "last_seen": "2026-04-29"
+    },
+    {
+      "name": "Review",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/cline-supply-chain-attack-prompt-injection-github-actions/",
+          "title": "How “Clinejection” Turned an AI Bot into a Supply Chain Attack",
+          "date": "2026-02-19"
+        }
+      ],
+      "first_seen": "2026-02-19",
+      "last_seen": "2026-02-19"
+    },
+    {
       "name": "routes",
       "type": "npm",
       "sources": [
@@ -705225,6 +705525,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/skipshot-agent",
           "title": "npm/skipshot-agent"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "snyk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/axios-npm-package-compromised-supply-chain-attack-delivers-cross-platform/",
+          "title": "Axios npm Package Compromised: Supply Chain Attack Delivers Cross-Platform RAT"
         }
       ],
       "first_seen": null,
@@ -705441,6 +705753,19 @@
       "last_seen": null
     },
     {
+      "name": "via",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://snyk.io/blog/cline-supply-chain-attack-prompt-injection-github-actions/",
+          "title": "How “Clinejection” Turned an AI Bot into a Supply Chain Attack",
+          "date": "2026-02-19"
+        }
+      ],
+      "first_seen": "2026-02-19",
+      "last_seen": "2026-02-19"
+    },
+    {
       "name": "vue-datadog",
       "type": "npm",
       "sources": [
@@ -705465,16 +705790,33 @@
       "last_seen": null
     },
     {
+      "name": "whalibmob",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/whalibmob",
+          "title": "npm/whalibmob"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "will",
       "type": "npm",
       "sources": [
+        {
+          "url": "https://snyk.io/blog/node-gyp-supply-chain-compromise-self-propagating-npm-worm-binding-gyp/",
+          "title": "Node-gyp Supply Chain Compromise: A Self-Propagating npm Worm That Hides in binding.gyp",
+          "date": "2026-06-04"
+        },
         {
           "url": "http://thehackernews.com/2026/06/github-to-disable-npm-install-scripts.html",
           "title": "GitHub to Disable npm Install Scripts by Default to Stop Supply Chain Attacks",
           "date": "2026-06-11"
         }
       ],
-      "first_seen": "2026-06-11",
+      "first_seen": "2026-06-04",
       "last_seen": "2026-06-11"
     },
     {
