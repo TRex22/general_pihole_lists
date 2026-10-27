@@ -218,3 +218,8 @@
 # Source: https://docs.aws.amazon.com/signin/latest/userguide/allowlist-domains.html
 (^|\.)signin\.aws$
 (^|\.)awsapps\.com$
+
+# ── SAP Concur (travel & expense) — 2026-10-27 ──────────────────────────────
+# Concur serves each region and data centre from its own subdomain (static., us2., eu1.,
+# api. ...), so a finite plain list would keep missing hosts. Plain entry is in general.txt.
+(^|\.)concursolutions\.com$
