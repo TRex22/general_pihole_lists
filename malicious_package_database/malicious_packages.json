@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-27T21:12:12Z",
-  "total": 58818,
+  "generated_at": "2026-10-28T21:12:25Z",
+  "total": 58823,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -143580,6 +143580,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trainers-cooks",
           "title": "PyPI/trainers-cooks"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "trajmetrics",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trajmetrics",
+          "title": "PyPI/trajmetrics"
         }
       ],
       "first_seen": null,
@@ -348244,6 +348256,18 @@
       "last_seen": null
     },
     {
+      "name": "@testsecuiitytestme/cache-helper",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@testsecuiitytestme/cache-helper",
+          "title": "npm/@testsecuiitytestme/cache-helper"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@texashealth/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -358090,6 +358114,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@webapp-next/store",
           "title": "npm/@webapp-next/store"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@webapp-shared/login-vmok",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@webapp-shared/login-vmok",
+          "title": "npm/@webapp-shared/login-vmok"
         }
       ],
       "first_seen": null,
@@ -461427,6 +461463,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/agentbse",
           "title": "npm/agentbse"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "agentenact",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/agentenact",
+          "title": "npm/agentenact"
         }
       ],
       "first_seen": null,
@@ -638162,6 +638210,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/black-moon-js",
           "title": "npm/black-moon-js"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "black-spindle",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/black-spindle",
+          "title": "npm/black-spindle"
         }
       ],
       "first_seen": null,
