@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-28T21:12:25Z",
-  "total": 58823,
+  "generated_at": "2026-10-29T21:12:39Z",
+  "total": 58842,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -18019,6 +18019,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bq-build-probe-vrp-2026",
           "title": "PyPI/bq-build-probe-vrp-2026"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bq-helix-build-hook-6ade983e",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bq-helix-build-hook-6ade983e",
+          "title": "PyPI/bq-helix-build-hook-6ade983e"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bq-helix-recon-6ade983e",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bq-helix-recon-6ade983e",
+          "title": "PyPI/bq-helix-recon-6ade983e"
         }
       ],
       "first_seen": null,
@@ -82912,6 +82936,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/poc-nvk",
           "title": "PyPI/poc-nvk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "poc-revshell",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/poc-revshell",
+          "title": "PyPI/poc-revshell"
         }
       ],
       "first_seen": null,
@@ -213592,6 +213628,90 @@
       "last_seen": null
     },
     {
+      "name": "789bet",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/789bet",
+          "title": "npm/789bet"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "789bet-entrance",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/789bet-entrance",
+          "title": "npm/789bet-entrance"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "789bet-login-th",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/789bet-login-th",
+          "title": "npm/789bet-login-th"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "789bet-slot",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/789bet-slot",
+          "title": "npm/789bet-slot"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "789bet-vip",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/789bet-vip",
+          "title": "npm/789bet-vip"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "789bet-vip-login",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/789bet-vip-login",
+          "title": "npm/789bet-vip-login"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "789bet-vip-online-login",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/789bet-vip-online-login",
+          "title": "npm/789bet-vip-online-login"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "79a3ed",
       "type": "npm",
       "sources": [
@@ -231882,6 +232002,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@chatunity/baileys",
           "title": "npm/@chatunity/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@chatunitycenter/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@chatunitycenter/baileys",
+          "title": "npm/@chatunitycenter/baileys"
         }
       ],
       "first_seen": null,
@@ -255432,6 +255564,18 @@
       "last_seen": null
     },
     {
+      "name": "@dmangal/curse-dependent-ecto",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dmangal/curse-dependent-ecto",
+          "title": "npm/@dmangal/curse-dependent-ecto"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@doaction/auth",
       "type": "npm",
       "sources": [
@@ -275970,6 +276114,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@japofc/baileys",
           "title": "npm/@japofc/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@jasperquinn/postcss-motion-helpers",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jasperquinn/postcss-motion-helpers",
+          "title": "npm/@jasperquinn/postcss-motion-helpers"
         }
       ],
       "first_seen": null,
@@ -362752,6 +362908,18 @@
       "last_seen": null
     },
     {
+      "name": "@zaip-ai/cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zaip-ai/cli",
+          "title": "npm/@zaip-ai/cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@zaka13/thing",
       "type": "npm",
       "sources": [
@@ -422674,6 +422842,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zkasm/zkevm-rom",
           "title": "npm/@zkasm/zkevm-rom"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zmtcdn/components",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zmtcdn/components",
+          "title": "npm/@zmtcdn/components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zmtcdn/ui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zmtcdn/ui",
+          "title": "npm/@zmtcdn/ui"
         }
       ],
       "first_seen": null,
@@ -585907,6 +586099,18 @@
       "last_seen": null
     },
     {
+      "name": "b20miner",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/b20miner",
+          "title": "npm/b20miner"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "b2b-buyer-portal",
       "type": "npm",
       "sources": [
@@ -613171,6 +613375,18 @@
       "last_seen": null
     },
     {
+      "name": "bcxhdh1kjlopsde",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bcxhdh1kjlopsde",
+          "title": "npm/bcxhdh1kjlopsde"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bcztpuiojndlhmvx",
       "type": "npm",
       "sources": [
@@ -638222,6 +638438,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/black-spindle",
           "title": "npm/black-spindle"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "black-spindle-2",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/black-spindle-2",
+          "title": "npm/black-spindle-2"
         }
       ],
       "first_seen": null,
