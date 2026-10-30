@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-29T21:12:39Z",
-  "total": 58842,
+  "generated_at": "2026-10-30T21:12:05Z",
+  "total": 58851,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -70394,6 +70394,18 @@
       "last_seen": null
     },
     {
+      "name": "log-utils-sdk",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/log-utils-sdk",
+          "title": "PyPI/log-utils-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "loganx",
       "type": "PyPI",
       "sources": [
@@ -126877,6 +126889,18 @@
       "last_seen": null
     },
     {
+      "name": "stdid-nyxprobe",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/stdid-nyxprobe",
+          "title": "PyPI/stdid-nyxprobe"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "steelseriesgen-api",
       "type": "PyPI",
       "sources": [
@@ -130308,6 +130332,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/tessivatts",
           "title": "PyPI/tessivatts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "test-01-rafamarrara-learning-dc",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/test-01-rafamarrara-learning-dc",
+          "title": "PyPI/test-01-rafamarrara-learning-dc"
         }
       ],
       "first_seen": null,
@@ -145020,6 +145056,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/twilio-rest",
           "title": "PyPI/twilio-rest"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "twitter-request-diagnostics",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/twitter-request-diagnostics",
+          "title": "PyPI/twitter-request-diagnostics"
         }
       ],
       "first_seen": null,
@@ -315432,6 +315480,18 @@
       "last_seen": null
     },
     {
+      "name": "@nexlayerlabs/postcss-keyframe-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nexlayerlabs/postcss-keyframe-utils",
+          "title": "npm/@nexlayerlabs/postcss-keyframe-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@next-fonts/font",
       "type": "npm",
       "sources": [
@@ -323358,6 +323418,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pc-analytics-filter/core",
           "title": "npm/@pc-analytics-filter/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@pcb-dp/qa-commons",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pcb-dp/qa-commons",
+          "title": "npm/@pcb-dp/qa-commons"
         }
       ],
       "first_seen": null,
@@ -340996,6 +341068,18 @@
       "last_seen": null
     },
     {
+      "name": "@sxm-content-creators/tools-ds",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sxm-content-creators/tools-ds",
+          "title": "npm/@sxm-content-creators/tools-ds"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@sxm-web/client-sdk-core",
       "type": "npm",
       "sources": [
@@ -349558,6 +349642,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@toprimitive/nif",
           "title": "npm/@toprimitive/nif"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@tops2/digital-assistant-ui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tops2/digital-assistant-ui",
+          "title": "npm/@tops2/digital-assistant-ui"
         }
       ],
       "first_seen": null,
@@ -523887,6 +523983,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/apex-electron-protractor-mini-css-extract-plugin",
           "title": "npm/apex-electron-protractor-mini-css-extract-plugin"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "apex-fetch",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/apex-fetch",
+          "title": "npm/apex-fetch"
         }
       ],
       "first_seen": null,

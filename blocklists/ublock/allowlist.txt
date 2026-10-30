@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-10-29T21:06:55Z
-# Total domains: 891
+# Generated: 2026-10-30T21:06:20Z
+# Total domains: 892
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -553,6 +553,7 @@ nefree.com
 neko-sama.fr
 nensaysubs.net
 neoseeker.com
+neruco-search.ec-optimizer.com
 netatmo.commander1.com
 netflix.com
 neulionms-a.akamaihd.net
