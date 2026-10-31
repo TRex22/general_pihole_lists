@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-30T21:12:05Z",
-  "total": 58851,
+  "generated_at": "2026-10-31T21:11:59Z",
+  "total": 58857,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -32103,6 +32103,18 @@
       "last_seen": null
     },
     {
+      "name": "doctreelstm",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/doctreelstm",
+          "title": "PyPI/doctreelstm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "document-inference",
       "type": "PyPI",
       "sources": [
@@ -56732,6 +56744,18 @@
       "last_seen": null
     },
     {
+      "name": "is-it-ai",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/is-it-ai",
+          "title": "PyPI/is-it-ai"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "is-number-object",
       "type": "PyPI",
       "sources": [
@@ -72870,6 +72894,18 @@
       "last_seen": null
     },
     {
+      "name": "md-to-slides",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/md-to-slides",
+          "title": "PyPI/md-to-slides"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "md5-en",
       "type": "PyPI",
       "sources": [
@@ -74868,6 +74904,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mult-flow",
           "title": "PyPI/mult-flow"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "multi-convert",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/multi-convert",
+          "title": "PyPI/multi-convert"
         }
       ],
       "first_seen": null,
@@ -124555,6 +124603,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/sketchfab-spinner",
           "title": "PyPI/sketchfab-spinner"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "skills-analyzer",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/skills-analyzer",
+          "title": "PyPI/skills-analyzer"
         }
       ],
       "first_seen": null,
@@ -295458,6 +295518,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@malwguy/ecto-corsair-whisper-3d2a7c",
           "title": "npm/@malwguy/ecto-corsair-whisper-3d2a7c"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@mamans2973/maman",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@mamans2973/maman",
+          "title": "npm/@mamans2973/maman"
         }
       ],
       "first_seen": null,
