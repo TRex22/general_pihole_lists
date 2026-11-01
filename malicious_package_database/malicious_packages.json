@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-31T21:11:59Z",
-  "total": 58857,
+  "generated_at": "2026-11-01T21:11:02Z",
+  "total": 58862,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -84190,6 +84190,18 @@
       "last_seen": null
     },
     {
+      "name": "privacypass-py",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/privacypass-py",
+          "title": "PyPI/privacypass-py"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "private-evolution",
       "type": "PyPI",
       "sources": [
@@ -101528,6 +101540,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pystob",
           "title": "PyPI/pystob"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "pystr-codec",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pystr-codec",
+          "title": "PyPI/pystr-codec"
         }
       ],
       "first_seen": null,
@@ -178692,6 +178716,18 @@
       "last_seen": null
     },
     {
+      "name": "macs-shoaibs-pro17",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/macs-shoaibs-pro17",
+          "title": "RubyGems/macs-shoaibs-pro17"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "mandrill-api-ruby",
       "type": "RubyGems",
       "sources": [
@@ -226382,6 +226418,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@axinom/mosaic-cli",
           "title": "npm/@axinom/mosaic-cli"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@axon-web/icons",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@axon-web/icons",
+          "title": "npm/@axon-web/icons"
         }
       ],
       "first_seen": null,
@@ -557656,6 +557704,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/atlassian-static-assets-url-plugin",
           "title": "npm/atlassian-static-assets-url-plugin"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "atlassian-wallboard-plugin",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/atlassian-wallboard-plugin",
+          "title": "npm/atlassian-wallboard-plugin"
         }
       ],
       "first_seen": null,
