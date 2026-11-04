@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-03T21:14:24Z",
-  "total": 58931,
+  "generated_at": "2026-11-04T21:13:47Z",
+  "total": 58961,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -45499,6 +45499,30 @@
       "last_seen": null
     },
     {
+      "name": "extera-plugin-runtime",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/extera-plugin-runtime",
+          "title": "PyPI/extera-plugin-runtime"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "extera-runtime",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/extera-runtime",
+          "title": "PyPI/extera-runtime"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "extra-huggingface",
       "type": "PyPI",
       "sources": [
@@ -69950,6 +69974,18 @@
       "last_seen": null
     },
     {
+      "name": "ln9qw38745g",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ln9qw38745g",
+          "title": "PyPI/ln9qw38745g"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "lnatainstaller",
       "type": "PyPI",
       "sources": [
@@ -74820,6 +74856,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mrmustard",
           "title": "PyPI/mrmustard"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "msgpackrpc",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/msgpackrpc",
+          "title": "PyPI/msgpackrpc"
         }
       ],
       "first_seen": null,
@@ -85628,6 +85676,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/prosodinetts",
           "title": "PyPI/prosodinetts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "protecteda",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/protecteda",
+          "title": "PyPI/protecteda"
         }
       ],
       "first_seen": null,
@@ -153780,6 +153840,18 @@
       "last_seen": null
     },
     {
+      "name": "zyto",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/zyto",
+          "title": "PyPI/zyto"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "zzzzthisisitwantsafecheckitzzzz",
       "type": "PyPI",
       "sources": [
@@ -163926,6 +163998,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/branch-raker",
           "title": "RubyGems/branch-raker"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "brida-frida-hooks",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/brida-frida-hooks",
+          "title": "RubyGems/brida-frida-hooks"
         }
       ],
       "first_seen": null,
@@ -194640,6 +194724,18 @@
       "last_seen": null
     },
     {
+      "name": "w002yardprobe",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/w002yardprobe",
+          "title": "RubyGems/w002yardprobe"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "w10266",
       "type": "RubyGems",
       "sources": [
@@ -216104,12 +216200,84 @@
       "last_seen": null
     },
     {
+      "name": "@adminide-stack/client-redux",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@adminide-stack/client-redux",
+          "title": "npm/@adminide-stack/client-redux"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@adminide-stack/clock-tik-browser",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@adminide-stack/clock-tik-browser",
           "title": "npm/@adminide-stack/clock-tik-browser"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@adminide-stack/forms-core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@adminide-stack/forms-core",
+          "title": "npm/@adminide-stack/forms-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@adminide-stack/health-api-server",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@adminide-stack/health-api-server",
+          "title": "npm/@adminide-stack/health-api-server"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@adminide-stack/user-activity-browser",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@adminide-stack/user-activity-browser",
+          "title": "npm/@adminide-stack/user-activity-browser"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@adminide-stack/utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@adminide-stack/utils",
+          "title": "npm/@adminide-stack/utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@adminide-stack/yantra-help-browser",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@adminide-stack/yantra-help-browser",
+          "title": "npm/@adminide-stack/yantra-help-browser"
         }
       ],
       "first_seen": null,
@@ -216602,6 +216770,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ai-document-translation/ui-core",
           "title": "npm/@ai-document-translation/ui-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ai-ecoverse/slicc-windows-amd64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ai-ecoverse/slicc-windows-amd64",
+          "title": "npm/@ai-ecoverse/slicc-windows-amd64"
         }
       ],
       "first_seen": null,
@@ -225824,6 +226004,30 @@
       "last_seen": null
     },
     {
+      "name": "@atfm/atfm-material-ui",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@atfm/atfm-material-ui",
+          "title": "npm/@atfm/atfm-material-ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@atfm/utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@atfm/utils",
+          "title": "npm/@atfm/utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@atg-aml-shared/kyc-domain",
       "type": "npm",
       "sources": [
@@ -232050,6 +232254,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@cdh-data-portal-theme/build",
           "title": "npm/@cdh-data-portal-theme/build"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@cdmbase/wiki-browser",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@cdmbase/wiki-browser",
+          "title": "npm/@cdmbase/wiki-browser"
         }
       ],
       "first_seen": null,
@@ -266752,6 +266968,18 @@
       "last_seen": null
     },
     {
+      "name": "@fyxzpediaa/libsignal",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fyxzpediaa/libsignal",
+          "title": "npm/@fyxzpediaa/libsignal"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@g.genie/api-demo-sample-lib4",
       "type": "npm",
       "sources": [
@@ -275146,6 +275374,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ifasn/mmdd-doc-mcp",
           "title": "npm/@ifasn/mmdd-doc-mcp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ifasn/ms-doc-mcp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ifasn/ms-doc-mcp",
+          "title": "npm/@ifasn/ms-doc-mcp"
         }
       ],
       "first_seen": null,
@@ -323092,6 +323332,18 @@
       "last_seen": null
     },
     {
+      "name": "@pasqua-baileys/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pasqua-baileys/baileys",
+          "title": "npm/@pasqua-baileys/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@passit/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -327784,6 +328036,18 @@
       "last_seen": null
     },
     {
+      "name": "@pubngo-stack/help-browser",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pubngo-stack/help-browser",
+          "title": "npm/@pubngo-stack/help-browser"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@pukpuk1/somsodamsd",
       "type": "npm",
       "sources": [
@@ -329970,6 +330234,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@realty-front/zookeeper",
           "title": "npm/@realty-front/zookeeper"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@realvare/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@realvare/baileys",
+          "title": "npm/@realvare/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@realvare/based",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@realvare/based",
+          "title": "npm/@realvare/based"
         }
       ],
       "first_seen": null,
@@ -337342,6 +337630,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@siemens-ag/twodc-fonts",
           "title": "npm/@siemens-ag/twodc-fonts"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@signals-notebook/annotation-editor",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@signals-notebook/annotation-editor",
+          "title": "npm/@signals-notebook/annotation-editor"
         }
       ],
       "first_seen": null,
@@ -350936,6 +351236,18 @@
       "last_seen": null
     },
     {
+      "name": "@touchkey0111/jito-bundle",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@touchkey0111/jito-bundle",
+          "title": "npm/@touchkey0111/jito-bundle"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@touchvue/chat",
       "type": "npm",
       "sources": [
@@ -353186,6 +353498,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@typescript_eslinter/prettier",
           "title": "npm/@typescript_eslinter/prettier"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ubedsockets/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ubedsockets/baileys",
+          "title": "npm/@ubedsockets/baileys"
         }
       ],
       "first_seen": null,
@@ -533065,6 +533389,18 @@
       "last_seen": null
     },
     {
+      "name": "arbkit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/arbkit",
+          "title": "npm/arbkit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "arbocrate-sla-prober-arbocrate-sla-prober-core",
       "type": "npm",
       "sources": [
@@ -589289,6 +589625,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baby-loris",
           "title": "npm/baby-loris"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "babyyodaa",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/babyyodaa",
+          "title": "npm/babyyodaa"
         }
       ],
       "first_seen": null,
@@ -706817,6 +707165,19 @@
       ],
       "first_seen": null,
       "last_seen": null
+    },
+    {
+      "name": "scripts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://www.sonatype.com/blog/polinrider-loader-reappears-in-hijacked-npm-packages",
+          "title": "PolinRider Loader Reappears in Hijacked npm Packages",
+          "date": "2026-11-04"
+        }
+      ],
+      "first_seen": "2026-11-04",
+      "last_seen": "2026-11-04"
     },
     {
       "name": "seedcode-facturacion-electronica",

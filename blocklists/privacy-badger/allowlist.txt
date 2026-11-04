@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-11-03T21:06:35Z
+# Generated: 2026-11-04T21:06:14Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 813
+# Total domains: 814
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -401,6 +401,7 @@ images2.cmp.optimizely.com
 images3.cmp.optimizely.com
 images4.cmp.optimizely.com
 imbox.io
+img.jwplayer.com
 img.purch.com
 img.strpst.com
 imgix.net
