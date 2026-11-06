@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-05T21:14:32Z",
-  "total": 58986,
+  "generated_at": "2026-11-06T21:15:07Z",
+  "total": 58999,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -52369,6 +52369,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/hell-cipher",
           "title": "PyPI/hell-cipher"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "hello-bat-fwi9",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/hello-bat-fwi9",
+          "title": "PyPI/hello-bat-fwi9"
         }
       ],
       "first_seen": null,
@@ -264252,6 +264264,30 @@
       "last_seen": null
     },
     {
+      "name": "@exclipz/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@exclipz/baileys",
+          "title": "npm/@exclipz/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@exclipz/bails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@exclipz/bails",
+          "title": "npm/@exclipz/bails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@exeloncorp/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -267682,6 +267718,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gdstudio/web-loader",
           "title": "npm/@gdstudio/web-loader"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gemshell/win32-x64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gemshell/win32-x64",
+          "title": "npm/@gemshell/win32-x64"
         }
       ],
       "first_seen": null,
@@ -282790,6 +282838,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@koop-components/common",
           "title": "npm/@koop-components/common"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@kora20030101/test-pkg-delete-me",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kora20030101/test-pkg-delete-me",
+          "title": "npm/@kora20030101/test-pkg-delete-me"
         }
       ],
       "first_seen": null,
@@ -316528,6 +316588,30 @@
       "last_seen": null
     },
     {
+      "name": "@needsaudit/n",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@needsaudit/n",
+          "title": "npm/@needsaudit/n"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@needsaudit/nexport",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@needsaudit/nexport",
+          "title": "npm/@needsaudit/nexport"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@neo-ds/components",
       "type": "npm",
       "sources": [
@@ -317278,6 +317362,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@node32/fetlife-assets",
           "title": "npm/@node32/fetlife-assets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@noinheritdoc/n",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@noinheritdoc/n",
+          "title": "npm/@noinheritdoc/n"
         }
       ],
       "first_seen": null,
@@ -318118,6 +318214,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nunes_nunes/loader-base",
           "title": "npm/@nunes_nunes/loader-base"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@nuri.yavuz.tr.2/my-unique-pinger",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nuri.yavuz.tr.2/my-unique-pinger",
+          "title": "npm/@nuri.yavuz.tr.2/my-unique-pinger"
         }
       ],
       "first_seen": null,
@@ -337840,6 +337948,18 @@
       "last_seen": null
     },
     {
+      "name": "@sideeffects/n",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sideeffects/n",
+          "title": "npm/@sideeffects/n"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@sidp-kiosk/test-npm-snurkeburk-hackerone",
       "type": "npm",
       "sources": [
@@ -338146,6 +338266,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@siriusbeyond/utils",
           "title": "npm/@siriusbeyond/utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@site-cms/ssr",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@site-cms/ssr",
+          "title": "npm/@site-cms/ssr"
         }
       ],
       "first_seen": null,
@@ -352286,6 +352418,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ts-apis/ts-utils",
           "title": "npm/@ts-apis/ts-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ts-expect-error/n",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ts-expect-error/n",
+          "title": "npm/@ts-expect-error/n"
         }
       ],
       "first_seen": null,
@@ -533791,6 +533935,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/arc-cli-fc",
           "title": "npm/arc-cli-fc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "arc-contracts",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/arc-contracts",
+          "title": "npm/arc-contracts"
         }
       ],
       "first_seen": null,
