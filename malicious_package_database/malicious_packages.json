@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-07T21:13:49Z",
-  "total": 59013,
+  "generated_at": "2026-11-08T21:14:00Z",
+  "total": 59029,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -17605,6 +17605,18 @@
       "last_seen": null
     },
     {
+      "name": "blender-headless",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/blender-headless",
+          "title": "PyPI/blender-headless"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "blessclient",
       "type": "PyPI",
       "sources": [
@@ -21791,6 +21803,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/chroma-client",
           "title": "PyPI/chroma-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "chromacli",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/chromacli",
+          "title": "PyPI/chromacli"
         }
       ],
       "first_seen": null,
@@ -45499,6 +45523,18 @@
       "last_seen": null
     },
     {
+      "name": "expect-tests",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/expect-tests",
+          "title": "PyPI/expect-tests"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "expkg-am",
       "type": "PyPI",
       "sources": [
@@ -56006,6 +56042,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/infovm",
           "title": "PyPI/infovm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "infra-libs",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/infra-libs",
+          "title": "PyPI/infra-libs"
         }
       ],
       "first_seen": null,
@@ -70700,6 +70748,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/lolcrazy",
           "title": "PyPI/lolcrazy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "lookuptest11",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/lookuptest11",
+          "title": "PyPI/lookuptest11"
         }
       ],
       "first_seen": null,
@@ -104006,6 +104066,30 @@
       "last_seen": null
     },
     {
+      "name": "pyuserfox",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pyuserfox",
+          "title": "PyPI/pyuserfox"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "pyuserox",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pyuserox",
+          "title": "PyPI/pyuserox"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "pyutils-helper",
       "type": "PyPI",
       "sources": [
@@ -105276,6 +105360,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/raimbowxyz",
           "title": "PyPI/raimbowxyz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "rainbowcolors",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/rainbowcolors",
+          "title": "PyPI/rainbowcolors"
         }
       ],
       "first_seen": null,
@@ -127981,6 +128077,18 @@
       "last_seen": null
     },
     {
+      "name": "super-color",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/super-color",
+          "title": "PyPI/super-color"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "superad",
       "type": "PyPI",
       "sources": [
@@ -127999,6 +128107,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/supercandy",
           "title": "PyPI/supercandy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "supercolor-tui",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/supercolor-tui",
+          "title": "PyPI/supercolor-tui"
         }
       ],
       "first_seen": null,
@@ -145458,6 +145578,18 @@
       "last_seen": null
     },
     {
+      "name": "twitch-stream-py",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/twitch-stream-py",
+          "title": "PyPI/twitch-stream-py"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "twitter-request-diagnostics",
       "type": "PyPI",
       "sources": [
@@ -157470,6 +157602,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/age-validator",
           "title": "RubyGems/age-validator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "agentic-call-control",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/agentic-call-control",
+          "title": "RubyGems/agentic-call-control"
         }
       ],
       "first_seen": null,
@@ -170424,6 +170568,18 @@
       "last_seen": null
     },
     {
+      "name": "control-character-command-injection",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/control-character-command-injection",
+          "title": "RubyGems/control-character-command-injection"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "cordova_rake",
       "type": "RubyGems",
       "sources": [
@@ -171444,6 +171600,18 @@
       "last_seen": null
     },
     {
+      "name": "donjon-ledger",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/donjon-ledger",
+          "title": "RubyGems/donjon-ledger"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "dopc-client",
       "type": "RubyGems",
       "sources": [
@@ -171630,6 +171798,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/dwpdf1248881",
           "title": "RubyGems/dwpdf1248881"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "dynamic-object-handler",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/dynamic-object-handler",
+          "title": "RubyGems/dynamic-object-handler"
         }
       ],
       "first_seen": null,
@@ -274942,6 +275122,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hsbc-mfe/host",
           "title": "npm/@hsbc-mfe/host"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@htooayelwinict/travis234",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@htooayelwinict/travis234",
+          "title": "npm/@htooayelwinict/travis234"
         }
       ],
       "first_seen": null,
