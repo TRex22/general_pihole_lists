@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T21:15:19Z",
-  "total": 59049,
+  "generated_at": "2026-11-10T21:15:42Z",
+  "total": 59213,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -165,6 +165,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/lsh",
           "title": "Cargo/lsh"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "lwd_uri_util",
+      "type": "Cargo",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/crates.io/lwd_uri_util",
+          "title": "Cargo/lwd_uri_util"
         }
       ],
       "first_seen": null,
@@ -124177,6 +124189,18 @@
       "last_seen": null
     },
     {
+      "name": "shanks",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/shanks",
+          "title": "PyPI/shanks"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "shark-e2e-bnsneo",
       "type": "PyPI",
       "sources": [
@@ -191844,6 +191868,18 @@
       "last_seen": null
     },
     {
+      "name": "strutil-core",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/strutil-core",
+          "title": "RubyGems/strutil-core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "stuck-it_up",
       "type": "RubyGems",
       "sources": [
@@ -215948,6 +215984,18 @@
       "last_seen": null
     },
     {
+      "name": "@aboutdisz/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@aboutdisz/baileys",
+          "title": "npm/@aboutdisz/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@accenturecodefoundry/mfe-pot-shared-ui-scds-core",
       "type": "npm",
       "sources": [
@@ -220208,6 +220256,18 @@
       "last_seen": null
     },
     {
+      "name": "@alzx7z/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@alzx7z/baileys",
+          "title": "npm/@alzx7z/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@amagioss/js-timecode",
       "type": "npm",
       "sources": [
@@ -221174,6 +221234,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@anhackle/test",
           "title": "npm/@anhackle/test"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@animebails/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@animebails/baileys",
+          "title": "npm/@animebails/baileys"
         }
       ],
       "first_seen": null,
@@ -225404,6 +225476,18 @@
       "last_seen": null
     },
     {
+      "name": "@arkanhahaha/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@arkanhahaha/baileys",
+          "title": "npm/@arkanhahaha/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@array-util/nodepull",
       "type": "npm",
       "sources": [
@@ -228152,6 +228236,18 @@
       "last_seen": null
     },
     {
+      "name": "@baileys-md/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@baileys-md/baileys",
+          "title": "npm/@baileys-md/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@baipiaodajun/mcbot",
       "type": "npm",
       "sources": [
@@ -228314,6 +228410,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bapiweb-ux/bapi-header",
           "title": "npm/@bapiweb-ux/bapi-header"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@barz-dev/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@barz-dev/baileys",
+          "title": "npm/@barz-dev/baileys"
         }
       ],
       "first_seen": null,
@@ -228728,6 +228836,18 @@
       "last_seen": null
     },
     {
+      "name": "@bellachu/bails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bellachu/bails",
+          "title": "npm/@bellachu/bails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@bellaxchan/bailtech",
       "type": "npm",
       "sources": [
@@ -229112,6 +229232,18 @@
       "last_seen": null
     },
     {
+      "name": "@bestcoolman/dev-mcp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bestcoolman/dev-mcp",
+          "title": "npm/@bestcoolman/dev-mcp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@bestlzk/sectest",
       "type": "npm",
       "sources": [
@@ -229298,6 +229430,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bil-rgb/baileys",
           "title": "npm/@bil-rgb/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@billabilloyy/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@billabilloyy/baileys",
+          "title": "npm/@billabilloyy/baileys"
         }
       ],
       "first_seen": null,
@@ -230018,6 +230162,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@blurrydespair/libsignal-node",
           "title": "npm/@blurrydespair/libsignal-node"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bmbxmd/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bmbxmd/baileys",
+          "title": "npm/@bmbxmd/baileys"
         }
       ],
       "first_seen": null,
@@ -231242,6 +231398,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@buffer-mono/png-export",
           "title": "npm/@buffer-mono/png-export"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bufferstudio/baileys-natsu",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bufferstudio/baileys-natsu",
+          "title": "npm/@bufferstudio/baileys-natsu"
         }
       ],
       "first_seen": null,
@@ -247020,6 +247188,30 @@
       "last_seen": null
     },
     {
+      "name": "@daffaadev/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@daffaadev/baileys",
+          "title": "npm/@daffaadev/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@daffaadev/baileyss",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@daffaadev/baileyss",
+          "title": "npm/@daffaadev/baileyss"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@daffadeveloper/baileys",
       "type": "npm",
       "sources": [
@@ -247050,6 +247242,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@daffadeveloper/signal-node",
           "title": "npm/@daffadeveloper/signal-node"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@daffadevv/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@daffadevv/baileys",
+          "title": "npm/@daffadevv/baileys"
         }
       ],
       "first_seen": null,
@@ -247116,6 +247320,18 @@
       "last_seen": null
     },
     {
+      "name": "@danzxcode/danzx-bail",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@danzxcode/danzx-bail",
+          "title": "npm/@danzxcode/danzx-bail"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@dappaoffc/baileys",
       "type": "npm",
       "sources": [
@@ -247146,6 +247362,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@darkice/bitcoinjs-message",
           "title": "npm/@darkice/bitcoinjs-message"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@darling-2002/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@darling-2002/baileys",
+          "title": "npm/@darling-2002/baileys"
         }
       ],
       "first_seen": null,
@@ -247644,6 +247872,18 @@
       "last_seen": null
     },
     {
+      "name": "@denzy-official/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@denzy-official/baileys",
+          "title": "npm/@denzy-official/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@denzz221/baileys",
       "type": "npm",
       "sources": [
@@ -247956,6 +248196,18 @@
       "last_seen": null
     },
     {
+      "name": "@devil-fight/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@devil-fight/baileys",
+          "title": "npm/@devil-fight/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@devlovedz/react-native-camera-kit-example",
       "type": "npm",
       "sources": [
@@ -247974,6 +248226,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@devmikets/hyperliquid-sdk",
           "title": "npm/@devmikets/hyperliquid-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@devpeacemaker/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@devpeacemaker/baileys",
+          "title": "npm/@devpeacemaker/baileys"
         }
       ],
       "first_seen": null,
@@ -248406,6 +248670,42 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@diligentcorp/atlas-ng",
           "title": "npm/@diligentcorp/atlas-ng"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dilxzcode/bails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dilxzcode/bails",
+          "title": "npm/@dilxzcode/bails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dinzid/bailstao",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dinzid/bailstao",
+          "title": "npm/@dinzid/bailstao"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@dinzid/bailstaov1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@dinzid/bailstaov1",
+          "title": "npm/@dinzid/bailstaov1"
         }
       ],
       "first_seen": null,
@@ -259632,6 +259932,30 @@
       "last_seen": null
     },
     {
+      "name": "@elfhkry/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@elfhkry/baileys",
+          "title": "npm/@elfhkry/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@elfhkry666/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@elfhkry666/baileys",
+          "title": "npm/@elfhkry666/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@ellentorg/congenial-giggle",
       "type": "npm",
       "sources": [
@@ -261810,6 +262134,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@epicgames/testprivate",
           "title": "npm/@epicgames/testprivate"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@epinkenedy/siiu",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@epinkenedy/siiu",
+          "title": "npm/@epinkenedy/siiu"
         }
       ],
       "first_seen": null,
@@ -265180,6 +265516,66 @@
       "last_seen": null
     },
     {
+      "name": "@fadeldev/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fadeldev/baileys",
+          "title": "npm/@fadeldev/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@fadeldev/baileys-mod",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fadeldev/baileys-mod",
+          "title": "npm/@fadeldev/baileys-mod"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@fadeldev/baileys-mods",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fadeldev/baileys-mods",
+          "title": "npm/@fadeldev/baileys-mods"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@fadelsm/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fadelsm/baileys",
+          "title": "npm/@fadelsm/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@fadzzzslebew/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fadzzzslebew/baileys",
+          "title": "npm/@fadzzzslebew/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@fahmisugeng13/tea_fahmisugeng13",
       "type": "npm",
       "sources": [
@@ -265276,6 +265672,30 @@
       "last_seen": null
     },
     {
+      "name": "@fanzxnothuman/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fanzxnothuman/baileys",
+          "title": "npm/@fanzxnothuman/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@fanzxnothuman/xbails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fanzxnothuman/xbails",
+          "title": "npm/@fanzxnothuman/xbails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@faq-component/core",
       "type": "npm",
       "sources": [
@@ -265306,6 +265726,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@farabyabdulla54/wwframework",
           "title": "npm/@farabyabdulla54/wwframework"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@farisme/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@farisme/baileys",
+          "title": "npm/@farisme/baileys"
         }
       ],
       "first_seen": null,
@@ -266764,6 +267196,18 @@
       "last_seen": null
     },
     {
+      "name": "@fr3xtoy/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fr3xtoy/baileys",
+          "title": "npm/@fr3xtoy/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@framgia/test",
       "type": "npm",
       "sources": [
@@ -267604,6 +268048,18 @@
       "last_seen": null
     },
     {
+      "name": "@fyxzbail/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fyxzbail/baileys",
+          "title": "npm/@fyxzbail/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@fyxzpediaa/baileys",
       "type": "npm",
       "sources": [
@@ -267646,6 +268102,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gad360/apothem",
           "title": "npm/@gad360/apothem"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gadzzmodss/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gadzzmodss/baileys",
+          "title": "npm/@gadzzmodss/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@gadzzxbaileysnew/baileysnew",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gadzzxbaileysnew/baileysnew",
+          "title": "npm/@gadzzxbaileysnew/baileysnew"
         }
       ],
       "first_seen": null,
@@ -267952,6 +268432,18 @@
       "last_seen": null
     },
     {
+      "name": "@gaxtamvan/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@gaxtamvan/baileys",
+          "title": "npm/@gaxtamvan/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@gbrlxvi/ts-form-utils",
       "type": "npm",
       "sources": [
@@ -268240,6 +268732,18 @@
       "last_seen": null
     },
     {
+      "name": "@genshirobot/vip",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@genshirobot/vip",
+          "title": "npm/@genshirobot/vip"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@get-bridge/bridge-string-utils",
       "type": "npm",
       "sources": [
@@ -268282,6 +268786,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@getstep/sdk",
           "title": "npm/@getstep/sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@getsuzocompany/system",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@getsuzocompany/system",
+          "title": "npm/@getsuzocompany/system"
         }
       ],
       "first_seen": null,
@@ -271204,6 +271720,54 @@
       "last_seen": null
     },
     {
+      "name": "@hanzzy/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hanzzy/baileys",
+          "title": "npm/@hanzzy/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hanzzy/baileys-mod",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hanzzy/baileys-mod",
+          "title": "npm/@hanzzy/baileys-mod"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hanzzy/baileys-new",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hanzzy/baileys-new",
+          "title": "npm/@hanzzy/baileys-new"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hanzzyy/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hanzzyy/baileys",
+          "title": "npm/@hanzzyy/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@hapheus/n8n-nodes-pgp",
       "type": "npm",
       "sources": [
@@ -271606,6 +272170,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@haysee/v5.2",
           "title": "npm/@haysee/v5.2"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@hbmodsofc/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@hbmodsofc/baileys",
+          "title": "npm/@hbmodsofc/baileys"
         }
       ],
       "first_seen": null,
@@ -276460,6 +277036,30 @@
       "last_seen": null
     },
     {
+      "name": "@ikhsan-project/dizzanzz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ikhsan-project/dizzanzz",
+          "title": "npm/@ikhsan-project/dizzanzz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ikyybella/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ikyybella/baileys",
+          "title": "npm/@ikyybella/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@ikyyjee/ikkysingle",
       "type": "npm",
       "sources": [
@@ -277816,6 +278416,18 @@
       "last_seen": null
     },
     {
+      "name": "@jarxmarkett/baileysnew",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jarxmarkett/baileysnew",
+          "title": "npm/@jarxmarkett/baileysnew"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@jasperquinn/postcss-motion-helpers",
       "type": "npm",
       "sources": [
@@ -277966,6 +278578,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jesusvizcaino2021/com.baogong.app-push-permission",
           "title": "npm/@jesusvizcaino2021/com.baogong.app-push-permission"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@jexkcode/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jexkcode/baileys",
+          "title": "npm/@jexkcode/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@jiancodes/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jiancodes/baileys",
+          "title": "npm/@jiancodes/baileys"
         }
       ],
       "first_seen": null,
@@ -280228,6 +280864,18 @@
       "last_seen": null
     },
     {
+      "name": "@justinofficial/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@justinofficial/baileys",
+          "title": "npm/@justinofficial/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@justworkshr/alma",
       "type": "npm",
       "sources": [
@@ -280294,6 +280942,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@k18n/creatormarketplace-admin-language",
           "title": "npm/@k18n/creatormarketplace-admin-language"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@kaelllovemamah/bails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kaelllovemamah/bails",
+          "title": "npm/@kaelllovemamah/bails"
         }
       ],
       "first_seen": null,
@@ -280384,6 +281044,18 @@
       "last_seen": null
     },
     {
+      "name": "@kasabaileys/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kasabaileys/baileys",
+          "title": "npm/@kasabaileys/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@kaspersky/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -280438,6 +281110,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kennylindahl/malicious-npm-package",
           "title": "npm/@kennylindahl/malicious-npm-package"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@kevin-b2t/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kevin-b2t/baileys",
+          "title": "npm/@kevin-b2t/baileys"
         }
       ],
       "first_seen": null,
@@ -283672,6 +284356,30 @@
       "last_seen": null
     },
     {
+      "name": "@kurtucoben/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kurtucoben/baileys",
+          "title": "npm/@kurtucoben/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@kurtucoben/cstm-bail",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kurtucoben/cstm-bail",
+          "title": "npm/@kurtucoben/cstm-bail"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@kvytech/cli",
       "type": "npm",
       "sources": [
@@ -283804,6 +284512,18 @@
       "last_seen": null
     },
     {
+      "name": "@kynna/baileys-pro",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kynna/baileys-pro",
+          "title": "npm/@kynna/baileys-pro"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@kyriba/data-frontend",
       "type": "npm",
       "sources": [
@@ -283870,6 +284590,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@kyungseopk1m/holidays-kr",
           "title": "npm/@kyungseopk1m/holidays-kr"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@kyuu2nd/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kyuu2nd/baileys",
+          "title": "npm/@kyuu2nd/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@kyynotdevv/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@kyynotdevv/baileys",
+          "title": "npm/@kyynotdevv/baileys"
         }
       ],
       "first_seen": null,
@@ -284998,6 +285742,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@langgraphjs/toolkit",
           "title": "npm/@langgraphjs/toolkit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@langitdeveloper/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@langitdeveloper/baileys",
+          "title": "npm/@langitdeveloper/baileys"
         }
       ],
       "first_seen": null,
@@ -287236,6 +287992,18 @@
       "last_seen": null
     },
     {
+      "name": "@lemili9804/mcp-weather-server",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@lemili9804/mcp-weather-server",
+          "title": "npm/@lemili9804/mcp-weather-server"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@lendkzn/xntaabail",
       "type": "npm",
       "sources": [
@@ -288952,6 +289720,18 @@
       "last_seen": null
     },
     {
+      "name": "@lubyzzxmods/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@lubyzzxmods/baileys",
+          "title": "npm/@lubyzzxmods/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@lucideproxy/svg",
       "type": "npm",
       "sources": [
@@ -289402,6 +290182,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@majidalfuttaim/maf-ui",
           "title": "npm/@majidalfuttaim/maf-ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@makamesco-md/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@makamesco-md/baileys",
+          "title": "npm/@makamesco-md/baileys"
         }
       ],
       "first_seen": null,
@@ -299854,6 +300646,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@metadata-ipfs/validate-hash",
           "title": "npm/@metadata-ipfs/validate-hash"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@metaload/baileys-mod",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@metaload/baileys-mod",
+          "title": "npm/@metaload/baileys-mod"
         }
       ],
       "first_seen": null,
@@ -314788,6 +315592,18 @@
       "last_seen": null
     },
     {
+      "name": "@modzneverdie/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@modzneverdie/baileys",
+          "title": "npm/@modzneverdie/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@mohamed1687/iut-encrypt",
       "type": "npm",
       "sources": [
@@ -315430,6 +316246,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ms-mwf/moray",
           "title": "npm/@ms-mwf/moray"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ms-nicky/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ms-nicky/baileys",
+          "title": "npm/@ms-nicky/baileys"
         }
       ],
       "first_seen": null,
@@ -316822,6 +317650,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ncurran/sandbox-recon-uac-4e7c",
           "title": "npm/@ncurran/sandbox-recon-uac-4e7c"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ndikafath/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ndikafath/baileys",
+          "title": "npm/@ndikafath/baileys"
         }
       ],
       "first_seen": null,
@@ -319744,6 +320584,18 @@
       "last_seen": null
     },
     {
+      "name": "@omhc-mbut/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@omhc-mbut/baileys",
+          "title": "npm/@omhc-mbut/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@omhc/libsignal-node",
       "type": "npm",
       "sources": [
@@ -321274,6 +322126,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@openwebconcept/theme-owc",
           "title": "npm/@openwebconcept/theme-owc"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@openyard/vetcode",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@openyard/vetcode",
+          "title": "npm/@openyard/vetcode"
         }
       ],
       "first_seen": null,
@@ -323356,6 +324220,18 @@
       "last_seen": null
     },
     {
+      "name": "@otpworld/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@otpworld/baileys",
+          "title": "npm/@otpworld/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@otvet/advertising",
       "type": "npm",
       "sources": [
@@ -324046,6 +324922,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pagseguro/stylelint-config",
           "title": "npm/@pagseguro/stylelint-config"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@pahinak/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pahinak/baileys",
+          "title": "npm/@pahinak/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@pahinak/bails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pahinak/bails",
+          "title": "npm/@pahinak/bails"
         }
       ],
       "first_seen": null,
@@ -325882,6 +326782,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pimy-b2cweb/frontend-lib",
           "title": "npm/@pimy-b2cweb/frontend-lib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@pinaapalerie/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pinaapalerie/baileys",
+          "title": "npm/@pinaapalerie/baileys"
         }
       ],
       "first_seen": null,
@@ -327736,6 +328648,18 @@
       "last_seen": null
     },
     {
+      "name": "@poucode/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@poucode/baileys",
+          "title": "npm/@poucode/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@povsicoenpm/ab-voluptas-maiores-sapiente",
       "type": "npm",
       "sources": [
@@ -328366,6 +329290,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@primeo/translate",
           "title": "npm/@primeo/translate"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@primeroselotus/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@primeroselotus/baileys",
+          "title": "npm/@primeroselotus/baileys"
         }
       ],
       "first_seen": null,
@@ -329054,6 +329990,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@puresec/addressparser-malicious",
           "title": "npm/@puresec/addressparser-malicious"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@purpleiriss/irisbail",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@purpleiriss/irisbail",
+          "title": "npm/@purpleiriss/irisbail"
         }
       ],
       "first_seen": null,
@@ -329786,6 +330734,10 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@queenanya/baileys",
           "title": "npm/@queenanya/baileys"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@queenanya/baileys",
+          "title": "npm/@queenanya/baileys"
         }
       ],
       "first_seen": null,
@@ -330252,12 +331204,36 @@
       "last_seen": null
     },
     {
+      "name": "@rahadi01/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@rahadi01/baileys",
+          "title": "npm/@rahadi01/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@railone/image-utils",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@railone/image-utils",
           "title": "npm/@railone/image-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@rakku-kun/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@rakku-kun/baileys",
+          "title": "npm/@rakku-kun/baileys"
         }
       ],
       "first_seen": null,
@@ -330324,6 +331300,42 @@
       "last_seen": null
     },
     {
+      "name": "@randev404/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@randev404/baileys",
+          "title": "npm/@randev404/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ranstech/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ranstech/baileys",
+          "title": "npm/@ranstech/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ranstech/bails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ranstech/bails",
+          "title": "npm/@ranstech/bails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@rappiinc/partner-core",
       "type": "npm",
       "sources": [
@@ -330378,6 +331390,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ravespaceio/rave-engine",
           "title": "npm/@ravespaceio/rave-engine"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@ravliesh/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ravliesh/baileys",
+          "title": "npm/@ravliesh/baileys"
         }
       ],
       "first_seen": null,
@@ -331900,6 +332924,18 @@
       "last_seen": null
     },
     {
+      "name": "@revinza/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@revinza/baileys",
+          "title": "npm/@revinza/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@revizahoshii/baileys",
       "type": "npm",
       "sources": [
@@ -332176,6 +333212,18 @@
       "last_seen": null
     },
     {
+      "name": "@rexzlys/wbails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@rexzlys/wbails",
+          "title": "npm/@rexzlys/wbails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@rezserver/fetlife-assets",
       "type": "npm",
       "sources": [
@@ -332260,6 +333308,18 @@
       "last_seen": null
     },
     {
+      "name": "@risaoffc/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@risaoffc/baileys",
+          "title": "npm/@risaoffc/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@riskine-frontend/design-elements",
       "type": "npm",
       "sources": [
@@ -332338,6 +333398,54 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@rixxcodex/baileys",
           "title": "npm/@rixxcodex/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@riyanofficial/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@riyanofficial/baileys",
+          "title": "npm/@riyanofficial/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@riyanofficial/baileys-pro",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@riyanofficial/baileys-pro",
+          "title": "npm/@riyanofficial/baileys-pro"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@rizzkezik/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@rizzkezik/baileys",
+          "title": "npm/@rizzkezik/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@rizzkezik/bails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@rizzkezik/bails",
+          "title": "npm/@rizzkezik/bails"
         }
       ],
       "first_seen": null,
@@ -333016,6 +334124,18 @@
       "last_seen": null
     },
     {
+      "name": "@ryuhan/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ryuhan/baileys",
+          "title": "npm/@ryuhan/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@s21games/game-engine",
       "type": "npm",
       "sources": [
@@ -333580,6 +334700,18 @@
       "last_seen": null
     },
     {
+      "name": "@sanndestroyer/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sanndestroyer/baileys",
+          "title": "npm/@sanndestroyer/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@santandergroup-uk/edgehome-components",
       "type": "npm",
       "sources": [
@@ -333604,6 +334736,18 @@
       "last_seen": null
     },
     {
+      "name": "@sanz-0fx/baileys-mod",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sanz-0fx/baileys-mod",
+          "title": "npm/@sanz-0fx/baileys-mod"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@sanzoffc/baileys",
       "type": "npm",
       "sources": [
@@ -333622,6 +334766,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sanzoffc/libsignal-node",
           "title": "npm/@sanzoffc/libsignal-node"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sanzope/bailjir",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sanzope/bailjir",
+          "title": "npm/@sanzope/bailjir"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sanzsayangvien/baileys-pro",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sanzsayangvien/baileys-pro",
+          "title": "npm/@sanzsayangvien/baileys-pro"
         }
       ],
       "first_seen": null,
@@ -333670,6 +334838,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sapappgyver/appgyver-descriptors",
           "title": "npm/@sapappgyver/appgyver-descriptors"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sapp1/baileys-pro",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sapp1/baileys-pro",
+          "title": "npm/@sapp1/baileys-pro"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sarayun/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sarayun/baileys",
+          "title": "npm/@sarayun/baileys"
         }
       ],
       "first_seen": null,
@@ -338368,12 +339560,48 @@
       "last_seen": null
     },
     {
+      "name": "@shinzepelly/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@shinzepelly/baileys",
+          "title": "npm/@shinzepelly/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@shinzepelly/libsignal-node",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@shinzepelly/libsignal-node",
           "title": "npm/@shinzepelly/libsignal-node"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@shinzepelly/wabaileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@shinzepelly/wabaileys",
+          "title": "npm/@shinzepelly/wabaileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@shithsu/baileys-mod",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@shithsu/baileys-mod",
+          "title": "npm/@shithsu/baileys-mod"
         }
       ],
       "first_seen": null,
@@ -338482,6 +339710,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@shr3k/tdspt-helper-ng",
           "title": "npm/@shr3k/tdspt-helper-ng"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@shurainc/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@shurainc/baileys",
+          "title": "npm/@shurainc/baileys"
         }
       ],
       "first_seen": null,
@@ -338968,6 +340208,30 @@
       "last_seen": null
     },
     {
+      "name": "@skycodee/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@skycodee/baileys",
+          "title": "npm/@skycodee/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@skycodee/baileys-mod",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@skycodee/baileys-mod",
+          "title": "npm/@skycodee/baileys-mod"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@skyeng/libs",
       "type": "npm",
       "sources": [
@@ -338986,6 +340250,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@skyscanner-internal/relevant-deals",
           "title": "npm/@skyscanner-internal/relevant-deals"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@skyzeeshop/baileys-mod",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@skyzeeshop/baileys-mod",
+          "title": "npm/@skyzeeshop/baileys-mod"
         }
       ],
       "first_seen": null,
@@ -339370,6 +340646,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sok-brand-sites/common-frontend-components",
           "title": "npm/@sok-brand-sites/common-frontend-components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@solana-common/utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@solana-common/utils",
+          "title": "npm/@solana-common/utils"
         }
       ],
       "first_seen": null,
@@ -346166,6 +347454,22 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@teamolduser/baileys",
           "title": "npm/@teamolduser/baileys"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@teamolduser/baileys",
+          "title": "npm/@teamolduser/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@teamqadeer1/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@teamqadeer1/baileys",
+          "title": "npm/@teamqadeer1/baileys"
         }
       ],
       "first_seen": null,
@@ -351056,6 +352360,18 @@
       "last_seen": null
     },
     {
+      "name": "@thunderx/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@thunderx/baileys",
+          "title": "npm/@thunderx/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@thymelab/logfx",
       "type": "npm",
       "sources": [
@@ -352514,6 +353830,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@transmit-security/ui",
           "title": "npm/@transmit-security/ui"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@trashcore/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@trashcore/baileys",
+          "title": "npm/@trashcore/baileys"
         }
       ],
       "first_seen": null,
@@ -355784,6 +357112,18 @@
       "last_seen": null
     },
     {
+      "name": "@unipswap/postcss-animate-units",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@unipswap/postcss-animate-units",
+          "title": "npm/@unipswap/postcss-animate-units"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@uniqa-extern/capacitor-plugin-kofax",
       "type": "npm",
       "sources": [
@@ -356636,6 +357976,18 @@
       "last_seen": null
     },
     {
+      "name": "@vanzky/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vanzky/baileys",
+          "title": "npm/@vanzky/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@vanzxy/baileys",
       "type": "npm",
       "sources": [
@@ -356654,6 +358006,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vanzxy/nusa",
           "title": "npm/@vanzxy/nusa"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@vanzzo/priject",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vanzzo/priject",
+          "title": "npm/@vanzzo/priject"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@vanzzooffc/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vanzzooffc/baileys",
+          "title": "npm/@vanzzooffc/baileys"
         }
       ],
       "first_seen": null,
@@ -357482,6 +358858,54 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@vino.tian/vibe-kanban",
           "title": "npm/@vino.tian/vibe-kanban"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@vinxwhy1st/bails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vinxwhy1st/bails",
+          "title": "npm/@vinxwhy1st/bails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@vinzsocket/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vinzsocket/baileys",
+          "title": "npm/@vinzsocket/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@vinzzofficial/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@vinzzofficial/baileys",
+          "title": "npm/@vinzzofficial/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@violetix/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@violetix/baileys",
+          "title": "npm/@violetix/baileys"
         }
       ],
       "first_seen": null,
@@ -360512,6 +361936,18 @@
       "last_seen": null
     },
     {
+      "name": "@web3-common/utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@web3-common/utils",
+          "title": "npm/@web3-common/utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@web3-helpers/core",
       "type": "npm",
       "sources": [
@@ -361310,6 +362746,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@whs4/whs4_npm",
           "title": "npm/@whs4/whs4_npm"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@wilzzofcc/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@wilzzofcc/baileys",
+          "title": "npm/@wilzzofcc/baileys"
         }
       ],
       "first_seen": null,
@@ -362828,6 +364276,18 @@
       "last_seen": null
     },
     {
+      "name": "@xianntood/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xianntood/baileys",
+          "title": "npm/@xianntood/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@xiaohhhh1/canvas-agent",
       "type": "npm",
       "sources": [
@@ -362870,6 +364330,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xivart/tangram",
           "title": "npm/@xivart/tangram"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@xjokerofficial/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xjokerofficial/baileys",
+          "title": "npm/@xjokerofficial/baileys"
         }
       ],
       "first_seen": null,
@@ -362930,6 +364402,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xrelly-stack/bails",
           "title": "npm/@xrelly-stack/bails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@xsat10/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xsat10/baileys",
+          "title": "npm/@xsat10/baileys"
         }
       ],
       "first_seen": null,
@@ -363560,6 +365044,18 @@
       "last_seen": null
     },
     {
+      "name": "@xyrozero/baileys-mod",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xyrozero/baileys-mod",
+          "title": "npm/@xyrozero/baileys-mod"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@xyuxu/i18never",
       "type": "npm",
       "sources": [
@@ -363938,6 +365434,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yashorg/frontend-logger",
           "title": "npm/@yashorg/frontend-logger"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@yazxz-pedia/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yazxz-pedia/baileys",
+          "title": "npm/@yazxz-pedia/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@yazxzofficial/baileys-mod",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yazxzofficial/baileys-mod",
+          "title": "npm/@yazxzofficial/baileys-mod"
         }
       ],
       "first_seen": null,
@@ -364784,6 +366304,18 @@
       "last_seen": null
     },
     {
+      "name": "@yemo-dev/yebail",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yemo-dev/yebail",
+          "title": "npm/@yemo-dev/yebail"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@yggbrasil/api",
       "type": "npm",
       "sources": [
@@ -364904,6 +366436,18 @@
       "last_seen": null
     },
     {
+      "name": "@yonzxofficiall/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yonzxofficiall/baileys",
+          "title": "npm/@yonzxofficiall/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@yoobic/design-system",
       "type": "npm",
       "sources": [
@@ -365012,6 +366556,18 @@
       "last_seen": null
     },
     {
+      "name": "@yshtxxproject/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yshtxxproject/baileys",
+          "title": "npm/@yshtxxproject/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@yu-life/react-native-yu-watch",
       "type": "npm",
       "sources": [
@@ -365066,6 +366622,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yuga-labs/web3-react",
           "title": "npm/@yuga-labs/web3-react"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@yun-xiao/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@yun-xiao/baileys",
+          "title": "npm/@yun-xiao/baileys"
         }
       ],
       "first_seen": null,
@@ -419792,6 +421360,18 @@
       "last_seen": null
     },
     {
+      "name": "@zanxiky/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zanxiky/baileys",
+          "title": "npm/@zanxiky/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@zapier/ai-actions",
       "type": "npm",
       "sources": [
@@ -419984,6 +421564,18 @@
       "last_seen": null
     },
     {
+      "name": "@zennorg/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zennorg/baileys",
+          "title": "npm/@zennorg/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@zentrafinance/contracts",
       "type": "npm",
       "sources": [
@@ -420032,6 +421624,18 @@
       "last_seen": null
     },
     {
+      "name": "@zentrix/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zentrix/baileys",
+          "title": "npm/@zentrix/baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@zentrix23/baileys",
       "type": "npm",
       "sources": [
@@ -420056,6 +421660,42 @@
       "last_seen": null
     },
     {
+      "name": "@zephkiel/wbails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zephkiel/wbails",
+          "title": "npm/@zephkiel/wbails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zeppeliorg/wbails",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zeppeliorg/wbails",
+          "title": "npm/@zeppeliorg/wbails"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zeppeliorg/xzcbailz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zeppeliorg/xzcbailz",
+          "title": "npm/@zeppeliorg/xzcbailz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@zeronexcode/baileys",
       "type": "npm",
       "sources": [
@@ -420074,6 +421714,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/@zesyn/zeditor",
           "title": "npm/@zesyn/zeditor"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zetagoaurum-socket/wasocket",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zetagoaurum-socket/wasocket",
+          "title": "npm/@zetagoaurum-socket/wasocket"
         }
       ],
       "first_seen": null,
@@ -425138,6 +426790,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zkasm/zkevm-rom",
           "title": "npm/@zkasm/zkevm-rom"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zlynzee/baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zlynzee/baileys",
+          "title": "npm/@zlynzee/baileys"
         }
       ],
       "first_seen": null,
@@ -463945,6 +465609,18 @@
       "last_seen": null
     },
     {
+      "name": "agent-trace-kit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/agent-trace-kit",
+          "title": "npm/agent-trace-kit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "agentbas",
       "type": "npm",
       "sources": [
@@ -466063,6 +467739,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/agttrn-devapptea",
           "title": "npm/agttrn-devapptea"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "agui-session-recorder",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/agui-session-recorder",
+          "title": "npm/agui-session-recorder"
         }
       ],
       "first_seen": null,
@@ -488557,6 +490245,18 @@
       "last_seen": null
     },
     {
+      "name": "alip-baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alip-baileys",
+          "title": "npm/alip-baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "alipay-js-jdk",
       "type": "npm",
       "sources": [
@@ -488587,6 +490287,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alipclutch-baileys",
           "title": "npm/alipclutch-baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "alisaaai-baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alisaaai-baileys",
+          "title": "npm/alisaaai-baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "alisaai-baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alisaai-baileys",
+          "title": "npm/alisaai-baileys"
         }
       ],
       "first_seen": null,
@@ -497233,6 +498957,18 @@
       "last_seen": null
     },
     {
+      "name": "alwaysaqioo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/alwaysaqioo",
+          "title": "npm/alwaysaqioo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "alwayson-healthmodelpanel",
       "type": "npm",
       "sources": [
@@ -497419,6 +499155,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/amandasmith",
           "title": "npm/amandasmith"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "amanexfujimiya-baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/amanexfujimiya-baileys",
+          "title": "npm/amanexfujimiya-baileys"
         }
       ],
       "first_seen": null,
@@ -499915,6 +501663,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/amitbhai",
           "title": "npm/amitbhai"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "amiudmodz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/amiudmodz",
+          "title": "npm/amiudmodz"
         }
       ],
       "first_seen": null,
@@ -516643,6 +518403,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/angularrs",
           "title": "npm/angularrs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "angularsockets",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/angularsockets",
+          "title": "npm/angularsockets"
         }
       ],
       "first_seen": null,
@@ -546517,6 +548289,18 @@
       "last_seen": null
     },
     {
+      "name": "arkaan-amane-baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/arkaan-amane-baileys",
+          "title": "npm/arkaan-amane-baileys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "arkadiko-dao",
       "type": "npm",
       "sources": [
@@ -556544,6 +558328,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/astra-db-recommendations-starter",
           "title": "npm/astra-db-recommendations-starter"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "astrabail",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/astrabail",
+          "title": "npm/astrabail"
         }
       ],
       "first_seen": null,
@@ -588531,7 +590327,7 @@
       "type": "npm",
       "sources": [
         {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/b20miner",
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/b20miner",
           "title": "npm/b20miner"
         }
       ],
@@ -593087,6 +594883,30 @@
       "last_seen": null
     },
     {
+      "name": "baileeys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileeys",
+          "title": "npm/baileeys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "baileys-akiko",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-akiko",
+          "title": "npm/baileys-akiko"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "baileys-cleaner",
       "type": "npm",
       "sources": [
@@ -593123,6 +594943,18 @@
       "last_seen": null
     },
     {
+      "name": "baileys-dula",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-dula",
+          "title": "npm/baileys-dula"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "baileys-inmemory-store",
       "type": "npm",
       "sources": [
@@ -593147,12 +594979,96 @@
       "last_seen": null
     },
     {
+      "name": "baileys-mood",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-mood",
+          "title": "npm/baileys-mood"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "baileys-multidev",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-multidev",
+          "title": "npm/baileys-multidev"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "baileys-new-dtz",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-new-dtz",
+          "title": "npm/baileys-new-dtz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "baileys-p",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-p",
+          "title": "npm/baileys-p"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "baileys-ud",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-ud",
           "title": "npm/baileys-ud"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "baileys-web3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-web3",
+          "title": "npm/baileys-web3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "baileys-web4.0",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-web4.0",
+          "title": "npm/baileys-web4.0"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "baileys-web4.1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-web4.1",
+          "title": "npm/baileys-web4.1"
         }
       ],
       "first_seen": null,
@@ -593171,12 +595087,36 @@
       "last_seen": null
     },
     {
+      "name": "baileys-xdk",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-xdk",
+          "title": "npm/baileys-xdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "baileys-xeonbot",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileys-xeonbot",
           "title": "npm/baileys-xeonbot"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "baileyssteam",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/baileyssteam",
+          "title": "npm/baileyssteam"
         }
       ],
       "first_seen": null,
@@ -624588,6 +626528,18 @@
       "last_seen": null
     },
     {
+      "name": "bellacloudy",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bellacloudy",
+          "title": "npm/bellacloudy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bellajohn",
       "type": "npm",
       "sources": [
@@ -635586,6 +637538,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bintangsatria",
           "title": "npm/bintangsatria"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bintzge-baileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bintzge-baileys",
+          "title": "npm/bintzge-baileys"
         }
       ],
       "first_seen": null,
@@ -653928,6 +655892,18 @@
       "last_seen": null
     },
     {
+      "name": "botify-wa",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/botify-wa",
+          "title": "npm/botify-wa"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "botinator",
       "type": "npm",
       "sources": [
@@ -654678,18 +656654,6 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bouwapp",
           "title": "npm/bouwapp"
-        }
-      ],
-      "first_seen": null,
-      "last_seen": null
-    },
-    {
-      "name": "bow-test",
-      "type": "npm",
-      "sources": [
-        {
-          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bow-test",
-          "title": "npm/bow-test"
         }
       ],
       "first_seen": null,
@@ -707427,6 +709391,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/jagproject",
           "title": "npm/jagproject"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "keithbaileys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/withdrawn/npm/keithbaileys",
+          "title": "npm/keithbaileys"
         }
       ],
       "first_seen": null,
