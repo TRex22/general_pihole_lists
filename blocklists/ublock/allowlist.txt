@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-11-10T21:06:31Z
-# Total domains: 895
+# Generated: 2026-11-11T21:12:31Z
+# Total domains: 896
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -75,6 +75,7 @@ amazon.sa
 amazon.se
 amazon.sg
 amc.com
+analytics.cibc.com
 anghami.com
 animeland.us
 animepahe.com
