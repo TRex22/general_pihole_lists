@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-13T21:14:34Z",
-  "total": 59287,
+  "generated_at": "2026-11-14T21:14:13Z",
+  "total": 59305,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -29905,6 +29905,18 @@
       "last_seen": null
     },
     {
+      "name": "demo-pingtest-xyz",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/demo-pingtest-xyz",
+          "title": "PyPI/demo-pingtest-xyz"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "demontonto",
       "type": "PyPI",
       "sources": [
@@ -48961,6 +48973,42 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/gate-apis",
           "title": "PyPI/gate-apis"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "gateio-client",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/gateio-client",
+          "title": "PyPI/gateio-client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "gateio-sdk",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/gateio-sdk",
+          "title": "PyPI/gateio-sdk"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "gateio-ws",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/gateio-ws",
+          "title": "PyPI/gateio-ws"
         }
       ],
       "first_seen": null,
@@ -86372,6 +86420,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/pruebasdemalware",
           "title": "PyPI/pruebasdemalware"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ps-bool",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/ps-bool",
+          "title": "PyPI/ps-bool"
         }
       ],
       "first_seen": null,
@@ -144678,6 +144738,18 @@
       "last_seen": null
     },
     {
+      "name": "trezortranslate",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/trezortranslate",
+          "title": "PyPI/trezortranslate"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "trickery",
       "type": "PyPI",
       "sources": [
@@ -153390,6 +153462,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/xorg-renderproto",
           "title": "PyPI/xorg-renderproto"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "xrfdc",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/xrfdc",
+          "title": "PyPI/xrfdc"
         }
       ],
       "first_seen": null,
@@ -279080,6 +279164,18 @@
       "last_seen": null
     },
     {
+      "name": "@jelou/cli-win32-x64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@jelou/cli-win32-x64",
+          "title": "npm/@jelou/cli-win32-x64"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@jemavidev/betteragents-pi",
       "type": "npm",
       "sources": [
@@ -339774,6 +339870,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sflyinc-knapsack/shutterfly-react",
           "title": "npm/@sflyinc-knapsack/shutterfly-react"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@sfunction/dsh-screenshot",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sfunction/dsh-screenshot",
+          "title": "npm/@sfunction/dsh-screenshot"
         }
       ],
       "first_seen": null,
@@ -427724,6 +427832,78 @@
       "last_seen": null
     },
     {
+      "name": "@zread/cli-darwin-arm64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zread/cli-darwin-arm64",
+          "title": "npm/@zread/cli-darwin-arm64"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zread/cli-darwin-x64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zread/cli-darwin-x64",
+          "title": "npm/@zread/cli-darwin-x64"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zread/cli-linux-arm64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zread/cli-linux-arm64",
+          "title": "npm/@zread/cli-linux-arm64"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zread/cli-linux-x64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zread/cli-linux-x64",
+          "title": "npm/@zread/cli-linux-x64"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zread/cli-win32-arm64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zread/cli-win32-arm64",
+          "title": "npm/@zread/cli-win32-arm64"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zread/cli-win32-x64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zread/cli-win32-x64",
+          "title": "npm/@zread/cli-win32-x64"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@zscaler/api-enums",
       "type": "npm",
       "sources": [
@@ -492793,6 +492973,18 @@
       "last_seen": null
     },
     {
+      "name": "all_together_dead_by_charlaine_harris_00fhu",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/all_together_dead_by_charlaine_harris_00fhu",
+          "title": "npm/all_together_dead_by_charlaine_harris_00fhu"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "alla117",
       "type": "npm",
       "sources": [
@@ -521209,6 +521401,18 @@
       "last_seen": null
     },
     {
+      "name": "animal_farm_by_george_orwell_npad7",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/animal_farm_by_george_orwell_npad7",
+          "title": "npm/animal_farm_by_george_orwell_npad7"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "animalrightshistory",
       "type": "npm",
       "sources": [
@@ -534211,6 +534415,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/apple_portal_sync",
           "title": "npm/apple_portal_sync"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "apple_pro_training_series_by_david_nahmani_xvd91",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/apple_pro_training_series_by_david_nahmani_xvd91",
+          "title": "npm/apple_pro_training_series_by_david_nahmani_xvd91"
         }
       ],
       "first_seen": null,
