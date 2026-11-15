@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-14T21:14:13Z",
-  "total": 59305,
+  "generated_at": "2026-11-15T21:15:56Z",
+  "total": 59309,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -49003,12 +49003,36 @@
       "last_seen": null
     },
     {
+      "name": "gateio-v4",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/gateio-v4",
+          "title": "PyPI/gateio-v4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "gateio-ws",
       "type": "PyPI",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/gateio-ws",
           "title": "PyPI/gateio-ws"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "gatepay-sdk-python",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/gatepay-sdk-python",
+          "title": "PyPI/gatepay-sdk-python"
         }
       ],
       "first_seen": null,
@@ -247132,6 +247156,18 @@
       "last_seen": null
     },
     {
+      "name": "@crvouga/mockingbird-service-microsoft",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@crvouga/mockingbird-service-microsoft",
+          "title": "npm/@crvouga/mockingbird-service-microsoft"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@crypto-lib/utils",
       "type": "npm",
       "sources": [
@@ -352910,6 +352946,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@theguyswithaball/scrambler",
           "title": "npm/@theguyswithaball/scrambler"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@theholocron/holocron-plugin-discord",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@theholocron/holocron-plugin-discord",
+          "title": "npm/@theholocron/holocron-plugin-discord"
         }
       ],
       "first_seen": null,
