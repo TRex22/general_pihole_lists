@@ -1,7 +1,7 @@
 # Pi-hole Allowlist - Privacy Badger yellowlist + optional DNT domains
-# Generated: 2026-11-16T21:06:19Z
+# Generated: 2026-11-17T21:06:10Z
 # Sources: https://raw.githubusercontent.com/EFForg/privacybadger/master/src/data/seed.json, https://www.eff.org/files/pbconfig.json
-# Total domains: 815
+# Total domains: 818
 #
 # Yellowlist: permitted trackers (e.g. login/payment providers)
 
@@ -29,6 +29,7 @@ amuniversal.com
 anchor.fm
 apata.io
 api-cdn.embed.ly
+api-cdn.mypurecloud.com
 api-cdn.mypurecloud.com.au
 api-cdn.mypurecloud.de
 api-cloud.eventim.com
@@ -80,6 +81,7 @@ api.unidadeditorial.es
 api.userback.io
 api64.ipify.org
 app.hubspot.com
+apps.mypurecloud.com
 apps.mypurecloud.com.au
 apps.mypurecloud.de
 appspot.com
@@ -713,6 +715,7 @@ theplatform.com
 tildacdn.com
 townnews.com
 toyota.com
+tractorsupply.tt.omtrdc.net
 tradingview.com
 transistor.fm
 trbcdn.net
