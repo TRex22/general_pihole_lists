@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-17T21:17:13Z",
-  "total": 59371,
+  "generated_at": "2026-11-18T21:17:22Z",
+  "total": 59399,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -10976,6 +10976,18 @@
       "last_seen": null
     },
     {
+      "name": "aeivasta",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/aeivasta",
+          "title": "PyPI/aeivasta"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "aeodata",
       "type": "PyPI",
       "sources": [
@@ -11066,6 +11078,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/afritonpy",
           "title": "PyPI/afritonpy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "agent-framework",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/agent-framework",
+          "title": "PyPI/agent-framework"
         }
       ],
       "first_seen": null,
@@ -12506,6 +12530,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/analyze-me",
           "title": "PyPI/analyze-me"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "anchorpy-utils",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/anchorpy-utils",
+          "title": "PyPI/anchorpy-utils"
         }
       ],
       "first_seen": null,
@@ -49963,6 +49999,18 @@
       "last_seen": null
     },
     {
+      "name": "gguf-accelerator",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/gguf-accelerator",
+          "title": "PyPI/gguf-accelerator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "giantmidi-piano",
       "type": "PyPI",
       "sources": [
@@ -62949,6 +62997,18 @@
       "last_seen": null
     },
     {
+      "name": "libide",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/libide",
+          "title": "PyPI/libide"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "libidee",
       "type": "PyPI",
       "sources": [
@@ -63003,6 +63063,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/libidos",
           "title": "PyPI/libidos"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "libidreq",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/libidreq",
+          "title": "PyPI/libidreq"
         }
       ],
       "first_seen": null,
@@ -105366,6 +105438,18 @@
       "last_seen": null
     },
     {
+      "name": "qimsdk-app-builder",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/qimsdk-app-builder",
+          "title": "PyPI/qimsdk-app-builder"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "qlinforge",
       "type": "PyPI",
       "sources": [
@@ -105612,6 +105696,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/questpro",
           "title": "PyPI/questpro"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "quick-telegram-sender",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/quick-telegram-sender",
+          "title": "PyPI/quick-telegram-sender"
         }
       ],
       "first_seen": null,
@@ -111230,6 +111326,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/robloxapi-testy",
           "title": "PyPI/robloxapi-testy"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "robloxapiaccess",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/robloxapiaccess",
+          "title": "PyPI/robloxapiaccess"
         }
       ],
       "first_seen": null,
@@ -124393,6 +124501,18 @@
       "last_seen": null
     },
     {
+      "name": "setnetwork",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/setnetwork",
+          "title": "PyPI/setnetwork"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "setup1nter",
       "type": "PyPI",
       "sources": [
@@ -126217,6 +126337,18 @@
       "last_seen": null
     },
     {
+      "name": "solana-py-utils",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/solana-py-utils",
+          "title": "PyPI/solana-py-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "solana-scanner",
       "type": "PyPI",
       "sources": [
@@ -126319,6 +126451,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/solana-utils",
           "title": "PyPI/solana-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "solana-utils-terminalmoney1",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/solana-utils-terminalmoney1",
+          "title": "PyPI/solana-utils-terminalmoney1"
         }
       ],
       "first_seen": null,
@@ -131688,6 +131832,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/test128123612",
           "title": "PyPI/test128123612"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "test23414234234",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/test23414234234",
+          "title": "PyPI/test23414234234"
         }
       ],
       "first_seen": null,
@@ -187020,6 +187176,18 @@
       "last_seen": null
     },
     {
+      "name": "rechargeapps",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/rechargeapps",
+          "title": "RubyGems/rechargeapps"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "redis_connectable",
       "type": "RubyGems",
       "sources": [
@@ -195858,6 +196026,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/verificator",
           "title": "RubyGems/verificator"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "vuln-app",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/vuln-app",
+          "title": "RubyGems/vuln-app"
         }
       ],
       "first_seen": null,
@@ -234664,6 +234844,18 @@
       "last_seen": null
     },
     {
+      "name": "@clickwraps/fetch",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@clickwraps/fetch",
+          "title": "npm/@clickwraps/fetch"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@client-innovation/librct",
       "type": "npm",
       "sources": [
@@ -247858,6 +248050,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@customer-threesixty/assets",
           "title": "npm/@customer-threesixty/assets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@cutehttp/encode-url",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@cutehttp/encode-url",
+          "title": "npm/@cutehttp/encode-url"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@cutehttp/strict-uri-encode",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@cutehttp/strict-uri-encode",
+          "title": "npm/@cutehttp/strict-uri-encode"
         }
       ],
       "first_seen": null,
@@ -301604,6 +301820,18 @@
       "last_seen": null
     },
     {
+      "name": "@merceas/rpc-websockets",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@merceas/rpc-websockets",
+          "title": "npm/@merceas/rpc-websockets"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@merge-api/merge-javascript-shared",
       "type": "npm",
       "sources": [
@@ -319358,6 +319586,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nexlayerlabs/postcss-keyframe-utils",
           "title": "npm/@nexlayerlabs/postcss-keyframe-utils"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@nexoratechorg/postcss-keyframes",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@nexoratechorg/postcss-keyframes",
+          "title": "npm/@nexoratechorg/postcss-keyframes"
         }
       ],
       "first_seen": null,
@@ -354296,12 +354536,36 @@
       "last_seen": null
     },
     {
+      "name": "@tnhorg/agent-skills",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tnhorg/agent-skills",
+          "title": "npm/@tnhorg/agent-skills"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@tobiasredfield/simple-web-app-package",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tobiasredfield/simple-web-app-package",
           "title": "npm/@tobiasredfield/simple-web-app-package"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@tobyvalk123/tixte",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tobyvalk123/tixte",
+          "title": "npm/@tobyvalk123/tixte"
         }
       ],
       "first_seen": null,
@@ -358897,6 +359161,10 @@
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@univerjs-pro/sheets-pivot-chart",
+          "title": "npm/@univerjs-pro/sheets-pivot-chart"
+        },
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/unmergable/npm/@univerjs-pro/sheets-pivot-chart",
           "title": "npm/@univerjs-pro/sheets-pivot-chart"
         }
       ],
@@ -368342,6 +368610,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zakhaevv/envai",
           "title": "npm/@zakhaevv/envai"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@zakir300408/wechat-companion",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@zakir300408/wechat-companion",
+          "title": "npm/@zakir300408/wechat-companion"
         }
       ],
       "first_seen": null,
@@ -429290,6 +429570,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/a-simple-cache",
           "title": "npm/a-simple-cache"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "a-sub-watcher",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/a-sub-watcher",
+          "title": "npm/a-sub-watcher"
         }
       ],
       "first_seen": null,
@@ -530929,6 +531221,18 @@
       "last_seen": null
     },
     {
+      "name": "apintergrationpost",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/apintergrationpost",
+          "title": "npm/apintergrationpost"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "apiportal-backend",
       "type": "npm",
       "sources": [
@@ -607007,6 +607311,18 @@
       "last_seen": null
     },
     {
+      "name": "barcodescanner-network-webgl",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/barcodescanner-network-webgl",
+          "title": "npm/barcodescanner-network-webgl"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "barcodescanner-reconnect",
       "type": "npm",
       "sources": [
@@ -608303,6 +608619,18 @@
       "last_seen": null
     },
     {
+      "name": "base128-x58-1",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base128-x58-1",
+          "title": "npm/base128-x58-1"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "base46",
       "type": "npm",
       "sources": [
@@ -608405,6 +608733,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base62-58x",
           "title": "npm/base62-58x"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "base62-85x",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/base62-85x",
+          "title": "npm/base62-85x"
         }
       ],
       "first_seen": null,
