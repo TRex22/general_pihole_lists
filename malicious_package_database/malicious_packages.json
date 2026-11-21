@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-20T21:17:00Z",
-  "total": 59465,
+  "generated_at": "2026-11-21T21:15:06Z",
+  "total": 59470,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -56810,6 +56810,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/instantobfosires",
           "title": "PyPI/instantobfosires"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "instantscrape",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/instantscrape",
+          "title": "PyPI/instantscrape"
         }
       ],
       "first_seen": null,
@@ -125251,6 +125263,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/siempyl-sumo",
           "title": "PyPI/siempyl-sumo"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "signed-manifest-guard",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/signed-manifest-guard",
+          "title": "PyPI/signed-manifest-guard"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "signed-manifest-updater",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/signed-manifest-updater",
+          "title": "PyPI/signed-manifest-updater"
         }
       ],
       "first_seen": null,
@@ -329012,6 +329048,18 @@
       "last_seen": null
     },
     {
+      "name": "@pkgship/frps-windows-amd64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pkgship/frps-windows-amd64",
+          "title": "npm/@pkgship/frps-windows-amd64"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@planetlabs/admin-ng",
       "type": "npm",
       "sources": [
@@ -479135,6 +479183,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/ai_challenge",
           "title": "npm/ai_challenge"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "aia-b-locator-fe",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/aia-b-locator-fe",
+          "title": "npm/aia-b-locator-fe"
         }
       ],
       "first_seen": null,
