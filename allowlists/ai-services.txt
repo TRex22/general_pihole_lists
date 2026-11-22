@@ -117,6 +117,12 @@ status.openai.com
 api.openai.com
 sora.com
 sora.openai.com
+setup.auth.openai.com
+ws.chatgpt.com
+files.oaiusercontent.com
+# WorkOS (ChatGPT login/SSO) - Source: OpenAI network recommendations
+cdn.workos.com
+setup.workos.com
 crixet.com
 oaiusercontent.com
 oaistatic.com
@@ -199,6 +205,7 @@ x.ai
 grok.com
 api.x.ai
 accounts.x.ai
+docs.x.ai
 
 # ============================================
 # MISTRAL AI
@@ -263,6 +270,7 @@ registry.ollama.ai
 # ============================================
 
 pi.dev
+docs.pi.dev
 
 # ============================================
 # CURSOR (AI code editor)
