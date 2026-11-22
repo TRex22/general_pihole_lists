@@ -1,0 +1,39 @@
+# Gaming Allowlist for Pi-hole - Functionality Only
+# Epic Games Store / launcher, Fortnite, Unreal Engine, Easy Anti-Cheat.
+# Excludes telemetry, which stays blocked (see blocklists/ublock):
+#   datarouter.ol.epicgames.com, tracking.epicgames.com,
+#   tracking.fortnite.com, tracking.unrealengine.com
+# Note: allowing ol.epicgames.com unblocks datarouter.ol.epicgames.com unless a
+# blocklist entry is an exact match that takes precedence; re-block it in the
+# Pi-hole denylist if needed.
+
+# Epic Games - core (launcher, login, store, game services)
+epicgames.com
+www.epicgames.com
+store.epicgames.com
+ol.epicgames.com
+on.epicgames.com
+epicgames.dev
+epicgamescdn.com
+fortnite.com
+www.fortnite.com
+unrealengine.com
+www.unrealengine.com
+
+# Epic Games - downloads and patching (CDNs)
+download.epicgames.com
+epicgames-download1.akamaized.net
+fastly-download.epicgames.com
+cloudflare.epicgamescdn.com
+
+# Easy Anti-Cheat (Fortnite and many third-party games)
+easyanticheat.net
+eac-cdn.com
+
+# Epic ecosystem - optional (asset marketplace / content sites)
+fab.com
+www.fab.com
+artstation.com        # also in video-streaming.txt
+www.artstation.com    # also in video-streaming.txt
+sketchfab.com
+www.sketchfab.com

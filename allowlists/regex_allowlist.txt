@@ -223,3 +223,11 @@
 # Concur serves each region and data centre from its own subdomain (static., us2., eu1.,
 # api. ...), so a finite plain list would keep missing hosts. Plain entry is in general.txt.
 (^|\.)concursolutions\.com$
+
+# ── Epic Games CDN / Easy Anti-Cheat ─────────────────────────────────────────
+# CDN and anti-cheat hosts use rotating subdomains. Deliberately NOT a regex for
+# epicgames.com itself: that would also unblock tracking.epicgames.com and
+# datarouter.ol.epicgames.com. Plain entries are in gaming.txt.
+(^|\.)epicgamescdn\.com$
+(^|\.)easyanticheat\.net$
+(^|\.)eac-cdn\.com$
