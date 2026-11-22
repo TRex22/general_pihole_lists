@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T21:15:06Z",
-  "total": 59470,
+  "generated_at": "2026-11-22T21:16:17Z",
+  "total": 59478,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -126733,6 +126733,18 @@
       "last_seen": null
     },
     {
+      "name": "solblock",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/solblock",
+          "title": "PyPI/solblock"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "solders-utils",
       "type": "PyPI",
       "sources": [
@@ -233012,6 +233024,66 @@
       "last_seen": null
     },
     {
+      "name": "@c1-ease/autoloan",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@c1-ease/autoloan",
+          "title": "npm/@c1-ease/autoloan"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@c1-ease/bank",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@c1-ease/bank",
+          "title": "npm/@c1-ease/bank"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@c1-ease/card",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@c1-ease/card",
+          "title": "npm/@c1-ease/card"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@c1-ease/commerce",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@c1-ease/commerce",
+          "title": "npm/@c1-ease/commerce"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@c1-ease/core",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@c1-ease/core",
+          "title": "npm/@c1-ease/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@c11-lib-ts/document-handler",
       "type": "npm",
       "sources": [
@@ -288974,6 +289046,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@lbnqduy2180500/turbo-train",
           "title": "npm/@lbnqduy2180500/turbo-train"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@leadstack/crm-connect",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@leadstack/crm-connect",
+          "title": "npm/@leadstack/crm-connect"
         }
       ],
       "first_seen": null,
@@ -571446,6 +571530,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/autolink-jira-issue",
           "title": "npm/autolink-jira-issue"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "autoloan",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/autoloan",
+          "title": "npm/autoloan"
         }
       ],
       "first_seen": null,
