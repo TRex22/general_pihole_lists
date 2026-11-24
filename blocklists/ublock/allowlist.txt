@@ -1,6 +1,6 @@
 # Pi-hole Allowlist - Exceptions from uBlock Origin filter lists
-# Generated: 2026-11-23T21:05:49Z
-# Total domains: 896
+# Generated: 2026-11-24T21:06:17Z
+# Total domains: 895
 # Sources: ublock-filters, ublock-badware, ublock-privacy, ublock-unbreak, easylist, easyprivacy, peter-lowe, urlhaus-malware, adguard-dns, steven-black-hosts, energized-basic, oisd-basic
 #
 # Usage: Add these domains to Pi-hole's whitelist
@@ -480,7 +480,6 @@ line-scdn.net
 link-to.net
 link.meet5.net
 link.morningbrew.com
-link.nzz.ch
 link.sylikes.com
 linka.page
 linkjust.com

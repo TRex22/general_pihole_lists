@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-23T21:16:16Z",
-  "total": 59501,
+  "generated_at": "2026-11-24T21:16:55Z",
+  "total": 59510,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -78652,6 +78652,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/offline-rl-congestion-control",
           "title": "PyPI/offline-rl-congestion-control"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "oh-my-zelenka",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/oh-my-zelenka",
+          "title": "PyPI/oh-my-zelenka"
         }
       ],
       "first_seen": null,
@@ -226232,12 +226244,36 @@
       "last_seen": null
     },
     {
+      "name": "@apexfdn/copilot-mcp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@apexfdn/copilot-mcp",
+          "title": "npm/@apexfdn/copilot-mcp"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@apexfnd/apex",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@apexfnd/apex",
           "title": "npm/@apexfnd/apex"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@apexscore/cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@apexscore/cli",
+          "title": "npm/@apexscore/cli"
         }
       ],
       "first_seen": null,
@@ -228296,6 +228332,18 @@
       "last_seen": null
     },
     {
+      "name": "@avantnew/sort-of-package",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@avantnew/sort-of-package",
+          "title": "npm/@avantnew/sort-of-package"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@avi892nash/aegis-grid-runner",
       "type": "npm",
       "sources": [
@@ -229970,6 +230018,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bcs-ui/theme",
           "title": "npm/@bcs-ui/theme"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@bctools/motion-kitaid",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@bctools/motion-kitaid",
+          "title": "npm/@bctools/motion-kitaid"
         }
       ],
       "first_seen": null,
@@ -329156,6 +329216,18 @@
       "last_seen": null
     },
     {
+      "name": "@pixelworkshub/postcss-motionfx",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@pixelworkshub/postcss-motionfx",
+          "title": "npm/@pixelworkshub/postcss-motionfx"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@pixiv-vroid-hub/vroid-hub-viewer",
       "type": "npm",
       "sources": [
@@ -336324,6 +336396,18 @@
       "last_seen": null
     },
     {
+      "name": "@ruaxbonz/tooltreovip",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ruaxbonz/tooltreovip",
+          "title": "npm/@ruaxbonz/tooltreovip"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@ruby-team/sst-tasks",
       "type": "npm",
       "sources": [
@@ -343122,6 +343206,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@sof-assistant-fe-lib/vertical-faqs",
           "title": "npm/@sof-assistant-fe-lib/vertical-faqs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@softixer/softixer-cli",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@softixer/softixer-cli",
+          "title": "npm/@softixer/softixer-cli"
         }
       ],
       "first_seen": null,
@@ -367086,6 +367182,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xjs-shared-components/all-components",
           "title": "npm/@xjs-shared-components/all-components"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@xokodon430/jsclamp",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@xokodon430/jsclamp",
+          "title": "npm/@xokodon430/jsclamp"
         }
       ],
       "first_seen": null,
