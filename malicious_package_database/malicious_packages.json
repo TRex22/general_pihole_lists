@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T21:16:55Z",
-  "total": 59510,
+  "generated_at": "2026-11-25T21:17:38Z",
+  "total": 59548,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -12290,6 +12290,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/alksdjpureranser",
           "title": "PyPI/alksdjpureranser"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "alogithms",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/alogithms",
+          "title": "PyPI/alogithms"
         }
       ],
       "first_seen": null,
@@ -73386,6 +73398,30 @@
       "last_seen": null
     },
     {
+      "name": "mcp-diag-7f3a",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mcp-diag-7f3a",
+          "title": "PyPI/mcp-diag-7f3a"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "mcp-env-report",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mcp-env-report",
+          "title": "PyPI/mcp-env-report"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "mcp-pdftool-plus",
       "type": "PyPI",
       "sources": [
@@ -73434,12 +73470,36 @@
       "last_seen": null
     },
     {
+      "name": "mcp-runtime-report",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mcp-runtime-report",
+          "title": "PyPI/mcp-runtime-report"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "mcp-search-server",
       "type": "PyPI",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mcp-search-server",
           "title": "PyPI/mcp-search-server"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "mcp-sysinfo-tools",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/mcp-sysinfo-tools",
+          "title": "PyPI/mcp-sysinfo-tools"
         }
       ],
       "first_seen": null,
@@ -186258,6 +186318,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/piko-smart-sys",
           "title": "RubyGems/piko-smart-sys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "pionex",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/pionex",
+          "title": "RubyGems/pionex"
         }
       ],
       "first_seen": null,
@@ -320348,6 +320420,18 @@
       "last_seen": null
     },
     {
+      "name": "@neo938/css-motion-kit",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@neo938/css-motion-kit",
+          "title": "npm/@neo938/css-motion-kit"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@neogov/linkanx",
       "type": "npm",
       "sources": [
@@ -331484,12 +331568,156 @@
       "last_seen": null
     },
     {
+      "name": "@prime0/aajv",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/aajv",
+          "title": "npm/@prime0/aajv"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/ajjv",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/ajjv",
+          "title": "npm/@prime0/ajjv"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/ajvs",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/ajvs",
+          "title": "npm/@prime0/ajvs"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@prime0/alanced-match",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/alanced-match",
           "title": "npm/@prime0/alanced-match"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/clor-convert",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/clor-convert",
+          "title": "npm/@prime0/clor-convert"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/clor-name",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/clor-name",
+          "title": "npm/@prime0/clor-name"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/coor-name",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/coor-name",
+          "title": "npm/@prime0/coor-name"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/elint-visitor-keys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/elint-visitor-keys",
+          "title": "npm/@prime0/elint-visitor-keys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/emji-regex",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/emji-regex",
+          "title": "npm/@prime0/emji-regex"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/eoji-regex",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/eoji-regex",
+          "title": "npm/@prime0/eoji-regex"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/esint-visitor-keys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/esint-visitor-keys",
+          "title": "npm/@prime0/esint-visitor-keys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/gglob",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/gglob",
+          "title": "npm/@prime0/gglob"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/glbo",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/glbo",
+          "title": "npm/@prime0/glbo"
         }
       ],
       "first_seen": null,
@@ -331508,12 +331736,192 @@
       "last_seen": null
     },
     {
+      "name": "@prime0/inipass",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/inipass",
+          "title": "npm/@prime0/inipass"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/lgob",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/lgob",
+          "title": "npm/@prime0/lgob"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/miipass",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/miipass",
+          "title": "npm/@prime0/miipass"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/mnipass",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/mnipass",
+          "title": "npm/@prime0/mnipass"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/moji-regex",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/moji-regex",
+          "title": "npm/@prime0/moji-regex"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/olor-convert",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/olor-convert",
+          "title": "npm/@prime0/olor-convert"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/olor-name",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/olor-name",
+          "title": "npm/@prime0/olor-name"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/ource-map",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/ource-map",
+          "title": "npm/@prime0/ource-map"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@prime0/pcomatch",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/pcomatch",
           "title": "npm/@prime0/pcomatch"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/piomatch",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/piomatch",
+          "title": "npm/@prime0/piomatch"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/slint-visitor-keys",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/slint-visitor-keys",
+          "title": "npm/@prime0/slint-visitor-keys"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/sorce-map",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/sorce-map",
+          "title": "npm/@prime0/sorce-map"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/surce-map",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/surce-map",
+          "title": "npm/@prime0/surce-map"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/tpe-fest",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/tpe-fest",
+          "title": "npm/@prime0/tpe-fest"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/tye-fest",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/tye-fest",
+          "title": "npm/@prime0/tye-fest"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@prime0/ype-fest",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@prime0/ype-fest",
+          "title": "npm/@prime0/ype-fest"
         }
       ],
       "first_seen": null,
@@ -529613,6 +530021,30 @@
       "last_seen": null
     },
     {
+      "name": "apache-httpclient3",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/apache-httpclient3",
+          "title": "npm/apache-httpclient3"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "apache-httpclient4",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/apache-httpclient4",
+          "title": "npm/apache-httpclient4"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "apache-httpclient6",
       "type": "npm",
       "sources": [
@@ -553031,6 +553463,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/array-load-sandbox-code-cache",
           "title": "npm/array-load-sandbox-code-cache"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "array-native-utils",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/array-native-utils",
+          "title": "npm/array-native-utils"
         }
       ],
       "first_seen": null,
@@ -620889,6 +621333,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bcc-design-icons",
           "title": "npm/bcc-design-icons"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "bcdt",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/bcdt",
+          "title": "npm/bcdt"
         }
       ],
       "first_seen": null,
