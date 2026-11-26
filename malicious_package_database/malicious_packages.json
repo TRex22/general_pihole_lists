@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T21:17:38Z",
-  "total": 59548,
+  "generated_at": "2026-11-26T21:17:20Z",
+  "total": 59575,
   "packages": [
     {
       "name": "amzn-codewhisperer-streaming-client",
@@ -17785,6 +17785,18 @@
       "last_seen": null
     },
     {
+      "name": "bloomcredit-python",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/bloomcredit-python",
+          "title": "PyPI/bloomcredit-python"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "bloxy-api",
       "type": "PyPI",
       "sources": [
@@ -28033,6 +28045,18 @@
       "last_seen": null
     },
     {
+      "name": "cubepath",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/cubepath",
+          "title": "PyPI/cubepath"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "cubesat-upstream-driver",
       "type": "PyPI",
       "sources": [
@@ -30103,6 +30127,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/denomenallib",
           "title": "PyPI/denomenallib"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "denowrap",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/denowrap",
+          "title": "PyPI/denowrap"
         }
       ],
       "first_seen": null,
@@ -54181,6 +54217,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/httpmine",
           "title": "PyPI/httpmine"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "httpnex",
+      "type": "PyPI",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/pypi/httpnex",
+          "title": "PyPI/httpnex"
         }
       ],
       "first_seen": null,
@@ -158196,6 +158244,18 @@
       "last_seen": null
     },
     {
+      "name": "activesupmport",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/activesupmport",
+          "title": "RubyGems/activesupmport"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "acts-as_better_tree",
       "type": "RubyGems",
       "sources": [
@@ -165534,6 +165594,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/briundler",
           "title": "RubyGems/briundler"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "brumdler",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/brumdler",
+          "title": "RubyGems/brumdler"
         }
       ],
       "first_seen": null,
@@ -175956,6 +176028,42 @@
       "last_seen": null
     },
     {
+      "name": "i18om",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/i18om",
+          "title": "RubyGems/i18om"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "i1l8n",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/i1l8n",
+          "title": "RubyGems/i1l8n"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "iai8n",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/iai8n",
+          "title": "RubyGems/iai8n"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "icare",
       "type": "RubyGems",
       "sources": [
@@ -175986,6 +176094,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/idleprobezz001177",
           "title": "RubyGems/idleprobezz001177"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ie18u",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/ie18u",
+          "title": "RubyGems/ie18u"
         }
       ],
       "first_seen": null,
@@ -176064,12 +176184,36 @@
       "last_seen": null
     },
     {
+      "name": "ioe18n",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/ioe18n",
+          "title": "RubyGems/ioe18n"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "irs_data",
       "type": "RubyGems",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/irs_data",
           "title": "RubyGems/irs_data"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ise18n",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/ise18n",
+          "title": "RubyGems/ise18n"
         }
       ],
       "first_seen": null,
@@ -176142,6 +176286,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/johnny_five",
           "title": "RubyGems/johnny_five"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "joxn",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/joxn",
+          "title": "RubyGems/joxn"
         }
       ],
       "first_seen": null,
@@ -185952,6 +186108,18 @@
       "last_seen": null
     },
     {
+      "name": "orakw",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/orakw",
+          "title": "RubyGems/orakw"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "pagerbot",
       "type": "RubyGems",
       "sources": [
@@ -187488,6 +187656,18 @@
       "last_seen": null
     },
     {
+      "name": "rakier",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/rakier",
+          "title": "RubyGems/rakier"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "rate-beer",
       "type": "RubyGems",
       "sources": [
@@ -187518,6 +187698,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/rbi-central",
           "title": "RubyGems/rbi-central"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "reaker",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/reaker",
+          "title": "RubyGems/reaker"
         }
       ],
       "first_seen": null,
@@ -187974,6 +188166,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/rfetchj",
           "title": "RubyGems/rfetchj"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ri18nr",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/ri18nr",
+          "title": "RubyGems/ri18nr"
         }
       ],
       "first_seen": null,
@@ -195126,6 +195330,30 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/u2f_client",
           "title": "RubyGems/u2f_client"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ubnlder",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/ubnlder",
+          "title": "RubyGems/ubnlder"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "ubnuler",
+      "type": "RubyGems",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/rubygems/ubnuler",
+          "title": "RubyGems/ubnuler"
         }
       ],
       "first_seen": null,
@@ -216580,6 +216808,18 @@
       "last_seen": null
     },
     {
+      "name": "@1outres/dsh-bot-connector-desktop",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@1outres/dsh-bot-connector-desktop",
+          "title": "npm/@1outres/dsh-bot-connector-desktop"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@2011-08-19/n",
       "type": "npm",
       "sources": [
@@ -233258,6 +233498,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@c1-ease/core",
           "title": "npm/@c1-ease/core"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@c1-ease/recovery",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@c1-ease/recovery",
+          "title": "npm/@c1-ease/recovery"
         }
       ],
       "first_seen": null,
@@ -266680,12 +266932,36 @@
       "last_seen": null
     },
     {
+      "name": "@evial/init-helper-djkwt",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@evial/init-helper-djkwt",
+          "title": "npm/@evial/init-helper-djkwt"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@evial/runtime-health",
       "type": "npm",
       "sources": [
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@evial/runtime-health",
           "title": "npm/@evial/runtime-health"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@evial/runtime-observer-qarges",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@evial/runtime-observer-qarges",
+          "title": "npm/@evial/runtime-observer-qarges"
         }
       ],
       "first_seen": null,
@@ -267350,6 +267626,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fadeldev/baileys-mods",
           "title": "npm/@fadeldev/baileys-mods"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@fadeldev/libsignal-node",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@fadeldev/libsignal-node",
+          "title": "npm/@fadeldev/libsignal-node"
         }
       ],
       "first_seen": null,
@@ -268574,6 +268862,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@flex-ng/header-component",
           "title": "npm/@flex-ng/header-component"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@flexflow/flex-ui-flow",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@flexflow/flex-ui-flow",
+          "title": "npm/@flexflow/flex-ui-flow"
         }
       ],
       "first_seen": null,
@@ -323096,6 +323396,18 @@
       "last_seen": null
     },
     {
+      "name": "@omnirush-ai/cli-win32-x64",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@omnirush-ai/cli-win32-x64",
+          "title": "npm/@omnirush-ai/cli-win32-x64"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
       "name": "@omniwatch-wick/cli",
       "type": "npm",
       "sources": [
@@ -357674,6 +357986,18 @@
         {
           "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@ttspc/open_center_qf_detail",
           "title": "npm/@ttspc/open_center_qf_detail"
+        }
+      ],
+      "first_seen": null,
+      "last_seen": null
+    },
+    {
+      "name": "@tty-pt/auren",
+      "type": "npm",
+      "sources": [
+        {
+          "url": "https://github.com/ossf/malicious-packages/tree/main/osv/malicious/npm/@tty-pt/auren",
+          "title": "npm/@tty-pt/auren"
         }
       ],
       "first_seen": null,
